@@ -20,7 +20,7 @@ subtitle: "pouuuu asdsdsd"
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 # baseurl: "/" # the subpath of your site
-url: "http://luminousrubyist.github.io" # the base hostname & protocol for your site
+url: "http://suui.github.io" # the base hostname & protocol for your site
 baseurl: "/airspace-jekyll"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
