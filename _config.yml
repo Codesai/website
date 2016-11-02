@@ -21,7 +21,7 @@ subtitle: "pouuuu asdsdsd"
 # root of your server.
 # baseurl: "/" # the subpath of your site
 url: "http://suui.github.io" # the base hostname & protocol for your site
-baseurl: "/"
+baseurl: ""
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
