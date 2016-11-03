@@ -65,7 +65,7 @@ a:active {
 	Header Start
 --*/
 header {
-  background: #fff;
+  background: #111;
   padding: 20px 0;
 }
 header .navbar {
@@ -83,9 +83,15 @@ header .navbar-default .navbar-nav {
   padding-top: 10px;
 }
 header .navbar-default .navbar-nav li a {
-  color: #333333;
+  color: #eee;
   padding: 10px 26px;
   font-size: 15px;
+}
+header .navbar-default .navbar-nav li a:visited {
+  color: #eee;
+}
+header .navbar-default .navbar-nav li a:hover {
+  color: #7fa52b;
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
