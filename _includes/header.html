@@ -21,11 +21,20 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/work">Work</a></li>
-                <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+                <li><a href="{{ site.baseurl }}/">{% translate header.home %}</a></li>
+                <li><a href="{{ site.baseurl }}/work">{% translate header.work %}</a></li>
+                <li><a href="{{ site.baseurl }}/blog">{% translate header.blog %}</a></li>
+                <li><a href="#">{% translate header.service %}</a></li>
+                <li><a href="{{ site.baseurl }}/contact">{% translate header.contact %}</a></li>
+                <li>
+                  {% if site.lang == "es" %}
+                    {% capture englishLink %}{{ site.baseurl_root }}{{ page.url }}?lang=en{% endcapture %}
+                    <a href="{{ englishLink }}">English</a>
+                  {% elsif site.lang == "en" %}
+                    {% capture spanishLink %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+                    <a href="{{ spanishLink }}">Español</a>
+                  {% endif %}
+                </li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
