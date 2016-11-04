@@ -15,7 +15,7 @@
             <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-              <img src="{{ site.baseurl }}/img/logo.png" alt="Logo">
+              <img src="/img/logo.png" alt="Logo">
             </a>
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,11 +28,9 @@
                 <li><a href="{{ site.baseurl }}/contact">{% translate header.contact %}</a></li>
                 <li>
                   {% if site.lang == "es" %}
-                    {% capture englishLink %}{{ site.baseurl_root }}{{ page.url }}?lang=en{% endcapture %}
-                    <a href="{{ englishLink }}">English</a>
+                    <a href="/en{{ page.url }}">English</a>
                   {% elsif site.lang == "en" %}
-                    {% capture spanishLink %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-                    <a href="{{ spanishLink }}">Español</a>
+                    <a href="{{ page.url }}">Español</a>
                   {% endif %}
                 </li>
               </ul>
