@@ -20,7 +20,7 @@ languages: ["es", "en"]
 exclude_from_localizations: ["js", "css", "fonts", "img", "_posts"]
 
 # Site settings
-title: Suui
+title: Codesai
 subtitle: "uppps"
 url: "http://suui.github.io"
 cover: "/assets/cover.png"
