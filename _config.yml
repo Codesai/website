@@ -25,6 +25,7 @@ subtitle: "uppps"
 url: "http://suui.github.io"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
+permalink: :year/:month/:title
 
 # Build settings
 markdown: kramdown
