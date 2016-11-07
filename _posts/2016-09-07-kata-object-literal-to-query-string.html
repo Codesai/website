@@ -1,0 +1,111 @@
+---
+layout: post
+title: 'Kata: object literal to query string'
+date: 2016-09-07 21:29:20.000000000 +01:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _alp_processed: '1473293256'
+  _icl_lang_duplicate_of: '2942'
+  cwp_meta_box_check: 'No'
+author:
+  login: carlosble
+  email: ble.jurado@gmail.com
+  display_name: Carlos Ble
+  first_name: Carlos
+  last_name: Ble
+---
+<p>No long ago, we had to write a function that takes an object and returns a string to be sent as part of the query string in the request. This was because the communication mechanism was <a href="https://en.wikipedia.org/wiki/JSONP" target="_blank">JSONP</a> that works via the GET method. The server was already expecting the specific format shown below and we didn't have access to the server in order to change it and accept just an URL-encoded JSON. The fun started when we realised that an object may be a tree structure with nested objects. We test-drove the solution and found it interesting as a code kata. This is the expected behavior of the function:</p>
+<pre lang="javascript">
+   expect(objectToQueryString("noObject")).toBe("");
+   expect(objectToQueryString({})).toBe("");
+   expect(objectToQueryString({prop: 'value'})).toBe("prop=value");
+   expect(objectToQueryString({prop: 'value', p2: 'v2'})).toBe("prop=value&p2=v2");
+   expect(objectToQueryString({p: {p2: 'value'}})).toBe("p[p2]=value");
+   var obj = {
+         prop0: "val0",
+         level1: {
+            prop1: "val1",
+            level2:{
+               prop2:"val2"
+            }
+        }
+   };
+   expect(objectToQueryString(obj)).toBe(
+          "prop0=val0&level1[prop1]=value1&level1[level2][prop2]=val2");
+</pre>
+<p>This is our implementation:</p>
+<pre lang="javascript">
+ function objectToQueryString(obj){
+     if (isNotConvertible(obj)) return "";
+
+     let queryString = "";
+     for (let propertyName in obj){
+         let propertyValue = obj[propertyName];
+         if (isAnObject(propertyValue)){
+             let convertedNestedProperties = objectToQueryString(propertyValue)
+                                             .split('&');
+             let surroundedProperties = surroundNestedWithBrackets(
+	                                     propertyName, 
+	                                     convertedNestedProperties);
+             queryString += surroundedProperties.join('&');
+         }
+         else {
+             queryString += `${propertyName}=${propertyValue}`;
+         }
+         queryString += '&';
+     }
+     return removeLastAmpersand(queryString);
+ }
+
+ function surroundNestedWithBrackets(propertyName, nestedProperties){
+     let surrounded = [];
+     for(let i = 0; i < nestedProperties.length; i++){
+         let nested  = nestedProperties[i], 
+                       nestedName, 
+                       nestedValue;
+         let isNestedObject = nested.indexOf('[') >= 0;
+         if (isNestedObject){
+             nestedName = substringUntil('[', nested);
+             nestedValue = substringFrom('[', nested);
+         }
+         else {
+             nestedName = substringUntil('=', nested);
+             nestedValue = substringFrom('=', nested);
+         }
+         surrounded.push(`${propertyName}[${nestedName}]${nestedValue}`);
+     }
+     return surrounded;
+ }
+
+ function substringUntil(symbol, text){
+     return text.substring(0, text.indexOf(symbol));
+ }
+
+ function substringFrom(symbol, text){
+     return text.substring(text.indexOf(symbol));
+ }
+
+ function isNotConvertible(obj ){
+     return !obj  ||
+         typeof(obj) != 'object' ||
+         JSON.stringify(obj) =="{}";
+ }
+
+ function isAnObject(val){
+     return typeof(val) == 'object';
+ }
+
+ function removeLastAmpersand(queryString){
+     if (queryString.lastIndexOf("&") == queryString.length -1){
+         return queryString.substring(0, queryString.length -1);
+     }
+     return queryString;
+ }
+
+</pre>
+<p>Note that the object can't contain arrays neither functions.</p>
+<p>Play with the code in <a href="https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&code=function%20objectToQueryString(obj)%7B%0A%20%20%20%20%20if%20(isNotConvertible(obj))%20return%20%22%22%3B%0A%20%0A%20%20%20%20%20let%20queryString%20%3D%20%22%22%3B%0A%20%20%20%20%20for%20(let%20propertyName%20in%20obj)%7B%0A%20%20%20%20%20%20%20%20%20let%20propertyValue%20%3D%20obj%5BpropertyName%5D%3B%0A%20%20%20%20%20%20%20%20%20if%20(isAnObject(propertyValue))%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20let%20convertedNestedProperties%20%3D%20objectToQueryString(propertyValue)%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20.split('%26')%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20let%20surroundedProperties%20%3D%20surroundNestedWithBrackets(%0A%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20propertyName%2C%20%0A%09%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20convertedNestedProperties)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20queryString%20%2B%3D%20surroundedProperties.join('%26')%3B%0A%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20queryString%20%2B%3D%20%60%24%7BpropertyName%7D%3D%24%7BpropertyValue%7D%60%3B%0A%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20queryString%20%2B%3D%20'%26'%3B%0A%20%20%20%20%20%7D%0A%20%20%20%20%20return%20removeLastAmpersand(queryString)%3B%0A%20%7D%0A%20%0A%20function%20surroundNestedWithBrackets(propertyName%2C%20nestedProperties)%7B%0A%20%20%20%20%20let%20surrounded%20%3D%20%5B%5D%3B%0A%20%20%20%20%20for(let%20i%20%3D%200%3B%20i%20%3C%20nestedProperties.length%3B%20i%2B%2B)%7B%0A%20%20%20%20%20%20%20%20%20let%20nested%20%20%3D%20nestedProperties%5Bi%5D%2C%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20nestedName%2C%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20nestedValue%3B%0A%20%20%20%20%20%20%20%20%20let%20isNestedObject%20%3D%20nested.indexOf('%5B')%20%3E%3D%200%3B%0A%20%20%20%20%20%20%20%20%20if%20(isNestedObject)%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20nestedName%20%3D%20substringUntil('%5B'%2C%20nested)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20nestedValue%20%3D%20substringFrom('%5B'%2C%20nested)%3B%0A%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20nestedName%20%3D%20substringUntil('%3D'%2C%20nested)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20nestedValue%20%3D%20substringFrom('%3D'%2C%20nested)%3B%0A%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20surrounded.push(%60%24%7BpropertyName%7D%5B%24%7BnestedName%7D%5D%24%7BnestedValue%7D%60)%3B%0A%20%20%20%20%20%7D%0A%20%20%20%20%20return%20surrounded%3B%0A%20%7D%0A%20%0A%20function%20substringUntil(symbol%2C%20text)%7B%0A%20%20%20%20%20return%20text.substring(0%2C%20text.indexOf(symbol))%3B%0A%20%7D%0A%20%0A%20function%20substringFrom(symbol%2C%20text)%7B%0A%20%20%20%20%20return%20text.substring(text.indexOf(symbol))%3B%0A%20%7D%0A%20%0A%20function%20isNotConvertible(obj%20)%7B%0A%20%20%20%20%20return%20!obj%20%20%7C%7C%0A%20%20%20%20%20%20%20%20%20typeof(obj)%20!%3D%20'object'%20%7C%7C%0A%20%20%20%20%20%20%20%20%20JSON.stringify(obj)%20%3D%3D%22%7B%7D%22%3B%0A%20%7D%0A%20%0A%20function%20isAnObject(val)%7B%0A%20%20%20%20%20return%20typeof(val)%20%3D%3D%20'object'%3B%0A%20%7D%0A%20%0A%20function%20removeLastAmpersand(queryString)%7B%0A%20%20%20%20%20if%20(queryString.lastIndexOf(%22%26%22)%20%3D%3D%20queryString.length%20-1)%7B%0A%20%20%20%20%20%20%20%20%20return%20queryString.substring(0%2C%20queryString.length%20-1)%3B%0A%20%20%20%20%20%7D%0A%20%20%20%20%20return%20queryString%3B%0A%20%7D%0Aconsole.log(objectToQueryString(%7Ba%3A1%2C%20b%3A2%2C%20c%3A%7Bd%3A4%2C%20e%3A%7Bx%3A%7Bz%3A5%7D%2C%20h%3A7%7D%7D%7D))%3B%0A%0A%0A%0A" target="_blank">the Babel Repl</a>.</p>
