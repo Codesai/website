@@ -13,6 +13,7 @@ keep_files:
   - ".gitignore"
 
 gems:
+  - jekyll-feed 
   - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin
