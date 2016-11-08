@@ -171,9 +171,15 @@ px      68    160    252    */
   p {
     font-size: 13px;
   }
+  header .navbar-brand {
+    padding-left: 20px;
+  }
   header .navbar-default .navbar-toggle {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  header .navbar-default .navbar-nav {
+    padding-top: 0;
   }
   #slider {
     padding-top: 90px;

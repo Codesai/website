@@ -66,21 +66,21 @@ a:active {
 --*/
 header {
   background: #111;
-  padding: 20px 0;
 }
 header .navbar {
   margin-bottom: 0px;
   border: 0px;
 }
 header .navbar-brand {
-  padding-top: 5px;
+  padding: 10px 0;
+  height: 100%;
 }
 header .navbar-default {
   background: none;
   border: 0px;
 }
 header .navbar-default .navbar-nav {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 header .navbar-default .navbar-nav li a {
   color: #eee;
@@ -811,8 +811,3 @@ footer .footer-manu ul li a {
 footer .footer-manu ul li a:hover {
   color: #000;
 }
-.gist{font-size:13px;line-height:18px;margin-bottom:20px;width:100%}
-.gist pre{font-family:Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New',monospace !important}
-.gist-meta{font-family:Helvetica,Arial,sans-serif;font-size:13px !important}
-.gist-meta a{color:#26a !important;text-decoration:none}
-.gist-meta a:hover{color:#0e4071 !important}
