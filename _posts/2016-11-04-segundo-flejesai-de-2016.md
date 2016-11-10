@@ -13,6 +13,7 @@ meta:
   _icl_lang_duplicate_of: '3176'
   cwp_meta_box_check: 'No'
 author: Carlos Blé
+comments : true
 ---
 <p>En Codesai somos un equipo distribuido. Actualmente trabajamos desde Gran Canaria, Tenerife, Barcelona, Madrid y Oviedo. Hacemos pair programming remoto, mob programming y videoconferencias semanales pero aún es muy importante reunirnos fisicamente un par de veces al año. La primera reunión fue en Las Palmas en Marzo de 2016. Nos sirvió para alinearnos, definir formas de trabajar, tomar decisiones y sobre todo compartir y hacer equipo. Esta segunda edición ha sido también en Las Palmas, los días 27 y 28 de octubre de 2016. El sitio de reunión ha sido espectacular, la sala de formación de la Galería de Arte de Manuel Ojeda, en Triana. Aprovechamos para agradecer a Manuel y Daniel Ojeda esta oportunidad, su amabilidad y su confianza.</p>
 <p>Inicialmente esto se llamaba Codesai Summit pero como ahora somos muchos (un <a href="http://www.academiacanarialengua.org/palabra/fleje/">fleje</a>), pues se nos ocurrió renombrarlo a Flejesai. Aunque fleje se usa más en la provincia de Las Palmas que en la de Santa Cruz, aceptamos la palabra como canario interinsular :-)</p>
