@@ -22,7 +22,6 @@ exclude_from_localizations: ["js", "css", "fonts", "img", "_posts"]
 
 # Site settings
 title: Codesai
-subtitle: "uppps"
 url: "https://codesai.aerobatic.io"
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"

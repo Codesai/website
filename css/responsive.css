@@ -182,17 +182,26 @@ px      68    160    252    */
     padding-top: 0;
   }
   #slider {
-    padding-top: 90px;
-    padding-bottom: 100px;
-  }
-  #slider .block {
-    padding-left: 0px;
+    padding: 170px 0 200px 0;
   }
   #slider .block h1 {
-    font-size: 20px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    padding-bottom: 30px;
+  }
+  #slider .block .large-display {
+    display: none;
+  }
+  #slider .block .small-display {
+    display: block;
   }
   #slider .block p {
-    font-size: 13px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 20px;
   }
   /*--
 	wrapper Start 
