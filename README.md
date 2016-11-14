@@ -3,9 +3,9 @@
 Jekyll based website for Codesai
 
 
-### Setup
+## Setup
 
-#### Docker
+### Docker
 
 1. Clone the repository
 2. Navigate to the jekyll site folder in a terminal
