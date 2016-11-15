@@ -203,6 +203,11 @@ px      68    160    252    */
     letter-spacing: 2px;
     line-height: 20px;
   }
+  #call-to-action .value-box p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+  }
   /*--
 	wrapper Start 
 --*/
