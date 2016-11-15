@@ -27,4 +27,4 @@ To check the name of your docker container you can run `docker ps`, it may be so
 7. You may access the local website at `localhost:4000`
 8. Start coding and jekyll will automatically build after you save changes
 
-If you experience problems with jekyll automatic builds you can start another terminal, navigate to the jekyll site folder and run `jekyll build` on demand.
+If you experience problems with jekyll automatic builds you can start another terminal, navigate to the jekyll site folder and run `jekyll build` on demand...
