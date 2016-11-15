@@ -22,7 +22,7 @@ exclude_from_localizations: ["js", "css", "fonts", "img", "_posts"]
 
 # Site settings
 title: Codesai
-url: "https://codesai.aerobatic.io"
+url: https://codesai.aerobatic.io
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 permalink: :year/:month/:title
