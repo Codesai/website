@@ -5,3 +5,5 @@ _site/en/docker-compose.yml
 .sass-cache
 Gemfile.lock
 .DS_Store
+
+.ruby-version
