@@ -144,9 +144,8 @@ This is an example of a test using literals, (from a ClojureScript application
 using &lt;a href=&quot;https://github.com/Day8/re-frame&quot;&gt;re-frame&lt;/a&gt;, I’m developing with &lt;a href=&quot;https://twitter.com/zesc&quot;&gt;Francesc&lt;/a&gt;), 
 to prepare the &lt;i&gt;application state&lt;/i&gt; (usually called &lt;i&gt;db&lt;/i&gt; in &lt;a href=&quot;https://github.com/Day8/re-frame&quot;&gt;re-frame&lt;/a&gt;):
 &lt;br /&gt;&lt;br /&gt;
-&lt;script src=&quot;https://gist.github.com/trikitrok/50a48e7899ba820ca140835112e8ad0b.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;As you can see, this test knows to much about the structure of &lt;i&gt;db&lt;/i&gt;. 
+&lt;script src=&quot;https://gist.github.com/trikitrok/50a48e7899ba820ca140835112e8ad0b.js&quot;&gt;&lt;/script&gt;
+As you can see, this test knows to much about the structure of &lt;i&gt;db&lt;/i&gt;. 
 &lt;br /&gt;&lt;br /&gt;
 There were many other tests doing something similar at some nesting level of the &lt;i&gt;db&lt;/i&gt;. 
 &lt;br /&gt;&lt;br /&gt;
@@ -168,21 +167,18 @@ your tests code more readable, is by using &lt;a href=&quot;http://www.natpryce.
 &lt;br /&gt;&lt;br /&gt;
 We did TDD to write these &lt;i&gt;builder functions&lt;/i&gt;. These are the tests for one of them, the &lt;i&gt;db builder&lt;/i&gt;:
 &lt;br /&gt;&lt;br /&gt;
-&lt;script src=&quot;https://gist.github.com/trikitrok/093f10a3af82422d1eff8a83323aa7a7.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;and this is the &lt;i&gt;db builder&lt;/i&gt; code:
+&lt;script src=&quot;https://gist.github.com/trikitrok/093f10a3af82422d1eff8a83323aa7a7.js&quot;&gt;&lt;/script&gt;
+and this is the &lt;i&gt;db builder&lt;/i&gt; code:
 &lt;br /&gt;&lt;br /&gt;
-&lt;script src=&quot;https://gist.github.com/trikitrok/1832b30d4a397acc0d24c3659edf1161.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;which is using &lt;a href=&quot;http://clojure.org/guides/destructuring&quot;&gt;associative destructuring&lt;/a&gt; on the function’s optional arguments to have a function with keyword arguments, and creating proper default values using the &lt;i&gt;:or keyword&lt;/i&gt; (have a look at the &lt;a href=&quot;https://gist.github.com/trikitrok/e24b0a8ecacf8c1ae726&quot;&gt;material of a talk about destructuring I did some time ago&lt;/a&gt; for &lt;a href=&quot;http://www.meetup.com/ClojureBCN/&quot;&gt;Clojure Barcelona Developers community&lt;/a&gt;).
+&lt;script src=&quot;https://gist.github.com/trikitrok/1832b30d4a397acc0d24c3659edf1161.js&quot;&gt;&lt;/script&gt;
+which is using &lt;a href=&quot;http://clojure.org/guides/destructuring&quot;&gt;associative destructuring&lt;/a&gt; on the function’s optional arguments to have a function with keyword arguments, and creating proper default values using the &lt;i&gt;:or keyword&lt;/i&gt; (have a look at the &lt;a href=&quot;https://gist.github.com/trikitrok/e24b0a8ecacf8c1ae726&quot;&gt;material of a talk about destructuring I did some time ago&lt;/a&gt; for &lt;a href=&quot;http://www.meetup.com/ClojureBCN/&quot;&gt;Clojure Barcelona Developers community&lt;/a&gt;).
 &lt;br /&gt;&lt;br /&gt;
 After creating &lt;i&gt;builder functions&lt;/i&gt; for some other data used in the project, our test started to read better and to be robust against changes in the structure of &lt;i&gt;db&lt;/i&gt;.
 &lt;br /&gt;&lt;br /&gt;
 For instance, this is the code of the test I showed at the beginning of the post, but now using &lt;i&gt;builder functions&lt;/i&gt; instead of literals:
 &lt;br /&gt;&lt;br /&gt;
-&lt;script src=&quot;https://gist.github.com/trikitrok/e8a8244ebc0fa82352bb8003a82da077.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;which not only hides the representation of &lt;i&gt;db&lt;/i&gt; but also eliminates details that are not used in particular tests, while still being as easy to read, if not easier, than the version using literals.
+&lt;script src=&quot;https://gist.github.com/trikitrok/e8a8244ebc0fa82352bb8003a82da077.js&quot;&gt;&lt;/script&gt;
+which not only hides the representation of &lt;i&gt;db&lt;/i&gt; but also eliminates details that are not used in particular tests, while still being as easy to read, if not easier, than the version using literals.
 &lt;br /&gt;&lt;br /&gt;
 We have seen how, by composing &lt;i&gt;builder functions&lt;/i&gt; and using them in our tests, we managed to reduce
 the surface of the impact that changes in the representation of data might have on our tests. 

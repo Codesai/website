@@ -105,9 +105,8 @@ This is an example of a test using literals, (from a ClojureScript application
 using <a href="https://github.com/Day8/re-frame">re-frame</a>, I’m developing with <a href="https://twitter.com/zesc">Francesc</a>), 
 to prepare the <i>application state</i> (usually called <i>db</i> in <a href="https://github.com/Day8/re-frame">re-frame</a>):
 <br /><br />
-<script src="https://gist.github.com/trikitrok/50a48e7899ba820ca140835112e8ad0b.js"></script></p>
-
-<p>As you can see, this test knows to much about the structure of <i>db</i>. 
+<script src="https://gist.github.com/trikitrok/50a48e7899ba820ca140835112e8ad0b.js"></script>
+As you can see, this test knows to much about the structure of <i>db</i>. 
 <br /><br />
 There were many other tests doing something similar at some nesting level of the <i>db</i>. 
 <br /><br />
@@ -129,21 +128,18 @@ your tests code more readable, is by using <a href="http://www.natpryce.com/arti
 <br /><br />
 We did TDD to write these <i>builder functions</i>. These are the tests for one of them, the <i>db builder</i>:
 <br /><br />
-<script src="https://gist.github.com/trikitrok/093f10a3af82422d1eff8a83323aa7a7.js"></script></p>
-
-<p>and this is the <i>db builder</i> code:
+<script src="https://gist.github.com/trikitrok/093f10a3af82422d1eff8a83323aa7a7.js"></script>
+and this is the <i>db builder</i> code:
 <br /><br />
-<script src="https://gist.github.com/trikitrok/1832b30d4a397acc0d24c3659edf1161.js"></script></p>
-
-<p>which is using <a href="http://clojure.org/guides/destructuring">associative destructuring</a> on the function’s optional arguments to have a function with keyword arguments, and creating proper default values using the <i>:or keyword</i> (have a look at the <a href="https://gist.github.com/trikitrok/e24b0a8ecacf8c1ae726">material of a talk about destructuring I did some time ago</a> for <a href="http://www.meetup.com/ClojureBCN/">Clojure Barcelona Developers community</a>).
+<script src="https://gist.github.com/trikitrok/1832b30d4a397acc0d24c3659edf1161.js"></script>
+which is using <a href="http://clojure.org/guides/destructuring">associative destructuring</a> on the function’s optional arguments to have a function with keyword arguments, and creating proper default values using the <i>:or keyword</i> (have a look at the <a href="https://gist.github.com/trikitrok/e24b0a8ecacf8c1ae726">material of a talk about destructuring I did some time ago</a> for <a href="http://www.meetup.com/ClojureBCN/">Clojure Barcelona Developers community</a>).
 <br /><br />
 After creating <i>builder functions</i> for some other data used in the project, our test started to read better and to be robust against changes in the structure of <i>db</i>.
 <br /><br />
 For instance, this is the code of the test I showed at the beginning of the post, but now using <i>builder functions</i> instead of literals:
 <br /><br />
-<script src="https://gist.github.com/trikitrok/e8a8244ebc0fa82352bb8003a82da077.js"></script></p>
-
-<p>which not only hides the representation of <i>db</i> but also eliminates details that are not used in particular tests, while still being as easy to read, if not easier, than the version using literals.
+<script src="https://gist.github.com/trikitrok/e8a8244ebc0fa82352bb8003a82da077.js"></script>
+which not only hides the representation of <i>db</i> but also eliminates details that are not used in particular tests, while still being as easy to read, if not easier, than the version using literals.
 <br /><br />
 We have seen how, by composing <i>builder functions</i> and using them in our tests, we managed to reduce
 the surface of the impact that changes in the representation of data might have on our tests. 
