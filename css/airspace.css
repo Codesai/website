@@ -846,29 +846,3 @@ footer {
   padding-top: 48px;
   padding-bottom: 55px;
 }
-footer p {
-  font-size: 13px;
-  line-height: 25px;
-  color: #919191;
-}
-footer a {
-  color: #595959;
-}
-footer .footer-manu {
-  padding-bottom: 25px;
-}
-footer .footer-manu ul {
-  margin: 0px;
-  padding: 0px;
-}
-footer .footer-manu ul li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-footer .footer-manu ul li a {
-  display: inline-block;
-  color: #494949;
-}
-footer .footer-manu ul li a:hover {
-  color: #000;
-}
