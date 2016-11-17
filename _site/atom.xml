@@ -186,7 +186,9 @@ For instance, this is the code of the test I showed at the beginning of the post
 &lt;br /&gt;&lt;br /&gt;
 We have seen how, by composing &lt;i&gt;builder functions&lt;/i&gt; and using them in our tests, we managed to reduce
 the surface of the impact that changes in the representation of data might have on our tests. 
-&lt;i&gt;Builder functions&lt;/i&gt; absorb the impact of those changes, and enable faster refactoring, and, by doing so, enable adapting to changes faster.&lt;/p&gt;
+&lt;i&gt;Builder functions&lt;/i&gt; absorb the impact of those changes, and enable faster refactoring, and, by doing so, enable adapting to changes faster.
+&lt;br /&gt;&lt;br /&gt;
+Published originally in &lt;a href=&quot;http://garajeando.blogspot.com.es/2016/10/using-builders-to-remove-duplication-in.html&quot;&gt;Garajeando&lt;/a&gt;.&lt;/p&gt;
 </description>
           <pubDate>2016-10-08T00:17:14+02:00</pubDate>
           <link>https://codesai.aerobatic.io/2016/10/refactoring-tests-using-builder-functions-in-clojure-clojureScript</link>

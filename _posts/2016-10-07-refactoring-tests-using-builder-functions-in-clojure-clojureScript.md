@@ -70,3 +70,5 @@ which not only hides the representation of <i>db</i> but also eliminates details
 We have seen how, by composing <i>builder functions</i> and using them in our tests, we managed to reduce
 the surface of the impact that changes in the representation of data might have on our tests. 
 <i>Builder functions</i> absorb the impact of those changes, and enable faster refactoring, and, by doing so, enable adapting to changes faster.
+<br><br>
+Published originally in [Garajeando](http://garajeando.blogspot.com.es/2016/10/using-builders-to-remove-duplication-in.html).
