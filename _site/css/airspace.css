@@ -841,8 +841,27 @@ font header .navbar-default .navbar-nav li a:hover {
 	footer Start
 --*/
 footer {
-  background: #F5F5F5;
+  background: #111;
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
+}
+
+footer i {
+  font-size: 28px;
+  color: #7fa52b;
+  margin-right: 20px;
+}
+
+footer .contact {
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+footer .contact a {
+  color: #eee;
+}
+
+footer .contact a:hover {
+  color: #7fa52b;
 }
