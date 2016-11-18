@@ -328,52 +328,54 @@ permalink: /
     var team = { 
         'carlos_ble': {
             name: 'Carlos Blé',
-            biography: 'Carlos tiene muchos gaticos'
+            biography: 'A mí que no me pregunten esas mierdas, yo no soy ningún recetario!'
         },
         'alfredo_casado': {
             name: 'Alfredo Casado',
-            biography: ''
+            biography: 'Me gustan los microservicios!'
         },
         'fran_reyes': {
             name: 'Fran Reyes',
-            biography: ''
+            biography: '10 minutos y me sobran 5'
         },
         'luis_rovirosa': {
             name: 'Luis Rovirosa',
-            biography: ''
+            biography: 'Meeting man'
         },
         'ronny_ancorini': {
             name: 'Ronny Ancorini',
-            biography: ''
+            biography: 'Nunca me compraré un iPhone!!'
         },
         'miguel_viera': {
             name: 'Miguel Viera',
-            biography: ''
+            biography: 'Mi lenguaje favorito es PHP con flechitas ->->->->->'
         },
         'daniel_ojeda': {
             name: 'Daniel Ojeda',
-            biography: 'Está muy loco'
+            biography: 'El okupa sin peluca'
         },
         'jose_deniz': {
             name: 'José Déniz',
-            biography: ''
+            biography: 'Me encanta twig :D'
         },
         'antonio_de_la_torre': {
             name: 'Antonio de la Torre',
-            biography: ''
+            biography: 'Me encanta trabajar en Kaleidos'
         },
         'manuel_rivero': {
             name: 'Manuel Rivero',
-            biography: ''
+            biography: 'El último con peluca, me gusta scala'
         }
     }
 
     $('#about-member-modal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget);
-    var teamMember = team[button.data('member')];
+    var memberKey = button.data('member');
+    var teamMember = team[memberKey];
     var memberBioModal = $(this);
     memberBioModal.find('.modal-title').text(teamMember.name);
-    memberBioModal.find('.modal-body').text(teamMember.biography);
+    memberBioModal.find('.modal-body img').attr('src', '/img/team/' + memberKey + '.jpg');
+    memberBioModal.find('.modal-body p').text(teamMember.biography);
 })
 </script>
 
