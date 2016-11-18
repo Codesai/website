@@ -851,11 +851,12 @@ footer i {
   font-size: 28px;
   color: #7fa52b;
   margin-right: 20px;
+  vertical-align: middle;
 }
 
 footer .contact {
-  font-size: 20px;
-  font-weight: 500px;
+  padding-top: 20px;
+  font-size: 18px;
 }
 
 footer .contact a {
@@ -864,4 +865,9 @@ footer .contact a {
 
 footer .contact a:hover {
   color: #7fa52b;
+}
+
+footer .social {
+  display: inline-block;
+  padding-top: 20px;
 }
