@@ -291,7 +291,26 @@ font header .navbar-default .navbar-nav li a:hover {
   height: 1px;
   margin: 0 auto;
   border-bottom: 2px solid #333;
-  margin-bottom: 20px;
+}
+
+#team .team-member .social {
+  display: inline-block;
+  padding-top: 8px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+#team .team-member .social a {
+  color: #111;
+}
+
+#team .team-member .social a:hover {
+  color: #7fa52b;
+}
+
+#team .team-member .social i {
+  margin: 0 10px;
 }
 
 /*--
