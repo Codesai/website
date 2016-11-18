@@ -35,6 +35,25 @@ px      68    160    252    344    436    528    620    712    */
   #content .block {
     padding-bottom: 100px;
   }
+
+  #team .team-member .photo .bio {
+    display: none;
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  #team .team-member .photo .bio button {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #7fa52b;
+    color: #ddd;
+    border: none;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
   /*--
 	features Start 
 --*/
@@ -212,6 +231,24 @@ px      68    160    252    */
     font-size: 14px;
     letter-spacing: 1px;
     padding-bottom: 10px;
+  }
+
+  #team .team-member .photo .bio {
+    display: none;
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  #team .team-member .photo .bio button {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #7fa52b;
+    color: #ddd;
+    border: none;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   /*--
 	wrapper Start 

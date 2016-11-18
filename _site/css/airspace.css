@@ -278,6 +278,16 @@ font header .navbar-default .navbar-nav li a:hover {
   height: 100%;
 }
 
+#team .team-member .photo {
+	display: inline-block;
+  position: relative;
+
+}
+
+#team .team-member .photo .bio {
+  display: none;
+}
+
 #team .team-member .name {
   padding: 12px 0 6px 0;
   font-size: 18px;
