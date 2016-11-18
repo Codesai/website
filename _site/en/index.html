@@ -206,7 +206,7 @@
                     <div class="photo">
                         <img src="/img/team/carlos_ble.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="carlos_ble">About</button>
                         </div>
                     </div>
                     <div class="name">Carlos Blé</div>
@@ -223,7 +223,7 @@
                     <div class="photo">
                         <img src="/img/team/alfredo_casado.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="alfredo_casado">About</button>
                         </div>
                     </div>
                     <div class="name">Alfredo Casado</div>
@@ -240,7 +240,7 @@
                     <div class="photo">
                         <img src="/img/team/fran_reyes.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="fran_reyes">About</button>
                         </div>
                     </div>
                     <div class="name">Fran Reyes</div>
@@ -257,7 +257,7 @@
                     <div class="photo">
                         <img src="/img/team/luis_rovirosa.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="luis_rovirosa">About</button>
                         </div>
                     </div>
                     <div class="name">Luis Rovirosa</div>
@@ -276,7 +276,7 @@
                     <div class="photo">
                         <img src="/img/team/ronny_ancorini.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="ronny_ancorini">About</button>
                         </div>
                     </div>
                     <div class="name">Ronny Ancorini</div>
@@ -293,7 +293,7 @@
                     <div class="photo">
                         <img src="/img/team/miguel_viera.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="miguel_viera">About</button>
                         </div>
                     </div>
                     <div class="name">Miguel Viera</div>
@@ -310,7 +310,7 @@
                     <div class="photo">
                         <img src="/img/team/daniel_ojeda.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="daniel_ojeda">About</button>
                         </div>
                     </div>
                     <div class="name">Daniel Ojeda</div>
@@ -327,7 +327,7 @@
                     <div class="photo">
                         <img src="/img/team/jose_deniz.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="jose_deniz">About</button>
                         </div>
                     </div>
                     <div class="name">José Déniz</div>
@@ -346,7 +346,7 @@
                     <div class="photo">
                         <img src="/img/team/antonio_de_la_torre.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="antonio_de_la_torre">About</button>
                         </div>
                     </div>
                     <div class="name">Antonio de la Torre</div>
@@ -363,7 +363,7 @@
                     <div class="photo">
                         <img src="/img/team/manuel_rivero.jpg" alt="">
                         <div class="bio">
-                            <button type="button" class="btn btn-default">About</button>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#about-member-modal" data-member="manuel_rivero">About</button>
                         </div>
                     </div>
                     <div class="name">Manuel Rivero</div>
@@ -377,6 +377,82 @@
             </div>
         </div>
     </div>
+
+<div class="bd-example">
+    <div class="modal fade" id="about-member-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var team = { 
+        'carlos_ble': {
+            name: 'Carlos Blé',
+            biography: 'Carlos tiene muchos gaticos'
+        },
+        'alfredo_casado': {
+            name: 'Alfredo Casado',
+            biography: ''
+        },
+        'fran_reyes': {
+            name: 'Fran Reyes',
+            biography: ''
+        },
+        'luis_rovirosa': {
+            name: 'Luis Rovirosa',
+            biography: ''
+        },
+        'ronny_ancorini': {
+            name: 'Ronny Ancorini',
+            biography: ''
+        },
+        'miguel_viera': {
+            name: 'Miguel Viera',
+            biography: ''
+        },
+        'daniel_ojeda': {
+            name: 'Daniel Ojeda',
+            biography: 'Está muy loco'
+        },
+        'jose_deniz': {
+            name: 'José Déniz',
+            biography: ''
+        },
+        'antonio_de_la_torre': {
+            name: 'Antonio de la Torre',
+            biography: ''
+        },
+        'manuel_rivero': {
+            name: 'Manuel Rivero',
+            biography: ''
+        }
+    }
+
+    $('#about-member-modal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget);
+    var teamMember = team[button.data('member')];
+    var memberBioModal = $(this);
+    memberBioModal.find('.modal-title').text(teamMember.name);
+    memberBioModal.find('.modal-body').text(teamMember.biography);
+})
+</script>
+
 </section>
 
 
