@@ -39,7 +39,7 @@ We use `jekyll serve` to automatically execute the build after we save changes a
 
 Having the `jekyll serve` running, we can save changes and refresh the page to see the changes. However, there is an issue:
 
-- When saving changes to .yml files, llike `_config.yml`, we should restart the `jekyll serge` to see changes. Or stop the docker container with `Ctrl+C` and execute `docker-compose up` again.
+- When saving changes to .yml files, llike `_config.yml`, we should restart the `jekyll serve` to see changes. Or stop the docker container with `Ctrl+C` and execute `docker-compose up` again.
 
 ### Plugins
 
