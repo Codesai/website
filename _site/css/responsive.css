@@ -42,6 +42,18 @@ px      68    160    252    344    436    528    620    712    */
     text-align: center;
   }
 
+#team .team-member .photo .desktop {
+  display: none;
+}
+
+#team .team-member .photo .mobile {
+  display: block;
+}
+
+#team .team-member img:hover {
+  box-shadow: none;
+}
+
 #team .team-member .photo .bio {
    display: none;
    display: block;
@@ -280,6 +292,18 @@ px      68    160    252    */
 --*/
   #features .features-img {
     text-align: center;
+  }
+
+  #team .team-member .photo .desktop {
+    display: none;
+  }
+
+  #team .team-member .photo .mobile {
+    display: block;
+  }
+
+  #team .team-member img:hover {
+    box-shadow: none;
   }
 
   #team .team-member .photo .bio {
