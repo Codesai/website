@@ -865,6 +865,12 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #292929;
   font-weight: 300;
 }
+
+.modal-body p {
+  padding: 20px 12px 0 12px;
+  text-align: justify;
+}
+
 /*---------------------------*/
 /*--
 	footer Start
