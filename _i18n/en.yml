@@ -1,8 +1,7 @@
 header:
     home: Home
-    work: Work
+    team: Team
     blog: Blog
-    service: Service
     contact: Contact
 
 slider:

@@ -1,8 +1,7 @@
 header:
     home: Inicio
-    work: Trabajo
+    team: Equipo
     blog: Blog
-    service: Servicio
     contact: Contacto
 
 slider:

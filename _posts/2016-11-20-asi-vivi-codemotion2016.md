@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Así viví Codemotion2016
+title: Así viví Codemotion 2016
 date: 2016-11-20 18:19:11.000000000 +00:00
 type: post
 published: true
@@ -8,10 +8,6 @@ status: publish
 categories:
 - Equipo
 tags: []
-meta:
-  _alp_processed: '1478361760'
-  _icl_lang_duplicate_of: '3176'
-  cwp_meta_box_check: 'No'
 author: Carlos Blé
 comments : true
 ---
