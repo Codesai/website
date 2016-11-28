@@ -1,0 +1,19 @@
+*           text=auto
+
+*.html      text diff=html
+*.css       text
+*.js        text
+*.md        text
+*.yml       text
+*.xml       text
+
+
+*.ico       binary
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+
+*.otf       binary
+*.eot       binary
+*.ttf       binary
+*.woff      binary
