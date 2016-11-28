@@ -72,6 +72,15 @@ px      68    160    252    344    436    528    620    712    */
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
  }
 
+  #tdd-course .introduction img {
+    margin-bottom: 50px;
+    width: 60%;
+  }
+
+ #tdd-course .contents .second-day {
+    margin-top: 50px;
+  }
+
   /*--
 	footer Start 
 --*/
@@ -239,6 +248,36 @@ px      68    160    252    */
     letter-spacing: 1px;
     padding-bottom: 10px;
   }
+
+  #tdd-course .introduction img {
+    margin-bottom: 50px;
+  }
+
+  #tdd-course .contents .second-day {
+    margin-top: 50px;
+  }
+
+  #tdd-course p {
+    padding: 0 10px;
+  }
+
+  #tdd-course .feature .title {
+    padding-left: 10px;
+  }
+
+  #tdd-course .feature .underline {
+    margin-left: 10px;
+  }
+
+  #tdd-course .motivation .gains {
+    padding-right: 0;
+  }
+
+  #tdd-course .motivation .testimonials p {
+    font-size: 17px;
+    padding-left: 10px;
+  }
+
   /*--
 	wrapper Start 
 --*/
