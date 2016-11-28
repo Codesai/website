@@ -28,9 +28,29 @@
 <script src="/js/plugins.js"></script>
 <script src="/js/min/waypoints.min.js"></script>
 <script src="/js/jquery.counterup.js"></script>
-
+<script src="/js/js-cookie.js"></script>
+<script src="/js/Cookie.js"></script>
 <script src="/js/main.js"></script>
 
+<script>
+$(document).ready(function() {
+  var site = "codesai";
+  var cookie = Cookie(site);
+
+  if (cookie.exists()) {
+    return;
+  }
+  
+  var wantsToGetCookie = confirm("no cookie yet!");
+
+  if (wantsToGetCookie) {
+    console.log("leaving cookie!")
+    cookie.leave();
+  }
+});
+
+
+</script>
 
   </head>
   <body>
@@ -95,6 +115,15 @@
 </section>
 
 <div class="post-area">
+  <a href="/en/2016/11/asi-vivi-codemotion2016" class="bold">Asi Vivi Codemotion2016</a>
+  <p class="post-date">20 November 2016</p>
+  <p>
+    
+
+  </p>
+</div>
+
+<div class="post-area">
   <a href="/en/2016/11/segundo-flejesai-de-2016" class="bold">Segundo Flejesai de 2016</a>
   <p class="post-date">04 November 2016</p>
   <p>
@@ -120,7 +149,7 @@
 
 <div class="post-area">
   <a href="/en/2016/10/refactoring-tests-using-builder-functions-in-clojure-clojureScript" class="bold">Refactoring tests using builder functions in Clojure/ClojureScript</a>
-  <p class="post-date">07 October 2016</p>
+  <p class="post-date">08 October 2016</p>
   <p>
     Using literals in your tests can have some advantages, such as, readability and traceability. While this is true when the data are simple, it’s less so when the data are nested, complex structures. In that case, using literals can hinder refactoring and thus become an obstacle to adapting to changes....
   </p>

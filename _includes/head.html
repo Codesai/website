@@ -24,5 +24,26 @@
 <script src="{{ site.baseurl_root }}/js/plugins.js"></script>
 <script src="{{ site.baseurl_root }}/js/min/waypoints.min.js"></script>
 <script src="{{ site.baseurl_root }}/js/jquery.counterup.js"></script>
-
+<script src="{{ site.baseurl_root }}/js/js-cookie.js"></script>
+<script src="{{ site.baseurl_root }}/js/Cookie.js"></script>
 <script src="{{ site.baseurl_root }}/js/main.js"></script>
+
+<script>
+$(document).ready(function() {
+  var site = "codesai";
+  var cookie = Cookie(site);
+
+  if (cookie.exists()) {
+    return;
+  }
+  
+  var wantsToGetCookie = confirm("no cookie yet!");
+
+  if (wantsToGetCookie) {
+    console.log("leaving cookie!")
+    cookie.leave();
+  }
+});
+
+
+</script>
