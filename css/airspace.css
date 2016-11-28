@@ -106,6 +106,12 @@ header .navbar-default .navbar-nav li a:hover {
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 }
+
+.cookie-message {
+  display: none;
+}
+
+
 /*---------------------------------------------
 					Index Start
 -----------------------------------------------*/
