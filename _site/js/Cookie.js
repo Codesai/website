@@ -1,16 +1,16 @@
 function Cookie(site) {
-  "use strict";
+  'use strict';
 
   return {
     exists: exists,
-    leave: leave
+    save: save
   };
 
   function exists() {
     return Cookies.get(site);
   }
 
-  function leave() {
+  function save() {
     var ONE_HUNDRED_YEARS = 100 * 365;
     Cookies.set(site, true, { expires: ONE_HUNDRED_YEARS });
   }

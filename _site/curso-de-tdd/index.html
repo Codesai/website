@@ -2,54 +2,48 @@
 <html class="no-js">
   <head>
 
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <title>Curso de TDD</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name='description' content=''>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 <!-- CSS -->
-<link rel="stylesheet" href="/css/owl.carousel.css" />
-<link rel="stylesheet" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/css/airspace.css" />
-<link rel="stylesheet" href="/css/style.css" />
-<link rel="stylesheet" href="/css/ionicons.min.css" />
-<link rel="stylesheet" href="/css/animate.css" />
-<link rel="stylesheet" href="/css/responsive.css" />
-<link rel="stylesheet" href="/css/syntax.css" />
+<link rel='stylesheet' href='/css/owl.carousel.css' />
+<link rel='stylesheet' href='/css/bootstrap.min.css' />
+<link rel='stylesheet' href='/css/font-awesome.min.css' />
+<link rel='stylesheet' href='/css/airspace.css' />
+<link rel='stylesheet' href='/css/style.css' />
+<link rel='stylesheet' href='/css/ionicons.min.css' />
+<link rel='stylesheet' href='/css/animate.css' />
+<link rel='stylesheet' href='/css/responsive.css' />
+<link rel='stylesheet' href='/css/syntax.css' />
 
 <!-- Js -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
-<script src="/js/plugins.js"></script>
-<script src="/js/min/waypoints.min.js"></script>
-<script src="/js/jquery.counterup.js"></script>
-<script src="/js/js-cookie.js"></script>
-<script src="/js/Cookie.js"></script>
-<script src="/js/main.js"></script>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script>window.jQuery || document.write('<script src='js/vendor/jquery-1.10.2.min.js'><\/script>')</script>
+<script src='/js/bootstrap.min.js'></script>
+<script src='/js/owl.carousel.min.js'></script>
+<script src='/js/plugins.js'></script>
+<script src='/js/min/waypoints.min.js'></script>
+<script src='/js/jquery.counterup.js'></script>
+<script src='/js/js-cookie.js'></script>
+<script src='/js/Cookie.js'></script>
+<script src='/js/main.js'></script>
 
 <script>
+function saveCookie() {
+  Cookie('codesai').save();
+  $('.cookie-message').hide();
+}
+
 $(document).ready(function() {
-  var site = "codesai";
-  var cookie = Cookie(site);
-
-  if (cookie.exists()) {
+  if (Cookie('codesai').exists()) {
     return;
-  }
-  
-  var wantsToGetCookie = confirm("no cookie yet!");
-
-  if (wantsToGetCookie) {
-    console.log("leaving cookie!")
-    cookie.leave();
-  }
+  } 
+  $('.cookie-message').show();
 });
-
-
 </script>
 
   </head>
@@ -97,6 +91,14 @@ $(document).ready(function() {
         </div>
     </div>
 </header>
+
+<div class="cookie-message">
+    <div class="row">
+        <p>Este sitio web utiliza cookies para que usted tenga la mejor experiencia de usuario. Si continúa navegando está dando su consentimiento para la aceptación de las mencionadas cookies y la aceptación de nuestra <a href="/cookie-policy">política de cookies</a>, pinche el enlace para mayor información.</p>
+        <button class="btn btn-warning" onclick="saveCookie();">Aceptar</button>
+    </div>
+</div>
+
 <!-- header close -->
 
 

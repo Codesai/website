@@ -1,49 +1,43 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name='description' content=''>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 <!-- CSS -->
-<link rel="stylesheet" href="{{ site.baseurl_root }}/css/owl.carousel.css" />
-<link rel="stylesheet" href="{{ site.baseurl_root }}/css/bootstrap.min.css" />
-<link rel="stylesheet" href="{{ site.baseurl_root }}/css/font-awesome.min.css" />
-<link rel="stylesheet" href="{{ site.baseurl_root }}/css/airspace.css" />
-<link rel="stylesheet" href="{{ site.baseurl_root }}/css/style.css" />
-<link rel="stylesheet" href="{{ site.baseurl_root }}/css/ionicons.min.css" />
-<link rel="stylesheet" href="{{ site.baseurl_root }}/css/animate.css" />
-<link rel="stylesheet" href="{{ site.baseurl_root }}/css/responsive.css" />
-<link rel="stylesheet" href="{{ site.baseurl_root }}/css/syntax.css" />
+<link rel='stylesheet' href='{{ site.baseurl_root }}/css/owl.carousel.css' />
+<link rel='stylesheet' href='{{ site.baseurl_root }}/css/bootstrap.min.css' />
+<link rel='stylesheet' href='{{ site.baseurl_root }}/css/font-awesome.min.css' />
+<link rel='stylesheet' href='{{ site.baseurl_root }}/css/airspace.css' />
+<link rel='stylesheet' href='{{ site.baseurl_root }}/css/style.css' />
+<link rel='stylesheet' href='{{ site.baseurl_root }}/css/ionicons.min.css' />
+<link rel='stylesheet' href='{{ site.baseurl_root }}/css/animate.css' />
+<link rel='stylesheet' href='{{ site.baseurl_root }}/css/responsive.css' />
+<link rel='stylesheet' href='{{ site.baseurl_root }}/css/syntax.css' />
 
 <!-- Js -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="{{ site.baseurl_root }}/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl_root }}/js/owl.carousel.min.js"></script>
-<script src="{{ site.baseurl_root }}/js/plugins.js"></script>
-<script src="{{ site.baseurl_root }}/js/min/waypoints.min.js"></script>
-<script src="{{ site.baseurl_root }}/js/jquery.counterup.js"></script>
-<script src="{{ site.baseurl_root }}/js/js-cookie.js"></script>
-<script src="{{ site.baseurl_root }}/js/Cookie.js"></script>
-<script src="{{ site.baseurl_root }}/js/main.js"></script>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script>window.jQuery || document.write('<script src='js/vendor/jquery-1.10.2.min.js'><\/script>')</script>
+<script src='{{ site.baseurl_root }}/js/bootstrap.min.js'></script>
+<script src='{{ site.baseurl_root }}/js/owl.carousel.min.js'></script>
+<script src='{{ site.baseurl_root }}/js/plugins.js'></script>
+<script src='{{ site.baseurl_root }}/js/min/waypoints.min.js'></script>
+<script src='{{ site.baseurl_root }}/js/jquery.counterup.js'></script>
+<script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
+<script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
+<script src='{{ site.baseurl_root }}/js/main.js'></script>
 
 <script>
+function saveCookie() {
+  Cookie('codesai').save();
+  $('.cookie-message').hide();
+}
+
 $(document).ready(function() {
-  var site = "codesai";
-  var cookie = Cookie(site);
-
-  if (cookie.exists()) {
+  if (Cookie('codesai').exists()) {
     return;
-  }
-  
-  var wantsToGetCookie = confirm("no cookie yet!");
-
-  if (wantsToGetCookie) {
-    console.log("leaving cookie!")
-    cookie.leave();
-  }
+  } 
+  $('.cookie-message').show();
 });
-
-
 </script>
