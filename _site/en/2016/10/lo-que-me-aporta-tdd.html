@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+
+    <meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Lo que me aporta TDD</title>
+<meta name='description' content=''>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<!-- CSS -->
+<link rel='stylesheet' href='/css/owl.carousel.css' />
+<link rel='stylesheet' href='/css/bootstrap.min.css' />
+<link rel='stylesheet' href='/css/font-awesome.min.css' />
+<link rel='stylesheet' href='/css/airspace.css' />
+<link rel='stylesheet' href='/css/style.css' />
+<link rel='stylesheet' href='/css/ionicons.min.css' />
+<link rel='stylesheet' href='/css/animate.css' />
+<link rel='stylesheet' href='/css/responsive.css' />
+<link rel='stylesheet' href='/css/syntax.css' />
+
+<!-- Js -->
+<script src='/js/vendor/jquery-1.10.2.min.js'></script>
+<script src='/js/bootstrap.min.js'></script>
+<script src='/js/owl.carousel.min.js'></script>
+<script src='/js/owl.carousel.min.js'></script>
+<script src='/js/plugins.js'></script>
+<script src='/js/min/waypoints.min.js'></script>
+<script src='/js/jquery.counterup.js'></script>
+<script src='/js/js-cookie.js'></script>
+<script src='/js/Cookie.js'></script>
+<script src='/js/main.js'></script>
+
+<script>
+function saveCookie() {
+  Cookie('codesai').save();
+  $('.cookie-message').hide();
+}
+
+$(document).ready(function() {
+  if (Cookie('codesai').exists()) {
+    return;
+  } 
+  $('.cookie-message').show();
+});
+</script>
+
+  </head>
+  <body>
+
+
+    <!-- Header Start -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- header Nav Start -->
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="/en/">
+                                <img src="/img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/en/">Home</a></li>
+                                <li><a href="/en/#team">Team</a></li>
+                                <li><a href="/en/blog">Blog</a></li>
+                                <li><a href="/en/curso-de-tdd">Training</a></li>
+                                <li><a href="/en/nuestros-clientes/">Our Clients</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="cookie-message">
+    <div class="row">
+        <p>Este sitio web utiliza cookies para que usted tenga la mejor experiencia de usuario. Si continúa navegando está dando su consentimiento para la aceptación de las mencionadas cookies y la aceptación de nuestra <a href="/en/cookie-policy">política de cookies</a>, pinche el enlace para mayor información.</p>
+        <button class="btn btn-warning" onclick="saveCookie();">Aceptar</button>
+    </div>
+</div>
+
+<!-- header close -->
+
+
+
+    <div class="post">
+  <!-- Wrapper Start -->
+  <section id="intro" style="border: 1px dotted #ddd;">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="block">
+            <h1>Lo que me aporta TDD</h1>
+            <div class="post-info-wrapper">
+              <p class="italic">By <span class="bold">Carlos Blé</span> on <span class="bold">October 7, 2016</span></p>
+            </div>
+            <hr />
+            <p><p>Hace tiempo que vengo queriendo reescribir nuestro libro de TDD para mejorarlo con todo lo que hemos aprendido en estos 7 años y todo el feedback que hemos recibiendo por parte de los lectores, a los cuales estamos muy agradecidos. Pero no se cuándo me podré sentar durante un puñado de meses a abordar semejante reto.</p>
+<p>Sin embargo, los atículos y críticas destructivas que se leen sobre esta práctica de vez en cuando, tanto en inglés como en castellano, hacen que me apetezca volver a hablar de lo mucho que me aporta esta práctica.</p>
+<p><strong>Lo que me aporta TDD:</strong></p>
+<p>A los programadores nos encanta el <strong>feedback rápido</strong>, todos los que disponemos de algún <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a> en nuestro lenguaje, estamos encantados. En el browser es facilísimo abrir la consola para escribir una línea de JavaScript y averiguar si determinada expresión se evalúa como creemos. Igual pasa con las consolas de Ruby y de Python. Hasta para C# suelo tirar de <a href="http://csharppad.com/">C# Pad</a> muchas veces, y de <em>"Inmmediate Window"</em> en VS. Hacer pruebas rápidas y pequeñas en un REPL es una forma de TDD a mi modo de ver. Te permite avanzar en pequeños pasos seguros. A veces practicando TDD escribo un test que poco más tarde borro, porque lo único que quería era feedback rápido, no pretendía dejar una prueba escrita.</p>
+<p>El otro gran beneficio que obtengo practicando TDD es la <strong>simplicidad</strong>. Soy un experto complicándome la vida, pero gracias a la regla de escribir el código mínimo para que el test pase y nada más, consigo implementaciones mucho más simples de las que me quedaban antes. El prestar mucha atención a las generalizaciones progresivas, como dice <a href="https://en.wikipedia.org/wiki/Transformation_Priority_Premise">Transformation Priority Premise</a>, hace que ahora use más veces la recursividad, en soluciones que naturalmente son recursivas. Antes simplemente me volvía loco con bucles. Un efecto secundario de ir al mínimo es que se me ocurren casos de uso que ni se me habían pasado por la cabeza, a veces casos límite. Es decir que el truco de hackear la implementación para que el test pase me hace ser consciente de casos importantes a cubrir, que quizás nunca hubiese tenido en cuenta. Por tanto me ayuda a encontrar problemas más temprano.</p>
+<p>TDD me obliga a <strong>pensar antes de codificar</strong>. Si escojo un enfoque inside-out, tengo que haber descompuesto muy bien el problema antes para estar seguro que esa pieza de bajo nivel me va a encajar en el puzzle. Si escojo outside-in me obligo a pensar en dependencias, paso de mensajes, diseño orientado a objetos. Pienso que TDD no lleva a un buen diseño por sí, pero teniendo <strong>conocimientos de diseño</strong>, me ayuda a detectar problemas en el mismo. Por ejemplo cuando me cuesta mucho escribir un test, es porque me faltan piezas en el diseño, porque el área que estoy explorando todavía no es la más adecuada, porque estoy introduciendo demasiada complejidad.... lo tomo como una pista para replantearme el camino elegido. Y acompañado además por los micro-commits, puedo volver atrás en cualquier momento y tomar otro camino de la solución.</p>
+<p>JB Rainsberger <a href="http://blog.thecodewhisperer.com/permalink/jmock-v-mockito-but-not-to-the-death">dice por ejemplo</a> que cuando hace TDD prefiere usar mocks en lugar de spies, porque los dolores a la hora de usar dobles son mas evidentes y eso le da más pistas sobre su diseño (ver los comentarios del post).</p>
+<p>Con TDD no me atasco, el avance es constante, me permite entrar en <strong><a href="https://en.wikipedia.org/wiki/Flow_(psychology)">flow</a></strong>. <strong>No tengo que depurar!</strong> practicamente nunca tengo que depurar y cuando esto sucede es otra pista de que he dado un paso demasiado grande a la hora de descomponer el problema o de que necesito descansar porque hay un <em>typo</em> muy chorra que no consigo encontrar.</p>
+<p><strong>No vale para todo:</strong></p>
+<p>Hay muchísimas situaciones en las que no hago TDD, por ejemplo cuando estudio una nueva tecnología o API de un tercero. Todo gira en torno al feedback, la simplicidad y la cadencia. Cuando voy a poderle sacar partido lo uso y cuando no, pues no lo uso. Igual que ocurre con cualquier herramienta de las que tenemos disponibles. A veces al introducir una pequeña funcionalidad en un código existente o al hacer un pequeño cambio, consigo ir más rápido escribiendo el código primero, probando a mano la aplicación y después dejando un test automático de respaldo. Sucede tipicamente en sistemas legacy donde los tests tardan mucho en ejecutarse o es tan dificil de añadir un test que valido la hipótesis primero probando a mano y luego ya agregando el test.</p>
+<p>Y tu que también practicas TDD, ayúdame a recordar más beneficios, deja un comentario please ;-)</p>
+<p>&nbsp;</p>
+</p>
+            
+            
+
+            
+              <div id="disqus_thread"></div>
+              <script>
+                  var disqus_config = function () {
+                      this.page.url = 'https://codesai.aerobatic.io';
+                      this.page.identifier = 'localhost-jekyll-spike';
+                  };
+
+                  (function() {  // DON'T EDIT BELOW THIS LINE
+                      var d = document, s = d.createElement('script');
+                      s.src = '//suui.disqus.com/embed.js';
+                      s.setAttribute('data-timestamp', +new Date());
+                      (d.head || d.body).appendChild(s);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            
+          </div>
+        </div><!-- .col-md-7 close -->
+      </div>
+    </div>
+  </section>
+</div>
+<p class="center-text" style="padding: 30px;">
+  <a href="/en/blog">Back to blog</a>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="logo">
+                    <img src="/img/logo.png">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="contact">
+                    <i class="ion-android-mail"></i>
+                    <a href="mailto:contact@codesai.com">contact@codesai.com</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="social">
+                    <a href="https://twitter.com/codesaidev"><i class="ion-social-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/codesai"><i class="ion-social-linkedin"></i></a>
+                    <a href="https://codesai.aerobatic.io/atom.xml"><i class="ion-social-rss"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </body>
+</html>
