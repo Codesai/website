@@ -111,6 +111,11 @@ font header .navbar-default .navbar-nav li a:hover {
   display: none;
 }
 
+.cookie-message .row {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+}
 
 /*---------------------------------------------
 					Index Start
