@@ -117,6 +117,14 @@ font header .navbar-default .navbar-nav li a:hover {
   align-items: center;
 }
 
+#cookie-policy {
+  padding-top: 50px;
+}
+
+#more-info-cookies {
+  padding-bottom: 50px;
+}
+
 /*---------------------------------------------
 					Index Start
 -----------------------------------------------*/
