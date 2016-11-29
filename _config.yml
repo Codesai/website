@@ -5,6 +5,8 @@ exclude:
   - "README.md"
   - "LICENSE.md"
   - "*.gemspec"
+  - docker-compose.yml
+  - build_for_production.sh
 
 keep_files:
   - "CNAME"

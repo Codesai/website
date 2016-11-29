@@ -29,6 +29,12 @@ To check the name of your docker container you can run `docker ps`, it may be so
 
 If you experience problems with jekyll automatic builds you can start another terminal, navigate to the repository folder and run `jekyll build` on demand.
 
+## To build a version for production
+Run the build_for_production.sh script. 
+
+This script runs jekyll build setting jekyll's environment variable to production (by default it's set to development). 
+
+The Google Analytics tracking code is only rendered for the production version to prevent visits from localhost:4000 messing up our analytics.
 
 ## Jekyll Concepts
 
