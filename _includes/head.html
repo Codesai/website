@@ -41,3 +41,8 @@ $(document).ready(function() {
   $('.cookie-message').show();
 });
 </script>
+
+
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}

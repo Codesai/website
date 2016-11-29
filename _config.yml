@@ -31,7 +31,7 @@ atom_url: https://codesai.aerobatic.io
 markdown: kramdown
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-78350023-1"
 
 # Category descriptions (for archive pages)
 descriptions:
