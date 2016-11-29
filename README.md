@@ -32,9 +32,9 @@ If you experience problems with jekyll automatic builds you can start another te
 ## To build a version for production
 Run the build_for_production.sh script. 
 
-This script runs jekyll build setting jekyll's environment variable to production (by default it's set to development). 
+This script runs jekyll build setting jekyll's `JEKYLL_ENV` environment variable to `production` (by default it's set to `development`). 
 
-The Google Analytics tracking code is only rendered for the production version to prevent visits from localhost:4000 messing up our analytics.
+This way the Google Analytics tracking code is only rendered for the production version and we prevent that visits from localhost:4000 mess up our analytics.
 
 ## Jekyll Concepts
 
