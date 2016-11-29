@@ -27,6 +27,7 @@ cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 permalink: :year/:month/:title
 
+disqus_is_enabled: true
 atom_url: https://codesai.aerobatic.io
 
 # Build settings

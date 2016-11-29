@@ -13,7 +13,6 @@ tags:
 - Learning
 - Tests
 author: Manuel Rivero
-comments : true
 cross_post_url: http://garajeando.blogspot.com.es/2016/10/using-builders-to-remove-duplication-in.html
 ---
 

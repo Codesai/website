@@ -8,7 +8,6 @@ status: publish
 categories: []
 tags: []
 author: Carlos Blé
-comments : true
 ---
 <p>No long ago, we had to write a function that takes an object and returns a string to be sent as part of the query string in the request. This was because the communication mechanism was <a href="https://en.wikipedia.org/wiki/JSONP" target="_blank">JSONP</a> that works via the GET method. The server was already expecting the specific format shown below and we didn't have access to the server in order to change it and accept just an URL-encoded JSON. The fun started when we realised that an object may be a tree structure with nested objects. We test-drove the solution and found it interesting as a code kata. This is the expected behavior of the function:</p>
 

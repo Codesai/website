@@ -1,1 +1,1 @@
-JEKYLL_ENV=production jekyll build
+JEKYLL_ENV=production jekyll build --config=_config.yml

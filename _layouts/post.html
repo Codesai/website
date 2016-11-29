@@ -19,7 +19,7 @@ layout: page
               <p>Publicado originalmente en el blog de <a href="{{ page.cross_post_url }}">{{ page.author }}</a>.</p>
             {% endif %}
 
-            {% if page.comments %}
+            {% if site.disqus_is_enabled %}
               <div id="disqus_thread"></div>
               <script>
                   var disqus_config = function () {
