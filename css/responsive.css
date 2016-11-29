@@ -81,6 +81,11 @@ px      68    160    252    344    436    528    620    712    */
     margin-top: 50px;
   }
 
+  .twitter-embeds .twitter-tweet {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /*--
 	footer Start 
 --*/
@@ -276,6 +281,11 @@ px      68    160    252    */
   #tdd-course .motivation .testimonials p {
     font-size: 17px;
     padding-left: 10px;
+  }
+
+  .twitter-embeds .twitter-tweet {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /*--
