@@ -451,7 +451,7 @@ Bonilla se sube a la palestra y nos cuenta los datos internos económicos de la 
 &lt;p&gt;Sobre si habrá Tarugoconf 2017, dice ahora mismo no le apetece,  pero que sabe que alguien pronunciará las tres palabras mágicas... así que se despidió &lt;strong&gt;&quot;¡Hasta el año que viene!&quot;.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3&gt;Bola extra&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/oyabun&quot; target=&quot;_blank&quot;&gt;Javier Alonso (@oyabun)&lt;/a&gt; hizo un trabajo magistral, haciendo el 'Graphic Recording' de todo el evento. Impresionó a todo el mundo. ¡Gracias y Enhorabuena!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/oyabun/status/776842954606542849&quot;&gt;&lt;img class=&quot;wp-image-3013 alignnone&quot; src=&quot;/assets/graphicrecording.png&quot; alt=&quot;graphicrecording&quot; width=&quot;610&quot; height=&quot;406&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignnone&quot; src=&quot;/assets/graphicrecording.png&quot; alt=&quot;graphicrecording&quot; width=&quot;610&quot; height=&quot;406&quot; /&gt;&lt;/p&gt;
 &lt;h3&gt;&lt;/h3&gt;
 &lt;h3&gt;Feedback&lt;/h3&gt;
 &lt;p&gt;Me acaba de llegar un correo en el que David nos pide feedback, lo dejo por aquí también:&lt;/p&gt;
@@ -811,7 +811,9 @@ Me llevo un buen montón de herramientas.&lt;/p&gt;
       
         <item>
           <title>Antonio de la Torre se une a Codesai</title>
-          <description>&lt;p&gt;&lt;a href=&quot;http://www.codesai.com/wp-content/uploads/2016/08/P1190246.jpg&quot;&gt;&lt;img class=&quot;wp-image-2934 size-large&quot; src=&quot;/assets/P1190246-1024x768.jpg&quot; alt=&quot;Foto de equipo&quot; /&gt;&lt;/a&gt; Miguel, Antonio, Carlos, Jose - Tenerife, Julio 2016&lt;/p&gt;
+          <description>&lt;p&gt;
+  &lt;img class=&quot;size-large&quot; src=&quot;/assets/P1190246-1024x768.jpg&quot; alt=&quot;Foto de equipo&quot; /&gt; Miguel, Antonio, Carlos, Jose - Tenerife, Julio 2016
+&lt;/p&gt;
 &lt;p&gt;Estamos de celebración, super &lt;a href=&quot;https://about.me/adelatorrefoss&quot; target=&quot;_blank&quot;&gt;Antonio de la Torre&lt;/a&gt; forma parte del equipo Codesai desde esta misma semana. Antonio &lt;a href=&quot;https://adelatorrefoss.wordpress.com/2016/07/30/cierre-de-ciclo/&quot; target=&quot;_blank&quot;&gt;ya había decidido&lt;/a&gt; que se volvía a su tierra (Oviedo) con la familia cuando nos encontramos en JSDay 2016 y estuvimos charlando. Me contó sus planes y ví que nos podía encajar muy bien en Codesai, donde necesitabamos crecer en vista de la alianza con Kairós. La actitud de Antonio nos gustó a todo el equipo, su madurez, su empatía y como no, su experiencia con métodos ágiles. Cualquiera que haya hablado un rato con Antonio sabe que tiene una mente abierta y predisposición para ayudar a los demás. Desde el JSDay nos pusimos a trabajar para alinearnos en el plano más técnico. Hicimos una kata de programación en remoto, Antonio se leyó algunos libros que le recomendamos, y encima nos fuimos juntos al evento Software Craftsmanship de Pamplona (donde fuimos compañeros de habitación) y al AOS de Galicia. Tras los eventos, Antonio vino al curso de TDD que impartió Luis en Madrid y a la semana siguiente vino al que impartí yo en Tenerife. Así hicimos entrevista técnica y training, todo en uno, en un proceso que ha durado varios meses. Durante todos estos encuentros, absolutamente todos los miembros del equipo han podido conocer en persona a Antonio, pese a que estamos distribuidos en diferentes provincias. Estamos realmente contentos y nos sentimos afortunados de contar con Antonio en el equipo. Es una nueva etapa que nos hará crecer a todos.&lt;/p&gt;
 &lt;p&gt;El equipo Codesai ha crecido relativamente rápido pero sin buscarlo. Ahora el reto es mantenerlo y hacer más piña cada día. Hacer del equipo un instrumento que ayude a mejorar la industria del desarrollo de software y por qué no, tambien aportar nuestro granito de arena a la sociedad.&lt;/p&gt;
 </description>
@@ -884,15 +886,21 @@ Me llevo un buen montón de herramientas.&lt;/p&gt;
 Los días 1 y 2 de Julio de 2016, la mitad del equipo Codesai estuvimos en el &lt;strong&gt;Open Space&lt;/strong&gt; de la comunidad Agile Spain, el &lt;a href=&quot;http://aos2016.agile-spain.org/&quot;&gt;AOS&lt;/a&gt;. Un evento brillantemente organizado por el capítulo gallego de la comunidad y celebrado en Santiago de Compostela. Enhorabuena a todos los organizadores por una organización perfecta. Muchísimas gracias por hacernos pasar dos días inolvidables. El lugar del evento era espectacular, en plena naturaleza. Las salas de conferencias eran acojonantes, una de ellas era una cueva, ¡literalmente... y chulísima! Hizo un tiempo buenísimo con mucho sol, cosa rara según los lugareños. Tuvimos suerte que todas las sesiones que propusimos fueron votadas y además nos lo pasamos muy bien facilitándolas.&lt;/p&gt;
 &lt;p&gt;
 Primero me tocó a mí con una sesión sobre &lt;strong&gt;Principios y técnicas de diseño de software&lt;/strong&gt;. Puse en la pizarra muchos de los que yo conozco y fuimos complentando con más que los participantes fueron añadiendo. La participación y el buen ambiente hizo que el rato se pasara volando.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://pbs.twimg.com/media/CmWxdHPWcAAzmCb.jpg&quot;&gt;&lt;img class=&quot;aligncenter&quot; src=&quot;/assets/CmWxdHPWcAAzmCb.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;img class=&quot;aligncenter&quot; src=&quot;/assets/CmWxdHPWcAAzmCb.jpg&quot; /&gt;
+&lt;/p&gt;
 &lt;p&gt;
 Gracias a &lt;a href=&quot;https://medium.com/@viroide/road-to-good-coder-9220960f14c5#.ho417c3fy&quot;&gt;Jon. E. Eguiluz que ha escrito sobre la sesión en su blog&lt;/a&gt;, tenemos enlaces a muchos de los temas tratados. Gracias a &lt;a href=&quot;https://twitter.com/manuelkstro&quot;&gt;Manuel Castro&lt;/a&gt; por la foto.&lt;/p&gt;
 &lt;p&gt;
 Muy relacionada con mi sesión, Fran y Alfredo habían preparado otra sobre &lt;a href=&quot;https://en.wikipedia.org/wiki/Connascence_(computer_programming)&quot;&gt;Connascence&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://pbs.twimg.com/media/CmXqHT6XgAA0blx.jpg&quot;&gt;&lt;img class=&quot;aligncenter&quot; src=&quot;/assets/CmXqHT6XgAA0blx.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;img class=&quot;aligncenter&quot; src=&quot;/assets/CmXqHT6XgAA0blx.jpg&quot; /&gt;
+&lt;/p&gt;
 &lt;p&gt;
 Fran, al igual que yo, tenía frío dentro de la cueva y necesitaba el jersey :-). Esta charla seguramente será presentada en más eventos futuros.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://pbs.twimg.com/media/CmYk7aiXYAE4Z7U.jpg&quot;&gt;&lt;img class=&quot;alignright&quot; src=&quot;/assets/CmYk7aiXYAE4Z7U.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;img class=&quot;alignright&quot; src=&quot;/assets/CmYk7aiXYAE4Z7U.jpg&quot; /&gt;
+&lt;/p&gt;
 &lt;p&gt;
 Gracias a &lt;a href=&quot;https://twitter.com/raul_herranz&quot; target=&quot;_blank&quot;&gt;Raul Herranz&lt;/a&gt; por la foto. Al final del día Ronny facilitó una sesión sobre las dificultades a la hora de aprender TDD y sus propios errores durante el proceso de aprendizaje. La sala estaba repleta. En esa sesión estábamos los cuatro y sin haberlo preparado pudimos puntualizar detalles que nos parecían relevantes a unos y otros de forma muy amena al menos para mí.&lt;/p&gt;
 &lt;p&gt;
@@ -917,9 +925,23 @@ Hay muchísimos eventos y muy buenos. Creo que por el hecho de conocer a mucha g
           <description>&lt;p&gt;&lt;strong&gt;Notición!&lt;/strong&gt; Nos asociamos con Kairós!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Estamos de enhorabuena&lt;/strong&gt;, el equipazo de &lt;em&gt;&lt;a href=&quot;http://kairosds.com/ target=&quot;&gt;Kairós DS&lt;/a&gt; se convierte en partner de Codesai&lt;/em&gt; adquiriendo una parte de la empresa.&lt;/p&gt;
 &lt;p&gt;En los últimos meses nos habíamos cruzado por múltiples caminos. A nosotros nos hablaban muy bien de Kairós y teníamos buenos amigos allí como &lt;a href=&quot;https://twitter.com/HelderDOliveira&quot;&gt;Helder de Oliveira&lt;/a&gt; que de paso nos daba a conocer en Kairós. Aprovechamos la ocasión para agradecerle a Helder su confianza y su apoyo, tanto a Codesai como a toda la comunidad Software Craftsmanship. Sin quererlo incluso acabamos llegando al mismo cliente desde diferentes perspectivas.&lt;/p&gt;
-&lt;p&gt;Esta unión es una alianza estratégica: Codesai aporta su experiencia en desarrollo con XP, en testing, en el cuidado de la calidad y la mantenibilidad del software. La experiencia con formación técnica y mentoring.&lt;br /&gt;
-&lt;img src=&quot;/assets/kairosds400x400.jpg&quot;/&gt;&lt;br /&gt;
-&lt;strong&gt;Kairós&lt;/strong&gt; aporta su &lt;strong&gt;experiencia en transformación digital en grandes organizaciones&lt;/strong&gt;, su &lt;strong&gt;gran equipo&lt;/strong&gt; de Agile Coaching, el know-how en &lt;strong&gt;grandes proyectos&lt;/strong&gt; para banca y la capacidad de llegar a clientes de un tamaño que hasta ahora era inaccesible para Codesai. Es un win-win evidente.&lt;/p&gt;
+&lt;p&gt;
+Esta unión es una alianza estratégica: Codesai aporta su experiencia en desarrollo con XP, en testing, en el cuidado de la calidad y la mantenibilidad del software. La experiencia con formación técnica y mentoring.
+&lt;/p&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row row-centered&quot;&gt;
+    &lt;div class=&quot;col-md-3 kairos-logo-container&quot;&gt;
+      &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/kairosds400x400.jpg&quot; alt=&quot;kairos_logo&quot; style=&quot;width: 50%; height: 50%&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-9&quot;&gt;
+      &lt;p&gt;
+          &lt;strong&gt;Kairós&lt;/strong&gt; aporta su &lt;strong&gt;experiencia en transformación digital en grandes organizaciones&lt;/strong&gt;, su &lt;strong&gt;gran equipo&lt;/strong&gt; de Agile Coaching, el know-how en &lt;strong&gt;grandes proyectos&lt;/strong&gt; para banca y la capacidad de llegar a clientes de un tamaño que hasta ahora era inaccesible para Codesai. Es un win-win evidente.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;p&gt;&lt;strong&gt;Compartimos la oficina en &lt;a href=&quot;https://www.google.es/maps/place/Calle+de+Claudio+Coello,+78,+28001+Madrid/@40.4301529,-3.6878677,17z/data=!3m1!4b1!4m5!3m4!1s0xd42289448065b3b:0xbb9d75b79f81fb22!8m2!3d40.4301529!4d-3.685679https://www.google.es/maps/place/Calle+de+Claudio+Coello,+78,+28001+Madrid/@40.4301529,-3.6878677,17z/data=!3m1!4b1!4m5!3m4!1s0xd42289448065b3b:0xbb9d75b79f81fb22!8m2!3d40.4301529!4d-3.685679&quot;&gt;Madrid en la calle Claudio Coello, 78.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Esta alianza no cambia nuestros valores ni principios, ni la forma en que trabajamos. Lo que nos permite es crecer&lt;/strong&gt; a un tamaño suficiente para que cualquier tipo de empresa pueda contar con nosotros. Nuestro catalogo de servicios crece, &lt;strong&gt;ampliamos la oferta para nuestros clientes manteniendo el nivel de calidad.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Los vamos a celebrar con varios &lt;strong&gt;eventos en la oficina: un curso técnico en abierto a finales de Julio, un evento de comunidad y otro de networking con nuestros clientes y amigos.&lt;/strong&gt;&lt;/p&gt;
@@ -934,13 +956,19 @@ Hay muchísimos eventos y muy buenos. Creo que por el hecho de conocer a mucha g
       
         <item>
           <title>Estuvimos en Pamplona Software Craftsmanship 2016</title>
-          <description>&lt;p&gt;&lt;a href=&quot;http://www.codesai.com/wp-content/uploads/2016/06/ClVQUOAWYAQopZv.jpg&quot;&gt;&lt;img class=&quot;wp-image-2868 size-large alignleft&quot; src=&quot;/assets/ClVQUOAWYAQopZv-1024x768.jpg&quot; alt=&quot;Gorka, Pablo e Iker en la apertura&quot; /&gt;&lt;/a&gt; &lt;strong&gt;Gorka, Pablo e Iker en la apertura&lt;/strong&gt;&lt;/p&gt;
+          <description>&lt;p&gt;
+  &lt;img class=&quot;size-large alignleft&quot; src=&quot;/assets/ClVQUOAWYAQopZv-1024x768.jpg&quot; alt=&quot;Gorka, Pablo e Iker en la apertura&quot; /&gt; 
+  &lt;strong&gt;Gorka, Pablo e Iker en la apertura&lt;/strong&gt;
+&lt;/p&gt;
 &lt;p&gt;El pasado fin de semana, 17 y 18 de Junio, buena parte del equipo Codesai estuvo en &lt;a href=&quot;http://pamplonaswcraft.com/&quot; target=&quot;_blank&quot;&gt;Pamplona Software Craftsmanship 2016&lt;/a&gt;. Eventazo de categoría. Este evento fue organizado por Iker, Gorka y Pablo, los artesanos de &lt;a href=&quot;http://540deg.com/&quot; target=&quot;_blank&quot;&gt;540deg&lt;/a&gt;. Ellos se inspiraron en Socrates Canaries 2016, evento que tuvo lugar en Las Palmas en Marzo. Vinieron al evento y en las conversaciones de pasillo y bar se animaron a montar un evento similar en su tierra. Poco después nos llegó invitación para ser ponentes en el evento. Y lógicamente con lo majos que son no pudimos negarnos. Y menos mal porque ha sido un evento muy bueno. A diferencia de Socrates que es 100% open space, el de Pamplona sí tenía algunos speakers invitados además de haber lugar para open space. Con la agenda de eventos tan apretada que tenemos, invitarnos directamente fue una buena forma de asegurarse nuestra participación por lo que estamos doblemente agradecidos. El hashtag fue &lt;a href=&quot;https://twitter.com/search?q=scpna&quot;&gt;#scpna&lt;/a&gt;, a través del cual pueden encontrarse fotos y comentarios realizados en vivo.&lt;/p&gt;
 &lt;p&gt;En el tren coincidimos unos cuantos amigos en la cafetería y pudimos comprobar que los de Renfe no están bien preparados para la ocasión porque se les acabó la cerveza antes de llegar a Pamplona :-D&lt;/p&gt;
 &lt;p&gt;Muy buen ambiente desde el viaje, aprovechando además para conocer a los demás ponentes y participantes. Al llegar nos encontramos con un montón de amigos para cenar y nos dieron las tantas.&lt;/p&gt;
 &lt;p&gt;Tanto Alfredo como Modesto como yo, contamos con una hora entera como ponentes. En mi caso quise convertir la sesión en un coloquio donde la gente pudiera dar feedback y el nivel de participación fue muy bueno. El tiempo se me hizo cortísimo. La mitad de las cosas que quería contar se quedaron fuera y es que nunca antes había contado todas estas cosas y no había tenido oportunidad de medir los tiempos. Mi buen amigo Antonio de la Torre me comentó que me faltó una conclusión al estilo &quot;call to action&quot;,  comentario que agradezco mucho. Cualquier otro feedback es bienvenido. La mayoría de las sesiones las grabaron entre el Planetario y &lt;a href=&quot;http://codely.tv/&quot;&gt;Codely.tv&lt;/a&gt;, y estoy deseando verlas porque me perdí 4 charlas que me interesaban un montón, un poquito a sabiendas de que eran en la mejor sala para ser grabadas y confiando en que la grabación será buena. Así que estoy deseando que las publiquen.&lt;/p&gt;
 &lt;p&gt;El open space tuvo un alto nivel de participación con sesiones muy interesantes, era dificil escoger a qué sesión entrar. Fue estupendo reencontrarse con amigos que llevaba años sin ver y desvirtualizar a grandes profesionales compañeros del gremio que ya seguía por las redes. Fue estupendo conocer a más cracks de &lt;a href=&quot;http://karumi.com/&quot;&gt;Karumi&lt;/a&gt; (que por cierto a la charla de Pedro Gómez sí que pude ir y me encantó) y a parte de &lt;a href=&quot;http://www.47deg.com/&quot;&gt;47deg&lt;/a&gt;. Algunos slots me los perdí mientras hablaba con gente por los pasillos, cosa que sucede mucho en los open space, que las conversaciones son una parte muy muy enriquecedora del evento. Lo más difícil del open space es vencer la sensación de impotencia de no poder estar en todos sitios a la vez. En el segundo día lo conseguí y me eché una siesta despues de comer que me permitió luego casi empatar la cena de cierre con mi vuelo de amanecida. Y es que la organización del evento lo hizo todo a la perfección, hasta el último momento. Son grandísimos anfitriones. Y lo más llamativo es que nunca les vi nerviosos, estan tranquilotes y disfrutando del evento. Me llamó muchísimo la atención que en la zona de encuentro, además de haber cafés, zumos y fruta, había un grifo de cerveza y tambien cervezas patrocinadas por 47deg. Cerveza disponible casi las 24 horas :-D&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.codesai.com/wp-content/uploads/2016/06/ClTN8YmXEAAxxaZ.jpg&quot;&gt;&lt;img class=&quot;wp-image-2870 size-large aligncenter&quot; src=&quot;/assets/ClTN8YmXEAAxxaZ-1024x276.jpg&quot; alt=&quot;Retrospectiva final&quot; /&gt;&lt;/a&gt; &lt;strong&gt;Retrospectiva final&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+  &lt;img class=&quot;size-large aligncenter&quot; src=&quot;/assets/ClTN8YmXEAAxxaZ-1024x276.jpg&quot; alt=&quot;Retrospectiva final&quot; /&gt;
+  &lt;strong&gt;Retrospectiva final&lt;/strong&gt;
+&lt;/p&gt;
 &lt;p&gt;Fue curioso que en la retrospectiva del primer día a penas hubieron puntos a mejorar y los pocos que salieron estaban corregidos al día siguiente. Por lo tanto en la retrospectiva de cierre no hubo ni un solo punto común de mejora a destacar. Una organización brillantísima, excepcional.&lt;/p&gt;
 &lt;p&gt;Como parte del open space tuve ocasión de facilitar un taller de refactoring de 2 horas donde practicamos Parallel Change y Narrow Change, el mismo que habíamos hecho Pawel Duda y yo en Socrates con alguna mejora. Fue muy divertido, gracias a todos por participar en el taller.&lt;/p&gt;
 &lt;p&gt;Estoy muy contento de ver que tanto Ronny como Miguel y Dani, nuestros aprendices, propusieron varias sesiones en el open space y que además salieron votadas y se desarrollaron muy bien. Da gusto ver a la gente joven progresar.&lt;/p&gt;
