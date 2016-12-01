@@ -129,6 +129,22 @@ $(document).ready(function() {
             
 
             
+              <div id="disqus_thread"></div>
+              <script>
+                  var disqus_config = function () {
+                      this.page.url = 'https://codesai.aerobatic.io';
+                      this.page.identifier = 'localhost-jekyll-spike';
+                  };
+
+                  (function() {  // DON'T EDIT BELOW THIS LINE
+                      var d = document, s = d.createElement('script');
+                      s.src = '//suui.disqus.com/embed.js';
+                      s.setAttribute('data-timestamp', +new Date());
+                      (d.head || d.body).appendChild(s);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            
           </div>
         </div>
       </div>
@@ -160,7 +176,10 @@ $(document).ready(function() {
             <div class="col-md-4 col-sm-6">
                 <div class="contact">
                     <i class="ion-android-mail"></i>
-                    <a href="mailto:contact@codesai.com">contact@codesai.com</a>
+                    <script type="text/javascript">// <![CDATA[
+                        var a='contact', b='codesai', c='.com'; document.write('<a hre'+'f="mai'+'lto:' + a +'@' + b + c + '">'); document.write(a +'@' + b+c+'</a>');
+                    // ]]&gt;</script>
+
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
