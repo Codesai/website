@@ -44,6 +44,6 @@ $(document).ready(function() {
 </script>
 
 
-{% if jekyll.environment == 'production' %}
+{% if site.deploy_environment == 'production' %}
 {% include analytics.html %}
 {% endif %}

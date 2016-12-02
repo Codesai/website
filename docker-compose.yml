@@ -2,7 +2,7 @@ version: '2'
 services:
     web:
         image: jekyll/jekyll:pages
-        command: jekyll serve --force_polling --config=_config.yml,_local_config.yml
+        command: ./scripts/development_build.sh
         ports:
             - "4000:4000"
         volumes:
