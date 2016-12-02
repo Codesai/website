@@ -1,13 +1,5 @@
-.kairos-logo-container .img-responsive {
-	margin: 0 auto;
-}
-
-.post {
-  padding: 20px 0;
-}
-
 .post .content {
-	padding: 0 140px;
+	padding: 20px 140px;
 	font-size: 15px;
 }
 
