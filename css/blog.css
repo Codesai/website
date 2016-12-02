@@ -20,6 +20,11 @@
 	padding: 20px;
 }
 
+.post .content figcaption {
+	width: 100%;
+	padding: 0 20px;
+}
+
 .post .twitter-embeds {
 	padding: 10px 0;
 }
@@ -32,6 +37,10 @@
 	}
 
 	.post .content img {
+		padding: 0px;
+	}
+
+	.post .content figcaption {
 		padding: 0px;
 	}
 
@@ -49,6 +58,10 @@
 	}
 
 	.post .content img {
+		padding: 0px;
+	}
+
+	.post .content figcaption {
 		padding: 0px;
 	}
 
