@@ -29,6 +29,21 @@
 	padding: 10px 0;
 }
 
+.post ul {
+	padding: 0 20px;
+}
+
+.post ul li {
+    list-style-type: disc;
+}
+
+.post ul ul {
+    padding: 0 20px;
+}
+
+.post ul ul li {
+    list-style-type: circle;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
