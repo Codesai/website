@@ -1,3 +1,67 @@
 .kairos-logo-container .img-responsive {
-  margin: 0 auto;
+	margin: 0 auto;
+}
+
+.post {
+  padding: 20px 0;
+}
+
+.post .content {
+	padding: 0 140px;
+	font-size: 15px;
+}
+
+.post h2 {
+	padding-top: 35px;
+	line-height: 27px;
+	margin: 0;
+}
+
+.post .content p {
+	color: #111;
+  	padding-top: 10px;
+	text-align: justify;	
+}
+
+.post .content img {
+	width: 100%;
+	padding: 20px;
+}
+
+.post .twitter-embeds {
+	padding: 10px 0;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.post .content {
+		padding: 0 20px;
+	}
+
+	.post .content img {
+		padding: 0px;
+	}
+
+	.twitter-embeds .twitter-tweet {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	.post .content {
+		padding: 0 20px;
+	}
+
+	.post .content img {
+		padding: 0px;
+	}
+
+	.twitter-embeds .twitter-tweet {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
