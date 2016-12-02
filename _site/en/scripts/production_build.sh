@@ -1,1 +1,0 @@
-jekyll serve --force_polling --config=_config.yml
