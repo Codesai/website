@@ -173,33 +173,7 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
   letter-spacing: 3px;
 }
-/*--
-	wrapper Start
---*/
-#intro {
-  padding: 100px 0;
-}
-#intro .block h2 {
-  padding-top: 35px;
-  line-height: 27px;
-  margin: 0;
-}
-#intro .block p {
-  color: #111;
-  padding-top: 20px;
-}
-#intro .block img {
-  width: 100%;
-}
-#intro .section-title {
-  margin-bottom: 0px;
-}
-#intro .section-title p {
-  padding-top: 20px;
-}
-/*--
-	service Start
---*/
+
 #service {
   text-align: center;
   padding: 40px 0 60px 0;
