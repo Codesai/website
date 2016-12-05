@@ -14,6 +14,12 @@ meta:
   cwp_meta_box_check: 'No'
 author: Carlos Blé
 ---
+
+<figure>
+    <img src="/assets/flejesai.jpeg" alt="team" /> 
+    <figcaption></figcaption>
+</figure>
+
 <p>
   En Codesai somos un equipo distribuido. Actualmente trabajamos desde Gran Canaria, Tenerife, Barcelona, Madrid y Oviedo. Hacemos pair programming remoto, mob programming y videoconferencias semanales pero aún es muy importante reunirnos fisicamente un par de veces al año. La primera reunión fue en Las Palmas en Marzo de 2016. Nos sirvió para alinearnos, definir formas de trabajar, tomar decisiones y sobre todo compartir y hacer equipo. Esta segunda edición ha sido también en Las Palmas, los días 27 y 28 de octubre de 2016. El sitio de reunión ha sido espectacular, la sala de formación de la Galería de Arte de Manuel Ojeda, en Triana. Aprovechamos para agradecer a Manuel y Daniel Ojeda esta oportunidad, su amabilidad y su confianza.
 </p>
@@ -93,3 +99,8 @@ No queremos crecer en número, crecer por crecer no es ningún objetivo. Pero si
 <p>
   Estos encuentros semestrales son muy motivadores. Ya tenemos ganas del próximo.
 </p>
+
+<figure>
+    <img src="/assets/miguel_currando_en_flejesai.jpeg" alt="team" /> 
+    <figcaption></figcaption>
+</figure>
