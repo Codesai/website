@@ -1,3 +1,8 @@
+.post-img {
+	padding: 10px 10px;
+	margin: 10px 10px;
+}
+
 .post .content {
 	padding: 20px 140px;
 	font-size: 15px;
@@ -11,7 +16,7 @@
 
 .post .content p {
 	color: #111;
-  	padding-top: 10px;
+  padding-top: 10px;
 	text-align: justify;	
 }
 
@@ -34,11 +39,11 @@
 }
 
 .post ul li {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 .post ul ul {
-    padding: 0 20px;
+	padding: 0 20px;
 }
 
 .post ul ul li {
