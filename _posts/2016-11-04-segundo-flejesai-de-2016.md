@@ -19,7 +19,7 @@ author: Carlos Blé
 </p>
 
 <p>
-  Inicialmente esto se llamaba Codesai Summit pero como ahora somos muchos (un <a href="http://www.academiacanarialengua.org/palabra/fleje/">fleje</a>), pues se nos ocurrió renombrarlo a Flejesai. Aunque fleje se usa más en la provincia de Las Palmas que en la de Santa Cruz, aceptamos la palabra como canario interinsular :-)
+  Inicialmente esto se llamaba Codesai Summit pero como ahora somos muchos (un <a href="http://www.academiacanarialengua.org/palabra/fleje/" target="_blank">fleje</a>), pues se nos ocurrió renombrarlo a Flejesai. Aunque fleje se usa más en la provincia de Las Palmas que en la de Santa Cruz, aceptamos la palabra como canario interinsular :-)
 </p>
 
 <p>
@@ -48,15 +48,48 @@ author: Carlos Blé
   </ul>
 </p>
 
-<p>En la sesión quedó claro que queremos desarrollar nuevos cursos de formación para armar un catálogo completo. Ya estamos trabajando en ello, recogiendo piedras de conocimiento para luego hacer las composiciones.</p>
-<p>Todos pensamos que la web debe expresar mejor lo que hacemos y ser un lugar donde aglutinar nuestras publicaciones, queremos mejorarla. Es muy posible que dejemos wordpress por algo mas simple.</p>
-<p>Hemos decidido dejar de utilizar las categorías de Craftsman, Journeyman, Apprentice, Junio y Senior para referirnos a lo que somos, tanto en la web como en las propuestas a clientes. Aunque a priori nos sentimos identificados con la metáfora de la artesanía del software, preferimos que la gente se haga una idea de nosotros a través de nuestros propios principios y valores.</p>
-<p>En las propuestas a proyectos para clientes no enviaremos a individuos sino como mínimo parejas. Los costes serán por tanto por parejas o grupos más grandes pero no por persona. Realmente no necesitamos categorizar a nadie. Y queremos trabajar en pares o en grupo como lo venimos haciendo.</p>
-<p>Queremos seguir teniendo presencia en eventos importantes de la comunidad, incluso dar el salto a eventos de fuera como SocratesUK. Organizar una nueva edición de Socrates Canaries nos ilusiona.</p>
-<p>Queremos balancear la carga entre trabajo de mentor y desarrollador. Nos gusta el desarrollo de producto y por eso buscamos disponer de más días donde somos desarrolladores y no mentores. Nos encanta hacer formación y mentoring pero no que sea lo mayoritario.</p>
-<p>Queremos mejorar nuestro conocimiento en el paradigma funcional porque pensamos que puede mejorar la calidad de los productos que hacemos. Mantenernos al día con nuevas tecnologías, por ejemplo temas como React y Redux. Practicar más con arquitecturas como CQRS, Event Sourcing, modelo de actores...</p>
-<p>Seguir dándole cuerpo a nuestro programa de aprendices y dar la bienvenida a nuevos aprendices, y si conseguimos que sean chicas mucho mejor.<br />
-No queremos crecer en número, crecer por crecer no es ningún objetivo. Pero si llega un momento en que nos sentimos cómodos y nos queremos comprometer a tener un nuevo compañero, pues nos gustaría que fuese una compañera.</p>
-<p>Durante el evento aparte de pasar todo el día juntos, tuvimos largas cenas y sesiones nocturnas de charlas técnicas y no tan técnicas hasta la madrugada, donde pudimos compartir conocimiento, que es una de las cosas que más nos gusta del grupo. Echarnos unas risas juntos y algo de trolleo entre nosotros pero en plan sanote.</p>
-<p>Hicimos retrospectiva, con un formato muy abierto donde todo el mundo podía expresar su punto de vista y nos ha salido una buena lista de acciones a realizar. Todo queda apuntado para revisarlo periódicamente y cuando nos juntemos en el próximo semestre mirar atrás y ver el avance.</p>
-<p>Estos encuentros semestrales son altamente motivadores. Ya tenemos ganas del próximo.</p>
+<p
+>En la sesión quedó claro que queremos desarrollar nuevos cursos de formación para armar un catálogo completo. Ya estamos trabajando en ello, recogiendo piedras de conocimiento para luego hacer las composiciones.
+</p>
+
+<p>
+  Todos pensamos que la web debe expresar mejor lo que hacemos y ser un lugar donde aglutinar nuestras publicaciones, queremos mejorarla. Es muy posible que dejemos wordpress por algo mas simple.
+</p>
+
+<p>
+  Hemos decidido dejar de utilizar las categorías de Craftsman, Journeyman, Apprentice, Junio y Senior para referirnos a lo que somos, tanto en la web como en las propuestas a clientes. Aunque a priori nos sentimos identificados con la metáfora de la artesanía del software, preferimos que la gente se haga una idea de nosotros a través de nuestros propios principios y valores.
+</p>
+
+<p>
+  En las propuestas a proyectos para clientes no enviaremos a individuos sino como mínimo parejas. Los costes serán por tanto por parejas o grupos más grandes pero no por persona. Realmente no necesitamos categorizar a nadie. Y queremos trabajar en pares o en grupo como lo venimos haciendo.
+</p>
+
+<p>
+  Queremos seguir teniendo presencia en eventos importantes de la comunidad, incluso dar el salto a eventos de fuera como <a href="http://socratesuk.org/" target="_blank">SocratesUK</a>. Organizar una nueva edición de Socrates Canaries nos ilusiona.
+</p>
+
+<p>
+  Queremos balancear la carga entre trabajo de mentor y desarrollador. Nos gusta el desarrollo de producto y por eso buscamos disponer de más días donde somos desarrolladores y no mentores. Nos encanta hacer formación y mentoring pero no que sea lo mayoritario.
+</p>
+
+<p>
+  Queremos mejorar nuestro conocimiento en el paradigma funcional porque pensamos que puede mejorar la calidad de los productos que hacemos. Mantenernos al día con nuevas tecnologías, por ejemplo temas como React y Redux. Practicar más con arquitecturas como CQRS, Event Sourcing, modelo de actores...
+</p>
+
+<p>
+  Seguir dándole cuerpo a nuestro programa de aprendices y dar la bienvenida a nuevos aprendices, y si conseguimos que sean chicas mucho mejor.
+  <br />
+No queremos crecer en número, crecer por crecer no es ningún objetivo. Pero si llega un momento en que nos sentimos cómodos y nos queremos comprometer a tener un nuevo compañero, pues nos gustaría que fuese una compañera.
+</p>
+
+<p>
+  Durante el evento aparte de pasar todo el día juntos, tuvimos largas cenas y sesiones nocturnas de charlas técnicas y no tan técnicas hasta la madrugada, donde pudimos compartir conocimiento, que es una de las cosas que más nos gusta del grupo. Echarnos unas risas juntos y algo de trolleo entre nosotros pero en plan sanote.
+</p>
+
+<p>
+  Hicimos retrospectiva, con un formato muy abierto donde todo el mundo podía expresar su punto de vista y nos ha salido una buena lista de acciones a realizar. Todo queda apuntado para revisarlo periódicamente y cuando nos juntemos en el próximo semestre mirar atrás y ver el avance.
+</p>
+
+<p>
+  Estos encuentros semestrales son muy motivadores. Ya tenemos ganas del próximo.
+</p>
