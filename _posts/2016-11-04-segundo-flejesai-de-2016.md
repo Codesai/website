@@ -25,7 +25,7 @@ author: Carlos Blé
 </p>
 
 <p>
-  Inicialmente esto se llamaba Codesai Summit pero como ahora somos muchos (un <a href="http://www.academiacanarialengua.org/palabra/fleje/" target="_blank">fleje</a>), pues se nos ocurrió renombrarlo a Flejesai. Aunque fleje se usa más en la provincia de Las Palmas que en la de Santa Cruz, aceptamos la palabra como canario interinsular :-)
+  Inicialmente esto se llamaba Codesai Summit pero como ahora somos muchos (un <a href="http://www.academiacanarialengua.org/palabra/fleje/" >fleje</a>), pues se nos ocurrió renombrarlo a Flejesai. Aunque fleje se usa más en la provincia de Las Palmas que en la de Santa Cruz, aceptamos la palabra como canario interinsular :-)
 </p>
 
 <p>
@@ -71,7 +71,7 @@ author: Carlos Blé
 </p>
 
 <p>
-  Queremos seguir teniendo presencia en eventos importantes de la comunidad, incluso dar el salto a eventos de fuera como <a href="http://socratesuk.org/" target="_blank">SocratesUK</a>. Organizar una nueva edición de Socrates Canaries nos ilusiona.
+  Queremos seguir teniendo presencia en eventos importantes de la comunidad, incluso dar el salto a eventos de fuera como <a href="http://socratesuk.org/" >SocratesUK</a>. Organizar una nueva edición de Socrates Canaries nos ilusiona.
 </p>
 
 <p>
