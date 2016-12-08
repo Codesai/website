@@ -16,7 +16,7 @@ author: Carlos Blé
 ---
 
 <figure>
-    <img src="/assets/flejesai.jpeg" alt="team" /> 
+    <img src="/assets/flejesai.jpg" alt="team" /> 
     <figcaption></figcaption>
 </figure>
 
@@ -29,7 +29,16 @@ author: Carlos Blé
 </p>
 
 <p>
-  Fue genial contar con Antonio como facilitador durante los dos días de evento, para ponerle foco y sacar todos los temas que queríamos. El jueves facilitó la dinámica <em>Remember the Future</em> donde imaginando que nos encontrábamos 12 meses en el futuro, hablábamos de esos últimos 12 meses como si fueran el pasado. Cada uno tuvo su turno de reflexión y luego de exposición. Alguno tuvo tiempo de escribir El Quijote en 5 minutos. Esto nos permitió a todos expresar metas y objetivos para el año. Ver en qué grado compartimos la visión y en qué grado es divergente. Posteriormente nos quedamos con los puntos más interesantes de todos los que salieron y nos pusimos a analizar juntos el por qué de esos objetivos. Este ejercicio nos sirvió para poner encima de la mesa nuestros valores y principios. Aunque sentimos que compartimos muchos valores y principios, hacerlo explícito nos ayudó a definir y aclarar ideas. A continuación nuestros <strong>principios y valores</strong> sin ningún tipo de orden de aparición:
+  Fue genial contar con Antonio como facilitador durante los dos días de evento, para ponerle foco y sacar todos los temas que queríamos. El jueves facilitó la dinámica <em>Remember the Future</em> donde imaginando que nos encontrábamos 12 meses en el futuro, hablábamos de esos últimos 12 meses como si fueran el pasado. Cada uno tuvo su turno de reflexión y luego de exposición. Alguno tuvo tiempo de escribir El Quijote en 5 minutos. Esto nos permitió a todos expresar metas y objetivos para el año. Ver en qué grado compartimos la visión y en qué grado es divergente. Posteriormente nos quedamos con los puntos más interesantes de todos los que salieron y nos pusimos a analizar juntos el por qué de esos objetivos. Este ejercicio nos sirvió para poner encima de la mesa nuestros valores y principios. Aunque sentimos que compartimos muchos valores y principios, hacerlo explícito nos ayudó a definir y aclarar ideas. 
+</p>
+
+<figure>
+    <img src="/assets/flejesai_reflexion.jpg" alt="team_reflexion" /> 
+    <figcaption></figcaption>
+</figure>
+
+<p>
+  A continuación nuestros <strong>principios y valores</strong> sin ningún tipo de orden de aparición:
   
   <ul>
     <li> Trabajamos con entrega, lo mejor que sabemos haberlo, aportando el máximo valor que somos capaces.</li>
@@ -101,6 +110,6 @@ No queremos crecer en número, crecer por crecer no es ningún objetivo. Pero si
 </p>
 
 <figure>
-    <img src="/assets/miguel_currando_en_flejesai.jpeg" alt="team" /> 
+    <img src="/assets/flejesai_miguel_currando.jpg" alt="team" /> 
     <figcaption></figcaption>
 </figure>
