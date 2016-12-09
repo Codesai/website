@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Estuvimos en Ve Interactive
-date: 2016-12-07 18:25:00.000000000 +01:00
+date: 2016-12-09 10:25:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -11,6 +11,7 @@ categories:
 tags: []
 author: Manuel Rivero
 ---
+
 
 Hace unas semanas [Luis Rovirosa](https://twitter.com/luisrovirosa) y yo impartimos una formación de TDD en las oficinas de [Ve Interactive en Bilbao](https://twitter.com/veinteractivebi).
 
