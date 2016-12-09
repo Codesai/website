@@ -34,7 +34,7 @@ In that case, using literals can hinder refactoring and thus become an obstacle 
 
 <p>
   This is an example of a test using literals, (from a ClojureScript application
-using <a href="https://github.com/Day8/re-frame" target="_blank">re-frame</a>, I'm developing with my colleague <a href="https://twitter.com/zesc" target="_blank">Francesc</a>), to prepare the <i>application state</i> (usually called <i>db</i> in <a href="https://github.com/Day8/re-frame" target="_blank">re-frame</a>):
+using <a href="https://github.com/Day8/re-frame" >re-frame</a>, I'm developing with my colleague <a href="https://twitter.com/zesc" >Francesc</a>), to prepare the <i>application state</i> (usually called <i>db</i> in <a href="https://github.com/Day8/re-frame" >re-frame</a>):
 </p>
 
 <script src="https://gist.github.com/trikitrok/50a48e7899ba820ca140835112e8ad0b.js"></script>
@@ -60,15 +60,15 @@ using <a href="https://github.com/Day8/re-frame" target="_blank">re-frame</a>, I
 </p>
 
 <p> 
-  A nice way of achieving this goal in object-oriented code, and at the same time making your tests code more readable, is by using <a href="http://www.natpryce.com/articles/000714.html" target="_blank">test data builders</a> which use the <a href="https://en.wikipedia.org/wiki/Builder_pattern" target="_blank">builder pattern</a>, but how can we do these <i>builders</i> in Clojure?
+  A nice way of achieving this goal in object-oriented code, and at the same time making your tests code more readable, is by using <a href="http://www.natpryce.com/articles/000714.html" >test data builders</a> which use the <a href="https://en.wikipedia.org/wiki/Builder_pattern" >builder pattern</a>, but how can we do these <i>builders</i> in Clojure?
 </p>
 
 <p>
-  <a href="https://aphyr.com/posts/321-builders-vs-option-maps" target="_blank">Option maps or function with keyword arguments are a nice alternative</a> to traditional builders in dynamic languages such as Ruby or Python.
+  <a href="https://aphyr.com/posts/321-builders-vs-option-maps" >Option maps or function with keyword arguments are a nice alternative</a> to traditional builders in dynamic languages such as Ruby or Python.
 </p>
 
 <p>
-  <a href="http://stackoverflow.com/questions/12633670/whats-the-clojure-way-to-builder-pattern" target="_blank">In Clojure we can compose <i>functions with keyword arguments</i> to get very readable builders</a> that also hide the representation of the data.
+  <a href="http://stackoverflow.com/questions/12633670/whats-the-clojure-way-to-builder-pattern" >In Clojure we can compose <i>functions with keyword arguments</i> to get very readable builders</a> that also hide the representation of the data.
 </p>
 
 <p>
@@ -84,7 +84,7 @@ using <a href="https://github.com/Day8/re-frame" target="_blank">re-frame</a>, I
 <script src="https://gist.github.com/trikitrok/1832b30d4a397acc0d24c3659edf1161.js"></script>
 
 <p>
-  which is using <a href="http://clojure.org/guides/destructuring" target="_blank">associative destructuring</a> on the function's optional arguments to have a function with keyword arguments, and creating proper default values using the <i>:or keyword</i> (have a look at the <a href="https://gist.github.com/trikitrok/e24b0a8ecacf8c1ae726" target="_blank">material of a talk about destructuring I did some time ago</a> for <a href="http://www.meetup.com/ClojureBCN/" target="_blank">Clojure Barcelona Developers community</a>).
+  which is using <a href="http://clojure.org/guides/destructuring" >associative destructuring</a> on the function's optional arguments to have a function with keyword arguments, and creating proper default values using the <i>:or keyword</i> (have a look at the <a href="https://gist.github.com/trikitrok/e24b0a8ecacf8c1ae726" >material of a talk about destructuring I did some time ago</a> for <a href="http://www.meetup.com/ClojureBCN/" >Clojure Barcelona Developers community</a>).
 </p>
 
 <p>

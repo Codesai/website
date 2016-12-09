@@ -15,7 +15,7 @@ meta:
 author: Modesto San Juan
 ---
 <p>
-  Hace unos días <a href="https://twitter.com/Pablyte/status/754056720666730500" target="_blank">Pablo Iglesias</a> <a href="https://twitter.com/Pablyte/status/754056720666730500" target="_blank">tuiteó</a> una pregunta de Stack Exchange en la que hablaban sobre la inmutabilidad de las claves primarias. Se generó un debate bastante interesante en Twitter que se extendió más allá de la cuestión de la inmutabilidad. Este es un intento de recopilar y explicar algunos de los conceptos que se mencionaron durante ese debate.
+  Hace unos días <a href="https://twitter.com/Pablyte/status/754056720666730500" >Pablo Iglesias</a> <a href="https://twitter.com/Pablyte/status/754056720666730500" >tuiteó</a> una pregunta de Stack Exchange en la que hablaban sobre la inmutabilidad de las claves primarias. Se generó un debate bastante interesante en Twitter que se extendió más allá de la cuestión de la inmutabilidad. Este es un intento de recopilar y explicar algunos de los conceptos que se mencionaron durante ese debate.
 </p>
 
 <h1>Claves primarias mutables o inmutables</h1>
@@ -40,7 +40,7 @@ author: Modesto San Juan
 <p>Aunque siempre pongo un gran "depende" y no soy muy amigo de las afirmaciones absolutas, la realidad es que llevo años utilizando claves subrogadas porque la experiencia me ha demostrado que suele ser una mala idea utilizar datos del negocio. La razón es muy sencilla: el negocio cambia.
 </p>
 
-<p>Ejemplos hay miles. Por tomar uno, <a href="https://twitter.com/panicoenlaxbox" target="_blank">Sergio León</a> mencionaba los ISBN de los libros. Desarrollando un software para gestionar liberías podríamos pensar que el ISBN debería valernos, pero los libros muy viejos no tienen ISBN. Así que si de repente al librero le diese por dedicarse a vender libros antiguos de colección, tendríamos un problema importante. Ese tipo de situaciones se dan con mucha frecuencia y siempre cuando el desarrollo ya está bastante avanzado, que es cuando más daño hacen.
+<p>Ejemplos hay miles. Por tomar uno, <a href="https://twitter.com/panicoenlaxbox" >Sergio León</a> mencionaba los ISBN de los libros. Desarrollando un software para gestionar liberías podríamos pensar que el ISBN debería valernos, pero los libros muy viejos no tienen ISBN. Así que si de repente al librero le diese por dedicarse a vender libros antiguos de colección, tendríamos un problema importante. Ese tipo de situaciones se dan con mucha frecuencia y siempre cuando el desarrollo ya está bastante avanzado, que es cuando más daño hacen.
 </p>
 
 <p>
@@ -48,7 +48,7 @@ author: Modesto San Juan
 </p>
 
 <p>
-  Además, como indicaba <a href="https://twitter.com/pmolinam" target="_blank">Pedro J. Molina</a>, "Si vas por clave natural acaba uno fácilmente con claves compuestas. Las de 4 campos ya no hacen gracia". Pero es que encima eso termina tocando mucho las narices cuando llega el momento de "enchufarte" a otras cosas. Es típico que el servicio que te permite asociar comentarios, likes, etc. te pida que le des un identificador único de tu entidad y nos podríamos volver locos buscando ejemplos que nos llevan a desear trabajar siempre con una clave subrogada.
+  Además, como indicaba <a href="https://twitter.com/pmolinam" >Pedro J. Molina</a>, "Si vas por clave natural acaba uno fácilmente con claves compuestas. Las de 4 campos ya no hacen gracia". Pero es que encima eso termina tocando mucho las narices cuando llega el momento de "enchufarte" a otras cosas. Es típico que el servicio que te permite asociar comentarios, likes, etc. te pida que le des un identificador único de tu entidad y nos podríamos volver locos buscando ejemplos que nos llevan a desear trabajar siempre con una clave subrogada.
 </p>
 
 <h2>Generación de las claves subrogadas</h2>
@@ -78,11 +78,11 @@ author: Modesto San Juan
 </p>
 
 <p>
-  Por supuesto, también tiene sus contras, entre ellos que un Guid ocupa muchísimo más que una clave numérica y además <a href="http://sqlmag.com/database-performance-tuning/clustered-indexes-based-upon-guids" target="_blank">afecta negativamente</a> al rendimiento de los índices clustered.
+  Por supuesto, también tiene sus contras, entre ellos que un Guid ocupa muchísimo más que una clave numérica y además <a href="http://sqlmag.com/database-performance-tuning/clustered-indexes-based-upon-guids" >afecta negativamente</a> al rendimiento de los índices clustered.
 </p>
 
 <p>
-  Hay mucha literatura sobre este tema en internet, incluyendo algunos intentos de análisis sobre la diferencia desde el punto de vista de rendimiento. Además debemos tener en cuenta que la implementación de base de datos que utilicemos influye muchísimo. Como ejemplo, no es lo mismo usar <a href="http://krow.livejournal.com/497839.html" target="_blank">MySQL</a> que <a href="http://www.informit.com/articles/printerfriendly/25862" target="_blank">SQL Server</a>.
+  Hay mucha literatura sobre este tema en internet, incluyendo algunos intentos de análisis sobre la diferencia desde el punto de vista de rendimiento. Además debemos tener en cuenta que la implementación de base de datos que utilicemos influye muchísimo. Como ejemplo, no es lo mismo usar <a href="http://krow.livejournal.com/497839.html" >MySQL</a> que <a href="http://www.informit.com/articles/printerfriendly/25862" >SQL Server</a>.
 </p>
 
 <h3>Numérico autoincrementado</h3>
@@ -128,7 +128,7 @@ author: Modesto San Juan
 <h3>CQS</h3>
 
 <p>
-  Si queremos usar <a href="http://martinfowler.com/bliki/CommandQuerySeparation.html" target="_blank">CQS</a> (Command-Query Separation) partimos del principio de que nuestros comandos no devuelven nada. Si tenemos un comando que inserta una entidad, deberíamos saber el id de la entidad que estamos insertando antes de llamar al propio comando, ya que el comando no va a devolvernos nada.
+  Si queremos usar <a href="http://martinfowler.com/bliki/CommandQuerySeparation.html" >CQS</a> (Command-Query Separation) partimos del principio de que nuestros comandos no devuelven nada. Si tenemos un comando que inserta una entidad, deberíamos saber el id de la entidad que estamos insertando antes de llamar al propio comando, ya que el comando no va a devolvernos nada.
 </p>
 
 <p>
@@ -166,5 +166,5 @@ author: Modesto San Juan
 </p>
 
 <p>
-  <a href="http://www.modestosanjuan.com/claves-primarias-inmutabilidad-y-generacion/" target="_blank">Este post es un cross-posting de mi blog.</a>
+  <a href="http://www.modestosanjuan.com/claves-primarias-inmutabilidad-y-generacion/" >Este post es un cross-posting de mi blog.</a>
 </p>

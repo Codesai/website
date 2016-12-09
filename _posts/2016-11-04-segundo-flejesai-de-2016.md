@@ -14,16 +14,31 @@ meta:
   cwp_meta_box_check: 'No'
 author: Carlos Blé
 ---
+
+<figure>
+    <img src="/assets/flejesai.jpg" alt="team" /> 
+    <figcaption></figcaption>
+</figure>
+
 <p>
   En Codesai somos un equipo distribuido. Actualmente trabajamos desde Gran Canaria, Tenerife, Barcelona, Madrid y Oviedo. Hacemos pair programming remoto, mob programming y videoconferencias semanales pero aún es muy importante reunirnos fisicamente un par de veces al año. La primera reunión fue en Las Palmas en Marzo de 2016. Nos sirvió para alinearnos, definir formas de trabajar, tomar decisiones y sobre todo compartir y hacer equipo. Esta segunda edición ha sido también en Las Palmas, los días 27 y 28 de octubre de 2016. El sitio de reunión ha sido espectacular, la sala de formación de la Galería de Arte de Manuel Ojeda, en Triana. Aprovechamos para agradecer a Manuel y Daniel Ojeda esta oportunidad, su amabilidad y su confianza.
 </p>
 
 <p>
-  Inicialmente esto se llamaba Codesai Summit pero como ahora somos muchos (un <a href="http://www.academiacanarialengua.org/palabra/fleje/" target="_blank">fleje</a>), pues se nos ocurrió renombrarlo a Flejesai. Aunque fleje se usa más en la provincia de Las Palmas que en la de Santa Cruz, aceptamos la palabra como canario interinsular :-)
+  Inicialmente esto se llamaba Codesai Summit pero como ahora somos muchos (un <a href="http://www.academiacanarialengua.org/palabra/fleje/" >fleje</a>), pues se nos ocurrió renombrarlo a Flejesai. Aunque fleje se usa más en la provincia de Las Palmas que en la de Santa Cruz, aceptamos la palabra como canario interinsular :-)
 </p>
 
 <p>
-  Fue genial contar con Antonio como facilitador durante los dos días de evento, para ponerle foco y sacar todos los temas que queríamos. El jueves facilitó la dinámica <em>Remember the Future</em> donde imaginando que nos encontrábamos 12 meses en el futuro, hablábamos de esos últimos 12 meses como si fueran el pasado. Cada uno tuvo su turno de reflexión y luego de exposición. Alguno tuvo tiempo de escribir El Quijote en 5 minutos. Esto nos permitió a todos expresar metas y objetivos para el año. Ver en qué grado compartimos la visión y en qué grado es divergente. Posteriormente nos quedamos con los puntos más interesantes de todos los que salieron y nos pusimos a analizar juntos el por qué de esos objetivos. Este ejercicio nos sirvió para poner encima de la mesa nuestros valores y principios. Aunque sentimos que compartimos muchos valores y principios, hacerlo explícito nos ayudó a definir y aclarar ideas. A continuación nuestros <strong>principios y valores</strong> sin ningún tipo de orden de aparición:
+  Fue genial contar con Antonio como facilitador durante los dos días de evento, para ponerle foco y sacar todos los temas que queríamos. El jueves facilitó la dinámica <em>Remember the Future</em> donde imaginando que nos encontrábamos 12 meses en el futuro, hablábamos de esos últimos 12 meses como si fueran el pasado. Cada uno tuvo su turno de reflexión y luego de exposición. Alguno tuvo tiempo de escribir El Quijote en 5 minutos. Esto nos permitió a todos expresar metas y objetivos para el año. Ver en qué grado compartimos la visión y en qué grado es divergente. Posteriormente nos quedamos con los puntos más interesantes de todos los que salieron y nos pusimos a analizar juntos el por qué de esos objetivos. Este ejercicio nos sirvió para poner encima de la mesa nuestros valores y principios. Aunque sentimos que compartimos muchos valores y principios, hacerlo explícito nos ayudó a definir y aclarar ideas. 
+</p>
+
+<figure>
+    <img src="/assets/flejesai_reflexion.jpg" alt="team_reflexion" /> 
+    <figcaption></figcaption>
+</figure>
+
+<p>
+  A continuación nuestros <strong>principios y valores</strong> sin ningún tipo de orden de aparición:
   
   <ul>
     <li> Trabajamos con entrega, lo mejor que sabemos haberlo, aportando el máximo valor que somos capaces.</li>
@@ -65,7 +80,7 @@ author: Carlos Blé
 </p>
 
 <p>
-  Queremos seguir teniendo presencia en eventos importantes de la comunidad, incluso dar el salto a eventos de fuera como <a href="http://socratesuk.org/" target="_blank">SocratesUK</a>. Organizar una nueva edición de Socrates Canaries nos ilusiona.
+  Queremos seguir teniendo presencia en eventos importantes de la comunidad, incluso dar el salto a eventos de fuera como <a href="http://socratesuk.org/" >SocratesUK</a>. Organizar una nueva edición de Socrates Canaries nos ilusiona.
 </p>
 
 <p>
@@ -93,3 +108,8 @@ No queremos crecer en número, crecer por crecer no es ningún objetivo. Pero si
 <p>
   Estos encuentros semestrales son muy motivadores. Ya tenemos ganas del próximo.
 </p>
+
+<figure>
+    <img src="/assets/flejesai_miguel_currando.jpg" alt="team" /> 
+    <figcaption></figcaption>
+</figure>
