@@ -1,28 +1,16 @@
 ---
 layout: post
 title: An example of Connascence of Position
-date: 2016-12-04 12:15:14.0 +00:00
+date: 2016-12-10 10:15:14.0 +00:00
 type: post
 published: true
 status: publish
 tags:
-- Obeject Oriented Design
+- Object Oriented Design
 - Connascence
 - Refactoring
 author: Francisco Reyes & Manuel Rivero
 ---
-
-## Connascence
-
-As [Meilir Page-Jones](https://www.linkedin.com/in/meilir-page-jones-a55132) defines it in [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8), 
-
-> Connascence between two software elements A and B means either
->
-> 1. that you can postulate some change to A that would require B to be changed (or at least carefully checked) in order to preserve overall correctness, or
->
-> 2. that you can postulate some change that would require both A and B to be changed together in order to preserve overall correctness.
-
-* blabla we believe that sometimes connascence might be a better metric for coupling than the somewhat fuzzy concept of code smells.
 
 ## Connascence of Position (CoP)
 
