@@ -34,3 +34,28 @@ To make clear what we understood by those terms, we'll use the definitions from 
 Page-Jones blabla
 
 * blabla we believe that sometimes connascence might be a better metric for coupling than the somewhat fuzzy concept of code smells.
+
+* There are several types of **static connascence**:
+  
+  * Connascence of Name (CoN): when multiple components must agree on the name of an entity.
+
+  * Connascence of Type (CoT): when multiple components must agree on the type of an entity.
+
+  * Connascence of Convention (CoC)
+  
+  * Connascence of Meaning (CoM): when multiple components must agree on the meaning of specific values.
+  
+  * Connascence of Position (CoP): when multiple components must agree on the order of values.
+  
+  * Connascence of Algorithm (CoA): when multiple components must agree on a particular algorithm.
+
+* There are also several types of **dynamic connascence**:
+  
+  * Connascence of Execution (order) (CoE): when the order of execution of multiple components is important.
+  
+  * Connascence of Timing (CoTm): when the timing of the execution of multiple components is important.
+
+  * Connascence of Value (CoV)
+  
+  * Connascence of Identity (CoI): when multiple components must reference the entity.
+
