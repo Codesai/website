@@ -60,7 +60,7 @@ Page-Jones blabla
   * Connascence of Identity (CoI): when multiple components must reference the entity.
 
 <figure>
-    <img src="/assets/connascence.png" alt="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" title="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" style="width: 70%; height: 70%" />
+    <img src="/assets/connascence.png" alt="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" title="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" style="width: 50%; height: 50%" />
     <figcaption>
       <strong>Connascence Types sorted by descending degree of coupling (from <a href="https://silkandspinach.net/author/kevinrutherford/">Kevin Rutherford</a>).</strong>
     </figcaption>
