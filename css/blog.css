@@ -70,6 +70,10 @@
     list-style-type: circle;
 }
 
+.post .foot-note {
+	font-size: 11px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 	.post .content {
