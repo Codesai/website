@@ -15,10 +15,12 @@
 	color: #0D0017;
 }
 
-.post-area img {
+.post-area .small-image {
 	width: 100%;
-	max-width: 240px;
-	max-height: 180px;
+	height: 180px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .post .content {
@@ -98,11 +100,7 @@
 
 	.post-area .small-image {
 		text-align: center;
-	}
-
-	.post-area img {
-		padding-bottom: 20px;
-		width: 75%;
+		margin-bottom: 20px;
 	}
 
 	.post-area .title a {
