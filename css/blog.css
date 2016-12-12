@@ -1,6 +1,22 @@
-.post-img {
-	padding: 10px 10px;
-	margin: 10px 10px;
+.post-area {
+	padding: 40px;
+	width: 100%;
+	min-height: 150px;
+	background-color: white;
+	border-bottom: 1px dotted #ddd;
+}
+
+.post-area a:link, .post-area a:visited {
+	font-size: 30px;
+	color: #333;
+}
+
+.post-area a:hover {
+	color: #0D0017;
+}
+
+.post-area img {
+	width: 100%;
 }
 
 .post .content {
@@ -72,6 +88,24 @@
 
 
 @media only screen and (max-width: 767px) {
+
+	.post-area {
+		padding: 40px 10px;
+		text-align: justify;
+	}
+
+	.post-area .small-image {
+		text-align: center;
+	}
+
+	.post-area img {
+		padding-bottom: 20px;
+		width: 75%;
+	}
+
+	.post-area .title a {
+		font-size: 22px;
+	}
 
 	.post .content {
 		padding: 0 20px;
