@@ -10,17 +10,17 @@ permalink: /blog/
 		<div class="post-area">
 			
 				<div class="row">
-					<div class="col-md-2 col-sm-3">
+					<div class="col-md-3 col-sm-3">
 						<div class="small-image">
 							{% if post.small_image %}
 								<img src="/assets/{{ post.small_image }}" alt="{{ page.title }}">
 							{% else %}
-								<img src="/img/logo.svg" alt="{{ page.title }}">
+								<img src="/img/logo.svg" style="width: 75%" alt="{{ page.title }}">
 							{% endif %}
 						</div>
 					</div>
 
-					<div class="col-md-10 col-sm-9">
+					<div class="col-md-9 col-sm-9">
 						<div class="title">
 							<a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
 						</div>
