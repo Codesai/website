@@ -10,16 +10,20 @@ permalink: /blog/
 		<div class="post-area">
 			
 				<div class="row">
-					<div class="col-md-2">
-						{% if post.small_image %}
-							<img src="/assets/{{ post.small_image }}" alt="{{ page.title }}">
-						{% else %}
-							<img src="/img/logo.svg" alt="{{ page.title }}">
-						{% endif %}
+					<div class="col-md-2 col-sm-2">
+						<div class="small-image">
+							{% if post.small_image %}
+								<img src="/assets/{{ post.small_image }}" alt="{{ page.title }}">
+							{% else %}
+								<img src="/img/logo.svg" alt="{{ page.title }}">
+							{% endif %}
+						</div>
 					</div>
 
-					<div class="col-md-10">
-						<a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+					<div class="col-md-10 col-sm-10">
+						<div class="title">
+							<a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+						</div>
 						<p class="post-date">{{ post.date | date: "%d/%m/%Y" }}</p>
 						<p>
 							{{ post.content | strip_html | truncatewords: 50 }}

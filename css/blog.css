@@ -89,6 +89,24 @@
 
 @media only screen and (max-width: 767px) {
 
+	.post-area {
+		padding: 40px 10px;
+		text-align: justify;
+	}
+
+	.post-area .small-image {
+		text-align: center;
+	}
+
+	.post-area img {
+		padding-bottom: 20px;
+		width: 75%;
+	}
+
+	.post-area .title a {
+		font-size: 22px;
+	}
+
 	.post .content {
 		padding: 0 20px;
 	}
