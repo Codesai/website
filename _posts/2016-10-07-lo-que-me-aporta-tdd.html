@@ -13,6 +13,7 @@ meta:
   cwp_meta_box_check: 'No'
   _icl_lang_duplicate_of: '3070'
 author: Carlos Blé
+small_image: tdd-simple.svg
 ---
 <p>
   Hace tiempo que vengo queriendo reescribir nuestro libro de TDD para mejorarlo con todo lo que hemos aprendido en estos 7 años y todo el feedback que hemos recibiendo por parte de los lectores, a los cuales estamos muy agradecidos. Pero no se cuándo me podré sentar durante un puñado de meses a abordar semejante reto.
@@ -28,9 +29,19 @@ author: Carlos Blé
   A los programadores nos encanta el <strong>feedback rápido</strong>, todos los que disponemos de algún <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" >REPL</a> en nuestro lenguaje, estamos encantados. En el browser es facilísimo abrir la consola para escribir una línea de JavaScript y averiguar si determinada expresión se evalúa como creemos. Igual pasa con las consolas de Ruby y de Python. Hasta para C# suelo tirar de <a href="http://csharppad.com/" >C# Pad</a> muchas veces, y de <em>"Inmmediate Window"</em> en VS. Hacer pruebas rápidas y pequeñas en un REPL es una forma de TDD a mi modo de ver. Te permite avanzar en pequeños pasos seguros. A veces practicando TDD escribo un test que poco más tarde borro, porque lo único que quería era feedback rápido, no pretendía dejar una prueba escrita.
 </p>
 
-<p>
-  El otro gran beneficio que obtengo practicando TDD es la <strong>simplicidad</strong>. Soy un experto complicándome la vida, pero gracias a la regla de escribir el código mínimo para que el test pase y nada más, consigo implementaciones mucho más simples de las que me quedaban antes. El prestar mucha atención a las generalizaciones progresivas, como dice <a href="https://en.wikipedia.org/wiki/Transformation_Priority_Premise" >Transformation Priority Premise</a>, hace que ahora use más veces la recursividad, en soluciones que naturalmente son recursivas. Antes simplemente me volvía loco con bucles. Un efecto secundario de ir al mínimo es que se me ocurren casos de uso que ni se me habían pasado por la cabeza, a veces casos límite. Es decir que el truco de hackear la implementación para que el test pase me hace ser consciente de casos importantes a cubrir, que quizás nunca hubiese tenido en cuenta. Por tanto me ayuda a encontrar problemas más temprano.
-</p>
+<div class="row">
+  <div class="col-md-5">
+    <figure>
+      <img src="/assets/tdd-simple.svg" alt="TDD Cycle"/> 
+      <figcaption><strong>TDD Cycle<sup>1</sup></strong></figcaption>
+    </figure>
+  </div>
+  <div class="col-md-7">
+    <p>
+      El otro gran beneficio que obtengo practicando TDD es la <strong>simplicidad</strong>. Soy un experto complicándome la vida, pero gracias a la regla de escribir el código mínimo para que el test pase y nada más, consigo implementaciones mucho más simples de las que me quedaban antes. El prestar mucha atención a las generalizaciones progresivas, como dice <a href="https://en.wikipedia.org/wiki/Transformation_Priority_Premise" >Transformation Priority Premise</a>, hace que ahora use más veces la recursividad, en soluciones que naturalmente son recursivas. Antes simplemente me volvía loco con bucles. Un efecto secundario de ir al mínimo es que se me ocurren casos de uso que ni se me habían pasado por la cabeza, a veces casos límite. Es decir que el truco de hackear la implementación para que el test pase me hace ser consciente de casos importantes a cubrir, que quizás nunca hubiese tenido en cuenta. Por tanto me ayuda a encontrar problemas más temprano.
+    </p>
+  </div>
+</div>
 
 <p>
   TDD me obliga a <strong>pensar antes de codificar</strong>. Si escojo un enfoque inside-out, tengo que haber descompuesto muy bien el problema antes para estar seguro que esa pieza de bajo nivel me va a encajar en el puzzle. Si escojo outside-in me obligo a pensar en dependencias, paso de mensajes, diseño orientado a objetos. Pienso que TDD no lleva a un buen diseño por sí, pero teniendo <strong>conocimientos de diseño</strong>, me ayuda a detectar problemas en el mismo. Por ejemplo cuando me cuesta mucho escribir un test, es porque me faltan piezas en el diseño, porque el área que estoy explorando todavía no es la más adecuada, porque estoy introduciendo demasiada complejidad.... lo tomo como una pista para replantearme el camino elegido. Y acompañado además por los micro-commits, puedo volver atrás en cualquier momento y tomar otro camino de la solución.
@@ -53,3 +64,9 @@ author: Carlos Blé
 <p>
   Y tu que también practicas TDD, ayúdame a recordar más beneficios, deja un comentario please ;-)
 </p>
+
+<br/> 
+
+<div class="foot-note">
+  <sup>1</sup>Figure from Growing Object-Oriented Software by Nat Pryce and Steve Freeman.
+</div>
