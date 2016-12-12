@@ -1,6 +1,22 @@
-.post-img {
-	padding: 10px 10px;
-	margin: 10px 10px;
+.post-area {
+	padding: 40px;
+	width: 100%;
+	min-height: 150px;
+	background-color: white;
+	border-bottom: 1px dotted #ddd;
+}
+
+.post-area a:link, .post-area a:visited {
+	font-size: 30px;
+	color: #333;
+}
+
+.post-area a:hover {
+	color: #0D0017;
+}
+
+.post-area img {
+	width: 100%;
 }
 
 .post .content {
