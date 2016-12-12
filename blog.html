@@ -10,7 +10,7 @@ permalink: /blog/
 		<div class="post-area">
 			
 				<div class="row">
-					<div class="col-md-2 col-sm-2">
+					<div class="col-md-2 col-sm-3">
 						<div class="small-image">
 							{% if post.small_image %}
 								<img src="/assets/{{ post.small_image }}" alt="{{ page.title }}">
@@ -20,7 +20,7 @@ permalink: /blog/
 						</div>
 					</div>
 
-					<div class="col-md-10 col-sm-10">
+					<div class="col-md-10 col-sm-9">
 						<div class="title">
 							<a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
 						</div>
