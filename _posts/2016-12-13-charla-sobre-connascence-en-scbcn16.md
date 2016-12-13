@@ -14,7 +14,7 @@ categories:
 tags: []
 meta:
 author: Fran Reyes & Alfredo Casado
-small_image: small_scbcn16.jpg
+small_image: connascence.png
 ---
 
 El pasado Octubre [Fran](https://twitter.com/fran_reyes) y [yo](https://twitter.com/AlfredoCasado) preparamos una charla para la [Software Craftsmanship Barcelona 2016](/2016/11/estuvimos-en-la-software-craftsmanship-bcn-2016) explicando el concepto de [connascence](https://en.wikipedia.org/wiki/Connascence_(computer_programming)).
@@ -26,3 +26,7 @@ Ahora acaba de salir el video de la charla:
 Estas son [las slides que utilizamos](http://slides.com/franreyesperdomo/connascence#/).
 
 Espero que les resulte tan interesante como a nosotros.
+
+<div class="foot-note">
+  Usamos la imagen de tipos de connascence de <a href="https://silkandspinach.net/">Kevin Rutherford</a>.
+</div>
