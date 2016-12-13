@@ -74,6 +74,20 @@
 	font-size: 11px;
 }
 
+.post .back-to-blog {
+	padding: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.post .back-to-blog a {
+	padding: 8px 20px;
+	border-bottom: 1px solid #428bca;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 	.post .content {
