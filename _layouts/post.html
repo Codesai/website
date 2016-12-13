@@ -12,35 +12,35 @@ layout: page
                 <hr/>
                 
                 {{ content }}
+
+                {% if page.cross_post_url %}
+                    <p>Publicado originalmente en <a href="{{ page.cross_post_url }}">el blog de {{ page.author }}</a>.</p>
+                {% endif %}
+
+                <div class="back-to-blog">
+                    <a href="/blog">Volver al blog</a>
+                </div>
+
+                {% if site.disqus_is_enabled %}
+                    <div id="disqus_thread"></div>
+
+                    <script>
+                        var disqus_config = function () {
+                            this.page.url = 'https://codesai.aerobatic.io';
+                            this.page.identifier = 'localhost-jekyll-spike';
+                        };
+
+                        (function() {  // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = '//suui.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                {% endif %}
             </div>
-
-            {% if page.cross_post_url %}
-                <p>Publicado originalmente en el blog de <a href="{{ page.cross_post_url }}">{{ page.author }}</a>.</p>
-            {% endif %}
-            
-            {% if site.disqus_is_enabled %}
-                <div id="disqus_thread"></div>
-
-                <script>
-                    var disqus_config = function () {
-                        this.page.url = 'https://codesai.aerobatic.io';
-                        this.page.identifier = 'localhost-jekyll-spike';
-                    };
-
-                    (function() {  // DON'T EDIT BELOW THIS LINE
-                        var d = document, s = d.createElement('script');
-                        s.src = '//suui.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-            {% endif %}
         </div>
     </div>
 </div>
-
-<p class="center-text" style="padding: 30px;">
-    <a href="/blog">Volver al blog</a>
-</p>
