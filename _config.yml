@@ -46,3 +46,17 @@ descriptions:
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
 environment: production
+
+clients:
+    - name: Grupo Domingo Alonso
+      url: https://www.aidacanarias.com/
+      logo: ../img/logos/domingo_alonso.png
+      description: clients/domingo_alonso.html
+    - name: TheMotion
+      url: https://www.themotion.com/
+      logo: ../img/logos/dummy.png
+      description: clients/dummy.html
+    - name: Besepa
+      url: http://www.besepa.com/
+      logo: ../img/logos/dummy.png
+      description: clients/dummy.html

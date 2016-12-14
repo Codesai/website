@@ -1,0 +1,61 @@
+#clients {
+    padding: 40px 30px;
+}
+
+#clients .section-title-custom {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+#clients .client {
+    padding-top: 80px;
+}
+
+#clients .logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 180px;
+}
+
+#clients .client-name {
+    font-size: 2em;
+    letter-spacing: 0.04em;
+}
+
+#clients .client-name a {
+    color: #111;
+}
+
+#clients .client-name a:hover {
+    color: #7fa52b;
+}
+
+#clients .underline {
+    margin-top: 8px;
+    height: 2px;
+    background: #7fa52b;
+    width: 50%;
+}
+
+#clients .description {
+    padding-top: 20px;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    text-align: justify;
+}
+
+#clients .more-info {
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+}

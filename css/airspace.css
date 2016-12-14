@@ -449,30 +449,6 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
 }
 
-/* Clients */
-
-#clients {
-  text-align: center;
-}
-
-#clients section {
-  padding: 40px 0 60px 0;
-}
-
-#clients .introduction .text {
-  text-align: justify;
-}
-
-#clients ul {
-  text-align: left;
-  list-style: disc;
-  padding: 2px 0 0 30px;
-}
-
-#clients ul li {
-  padding: 2px 0;
-}
-
 /*--
 	Feature Start
 --*/
