@@ -54,13 +54,13 @@ clients:
       description: clients/domingo_alonso.html
     - name: TheMotion
       url: https://www.themotion.com/
-      logo: ../img/logos/dummy.png
+      logo: ../img/logos/the_motion.png
       description: clients/the_motion.html
     - name: La Casa de Mis Primos
       url: http://www.lacasademisprimos.com/
-      logo: ../img/logos/dummy.png
+      logo: ../img/logos/lcdmp.jpg
       description: clients/la_casa_de_mis_primos.html
     - name: Besepa
       url: http://www.besepa.com/
-      logo: ../img/logos/dummy.png
+      logo: ../img/logos/besepa.png
       description: clients/besepa.html
