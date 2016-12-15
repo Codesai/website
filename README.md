@@ -3,20 +3,32 @@
 Jekyll based website for Codesai
 
 
-## Setup
+# Setup
 
-### Docker
+## Docker
 
 1. Clone the repository
 2. Navigate to the repository folder in a terminal
 3. Run `docker-compose up`
 4. You may access the local website at `localhost:4000`
 5. Start coding and jekyll will automatically build after you save changes
+6. If you modify `.yml` files, you need to either restart the docker container (`Ctrl+C, docker-compose up` again) or start another terminal and type `docker exec -it {name} bash` to get a terminal inside the container. Once there, type `jekyll build` so it will build the site taking the changes to the `.yml` files. This is because the docker container is executing `jekyll serve` which doesn't get the `.yml` changes.
 
-If you experience problems with jekyll automatic builds you can start another terminal and run `docker exec -it {name} bash`. You may now use `jekyll build` on demand.
-To check the name of your docker container you can run `docker ps`, it may be something like {name_of_jekyll_folder}_web_1.
+**Remember:** If you experience other problems with jekyll automatic builds you can always start another terminal and run `docker exec -it {name} bash`. You may now use `jekyll build` and other jekyll commands on demand.
+To check the name of your docker container you can run `docker ps`, it should be something like {name_of_jekyll_folder}_web_1.
 
-### Your own environment
+### How it works
+
+We are using native Docker, [check how to install it on different operating systems](https://docs.docker.com/engine/getstarted/step_one/#step-1-get-docker). If you are looking for a quick introduction to Docker be sure to follow the Getting Started documentation for your OS, it's pretty good.
+
+Once everything is setup in your machine, notice the `docker-compose.yml` file in the root of the repository folder. This file is used to execute the docker container with the official jekyll image when typing the `docker-compose up` command in the terminal. With the docker compose file we avoid having to type the full command everytime we want to execute the container. It can also be used to execute multiple containers at once, but we're not going to such lengths.
+
+Reading through the docker compose file, we have a web service executing the jekyll/jekyll:pages official image, accessed through the localhost:4000 port (jekyll's default). The port is mapped, you can change it if you want to. The volume shared to the docker container is the current one (the `.` is mapped to `/srv/jekyll`, the internal container folder where our site is located).
+
+Finally, the command being executed is `jekyll serve --force_polling --config=_config.yml,_local_config.yml` located inside the `/scripts/development_build.sh` file. This command watches for changes to rebuild the site. `--force_polling` is needed for the watcher to work on Windows. `--config` is set to the `_config.yml` and overriden by the `_local_config.yml`, which means the values for the duplicated keys in the local config will take precedence.
+
+
+## Your own environment
 
 1. Clone the repository
 2. Install ruby
