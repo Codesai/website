@@ -1,0 +1,20 @@
+<div id="lcdmp">
+    <div class="description">
+        <p>La Casa De Mis Primos es una empresa dedicada al alquiler de apartamentos en la ciudad de Nueva York. Ofrecen un modelo parecido al de Airbnb pero a menor escala, diferenciándose principalmente en el trato al cliente, dándole un servicio personalizado y que suscriben de excelente. Como añadido también ofertan de planes a realizar en la gran manzana que denominan Superplanes. Estos ofrecen una gran variedad de actividades a realizar, ya sea a nivel cultural, de ocio, etc. </p>
+    </div>
+
+    <div class="more-info">
+        <p>Nuestra contribución ha sido automatizar procesos anteriormente manuales para facilitar el trabajo de los gestores y ofrecer a los usuarios de LCDMP un sistema más actual para gestionar sus reservas.</p>
+
+        <p>Hemos desarrollado una plataforma para la gestión de sus recursos y la gestión de pagos con Paypal. Además, hemos creado una vista para usuarios en la que pueden gestionar sus reservas y alquilar apartamentos y Superplanes sin necesidad de contactar con algún gestor de LCDMP.</p>
+
+        <p>Tecnologías: PHP 7, Symfony 3, EcmaScript 6, Knockout, Paypal, Sparkpost, Google Maps V3 API.</p>
+    </div>
+</div>
+
+<script>
+    $('#lcdmp').on('click', function(event) {
+        var moreInfo = $(event.currentTarget).children().filter('.more-info');
+        moreInfo.toggle();
+    });
+</script>

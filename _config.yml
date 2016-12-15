@@ -55,8 +55,12 @@ clients:
     - name: TheMotion
       url: https://www.themotion.com/
       logo: ../img/logos/dummy.png
-      description: clients/dummy.html
+      description: clients/the_motion.html
+    - name: La Casa de Mis Primos
+      url: http://www.lacasademisprimos.com/
+      logo: ../img/logos/dummy.png
+      description: clients/la_casa_de_mis_primos.html
     - name: Besepa
       url: http://www.besepa.com/
       logo: ../img/logos/dummy.png
-      description: clients/dummy.html
+      description: clients/besepa.html
