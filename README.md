@@ -12,7 +12,7 @@ Jekyll based website for Codesai
 3. Run `docker-compose up`
 4. You may access the local website at `localhost:4000`
 5. Start coding and jekyll will automatically build after you save changes
-6. If you modify `.yml` files, you need to either restart the docker container (`Ctrl+C, docker-compose up` again) or start another terminal and type `docker exec -it {name} bash` to get a terminal inside the container. Once there, type `jekyll build` so it will build the site taking the changes to the `.yml` files. This is because the docker container is executing `jekyll serve` which doesn't get the `.yml` changes.
+6. If you modify `.yml` files, you need to either restart the docker container (`Ctrl+C, docker-compose up` again) or start another terminal and type `docker exec -it {name} bash` to get a terminal inside the container. Once there, type `jekyll build` so it will build the site taking the changes to the `.yml` files. This is because the docker container is executing `jekyll serve` which doesn't get the `.yml` changes
 
 **Remember:** If you experience other problems with jekyll automatic builds you can always start another terminal and run `docker exec -it {name} bash`. You may now use `jekyll build` and other jekyll commands on demand.
 To check the name of your docker container you can run `docker ps`, it should be something like {name_of_jekyll_folder}_web_1.
@@ -30,23 +30,44 @@ Finally, the command being executed is `jekyll serve --force_polling --config=_c
 
 ## Your own environment
 
+***We highly recommend using Docker instead as it's the default choice for the team.***
+
 1. Clone the repository
 2. Install ruby
-3. Navigate to the repository folder in a terminal.
+3. Navigate to the repository folder in a terminal
 4. Run `bundle install`
 5. Run `jekyll build`
-6. Run `jekyll serve`, if on windows run `jekyll serve --force_polling` instead
+6. Run `jekyll serve`, if on Windows run `jekyll serve --force_polling` instead
 7. You may access the local website at `localhost:4000`
 8. Start coding and jekyll will automatically build after you save changes
+9. If you modify `.yml` files, you need to either restart the jekyll serve (`Ctrl+C, jekyll serve` again) or start another terminal and type `jekyll build` so it will build the site taking the changes to the `.yml` files. This is because `jekyll serve` doesn't get the `.yml` changes
 
-If you experience problems with jekyll automatic builds you can start another terminal, navigate to the repository folder and run `jekyll build` on demand.
+**Remember:** If you experience other problems with jekyll automatic builds you can always start another terminal, navigate to the repository folder and run `jekyll build` on demand.
 
-## To build a version for production
-Run the build_for_production.sh script. 
+# To build a version for production
 
-This script runs jekyll build setting jekyll's `JEKYLL_ENV` environment variable to `production` (by default it's set to `development`). 
+The `jekyll serve` command executed inside the docker container or in your environment provides a faithful preview build inside the `_site` folder, which you access from the localhost:4000. If all changes seem correct, **you just need to commit, merge into `master` and push. The site will be builded and deployed automatically in the server**.
 
-This way the Google Analytics tracking code is only rendered for the production version and we prevent that visits from localhost:4000 mess up our analytics.
+### How it works
+
+**Notice** that the `_site` folder is ignored in the git repository. We are using **Aerobatic Hosting**, a bitbucket addon that provides a Github Pages functionality with a sleek UI accessed from the [Aerobatic Hosting section in the bitbucket repository](https://bitbucket.org/codesai/codesaiweb/addon/aerobatic-bitbucket-addon/aerobatic-app-dashboard).
+
+#### IMPORTANT
+
+We are using the **free version** of Aerobatic which allows us **only 5 deployments** in a 24 hour period. You can check how many deploys are left within the Website versions section in Aerobatic Hosting. We are currently using the **master** branch as production, and sometimes use the **stage** branch for staging. This can be seen in the Deploy settings section within Aerobatic Hosting. **Beware every push to the Deploy branches counts for the 5 deployments limit**.
+
+The configuration for the server build is found in the `package.json` file, which contains the following:
+```
+{
+  "_aerobatic": {
+    "build": {
+      "engine": "jekyll"
+    }
+  }
+}
+```
+
+Aerobatic takes our commited files after pushing and builds the `_site` using `jekyll build` internally and deploying it. You may want to see the Build Logs and the current Production or Stage builds as well as further configurations in the Aerobatic Hosting section.
 
 ## Jekyll Concepts
 
