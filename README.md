@@ -82,6 +82,73 @@ Having the `jekyll serve` running, we can save changes and refresh the page to s
 
 ## Writing a Post
 
+***Remember to follow the Blog Publications flow inside the Codesai trello***
+
+The first step is to create a new branch from the latest ?**master** or **develop**? with a quick name related to the post.
+
+To create a post, simply add a new file in the `_posts` folder named `YYYY-MM-DD-name-of-the-post.md`, the name specified becomes the **permalink**. At the top of the file you have to write a small yaml specification, the **bare minimum** to start a post is:
+```
+---
+layout: post
+title: My Post Title nicely written
+author: Crazy Cockatoo
+---
+```
+You can now write your post below, remember that we now use **markdown** and you can mix in some html if needed. We are now using [**kramdown**](https://kramdown.gettalong.org/quickref.html) as recommended by jekyll, you may prefer this [**markdown quicksheet**](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+
+### Post variables
+
+| variable | usage |
+|----------|-------|
+| **layout** | layout to be applied to the page. For a post it should always be **post** |
+| **title**  | the title of the post, it is recommended to be between double quotes |
+| **author** | there can be multiple authors for a post, ie: `Someone and Somebody` |
+| **small_image** | the filename (not the full path) of the image to use as preview for the post |
+| cross_post_url | when cross-posting, the url of the original post. A note will be added at the end of the post |
+| date | you can specify a more precise date in the format `2016-12-15 11:25:00.000000000 +01:00` |
+| tags | an array of tags `tags: [first, second, third]` |
+| categories | an object of categories |
+
+An example of categories would be:
+```
+categories:
+- Codesai
+- Formación
+- Clojure
+- Functional Programming
+```
+
+### Images
+
+You should place any images you are going to use in the post inside the `assets` folder.
+
+**Please don't directly add pictures from your phone** since they are usually ***HUGE***. The post width is limited to `900px` for readability concerns, so we are limiting the image width to `1000px`. For faster loading times and a better overall experience for the user, we recommend following these two steps when adding images to a post:
+
+1. Reduce the width of your image to a maximum of `1000px` using any image editor you prefer.
+2. **Compress** the image, we are using [**TinyPNG**](https://tinypng.com/) for PNG and JPG compression.
+
+
+### Code snippets
+
+To add one liners or similar, you can use markdown. If you want syntax highlightning and some more lines of code, we recommend adding a public [**gist**](https://gist.github.com/) inside the github's Codesai account and **embed** it in the post.
+This is convenient since you can always edit your gist later without having to edit the post.
+
+
+### Bootstrap
+
+Remember that you can use bootstrap classes inside the posts to organize stuff as you please. Be sure to check it's **responsive**.
+
+```
+<div class="row">
+    <div class="col-md-6">
+        Interesting things to say
+    </div>
+    <div class="col-md-6">
+        <img src="my-compressed-image.png" alt="image">
+    </div>
+</div>
+```
 
 
 ## Variables
