@@ -23,7 +23,7 @@ Podemos entender Connascence como la relación entre N componentes software que 
 
 A partir de esta charla de [Jim Weirich](https://vimeo.com/10837903) nos empezamos a interesar por el tema y decidimos preparar una pequeña charla para profundizar sobre el tema, presentarla a la comunidad y debatir un poco sobre el concepto.
 
-Los amigos de software craftmanship barcelona acaban de publicar el video de la charla, aunque como Fran no pudo asistir vais a tener que aguantarme a mi sólo todo el video jeje:
+Los amigos de software craftmanship barcelona acaban de publicar el video de la charla, aunque como Fran no pudo asistir van a tener que aguantarme a mi sólo todo el video jeje:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bIr5fPom7B4" frameborder="0" allowfullscreen></iframe>
 
