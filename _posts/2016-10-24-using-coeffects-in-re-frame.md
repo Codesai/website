@@ -6,14 +6,17 @@ type: post
 published: true
 status: publish
 tags:
-- Clojure
 - ClojureScript
-- Design patterns
+- Clojure
+- Effects and Coeffects
 - Functional Programming
+- Functional Reactive Programming
+- re-frame
 - Learning
+- Tests
 author: Manuel Rivero
 cross_post_url: http://garajeando.blogspot.com.es/2016/10/coeffects-in-re-frame.html
-small_image: clojure_logo.svg
+small_image: cljs.svg
 ---
 <p>
   Event handlers, collectively, provide the control logic in a <a href="https://github.com/Day8/re-frame">re-frame</a> application. Since the mutation of the <strong>application state</strong> is taken care of by <strong>re-frame</strong>, 

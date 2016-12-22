@@ -19,7 +19,7 @@ cross_post_url: http://garajeando.blogspot.com.es/2016/11/using-effects-in-re-fr
 small_image: cljs.svg
 ---
 <p>
-  In <a href="https://github.com/Day8/re-frame"><strong>re-frame</strong></a>, we'd like to use <strong>pure event handlers</strong> because they provide some important advantages, (mentioned in <a href="http://garajeando.blogspot.com.es/2016/10/coeffects-in-re-frame.html">a previous post about <strong>coeffects</strong> in <strong>re-frame</strong></a>): <b>local reasoning, easier testing, and events replay-ability</b>. 
+  In <a href="https://github.com/Day8/re-frame"><strong>re-frame</strong></a>, we'd like to use <strong>pure event handlers</strong> because they provide some important advantages, (mentioned in <a href="/2016/10/using-coeffects-in-re-frame">a previous post about <strong>coeffects</strong> in <strong>re-frame</strong></a>): <b>local reasoning, easier testing, and events replay-ability</b>. 
 </p>
 
 <p>
@@ -27,7 +27,7 @@ small_image: cljs.svg
 </p>
 
 <p>
-  We also saw how <a href="http://garajeando.blogspot.com.es/2016/10/coeffects-in-re-frame.html">using <strong>coeffects</strong> in re-frame</a> allows to have <strong>pure event handlers in the presence of side-causes</strong>.
+  We also saw how <a href="/2016/10/using-coeffects-in-re-frame">using <strong>coeffects</strong> in re-frame</a> allows to have <strong>pure event handlers in the presence of side-causes</strong>.
 </p>
 
 <p>
