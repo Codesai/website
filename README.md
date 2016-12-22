@@ -19,8 +19,6 @@ You can [check out how it works](https://bitbucket.org/codesai/codesaiweb/wiki/H
 Althought ***not recommended*** you can [setup your own environment](https://bitbucket.org/codesai/codesaiweb/wiki/Home#markdown-header-setup-in-your-own-environment) instead of using Docker.
 
 
-# Writing a Post
-
 ## IMPORTANT
 
 ***The develop branch should always be ready to be deployed***
@@ -35,6 +33,9 @@ Althought ***not recommended*** you can [setup your own environment](https://bit
 | Writing       | Post being written |
 | Revising      | Looking for feedback, typos |
 | **Polishing** | Ensuring the images are compressed, styles, responsiveness |
+
+
+# Writing a Post
 
 The first step is to create a new branch from the latest **develop** with a quick name related to the post. Once the post has gone through **revision** and **polishing** be sure to merge develop into your branch, check that everything is fine and then merge your post into **develop**. To publish it, merge develop into **master**. Remember to periodically merge develop into your branch if you are still writing the post to get the latest updates (styles could be modified).
 
