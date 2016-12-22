@@ -26,7 +26,7 @@ Los amigos de Software Craftsmanship Barcelona acaban de publicar el video de la
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bIr5fPom7B4" frameborder="0" allowfullscreen></iframe>
 
-Y aquí tenéis [las slides que utilizamos en la charla](http://slides.com/franreyesperdomo/connascence#/).
+Y aquí tenéis [las slides que utilizamos en la charla](http://slides.com/alfredocasado-1/deck#/).
 
 Espero que les resulte tan interesante como a nosotros, todos los comentarios son bienvenidos!
 
