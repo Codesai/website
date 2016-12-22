@@ -24,9 +24,11 @@ Althought ***not recommended*** you can [setup your own environment](https://bit
 ## IMPORTANT
 
 ***The develop branch should always be ready to be deployed***
+
 **We can only deploy 5 times in a 24h period** since we are using the free version of Aerobatic Hosting.
 
 ***Remember to follow the Blog Publications flow inside the Codesai trello***
+
 | list          | usage         |
 |---------------|---------------|
 | Backlog       | Post to be written |
