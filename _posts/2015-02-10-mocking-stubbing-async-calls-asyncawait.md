@@ -13,9 +13,11 @@ categories:
   - Testing 
   - C#
   - .Net
+cross_post_url: http://www.carlosble.com/2015/02/mocking-stubbing-async-calls-asyncawait/
 author: Carlos Blé
 small_image: c_sharp_logo.jpg
 ---
+
 .Net 4.5 came out with a really handy built-in asynchronous mechanism, _async and await_. However the method signature of a void method is a bit strange:
 
 <script src="https://gist.github.com/trikitrok/84a02a4e739d15edbff016d08294b033.js"></script>
