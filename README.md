@@ -21,6 +21,11 @@ Althought ***not recommended*** you can [setup your own environment](https://bit
 
 # Writing a Post
 
+## IMPORTANT
+
+***The develop branch should always be ready to be deployed***
+**We can only deploy 5 times in a 24h period** since we are using the free version of Aerobatic Hosting.
+
 ***Remember to follow the Blog Publications flow inside the Codesai trello***
 | list          | usage         |
 |---------------|---------------|
@@ -29,7 +34,7 @@ Althought ***not recommended*** you can [setup your own environment](https://bit
 | Revising      | Looking for feedback, typos |
 | **Polishing** | Ensuring the images are compressed, styles, responsiveness |
 
-The first step is to create a new branch from the latest **develop** with a quick name related to the post.
+The first step is to create a new branch from the latest **develop** with a quick name related to the post. Once the post has gone through **revision** and **polishing** be sure to merge develop into your branch, check that everything is fine and then merge your post into **develop**. To publish it, merge develop into **master**. Remember to periodically merge develop into your branch if you are still writing the post to get the latest updates (styles could be modified).
 
 To create a post, simply add a new file in the `_posts` folder named `YYYY-MM-DD-name-of-the-post.md`, the name specified becomes the **permalink**. At the top of the file you have to write a small yaml specification, the **bare minimum** to start a post is:
 ```
