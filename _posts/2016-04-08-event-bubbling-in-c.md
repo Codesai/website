@@ -5,8 +5,6 @@ date: 2016-04-08T16:12:57+00:00
 type: post
 published: true
 status: publish
-dsq_thread_id:
-  - 3502543845
 categories:
   - Software Development
   - C#
