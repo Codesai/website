@@ -64,3 +64,7 @@ clients:
       url: http://www.besepa.com/
       logo: ../img/logos/besepa.png
       description: clients/besepa.html
+    - name: Antevenio
+      url: http://www.antevenio.com/
+      logo: ../img/logos/antevenio.png
+      description: clients/antevenio.html

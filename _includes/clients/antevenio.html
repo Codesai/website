@@ -1,0 +1,18 @@
+<div id="antevenio">
+    <div class="description">
+        <p>Antevenio es una multinacional especializada en performance y brand marketing. Cuenta con oficinas en Madrid, Barcelona, Milán, París, Buenos Aires y México D.F.</p>
+    </div>
+
+    <div class="more-info">
+        <p>Trabajamos mano a mano en su plataforma Mdirector, implementando un editor WYSIWYG de plantillas para email marketing</p>
+
+        <p>Tecnologías: Vanilla JavaScript</p>
+    </div>
+</div>
+
+<script>
+    $('#antevenio').on('click', function(event) {
+        var moreInfo = $(event.currentTarget).children().filter('.more-info');
+        moreInfo.toggle();
+    });
+</script>
