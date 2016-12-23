@@ -1,0 +1,16 @@
+<div id="ironhack">
+    <div class="description">
+        <p>Empresa especialista en cursos intensivos de programación y diseño que son impartidos en sus centros de Madrid, Barcelona y Miami así como en las instalaciones de las empresas que los requieran.</p>
+    </div>
+
+    <div class="more-info">
+        <p>Hemos participado activamente en distintas ediciones de su bootcamp orientado a desarrollo,ofreciendo formación sobre metodologías ágiles a los participantes.</p>
+    </div>
+</div>
+
+<script>
+    $('#ironhack').on('click', function(event) {
+        var moreInfo = $(event.currentTarget).children().filter('.more-info');
+        moreInfo.toggle();
+    });
+</script>

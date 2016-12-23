@@ -68,3 +68,7 @@ clients:
       url: http://www.antevenio.com/
       logo: ../img/logos/antevenio.png
       description: clients/antevenio.html
+    - name: Ironhack
+      url: https://www.ironhack.com/es
+      logo: ../img/logos/ironhack.png
+      description: clients/ironhack.html
