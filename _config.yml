@@ -80,3 +80,7 @@ clients:
       url: http://www.jpgconsultores.es/
       logo: ../img/logos/jpg_consultores_energeticos.png
       description: clients/jpg_consultores_energeticos.html
+    - name: La Salle. Universitat Ramon Llul
+      url: http://www.salleurl.edu/
+      logo: ../img/logos/la_salle.png
+      description: clients/la_salle.html
