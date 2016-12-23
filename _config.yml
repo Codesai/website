@@ -72,3 +72,7 @@ clients:
       url: https://www.ironhack.com/es
       logo: ../img/logos/ironhack.png
       description: clients/ironhack.html
+    - name: iSQI
+      url: https://www.isqi.org/
+      logo: ../img/logos/isqi.png
+      description: clients/isqi.html

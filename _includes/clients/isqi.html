@@ -1,0 +1,12 @@
+<div id="isqi">
+    <div class="description">
+        <p>Empresa alemana que opera a nivel mundial como proveedora de exámenes de certificación en el área de la tecnología informática. la colaboración con ISQI arranca en el año 2013 con la organización de varios cursos anuales de introducción a TDD. </p>
+    </div>
+</div>
+
+<script>
+    $('#isqi').on('click', function(event) {
+        var moreInfo = $(event.currentTarget).children().filter('.more-info');
+        moreInfo.toggle();
+    });
+</script>
