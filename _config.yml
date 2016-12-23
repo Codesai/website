@@ -76,3 +76,7 @@ clients:
       url: https://www.isqi.org/
       logo: ../img/logos/isqi.png
       description: clients/isqi.html
+    - name: JPG Consultores Energéticos
+      url: http://www.jpgconsultores.es/
+      logo: ../img/logos/jpg_consultores_energeticos.png
+      description: clients/jpg_consultores_energeticos.html
