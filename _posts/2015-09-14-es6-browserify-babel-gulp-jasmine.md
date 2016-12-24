@@ -7,6 +7,7 @@ published: true
 status: publish
 categories:
   - JavaScript
+  - ES6
 cross_post_url: http://www.carlosble.com/2015/09/es6-browserify-babel-gulp-jasmine/
 author: Carlos Blé
 small_image: es6.svg
