@@ -14,7 +14,7 @@ categories:
   - Testing
 cross_post_url: http://www.carlosble.com/2015/12/polymorphic-test-setup-with-template-method/
 author: Carlos Blé
-small_image: c_sharp_logo.jpg
+small_image: csharp_logo.svg
 ---
 
 We had a kind of duplication in our tests that we didn't know how to deal with. The refactoring **Introduce Polymorphic Creation with Factory Method** explained by [Joshua Kerievsky](https://www.industriallogic.com/people/joshua) in his brilliant [book "Refactoring to Patterns"](https://industriallogic.com/xp/refactoring/) gave us the solution to avoid duplicated tests.

@@ -11,7 +11,7 @@ categories:
   - C#
 cross_post_url: http://www.modestosanjuan.com/necesitas-programar-un-servicio-para-windows-prueba-topshelf/
 author: Modesto San Juan
-small_image: logo_top_shelf.png
+small_image: small_topshelf_logo.png
 
 ---
 Programar un servicio para Windows suele ser una tarea engorrosa y <a href="http://topshelf-project.com/" >Topshelf</a> proporciona una alternativa bastante interesante y muchísimo menos engorrosa que la plantilla por defecto que incorpora Visual Studio.
