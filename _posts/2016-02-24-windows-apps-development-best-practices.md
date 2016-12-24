@@ -6,7 +6,6 @@ type: post
 published: true
 status: publish
 categories:
-  - aida
   - Architecture
   - Software Development
   - Windows Apps
