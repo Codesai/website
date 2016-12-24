@@ -13,7 +13,7 @@ categories:
 - Connascence
 tags: []
 author: 'Fran Reyes & Alfredo Casado'
-small_image: connascence.png
+small_image: small_connascence.png
 ---
 
 El pasado Octubre [Fran](https://twitter.com/fran_reyes) y [yo](https://twitter.com/AlfredoCasado) preparamos una charla para la [Software Craftsmanship Barcelona 2016](/2016/11/estuvimos-en-la-software-craftsmanship-bcn-2016) explicando el concepto de [connascence](https://en.wikipedia.org/wiki/Connascence_(computer_programming)).

@@ -12,7 +12,7 @@ categories:
   - .Net
 cross_post_url: http://www.modestosanjuan.com/utilizando-extensionless-para-monitorizar-logs-y-excepciones/
 author: Modesto San Juan
-small_image: exceptionless-logo1.png
+small_image: small_exceptionless_logo.png
 ---
 Cada vez que abordo un nuevo desarrollo, considero que la generación de trazas es una parte vital ya que es uno de los mecanismos que nos va a permitir diagnosticar e identificar cualquier tipo de problema cuando estemos en producción, en ocasiones incluso antes de que los propios usuarios lleguen a reportarlo.
 

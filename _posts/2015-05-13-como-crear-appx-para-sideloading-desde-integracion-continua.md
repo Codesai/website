@@ -9,7 +9,7 @@ categories:
   - .Net
 cross_post_url: http://www.modestosanjuan.com/como-crear-appx-para-sideloading-desde-integracion-continua/
 author: Modesto San Juan
-small_image: automate_all_the_things.jpg
+small_image: small_automate_all.jpg
 ---
 
 Cuando trabajamos con aplicaciones para la tienda de Windows, hay escenarios en los que necesitamos hacer Sideloading. Básicamente el Sideloading nos permite instalar una aplicación de la tienda de Windows, sin utilizar la tienda de Windows. Las razones para querer hacer Sideloading pueden ser muchas: probar la aplicación en local antes de subirla a la tienda, instalar la aplicación en algunos dispositivos para hacer testing en friends&family o simplemente utilizar la aplicación a nivel corporativo fuera de la tienda de Windows.

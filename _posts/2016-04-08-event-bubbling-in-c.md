@@ -11,7 +11,7 @@ categories:
   - .Net
 cross_post_url: http://www.carlosble.com/2016/04/event-bubbling-in-c/
 author: Carlos Blé
-small_image: c_sharp_logo.jpg
+small_image: csharp_logo.svg
 ---
 How to propagate an event from a low level class to a top level one:
 
