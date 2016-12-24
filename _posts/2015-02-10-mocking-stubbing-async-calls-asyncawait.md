@@ -22,7 +22,7 @@ small_image: c_sharp_logo.jpg
 
 <script src="https://gist.github.com/trikitrok/84a02a4e739d15edbff016d08294b033.js"></script>
 
-It is possible to use _async void_ but it's <a title="Best Practices in Asynchronous Programming" href="https://msdn.microsoft.com/en-us/magazine/jj991977.aspx" target="_blank">not recommended</a> unless we are talking about event handlers. It's also a bit strange the fact that the type specified in the signature is not the one returned:
+It is possible to use _async void_ but it's <a title="Best Practices in Asynchronous Programming" href="https://msdn.microsoft.com/en-us/magazine/jj991977.aspx">not recommended</a> unless we are talking about event handlers. It's also a bit strange the fact that the type specified in the signature is not the one returned:
 
 <script src="https://gist.github.com/trikitrok/79a25b08d1d01ca5b00cbe2f6e0a2a52.js"></script>
 
