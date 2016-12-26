@@ -1,5 +1,5 @@
 <div id="antevenio">
-    <div class="description">
+    <div class="short-description">
         <p>Antevenio es una multinacional especializada en performance y brand marketing. Cuenta con oficinas en Madrid, Barcelona, Milán, París, Buenos Aires y México D.F.</p>
     </div>
 
@@ -8,11 +8,7 @@
 
         <p>Tecnologías: Vanilla JavaScript</p>
     </div>
-</div>
 
-<script>
-    $('#antevenio').on('click', function(event) {
-        var moreInfo = $(event.currentTarget).children().filter('.more-info');
-        moreInfo.toggle();
-    });
-</script>
+    {% include clients/read-more.html client-id="antevenio" %}
+
+</div>

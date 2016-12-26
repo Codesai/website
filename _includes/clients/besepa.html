@@ -1,5 +1,5 @@
 <div id="besepa">
-    <div class="description">
+    <div class="short-description">
         <p>Besepa es una compañía del sector fintech que ofrece una solución que simplifica trámites de gestión de domiciliaciones bancarias, mandatos SEPA, etc.</p>
     </div>
 
@@ -8,11 +8,7 @@
 
         <p>Tecnologías: EcmaScript 6, JSONP.</p>
     </div>
-</div>
 
-<script>
-    $('#besepa').on('click', function(event) {
-        var moreInfo = $(event.currentTarget).children().filter('.more-info');
-        moreInfo.toggle();
-    });
-</script>
+    {% include clients/read-more.html client-id="besepa" %}
+
+</div>

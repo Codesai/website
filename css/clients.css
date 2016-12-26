@@ -46,6 +46,10 @@
     text-align: justify;
 }
 
+#clients .read-more a {
+    cursor: pointer;
+}
+
 #clients .more-info {
     display: none;
 }

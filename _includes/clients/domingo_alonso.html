@@ -1,5 +1,5 @@
 <div id="domingo-alonso">
-    <div class="description">
+    <div class="short-description">
         <p>Aplicaciones Informáticas Domingo Alonso (AIDA) es una empresa del Grupo Domingo Alonso que se encarga de desarrollar y mantener software para gestionar la importación, reparación y venta de vehículos. Este software está siendo usado, no sólo por las empresas del grupo, sino por otras empresas del sector de la automoción en diferentes partes del mundo.</p>
     </div>
 
@@ -10,11 +10,7 @@
 
         <p>Tecnologías: .Net, C#, Ecmascript 6, SQLServer, PowerShell, Rabbitmq,  Signalr,  WPF</p>
     </div>
-</div>
 
-<script>
-    $('#domingo-alonso').on('click', function(event) {
-        var moreInfo = $(event.currentTarget).children().filter('.more-info');
-        moreInfo.toggle();
-    });
-</script>
+    {% include clients/read-more.html client-id="domingo-alonso" %}
+
+</div>

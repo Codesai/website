@@ -1,0 +1,9 @@
+<div class="read-more">
+    <a class="indicator">Leer más</a>
+</div>
+
+<script>
+    $('#{{ include.client-id }} .read-more .indicator').on('click', function(event) {
+        $('#{{ include.client-id }} .more-info').toggle();
+    });
+</script>

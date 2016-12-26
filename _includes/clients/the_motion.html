@@ -1,5 +1,5 @@
 <div id="themotion">
-    <div class="description">
+    <div class="short-description">
         <p>The Motion es una startup que trata de revolucionar la industria del video-advertising, construyendo una plataforma abierta para ayudar a sus clientes a crear video-ads únicos a partir de cualquier dato de producto, para hacer crecer sus negocios de forma rápida y sencilla.  </p>
     </div>
 
@@ -10,11 +10,7 @@
 
         <p>Tecnologías: Python</p>
     </div>
-</div>
 
-<script>
-    $('#themotion').on('click', function(event) {
-        var moreInfo = $(event.currentTarget).children().filter('.more-info');
-        moreInfo.toggle();
-    });
-</script>
+    {% include clients/read-more.html client-id="themotion" %}
+
+</div>
