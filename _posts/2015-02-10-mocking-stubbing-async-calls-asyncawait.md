@@ -6,8 +6,6 @@ date: 2015-02-10T11:57:16+00:00
 type: post
 published: true
 status: publish
-dsq_thread_id:
-  - 3502543845
 categories:
   - Test Driven Development
   - Testing 
