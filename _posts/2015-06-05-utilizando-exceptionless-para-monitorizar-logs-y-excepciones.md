@@ -1,5 +1,5 @@
 ---
-title: Utilizando Extensionless para monitorizar logs y excepciones
+title: Utilizando Exceptionless para monitorizar logs y excepciones
 author: Modesto San Juan
 layout: post
 date: 2015-06-05T18:11:52+00:00
