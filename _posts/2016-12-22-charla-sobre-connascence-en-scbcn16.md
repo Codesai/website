@@ -24,7 +24,7 @@ A partir de esta [charla de Jim Weirich](https://vimeo.com/10837903) nos empezam
 
 Los amigos de Software Craftsmanship Barcelona acaban de publicar el video de la charla, aunque como Fran no pudo asistir van a tener que aguantarme a mi sólo todo el video, je, je:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bIr5fPom7B4" frameborder="0" allowfullscreen></iframe>
+{% include youtube-video.html src="https://www.youtube.com/embed/bIr5fPom7B4" %}
 
 Y aquí tenéis [las slides que utilizamos en la charla](http://slides.com/alfredocasado-1/deck#/).
 

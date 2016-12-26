@@ -91,6 +91,15 @@ To add one liners or similar, you can use markdown. If you want syntax highlight
 This is convenient since you can always edit your gist later without having to edit the post.
 
 
+## Youtube embedded videos
+
+To add a youtube video, you can use the youtube-video template provided in the includes. It will add a responsive, full-width youtube video to the post. Simply replace the src parameter with the one of your video :)
+
+```
+{% include youtube-video.html src="https://www.youtube.com/embed/bIr5fPom7B4" %}
+```
+
+
 ## Bootstrap
 
 Remember that you can use bootstrap classes inside the posts to organize stuff as you please. Be sure to check it's **responsive**.
