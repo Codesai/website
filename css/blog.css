@@ -10,6 +10,10 @@
 	border-bottom: 1px dotted #ddd;
 }
 
+.post-area .title {
+	text-align: left;
+}
+
 .post-area a:link, .post-area a:visited {
 	font-size: 30px;
 	color: #333;
@@ -40,7 +44,7 @@
 
 .post .content p {
 	color: #111;
-  padding-top: 10px;
+  	padding-top: 10px;
 	text-align: justify;	
 }
 
@@ -56,6 +60,16 @@
 
 .post .twitter-embeds {
 	padding: 10px 0;
+}
+
+.post .youtube-embed {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.post .youtube-embed iframe {
+	width: 100%;
+	height: 400px;
 }
 
 .post ul {
@@ -144,5 +158,9 @@
 	.twitter-embeds .twitter-tweet {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.post .youtube-embed iframe {
+		height: 250px;
 	}
 }

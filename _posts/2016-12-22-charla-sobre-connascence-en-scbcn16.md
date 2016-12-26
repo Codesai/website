@@ -13,7 +13,7 @@ categories:
 - Connascence
 tags: []
 author: 'Fran Reyes & Alfredo Casado'
-small_image: connascence.png
+small_image: small_connascence.png
 ---
 
 El pasado Octubre [Fran](https://twitter.com/fran_reyes) y [yo](https://twitter.com/AlfredoCasado) preparamos una charla para la [Software Craftsmanship Barcelona 2016](/2016/11/estuvimos-en-la-software-craftsmanship-bcn-2016) explicando el concepto de [connascence](https://en.wikipedia.org/wiki/Connascence_(computer_programming)).
@@ -24,7 +24,7 @@ A partir de esta [charla de Jim Weirich](https://vimeo.com/10837903) nos empezam
 
 Los amigos de Software Craftsmanship Barcelona acaban de publicar el video de la charla, aunque como Fran no pudo asistir van a tener que aguantarme a mi sólo todo el video, je, je:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bIr5fPom7B4" frameborder="0" allowfullscreen></iframe>
+{% include youtube-video.html src="https://www.youtube.com/embed/bIr5fPom7B4" %}
 
 Y aquí tenéis [las slides que utilizamos en la charla](http://slides.com/alfredocasado-1/deck#/).
 

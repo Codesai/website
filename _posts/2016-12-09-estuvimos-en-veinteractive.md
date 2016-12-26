@@ -10,7 +10,7 @@ categories:
 - Formación
 tags: []
 author: Manuel Rivero
-small_image: small_logo_veinteractive.png
+small_image: ve_interactive_logo.svg
 ---
 
 
