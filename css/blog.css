@@ -6,6 +6,10 @@
 	border-bottom: 1px dotted #ddd;
 }
 
+.post-area .title {
+	text-align: left;
+}
+
 .post-area a:link, .post-area a:visited {
 	font-size: 30px;
 	color: #333;
