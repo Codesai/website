@@ -7,7 +7,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://www.codesai.com/</loc>
+  <loc>https://www.codesai.com</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
@@ -27,7 +27,6 @@
 </url>
 <url>
   <loc>https://www.codesai.com</loc>
-  <changefreq>never</changefreq>
   <image:image>
        <image:loc>https://www.codesai.com/img/logo.svg</image:loc>
        <image:caption>Codesai</image:caption>
