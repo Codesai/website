@@ -17,11 +17,11 @@ small_image: gradiant_logo.svg
 
 La semana pasada [Luis Rovirosa](https://twitter.com/luisrovirosa) y yo impartimos una formación de TDD en las oficinas de [Gradiant](https://www.gradiant.org/) en Vigo.
 
-Gradiant es el acrónimo en inglés del Centro Tecnolóxico de Telecomunicacións de Galicia (Galician Research and Development Center in Advanced Telecomunications) y utilizan los conocimientos y experiencia de los profesionales de investigación del centro para aportar valor a empresas y organizaciones mediante la transferencia de conocimiento y el diseño de productos especializados.
+Gradiant es el acrónimo en inglés del Centro Tecnolóxico de Telecomunicacións de Galicia (Galician Research and Development Center in Advanced Telecomunications) y utilizan los conocimientos y experiencia de sus profesionales de investigación para aportar valor a empresas y organizaciones mediante la transferencia de conocimiento y el diseño de productos especializados.
 
 <img src="/assets/curso_vigo_gradiant_redux.jpg" alt="asistentes al curso de TDD en Gradiant"/>
 
-La naturaleza del centro y su ubicación en el campus de la Universidad de Vigo me recordó bastante a la época en que trabajé en el BSC.
+La naturaleza del centro y su ubicación en [el campus de la Universidad de Vigo](https://uvigo.gal/uvigo_gl/vigo/) me recordó bastante a la época en que trabajé en el [BSC](https://www.bsc.es/).
 
 Este fue el segundo [curso de TDD de Codesai](http://www.codesai.com/curso-de-tdd/) que imparto con Luis, y era todo un reto, debido al número de asistentes, 18 personas, y, sobretodo, a la gran variedad de tecnologías y tipos de sistemas que desarrollan, que iban desde C empotrado para procesado de señales o IOT, hasta APIs REST con node.js, pasando por diversas aplicaciones en Java, C++ o Scala.
 
