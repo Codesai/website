@@ -10,7 +10,7 @@ categories:
   - Java 8
 cross_post_url: http://josemanueldeniz.es/refactorizando-try-catch-functional-programming/
 author: José Manuel Déniz
-# small_image:
+small_image: small_javaslang-logo.png
 ---
 
 
