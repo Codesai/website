@@ -12,6 +12,7 @@ categories:
 cross_post_url: http://www.carlosble.com/2016/02/windows-apps-development-best-practices/
 author: Carlos Blé
 small_image: small_code_review.jpg
+written_in: english
 ---
 In my experience a **code review must have a goal**. Some common goals are:
 

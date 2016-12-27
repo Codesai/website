@@ -13,6 +13,7 @@ categories:
 cross_post_url: http://www.carlosble.com/2015/08/using-c-collections/
 author: Carlos Blé
 small_image: csharp_logo.svg
+written_in: english
 ---
 
 There are many ways to work with collections. We are following [Microsoft Guidelines for Collections](https://msdn.microsoft.com/en-us/library/dn169389(v=vs.110).aspx) plus some ideas that [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) explains in [Implementation Patterns](http://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091). I've created a [repository with code examples](https://bitbucket.org/carlosble/collections) so that anyone can play with them. All the unit tests in the project are green except for two, which are red on purpose to express my surprise when I wrote them, because it's a behavior I didn't expect.

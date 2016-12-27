@@ -13,6 +13,7 @@ categories:
 author: Carlos Blé
 cross_post_url: http://www.carlosble.com/2015/07/remove-data-structures-noise-from-your-tests-with-builders/
 small_image: small_bonsai.jpg
+written_in: english
 ---
 
 Among other qualities good tests should be easy to read, quick to understand. 

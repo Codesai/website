@@ -14,6 +14,7 @@ categories:
 cross_post_url: http://www.carlosble.com/2016/02/windows-apps-development-best-practices/
 author: Carlos Blé
 small_image: dotnet.svg
+written_in: english
 ---
 
 I don't really know whether they are the best practices to be honest, and certainly there is a lot for me to learn but these are principles and practices that work well for us in the development of a complex native Windows App (Windows 8.1+) using C# and the [MVVM pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel).

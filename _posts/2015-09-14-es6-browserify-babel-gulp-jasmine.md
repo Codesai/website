@@ -11,6 +11,7 @@ categories:
 cross_post_url: http://www.carlosble.com/2015/09/es6-browserify-babel-gulp-jasmine/
 author: Carlos Blé
 small_image: es6.svg
+written_in: english
 ---
 During Socrates Conference 2015 we decided that it's the right time to jump in [ES6](http://es6-features.org/#Constants) to develop a green field project that our customer is starting. Given that **ES6** is already the stable and latest version of *JavaScript*, it does not make any sense to start a new project with **ES5**, an already old version of the language. With the kind of functional style that we use when coding in JavaScript, the changes are not too big anyway as we are not going to use classes anyway. But we can gain a lot of value from using block scope with **let** and **const**, and avoiding the use of **var** from now on. Configuring the tools has taken more time than I thought as the **tooling and the ecosystem is changing really fast**. You read a recipe from a blog post which is 6 months old and it turns out that most of the stuff described is no longer working. Some *npm* packages don't work anymore or the behavior at some point is very different from a previous version... apparently things are even more obscure on *Windows* which is the platform we have to use for this project.
 
