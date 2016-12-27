@@ -15,6 +15,7 @@ categories:
 cross_post_url: http://www.carlosble.com/2015/06/polymorphic-equality/
 author: Carlos Blé
 small_image: csharp_logo.svg
+written_in: english
 ---
 
 The default generation of Equality members provided by Resharper let you choose three different implementations when overriding the "Equals" method in a class (Alt+Insert -> Equality Members):

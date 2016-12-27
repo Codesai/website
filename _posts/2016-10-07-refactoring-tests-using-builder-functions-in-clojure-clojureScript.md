@@ -15,6 +15,7 @@ tags:
 author: Manuel Rivero
 cross_post_url: http://garajeando.blogspot.com.es/2016/10/using-builders-to-remove-duplication-in.html
 small_image: clojure_logo.svg
+written_in: english
 ---
 <p>
   Using literals in your tests can have some advantages, such as, readability and traceability. 

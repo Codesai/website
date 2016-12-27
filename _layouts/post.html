@@ -14,7 +14,13 @@ layout: page
                 {{ content }}
 
                 {% if page.cross_post_url %}
-                    <p>Publicado originalmente en <a href="{{ page.cross_post_url }}">el blog de {{ page.author }}</a>.</p>
+                    <p>
+                       {% if page.written_in == 'english' %} 
+                            Originally published in <a href="{{ page.cross_post_url }}"> {{ page.author }}'s blog</a>.
+                       {% else %}
+                            Publicado originalmente en <a href="{{ page.cross_post_url }}">el blog de {{ page.author }}</a>.
+                       {% endif %}
+                    </p>
                 {% endif %}
 
                 <div class="back-to-blog">

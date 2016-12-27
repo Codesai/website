@@ -12,6 +12,7 @@ categories:
 cross_post_url: http://www.carlosble.com/2015/05/c-asynawait-and-task-parallel-library/
 author: Carlos Blé
 small_image: csharp_logo.svg
+written_in: english
 ---
 In order for a native desktop application to be responsive, I mean, not to freeze while sending a request over the network or processing a heavy CPU operation, these operations have to run in a separate thread.
   

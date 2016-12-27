@@ -13,6 +13,7 @@ categories:
 cross_post_url: http://www.carlosble.com/2015/07/productive-pair-programming/
 author: Carlos Blé
 small_image: small_pair_programming.jpg
+written_in: english
 ---
 The title of this post is redundant, **pair programming is** already a **productivity technique**. That's my understanding or pair programming not just two people sitting together. Two people may code together for learning or mentoring purposes, however we pair for productivity reasons - productivity in the **long term**.
   

@@ -17,6 +17,7 @@ tags:
 author: Manuel Rivero
 cross_post_url: http://garajeando.blogspot.com.es/2016/11/using-effects-in-re-frame.html
 small_image: cljs.svg
+written_in: english
 ---
 <p>
   In <a href="https://github.com/Day8/re-frame"><strong>re-frame</strong></a>, we'd like to use <strong>pure event handlers</strong> because they provide some important advantages, (mentioned in <a href="/2016/10/using-coeffects-in-re-frame">a previous post about <strong>coeffects</strong> in <strong>re-frame</strong></a>): <b>local reasoning, easier testing, and events replay-ability</b>. 

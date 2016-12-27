@@ -13,6 +13,7 @@ categories:
 cross_post_url: http://www.carlosble.com/2015/10/object-references-state-and-side-effects/
 author: Carlos Blé
 small_image: csharp_logo.svg
+written_in: english
 ---
 C#, Java and other languages have the same behaviour when it comes to reference types.
 
