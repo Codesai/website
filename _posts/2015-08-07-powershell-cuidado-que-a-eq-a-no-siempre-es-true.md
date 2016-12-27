@@ -1,6 +1,5 @@
 ---
 title: 'Cuidado que ($a -eq $a) no siempre es $true'
-author: msanjuan
 layout: post
 date: 2015-08-07T00:22:46+00:00
 type: post
