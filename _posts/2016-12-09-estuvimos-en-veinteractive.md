@@ -8,6 +8,7 @@ status: publish
 categories:
 - Codesai
 - Formación
+- Test Driven Development
 tags: []
 author: Manuel Rivero
 small_image: ve_interactive_logo.svg
@@ -22,6 +23,6 @@ Se trata un curso muy intenso y eminentemente práctico que dura dos días, cada
 
 Fue todo un placer trabajar con los 14 desarrolladores que asistieron al curso. Era un grupo con una actitud genial y con un nivel muy bueno. A pesar de lo intenso del curso, trabajaron con mucho entusiasmo cada uno de los ejercicios y se produjeron debates muy interesantes y constructivos.
 
-<img src="/assets/curso_tdd_veInteractive.jpg"/>
+<img src="/assets/curso_tdd_veInteractive.jpg" alt="asistentes al curso de TDD en veInteractive"/>
 
 Nos fuimos de Bilbao exhaustos, pero muy contentos, tanto por las personas que conocimos como por el feedback que recibimos. Personalmente, me encanto trabajar con Luis y aprendí muchísimo de él.

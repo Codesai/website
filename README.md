@@ -59,6 +59,7 @@ You can now write your post below, remember that we now use **markdown** and you
 | **author** | there can be multiple authors for a post, ie: `Someone and Somebody` |
 | **small_image** | the filename (not the full path) of the image to use as preview for the post |
 | cross_post_url | when cross-posting, the url of the original post. A note will be added at the end of the post |
+| written_in | It's only necessary for cross-posting. By default is set to spanish. If your post is written in English, set it to english |
 | date | you can specify a more precise date in the format `2016-12-15 11:25:00.000000000 +01:00` |
 | tags | an array of tags `tags: [first, second, third]` |
 | categories | an object of categories |
