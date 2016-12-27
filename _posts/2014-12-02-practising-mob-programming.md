@@ -16,9 +16,9 @@ written_in: english
 
 <img src="/assets/mobProg1.jpg"/>
 
-In the past edition of Socrates UK, I met <a title="Gianfranco Alongi" href="https://twitter.com/gfalongi" **Topshelf**>Gianfranco Alongi</a> who told us about his team's experience with  <a title="Mob Programming site" href="http://mobprogramming.org/" **Topshelf**>Mob Programming</a>. It was the first time I heard about it. As the site says, Mob programming is _people working at the same time, in the same space, at the same computer, on the same thing._ Gianfranco said it was very useful for them.
+In the past edition of Socrates UK, I met <a title="Gianfranco Alongi" href="https://twitter.com/gfalongi" >Gianfranco Alongi</a> who told us about his team's experience with <a title="Mob Programming site" href="http://mobprogramming.org/" >Mob Programming</a>. It was the first time I heard about it. As the site says, Mob programming is _people working at the same time, in the same space, at the same computer, on the same thing._ Gianfranco said it was very useful for them.
 
-At the beginning of November three of my fellow craftsmen and I joined a team of other 12 developers to work on a new project. We are building a <a title="DMS" href="http://en.wikipedia.org/wiki/Dealership_management_system" **Topshelf**>DMS</a> (Dealer management system) and an IMS (Importer management system). The project is very exciting but we don't have a clue on the domain. We are also a lot of people with different programming styles. So we decided to give Mob Programming a try and after a few weeks the results are very positive.
+At the beginning of November three of my fellow craftsmen and I joined a team of other 12 developers to work on a new project. We are building a <a title="DMS" href="http://en.wikipedia.org/wiki/Dealership_management_system" >DMS</a> (Dealer management system) and an IMS (Importer management system). The project is very exciting but we don't have a clue on the domain. We are also a lot of people with different programming styles. So we decided to give Mob Programming a try and after a few weeks the results are very positive.
 
 Some **lessons we have learned** along the way:
 
