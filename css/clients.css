@@ -8,7 +8,7 @@
 }
 
 #clients .client {
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 #clients .logo {
@@ -82,12 +82,12 @@
     }
 
     #clients #without-description .logo {
-        margin: 0;
+        margin: 0 auto;
     }
 
     #clients #without-description .col-sm-4 {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     
 }
