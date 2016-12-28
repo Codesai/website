@@ -1,5 +1,5 @@
 #clients {
-    padding: 40px 30px;
+    padding: 40px 0;
 }
 
 #clients .section-title-custom {
@@ -44,6 +44,12 @@
     font-size: 1em;
     letter-spacing: 0.02em;
     text-align: justify;
+}
+
+#clients .read-more {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
 }
 
 #clients .read-more a {
