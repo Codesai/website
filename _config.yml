@@ -23,13 +23,12 @@ exclude_from_localizations: ["js", "css", "fonts", "img", "_posts", "atom.xml", 
 
 # Site settings
 title: Codesai
-url: https://codesai.aerobatic.io
+url: https://www.codesai.com
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 permalink: :year/:month/:title
 
 disqus_is_enabled: true
-atom_url: https://codesai.aerobatic.io
 
 # Build settings
 markdown: kramdown
