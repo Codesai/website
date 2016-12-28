@@ -1,20 +1,22 @@
 {
+	"name": "codesai-website",
+	"version": "1.0.0",
 	"_aerobatic": {
 		"build": {
 			"engine": "jekyll"
-		}
-	},
-	"router": [
-		{
-			"module": "custom-errors",
-			"options": {
-				"errors": {
-					"404": "/404.html"
-				}
-			}
 		},
-		{
-			"module": "webpage"
-		}
-	]
+		"router": [
+			{
+				"module": "custom-errors",
+				"options": {
+					"errors": {
+						"404": "/404.html"
+					}
+				}
+			},
+			{
+				"module": "webpage"
+			}
+		]
+	}
 }
