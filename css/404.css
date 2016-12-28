@@ -1,14 +1,19 @@
 #error-404 {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 #error-404 .error {
-    font-size: 12.5em;
+    font-size: 12em;
 }
 
 #error-404 .message {
     font-size: 1.2em;
     letter-spacing: 0.02em;
     padding-bottom: 20px;
+}
+
+#error-404 img {
+    width: 100%;
+    max-width: 500px;
 }
