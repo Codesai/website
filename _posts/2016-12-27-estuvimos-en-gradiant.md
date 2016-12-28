@@ -29,7 +29,7 @@ Creo que hacer los cursos en pareja es una gran ventaja. Por un lado, porque pod
 
 Algunos de los desarrolladores que asistieron al curso trabajaban en sistemas empotrados haciendo IOT o procesado de señales en los que cuentan con recursos muy limitados y en entornos en los que testear es bastante complicado. Para tratar de ayudarlos, aparte de responder dudas concretas y de las conversaciones de pasillo, reunimos una compilación de [recursos interesantes para hacer testing y TDD con C empotrado](https://gist.github.com/trikitrok/840436ea8bf0b2bb7f722f16a45ab54d).
 
-Nos gustó muchísimo la experiencia de trabajar con las personas que asistieron al curso. Era un grupo muy agradable y con muchísimas ganas de aprender. Además la gran diversidad del tipo de trabajo de los asistentes
+Nos gustó muchísimo la experiencia de trabajar con las personas que asistieron al curso. Era un grupo muy agradable y con muchísimas ganas de aprender. Además, durante el curso, surgieron preguntas y debates muy interesantes debido a la gran diversidad de tipos de proyecto desarrollados por los asistentes.
 
 <section class="twitter-embeds">
   <div class="row">
