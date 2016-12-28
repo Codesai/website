@@ -40,7 +40,7 @@ Y este es el método que establecía la conexión con la base de datos:
 
 <script src="https://gist.github.com/JoseDeniz/55e8f82e7a3ae42e4885924410a3b293.js"></script>
 
-¡Cuántos _try/catch_! ¡Vamos a refactorizar! Empecemos con el método que establecía la conexión:
+¡Cuántos _try/catch_! Vamos a refactorizar para dejar un código más limpio y legible donde cualquier persona pueda leerlo y tener una idea de cómo funciona con solo echarle un vistazo. Empecemos con el método que establecía la conexión:
 
 <script src="https://gist.github.com/JoseDeniz/f681f1e2118c0a229ef5e20822d7fcfb.js"></script>
 
@@ -48,7 +48,11 @@ Y finalmente, con el método que inserta, extrayendo más métodos para dejar el
 
 <script src="https://gist.github.com/JoseDeniz/12953edfb24a89c35ebcf0b1e991107e.js"></script>
 
-Personalmente, me ha gustado mucho haber descubierto esta manera de hacerlo, ya que me centro más en **qué** quiero hacer en vez de **cómo** lo quiero hacer.
+En caso de que querramos controlar las excepciones, basta con llamar a la función **onFailure(Consumer&lt;Throwable&gt;)**. Por ejemplo:
+
+<script src="https://gist.github.com/JoseDeniz/b88bbf58376cdd916eed7687e408be49.js"></script>
+
+Personalmente, me ha gustado mucho haber descubierto esta manera de hacerlo, ya que me centro más en **qué** quiero hacer en vez de **cómo** lo quiero hacer. Y además, mejora muchísimo la legibilidad del código.
 
 Por último, me gustaría recordar que el proyecto es para aprender y cualquier _feedback_ será muy bien recibido :D
 
