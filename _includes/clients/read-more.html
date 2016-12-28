@@ -1,5 +1,5 @@
 <div class="read-more">
-    <a class="indicator">Leer más</a>
+    <a class="indicator">Nuestra aportación</a>
 </div>
 
 <script>
@@ -8,10 +8,10 @@
         var indicator = $('#{{ include.client-id }} .read-more .indicator');
 
         moreInfo.slideToggle('slow', function() {
-            if(indicator.text() == 'Leer más') {
-                indicator.text('Leer menos');
+            if(indicator.text() == 'Nuestra aportación') {
+                indicator.text('Ocultar');
             } else {
-                indicator.text('Leer más');
+                indicator.text('Nuestra aportación');
             }
         });
     });
