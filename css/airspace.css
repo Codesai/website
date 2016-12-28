@@ -342,13 +342,18 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0 10px;
 }
 
+#team .about-modal img {
+  width: 100%;
+  max-width: 300px;
+}
+
 #partners {
   text-align: center;
   padding-bottom: 60px;
 }
 
 #partners .section-title-custom {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -356,12 +361,10 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #111;
 }
 
-#partners .logo {
+#partners .logo img {
     width: 100%;
-    height: 180px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    max-width: 360px;
+    height: 200px;
 }
 
 
