@@ -362,6 +362,18 @@ px      68    160    252    */
    border: none;
    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
  }
+
+ #partners {
+    padding-bottom: 30px;
+  }
+
+  #partners .section-title-custom {
+    padding-bottom: 0;
+  }
+
+  #partners .logo img {
+    margin-bottom: 30px;
+  }
  
   /*---------------------------------------------
 					Index Close 
