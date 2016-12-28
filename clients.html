@@ -4,36 +4,60 @@ title: Clientes
 permalink: /clients/
 ---
 
-<div id="clients">
-	<section class="introduction">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title-custom">Nuestros clientes</div>
-				</div>
+<section id="clients">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title-custom">Nuestros clientes</div>
 			</div>
+		</div>
 
-			{% for client in site.clients %}
-				<div class="client">
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="logo" style="background-image: url({{ client.logo }})"></div>
+		{% for client in site.clients %}
+			<div class="client">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="logo" style="background-image: url({{ client.logo }})"></div>
+					</div>
+					<div class="col-sm-9">
+						<div class="client-name">
+							<a href="{{ client.url }}">{{ client.name }}</a>
 						</div>
-						<div class="col-sm-9">
-							<div class="client-name">
-								<a href="{{ client.url }}">{{ client.name }}</a>
-							</div>
-							<div class="underline"></div>
-							<div class="description">
-								{% include {{ client.description }}  %}
-							</div>
+						<div class="underline"></div>
+						<div class="description">
+							{% include {{ client.description }}  %}
 						</div>
 					</div>
 				</div>
-			{% endfor %}
-		</div>
-	</section>
-</div>
+			</div>
+		{% endfor %}
+
+		<section id="without-description">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="logo" style="background-image: url(../img/logos/antevenio.png)"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="logo" style="background-image: url(../img/logos/ironhack.png)"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="logo" style="background-image: url(../img/logos/jpg_consultores_energeticos.png)"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="logo" style="background-image: url(../img/logos/besepa.png)"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="logo" style="background-image: url(../img/logos/isqi.png)"></div>
+				</div>
+				<div class="col-sm-4">
+					<div class="logo" style="background-image: url(../img/logos/la_salle.png)"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+</section>
 
 <!--
 <div class="text">

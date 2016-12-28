@@ -60,6 +60,11 @@
     display: none;
 }
 
+#clients #without-description .logo {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
@@ -68,4 +73,21 @@
 
 @media only screen and (max-width: 767px) {
 
+    #clients .logo {
+        max-width: 400px;
+    }
+
+    #clients .client .logo {
+        margin: 0 auto 10px auto;
+    }
+
+    #clients #without-description .logo {
+        margin: 0;
+    }
+
+    #clients #without-description .col-sm-4 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
 }
