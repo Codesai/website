@@ -51,6 +51,8 @@ px      68    160    252    344    436    528    620    712    */
 }
 
 #team .team-member img:hover {
+  transition: none;
+  transform: none;
   box-shadow: none;
 }
 
@@ -342,6 +344,8 @@ px      68    160    252    */
   }
 
   #team .team-member img:hover {
+    transition: none;
+    transform: none;
     box-shadow: none;
   }
 
