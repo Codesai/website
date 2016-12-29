@@ -28,8 +28,6 @@ cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 permalink: :year/:month/:title
 
-disqus_is_enabled: true
-
 # Build settings
 markdown: kramdown
 
