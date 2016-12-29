@@ -1,9 +1,18 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name='description' content=''>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
+
+<meta property="og:site_name" content="Codesai">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
+<meta property="og:url" content="{{ site.url }}">
+<meta property="og:image" content="{{ site.url | append: '/img/rich_preview_logo.png' }}">
+
 
 <!-- CSS -->
 <link rel='stylesheet' href='{{ site.baseurl_root }}/css/owl.carousel.css' />
