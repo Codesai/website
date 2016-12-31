@@ -6,11 +6,19 @@ layout: page
         <div class="row">
             <div class="content">
                 <h1>{{ page.title }}</h1>
+                <div class="post-categories">
+                  <p>
+                      <span class="bold">{% translate blog.categories %}: </span>
+                      {% for category in page.categories %}
+                        <a href="{{site.baseurl}}/blog/categories/#{{category|slugize}}">{{category}}</a>
+                      {% endfor %}
+                  </p>
+                </div>
                 <div class="post-info-wrapper">
                     <p class="italic">Publicado por <span class="bold">{{ page.author }}</span> el <span class="bold">{{ page.date | date: "%d/%m/%Y" }}</span></p>
                 </div>
                 <hr/>
-                
+
                 {{ content }}
 
                 {% if page.cross_post_url %}
