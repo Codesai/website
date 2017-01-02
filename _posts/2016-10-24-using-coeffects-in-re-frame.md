@@ -5,7 +5,7 @@ date: 2016-10-24 22:17:14.000000000 +00:00
 type: post
 published: true
 status: publish
-tags:
+categories:
 - ClojureScript
 - Clojure
 - Effects and Coeffects
