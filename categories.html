@@ -13,7 +13,8 @@ permalink: /blog/categories/
 			</div>
 		</div>
         <div class="categories-list">
-            {% for category in site.categories %}
+            {% assign sortedCategories = site.categories | sort %}
+            {% for category in sortedCategories %}
                 <div class="category">
                     <div class="row">
                         <div class="col-md-12">
