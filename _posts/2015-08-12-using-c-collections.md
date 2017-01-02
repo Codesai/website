@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-  - Clean code
+  - Clean Code
   - C#
   - .Net
   - Implementation Patterns

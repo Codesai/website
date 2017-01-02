@@ -7,6 +7,8 @@ published: true
 status: publish
 categories:
   - React
+  - JavaScript
+  - Learning
 cross_post_url: http://miguelviera.com/2016/09/25/reflexionando-sobre-react-binding-el-this-y-alguna-o/
 author: Miguel Ángel Viera
 small_image: react.svg
