@@ -42,10 +42,18 @@
 	margin: 0;
 }
 
+.post-categories a {
+	font-size: 11px;
+}
+
+.post-categories p {
+	font-size: 11px;
+}
+
 .post .content p {
 	color: #111;
   	padding-top: 10px;
-	text-align: justify;	
+	text-align: justify;
 }
 
 .post .content img {

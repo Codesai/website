@@ -6,12 +6,11 @@ type: post
 published: true
 status: publish
 categories:
-- Clojure
-- ClojureScript
-- Refactoring
-- Design patterns
-- Learning
-- Tests
+  - Clojure/ClojureScript
+  - Refactoring
+  - Design Patterns
+  - Learning
+  - Testing
 author: Manuel Rivero
 cross_post_url: http://garajeando.blogspot.com.es/2016/10/using-builders-to-remove-duplication-in.html
 small_image: clojure_logo.svg

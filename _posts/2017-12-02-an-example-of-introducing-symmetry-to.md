@@ -3,7 +3,7 @@ title: 'An example of introducing symmetry to enable duplication removal '
 layout: post
 date: 2017-01-02T00:16:00+00:00
 categories:
-  - Design patterns
+  - Design Patterns
   - Implementation Patterns
   - Katas
   - Learning

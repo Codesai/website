@@ -10,6 +10,7 @@ categories:
   - Logging
   - Monitoring
   - .Net
+  - DevOps
 cross_post_url: http://www.modestosanjuan.com/utilizando-extensionless-para-monitorizar-logs-y-excepciones/
 author: Modesto San Juan
 small_image: small_exceptionless_logo.png

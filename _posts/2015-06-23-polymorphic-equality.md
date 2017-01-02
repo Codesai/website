@@ -7,7 +7,6 @@ published: true
 status: publish
 categories:
   - Clean code
-  - Software Development
   - Test Driven Development
   - Testing 
   - C#

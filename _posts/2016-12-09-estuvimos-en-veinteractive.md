@@ -6,9 +6,9 @@ type: post
 published: true
 status: publish
 categories:
-- Codesai
-- Formación
-- Test Driven Development
+  - Formación
+  - Test Driven Development
+  - News
 tags: []
 author: Manuel Rivero
 small_image: ve_interactive_logo.svg

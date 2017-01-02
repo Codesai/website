@@ -7,7 +7,9 @@ published: true
 status: publish
 categories:
   - Java
-  - Java 8
+  - Functional Programming
+  - Refactoring
+  - Learning
 cross_post_url: http://josemanueldeniz.es/refactorizando-con-streams/
 author: José Manuel Déniz
 small_image: small_java_logo.png

@@ -6,8 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-  - XP
-  - Agile
+  - XP & Agile
   - Retrospectivas
 cross_post_url: http://www.carlosble.com/2015/09/xp-team-building/
 author: Carlos Blé
