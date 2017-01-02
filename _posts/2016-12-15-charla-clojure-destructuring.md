@@ -6,10 +6,9 @@ type: post
 published: true
 status: publish
 categories:
-- Codesai
-- Formación
-- Clojure
-- Functional Programming
+  - Learning
+  - Clojure/ClojureScript
+  - Functional Programming
 tags: []
 author: Manuel Rivero
 cross_post_url: http://garajeando.blogspot.com.es/2016/12/recorded-talk-about-destructuring-in.html

@@ -6,7 +6,9 @@ type: post
 published: true
 status: publish
 categories:
-- Equipo
+  - Codesai
+  - Eventos
+  - News
 tags: []
 meta:
   _alp_processed: '1478361760'

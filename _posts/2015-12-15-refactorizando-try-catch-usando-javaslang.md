@@ -7,7 +7,10 @@ published: true
 status: publish
 categories:
   - Java
-  - Java 8
+  - Javaslang
+  - Functional Programming
+  - Refactoring
+  - Learning
 cross_post_url: http://josemanueldeniz.es/refactorizando-try-catch-usando-javaslang/
 author: José Manuel Déniz
 small_image: small_javaslang-logo.png

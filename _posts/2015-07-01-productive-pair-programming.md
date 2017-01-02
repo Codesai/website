@@ -6,9 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-  - Agile
-  - XP
-  - Software Development
+  - XP & Agile
   - Pair Programming
 cross_post_url: http://www.carlosble.com/2015/07/productive-pair-programming/
 author: Carlos Blé

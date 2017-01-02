@@ -6,14 +6,13 @@ type: post
 published: true
 status: publish
 categories:
-- ClojureScript
-- Clojure
+- Clojure/ClojureScript
 - Effects and Coeffects
 - Functional Programming
 - Functional Reactive Programming
 - re-frame
 - Learning
-- Tests
+- Testing
 author: Manuel Rivero
 cross_post_url: http://garajeando.blogspot.com.es/2016/10/coeffects-in-re-frame.html
 small_image: cljs.svg
