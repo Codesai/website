@@ -1,5 +1,5 @@
 ---
-title: 'C# Asyn/Await and Task Parallel Library'
+title: 'C# Async/Await and Task Parallel Library'
 layout: post
 date: 2015-05-29T14:04:27+00:00
 type: post
