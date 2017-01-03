@@ -6,12 +6,12 @@ type: post
 published: true
 status: publish
 categories:
-  - Clean code
-  - Software Development
+  - Clean Code
   - Test Driven Development
   - Testing 
   - C#
   - .Net
+  - Object Oriented Design
 cross_post_url: http://www.carlosble.com/2015/06/polymorphic-equality/
 author: Carlos Blé
 small_image: csharp_logo.svg

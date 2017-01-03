@@ -6,7 +6,6 @@ type: post
 published: true
 status: publish
 categories:
-  - Software Development
   - C#
   - .Net
 cross_post_url: http://www.carlosble.com/2016/04/event-bubbling-in-c/

@@ -6,8 +6,8 @@ type: post
 published: true
 status: publish
 categories:
-  - XP
-  - Agile
+  - XP & Agile
+  - Mob Programming
 cross_post_url: http://www.carlosble.com/2014/12/practising-mob-programming/
 author: Carlos Blé
 small_image: small_mobProg.jpg

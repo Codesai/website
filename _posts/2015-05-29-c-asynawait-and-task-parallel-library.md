@@ -6,7 +6,6 @@ type: post
 published: true
 status: publish
 categories:
-  - Software Development
   - C#
   - .Net
 cross_post_url: http://www.carlosble.com/2015/05/c-asynawait-and-task-parallel-library/

@@ -5,15 +5,14 @@ date: 2016-11-10 22:17:14.000000000 +00:00
 type: post
 published: true
 status: publish
-tags:
-- ClojureScript
-- Clojure
+categories:
+- Clojure/ClojureScript
 - Effects and Coeffects
 - Functional Programming
 - Functional Reactive Programming
 - re-frame
 - Learning
-- Tests
+- Testing
 author: Manuel Rivero
 cross_post_url: http://garajeando.blogspot.com.es/2016/11/using-effects-in-re-frame.html
 small_image: cljs.svg

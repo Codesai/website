@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-  - Clean code
+  - Clean Code
   - Test Driven Development
   - Testing
   - Refactoring

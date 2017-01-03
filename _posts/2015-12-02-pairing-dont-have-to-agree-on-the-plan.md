@@ -1,14 +1,12 @@
 ---
-title: 'Pairing: don’t have to always agree on the plan'
+title: 'Pairing: don’t have to always agree on a plan'
 layout: post
 date: 2015-12-02T09:25:44+00:00
 type: post
 published: true
 status: publish
 categories:
-  - Agile
-  - XP
-  - Software Development
+  - XP & Agile
   - Pair Programming
 cross_post_url: http://www.carlosble.com/2015/12/pairing-dont-have-to-agree-on-the-plan/
 author: Carlos Blé

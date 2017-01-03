@@ -28,8 +28,6 @@ cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 permalink: :year/:month/:title
 
-disqus_is_enabled: true
-
 # Build settings
 markdown: kramdown
 
@@ -55,10 +53,10 @@ clients:
       url: https://www.saludonnet.com/
       logo: ../img/logos/salud_on_net.png
       description: clients/salud_on_net.html
-    # - name: Antevenio
-    #   url: http://www.antevenio.com/
-    #   logo: ../img/logos/antevenio.png
-    #   description: clients/antevenio.html
+    - name: Antevenio
+      url: http://www.antevenio.com/
+      logo: ../img/logos/antevenio.png
+      description: clients/antevenio.html
     - name: TheMotion
       url: https://www.themotion.com/
       logo: ../img/logos/the_motion.png

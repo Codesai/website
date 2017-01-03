@@ -6,8 +6,8 @@ type: post
 published: true
 status: publish
 categories:
-  - Architecture
-  - Clean code
+  - Object Oriented Design
+  - Clean Code
   - C#
   - .Net
 cross_post_url: http://www.carlosble.com/2015/10/object-references-state-and-side-effects/

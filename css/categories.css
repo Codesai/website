@@ -1,0 +1,30 @@
+#categories {
+    padding: 40px 0;
+}
+
+#categories .section-title-custom {
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#categories .category {
+    margin-top: 10px;
+}
+
+#categories .category-name h3 {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+}
+
+#categories .category-posts {
+    margin-top: 20px;
+}
+
+#categories .category-posts a {
+    color: #587614;
+}
+
+#categories .category-posts a:hover {
+    color: #7fa52b;
+}
