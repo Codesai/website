@@ -10,6 +10,7 @@ tags:
 - Connascence
 - Refactoring
 author: Francisco Reyes & Manuel Rivero
+small_image: small_connascence.png
 ---
 
 Lately we've been studying and applying the concept of [connascence](http://connascence.io/) in our code and even have done [an introductory talk about connascence](http://slides.com/franreyesperdomo/connascence#/).
