@@ -18,11 +18,11 @@ small_image: small_charla_antonio.jpg
 
 El pasado 30 de noviembre cogí un avión a las 7 de la mañana para ir a Vitoria. Pocas veces me costó tan poco madrugar porque sabía que me esperaba un evento delicioso. Las expectativas eran altas sabiendo que detrás estaban los de [Agile Norte](https://www.meetup.com/AgileNorte/). Y se cumplieron.
 
-Agradezco enormemente que mi charla hubiese sido elegida, porque se que la selección es muy complicada, muchas charlas a escoger y acertar solo con la descripción es difícil.
+Agradezco enormemente que mi charla hubiese sido elegida, porque se que la selección es muy complicada, muchas a escoger y acertar solo con la descripción es difícil.
 
-Mi charla, titulada "Comunidades de Necesidad vs Comunidades de Soluciones", tiene su origen en la [ALE de 2015](http://ale2015.eu/) celebrada en Sofía hace dos veranos, donde en la keynote inaugural introdujo este tema [Chris Matts](https://twitter.com/PapaChrisMatts).
+Mi sesión, titulada "Comunidades de Necesidad vs Comunidades de Soluciones", tiene su origen en la [ALE de 2015](http://ale2015.eu/) celebrada en Sofía hace dos veranos, donde en la keynote inaugural introdujo este tema [Chris Matts](https://twitter.com/PapaChrisMatts).
 
-Me hizo ver que dividimos constantemente los problemas y las personas en dos tipos, los que van a la última y los conservadores, muchas veces sin tener en cuenta el problema y únicamente nuestro propio interés.
+Me hizo ver que dividimos constantemente los problemas y las personas en dos tipos, los que van a la última y los pragmáticos, muchas veces sin tener en cuenta el problema y únicamente nuestro propio interés.
 
 Desde ahí, elaboré esta sesión basándome en los posts que escribió Chris para preparar la keynote<a href="#nota1"><sup>[1]</sup></a> que me dió un conocimiento mucho más profundo de lo que significa tener opciones antes de decidir.
 
@@ -65,4 +65,3 @@ Y al final como siempre saber balancear es la clave de todo.
 <div class="foot-note">
    <a name="nota2"></a> [2] Tomadas por el gran <a href="https://twitter.com/oyabun?lang=en">Javier Alonso (@oyabun)</a>. Muchísimas gracias por tu fantástico trabajo.
 </div>
- 
