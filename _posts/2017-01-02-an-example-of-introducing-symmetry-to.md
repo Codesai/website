@@ -1,5 +1,5 @@
 ---
-title: 'An example of introducing symmetry to enable duplication removal '
+title: 'An example of introducing symmetry to enable duplication removal'
 layout: post
 date: 2017-01-02T00:16:00+00:00
 categories:
