@@ -48,7 +48,7 @@ Al inicio hago un pequeño y emotivo homenaje a la comunidad agile.
 
 Y aquí tenéis las slides que utilizamos en la charla:
 
-{% include slideshare-slides.html src="http://www.slideshare.net/slideshow/embed_code/key/kA06DFrC4s748U" %}
+{% include slideshare-slides.html src="https://www.slideshare.net/slideshow/embed_code/key/kA06DFrC4s748U" %}
 
 Y al final como siempre saber balancear es la clave de todo.
 
