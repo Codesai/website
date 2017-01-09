@@ -14,6 +14,7 @@ categories:
 tags: []
 author: Carlos Blé
 small_image: small_fon_logo.jpg
+cross_post_url: http://www.carlosble.com/2016/05/asi-fue-mi-paso-por-fon/
 ---
 Hace unos meses tuvimos la suerte de ser contratados por <a href="https://fon.com/">Fon</a> para impartir un [curso de TDD](/curso-de-tdd/) a uno de sus equipos de desarrollo en Madrid. Una oficina chulísima y un equipo entregado que prestó atención máxima desdel el minuto 1.
 
