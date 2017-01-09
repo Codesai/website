@@ -70,13 +70,18 @@
 	padding: 10px 0;
 }
 
-.post .youtube-embed {
+.post .youtube-embed, .post .slideshare-embed {
 	text-align: center;
 	padding: 10px 0;
 }
 
 .post .youtube-embed iframe {
 	width: 100%;
+	height: 400px;
+}
+
+.post .slideshare-embed iframe {
+	width: 72%;
 	height: 400px;
 }
 

@@ -47,7 +47,8 @@ Al inicio hago un pequeño y emotivo homenaje a la comunidad agile.
 {% include youtube-video.html src="https://www.youtube.com/embed/jzV7pMshyic" %}
 
 Y aquí tenéis las slides que utilizamos en la charla:
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/kA06DFrC4s748U" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/adelatorrefoss/cas2016-community-of-need-community-of-solutions-december-1st-2016" title="CAS2016 Community of Need &amp; Community of Solutions (December 1st 2016)" target="_blank">Slides</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/adelatorrefoss">Antonio de la Torre Fernández</a></strong> </div>
+
+{% include slideshare-slides.html src="http://www.slideshare.net/slideshow/embed_code/key/kA06DFrC4s748U" %}
 
 Y al final como siempre saber balancear es la clave de todo.
 
