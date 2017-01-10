@@ -6,8 +6,6 @@ type: post
 published: true
 status: publish
 categories:
-  - Architecture
-  - Software Development
   - Windows Apps
   - C#
   - .Net

@@ -7,6 +7,7 @@ published: true
 status: publish
 categories:
   - .Net
+  - DevOps
 cross_post_url: http://www.modestosanjuan.com/como-crear-appx-para-sideloading-desde-integracion-continua/
 author: Modesto San Juan
 small_image: small_automate_all.jpg

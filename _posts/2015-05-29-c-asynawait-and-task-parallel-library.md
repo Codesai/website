@@ -1,12 +1,11 @@
 ---
-title: 'C# Asyn/Await and Task Parallel Library'
+title: 'C# Async/Await and Task Parallel Library'
 layout: post
 date: 2015-05-29T14:04:27+00:00
 type: post
 published: true
 status: publish
 categories:
-  - Software Development
   - C#
   - .Net
 cross_post_url: http://www.carlosble.com/2015/05/c-asynawait-and-task-parallel-library/

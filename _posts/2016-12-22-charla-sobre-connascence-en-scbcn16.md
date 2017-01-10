@@ -6,11 +6,11 @@ type: post
 published: true
 status: publish
 categories:
-- Codesai
-- Eventos
-- Charlas
-- Object Oriented Design
-- Connascence
+  - Codesai
+  - Eventos
+  - Charlas
+  - Object Oriented Design
+  - Connascence
 tags: []
 author: 'Fran Reyes & Alfredo Casado'
 small_image: small_connascence.png
