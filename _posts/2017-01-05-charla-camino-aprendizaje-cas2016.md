@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Charla sobre El camino del aprendizaje en las CAS2016 
+title: Charla sobre El camino del aprendizaje en la CAS2016 
 date: 2017-01-05 08:00:00.000000000 +01:00
 type: post
 published: true
