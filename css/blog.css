@@ -43,6 +43,32 @@
 	height: 2px;
 }
 
+.tab-area {
+	padding: 40px;
+}
+
+.tab-area .youtube-embed iframe {
+	height: 300px;
+	width: 100%;
+}
+
+.video {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.video .title {
+	font-size: 1.6em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.video .speakers {
+	color: #7fa52b;
+	padding-bottom: 12px;
+}
+
 .post-area {
 	width: 100%;
 	min-height: 150px;

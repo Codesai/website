@@ -10,10 +10,8 @@ permalink: /blog/
 		<div id="publication-tabs">
 			<div class="row">
 				<ul id="publication-tabs">
-					<li role="presentation" class="col-xs-6 col-sm-3 active"><a href="#blog-tab" aria-controls="blog-tab" role="tab" data-toggle="tab">Blog</a></li>
-					<li role="presentation" class="col-xs-6 col-sm-3" ><a href="#videos-tab" aria-controls="videos-tab" role="tab" data-toggle="tab">Videos</a></li>
-					<li role="presentation" class="col-xs-6 col-sm-3" ><a href="#book-tab" aria-controls="book-tab" role="tab" data-toggle="tab">Book</a></li>
-					<li role="presentation" class="col-xs-6 col-sm-3" ><a href="#social-tab" aria-controls="social-tab" role="tab" data-toggle="tab">Social</a></li>
+					<li role="presentation" class="col-xs-6 active"><a href="#blog-tab" aria-controls="blog-tab" role="tab" data-toggle="tab">Blog</a></li>
+					<li role="presentation" class="col-xs-6" ><a href="#videos-tab" aria-controls="videos-tab" role="tab" data-toggle="tab">Videos</a></li>
 				</ul>
 			</div>
 
@@ -48,9 +46,45 @@ permalink: /blog/
 					</div>
 				{% endfor %}
 			</div>
-			<div role="tabpanel" class="tab-pane fade" id="videos-tab">Videos</div>
-			<div role="tabpanel" class="tab-pane fade" id="book-tab">Book</div>
-			<div role="tabpanel" class="tab-pane fade" id="social-tab">Social</div>
+
+			<div role="tabpanel" class="tab-pane fade" id="videos-tab">
+				<div class="tab-area">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="video">
+								<div class="title">El camino del aprendizaje</div>
+								<div class="speakers">Modesto San Juan y Ronny Ancorini</div>
+								{% include youtube-video.html src="https://www.youtube.com/embed/azVsa8XQp8c" no-title="true" %}
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="video">
+								<div class="title">Functions in Clojure</div>
+								<div class="speakers">A lot of people!</div>
+								{% include youtube-video.html src="https://www.youtube.com/embed/HmAU-z5dPS8" no-title="true" %}
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="video">
+								<div class="title">Comunidades de necesidad vs comunidades de soluciones</div>
+								<div class="speakers">Antonio de la Torre</div>
+								{% include youtube-video.html src="https://www.youtube.com/embed/jzV7pMshyic" no-title="true" %}
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="video">
+								<div class="title">OOP &amp; Connascence</div>
+								<div class="speakers">Alfredo Casado</div>
+								{% include youtube-video.html src="https://www.youtube.com/embed/bIr5fPom7B4" no-title="true" %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </section>
