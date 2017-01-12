@@ -1,5 +1,5 @@
 ---
-title: 'An example of introducing symmetry to enable duplication removal '
+title: 'An example of introducing symmetry to enable duplication removal'
 layout: post
 date: 2017-01-02T00:16:00+00:00
 categories:
@@ -96,7 +96,7 @@ How can we avoid this trap?
   You can see one way of doing it in this video:
 </p>
 
-{% include youtube-video.html src="https://www.youtube.com/embed/lBUmAZuXVmo" %}
+{% include youtube-video.html video-id="lBUmAZuXVmo" %}
 
 <p>
   After this refactoring all cases are symmetrical (they present the same sequence of decisions)
@@ -127,7 +127,7 @@ How can we avoid this trap?
 <script src="https://gist.github.com/trikitrok/a28321142dffb3c0fa26c44eb5b54a0f.js"></script>
 
 <p>
-  As we said at the beginning, symmetry is a very useful concept that can help you guide refactoring. Detecting asymmetries and thinking why they happen, can help you to detect hidden duplication and, as in this case, sometimes entangled <b>dimensions of complexity</b> <sup>[1]</sup>.
+  As we said at the beginning, symmetry is a very useful concept that can help you guide refactoring. Detecting asymmetries and thinking why they happen, can help you to detect hidden duplication and, as in this case, sometimes entangled <b>dimensions of complexity</b><a href="#nota1"><sup>[1]</sup></a>.
 </p>
 
 <p>
@@ -135,5 +135,5 @@ How can we avoid this trap?
 </p>
 
 <p>
-<sup>[1]</sup> <b>Dimension of Complexity</b> is a term used by <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a> in a talk at SocraCan16 to name an orthogonal functionality. In that talk he used dimensions of complexity to group the examples in his test list and help him choose the next test when doing TDD. He talked about it in this three posts: <a href="http://mateuadsuara.github.io/8thlight/2015/08/18/complexity-dimensions-p1.html">Complexity dimensions - FizzBuzz part I</a>, <a href="http://mateuadsuara.github.io/8thlight/2015/08/19/complexity-dimensions-p2.html">Complexity dimensions - FizzBuzz part II</a> and <a href="http://mateuadsuara.github.io/8thlight/2015/08/20/complexity-dimensions-p3.html">Complexity dimensions - FizzBuzz part III</a>. Other names for the same concept that I've heard are <b>axes of change</b>, <b>directions of change</b> or <b>vectors of change</b>.
+<a name="nota1"></a>[1] <b>Dimension of Complexity</b> is a term used by <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a> in a talk at SocraCan16 to name an orthogonal functionality. In that talk he used dimensions of complexity to group the examples in his test list and help him choose the next test when doing TDD. He talked about it in these three posts: <a href="http://mateuadsuara.github.io/8thlight/2015/08/18/complexity-dimensions-p1.html">Complexity dimensions - FizzBuzz part I</a>, <a href="http://mateuadsuara.github.io/8thlight/2015/08/19/complexity-dimensions-p2.html">Complexity dimensions - FizzBuzz part II</a> and <a href="http://mateuadsuara.github.io/8thlight/2015/08/20/complexity-dimensions-p3.html">Complexity dimensions - FizzBuzz part III</a>. Other names for the same concept that I've heard are <b>axes of change</b>, <b>directions of change</b> or <b>vectors of change</b>.
 </p>

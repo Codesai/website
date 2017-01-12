@@ -97,7 +97,7 @@ This is convenient since you can always edit your gist later without having to e
 To add a youtube video, you can use the youtube-video template provided in the includes. It will add a responsive, full-width youtube video to the post. Simply replace the src parameter with the one of your video :)
 
 ```
-{% include youtube-video.html src="https://www.youtube.com/embed/bIr5fPom7B4" %}
+{% include youtube-video.html video-id="bIr5fPom7B4" %}
 ```
 
 

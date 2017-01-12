@@ -1,0 +1,23 @@
+{% for post in site.posts %}
+    <div class="post-area">
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                {% if post.small_image %}
+                    <div class="small-image" style="background-image: url(../assets/{{ post.small_image}})"></div>
+                {% else %}
+                    <div class="small-image" style="background-image: url(../img/logo.svg); width: 80%; margin: auto;"></div>
+                {% endif %}									
+            </div>
+
+            <div class="col-md-9 col-sm-9">
+                <div class="title">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+                </div>
+                <p class="post-date">{{ post.date | date: "%d/%m/%Y" }}</p>
+                <p>
+                    {{ post.content | strip_html | truncatewords: 50 }}
+                </p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
