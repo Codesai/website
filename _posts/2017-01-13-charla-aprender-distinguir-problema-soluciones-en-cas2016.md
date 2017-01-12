@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Charla sobre Distinguir entre Problema y Solución en la CAS2016
+title: Charla sobre distinguir entre problema y solución en la CAS2016
 date: 2017-01-12 08:00:00.000000000 +01:00
 type: post
 published: true
