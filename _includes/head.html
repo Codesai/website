@@ -11,7 +11,7 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
 <meta property="og:url" content="{{ site.url }}">
-<meta property="og:image" content="{{ site.url | append: '/img/rich_preview_logo.png' }}">
+<meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
 
 
 <!-- CSS -->
