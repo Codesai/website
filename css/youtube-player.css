@@ -1,12 +1,11 @@
 .youtube-player {
     position: relative;
-    padding-bottom: 56.23%;
+    padding-bottom: 280px;
     /* Use 75% for 4:3 videos */
     height: 0;
     overflow: hidden;
-    max-width: 100%;
+    width: 100%;
     background: #000;
-    margin: 5px;
 }
 
 .youtube-player iframe {
@@ -32,13 +31,12 @@
     border: none;
     height: auto;
     cursor: pointer;
-    -webkit-transition: .4s all;
-    -moz-transition: .4s all;
-    transition: .4s all;
+    transform: scale(1);
 }
 
 .youtube-player img:hover {
-    
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
 }
 
 .youtube-player .play {
