@@ -50,3 +50,9 @@
     background: url("//i.imgur.com/TxzC70f.png") no-repeat;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 767px) {
+    .youtube-player {
+        padding-bottom: 140px;
+    }
+}
