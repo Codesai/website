@@ -36,7 +36,7 @@ Hasta ahora hemos hecho dos charlas. La primera fue sobre las colecciones de Clo
 Hace un par de semanas hicimos nuestra segunda charla remota. Esta vez profundizamos en el destructuring, y sí que la pudimos grabar, lo cual vino muy bien porque algunos miembros del grupo de estudio no pudieron conectarse.
 
 Esta es la grabación de la charla:
-{% include youtube-video.html src="https://www.youtube.com/embed/qMcjufX8czs" %}
+{% include youtube-video.html video-id="qMcjufX8czs" %}
 
 Además pueden encontrar <a href="https://gist.github.com/trikitrok/e24b0a8ecacf8c1ae726#file-destructuring-talk-clj">aquí todos los ejemplos que usé para explicar el destructuring</a> .
 

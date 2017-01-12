@@ -1,11 +1,5 @@
 <div class="row">
 	<div class="col-md-12">
-		<div class="youtube-embed">
-			{% if include.no-title %}
-				<iframe src="{{ include.src }}?showinfo=0" frameborder="0" allowfullscreen></iframe>
-			{% else %}
-				<iframe src="{{ include.src }}" frameborder="0" allowfullscreen></iframe>
-			{% endif %}
-		</div>
+		<div class="youtube-player" data-id="{{ include.video-id }}"></div>
 	</div>
 </div>

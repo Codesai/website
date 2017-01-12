@@ -96,7 +96,7 @@ How can we avoid this trap?
   You can see one way of doing it in this video:
 </p>
 
-{% include youtube-video.html src="https://www.youtube.com/embed/lBUmAZuXVmo" %}
+{% include youtube-video.html video-id="lBUmAZuXVmo" %}
 
 <p>
   After this refactoring all cases are symmetrical (they present the same sequence of decisions)
