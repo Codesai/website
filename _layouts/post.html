@@ -13,9 +13,9 @@ layout: page
                   <p>
                       {% for category in page.categories %}
                         {% if forloop.last == true %}
-                            <a href="{{site.baseurl}}/blog/categories/#{{category|slugize}}">{{category}}</a>
+                            <a href="{{site.baseurl}}/publications/categories/#{{category|slugize}}">{{category}}</a>
                         {% else %}
-                            <a href="{{site.baseurl}}/blog/categories/#{{category|slugize}}">{{category}}</a>,
+                            <a href="{{site.baseurl}}/publications/categories/#{{category|slugize}}">{{category}}</a>,
                         {% endif %}
                       {% endfor %}
                   </p>
