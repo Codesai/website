@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Charla sobre distinguir entre problema y solución en la CAS2016
-date: 2017-01-12 08:00:00.000000000 +01:00
+date: 2017-01-13 08:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -26,10 +26,14 @@ Al elegir una solución concreta estamos descartando todas las demás. Si había
 
 Creo que ser capaces de distinguir mejor entre problema y solución, es decir, separar lo mejor posible el "Qué" del "Cómo", nos hará más eficaces y económicos a la hora de solucionar problemas, sin prejudicar la calidad de las soluciones, y por tanto nos hará más ágiles.
 
-Este es el video de mi charla **Distinguir entre Problema y Solución** que han publicado nuestros buenos amigos de [Autentia](https://www.autentia.com/).
+Este es el video de mi charla **Distinguir entre Problema y Solución** que han publicado nuestros buenos amigos de [Autentia](https://www.autentia.com/)<a href="#nota1"><sup>[1]</sup></a>.
 
 {% include youtube-video.html video-id="IqUo9kCWQrw" %}
 
 Y aquí tenéis las slides de la charla:
 
 {% include slideshare-slides.html src="//www.slideshare.net/slideshow/embed_code/key/4IHtiPuupOukIP" %}
+
+<div class="foot-note">
+   <a name="nota1"></a> [1] ¡Muchas gracias!   
+</div>
