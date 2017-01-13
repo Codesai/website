@@ -24,13 +24,13 @@ Es normal porque estamos entrenados para buscar soluciones, los desarrolladores 
 
 Al elegir una solución concreta estamos descartando todas las demás. Si había otras más sencillas y/o convenientes para resolver el mismo problema, ya no nos daremos cuenta nunca, o quizás, lo haremos cuando ya sea demasiado tarde, después de dar demasiadas vueltas. 
 
-Creo que ser capaces de distinguir mejor entre problema y solución, es decir, separar lo mejor posible el "Qué" del "Cómo", nos hará más eficaces y económicos a la hora de solucionar problemas, sin prejudicar la calidad de las soluciones, y por tanto nos hará más ágiles.
+Creo que ser capaces de distinguir mejor entre problema y solución, es decir, separar lo mejor posible el **"Qué"** del **"Cómo"**, nos hace más eficaces y económicos a la hora de solucionar problemas, sin perjudicar la calidad de las soluciones, y por tanto nos hace más ágiles.
 
-Este es el video de mi charla **Distinguir entre Problema y Solución** que han publicado nuestros buenos amigos de [Autentia](https://www.autentia.com/)<a href="#nota1"><sup>[1]</sup></a>.
+Este es el video de mi charla **Distinguir entre Problema y Solución** que han publicado recientemente nuestros buenos amigos de [Autentia](https://www.autentia.com/)<a href="#nota1"><sup>[1]</sup></a>.
 
 {% include youtube-video.html video-id="IqUo9kCWQrw" %}
 
-Y aquí tenéis las slides de la charla:
+Y estas son las slides de la charla:
 
 {% include slideshare-slides.html src="//www.slideshare.net/slideshow/embed_code/key/4IHtiPuupOukIP" %}
 
