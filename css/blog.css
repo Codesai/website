@@ -118,7 +118,7 @@
 
 .post .content p {
 	color: #111;
-  	padding-top: 10px;
+  padding-top: 10px;
 	text-align: justify;
 }
 
@@ -128,8 +128,10 @@
 }
 
 .post .content figcaption {
+	font-size: 11px;
 	width: 100%;
 	padding: 0 20px;
+	text-align: center;
 }
 
 .post .twitter-embeds {
@@ -196,6 +198,7 @@
 	}
 
 	.post .content figcaption {
+		font-size: 11px;
 		padding: 0px;
 	}
 
@@ -235,6 +238,7 @@
 	}
 
 	.post .content figcaption {
+		font-size: 11px;
 		padding: 0px;
 	}
 
