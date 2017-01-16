@@ -95,9 +95,11 @@ Jim Weirich blabla
 
 #### 4.1. Degree. 
 
-An entity that is connascent
+The degree of a instance of connascence is related to the size of its impact. <-- add examples
 
 #### 4.2 Locality.
+
+The locality of an instance of connascence is how close the two entities are to each other. Code that is close together (in the same module, class, or function) should typically have more, and higher forms of connascence than code that is far apart (in separate modules, or even codebases). <-- rephrase
 
 #### 4.3 Stregth.
 
@@ -129,6 +131,8 @@ Page-Jones offers three guidelines for using **connascence** to improve systems 
 This generalizes the structured desig ideals of low coupling and high cohesion and is applicable to OO, or, as it was said before, to any other paradigm with partitioning, encapsulation and visibility rules.
 
 ### 6. Connascence vs SOLID and other design principles.
+
+Blabla
 
 ### 7. Connascence vs Code Smells.
 
