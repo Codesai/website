@@ -62,18 +62,34 @@ Connascence is meant to be a deeper criterion behind all of them and, as such, i
 
 We can see how this new design criteria can be used for any of the interdependencies among encapsulation levels present in OO. Moreover, it can also be used for higher levels of encapsulation (packages, modules, components, bounded contexts, etc). In fact, according to Page-Jones, **connascence** is applicable to any design paradigm with partitioning, encapsulation and visibility rules<a href="#nota1"><sup>[1]</sup></a>.
 
+### 4. Forms of connascence.
 
-### 3. But how should we apply it?
+Page-Jones distinguishes several forms (or types) of **connascence**.
 
-Page-Jones offers three guidelines for using **connascence** to improve systems maintanability<a href="#nota2"><sup>[2]</sup></a>:
+There are several types of **static connascence**:
+  
+  * **Connascence** of Name (CoN): when multiple components must agree on the name of an entity.
 
-1. Minimize overall **connascence** by breaking the systems into encapsulated elements.
+  * **Connascence** of Type (CoT): when multiple components must agree on the type of an entity.
+  
+  * **Connascence** of Meaning (CoM): when multiple components must agree on the meaning of specific values.
 
-2. Minimize any remaining **connascence** that crosses encapsualtion boundaries.
+  * **Connascence** of Position (CoP): when multiple components must agree on the order of values.
+  
+  * **Connascence** of Algorithm (CoA): when multiple components must agree on a particular algorithm.
 
-3. Maximize the **connascence** within encapsulation boundaries.
+There are also several types of **dynamic connascence**:
+  
+  * **Connascence** of Execution (order) (CoE): when the order of execution of multiple components is important.
+  
+  * **Connascence** of Timing (CoTm): when the timing of the execution of multiple components is important.
 
-### 4. Axes of connascence.
+  * **Connascence** of Value (CoV)
+  
+  * **Connascence** of Identity (CoI): when multiple components must reference the entity.
+
+
+### 4. Properties of connascence.
 
 Jim Weirich blabla
 
@@ -85,43 +101,42 @@ An entity that is connascent
 
 #### 4.3 Stregth.
 
-Page-Jones states that connascence has a spectrum of explicitness in connascence. The more implicit (stronger) a connascence is, the more time consuming and costly it is to detect, so stronger connascences are harder to discover, and harder to refactor. 
+Page-Jones states that connascence has a spectrum of explicitness in connascence. 
 
+The more implicit a form of connascence is, the more time consuming and costly it is to detect, so the stronger it is. Another way of viewing this property, is that the stronger a form of connascence is the harder it is to refactor.
 
-* blabla we believe that sometimes **connascence** might be a better metric for coupling than the somewhat fuzzy concept of code smells.
+So, in summary, stronger connascence forms are harder to detect or refactor. This is why static forms of connascence are weaker (easier to detect) than the dynamic ones, or, for example why CoN is much weaker (easier to refactor) than CoP.
 
-* There are several types of **static connascence**:
-  
-  * **Connascence** of Name (CoN): when multiple components must agree on the name of an entity.
-
-  * **Connascence** of Type (CoT): when multiple components must agree on the type of an entity.
-
-  * **Connascence** of Convention (CoC)
-  
-  * **Connascence** of Meaning (CoM): when multiple components must agree on the meaning of specific values.
-  
-  * **Connascence** of Position (CoP): when multiple components must agree on the order of values.
-  
-  * **Connascence** of Algorithm (CoA): when multiple components must agree on a particular algorithm.
-
-* There are also several types of **dynamic connascence**:
-  
-  * **Connascence** of Execution (order) (CoE): when the order of execution of multiple components is important.
-  
-  * **Connascence** of Timing (CoTm): when the timing of the execution of multiple components is important.
-
-  * **Connascence** of Value (CoV)
-  
-  * **Connascence** of Identity (CoI): when multiple components must reference the entity.
+The following figure shows the different forms of connascence sorted by descending strength. 
 
 <figure>
-    <img src="/assets/connascence-o-meter.png" alt="Connascence Types sorted by descending strength of coupling (from Kevin Rutherford)" title="Connascence Types sorted by descending strength of coupling (from Kevin Rutherford)" />
+    <img src="/assets/connascence-o-meter.png" alt="Connascence forms sorted by descending strength (from Kevin Rutherford's XP Surgery)" />
     <figcaption>
-      Connascence Types sorted by descending strength of coupling (from <a href="http://xpsurgery.eu/">Kevin Rutherford's XP surgery</a>).
+      Connascence forms sorted by descending strength (from <a href="http://xpsurgery.eu/resources/connascence/">Kevin Rutherford's XP Surgery</a>).
     </figcaption>
 </figure>
 
-### Connascence vs Code Smells
+### 5. How should we apply it?
+
+Page-Jones offers three guidelines for using **connascence** to improve systems maintanability<a href="#nota2"><sup>[2]</sup></a>:
+
+1. Minimize overall **connascence** by breaking the systems into encapsulated elements.
+
+2. Minimize any remaining **connascence** that crosses encapsualtion boundaries.
+
+3. Maximize the **connascence** within encapsulation boundaries.
+
+This generalizes the structured desig ideals of low coupling and high cohesion and is applicable to OO, or, as it was said before, to any other paradigm with partitioning, encapsulation and visibility rules.
+
+### 6. Connascence vs SOLID and other design principles.
+
+### 7. Connascence vs Code Smells.
+
+* blabla we believe that sometimes **connascence** might be a better metric for coupling than the somewhat fuzzy concept of code smells.
+
+### 8. Conclusions.
+
+### 9. References.
 
 <div class="foot-note">
  <a name="nota1"></a> [1] This explains the titles Jim Weirich chose for his talks: <a href="https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI">Grand Unified Theory of Software Design</a> and <a href="https://www.youtube.com/watch?v=l780SYuz9DI">The Building Blocks of Modularity</a>.
