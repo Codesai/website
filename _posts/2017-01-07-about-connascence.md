@@ -130,6 +130,8 @@ Page-Jones offers three guidelines for using **connascence** to improve systems 
 
 This generalizes the structured desig ideals of low coupling and high cohesion and is applicable to OO, or, as it was said before, to any other paradigm with partitioning, encapsulation and visibility rules.
 
+...vocabulary to talk and reason about concepts like coupling and cohesion (see talk about Coupling and Cohesion)
+
 ### 6. Connascence vs SOLID and other design principles.
 
 Blabla
