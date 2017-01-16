@@ -64,7 +64,7 @@ We can see how this new design criteria can be used for any of the interdependen
 
 But how should we apply it?
 
-**Connascence** offers three guidelines for improving systems maintanability<a href="#nota2"><sup>[2]</sup></a>:
+Page-Jones offers three guidelines for using **connascence** to improve systems maintanability<a href="#nota2"><sup>[2]</sup></a>:
 
 1. Minimize overall **connascence** by breaking the systems into encapsulated elements.
 
@@ -104,9 +104,9 @@ Jim Weirich blabla
   * **Connascence** of Identity (CoI): when multiple components must reference the entity.
 
 <figure>
-    <img src="/assets/connascence.png" alt="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" title="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" />
+    <img src="/assets/connascence-o-meter.png" alt="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" title="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" />
     <figcaption>
-      Connascence Types sorted by descending degree of coupling (from <a href="https://silkandspinach.net/author/kevinrutherford/">Kevin Rutherford</a>).
+      Connascence Types sorted by descending degree of coupling (from <a href="http://xpsurgery.eu/">Kevin Rutherford's XP surgery</a>).
     </figcaption>
 </figure>
 
