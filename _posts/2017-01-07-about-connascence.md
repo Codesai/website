@@ -17,16 +17,16 @@ Lately we've been studying and applying the concept of [connascence](http://conn
 
 With this post we'd like to start a series of posts about connascence and its relationship with refactoring.
 
-### Origin.
+### 1. Origin.
 
 The concept of **connascence** is not new at all. [Meilir Page-Jones](https://www.linkedin.com/in/meilir-page-jones-a55132) introduced it in 1992 in his paper [Comparing Techniques by Means of Encapsulation and Connascence](http://wiki.cfcl.com/pub/Projects/Connascence/Resources/p147-page-jones.pdf). Later, he elaborated more on the idea of **connascence** in his [What every programmer should know about object-oriented design](https://www.amazon.com/Every-Programmer-Should-Object-Oriented-Design/dp/0932633315) book from 1995, and its more modern version (using UML) [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8) from 1999.
 
-Ten years later, Jim Weirich, bring **connascence** back from oblivion in a series of talks: [Grand Unified Theory of Software Design](https://vimeo.com/10837903), [The Building Blocks of Modularity](http://confreaks.com/videos/77-mwrc2009-the-building-blocks-of-modularity﻿) and [Connascence Examined](https://www.youtube.com/watch?v=HQXVKHoUQxY).
+Ten years later, [Jim Weirich](https://en.wikipedia.org/wiki/Jim_Weirich), bring **connascence** back from oblivion in a series of talks: [Grand Unified Theory of Software Design](https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI), [The Building Blocks of Modularity](https://www.youtube.com/watch?v=l780SYuz9DI) and [Connascence Examined](https://www.youtube.com/watch?v=HQXVKHoUQxY).
 He did not only bring **connascence** back to live, but also improved its exposition, as we'll see later in this post.
 
 More recently, [Kevin Rutherford](https://silkandspinach.net/), has written a very interesting series of posts, in which he talks about using **connascence** as a guide to choose the most effective refactorings and how identifying **connascence** in a design can be more ojective and useful than identifying code smells.
 
-### What is connascence?
+### 2. What is connascence?
 
 The concept of **connascence** appears in a time, early nineties, when OO is starting its path to become the dominant programming paradigm, as a general way to evaluate design decisions in an OO design. In the previous dominant paradigm,  [structured programming](https://en.wikipedia.org/wiki/Structured_programming), **fan-out**, **coupling** and **cohesion** were fundamental design criteria used to evaluate design decisions. To make clear what he understood by these terms, let's see the definitions he used:
 
@@ -62,7 +62,8 @@ Connascence is meant to be a deeper criterion behind all of them and, as such, i
 
 We can see how this new design criteria can be used for any of the interdependencies among encapsulation levels present in OO. Moreover, it can also be used for higher levels of encapsulation (packages, modules, components, bounded contexts, etc). In fact, according to Page-Jones, **connascence** is applicable to any design paradigm with partitioning, encapsulation and visibility rules<a href="#nota1"><sup>[1]</sup></a>.
 
-But how should we apply it?
+
+### 3. But how should we apply it?
 
 Page-Jones offers three guidelines for using **connascence** to improve systems maintanability<a href="#nota2"><sup>[2]</sup></a>:
 
@@ -72,9 +73,17 @@ Page-Jones offers three guidelines for using **connascence** to improve systems 
 
 3. Maximize the **connascence** within encapsulation boundaries.
 
-### Axes of connascence
+### 4. Axes of connascence.
 
 Jim Weirich blabla
+
+#### 4.1. Degree. 
+
+An entity that is connascent
+
+#### 4.2 Locality.
+
+#### 4.3 Stregth.
 
 
 * blabla we believe that sometimes **connascence** might be a better metric for coupling than the somewhat fuzzy concept of code smells.
@@ -113,7 +122,7 @@ Jim Weirich blabla
 ### Connascence vs Code Smells
 
 <div class="foot-note">
- <a name="nota1"></a> [1] This explains the titles Jim Weirich chose for his talks: <a href="https://vimeo.com/10837903">Grand Unified Theory of Software Design</a> and <a href="http://confreaks.com/videos/77-mwrc2009-the-building-blocks-of-modularity﻿">The Building Blocks of Modularity</a>.
+ <a name="nota1"></a> [1] This explains the titles Jim Weirich chose for his talks: <a href="https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI">Grand Unified Theory of Software Design</a> and <a href="https://www.youtube.com/watch?v=l780SYuz9DI">The Building Blocks of Modularity</a>.
  <a name="nota2"></a> [2] The first two points conforms a <strong>refactoring algorithm</strong>  according to Kevin Rutherford's post <a href="https://silkandspinach.net/2016/06/09/the-page-jones-refactoring-algorithm/">The Page-Jones refactoring algorithm</a>.
 </div>
 
