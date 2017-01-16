@@ -85,6 +85,8 @@ An entity that is connascent
 
 #### 4.3 Stregth.
 
+Page-Jones states that connascence has a spectrum of explicitness in connascence. The more implicit (stronger) a connascence is, the more time consuming and costly it is to detect, so stronger connascences are harder to discover, and harder to refactor. 
+
 
 * blabla we believe that sometimes **connascence** might be a better metric for coupling than the somewhat fuzzy concept of code smells.
 
@@ -113,9 +115,9 @@ An entity that is connascent
   * **Connascence** of Identity (CoI): when multiple components must reference the entity.
 
 <figure>
-    <img src="/assets/connascence-o-meter.png" alt="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" title="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" />
+    <img src="/assets/connascence-o-meter.png" alt="Connascence Types sorted by descending strength of coupling (from Kevin Rutherford)" title="Connascence Types sorted by descending strength of coupling (from Kevin Rutherford)" />
     <figcaption>
-      Connascence Types sorted by descending degree of coupling (from <a href="http://xpsurgery.eu/">Kevin Rutherford's XP surgery</a>).
+      Connascence Types sorted by descending strength of coupling (from <a href="http://xpsurgery.eu/">Kevin Rutherford's XP surgery</a>).
     </figcaption>
 </figure>
 
