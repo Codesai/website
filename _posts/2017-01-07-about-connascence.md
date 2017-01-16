@@ -13,7 +13,9 @@ author: Manuel Rivero
 small_image: small_connascence.png
 ---
 
-Lately we've been studying and applying the concept of [connascence](http://connascence.io/) in our code and even have done [an introductory talk about connascence](http://slides.com/franreyesperdomo/connascence#/). LEt's talk a bit about it.
+Lately we've been studying and applying the concept of [connascence](http://connascence.io/) in our code and even have done [an introductory talk about connascence](http://slides.com/franreyesperdomo/connascence#/). 
+
+With this post we'd like to start a series of posts about connascence and its relationship with refactoring.
 
 ### Origin.
 
@@ -22,16 +24,16 @@ The concept of **connascence** is not new at all. [Meilir Page-Jones](https://ww
 Ten years later, Jim Weirich, bring **connascence** back from oblivion in a series of talks: [Grand Unified Theory of Software Design](https://vimeo.com/10837903), [The Building Blocks of Modularity](http://confreaks.com/videos/77-mwrc2009-the-building-blocks-of-modularity﻿) and [Connascence Examined](https://www.youtube.com/watch?v=HQXVKHoUQxY).
 He did not only bring **connascence** back to live, but also improved its exposition, as we'll see later in this post.
 
-More recently, Kevin Rutherford, has written a very interesting series of posts, in which he talks about using **connascence** as a guide to choose the most effective refactorings and how identifying **connascence** in a design can be more ojective and useful than identifying code smells.
+More recently, [Kevin Rutherford](https://silkandspinach.net/), has written a very interesting series of posts, in which he talks about using **connascence** as a guide to choose the most effective refactorings and how identifying **connascence** in a design can be more ojective and useful than identifying code smells.
 
 ### What is connascence?
 
 The concept of **connascence** appears in a time, early nineties, when OO is starting its path to become the dominant programming paradigm, as a general way to evaluate design decisions in an OO design. In the previous dominant paradigm,  [structured programming](https://en.wikipedia.org/wiki/Structured_programming), **fan-out**, **coupling** and **cohesion** were fundamental design criteria used to evaluate design decisions. To make clear what he understood by these terms, let's see the definitions he used:
 
 > **Fan-out** is a measure of the number of references to other procedures by lines of code within a given procedure.
-
+>
 > **Coupling** is a measure of the number and strength of connections between procedures.
-
+>
 > **Cohesion** is a measure of the "single-mindedness" of the lines of code within a given procedure in meeting the purpose of that procedure.
 
 According to Page-Jones, these design criteria govern the interactions between the [levels of encapsulation](https://books.google.es/books?id=iNAezyMExBkC&pg=PA210&lpg=PA210&dq=levels+of+encapsulation&source=bl&ots=BLv-66F9xq&sig=vaJWjQYq1Bc3_0MHQSKza5y7BiU&hl=en&sa=X&ved=0ahUKEwjF_cy7l-rQAhUBXhQKHSsoCJoQ6AEILjAC#v=onepage&q=levels%20of%20encapsulation&f=false) that are present in structured programming: level-1 encapsulation (the subroutine) and level-0 (lines of code), as can be seen in the following table from [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8). 
@@ -41,7 +43,7 @@ According to Page-Jones, these design criteria govern the interactions between t
     <figcaption><strong>Encapsulation levels and design criteria in structured programming</strong></figcaption>
 </figure>
 
-However, OO introduced at least level-2 encapsulation, (the class). In level-2 encapsulation, level-1 constructs (methods) are themselves encapsualated together with attributes into classes. This introduces many new interdependencies among encapsulation levels, which will require new design criteria to be defined, (see the following table from [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8)).
+However, OO introduces at least level-2 encapsulation, (the class), which  encapsulates level-1 constructs (methods) together with attributes. This introduces many new interdependencies among encapsulation levels, which will require new design criteria to be defined, (see the following table from [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8)).
 
 <figure>
     <img src="/assets/encapsulation_including_classes.png" alt="Encapsulation levels and design criteria in OO" />
@@ -58,11 +60,11 @@ Connascence is meant to be a deeper criterion behind all of them and, as such, i
 >
 > 2. that you can postulate some change that would require both A and B to be changed together in order to preserve overall correctness.
 
-We can see how this new design criteria can be used for any of the interdependencies among encapsulation levels present in OO. Moreover, it can also be used for higher levels of encapsulation (packages, modules, components, bounded contexts, etc). In fact, according to Page-Jones, **connascence** is applicable to any design paradigm with partitioning, encapsulation and visibility rules. _<-- añadir footnote: de ahí el nombre de las charlas de Jim Weirich_
+We can see how this new design criteria can be used for any of the interdependencies among encapsulation levels present in OO. Moreover, it can also be used for higher levels of encapsulation (packages, modules, components, bounded contexts, etc). In fact, according to Page-Jones, **connascence** is applicable to any design paradigm with partitioning, encapsulation and visibility rules<a href="#nota1"><sup>[1]</sup></a>.
 
 But how should we apply it?
 
-Connascence offers three guidelines for improving systems maintanability: _<-- añadir nota sobre Page-Jones algorithm_
+**Connascence** offers three guidelines for improving systems maintanability<a href="#nota2"><sup>[2]</sup></a>:
 
 1. Minimize overall **connascence** by breaking the systems into encapsulated elements.
 
@@ -72,9 +74,8 @@ Connascence offers three guidelines for improving systems maintanability: _<-- a
 
 ### Axes of connascence
 
-Page-Jones blabla
+Jim Weirich blabla
 
-### Types of connascence
 
 * blabla we believe that sometimes **connascence** might be a better metric for coupling than the somewhat fuzzy concept of code smells.
 
@@ -103,7 +104,7 @@ Page-Jones blabla
   * **Connascence** of Identity (CoI): when multiple components must reference the entity.
 
 <figure>
-    <img src="/assets/connascence.png" alt="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" title="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" style="width: 50%; height: 50%" />
+    <img src="/assets/connascence.png" alt="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" title="Connascence Types sorted by descending degree of coupling (from Kevin Rutherford)" />
     <figcaption>
       Connascence Types sorted by descending degree of coupling (from <a href="https://silkandspinach.net/author/kevinrutherford/">Kevin Rutherford</a>).
     </figcaption>
@@ -111,8 +112,10 @@ Page-Jones blabla
 
 ### Connascence vs Code Smells
 
-
-
+<div class="foot-note">
+ <a name="nota1"></a> [1] This explains the titles Jim Weirich chose for his talks: <a href="https://vimeo.com/10837903">Grand Unified Theory of Software Design</a> and <a href="http://confreaks.com/videos/77-mwrc2009-the-building-blocks-of-modularity﻿">The Building Blocks of Modularity</a>.
+ <a name="nota2"></a> [2] The first two points conforms a <strong>refactoring algorithm</strong>  according to Kevin Rutherford's post <a href="https://silkandspinach.net/2016/06/09/the-page-jones-refactoring-algorithm/">The Page-Jones refactoring algorithm</a>.
+</div>
 
 
 [Structured Design: Fundamentals of a Discipline of Computer Program and Systems Design](http://www.goodreads.com/book/show/946145.Structured_Design) by [Edward Yourdon](https://en.wikipedia.org/wiki/Edward_Yourdon) and [Larry L. Constantine](https://en.wikipedia.org/wiki/Larry_Constantine)
