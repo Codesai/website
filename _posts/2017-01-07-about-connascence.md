@@ -13,13 +13,11 @@ author: Manuel Rivero
 small_image: small_connascence.png
 ---
 
-Lately we've been studying and applying the concept of [connascence](http://connascence.io/) in our code and even have done [an introductory talk about connascence](http://slides.com/franreyesperdomo/connascence#/). 
-
-With this post we'd like to start a series of posts about connascence and its relationship with refactoring.
+Lately we've been studying and applying the concept of [connascence](http://connascence.io/) in our code and even have done [an introductory talk about connascence](http://slides.com/franreyesperdomo/connascence#/). With this post we'd like to start a series of posts about connascence.
 
 ### 1. Origin.
 
-The concept of **connascence** is not new at all. [Meilir Page-Jones](https://www.linkedin.com/in/meilir-page-jones-a55132) introduced it in 1992 in his paper [Comparing Techniques by Means of Encapsulation and Connascence](http://wiki.cfcl.com/pub/Projects/Connascence/Resources/p147-page-jones.pdf). Later, he elaborated more on the idea of **connascence** in his [What every programmer should know about object-oriented design](https://www.amazon.com/Every-Programmer-Should-Object-Oriented-Design/dp/0932633315) book from 1995, and its more modern version (using UML) [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8) from 1999.
+The concept of **connascence** is not new at all. [Meilir Page-Jones](https://www.linkedin.com/in/meilir-page-jones-a55132) introduced it in 1992 in his paper [Comparing Techniques by Means of Encapsulation and Connascence](http://wiki.cfcl.com/pub/Projects/Connascence/Resources/p147-page-jones.pdf). Later, he elaborated more on the idea of **connascence** in his [What every programmer should know about object-oriented design](https://www.amazon.com/Every-Programmer-Should-Object-Oriented-Design/dp/0932633315) book from 1995, and its more modern version (same book but using UML) [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8) from 1999.
 
 Ten years later, [Jim Weirich](https://en.wikipedia.org/wiki/Jim_Weirich), bring **connascence** back from oblivion in a series of talks: [Grand Unified Theory of Software Design](https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI), [The Building Blocks of Modularity](https://www.youtube.com/watch?v=l780SYuz9DI) and [Connascence Examined](https://www.youtube.com/watch?v=HQXVKHoUQxY).
 He did not only bring **connascence** back to live, but also improved its exposition, as we'll see later in this post.
@@ -50,9 +48,9 @@ However, OO introduces at least level-2 encapsulation, (the class), which  encap
     <figcaption>Encapsulation levels and design criteria in OO</figcaption>
 </figure>
 
-Two of these new required design criteria are **class cohesion** and **class coupling**, which are analogue to the structured programing's procedure cohesion and procedure coupling, but, as you can see, there are other ones in the table for which there isn't even a name.
+Two of these new design criteria are **class cohesion** and **class coupling**, which are analogue to the structured programing's procedure cohesion and procedure coupling, but, as you can see, there are other ones in the table for which there isn't even a name.
 
-Connascence is meant to be a deeper criterion behind all of them and, as such, it is a general way to evaluate design decisions in an OO design. This is the formal definition of **connascence**:
+Connascence is meant to be a deeper criterion behind all of them and, as such, it is a general way to evaluate design decisions in an OO design. This is the formal definition of **connascence** by Page-Jones:
 
 > **Connascence** between two software elements A and B means either
 >
@@ -60,11 +58,15 @@ Connascence is meant to be a deeper criterion behind all of them and, as such, i
 >
 > 2. that you can postulate some change that would require both A and B to be changed together in order to preserve overall correctness.
 
+In other words, there is **connascence** between two software elements when they must change together in order for the software to keep working correctly.
+
 We can see how this new design criteria can be used for any of the interdependencies among encapsulation levels present in OO. Moreover, it can also be used for higher levels of encapsulation (packages, modules, components, bounded contexts, etc). In fact, according to Page-Jones, **connascence** is applicable to any design paradigm with partitioning, encapsulation and visibility rules<a href="#nota1"><sup>[1]</sup></a>.
 
 ### 4. Forms of connascence.
 
 Page-Jones distinguishes several forms (or types) of **connascence**.
+
+**Connascence** can be **static**, when it can be assesed from the lexical structure of the code, or **dynamic**, when it depends on the execution patterns of the code at run-time. 
 
 There are several types of **static connascence**:
   
@@ -84,41 +86,42 @@ There are also several types of **dynamic connascence**:
   
   * **Connascence** of Timing (CoTm): when the timing of the execution of multiple components is important.
 
-  * **Connascence** of Value (CoV)
+  * **Connascence** of Value (CoV): when there are constraints on the possible values some shared elements can take. It's usually related to invariants.
   
   * **Connascence** of Identity (CoI): when multiple components must reference the entity.
 
+Another important form of **connascence** is **contranascence** which exists when elements are required to differ from each other (e.g., have different name in the same namespace or be in different namespaces, etc). **Contranascence** may also be either static or a dynamic.
 
 ### 4. Properties of connascence.
 
-Jim Weirich blabla
+Page-Jones talks in his books about two important properties of **connascence** that help measure its impact on maintanability: its degree of explicitness (the more explicit a **connascence** form is, the weaker it is) and its locality, (connascence across encapsulation boundaries is much worse than **connascence** between elements inside the same encapsulation boundary).
+
+A nice way to reformulate this is using what it's called the **three axes of connascence** <-- nota al pie
+which are:
 
 #### 4.1. Degree. 
 
-The degree of a instance of connascence is related to the size of its impact. <-- add examples
+The degree of a instance of **connascence** is related to the size of its impact. For instance, a software element that is connascent with hundreds of elements is likely to become a larger problem than one that is connacent to only a few.
 
 #### 4.2 Locality.
 
-The locality of an instance of connascence is how close the two entities are to each other. Code that is close together (in the same module, class, or function) should typically have more, and higher forms of connascence than code that is far apart (in separate modules, or even codebases). <-- rephrase
+The locality of an instance of **connascence** talks about how close the two software element are to each other. Elements that are close together (in the same encapsulation element) should typically present more, and higher forms of **connascence** than elements that is far apart (in different encapsulation boundaries). In other words, as the distance between software elements increases, the forms of **connascence** should be weaker.
 
 #### 4.3 Stregth.
 
-Page-Jones states that connascence has a spectrum of explicitness in connascence. 
+Page-Jones states that **connascence** has a spectrum of explicitness. The more implicit a form of **connascence** is, the more time consuming and costly it is to detect. Also a stronger a form of **connascence** is usually harder to refactor. So, stronger forms of **connascence** are harder to detect or refactor. 
+This is why **static** forms of **connascence** are weaker (easier to detect) than the **dynamic** ones, or, for example, why **CoN** is much weaker (easier to refactor) than **CoP**.
 
-The more implicit a form of connascence is, the more time consuming and costly it is to detect, so the stronger it is. Another way of viewing this property, is that the stronger a form of connascence is the harder it is to refactor.
-
-So, in summary, stronger connascence forms are harder to detect or refactor. This is why static forms of connascence are weaker (easier to detect) than the dynamic ones, or, for example why CoN is much weaker (easier to refactor) than CoP.
-
-The following figure shows the different forms of connascence sorted by descending strength. 
+The following figure by Kevin Rutherford shows the different forms of **connascence** we saw before, but sorted by descending strength.
 
 <figure>
     <img src="/assets/connascence-o-meter.png" alt="Connascence forms sorted by descending strength (from Kevin Rutherford's XP Surgery)" />
     <figcaption>
-      Connascence forms sorted by descending strength (from <a href="http://xpsurgery.eu/resources/connascence/">Kevin Rutherford's XP Surgery</a>).
+      **connascence** forms sorted by descending strength (from <a href="http://xpsurgery.eu/resources/connascence/">Kevin Rutherford's XP Surgery</a>).
     </figcaption>
 </figure>
 
-### 5. How should we apply it?
+### 5. How should we apply **connascence**?
 
 Page-Jones offers three guidelines for using **connascence** to improve systems maintanability<a href="#nota2"><sup>[2]</sup></a>:
 
@@ -130,13 +133,23 @@ Page-Jones offers three guidelines for using **connascence** to improve systems 
 
 This generalizes the structured desig ideals of low coupling and high cohesion and is applicable to OO, or, as it was said before, to any other paradigm with partitioning, encapsulation and visibility rules.
 
+A more concrete way to apply this would be using, Jim Weirich's two principles or rules:
+
+> * **Rule of Degree** <-- nota
+>
+> Convert strong forms of **connascence** into weaker forms of connascence.
+>
+> * **Rule of Locality**
+>
+> As the distance between software elements increases, use weaker forms of connascence.
+
 ...vocabulary to talk and reason about concepts like coupling and cohesion (see talk about Coupling and Cohesion)
 
-### 6. Connascence vs SOLID and other design principles.
+### 6. **connascence** vs SOLID and other design principles.
 
 Blabla
 
-### 7. Connascence vs Code Smells.
+### 7. **connascence** vs Code Smells.
 
 * blabla we believe that sometimes **connascence** might be a better metric for coupling than the somewhat fuzzy concept of code smells.
 
