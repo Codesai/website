@@ -143,13 +143,16 @@ A more concrete way to apply this would be using, Jim Weirich's two principles o
 >
 > As the distance between software elements increases, use weaker forms of connascence.
 
-...vocabulary to talk and reason about concepts like coupling and cohesion (see talk about Coupling and Cohesion)
+
 
 ### 6. **connascence** vs SOLID and other design principles.
 
 Blabla
+Conce
 
-### 7. **connascence** vs Code Smells.
+...vocabulary to talk and reason about concepts like coupling and cohesion (see talk about Coupling and Cohesion)
+
+### 7. **Connascence** vs Code Smells.
 
 * blabla we believe that sometimes **connascence** might be a better metric for coupling than the somewhat fuzzy concept of code smells.
 
