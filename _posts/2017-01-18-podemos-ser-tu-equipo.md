@@ -8,7 +8,7 @@ status: publish
 categories:
 - Codesai
 tags: []
-author: Codesai
+author: Carlos Blé
 ---
 
 Todo el mundo está a la búsqueda de desarrolladores, todos al grito de "we're hiring!". Quizás estemos viviendo otra gran burbuja del sector TIC. A las empresas les está costando encontrar y retener talento. Sobre todo, les está
