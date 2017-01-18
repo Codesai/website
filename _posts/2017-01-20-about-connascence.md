@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Connascence
-date: 2017-01-13 07:15:14.0 +00:00
+date: 2017-01-18 07:15:14.0 +00:00
 type: post
 published: true
 status: publish
@@ -94,10 +94,11 @@ Another important form of **connascence** is **contranascence** which exists whe
 
 ### 4. Properties of connascence.
 
-Page-Jones talks in his books about two important properties of **connascence** that help measure its impact on maintanability: its degree of explicitness (the more explicit a **connascence** form is, the weaker it is) and its locality, (connascence across encapsulation boundaries is much worse than **connascence** between elements inside the same encapsulation boundary).
+Page-Jones talks in his books about two important properties of **connascence** that help measure its impact on maintanability: 
+* **degree of explicitness**, the more explicit a **connascence** form is, the weaker it is and,
+* **locality**, connascence across encapsulation boundaries is much worse than **connascence** between elements inside the same encapsulation boundary.
 
-A nice way to reformulate this is using what it's called the **three axes of connascence** <-- nota al pie
-which are:
+A nice way to reformulate this is using what it's called the **three axes of connascence**<a href="#nota2"><sup>[2]</sup></a>:
 
 #### 4.1. Degree. 
 
@@ -123,7 +124,7 @@ The following figure by Kevin Rutherford shows the different forms of **connasce
 
 ### 5. How should we apply **connascence**?
 
-Page-Jones offers three guidelines for using **connascence** to improve systems maintanability<a href="#nota2"><sup>[2]</sup></a>:
+Page-Jones offers three guidelines for using **connascence** to improve systems maintanability<a href="#nota3"><sup>[3]</sup></a>:
 
 1. Minimize overall **connascence** by breaking the systems into encapsulated elements.
 
@@ -135,13 +136,9 @@ This generalizes the structured desig ideals of low coupling and high cohesion a
 
 A more concrete way to apply this would be using, Jim Weirich's two principles or rules:
 
-> * **Rule of Degree** <-- nota
+> * **Rule of Degree**<a href="#nota4"><sup>[4]</sup></a>: Convert strong forms of **connascence** into weaker forms of connascence.
 >
-> Convert strong forms of **connascence** into weaker forms of connascence.
->
-> * **Rule of Locality**
->
-> As the distance between software elements increases, use weaker forms of connascence.
+> * **Rule of Locality**: As the distance between software elements increases, use weaker forms of connascence.
 
 
 
@@ -159,10 +156,49 @@ Conce
 ### 8. Conclusions.
 
 ### 9. References.
+#### 9.1. Books.
+* [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8), Meilir Page-Jones
+* [What every programmer should know about object-oriented design](https://www.amazon.com/Every-Programmer-Should-Object-Oriented-Design/dp/0932633315), Meilir Page-Jones
+
+#### 9.2. Papers.
+* [Comparing Techniques by Means of Encapsulation and Connascence](http://wiki.cfcl.com/pub/Projects/Connascence/Resources/p147-page-jones.pdf)
+
+#### 9.3. Talks.
+* [The Building Blocks of Modularity](https://www.youtube.com/watch?v=l780SYuz9DI), Jim Weirich ([slides](http://www.slideshare.net/LittleBIGRuby/the-building-blocks-of-modularity))
+* [Grand Unified Theory of Software Design](https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI), Jim Weirich ([slides](https://github.com/jimweirich/presentation_connascence/blob/master/Connascence.key.pdf))
+* [Connascence Examined](https://yow.eventer.com/yow-2012-1012/connascence-examined-by-jim-weirich-1273), Jim Weirich
+* [Connascence Examined (newer version, it goes into considerable detail of the various types of connascence)](https://www.youtube.com/watch?v=HQXVKHoUQxY), Jim Weirich ([slides](https://github.com/jimweirich/presentation-connascence-examined/blob/master/pdf/connascence_examined.key.pdf))
+* [Understanding Coupling and Cohesion hangout](https://www.youtube.com/watch?v=hd0v72pD1MI), Corey Haines, Curtis Cooley, Dale Emery, J. B. Rainsberger, Jim Weirich, Kent Beck, Nat Pryce, Ron Jeffries.
+* [Red, Green, ... now what ?!](https://www.youtube.com/watch?v=fSr8LDcb0Y0﻿), Kevin Rutherford ([slides](http://xpsurgery.eu/resources/connascence-hunt-slides/))
+* [Connascence](/2016/12/charla-sobre-connascence-en-scbcn16), Fran Reyes y Alfredo Casado ([slides](http://slides.com/franreyesperdomo/connascence#/))
+* [Connascence: How to Measure Coupling](https://www.youtube.com/watch?v=L727roWRfFg), Nick Hodges
+
+#### 9.4. Posts.
+* [Connascence as a Software Design Metric](http://practicingruby.com/articles/connascence), by Gregory Brown.
+* [A problem with Primitive Obsession](http://silkandspinach.net/2014/09/19/a-problem-with-primitive-obsession/﻿), Kevin Rutherford
+* [The Page-Jones refactoring algorithm](https://silkandspinach.net/2016/06/09/the-page-jones-refactoring-algorithm/), Kevin Rutherford
+* [Connascence – Some examples](http://www.markhneedham.com/blog/2009/10/28/coding-connascence-some-examples/), Mark Needham
+
+#### 9.5.  Others.
+* [Connascence.io](http://connascence.io)
+* [Connascence at Wikipedia](https://en.wikipedia.org/wiki/Connascence_(computer_programming))
+
+Footnotes:
 
 <div class="foot-note">
- <a name="nota1"></a> [1] This explains the titles Jim Weirich chose for his talks: <a href="https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI">Grand Unified Theory of Software Design</a> and <a href="https://www.youtube.com/watch?v=l780SYuz9DI">The Building Blocks of Modularity</a>.
- <a name="nota2"></a> [2] The first two points conforms a <strong>refactoring algorithm</strong>  according to Kevin Rutherford's post <a href="https://silkandspinach.net/2016/06/09/the-page-jones-refactoring-algorithm/">The Page-Jones refactoring algorithm</a>.
+  <a name="nota1"></a> [1] This explains the titles Jim Weirich chose for his talks: <a href="https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI">Grand Unified Theory of Software Design</a> and <a href="https://www.youtube.com/watch?v=l780SYuz9DI">The Building Blocks of Modularity</a>.
+</div>
+
+<div class="foot-note">
+  <a name="nota2"></a> [2] See the webinar <a href="https://www.youtube.com/watch?v=L727roWRfFg">Connascence: How to Measure Coupling</a> by <a href="https://www.linkedin.com/in/nickhodges">Nick Hodges</a>.
+</div>
+
+<div class="foot-note">
+  <a name="nota3"></a> [3] The first two points conforms a <strong>refactoring algorithm</strong>  according to Kevin Rutherford's post <a href="https://silkandspinach.net/2016/06/09/the-page-jones-refactoring-algorithm/">The Page-Jones refactoring algorithm</a>.
+</div>
+
+<div class="foot-note">
+  <a name="nota4"></a> [4] Even though he used the word <strong>degree</strong>, he's actually talking about <strong>strength</strong>.
 </div>
 
 
