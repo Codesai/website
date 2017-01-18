@@ -29,4 +29,4 @@ Podemos ser tu equipo, con todas las ventajas que proporciona un equipo de alto 
 
 Y podemos ofrecerte otro servicio más, si llega un momento en el que necesitas que el software lo evolucionen otras personas, las incorporaremos progresivamente, para transmitirles el conocimiento técnico del producto y nuestros valores y prácticas.
 
-Si no se te había ocurrido, piénsalo, ¿quieres que Codesai sea tu equipo de desarrollo?
+Quizás es una opción que nunca habías valorado, ¿quieres que Codesai sea tu equipo de desarrollo?
