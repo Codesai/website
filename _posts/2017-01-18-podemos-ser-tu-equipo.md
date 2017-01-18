@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Podemos ser tu equipo
-date: 2017-01-17 08:00:00.000000000 +01:00
+date: 2017-01-18 08:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -26,3 +26,5 @@ Por todo esto, si estratégicamente lo prioritario en tu caso no es formar un eq
 Podemos ser tu equipo, con todas las ventajas que proporciona un equipo de alto rendimiento con el que la colaboración es igual de cercana, intensa y comprometida que si fuesen tus empleados.
 
 Y podemos ofrecerte otro servicio más, si llega un momento en el que necesitas que el software lo evolucionen otras personas, las incorporaremos progresivamente, para transmitirles el conocimiento técnico del producto y nuestros valores y prácticas.
+
+Si no se te había ocurrido, piénsalo, ¿quieres que Codesai sea tu equipo de desarrollo?
