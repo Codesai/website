@@ -13,7 +13,7 @@ author: Manuel Rivero
 small_image: small_connascence.png
 ---
 
-Lately we've been studying and applying the concept of [connascence](http://connascence.io/) in our code and even have done [an introductory talk about connascence](http://slides.com/franreyesperdomo/connascence#/). With this post we'd like to start a series of posts about connascence.
+Lately at Codesai we've been studying and applying the concept of [connascence](http://connascence.io/) in our code and even have done [an introductory talk about it](http://slides.com/franreyesperdomo/connascence#/). With this post we'd like to start a series of posts about connascence.
 
 ### 1. Origin.
 
@@ -50,7 +50,7 @@ However, OO introduces at least level-2 encapsulation, (the class), which  encap
 
 Two of these new design criteria are **class cohesion** and **class coupling**, which are analogue to the structured programing's procedure cohesion and procedure coupling, but, as you can see, there are other ones in the table for which there isn't even a name.
 
-Connascence is meant to be a deeper criterion behind all of them and, as such, it is a general way to evaluate design decisions in an OO design. This is the formal definition of **connascence** by Page-Jones:
+**Connascence** is meant to be a deeper criterion behind all of them and, as such, it is a general way to evaluate design decisions in an OO design. This is the formal definition of **connascence** by Page-Jones:
 
 > **Connascence** between two software elements A and B means either
 >
@@ -96,7 +96,7 @@ Another important form of **connascence** is **contranascence** which exists whe
 
 Page-Jones talks in his books about two important properties of **connascence** that help measure its impact on maintanability: 
 * **degree of explicitness**, the more explicit a **connascence** form is, the weaker it is and,
-* **locality**, connascence across encapsulation boundaries is much worse than **connascence** between elements inside the same encapsulation boundary.
+* **locality**, **connascence** across encapsulation boundaries is much worse than **connascence** between elements inside the same encapsulation boundary.
 
 A nice way to reformulate this is using what it's called the **three axes of connascence**<a href="#nota2"><sup>[2]</sup></a>:
 
@@ -122,9 +122,24 @@ The following figure by Kevin Rutherford shows the different forms of **connasce
     </figcaption>
 </figure>
 
-### 5. How should we apply **connascence**?
+### 5. **Connascence**, design principles and refactoring.
 
-Page-Jones offers three guidelines for using **connascence** to improve systems maintanability<a href="#nota3"><sup>[3]</sup></a>:
+**Connascence** is simpler than other design principles, such as, the SOLID principles, Law of Demeter, etc. In fact, it can be used to see those principles in a different light, as they can be seen using more fundamental principles like the ones in th first chapter of Kent Beck's Implementation Patterns book. 
+
+We usually use **code smells** which are a collection of code quality antipatterns to guide our refactorings and improve design, but, according to Kevin Rutherford, they are not ideal for this task<a href="#nota4"><sup>[4]</sup></a>. Sometimes **connascence** might be a better metric for coupling than the somewhat fuzzy concept of code smells.
+
+**Connascence** gives us a **more precise vocabulary** to talk and reason about **coupling and cohesion**<a href="#nota3"><sup>[3]</sup></a>, and thus helps us to better judge our designs in terms of them, and decide how to improve them. In words of [Gregory Brown](http://practicingruby.com/articles/connascence), "this allows us to be much more specific about the problems we're dealing with, which makes it it easier to reason about the types of refactorings that can be used to weaken the connascence between components".
+
+It also provides a classification of forms of coupling in a system, and even better, a scale of the relative strength of the coupling they generate. It's precisely that scale of relative strength of different forms of coupling that **connascence** provides, that makes **connascence** a better guide for refactoring. As Kevin Rutherford says:
+<blockquote>
+"because it classifies the relative strength of that coupling, connascence can be used as a tool to help prioritize what should be refactored first"
+</blockquote>
+
+Connascence explains why doing a given refactoring is a good idea.
+
+### 6. How should we apply **connascence**?
+
+Page-Jones offers three guidelines for using **connascence** to improve systems maintanability:
 
 1. Minimize overall **connascence** by breaking the systems into encapsulated elements.
 
@@ -132,59 +147,21 @@ Page-Jones offers three guidelines for using **connascence** to improve systems 
 
 3. Maximize the **connascence** within encapsulation boundaries.
 
-This generalizes the structured desig ideals of low coupling and high cohesion and is applicable to OO, or, as it was said before, to any other paradigm with partitioning, encapsulation and visibility rules.
+According to Kevin Rutherford, the first two points conforms what he calls **the Page-Jones refactoring algorithm**<a href="#nota5"><sup>[5]</sup></a>.
+
+These guidelines generalize the structured design ideals of **low coupling and high cohesion** and is applicable to OO, or, as it was said before, to any other paradigm with partitioning, encapsulation and visibility rules.
 
 A more concrete way to apply this would be using, Jim Weirich's two principles or rules:
 
-> * **Rule of Degree**<a href="#nota4"><sup>[4]</sup></a>: Convert strong forms of **connascence** into weaker forms of connascence.
+> * **Rule of Degree**<a href="#nota6"><sup>[6]</sup></a>: Convert strong forms of **connascence** into weaker forms of connascence.
 >
 > * **Rule of Locality**: As the distance between software elements increases, use weaker forms of connascence.
 
+### 7. What's next?
 
-
-### 6. **connascence** vs SOLID and other design principles.
-
-Blabla
-Conce
-
-...vocabulary to talk and reason about concepts like coupling and cohesion (see talk about Coupling and Cohesion)
-
-### 7. **Connascence** vs Code Smells.
-
-* blabla we believe that sometimes **connascence** might be a better metric for coupling than the somewhat fuzzy concept of code smells.
-
-### 8. Conclusions.
-
-### 9. References.
-#### 9.1. Books.
-* [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8), Meilir Page-Jones
-* [What every programmer should know about object-oriented design](https://www.amazon.com/Every-Programmer-Should-Object-Oriented-Design/dp/0932633315), Meilir Page-Jones
-
-#### 9.2. Papers.
-* [Comparing Techniques by Means of Encapsulation and Connascence](http://wiki.cfcl.com/pub/Projects/Connascence/Resources/p147-page-jones.pdf)
-
-#### 9.3. Talks.
-* [The Building Blocks of Modularity](https://www.youtube.com/watch?v=l780SYuz9DI), Jim Weirich ([slides](http://www.slideshare.net/LittleBIGRuby/the-building-blocks-of-modularity))
-* [Grand Unified Theory of Software Design](https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI), Jim Weirich ([slides](https://github.com/jimweirich/presentation_connascence/blob/master/Connascence.key.pdf))
-* [Connascence Examined](https://yow.eventer.com/yow-2012-1012/connascence-examined-by-jim-weirich-1273), Jim Weirich
-* [Connascence Examined (newer version, it goes into considerable detail of the various types of connascence)](https://www.youtube.com/watch?v=HQXVKHoUQxY), Jim Weirich ([slides](https://github.com/jimweirich/presentation-connascence-examined/blob/master/pdf/connascence_examined.key.pdf))
-* [Understanding Coupling and Cohesion hangout](https://www.youtube.com/watch?v=hd0v72pD1MI), Corey Haines, Curtis Cooley, Dale Emery, J. B. Rainsberger, Jim Weirich, Kent Beck, Nat Pryce, Ron Jeffries.
-* [Red, Green, ... now what ?!](https://www.youtube.com/watch?v=fSr8LDcb0Y0﻿), Kevin Rutherford ([slides](http://xpsurgery.eu/resources/connascence-hunt-slides/))
-* [Connascence](/2016/12/charla-sobre-connascence-en-scbcn16), Fran Reyes y Alfredo Casado ([slides](http://slides.com/franreyesperdomo/connascence#/))
-* [Connascence: How to Measure Coupling](https://www.youtube.com/watch?v=L727roWRfFg), Nick Hodges
-
-#### 9.4. Posts.
-* [Connascence as a Software Design Metric](http://practicingruby.com/articles/connascence), by Gregory Brown.
-* [A problem with Primitive Obsession](http://silkandspinach.net/2014/09/19/a-problem-with-primitive-obsession/﻿), Kevin Rutherford
-* [The Page-Jones refactoring algorithm](https://silkandspinach.net/2016/06/09/the-page-jones-refactoring-algorithm/), Kevin Rutherford
-* [Connascence – Some examples](http://www.markhneedham.com/blog/2009/10/28/coding-connascence-some-examples/), Mark Needham
-
-#### 9.5.  Others.
-* [Connascence.io](http://connascence.io)
-* [Connascence at Wikipedia](https://en.wikipedia.org/wiki/Connascence_(computer_programming))
+In future post, we'll see examples of concrete forms of conasscence relating them with design principles, code smells, and the refactorings that might improve the design.
 
 Footnotes:
-
 <div class="foot-note">
   <a name="nota1"></a> [1] This explains the titles Jim Weirich chose for his talks: <a href="https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI">Grand Unified Theory of Software Design</a> and <a href="https://www.youtube.com/watch?v=l780SYuz9DI">The Building Blocks of Modularity</a>.
 </div>
@@ -194,12 +171,48 @@ Footnotes:
 </div>
 
 <div class="foot-note">
-  <a name="nota3"></a> [3] The first two points conforms a <strong>refactoring algorithm</strong>  according to Kevin Rutherford's post <a href="https://silkandspinach.net/2016/06/09/the-page-jones-refactoring-algorithm/">The Page-Jones refactoring algorithm</a>.
+  <a name="nota3"></a> [3] The concepts of coupling and cohesion can be hard to grasp, just see this debate about them 
+  <a href="https://www.youtube.com/watch?v=hd0v72pD1MI">Understanding Coupling and Cohesion hangout</a>.
 </div>
 
 <div class="foot-note">
-  <a name="nota4"></a> [4] Even though he used the word <strong>degree</strong>, he's actually talking about <strong>strength</strong>.
+  <a name="nota4"></a> [4] See Kevin Rutherford's great post <a href="https://silkandspinach.net/2012/09/03/the-problem-with-code-smells/">The problem with code smells</a>.
 </div>
 
+<div class="foot-note">
+  <a name="nota5"></a> [5] See Kevin Rutherford's post <a href="https://silkandspinach.net/2016/06/09/the-page-jones-refactoring-algorithm/">The Page-Jones refactoring algorithm</a>.
+</div>
 
-[Structured Design: Fundamentals of a Discipline of Computer Program and Systems Design](http://www.goodreads.com/book/show/946145.Structured_Design) by [Edward Yourdon](https://en.wikipedia.org/wiki/Edward_Yourdon) and [Larry L. Constantine](https://en.wikipedia.org/wiki/Larry_Constantine)
+<div class="foot-note">
+  <a name="nota6"></a> [6] Even though he used the word <strong>degree</strong>, he's actually talking about <strong>strength</strong>.
+</div>
+
+### References.
+#### Books.
+* [Fundamentals of Object-Oriented Design in UML](https://www.amazon.com/Fundamentals-Object-Oriented-Design-Meilir-Page-Jones/dp/020169946X/ref=asap_bc?ie=UTF8), Meilir Page-Jones
+* [What every programmer should know about object-oriented design](https://www.amazon.com/Every-Programmer-Should-Object-Oriented-Design/dp/0932633315), Meilir Page-Jones
+* [Structured Design: Fundamentals of a Discipline of Computer Program and Systems Design](http://www.goodreads.com/book/show/946145.Structured_Design) by [Edward Yourdon](https://en.wikipedia.org/wiki/Edward_Yourdon) and [Larry L. Constantine](https://en.wikipedia.org/wiki/Larry_Constantine)
+
+#### Papers.
+* [Comparing Techniques by Means of Encapsulation and Connascence](http://wiki.cfcl.com/pub/Projects/Connascence/Resources/p147-page-jones.pdf)
+
+#### Talks.
+* [The Building Blocks of Modularity](https://www.youtube.com/watch?v=l780SYuz9DI), Jim Weirich ([slides](http://www.slideshare.net/LittleBIGRuby/the-building-blocks-of-modularity))
+* [Grand Unified Theory of Software Design](https://www.youtube.com/watch?time_continue=2890&v=NLT7Qcn_PmI), Jim Weirich ([slides](https://github.com/jimweirich/presentation_connascence/blob/master/Connascence.key.pdf))
+* [Connascence Examined](https://yow.eventer.com/yow-2012-1012/connascence-examined-by-jim-weirich-1273), Jim Weirich
+* [Connascence Examined (newer version, it goes into considerable detail of the various types of connascence)](https://www.youtube.com/watch?v=HQXVKHoUQxY), Jim Weirich ([slides](https://github.com/jimweirich/presentation-connascence-examined/blob/master/pdf/connascence_examined.key.pdf))
+* [Understanding Coupling and Cohesion hangout](https://www.youtube.com/watch?v=hd0v72pD1MI), Corey Haines, Curtis Cooley, Dale Emery, J. B. Rainsberger, Jim Weirich, Kent Beck, Nat Pryce, Ron Jeffries.
+* [Red, Green, ... now what ?!](https://www.youtube.com/watch?v=fSr8LDcb0Y0﻿), Kevin Rutherford ([slides](http://xpsurgery.eu/resources/connascence-hunt-slides/))
+* [Connascence](/2016/12/charla-sobre-connascence-en-scbcn16), Fran Reyes y Alfredo Casado ([slides](http://slides.com/franreyesperdomo/connascence#/))
+* [Connascence: How to Measure Coupling](https://www.youtube.com/watch?v=L727roWRfFg), Nick Hodges
+
+#### Posts.
+* [Connascence as a Software Design Metric](http://practicingruby.com/articles/connascence), by Gregory Brown.
+* [The problem with code smells](https://silkandspinach.net/2012/09/03/the-problem-with-code-smells/), Kevin Rutherford
+* [A problem with Primitive Obsession](https://silkandspinach.net/2014/09/19/a-problem-with-primitive-obsession/), Kevin Rutherford
+* [The Page-Jones refactoring algorithm](https://silkandspinach.net/2016/06/09/the-page-jones-refactoring-algorithm/), Kevin Rutherford
+* [Connascence – Some examples](http://www.markhneedham.com/blog/2009/10/28/coding-connascence-some-examples/), Mark Needham
+
+#### Others.
+* [Connascence.io](http://connascence.io)
+* [Connascence at Wikipedia](https://en.wikipedia.org/wiki/Connascence_(computer_programming))
