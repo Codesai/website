@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Connascence
-date: 2017-01-18 07:15:14.0 +00:00
+date: 2017-01-20 07:15:14.0 +00:00
 type: post
 published: true
 status: publish
@@ -10,7 +10,7 @@ tags:
 - Connascence
 - Refactoring
 author: Manuel Rivero
-small_image: small_connascence.png
+small_image: small_jim.jpeg
 ---
 
 Lately at Codesai we've been studying and applying the concept of [connascence](http://connascence.io/) in our code and even have done [an introductory talk about it](http://slides.com/franreyesperdomo/connascence#/). We'd like this post to be the first of a series of posts about connascence.
