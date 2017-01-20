@@ -11,6 +11,7 @@ tags:
 - Refactoring
 author: Manuel Rivero
 small_image: small_jim.jpeg
+written_in: english
 ---
 
 Lately at Codesai we've been studying and applying the concept of [connascence](http://connascence.io/) in our code and even have done [an introductory talk about it](http://slides.com/franreyesperdomo/connascence#/). We'd like this post to be the first of a series of posts about connascence.
