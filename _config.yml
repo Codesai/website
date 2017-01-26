@@ -15,11 +15,11 @@ keep_files:
   - ".gitignore"
 
 gems:
-  - jekyll-multiple-languages-plugin
+#  - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin
-languages: ["es", "en"]
-exclude_from_localizations: ["js", "css", "fonts", "img", "_posts", "atom.xml", "sitemap.xml"]
+# languages: ["es", "en"]
+# exclude_from_localizations: ["js", "css", "fonts", "img", "assets", "_posts", "atom.xml", "sitemap.xml"]
 
 # Site settings
 title: Codesai
