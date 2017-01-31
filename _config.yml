@@ -77,10 +77,10 @@ clients:
       url: http://www.grupoasv.com/es/
       logo: ../img/logos/grupo_asv.png
       description: clients/grupo_asv.html
-    - name: La Casa de Mis Primos
-      url: http://www.lacasademisprimos.com/
-      logo: ../img/logos/lcdmp.jpg
-      description: clients/la_casa_de_mis_primos.html
+    # - name: La Casa de Mis Primos
+    #   url: http://www.lacasademisprimos.com/
+    #   logo: ../img/logos/lcdmp.jpg
+    #   description: clients/la_casa_de_mis_primos.html
     # - name: iSQI
     #   url: https://www.isqi.org/
     #   logo: ../img/logos/isqi.png
