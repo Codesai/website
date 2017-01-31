@@ -18,8 +18,8 @@ layout: landing
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4">
-                <div class="block">
-                    <a href="#">
+                <div id="technologies" class="block">
+                    <a class="expand">
                         <div class="title">.Net y Javascript</div>
                         <div class="subhead">
                             <p>Prolongada experiencia con C#</p>
@@ -28,12 +28,20 @@ layout: landing
                         </div>
                         <i class="ion-arrow-down-b"></i>
                     </a>
+
                     <div class="description">
                         <p>En Codesai somos expertos en desarrollo con tecnologías .Net. Sobre todo con C#, en el cual hemos trabajando desde la versión 1.1 del framework hasta hoy en día en la versión 6. Durante estos años hemos trabajado tanto con herramientas Microsoft como con Open Source como por ejemplo CastleProject (usamos Dynamic Proxy para implementar AOP) y el proyecto Mono. También estamos usando F# para algunas partes de las aplicaciones y para algunos tipos de tests.</p>
                     </div>
                 </div>
             </div>
-            
+
+            <script>
+                $('#technologies .expand').on('click', function(event) {        
+                    var description = $('#technologies .description');
+                    description.slideToggle('slow');
+                });
+            </script>
+
             <div class="col-md-4">
                 <div class="block">
                     <div class="title">Frontend</div>
