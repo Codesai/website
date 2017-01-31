@@ -2,11 +2,13 @@
 layout: landing
 ---
 
-<section id="logo">
+<section id="company">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
-                <img src="/img/logo.svg" alt="">
+                <a href="/">
+                    <img src="/img/logo.svg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -42,17 +44,41 @@ layout: landing
     </div>
 </section>
 
-<section id="links">
+<section id="clients">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
-                <a href="/#team">
-                    <button class="boxed-link">El equipo</button>
+            {% for client in site.clients %}
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="{{ client.url }}">
+                        <div class="client-logo" style="background-image: url({{ client.logo }})"></div>
+                    </a>
+                </div>
+		    {% endfor %}
+
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <a href="https://www.ironhack.com/es">
+                    <div class="client-logo" style="background-image: url(../img/logos/ironhack.png)"></div>
                 </a>
             </div>
-            <div class="col-md-4">
-                <a href="/publications">
-                    <button class="boxed-link">Publicaciones</button>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <a href="https://www.isqi.org/">
+                    <div class="client-logo" style="background-image: url(../img/logos/isqi.png)"></div>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <a href="http://www.besepa.com/">
+                    <div class="client-logo" style="background-image: url(../img/logos/besepa.png)"></div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <a href="http://www.salleurl.edu/">
+                    <div class="client-logo" style="background-image: url(../img/logos/la_salle.png)"></div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <a href="http://www.jpgconsultores.es/">
+                    <div class="client-logo" style="background-image: url(../img/logos/jpg_consultores_energeticos.png)"></div>
                 </a>
             </div>
         </div>

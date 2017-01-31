@@ -5,13 +5,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#logo {
+#company {
     text-align: center;
     padding: 40px 0;
 }
 
-#logo img {
+#company img {
     height: 200px;
+    margin-bottom: 20px;
 }
 
 #content {
@@ -20,19 +21,15 @@ body {
     padding-bottom: 40px;
 }
 
-#links {
-    padding-bottom: 40px;
+#clients {
+    padding-bottom: 30px;
     text-align: center;    
 }
 
-#links .boxed-link {
-    background: transparent;
-    font-size: 1.2em;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+#clients .client-logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    border: 2px solid #7fa52b;
-    border-radius: 2px;
+    height: 180px;
 }
