@@ -26,6 +26,10 @@ body {
     text-align: center;    
 }
 
+#clients .row > [class*='col-'] {
+    padding: 15px;
+}
+
 #clients .client-logo {
     background-size: contain;
     background-repeat: no-repeat;
