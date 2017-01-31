@@ -13,6 +13,7 @@ body {
 
 #company img {
     width: 100%;
+    max-width: 400px;
     height: 240px;
 }
 
@@ -75,6 +76,13 @@ body {
 #clients {
     padding: 40px 0;
     text-align: center;    
+}
+
+#clients .section-title {
+    font-size: 2.4em;
+    letter-spacing: 0.04em;
+    font-weight: 900;
+    color: #111;
 }
 
 #clients .row > [class*='col-'] {

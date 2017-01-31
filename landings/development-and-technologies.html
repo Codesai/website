@@ -72,7 +72,7 @@ layout: landing
                     </div>
                     <div class="description">
                         <p>Típicamente el backend de las aplicaciones lo desarrollamos con ASP.Net MVC.</p>
-                        <p>Así para algunos proyectos accedemos a datos mediante herramientas sencillas como Dapper y para otros podemos escoger EntityFramework si hace falta. Antes de que existiera EntityFramework usabamos ActiveRecord de CastleProject o directamente NHibernate. En los proyectos más recientes estamos encantados con la simplicidad que nos aporta Dapper (de los creadores de StackOverflow).</p>7
+                        <p>Así para algunos proyectos accedemos a datos mediante herramientas sencillas como Dapper y para otros podemos escoger EntityFramework si hace falta. Antes de que existiera EntityFramework usabamos ActiveRecord de CastleProject o directamente NHibernate. En los proyectos más recientes estamos encantados con la simplicidad que nos aporta Dapper (de los creadores de StackOverflow).</p>
                         <p>Nuestra arquitectura más usada es la Hexagonal, que encaja perfectamente con DDD (Domain Driven Design) lo cual nos permite separar capas y tecnología para que las librerías de acceso a base de datos o de vista no contamine el core de negocio.</p>
                     </div>
                 </div>
@@ -148,6 +148,12 @@ layout: landing
 
 <section id="clients">
     <div class="container-fluid">
+        <div class="row">
+            <div class="section-title">
+                Nuestros clientes
+            </div>
+        </div>
+
         <div class="row">
             {% for client in site.clients %}
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
