@@ -29,14 +29,17 @@ body {
     padding-bottom: 40px;
 }
 
-
-#content a {
-    color: #eee;
-    transition: color 0.35s;
-    text-decoration: none;
+#content .catch:hover {
+    cursor: pointer;
 }
 
-#content a:hover {
+#content .catch a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.35s;
+}
+
+#content .catch:hover a {
     color: #7fa52b;
 }
 
