@@ -11,6 +11,7 @@ categories:
   - News
 tags: []
 author: Manuel Rivero
+small_image: small_barcelona_2017_01_curso.png
 ---
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
