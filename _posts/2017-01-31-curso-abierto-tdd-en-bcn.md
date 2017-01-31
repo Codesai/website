@@ -23,7 +23,7 @@ Los cursos en abierto son siempre muy gratificantes porque los asistentes vienen
 
 Este fue el primer curso que imparto con Carlos. La versión de curso que hace Carlos tiene una estructura más pausada que la de Luis. Se hacen varios ejercicios de testing y de refactoring antes de empezar a hacer TDD, que luego vienen muy bien. Aprendí muchas cosas de Carlos, tanto de sus comentarios como de la forma de tratar a las personas. En algunas cosas pensamos diferente, pero eso añade riqueza al curso.
 
-Hacer los cursos en pareja es una gran ventaja cuando el grupo es grande, porque, el nivel de atención que recibe cada participante es mucho más alto. Esto es importante, porque nuestra formación es muy práctica, y estamos constantemente contestando a dudas y dando feedback a nuestros alumnos para que asimilen mejor los conceptos que queremos trabajar con cada kata. Además, el hecho de tener backgrounds distintos y personalidades diferentes, enriquece tanto las explicaciones teóricas como las prácticas, ya que podemos aportar un rango de experiencias, técnicas y perspectivas mucho más amplio.
+Hacer los cursos en pareja es una gran ventaja cuando el grupo es grande porque el nivel de atención que recibe cada participante es mucho más alto. Esto es importante, porque nuestra formación es muy práctica, y estamos constantemente contestando a dudas y dando feedback a nuestros alumnos para que asimilen mejor los conceptos que queremos trabajar con cada kata. Además, el hecho de tener backgrounds distintos y personalidades diferentes, enriquece tanto las explicaciones teóricas como las prácticas, ya que podemos aportar un rango de experiencias, técnicas y perspectivas mucho más amplio.
 
 Acabamos muy contentos con las sensaciones que tuvimos durante el curso y con el feedback que recibimos.
 
@@ -48,6 +48,6 @@ Acabamos muy contentos con las sensaciones que tuvimos durante el curso y con el
   </div>
 </section>
 
-Nos gustaría mucho darle las gracias a [Magento](https://twitter.com/magento) y especialmente a [Ángel Rojo](https://twitter.com/rojoangel) por acogernos en sus oficinas y organizarlo todo tan bien. Tanto la sala como el espacio que reservaron para relajarse y tomar café, como el catering estuvieron genial.
+Nos gustaría mucho darle las gracias a [Magento](https://twitter.com/magento) y especialmente a [Ángel Rojo](https://twitter.com/rojoangel) por acogernos en sus oficinas y organizarlo todo tan bien. Tanto la sala como el espacio que reservaron para relajarse y tomar café como el catering estuvieron genial.
 
 
