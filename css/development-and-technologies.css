@@ -1,0 +1,21 @@
+#logo {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#logo img {
+    height: 200px;
+}
+
+#content {
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+    padding-bottom: 40px;
+}
+
+#links {
+    font-size: 1.2em;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+}
