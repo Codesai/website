@@ -38,7 +38,7 @@ layout: landing
             </div>
 
             <div class="col-md-4">
-                <div class="block">
+                <div id="frontend" class="block">
                     <div class="catch">
                         <a class="expand">
                             <div class="title">Frontend</div>
@@ -58,7 +58,7 @@ layout: landing
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="block">
+                <div id="backend" class="block">
                     <div class="catch">
                         <a class="expand">
                             <div class="title">Backend</div>
@@ -81,7 +81,7 @@ layout: landing
 
         <div class="row">
             <div class="col-md-4">
-                <div class="block">
+                <div id="value" class="block">
                     <div class="catch">
                         <a class="expand">
                             <div class="title">Entrega de valor</div>
@@ -105,7 +105,7 @@ layout: landing
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="block">
+                <div id="practices" class="block">
                     <div class="catch">
                         <a class="expand">
                             <div class="title">Prácticas</div>
@@ -125,7 +125,7 @@ layout: landing
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="block">
+                <div id="testing" class="block">
                     <div class="catch">
                         <a class="expand">
                             <div class="title">Testing</div>
@@ -189,10 +189,7 @@ layout: landing
 
 
 <script>
-    $('#technologies .expand').on('click', function(event) {        
-        var description = $('#technologies .description');
-        var arrow = $('#technologies i');
-
+    function slide(description, arrow) {
         description.slideToggle('slow', function() {
             if (arrow.hasClass('ion-arrow-down-b')) {
                 arrow.removeClass('ion-arrow-down-b');
@@ -202,5 +199,47 @@ layout: landing
                 arrow.addClass('ion-arrow-down-b');
             }
         });
+    }
+
+    $('#technologies .expand').on('click', function(event) {        
+        var description = $('#technologies .description');
+        var arrow = $('#technologies i');
+
+        slide(description, arrow);
+    });
+
+    $('#frontend .expand').on('click', function(event) {        
+        var description = $('#frontend .description');
+        var arrow = $('#frontend i');
+
+        slide(description, arrow);
+    });
+
+    $('#backend .expand').on('click', function(event) {        
+        var description = $('#backend .description');
+        var arrow = $('#backend i');
+
+        slide(description, arrow);
+    });
+
+    $('#value .expand').on('click', function(event) {        
+        var description = $('#value .description');
+        var arrow = $('#value i');
+
+        slide(description, arrow);
+    });
+
+    $('#practices .expand').on('click', function(event) {        
+        var description = $('#practices .description');
+        var arrow = $('#practices i');
+
+        slide(description, arrow);
+    });
+
+    $('#testing .expand').on('click', function(event) {        
+        var description = $('#testing .description');
+        var arrow = $('#testing i');
+
+        slide(description, arrow);
     });
 </script>
