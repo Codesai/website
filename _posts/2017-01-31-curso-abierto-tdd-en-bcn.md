@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Impartimos un curso abierto de TDD en Barcelona
-date: 2017-01-25 08:25:00.000000000 +01:00
+date: 2017-01-31 08:25:00.000000000 +00:00
 type: post
 published: true
 status: publish
@@ -10,21 +10,19 @@ categories:
   - Test Driven Development
   - News
 tags: []
-author: Carlos Blé
-#small_image: gradiant_logo.svg
+author: Manuel Rivero
 ---
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-La semana pasada [Manuel Rivero](https://twitter.com/trikitrok) y yo impartimos un [curso de TDD](http://www.codesai.com/curso-de-tdd/) en Barcelona en abierto.
+La semana pasada [Carlos](https://twitter.com/carlosble) y yo impartimos un [curso de TDD](http://www.codesai.com/curso-de-tdd/) en Barcelona en formato abierto.
 
 <img src="/assets/barcelona_2017_01_foto_grupo.jpg" alt="asistentes al curso abierto de TDD en Barcelona"/>
 
-Los cursos en abierto son siempre muy gratificantes porque blabla... <- Carlos pon aquí lo que siempre comentas de las razones por las que te gustan tanto los cursos abiertos.
-Como suele pasar en los cursos abiertos, las personas que asistieron venían con un montón de ganas. Muchísimas gracias a todas las personas que asistieron.
+Los cursos en abierto son siempre muy gratificantes porque los asistentes vienen con muchísimas ganas de trabajar y de aprender. De hecho, varios de ellos pagaron el curso de su propio bolsillo e incluso vinieron de otras comunidades. Muchísimas gracias a todos por venir y por su entusiasmo. Los cursos en abiertos son también muy interesantes porque en ellos solemos conocer a gente muy apasionada por su trabajo, que, en ocasiones, acaba colaborando con Codesai, como fue mi caso o el de [Luis](https://twitter.com/luisrovirosa).
 
-Este fue el primer curso que imparto con Manuel, blabla... <- Carlos pon aquí más o menos cómo fue tu experiencia dando el curso conmigo.
+Este fue el primer curso que imparto con Carlos. La versión de curso que hace Carlos tiene una estructura más pausada que la de Luis. Se hacen varios ejercicios de testing y de refactoring antes de empezar a hacer TDD, que luego vienen muy bien. Aprendí muchas cosas de Carlos, tanto de sus comentarios como de la forma de tratar a las personas. En algunas cosas pensamos diferente, pero eso añade riqueza al curso.
 
-Hacer los cursos en pareja es una gran ventaja cuando el grupo es grande, porque, el nivel de atención que recibe cada participante es mucho más alto. Esto es importante, porque nuestra formación es muy práctica, y estamos constantement contestando a dudas y dando feedback a nuestros alumnos para que asimilen mejor los conceptos que queremos trabajar con cada kata. Además, el hecho de tener backgrounds distintos y personalidades diferentes, enriquece tanto las explicaciones teóricas como las prácticas, ya que podemos aportar un rango de experiencias, técnicas y perpectivas mucho más amplio.
+Hacer los cursos en pareja es una gran ventaja cuando el grupo es grande, porque, el nivel de atención que recibe cada participante es mucho más alto. Esto es importante, porque nuestra formación es muy práctica, y estamos constantemente contestando a dudas y dando feedback a nuestros alumnos para que asimilen mejor los conceptos que queremos trabajar con cada kata. Además, el hecho de tener backgrounds distintos y personalidades diferentes, enriquece tanto las explicaciones teóricas como las prácticas, ya que podemos aportar un rango de experiencias, técnicas y perspectivas mucho más amplio.
 
 Acabamos muy contentos con las sensaciones que tuvimos durante el curso y con el feedback que recibimos.
 
@@ -49,4 +47,6 @@ Acabamos muy contentos con las sensaciones que tuvimos durante el curso y con el
   </div>
 </section>
 
-Nos gustaría mucho darle las gracias a [Magento](https://twitter.com/magento) y especialmente a [Ángel Rojo](https://twitter.com/rojoangel) y  por acogernos en sus oficinas y organizarlo todo tan bien. Tanto la sala como el espacio que reservaron para tomar café y relajarse, como el catering estuvieron genial.
+Nos gustaría mucho darle las gracias a [Magento](https://twitter.com/magento) y especialmente a [Ángel Rojo](https://twitter.com/rojoangel) por acogernos en sus oficinas y organizarlo todo tan bien. Tanto la sala como el espacio que reservaron para relajarse y tomar café, como el catering estuvieron genial.
+
+
