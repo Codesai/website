@@ -9,6 +9,7 @@ categories:
 - Codesai
 tags: []
 author: Carlos Blé
+small_image: small_equipo.jpg
 ---
 
 <img src="/assets/equipo.jpg" alt="nuestro equipo casi al completo">
