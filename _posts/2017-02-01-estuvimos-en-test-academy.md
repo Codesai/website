@@ -27,6 +27,6 @@ Mi sesión estaba anunciada como una master class, básicamente porque no me dí
 Después de la sesión tuve la suerte de poder tomar café con algunas personas que habían estado en la sesión y que comentaban que se llevaban varias idea para poner en práctica, lo cual es una satisfacción.
 
 Estas son las slides que utilicé:
-{% include slideshare-slides.html src="//www.slideshare.net/carlosble/bdd-test-academy-barcelona-2017" %}
+{% include slideshare-slides.html src="//www.slideshare.net/slideshow/embed_code/key/ukaCysdj7qdhG" %}
 
 Muchísimas gracias a los organizadores de Test Academy por montar un evento tan guapo y por darme la oportunidad de ser parte de él. Especialmente a [Graham Moran](https://twitter.com/grahampmoran), siempre tan amable y atento.
