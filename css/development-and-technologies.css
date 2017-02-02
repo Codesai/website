@@ -24,11 +24,16 @@ body {
 
 #company a:hover {
     color: #428bca;
+    transform: scale(0.95);
 }
-
 
 #company img {
     height: 240px;
+    transition: transform 0.35s;
+}
+
+#company img:hover {
+    transform: scale(0.95);
 }
 
 #company .contact-info {
@@ -40,7 +45,6 @@ body {
     letter-spacing: 0.07em;
     text-align: left;
 }
-
 
 #company .contact-info i {
     margin-right: 30px;
