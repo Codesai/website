@@ -27,21 +27,7 @@ body {
 }
 
 #content .block {
-    padding-bottom: 40px;
-}
-
-#content .catch:hover {
-    cursor: pointer;
-}
-
-#content .catch a {
-    color: #eee;
-    text-decoration: none;
-    transition: color 0.35s;
-}
-
-#content .catch:hover a {
-    color: #7fa52b;
+    padding-bottom: 60px;
 }
 
 #content .title {
