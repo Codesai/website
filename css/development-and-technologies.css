@@ -11,10 +11,40 @@ body {
     padding: 40px 0;
 }
 
+#company .codesai-logo {
+    display: inline-block;
+    position: relative;
+}
+
+#company a {
+    color: #7fa52b;
+    text-decoration: none;
+    transition: color 0.35s;
+}
+
+#company a:hover {
+    color: #428bca;
+}
+
+
 #company img {
-    width: 100%;
-    max-width: 400px;
     height: 240px;
+}
+
+#company .contact-info {
+    position: absolute;
+    bottom: 0;
+    left: calc(100% + 60px);
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 0.07em;
+    text-align: left;
+}
+
+
+#company .contact-info i {
+    margin-right: 30px;
+    font-size: 1.6em;
 }
 
 #content {
@@ -81,4 +111,22 @@ body {
     background-position: center center;
     width: 100%;
     height: 180px;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    #company .codesai-logo {
+        display: block;
+    }
+
+    #company img {
+        width: 100%;
+    }
+
+    #company .contact-info {
+        position: static;
+        text-align: center;
+        padding-top: 30px;
+    }
 }
