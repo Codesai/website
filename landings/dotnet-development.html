@@ -6,9 +6,23 @@ layout: landing
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
-                <a href="/">
-                    <img src="/img/logo_white.svg" alt="">
-                </a>
+                <div class="codesai-logo">
+                    <a href="/">
+                        <img src="/img/logo_white.svg" alt="">
+                    </a>
+                    <div class="contact-info">
+                        <p>
+                            <script type="text/javascript">// <![CDATA[
+                                var a='contact', b='codesai', c='.com'; document.write('<a hre'+'f="mai'+'lto:' + a +'@' + b + c + '">'); document.write(a +'@' + b+c+'</a>');
+                            // ]]&gt;</script>
+                        </p>
+                        <div class="social">
+                            <a href="https://twitter.com/codesaidev"><i class="ion-social-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/codesai"><i class="ion-social-linkedin"></i></a>
+                            <a href="{{ site.url }}/atom.xml"><i class="ion-social-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -20,19 +34,12 @@ layout: landing
             <div class="col-md-4">
                 <div id="technologies" class="block">
                     <div class="catch">
-                        <a class="expand">
-                            <div class="title">.Net y Javascript</div>
-                            <div class="subhead">
-                                <p>Prolongada experiencia con C#</p>
-                                <p>Herramientas Microsoft y Open Source</p>
-                                <p>Ecosistema JavaScript</p>
-                            </div>
-                            <i class="ion-arrow-down-b"></i>
-                        </a>
-                    </div>
-
-                    <div class="description">
-                        <p>En Codesai somos expertos en desarrollo con tecnologías .Net. Sobre todo con C#, en el cual hemos trabajando desde la versión 1.1 del framework hasta hoy en día en la versión 6. Durante estos años hemos trabajado tanto con herramientas Microsoft como con Open Source como por ejemplo CastleProject (usamos Dynamic Proxy para implementar AOP) y el proyecto Mono. También estamos usando F# para algunas partes de las aplicaciones y para algunos tipos de tests.</p>
+                        <div class="title">.Net y Javascript</div>
+                        <div class="subhead">
+                            <p>Prolongada experiencia con C#</p>
+                            <p>Herramientas Microsoft y Open Source</p>
+                            <p>Manejo del ecosistema JavaScript</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,40 +47,25 @@ layout: landing
             <div class="col-md-4">
                 <div id="frontend" class="block">
                     <div class="catch">
-                        <a class="expand">
-                            <div class="title">Frontend</div>
-                            <div class="subhead">
-                                <p>Frameworks de vista como Knockout y Angular</p>
-                                <p>Interfaz web con HTML5, CSS3, jQuery</p>
-                                <p>Aplicaciones de escritorio para Windows</p>
-                            </div>
-                            <i class="ion-arrow-down-b"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>Hemos hecho diversas aplicaciones con Windows.Forms, con WPF y también para WinRT (Windows 8 y posteriores).</p>
-                        <p>Ya en el lado frontend, somos unos apasionados de JavaScript. Una de nuestras librerías favoritas es Knockout porque se integra muy bien con todo el ecosistema y no es tan intrusiva y prescriptiva como algunos frameworks. Si bien es cierto que a veces simplemente escribimos vanilla JavaScript y recurrimos a algo de jQuery. Otras incluso directamente accedemos al DOM con la API de HTML 5.</p>
-                        <p>También tenemos experiencia con React y con Angular. Hemos desarrollado aplicaciones con ES6 usando Babel para la compilación y últimamente estamos probando TypeScript como una capa adicional para tipar algunos objetos.</p>
+                        <div class="title">Frontend</div>
+                        <div class="subhead">
+                            <p>Frameworks de vista como Knockout y Angular</p>
+                            <p>Interfaz web con HTML5, CSS3, jQuery</p>
+                            <p>Aplicaciones de escritorio para Windows</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div id="backend" class="block">
                     <div class="catch">
-                        <a class="expand">
-                            <div class="title">Backend</div>
-                            <div class="subhead">
-                                <p>Arquitectura Hexagonal</p>
-                                <p>Domain Driven Design</p>
-                                <p>ASP.Net MVC, Dapper</p>
-                            </div>
-                            <i class="ion-arrow-down-b"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>Típicamente el backend de las aplicaciones lo desarrollamos con ASP.Net MVC.</p>
-                        <p>Así para algunos proyectos accedemos a datos mediante herramientas sencillas como Dapper y para otros podemos escoger EntityFramework si hace falta. Antes de que existiera EntityFramework usabamos ActiveRecord de CastleProject o directamente NHibernate. En los proyectos más recientes estamos encantados con la simplicidad que nos aporta Dapper (de los creadores de StackOverflow).</p>
-                        <p>Nuestra arquitectura más usada es la Hexagonal, que encaja perfectamente con DDD (Domain Driven Design) lo cual nos permite separar capas y tecnología para que las librerías de acceso a base de datos o de vista no contamine el core de negocio.</p>
+                        <div class="title">Backend</div>
+                        <div class="subhead">
+                            <p>Arquitectura Hexagonal, Clean Architecture</p>
+                            <p>Domain Driven Design</p>
+                            <p>ASP.Net MVC, Dapper, EntityFramework</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,62 +75,38 @@ layout: landing
             <div class="col-md-4">
                 <div id="value" class="block">
                     <div class="catch">
-                        <a class="expand">
-                            <div class="title">Entrega de valor</div>
-                            <div class="subhead">
-                                <p>Desarrollo ágil a medida</p>
-                                <p>Entregas en ciclos cortos cada 15 días</p>
-                                <p>Flexibles, transparentes y cercanos</p>
-                            </div>
-                            <i class="ion-arrow-down-b"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>Hacemos desarrollo ágil a medida. Consideramos al cliente como parte del equipo de desarrollo, haciendo juntos el análisis del problema y evaluando juntos posibles soluciones.</p>
-                        <p>Entregamos software en ciclos cortos de quince días. Es decir, cada quince días cumplimos con un hito que aporta valor al negocio. Semanalmente hay entregas parciales y demos de los avances que se están realizando. Partimos el proyecto en distintas releases y ayudamos al cliente a priorizar cuáles son las que deben implementarse primero. El cliente es dueño del código fuente en todo momento así como de la documentación técnica que vamos generando con cada entrega.</p>
-                        <p>En el arranque de los proyectos nos desplazamos a donde está el cliente y los usuarios para conocer en primera persona cuál es su contexto y sus necesidades y para hacer equipo. Dedicamos varias jornadas de intenso trabajo de descubrimiento y definición del problema. Nos apoyamos en diversas técnicas de análisis como pueda ser Design Thinking o BDD (Behavior Driven Development).</p>
-                        <p>Nuestra máxima es la colaboración con el cliente y la entrega de valor constante.</p>
-                        <p>Somos flexibles, los requisitos pueden cambiar tanto como el cliente lo necesite. Cada dos semanas hay oportunidad de definir cuáles son los detalles del siguiente hito a desarrollar. Qué hay que cambiar o añadir. Somos transparentes, el cliente siempre puede hablar con cualquier miembro del equipo de desarrollo.</p>
-                        <p>Hacemos reuniones de seguimiento diarias de diez minutos a las que el cliente está invitado, además de tener acceso directo al sistema de control de versiones, que típicamente está en la nube.</p>
-                        <p>Nuestra oferta es la de software de calidad, hecho en tiempo y forma. Al grano y sin sorpresas. Orientado al negocio.</p>
+                        <div class="title">Entrega de valor</div>
+                        <div class="subhead">
+                            <p>Desarrollo ágil a medida</p>
+                            <p>Flexibles, transparentes y cercanos</p>
+                            <p>Entregas en ciclos cortos cada 15 días</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div id="practices" class="block">
                     <div class="catch">
-                        <a class="expand">
-                            <div class="title">Prácticas</div>
-                            <div class="subhead">
-                                <p>Test Driven Development</p>
-                                <p>Pair Programming</p>
-                                <p>Entrega continua</p>
-                            </div>
-                            <i class="ion-arrow-down-b"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>Desde que conocimos NCrunch y Resharper no queremos programar sin ninguna de estas dos herramientas. Todos los refactors los hacemos automáticamente con Resharper para estar seguros en todo momento que no se rompe nada.</p>
-                        <p>Después de cada "push" al control de versiones estamos tranquilos de poder subir a producción si hiciera falta. Aunque hemos usado TFS, preferimos sistemas que admitan commits a nivel local antes de compartir los cambios con los compañeros, por lo que habitualmente funcionamos con Git o Mercurial.</p>
-                        <p>En el frontend por supuesto hacemos también TDD usando para ello Jasmine, o a veces Mocha. Chai.js para los asserts y Sinon para los mocks.</p>
+                        <div class="title">Prácticas</div>
+                        <div class="subhead">
+                            <p>Test Driven Development</p>
+                            <p>Pair Programming</p>
+                            <p>Behavior Driven Development</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div id="testing" class="block">
                     <div class="catch">
-                        <a class="expand">
-                            <div class="title">Testing</div>
-                            <div class="subhead">
-                                <p>Unitario, Integración y E2E</p>
-                                <p>Selenium WebDriver</p>
-                                <p>Behavior Driven Development</p>
-                            </div>
-                            <i class="ion-arrow-down-b"></i>
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>Por supuesto todas nuestras features la dirigimos mediante tests (TDD) y también testeamos la arquitectura y la infraestructura. NUnit y FluentAssertions son nuestra combinación más habitual, acompañado de Moq o NSubstitute para los mocks. En algunos proyectos usamos SpecFlow (el Cucumber de .Net) como herramienta de comunicación en la que volcar los requisitos.</p>
+                        <div class="title">Testing</div>
+                        <div class="subhead">
+                            <p>Unitarios, Integración y E2E</p>
+                            <p>Selenium WebDriver</p>
+                            <p>Cucumber, SpecFlow y similares</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,35 +124,34 @@ layout: landing
 
         <div class="row">
             {% for client in site.clients %}
-                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
                     <a href="{{ client.url }}">
                         <div class="client-logo" style="background-image: url({{ client.logo }})"></div>
                     </a>
                 </div>
 		    {% endfor %}
 
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
                 <a href="https://www.ironhack.com/es">
                     <div class="client-logo" style="background-image: url(../img/logos/ironhack.png)"></div>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-offset-2 col-lg-2">
                 <a href="https://www.isqi.org/">
                     <div class="client-logo" style="background-image: url(../img/logos/isqi.png)"></div>
                 </a>
             </div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
                 <a href="http://www.besepa.com/">
                     <div class="client-logo" style="background-image: url(../img/logos/besepa.png)"></div>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="col-xs-12 col-sm-6 col-md-offset-3 col-md-3 col-lg-offset-0 col-lg-2">
                 <a href="http://www.salleurl.edu/">
                     <div class="client-logo" style="background-image: url(../img/logos/la_salle.png)"></div>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
                 <a href="http://www.jpgconsultores.es/">
                     <div class="client-logo" style="background-image: url(../img/logos/jpg_consultores_energeticos.png)"></div>
                 </a>
@@ -192,60 +159,3 @@ layout: landing
         </div>
     </div>
 </section>
-
-
-<script>
-    function slide(description, arrow) {
-        description.slideToggle('slow', function() {
-            if (arrow.hasClass('ion-arrow-down-b')) {
-                arrow.removeClass('ion-arrow-down-b');
-                arrow.addClass('ion-arrow-up-b');
-            } else {
-                arrow.removeClass('ion-arrow-up-b');
-                arrow.addClass('ion-arrow-down-b');
-            }
-        });
-    }
-
-    $('#technologies .expand').on('click', function(event) {        
-        var description = $('#technologies .description');
-        var arrow = $('#technologies i');
-
-        slide(description, arrow);
-    });
-
-    $('#frontend .expand').on('click', function(event) {        
-        var description = $('#frontend .description');
-        var arrow = $('#frontend i');
-
-        slide(description, arrow);
-    });
-
-    $('#backend .expand').on('click', function(event) {        
-        var description = $('#backend .description');
-        var arrow = $('#backend i');
-
-        slide(description, arrow);
-    });
-
-    $('#value .expand').on('click', function(event) {        
-        var description = $('#value .description');
-        var arrow = $('#value i');
-
-        slide(description, arrow);
-    });
-
-    $('#practices .expand').on('click', function(event) {        
-        var description = $('#practices .description');
-        var arrow = $('#practices i');
-
-        slide(description, arrow);
-    });
-
-    $('#testing .expand').on('click', function(event) {        
-        var description = $('#testing .description');
-        var arrow = $('#testing i');
-
-        slide(description, arrow);
-    });
-</script>
