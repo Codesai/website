@@ -15,7 +15,7 @@ author: Carlos Blé
 
 Hace dos semanas estuve impartiendo el [curso de TDD de Codesai](http://www.codesai.com/curso-de-tdd/) en las oficinas de [Biosystems](http://www.biosystems.es/) en Barcelona.
 
-Se trata de una empresa que lleva más de 30 años investigando, desarrollando y fabricando sistemas analíticos fiables y eficaces para laboratorios de todo el mundo. 
+Se trata de una empresa que lleva más de 30 años investigando, desarrollando y fabricando sistemas analíticos de diagnóstico clínico y agroalimentario para laboratorios de todo el mundo.
 
 Fue todo un placer trabajar con los desarrolladores que asistieron al curso. blabla <- Carlos añade aquí tu experiencia impartiendo el curso
 
