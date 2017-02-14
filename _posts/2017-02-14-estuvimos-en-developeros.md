@@ -17,7 +17,7 @@ small_image: small_codesai_en_developeros.png
 
 <img src="/assets/codesai_en_developeros.png" alt="miembros de Codesai en DeveloperOs">
 
-Para comenzar 2017 con buen pie varios miembros de Codesai estuvimos en el [DeveloperOS](http://developeros.net/), un [Open Space](https://en.wikipedia.org/wiki/Open_Space_Technology) centrado en tecnologías .Net que organizó la [comunidad .Net de Madrid](https://www.meetup.com/madriddotnet/) el pasado 28 de Enero. Aunque era la primera edición de este evento las entradas se acabaron enseguida. Últimamente hay que correr para poder pillar entrada casi para cualquier evento :)
+Para comenzar 2017 con buen pie varios miembros de Codesai estuvimos en el [DeveloperOS](http://developeros.net/), un [Open Space](https://en.wikipedia.org/wiki/Open_Space_Technology) centrado en tecnologías .Net que organizó la [comunidad .Net de Madrid](https://www.meetup.com/madriddotnet/) el pasado 28 de Enero y del que fuimos uno de los patrocinadores. Aunque era la primera edición de este evento las entradas se acabaron enseguida. Últimamente hay que correr para poder pillar entrada casi para cualquier evento :)
 
 El evento duró desde las 9 de la mañana hasta las 19:30. A lo que hay que sumarle algunas horas más para aquéllos que nos fuimos a tomar unas cervezas y charlar después de la retro y el sorteo de regalitos de los partners.
 
