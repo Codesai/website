@@ -1,0 +1,10 @@
+image: jekyll/jekyll                       # Use the jekyll image from Dockerhub
+pipelines:
+  branches:
+    master:
+      - step:
+          script:
+          - bundle install                 # Run bundler against the Gemfile
+          - bundle exec jekyll build       # Build the site
+          - npm install -g aerobatic-cli   # Install the aero CLI
+          - aero deploy --directory _site  # Deploy the built site to Aerobatic
