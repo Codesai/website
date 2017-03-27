@@ -1,7 +1,6 @@
 id: f3bb0a1d-cf24-4e80-8527-ac27e768468c
 plugins:
-    # thank you aerobatic
-    - name: custom-errors
+    name: custom-errors
     options:
       errors:
         404: /404.html
