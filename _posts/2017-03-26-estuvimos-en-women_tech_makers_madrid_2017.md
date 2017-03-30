@@ -27,19 +27,16 @@ Destacar la gran participación que hubo en las charlas y el nivelazo en general
 Asistimos a las siguientes charlas:
 
 ### BIG DATA & DATA SCIENCE : ¿POR QUÉ TODO EL MUNDO HABLA DE ELLOS?
-[Inés Huertas](https://twitter.com/quierodata) nos contó....
-
-### GIRLS IN TECH SPAIN: POTENCIANDO LA DIVERSIDAD
-Lucía Manzano Gómez y Cristina Sánchez Narváez, compañeras del [Girls In Tech](https://twitter.com/GirlsinTechES) ....
+[Inés Huertas](https://twitter.com/quierodata) nos desveló algunos de los secretos sobre Big Data, una de las disciplinas que más atención están levantando en los últimos años. La industria genera una inmensa cantidad de datos de todo tipo que los Data Scientists se encargan de preprocesar, modelar y validar. Una vez validados sus modelos, pueden encontrar patrones, realizar labores de predicción con un alto porcentaje de acierto o aplicar técnicas de machine learning. Optimizar la frecuencia del transporte público, descubrir nuevos segmentos de mercado o interceptar al consumidor antes de abandonar tu tienda online son algunos de los ejemplos de aplicaciones prácticas que descubrimos en la charla.
 
 ### EL DESPERTAR DE LA ZONA DE CONFORT
-[Laura Lacarra](https://twitter.com/LauraLacarra)  ....
+[Laura Lacarra](https://twitter.com/LauraLacarra)  se encargó de sacarnos de nuestra zona de confort con una charla muy divertida y con un mensaje con el que en Codesai nos sentimos muy identificados. Laura nos habló de lo peligrosa que es la zona de confort y lo que hace falta para salir de ella y seguir evolucionando como profesionales. También nos habló de la importancia de las comunidades a la hora de compartir conocimiento y de mejorar nuestra industria.
 
 ### CÓMO ME HE REINVENTADO COMO PROGRAMADORA WEB FRONT-END EN 3 MESES
 [Rocío Gómez](https://twitter.com/txutxina91) y [Fina Pérez](https://twitter.com/finuka) nos hablaron sobre el programa de [Adalab](http://adalab.es/). Adalab es un proyecto que impulsa a mujeres jóvenes con dificultades de empleabilidad para que se conviertan en profesionales líderes del mundo digital. El programa consiste en dar una formación durante 3 meses sobre tecnologías front-end, seguida de unas prácticas en empresas para consolidar dichos conocimientos previamente adquiridos y así empezar a conseguir experiencia profesional. Durante los 3 meses, a cada alumna se le asigna una mentora que le guiará y ayudará en los problemas que puede encontrar a lo largo del camino el aprendizaje. Además, tendrán varios profesores que les enseñaran las distintas herramientas y buenas prácticas con las que trabajarán en su día a día.
 
 ### INTERNET OF THINGS PARA TODOS ¿QUÉ COSAS PODEMOS HACER CON LAS COSAS?
-[Marta Beltrán](https://twitter.com/experiencia_T) ....
+[Marta Beltrán](https://twitter.com/experiencia_T) nos introdujo al fascinante mundo del “Internet de las Cosas” (IoT). En esta charla descubrimos el estado actual y todos los retos que aún quedan por delante para alcanzar un mundo en el que todos los dispositivos imaginables estén interconectados. Nos llamó mucho la atención lo avanzadas que están muchas industrias en este campo y la gran cantidad de estándares y tecnologías que ya existen y están siendo usadas. Los retos de seguridad que se plantean al tener todo inter-conectado parecen apasionantes.
 
 ### ¡LA TECNOLOGÍA TAMBIÉN ES COSA DE NIÑOS!
 ¡Una pequeña gran ponente! Alejandra, junto con la ayuda de sus padres, nos contó todo lo que había aprendido y sigue aprendiendo sobre la tecnología gracias a su fantástico robot JIMU. Un dinosaurio que ha tenido una aventura épica, la cual nos iba contando Alejandra mientras que JIMU se movía y bailaba.
