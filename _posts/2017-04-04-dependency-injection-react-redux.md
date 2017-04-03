@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dependency Injection in Redux
-date: 2017-04-02 22:00:00.000000000 +00:00
+date: 2017-04-05 22:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
@@ -11,7 +11,8 @@ categories:
   - JavaScript
 tags: []
 author: Carlos Blé
-small_image: redux_small.png
+small_image: redux.svg
+written_in: english
 ---
 
 Redux provides a function called _connect_ that binds the component to the store. This
