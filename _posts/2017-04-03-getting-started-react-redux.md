@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with React & Redux
-date: 2017-04-02 12:25:00.000000000 +00:00
+date: 2017-04-03 08:00:00.000000000 +00:00
 type: post
 published: true
 status: publish

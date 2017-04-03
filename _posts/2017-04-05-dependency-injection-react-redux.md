@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dependency Injection in Redux
-date: 2017-04-05 22:00:00.000000000 +00:00
+date: 2017-04-05 08:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
