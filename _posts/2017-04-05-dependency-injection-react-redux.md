@@ -57,5 +57,5 @@ call _dispatch_ every time. Notice that _saveProfile_ is not an action creator b
  
  <script src="https://gist.github.com/carlosble/cc4bf2a2c6a301971e5a7f5531248ef2.js"></script>
  
- Given this factory, in the next blog post I'll explain how we test-drive the app from
+ Given this factory, in the [next blog post](/2017/04/test-driving-react-redux) I'll explain how we test-drive the app from
  the outside-in, as well as the various kind of tests.
