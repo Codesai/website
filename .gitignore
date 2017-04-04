@@ -9,3 +9,6 @@ Gemfile.lock
 
 .ruby-version
 .vscode/
+
+aero-debug.log
+aero-deploy.tar.gz
