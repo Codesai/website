@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Estuvimos en Women Tech Makers Madrid
-date: 2017-03-26 00:00:00.000000000 +00:00
+date: 2017-04-07 08:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
@@ -35,6 +35,8 @@ Asistimos a las siguientes charlas:
 ### CÓMO ME HE REINVENTADO COMO PROGRAMADORA WEB FRONT-END EN 3 MESES
 [Rocío Gómez](https://twitter.com/txutxina91) y [Fina Pérez](https://twitter.com/finuka) nos hablaron sobre el programa de [Adalab](http://adalab.es/). Adalab es un proyecto que impulsa a mujeres jóvenes con dificultades de empleabilidad para que se conviertan en profesionales líderes del mundo digital. El programa consiste en dar una formación durante 3 meses sobre tecnologías front-end, seguida de unas prácticas en empresas para consolidar dichos conocimientos previamente adquiridos y así empezar a conseguir experiencia profesional. Durante los 3 meses, a cada alumna se le asigna una mentora que le guiará y ayudará en los problemas que puede encontrar a lo largo del camino el aprendizaje. Además, tendrán varios profesores que les enseñaran las distintas herramientas y buenas prácticas con las que trabajarán en su día a día.
 
+<img src="/assets/rocio-adalab.jpg" alt="miembros de Codesai en WTMMadrid">
+
 ### INTERNET OF THINGS PARA TODOS ¿QUÉ COSAS PODEMOS HACER CON LAS COSAS?
 [Marta Beltrán](https://twitter.com/experiencia_T) nos introdujo al fascinante mundo del “Internet de las Cosas” (IoT). En esta charla descubrimos el estado actual y todos los retos que aún quedan por delante para alcanzar un mundo en el que todos los dispositivos imaginables estén interconectados. Nos llamó mucho la atención lo avanzadas que están muchas industrias en este campo y la gran cantidad de estándares y tecnologías que ya existen y están siendo usadas. Los retos de seguridad que se plantean al tener todo inter-conectado parecen apasionantes.
 
@@ -46,7 +48,7 @@ Asistimos a las siguientes charlas:
 También asistimos a un **taller**:
 
 ### TALLER: ¡ÚNETE A LA REBELIÓN DE LOS BOTS Y LA INTELIGENCIA ARTIFICIAL!
-[Gisela Torres](https://twitter.com/0GiS0) nos hizo una introducción a los **bots** y a la **inteligencia artificial**, enseñándonos a crear nuestro primer bot que sea capaz de responder a las típicas FAQs de nuestra web. Para ello, nos enseñó su propio bot, muy chulo por cierto, donde simulaba un escenario donde la web era una compañía aérea y se nos perdía el equipaje. El bot nos ayudaba a que nos dejase nuestro equipaje en la ubicación que nosotros le indiquemos, haciendo uso de una verificación de dos pasos con un sms, y al resolver la incidencia era capaz de detectar nuestro estado de ánimo y como simulamos que estábamos enfadados, el bot nos invitaba a entrar en la zona VIP la próxima vez que fueramos al aeropuerto.
+[Gisela Torres](https://twitter.com/0GiS0) nos hizo una introducción a los **bots** y a la **inteligencia artificial**, enseñándonos a crear nuestro primer bot que sea capaz de responder a las típicas FAQs de nuestra web. Para ello, nos enseñó su propio bot, muy chulo por cierto, donde simulaba un escenario donde la web era una compañía aérea y se nos perdía el equipaje. El bot nos ayudaba a que nos dejase nuestro equipaje en la ubicación que nosotros le indiquemos, haciendo uso de una verificación de dos pasos con un sms, y al resolver la incidencia era capaz de detectar nuestro estado de ánimo, y como simulamos que estábamos enfadados, el bot nos invitaba a entrar en la zona VIP la próxima vez que fueramos al aeropuerto debido a las molestias causadas.
 
 Estuvo muy divertido el taller y aprendimos bastantes cosas que podemos hacer para explotar todo el potencial de los [bots](https://dev.botframework.com/) y de los [cognitive services](https://www.microsoft.com/cognitive-services/en-us/qnamaker) de Microsoft.
 
