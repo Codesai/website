@@ -85,7 +85,7 @@ There are occasions where checking the store is the only choice. One
 <script src="https://gist.github.com/carlosble/fac838dbdcd2d7afe509828d77d6d404.js"></script>
  
 On line 8 I expect the store to be properly populated, before exercising
-the code under test. As changes in the store may be asynchronous, I 
+the code under test. As the logout action could be asynchronous, I 
 wait for the store to change via _subscribe_ and then make the assertion.
 
 Up until now all the tests are _mounting_ the component and running
