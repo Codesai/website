@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Test-driving a Redux App
-date: 2017-04-06 08:00:00.000000000 +00:00
+date: 2017-04-05 16:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
