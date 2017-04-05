@@ -43,7 +43,6 @@ Asistimos a las siguientes charlas:
 ### ¡LA TECNOLOGÍA TAMBIÉN ES COSA DE NIÑOS!
 ¡Una pequeña gran ponente! Alejandra, junto con la ayuda de sus padres, nos contó todo lo que había aprendido y sigue aprendiendo sobre la tecnología gracias a su fantástico robot JIMU. Un dinosaurio que ha tenido una aventura épica, la cual nos iba contando Alejandra mientras que JIMU se movía y bailaba.
 
-<img src="/assets/JIMU.jpg" alt="Robot JIMU">
 
 También asistimos a un **taller**:
 
