@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Estuvimos en Women Tech Makers Madrid
-date: 2017-04-07 08:00:00.000000000 +00:00
+date: 2017-04-10 08:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
