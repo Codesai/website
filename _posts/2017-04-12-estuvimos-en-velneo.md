@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Estuvimos en Velneo (VisualMS)
-date: 2017-04-11 18:00:00.000000000 +00:00
+date: 2017-04-12 06:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
