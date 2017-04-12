@@ -35,6 +35,6 @@ La valoración del curso en general fue muy alta (nos pusieron un 9 de media, ¡
 
 <img src="/assets/velneo_antonio.jpeg" alt="Antonio de la Torre en Velneo">
 
-Hemos recopilado la bibliografía que usamos para crear el curso y que también sirve para ampliar conocimientos. Está disponible aquí: [Bibliografía del curso](https://gist/bibliografía velneo)
+Hemos recopilado la bibliografía que usamos para crear el curso y que también sirve para ampliar conocimientos. Está disponible aquí: [Bibliografía del curso](https://gist.github.com/trikitrok/397026e37c930bc76e15ed8c818fd206)
 
 Gracias a todo el equipo de Velneo por esta gran experiencia y esperamos coincidir pronto en otros proyectos.
