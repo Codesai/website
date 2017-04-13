@@ -37,4 +37,6 @@ La valoración del curso en general fue muy alta (nos pusieron un 9 de media, ¡
 
 Hemos recopilado la bibliografía que usamos para crear el curso y que también sirve para ampliar conocimientos. Está disponible aquí: [Bibliografía del curso](https://gist.github.com/trikitrok/397026e37c930bc76e15ed8c818fd206)
 
+También recopilamos [todos los ejemplos que usamos en este repositorio de Github](https://github.com/Codesai/js-ES5-best-practices).
+
 Gracias a todo el equipo de Velneo por esta gran experiencia y esperamos coincidir pronto en otros proyectos.
