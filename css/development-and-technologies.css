@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#company {
+    background-color: #111;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#company .codesai-logo {
+    display: inline-block;
+    position: relative;
+}
+
+#company a {
+    color: #7fa52b;
+    text-decoration: none;
+    transition: color 0.35s;
+}
+
+#company a:hover {
+    color: #428bca;
+    transform: scale(0.95);
+}
+
+#company img {
+    height: 240px;
+    transition: transform 0.35s;
+}
+
+#company img:hover {
+    transform: scale(0.95);
+}
+
+#company .contact-info {
+    position: absolute;
+    bottom: 0;
+    left: calc(100% + 60px);
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 0.07em;
+    text-align: left;
+}
+
+#company .contact-info i {
+    margin-right: 30px;
+    font-size: 1.6em;
+}
+
+#content {
+    background-color: #111;
+    color: #eee;
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+    padding: 40px 0;
+}
+
+#content .block {
+    padding-bottom: 60px;
+}
+
+#content .title {
+    font-size: 1.6em;
+    letter-spacing: 0.04em;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+#content .subhead {
+    font-size: 1.12em;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+}
+
+#content .subhead p {
+    margin: 0;
+}
+
+#content i {
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+#content .description {
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    display: none;
+}
+
+#clients {
+    padding: 40px 0;
+    text-align: center;    
+}
+
+#clients .section-title {
+    font-size: 2.4em;
+    letter-spacing: 0.04em;
+    font-weight: 900;
+    color: #111;
+}
+
+#clients .row > [class*='col-'] {
+    padding: 15px;
+}
+
+#clients .client-logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 180px;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    #company .codesai-logo {
+        display: block;
+    }
+
+    #company img {
+        width: 100%;
+    }
+
+    #company .contact-info {
+        position: static;
+        text-align: center;
+        padding-top: 30px;
+    }
+}

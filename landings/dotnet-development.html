@@ -1,0 +1,161 @@
+---
+layout: landing
+---
+
+<section id="company">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="codesai-logo">
+                    <a href="/">
+                        <img src="/img/logo_white.svg" alt="">
+                    </a>
+                    <div class="contact-info">
+                        <p>
+                            <script type="text/javascript">// <![CDATA[
+                                var a='contact', b='codesai', c='.com'; document.write('<a hre'+'f="mai'+'lto:' + a +'@' + b + c + '">'); document.write(a +'@' + b+c+'</a>');
+                            // ]]&gt;</script>
+                        </p>
+                        <div class="social">
+                            <a href="https://twitter.com/codesaidev"><i class="ion-social-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/codesai"><i class="ion-social-linkedin"></i></a>
+                            <a href="{{ site.url }}/atom.xml"><i class="ion-social-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="technologies" class="block">
+                    <div class="catch">
+                        <div class="title">.Net y Javascript</div>
+                        <div class="subhead">
+                            <p>Prolongada experiencia con C#</p>
+                            <p>Herramientas Microsoft y Open Source</p>
+                            <p>Manejo del ecosistema JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="frontend" class="block">
+                    <div class="catch">
+                        <div class="title">Frontend</div>
+                        <div class="subhead">
+                            <p>Frameworks de vista como Knockout y Angular</p>
+                            <p>Interfaz web con HTML5, CSS3, jQuery</p>
+                            <p>Aplicaciones de escritorio para Windows</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="backend" class="block">
+                    <div class="catch">
+                        <div class="title">Backend</div>
+                        <div class="subhead">
+                            <p>Arquitectura Hexagonal, Clean Architecture</p>
+                            <p>Domain Driven Design</p>
+                            <p>ASP.Net MVC, Dapper, EntityFramework</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div id="value" class="block">
+                    <div class="catch">
+                        <div class="title">Entrega de valor</div>
+                        <div class="subhead">
+                            <p>Desarrollo ágil a medida</p>
+                            <p>Flexibles, transparentes y cercanos</p>
+                            <p>Entregas en ciclos cortos cada 15 días</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="practices" class="block">
+                    <div class="catch">
+                        <div class="title">Prácticas</div>
+                        <div class="subhead">
+                            <p>Test Driven Development</p>
+                            <p>Pair Programming</p>
+                            <p>Behavior Driven Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="testing" class="block">
+                    <div class="catch">
+                        <div class="title">Testing</div>
+                        <div class="subhead">
+                            <p>Unitarios, Integración y E2E</p>
+                            <p>Selenium WebDriver</p>
+                            <p>Cucumber, SpecFlow y similares</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="clients">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="section-title">
+                Nuestros clientes
+            </div>
+        </div>
+
+        <div class="row">
+            {% for client in site.clients %}
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+                    <a href="{{ client.url }}">
+                        <div class="client-logo" style="background-image: url({{ client.logo }})"></div>
+                    </a>
+                </div>
+		    {% endfor %}
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+                <a href="https://www.ironhack.com/es">
+                    <div class="client-logo" style="background-image: url(../img/logos/ironhack.png)"></div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-offset-2 col-lg-2">
+                <a href="https://www.isqi.org/">
+                    <div class="client-logo" style="background-image: url(../img/logos/isqi.png)"></div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+                <a href="http://www.besepa.com/">
+                    <div class="client-logo" style="background-image: url(../img/logos/besepa.png)"></div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-offset-3 col-md-3 col-lg-offset-0 col-lg-2">
+                <a href="http://www.salleurl.edu/">
+                    <div class="client-logo" style="background-image: url(../img/logos/la_salle.png)"></div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
+                <a href="http://www.jpgconsultores.es/">
+                    <div class="client-logo" style="background-image: url(../img/logos/jpg_consultores_energeticos.png)"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

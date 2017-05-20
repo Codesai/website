@@ -15,11 +15,11 @@ keep_files:
   - ".gitignore"
 
 gems:
-  - jekyll-multiple-languages-plugin
+#  - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin
-languages: ["es", "en"]
-exclude_from_localizations: ["js", "css", "fonts", "img", "_posts", "atom.xml", "sitemap.xml"]
+# languages: ["es", "en"]
+# exclude_from_localizations: ["js", "css", "fonts", "img", "assets", "_posts", "atom.xml", "sitemap.xml"]
 
 # Site settings
 title: Codesai
@@ -73,10 +73,14 @@ clients:
     #   url: http://www.besepa.com/
     #   logo: ../img/logos/besepa.png
     #   description: clients/besepa.html
-    - name: La Casa de Mis Primos
-      url: http://www.lacasademisprimos.com/
-      logo: ../img/logos/lcdmp.jpg
-      description: clients/la_casa_de_mis_primos.html
+    - name: Grupo ASV
+      url: http://www.grupoasv.com/es/
+      logo: ../img/logos/grupo_asv.png
+      description: clients/grupo_asv.html
+    # - name: La Casa de Mis Primos
+    #   url: http://www.lacasademisprimos.com/
+    #   logo: ../img/logos/lcdmp.jpg
+    #   description: clients/la_casa_de_mis_primos.html
     # - name: iSQI
     #   url: https://www.isqi.org/
     #   logo: ../img/logos/isqi.png

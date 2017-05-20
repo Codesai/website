@@ -18,12 +18,20 @@ To check the name of your docker container you can run `docker ps`, it should be
 You can [check out how it works](https://bitbucket.org/codesai/codesaiweb/wiki/Home#markdown-header-docker-details) in the wiki.
 Althought ***not recommended*** you can [setup your own environment](https://bitbucket.org/codesai/codesaiweb/wiki/Home#markdown-header-setup-in-your-own-environment) instead of using Docker.
 
+## Troubleshooting
+
+On Ubuntu, even in the last version, docker-compose up doesn't work when installed via apt-get. 
+You have to install the latest version using `curl` as explained in the official docs (https://docs.docker.com/compose/install/).
+Then you have to use `sudo` to boot docker:
+
+    sudo docker-compose up
+    
+If it doesn't work you might to delete the file named `Gemfile` and retry.
+
 
 ## IMPORTANT
 
 ***The develop branch should always be ready to be deployed***
-
-**We can only deploy 5 times in a 24h period** since we are using the free version of Aerobatic Hosting.
 
 ***Remember to follow the Blog Publications flow inside the Codesai trello***
 
@@ -97,7 +105,7 @@ This is convenient since you can always edit your gist later without having to e
 To add a youtube video, you can use the youtube-video template provided in the includes. It will add a responsive, full-width youtube video to the post. Simply replace the src parameter with the one of your video :)
 
 ```
-{% include youtube-video.html src="https://www.youtube.com/embed/bIr5fPom7B4" %}
+{% include youtube-video.html video-id="bIr5fPom7B4" %}
 ```
 
 

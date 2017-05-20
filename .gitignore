@@ -8,3 +8,8 @@ Gemfile.lock
 .DS_Store
 
 .ruby-version
+.vscode/
+
+aero-debug.log
+aero-deploy.tar.gz
+.idea/
