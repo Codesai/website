@@ -9,6 +9,7 @@ categories:
   - React
   - Redux
   - JavaScript
+  - Testing
 tags: []
 author: Carlos Blé
 small_image: redux.svg

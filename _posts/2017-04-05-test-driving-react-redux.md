@@ -9,6 +9,8 @@ categories:
   - React
   - Redux
   - JavaScript
+  - Testing
+  - Test Driven Development
 tags: []
 author: Carlos Blé
 small_image: redux.svg
