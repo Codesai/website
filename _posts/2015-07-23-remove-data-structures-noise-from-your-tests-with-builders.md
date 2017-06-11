@@ -10,6 +10,7 @@ categories:
   - Test Driven Development
   - Testing
   - Refactoring
+  - Code Smells
 author: Carlos Blé
 cross_post_url: http://www.carlosble.com/2015/07/remove-data-structures-noise-from-your-tests-with-builders/
 small_image: small_bonsai.jpg

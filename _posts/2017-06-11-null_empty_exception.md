@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ¿Null, vacío o exception?
-date: 2017-06-08 16:00:00.000000000 +00:00
+date: 2017-06-11 10:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
@@ -9,17 +9,16 @@ categories:
   - Clean code
   - Principles
   - Code Smells
+  - Object Oriented Design
+  - Design Patterns
 tags: []
 author: Carlos Blé
 small_image: small_pairing_minions.jpg
 written_in: spanish
 ---
 
-Siempre que imparto una formación aprendo de los participantes. Cuando
- surgen dudas y debates en el grupo, se abre un espacio ideal para el 
-aprendizaje. Los últimos dos días hemos tenido la suerte de estar con 
-el equipo de Zooplus en Madrid practicando TDD y hablando mucho de 
-diseño de software.
+Siempre que imparto una formación aprendo de los participantes. Cuando surgen dudas y debates en el grupo, se abre un espacio ideal para el aprendizaje. Los últimos dos días hemos tenido la suerte de estar con el equipo de [Zooplus](http://www.zooplus.es/) en Madrid practicando TDD y hablando mucho de diseño de software.
+
 Durante la [WordWrap kata](http://thecleancoder.blogspot.com.es/2010/10/craftsman-62-dark-path.html) algunas personas plantearon
 casos límite muy interesantes. La firma de la función es esta:
 
@@ -37,16 +36,16 @@ de columnas.
  primer argumento es **null** y el segundo es un **número negativo**?
   
 Son decisiones de comportamiento que hay que tomar. En la conversación
-  había opiniones muy dispares y no llegamos a ningún consenso. El motivo
-  creo que se debe a la falta de principios sobre los que sostener 
-  nuestras hipótesis, lo cual hace que parezca una cuestión de gustos 
-  algo irracional. Si consensuamos unos principios es más fácil decidir
-  cuál es el comportamiento más adecuado. 
+había opiniones muy dispares y no llegamos a ningún consenso. El motivo
+creo que se debe a la falta de principios sobre los que sostener 
+nuestras hipótesis, lo cual hace que parezca una cuestión de gustos 
+algo irracional. Si consensuamos unos principios es más fácil decidir
+cuál es el comportamiento más adecuado. 
   
 Para mí **el principio más importante** de todos es el de 
 **[menor sorpresa](https://es.wikipedia.org/wiki/Principio_de_la_M%C3%ADnima_Sorpresa)**, no me gusta que el 
-  código me sorprenda. Pero además de este necesito otros para tomar 
-  estas decisiones:
+código me sorprenda. 
+Pero además de este necesito otros para tomar estas decisiones:
   
   * Simplicidad
   * Responsabilidad única
@@ -66,7 +65,9 @@ de bajo nivel dos responsabilidades, la de validación y la propia de
 wrap que ya tiene. Si quisiera darle la responsabilidad de validación
 podría lanzar una excepción en este punto. Pero el lanzamiento de 
 excepciones también se progaga por el código como los nulos e incluso
-peor. Aquí entra en juego la experiencia que uno tiene enfrentandose a 
+peor. 
+
+Aquí entra en juego la experiencia que uno tiene enfrentandose a 
 escenarios de ejecución donde ese texto llega a null. Y en la mía estos
  casos son realmente casos límite. Si he programado todo con TDD desde
  afuera hacia dentro, habiendo programado primero el llamador de esta
@@ -134,8 +135,7 @@ Ahora supongamos que el texto es una cadena no vacía pero que el número
    son bugs sino un uso erróneo de los mismos, que no fue anticipado
    por los autores.
   
-  Por regla general, 
-  **sólamente uso excepciones cuando soy incapaz de seguir 
+  Por regla general, **sólamente uso excepciones cuando soy incapaz de seguir 
   adelante con la ejecución**. Y no veo diferencia entre el cero y 
   los negativos. Algunas personas comentaron que se podía entender que
   el cero significa "no partir lineas" pero yo evito codificar

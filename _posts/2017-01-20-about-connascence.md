@@ -5,10 +5,11 @@ date: 2017-01-20 07:15:14.0 +00:00
 type: post
 published: true
 status: publish
-tags:
-- Object Oriented Design
-- Connascence
-- Refactoring
+categories:
+  - Object Oriented Design
+  - Connascence
+  - Refactoring
+  - Code Smells
 author: Manuel Rivero
 small_image: small_jim.jpeg
 written_in: english
