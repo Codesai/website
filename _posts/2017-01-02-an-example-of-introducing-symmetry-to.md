@@ -8,6 +8,7 @@ categories:
   - Katas
   - Learning
   - Refactoring
+  - Code Smells
 cross_post_url: http://garajeando.blogspot.com.es/2016/12/an-example-of-introducing-symmetry-to.html
 author: Manuel Rivero
 small_image: small_symmetry_flower.jpg

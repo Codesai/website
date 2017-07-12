@@ -10,7 +10,7 @@ categories:
   - Pair Programming
 cross_post_url: http://www.carlosble.com/2015/12/pairing-dont-have-to-agree-on-the-plan/
 author: Carlos Blé
-small_image: small_pairing_minions.jpg
+small_image: small_dolphins.jpg
 written_in: english
 ---
 So your pair is proposing a route or plan that you don't agree on. Am talking about a refactoring, a redesign or just the way to test drive the next feature. You have told him your reasons no to agree with him and there is no way to get to an agreement. It's perhaps frustrating because you believe his strategy will fail but he definitely wants to proceed that way. What do you do? Argue forever?
