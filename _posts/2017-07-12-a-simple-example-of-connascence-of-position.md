@@ -76,4 +76,14 @@ TODO: Summary
 
 TODO: Footnotes:
 
-TODO: References
+### References.
+#### Talks.
+* [Connascence](/2016/12/charla-sobre-connascence-en-scbcn16), Fran Reyes y Alfredo Casado ([slides](http://slides.com/franreyesperdomo/connascence#/))
+
+#### Posts.
+* [Refactoring Ruby: Bad Smells in Code], Jay Fields, Kent Beck, Martin Fowler, Shane Harvie
+* [Ruby 2 Keyword Arguments](https://robots.thoughtbot.com/ruby-2-keyword-arguments), Ian C. Anderson
+* [The problem with code smells](https://silkandspinach.net/2012/09/03/the-problem-with-code-smells/), Kevin Rutherford
+* [A problem with Primitive Obsession](https://silkandspinach.net/2014/09/19/a-problem-with-primitive-obsession/), Kevin Rutherford
+* [About Connascence](/2017/01/about-connascence), Manuel Rivero
+
