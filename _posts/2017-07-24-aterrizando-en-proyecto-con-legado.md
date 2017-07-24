@@ -11,7 +11,7 @@ categories:
   - Practices
 tags: []
 author: Carlos Blé
-small_image: small_rafting.jpg
+small_image: small_moon_approaching.jpg
 written_in: spanish
 ---
 
