@@ -8,7 +8,6 @@ pipelines:
           - bundle exec jekyll build       # Build the site
           - npm install -g aerobatic-cli   # Install the aero CLI
           - aero deploy                    # Deploy the built site to Aerobatic
-
     develop:
       - step:
           script:
