@@ -10,7 +10,7 @@ categories:
   - Connascence
   - Refactoring
   - Code Smells
-author: Francisco Reyes & Manuel Rivero
+author: Manuel Rivero & Fran Reyes
 small_image: small_houses.jpg
 written_in: english
 ---
