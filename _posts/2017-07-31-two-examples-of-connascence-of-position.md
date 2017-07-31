@@ -5,10 +5,11 @@ date: 2017-07-31 00:00:00.0 +00:00
 type: post
 published: true
 status: publish
-tags:
-- Object Oriented Design
-- Connascence
-- Refactoring
+categories:
+  - Object Oriented Design
+  - Connascence
+  - Refactoring
+  - Code Smells
 author: Francisco Reyes & Manuel Rivero
 small_image: small_houses.jpg
 written_in: english
