@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comentarios en el código
-date: 2017-07-28 11:00:00.000000000 +00:00
+date: 2017-08-03 11:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
