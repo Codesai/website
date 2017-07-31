@@ -69,7 +69,7 @@ We can eliminate the CoM by introducing a new class, *Range*, to wrap the *data 
 
 This refactoring is way better than only introducing *named parameters* because it does not only provides a **bigger coupling reduction** by going down in the scale from from CoP to CoT instead of only from CoP to CoM, but also it **introduces more semantics by adding a missing concept** (the *Range* object).
 
-Later we'll probably detect similarities<a href="#nota7"><sup>[7]</sup></a> in the way some functions that receives the new concept are using it and reduce it by moving that behavior into the new concept converting it in a [value object](https://martinfowler.com/bliki/ValueObject.html). It's in this sense that we say that value objects attract behavior. 
+Later we'll probably detect similarities<a href="#nota7"><sup>[7]</sup></a> in the way some functions that receives the new concept are using it and reduce it by moving that behavior into the new concept, converting it into a [value object](https://martinfowler.com/bliki/ValueObject.html). It's in this sense that we say that value objects attract behavior. 
 
 ### Summary.
 We have presented two examples of CoP, a "pure" one and another one that was really hiding a case of CoM. We have related CoP and CoM with known code smells, ([Long Parameters List](http://www.informit.com/articles/article.aspx?p=1400866&seqNum=4), [Data Clump](http://www.informit.com/articles/article.aspx?p=1400866&seqNum=8) and [Primitive Obsession](http://www.informit.com/articles/article.aspx?p=1400866&seqNum=9)), and introduced refactorings to reduce their coupling and improve their communication of intent. We have also discussed a bit, about when and what we need to consider before applying these refactorings.
