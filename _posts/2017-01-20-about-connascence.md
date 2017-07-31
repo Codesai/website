@@ -75,7 +75,7 @@ There are several types of **static connascence**:
 
   * **Connascence of Type** (CoT): when multiple components must agree on the type of an entity.
   
-  * **Connascence of Meaning** (CoM): when multiple components must agree on the meaning of specific values.
+  * **Connascence of Meaning** (CoM) or **Connascence of Convention** (CoC): when multiple components must agree on the meaning of specific values.
 
   * **Connascence of Position** (CoP): when multiple components must agree on the order of values.
   
