@@ -57,17 +57,17 @@ Let's see now the second interesting example in our small piece of code:
 
 <script src="https://gist.github.com/trikitrok/948bd5895f903f2b7ac9a22bfc18a5e6.js"></script>
 
-This simple line of code is maybe the simplest possible use of [hamcrest](https://code.google.com/archive/p/hamcrest/wikis/Tutorial.wiki). This case is so simple that the simple [JUnit](http://junit.org/junit5/) alternative is even clearer:
+This assertion is so simple that the [JUnit](http://junit.org/junit5/) alternative is even clearer than the previous one using [hamcrest](https://code.google.com/archive/p/hamcrest/wikis/Tutorial.wiki):
 
 <script src="https://gist.github.com/trikitrok/8127ee504363613bacd7d3a0e5925f03.js"></script>
 
-but soon the *JUnit* interface starts having problems: 
+but for more than one parameter the *JUnit* interface starts having problems: 
 
 <script src="https://gist.github.com/trikitrok/55d79c4b44d4df309b8cc9d92550a3ad.js"></script>
 
-Which one is the expected value and which one is the actual one? At least in my case we never manage to remember... 
+Which one is the *expected value* and which one is the *actual one*? We never manage to remember...
 
-The same example using *hamcrest* removes the expressiveness problem:
+Using *hamcrest* removes that expressiveness problem:
 
 <script src="https://gist.github.com/trikitrok/a93a36a190009b1ee8a9946b9754d16a.js"></script>
 
