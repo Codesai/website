@@ -57,7 +57,7 @@ Let's see now the second interesting example in our small piece of code:
 
 <script src="https://gist.github.com/trikitrok/948bd5895f903f2b7ac9a22bfc18a5e6.js"></script>
 
-This simple line of code is maybe the simplest use of [hamcrest](https://code.google.com/archive/p/hamcrest/wikis/Tutorial.wiki). This case is so simple that the simple [JUnit](http://junit.org/junit5/) alternative is even clearer:
+This simple line of code is maybe the simplest possible use of [hamcrest](https://code.google.com/archive/p/hamcrest/wikis/Tutorial.wiki). This case is so simple that the simple [JUnit](http://junit.org/junit5/) alternative is even clearer:
 
 <script src="https://gist.github.com/trikitrok/8127ee504363613bacd7d3a0e5925f03.js"></script>
 
