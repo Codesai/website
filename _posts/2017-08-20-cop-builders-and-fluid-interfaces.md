@@ -84,7 +84,7 @@ Finally, let's have a look at the last example in our initial small piece of cod
 This is [Mockito](http://site.mockito.org/)'s way of defining a stub. It's another example of using a *fluent interface* which again produces highly expressive code and avoids CoP.
 
 ### Summary.
-We started seeing how, in languages that don't allow *named parameters*, we can remove CoP by applying the *Introduce Parameter Object* refactoring and how the resulting code was much less expressive than the one using the *Introducing Named Parameters* refactoring. Then we saw how we can leverage *fluent interfaces* to remove CoP while writing high expressive code, mention internal DSLs and show you how this technique is more common that one can think at first but examining a small piece of code.
+We started seeing how, in languages that don't allow *named parameters*, we can remove CoP by applying the *Introduce Parameter Object* refactoring and how the resulting code was much less expressive than the one using the *Introducing Named Parameters* refactoring. Then we saw how we can leverage *fluent interfaces* to remove CoP while writing high expressive code, mentioned internal DSLs and showed you how this technique is more common that one can think at first by examining a small piece of code.
 
 ### References.
 
