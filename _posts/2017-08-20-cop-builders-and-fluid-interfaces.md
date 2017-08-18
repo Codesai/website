@@ -73,7 +73,7 @@ Using *hamcrest* removes that expressiveness problem:
 
 Thanks to the semantics introduced by *hamcrest*<a href="#nota6"><sup>[6]</sup></a>, it's very clear that the first parameter is the actual value and the second parameter is the expected on. The *internal DSL* defined by *hamcrest* produces declarative code with high expressiveness. To be clear **hamcrest is not removing the CoP**, but since there are only two parameters the degree of CoP is very low<a href="#nota7"><sup>[7]</sup></a>. The problem of the code using the *JUnit* assertion was its low expressiveness and *hamcrest* fixed that.
 
-For us it's curious how some assertion libraries that use *fluent interfaces*, in *trying to achieve expressiveness have (probably not being aware of it) eliminate CoP as well. See this example using [Jasmine](https://jasmine.github.io/):
+For us it's curious how, in *trying to achieve expressiveness, some assertion libraries that use *fluent interfaces* have (probably not being aware of it) eliminate CoP as well. See this example using [Jasmine](https://jasmine.github.io/):
 
 <script src="https://gist.github.com/trikitrok/2c205cd115015baceace3a5483ac23c5.js"></script>
 
@@ -81,7 +81,7 @@ Finally, let's have a look at the last example in our initial small piece of cod
 
 <script src="https://gist.github.com/trikitrok/168c5a69b6faf8443789d5f7c9a5a75b.js"></script>
 
-This is [Mockito](http://site.mockito.org/)'s way of defining a stub. It's using a *fluent interface* which again is highly expressive and avoids CoP.
+This is [Mockito](http://site.mockito.org/)'s way of defining a stub. It's another example of using a *fluent interface* which again produces highly expressive code and avoids CoP.
 
 ### Summary.
 We started seeing how, in languages that don't allow *named parameters*, we can remove CoP by applying the *Introduce Parameter Object* refactoring and how the resulting code was much less expressive than the one using the *Introducing Named Parameters* refactoring. Then we saw how we can leverage *fluent interfaces* to remove CoP while writing high expressive code, mention internal DSLs and show you how this technique is more common that one can think at first but examining a small piece of code.
