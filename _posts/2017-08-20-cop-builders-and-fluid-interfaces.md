@@ -71,7 +71,7 @@ Using *hamcrest* removes that expressiveness problem:
 
 <script src="https://gist.github.com/trikitrok/a93a36a190009b1ee8a9946b9754d16a.js"></script>
 
-in this case, thanks to the semantics introduced by *hamcrest*<a href="#nota6"><sup>[6]</sup></a>, it's very clear that the first parameter is the actual value and the second parameter is the expected on. The *internal DSL* defined by *hamcrest* produces declarative code with high expressiveness. To be clear **hamcrest is not removing the CoP**, but since there are only two parameters the degree of CoP is very low<a href="#nota7"><sup>[7]</sup></a>. The problem of the code using the *JUnit* assertion was its low expressiveness and *hamcrest* fixed that.
+Thanks to the semantics introduced by *hamcrest*<a href="#nota6"><sup>[6]</sup></a>, it's very clear that the first parameter is the actual value and the second parameter is the expected on. The *internal DSL* defined by *hamcrest* produces declarative code with high expressiveness. To be clear **hamcrest is not removing the CoP**, but since there are only two parameters the degree of CoP is very low<a href="#nota7"><sup>[7]</sup></a>. The problem of the code using the *JUnit* assertion was its low expressiveness and *hamcrest* fixed that.
 
 For us it's curious how some assertion libraries that use *fluent interfaces*, in *trying to achieve expressiveness have (probably not being aware of it) eliminate CoP as well. See this example using [Jasmine](https://jasmine.github.io/):
 
