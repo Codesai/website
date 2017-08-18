@@ -41,7 +41,7 @@ The first example is an application of the [builder pattern](http://wiki.c2.com/
 
 <script src="https://gist.github.com/trikitrok/d42762b85c695226f069430214d69110.js"></script>
 
-Applying the *builder pattern* provides a very specific<a href="#nota4"><sup>[4]</sup></a> [internal DSL](https://martinfowler.com/bliki/InternalDslStyle.html) that we can used to create a complex object avoiding CoP and also getting an expressiveness comparable or even superior to the one we get using *named parameters*. 
+Applying the *builder pattern* provides a very specific<a href="#nota4"><sup>[4]</sup></a> [internal DSL](https://martinfowler.com/bliki/InternalDslStyle.html) that we can use to create a complex object avoiding CoP and also getting an expressiveness comparable or even superior to the one we get using *named parameters*. 
 
 In this case we composed two builders, one for the _SafetyRange_ class:
 
