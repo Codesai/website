@@ -30,7 +30,7 @@ that eliminates the CoP transforming it into CoN:
 
 <script src="https://gist.github.com/trikitrok/1cb8b24f085cb6993b2eaa59ff60e895.js"></script> 
 
-As it happened with *named parameters*, we also have to be careful of not accidentally sweeping hidden CoM in the form of [data clumps](http://www.informit.com/articles/article.aspx?p=1400866&seqNum=8) under the rug when we use the [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html) refactoring.
+In this particular case, all the parameters to the function were semantically related, since they were parameters of the clustering algorithm, but in many cases all parameters aren't related. So, as we saw in our [previous post](/2017/07/two-examples-of-connascence-of-position) for *named parameters*, we have to be careful of not accidentally sweeping hidden CoM in the form of [data clumps](http://www.informit.com/articles/article.aspx?p=1400866&seqNum=8) under the rug when we use the [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html) refactoring.
 
 In any case, what it's clear is that **introducing a parameter object produces much less expressive code than introducing named parameters**. So how to *gain semantics while removing CoP* in languages without *named parameters*?
 
