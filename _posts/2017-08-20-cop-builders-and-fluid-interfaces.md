@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In a small piece of code
-date: 2017-08-18 00:00:00.0 +00:00
+date: 2017-08-20 00:00:00.0 +00:00
 type: post
 published: true
 status: publish
@@ -16,16 +16,19 @@ small_image: small_builders.jpeg
 written_in: english
 ---
 
-In a [previous post](/2017/07/two-examples-of-connascence-of-position) we talked about *positional parameters* and how they can suffer from **Connascence of Position, (CoP)**. Then we saw how, in some cases, we might introduce *named parameters* to remove the *CoP* and transform it into **Connascence of Name, (CoN)**, but always being careful of not hiding cases of **Connascence of Meaning, (CoM)**. Today we'll focus in languages that don't provide *named parameters* and see different techniquess to remove the CoP.
+In a [previous post](/2017/07/two-examples-of-connascence-of-position) we talked about *positional parameters* and how they can suffer from **Connascence of Position, (CoP)**. Then we saw how, in some cases, we might introduce *named parameters* to remove the *CoP* and transform it into **Connascence of Name, (CoN)**, but always being careful to not hiding cases of **Connascence of Meaning, (CoM)**. Today we'll focus in languages that don't provide *named parameters* and see different techniquess to remove the CoP.
 
-In those languages without *named parameters* there is a classic<a href="#nota1"><sup>[1]</sup></a> refactoring technique, [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html), that in many cases can also help you to **transform CoP into CoN**. 
+Let's see an example of a method suffering of CoP:
 
-BlaBla 
+<script src="https://gist.github.com/trikitrok/eb06db1754f89b18adc60069f03a841e.js"></script>
 
-Example
+In languages without *named parameters* (the example was written in Java), we can apply a classic<a href="#nota1"><sup>[1]</sup></a> refactoring technique, [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html), that can also *transform CoP into CoN**. To eliminate the CoN, we introduced the *ClusteringParameters* object:
 
-Comentar ejemplo
+<script src="https://gist.github.com/trikitrok/95636f3eeca5d476d383869240763cca.js"></script>
 
+that eliminates the CoP transforming it into CoN:
+
+<script src="https://gist.github.com/trikitrok/1cb8b24f085cb6993b2eaa59ff60e895.js"></script> 
 
 As it happened with *named parameters*, we also have to be careful of not accidentally sweeping hidden CoM in the form of [data clumps](http://www.informit.com/articles/article.aspx?p=1400866&seqNum=8) under the rug when we use the [Introduce Parameter Object](https://refactoring.com/catalog/introduceParameterObject.html) refactoring.
 
