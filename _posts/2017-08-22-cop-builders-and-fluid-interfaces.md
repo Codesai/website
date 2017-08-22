@@ -130,5 +130,5 @@ Footnotes:
 </div>
 
 <div class="foot-note">
-  <a name="nota7"></a> [7] See our [previous post about CoP](/2017/07/two-examples-of-connascence-of-position).
+  <a name="nota7"></a> [7] See our <a href="/2017/07/two-examples-of-connascence-of-position">previous post about CoP</a>.
 </div>
