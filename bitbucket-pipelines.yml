@@ -22,3 +22,10 @@ pipelines:
           - bundle exec jekyll build       # Build the site
           - npm install -g aerobatic-cli   # Install the aero CLI
           - aero deploy --stage private    # Deploy the built site to Aerobatic
+    stage:
+      - step:
+          script:
+          - bundle install                 # Run bundler against the Gemfile
+          - bundle exec jekyll build       # Build the site
+          - npm install -g aerobatic-cli   # Install the aero CLI
+          - aero deploy --stage stage    # Deploy the built site to Aerobatic
