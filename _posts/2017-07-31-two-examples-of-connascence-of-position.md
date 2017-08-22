@@ -79,9 +79,10 @@ We have presented two examples of CoP, a "pure" one and another one that was rea
 * [Connascence](/2016/12/charla-sobre-connascence-en-scbcn16), Fran Reyes & Alfredo Casado ([slides](http://slides.com/franreyesperdomo/connascence#/))
 
 #### Books.
-* [Refactoring Ruby: Bad Smells in Code](http://www.informit.com/articles/article.aspx?p=1400866), Jay Fields, Kent Beck, Martin Fowler, Shane Harvie
+* [Refactoring Ruby](https://martinfowler.com/books/refactoringRubyEd.html), Jay Fields, Kent Beck, Martin Fowler, Shane Harvie
 
 #### Posts.
+* [Refactoring Ruby: Bad Smells in Code](http://www.informit.com/articles/article.aspx?p=1400866), Jay Fields, Kent Beck, Martin Fowler, Shane Harvie
 * [Ruby 2 Keyword Arguments](https://robots.thoughtbot.com/ruby-2-keyword-arguments), Ian C. Anderson
 * [The problem with code smells](https://silkandspinach.net/2012/09/03/the-problem-with-code-smells/), Kevin Rutherford
 * [A problem with Primitive Obsession](https://silkandspinach.net/2014/09/19/a-problem-with-primitive-obsession/), Kevin Rutherford
