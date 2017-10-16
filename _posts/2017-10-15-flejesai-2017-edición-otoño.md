@@ -65,6 +65,8 @@ De aquí salieron ideas como clubes de lectura, katas los viernes, mentoring y f
 
 ## Sensaciones
 
+[TODO foto del paseo]
+
 Cuando nos despedíamos, todos estuvimos de acuerdo que fue el mejor Flejesai que habíamos hecho hasta ahora. Nos fuimos muy unidos y con mucha energía.
 
 Ahora a gastarla. Por cierto, el próximo será en febrero/marzo en Tenerife, que tampoco está nada mal. 
