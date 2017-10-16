@@ -1,4 +1,18 @@
-
+---
+layout: post
+title: Flejesai 2017 Edición de Otoño
+author: Antonio de la Torre
+date: 2017-10-16 09:00:00.0 +00:00
+type: post
+title: In a small piece of code
+published: false
+status: draft
+categories:
+  - Codesai
+  - Flejesai
+  - Organization
+small_image: flejesai2017-2-autumn.jpg
+---
 
 # Flejesai 2017 Edición de Otoño 
 
