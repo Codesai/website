@@ -1,33 +1,21 @@
----
-layout: post
-title: Flejesai 2017 Edición de Otoño
-author: Antonio de la Torre
-date: 2017-10-16 09:00:00.0 +00:00
-type: post
-title: In a small piece of code
-published: false
-status: draft
-categories:
-  - Codesai
-  - Flejesai
-  - Organization
-small_image: flejesai-2017-2-thumbnail.jpg
----
+
 
 # Flejesai 2017 Edición de Otoño 
 
-[TODO Foto de grupo]
 
 ## Qué es, dónde y por qué
+
+![Borines](/assets/flejesai2017-2-borines.jpg)
+
 
 La semana pasada organizamos el Flejesai, edición Otoño de este año 2017.  Desde que se fundó Codesai el año pasado nos reunimos cada seis meses para vernos, charlar de temas importantes que se hablan mejor en persona y sobre todo fortalecer los lazos que en una empresa totalmente remota hay que cuidar de manera especial.
 
 Es el tercero al que asisto, y después de Las Palmas de Gran Canaria y Madrid, ya tenía ganas de traer a mis compañeros a Asturias. Estoy especialmente orgulloso de lo que puede ofrecer esta tierra.
 
-Además de lo típico en lo que todos estaréis pensando, paisajes y buena comida, lo que realmente me hacía desear hacer un Flejesai aquí, era que quería invitar a mis compañeros a mi pueblo, en Borines /TODO enlace a Borines/. 
+Además de lo típico en lo que todos estaréis pensando, paisajes y buena comida, lo que realmente me hacía desear hacer un Flejesai aquí, era que quería invitar a mis compañeros a mi pueblo, en Borines. 
 La admiración que siento por este rincón, la casa en la que nació mi madre y en la que pasé muchos veranos, no disminuye, ni me acostumbro a las vistas del valle que puedo ver desde la terraza y quería compartirlo con todos.
 
-[TODO Foto de Ronny en la terraza] 
+
 
 ## La organización
 
@@ -41,7 +29,7 @@ El resto de la organización consistió en garantizar que nuestro mayor foco est
 
 ## Y empezamos...
 
-[TODO Algunas fotos de las reuniones]
+![Reunión en la cocina](/assets/flejesai2017-2-kitchen-moment.jpg)
 
 Con todo ya listo llegó el gran día.
 Los objetivos principales eran hablar de los temas que traíamos en la agenda y pasar mucho tiempo juntos, charlando e intentar tener mucho tiempo libre para eso.
@@ -53,6 +41,8 @@ De la parte de ocio un poco menos de lo esperado. Conversamos mucho entre nosotr
 En lo que a la organización se refiere, todo salió perfecto. 
 
 ## Resultados 
+![Team](/assets/flejesai2017-2-team.jpg)
+
 
 Como reflexión de lo que nos ha aportado este Flejesai al equipo, creo que ha sido mucho. Nos dimos cuenta que el concepto de 'retiro' en casa rural es el que necesitamos y es muy importante que todos durmamos en el mismo sitio, para maximizar esas oportunidades de conversación.
 Sobre los temas a tratar, en mi opinión han sido demasiado técnicos, de pura organización empresarial. Se nota que somos una empresa joven y que hay todavía ciertos cimientos que hay que afianzar.
@@ -65,7 +55,7 @@ De aquí salieron ideas como clubes de lectura, katas los viernes, mentoring y f
 
 ## Sensaciones
 
-[TODO foto del paseo]
+![Paseo](/assets/flejesai2017-2-cider-post.jpg)
 
 Cuando nos despedíamos, todos estuvimos de acuerdo que fue el mejor Flejesai que habíamos hecho hasta ahora. Nos fuimos muy unidos y con mucha energía.
 
