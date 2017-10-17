@@ -18,26 +18,26 @@ small_image: flejesai2017-2-autumn.jpg
 
 ## Qué es, dónde y por qué
 
-![Borines](/assets/flejesai2017-2-borines.jpg)
+![Vistas al valle de Borines](/assets/flejesai2017-2-borines.jpg)
 
 
-La semana pasada organizamos el Flejesai, edición Otoño de este año 2017.  Desde que se fundó Codesai el año pasado nos reunimos cada seis meses para vernos, charlar de temas importantes que se hablan mejor en persona y sobre todo fortalecer los lazos que en una empresa totalmente remota hay que cuidar de manera especial.
+La semana pasada organizamos el Flejesai, edición Otoño 2017.  Desde que se fundó Codesai el año pasado nos reunimos cada seis meses para vernos, charlar de temas importantes que se hablan mejor en persona y sobre todo fortalecer los lazos que en una empresa totalmente remota hay que cuidar de manera especial.
 
 Es el tercero al que asisto, y después de Las Palmas de Gran Canaria y Madrid, ya tenía ganas de traer a mis compañeros a Asturias. Estoy especialmente orgulloso de lo que puede ofrecer esta tierra.
 
 Además de lo típico en lo que todos estaréis pensando, paisajes y buena comida, lo que realmente me hacía desear hacer un Flejesai aquí, era que quería invitar a mis compañeros a mi pueblo, en Borines. 
-La admiración que siento por este rincón, la casa en la que nació mi madre y en la que pasé muchos veranos, no disminuye, ni me acostumbro a las vistas del valle que puedo ver desde la terraza y quería compartirlo con todos.
-
+El cariño que siento por este rincón, la casa en la que nació mi madre y en la que paso muchos fines de semana, no disminuye con el tiempo, y nunca me acostumbraré a las vistas del valle que puedo ver desde la terraza, que veis en la foto de arriba.
+Pues todo esto quería compartir con mis compañeros.
 
 
 ## La organización
 
-El evento que queríamos hacer consistía en dos días enteros de charla, por tanto las llegadas y salidas serían los días anteriores y posteriores. No es poca cosa pensar en todo lo necesario para 11 personas durante cuatro días. 
+El evento que queríamos hacer consistía en dos días enteros de charla, por tanto las llegadas y salidas serían el día anterior y posterior. No es poca cosa pensar en todo lo necesario para 11 personas durante cuatro días. 
 
-Lo primero fue pensar si podíamos hacer allí nuestro evento, llegamos a la conclusión que no era un buen lugar. Hay que reconocer que no es precisamente un centro de empresas e íbamos a estar incómodos todos personas hablando de temas importantes, queriendo proyectar, etc. 
-Afortunadamente, a unos 10 minutos caminando encontramos una casa rural que nos iba a resolver el tema del alojamiento y al final también el de las salas de reuniones.
+Lo primero fue valorar si podíamos hacer nuestro evento allí, en la casa familiar, y llegamos a la conclusión que no era un buen lugar. Hay que reconocer que no es precisamente un centro de empresas e íbamos a estar incómodos todos personas hablando de temas importantes, queriendo proyectar, etc.
+Afortunadamente, a unos 10 minutos caminando encontramos una casa rural que nos iba a resolver el tema del alojamiento y el de las salas de reuniones.
 
-El resto de la organización consistió en garantizar que nuestro mayor foco estuviese en hablar de los temas importantes, así que todas la comidas o las encargamos o fuimos a disfrutarlas a algún sitio cercano.
+El resto de la preparación consistió en garantizar que nuestro mayor foco estuviese en hablar de nuestras cosas, así que todas la comidas o las encargamos o fuimos a disfrutarlas a algún sitio cercano.
 
 
 ## Y empezamos...
