@@ -26,6 +26,7 @@ La semana pasada organizamos el Flejesai, edición Otoño 2017.  Desde que se fu
 Es el tercero al que asisto, y después de Las Palmas de Gran Canaria y Madrid, ya tenía ganas de traer a mis compañeros a Asturias. Estoy especialmente orgulloso de lo que puede ofrecer esta tierra.
 
 Además de lo típico en lo que todos estaréis pensando, paisajes y buena comida, lo que realmente me hacía desear hacer un Flejesai aquí, era que quería invitar a mis compañeros a mi pueblo, en Borines. 
+
 El cariño que siento por este rincón, la casa en la que nació mi madre y en la que paso muchos fines de semana, no disminuye con el tiempo, y nunca me acostumbraré a las vistas del valle que puedo ver desde la terraza, que veis en la foto de arriba.
 Pues todo esto quería compartir con mis compañeros.
 
@@ -35,9 +36,8 @@ Pues todo esto quería compartir con mis compañeros.
 El evento que queríamos hacer consistía en dos días enteros de charla, por tanto las llegadas y salidas serían el día anterior y posterior. No es poca cosa pensar en todo lo necesario para 11 personas durante cuatro días. 
 
 Lo primero fue valorar si podíamos hacer nuestro evento allí, en la casa familiar, y llegamos a la conclusión que no era un buen lugar. Hay que reconocer que no es precisamente un centro de empresas e íbamos a estar incómodos todos personas hablando de temas importantes, queriendo proyectar, etc.
-Afortunadamente, a unos 10 minutos caminando encontramos una casa rural que nos iba a resolver el tema del alojamiento y el de las salas de reuniones.
 
-El resto de la preparación consistió en garantizar que nuestro mayor foco estuviese en hablar de nuestras cosas, así que todas la comidas o las encargamos o fuimos a disfrutarlas a algún sitio cercano.
+Afortunadamente, a unos 10 minutos caminando encontramos una casa rural que nos iba a resolver el tema del alojamiento y el de las salas de reuniones. El resto de la preparación consistió en garantizar que nuestro mayor foco estuviese en hablar de nuestras cosas, así que todas la comidas o las encargamos o fuimos a disfrutarlas a algún sitio cercano.
 
 
 ## Y empezamos...
@@ -45,31 +45,37 @@ El resto de la preparación consistió en garantizar que nuestro mayor foco estu
 ![Reunión en la cocina](/assets/flejesai2017-2-kitchen-moment.jpg)
 
 Con todo ya listo llegó el gran día.
-Los objetivos principales eran hablar de los temas que traíamos en la agenda y pasar mucho tiempo juntos, charlando e intentar tener mucho tiempo libre para eso.
+Los dos objetivos principales eran hablar de los temas que traíamos en la agenda y pasar mucho tiempo juntos, charlando.
 
-De lo primero hubo mucho, hablamos largo y tendido de nuestras preocupaciones y acordamos muchos temas que ayuden a seguir fortaleciendo este equipo y afiancen el futuro de nuestra pequeña organización.
+De lo primero hubo mucho, hablamos largo y tendido de nuestras preocupaciones y acordamos muchos temas que ayuden a seguir fortaleciendo este equipo y afiancen el futuro de nuestra pequeña organización. Luego os comentaré alguno.
 
-De la parte de ocio un poco menos de lo esperado. Conversamos mucho entre nosotros y pudimos conocernos todos un poco más, aunque en la retrospectiva visibilizamos que haría falta fijar mejor los horarios de la agenda para así manejar mejor las expectativas de tiempo libre.  
-
-En lo que a la organización se refiere, todo salió perfecto. 
+De la parte de charla y ocio, menos de lo que nos hubiese gustado. Conversamos mucho entre nosotros, teniendo algún 'café' y pudimos conocernos todos un poco más.  Creamos el meme 'Quiero saber a qué dedica su tiempo libre X'. Puede que un poco forzado, pero entrábamos al trapo, cómo no.
+Aunque en la retrospectiva estuvimos de acuerdo en que haría falta fijar mejor los horarios de la agenda, reuniones y descansos, para así manejar mejor las expectativas de tiempo libre. Hubo muchos tiempos muertos en los que se nos iba la energía: "¿Paramos o seguimos? ... (sloths everywhere)"
 
 ## Resultados 
 ![Team](/assets/flejesai2017-2-team.jpg)
 
+Como reflexión de lo que nos ha aportado este Flejesai al equipo, creo que ha sido mucho. 
 
-Como reflexión de lo que nos ha aportado este Flejesai al equipo, creo que ha sido mucho. Nos dimos cuenta que el concepto de 'retiro' en casa rural es el que necesitamos y es muy importante que todos durmamos en el mismo sitio, para maximizar esas oportunidades de conversación.
-Sobre los temas a tratar, en mi opinión han sido demasiado técnicos, de pura organización empresarial. Se nota que somos una empresa joven y que hay todavía ciertos cimientos que hay que afianzar.
+La mayoría de los temas tratados han sido sobre organización interna, en mi opinión quizás demasiados. Se nota que somos una empresa joven y que hay todavía cimientos que afianzar.
 
-Empezamos a hablar de un par de temas más estratégicos y de cultura que me gustaría seguir trabajando ya poco a poco con el equipo. 
-El primero fue el de la asistencia a eventos, si la vemos necesaria. De este tema saltamos a la estrategia de marketing que tenemos, que es donde encajaría, y nos dimos cuenta que tiene que ser una herramienta más, con el blog, la participación de comunidades locales o el trabajo más comercial de contacto con posibles clientes.
+Sí empezamos a hablar de un par de puntos más estratégicos y de cultura que me gustaría seguir trabajando ya poco a poco con el equipo los próximos meses. 
 
-El segundo es nuestra estrategia de formación interna. Casi no pudimos hablarlo, pero creo que sería muy bueno tener buenas herramientas para que la formación entre nosotros sea constante. Sobre todo entre compañeros de diferentes proyectos, para ayudar al contacto. Actualmente hacemos pairing casi constante y repartimos pequeñas píldoras de conocimiento entre compañeros que estamos en el mismo proyecto, pero nos faltaría algo más constante a nivel de todo el grupo. 
+El primero fue el de la asistencia a eventos, si la vemos necesaria y a qué eventos ir. Este tema nos llevó a uno más general, sobre qué estrategia de marketing tenemos, cómo nos damos a conocer. Y vimos que es una herramienta más, con el blog, la organización de cursos en abierto, la participación de comunidades locales o el trabajo más comercial de contacto con posibles clientes.
+
+Salió la idea de organizar un curso en abierto de "TDD Avanzado", que ya lo está reclamando mucha gente, y uno de "Refactoring", que ya lo estamos dando a empresas.
+
+El segundo punto que destacaría de los temas tratados, es definir mejor nuestra estrategia de formación interna. Fue breve, pero sacamos alguna idea para potenciar lo que considero una de las características que nos definen, el aprendizaje continuo. Actualmente hacemos pairing casi constante y repartimos pequeñas píldoras de conocimiento entre las personas que estamos en el mismo proyecto, pero nos faltaría algo más a medio plazo a nivel de todo el grupo. 
 De aquí salieron ideas como clubes de lectura, katas los viernes, mentoring y formación interna, ... realmente muy potente.
 
 ## Sensaciones
 
 ![Paseo](/assets/flejesai2017-2-cider-post.jpg)
 
-Cuando nos despedíamos, todos estuvimos de acuerdo que fue el mejor Flejesai que habíamos hecho hasta ahora. Nos fuimos muy unidos y con mucha energía.
+Todos nos dimos cuenta que el concepto de 'retiro' en casa rural es el que necesitamos y es muy importante que todos durmamos en el mismo sitio, para maximizar esas oportunidades de conversación.
 
-Ahora a gastarla. Por cierto, el próximo será en febrero/marzo en Tenerife, que tampoco está nada mal. 
+Y en este caso solamente algunas cosas que pasan en el Flejesai, se quedan en el Flejesai. Sobre todo lo que a 'karaokes' hasta las cinco de la mañana se refiere.
+
+Cuando nos despedíamos, estuvimos de acuerdo que fue el mejor Flejesai que habíamos hecho hasta ahora. Nos fuimos muy unidos y con mucha energía.
+
+Ahora a gastarla. Por cierto, el próximo será en febrero/marzo en Tenerife, que tampoco está nada mal, ¿no os parece? 
