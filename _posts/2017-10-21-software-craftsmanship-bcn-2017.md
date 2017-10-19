@@ -24,7 +24,7 @@ I would like to thank the organisers and the community, all this anticipation an
 
 It was hard to choose which talks to attend to but thanks to autentia, we can watch all the talks over and over again. From every talk I attended to I took home at least one important learning pill.
 
-Native and browser SPA versions using re-frame, ClojureScript and ReactNative [Manuel Rivero]
+Native and browser SPA versions using re-frame, ClojureScript and ReactNative [Manuel Rivero](https://twitter.com/trikitrok)
 On this talk, my colleague and mentor Manuel shared his learnings from one of his projects using ClojureScript and re-frame. I found the concept of effects and coeffects very interesting and I am tempted to get over the parentheses (or “elegant weapons for a more civilized age” as he prefers to call them) and start learning Clojure.
 
 Simplicidad (para desarrolladores) [Edu Ferro](https://twitter.com/eferro)
