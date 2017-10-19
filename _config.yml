@@ -14,7 +14,7 @@ keep_files:
   - ".git"
   - ".gitignore"
 
-gems:
+plugins:
 #  - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin

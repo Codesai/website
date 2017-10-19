@@ -25,9 +25,10 @@ You have to install the latest version using `curl` as explained in the official
 Then you have to use `sudo` to boot docker:
 
     sudo docker-compose up
-    
-If it doesn't work you might to delete the file named `Gemfile` and retry.
 
+UPDATE 20/10/2017
+
+(Antonio. Ubuntu 17.04) I have to fix some configuration files. There are in this branch fix/config_error_in_ubuntu_17.04
 
 ## IMPORTANT
 
@@ -48,6 +49,7 @@ If it doesn't work you might to delete the file named `Gemfile` and retry.
 The first step is to create a new branch from the latest **develop** with a quick name related to the post. Once the post has gone through **revision** and **polishing** be sure to merge develop into your branch, check that everything is fine and then merge your post into **develop**. To publish it, merge develop into **master**. Remember to periodically merge develop into your branch if you are still writing the post to get the latest updates (styles could be modified).
 
 To create a post, simply add a new file in the `_posts` folder named `YYYY-MM-DD-name-of-the-post.md`, the name specified becomes the **permalink**. At the top of the file you have to write a small yaml specification, the **bare minimum** to start a post is:
+
 ```
 ---
 layout: post
@@ -55,6 +57,7 @@ title: My Post Title nicely written
 author: Crazy Cockatoo
 ---
 ```
+
 You can now write your post below, remember that we now use **markdown** and you can mix in some html if needed. We are now using [**kramdown**](https://kramdown.gettalong.org/quickref.html) as recommended by jekyll, you may prefer this [**markdown quicksheet**](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 
