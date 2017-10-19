@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flejesai 2017 Edición de Otoño
-date: 2017-10-20 08:00:00.0 +00:00
+date: 2017-10-20 07:00:00.0 +02:00
 type: post
 published: true
 status: publish
@@ -12,9 +12,6 @@ categories:
 author: Antonio de la Torre
 small_image: flejesai2017-2-autumn.jpg
 ---
-
-# Flejesai 2017 Edición de Otoño 
-
 
 ## Qué es, dónde y por qué
 
