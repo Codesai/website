@@ -1,16 +1,15 @@
 ---
 layout: post
 title: Software Craftsmanship Barcelona 2017
-date: 2017-10-21 06:00:00.000000000 +00:00
+date: 2017-10-20 08:00:00.000000000 +00:00
 type: post
-published: false
-status: draft
+published: true
+status: publish
 categories:
   - Codesai
   - News
   - Software Craftsmanship
   - Events
-tags: []
 author: Manuel J. Tordesillas
 small_image: placeholder.jpg
 written_in: english
