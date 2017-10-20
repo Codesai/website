@@ -26,18 +26,21 @@ It was hard to choose which talks to attend to but thanks to autentia, we can wa
 Native and browser SPA versions using re-frame, ClojureScript and ReactNative [Manuel Rivero](https://twitter.com/trikitrok)
 On this talk, my colleague and mentor Manuel shared his learnings from one of his projects using ClojureScript and re-frame. I found the concept of effects and coeffects very interesting and I am tempted to get over the parentheses (or “elegant weapons for a more civilized age” as he prefers to call them) and start learning Clojure.
 
-Simplicidad (para desarrolladores) [Edu Ferro](https://twitter.com/eferro)
+[Simplicidad (para desarrolladores)](https://www.youtube.com/watch?v=6FDxbCzh2sI) [Edu Ferro](https://twitter.com/eferro)
 Edu made a very convincing case for the need of developers to put their feet on the ground and design solutions with simplicity in mind. I really liked the concept that he introduced for introducing new features in our systems:  refactor the code before integrating that feature for it to fit as if it was designed with the rest of the system from the get go.
 
 Slow Life (Como montárselo bien como programador) [Luis Rovirosa](https://twitter.com/luisrovirosa), [Jordi Anguela](https://twitter.com/jordianguela)
 Luis and Jordi tried to make us reflect whether we feel we are doing well or not as developers in both our professional and personal lives. I found the talk very insightful, with tips and tricks to prioritize our objectives and to reach the point where we want to be. I felt reflected on most of the points they brought across since I have lived similar moments along my personal and professional career.
 
-TDD: Mi libro de recetas [Modesto Sanjuan](https://twitter.com/msanjuan)
+[TDD: Mi libro de recetas](https://www.youtube.com/watch?v=o9yspCrKHV0) [Modesto Sanjuan](https://twitter.com/msanjuan)
 Modesto made a very practical talk about why he uses TDD and some tools to avoid some of it pitfalls. Very interesting discussions were raised about naming, test structuring and assertions that made me reassess my knowledge about TDD.
 
 The Economics of Continuous Delivery [Adrian Perreau](https://twitter.com/eidrien)
 Adrian presented a very interesting and mathematical approach on how to sell Continuous Delivery to stakeholders in the language they most commonly understand, MONEY! 
 With the aid of  some mathematical formulas he showed us how to calculate the effort and money needed in traditional Integration and Delivery compared with Continuous Delivery. (Hint: Continuous Delivery is the clear winner)
+
+[Clean Code, SOLID, CQRS... ¿Y qué hay de nuestros test?](https://www.youtube.com/watch?v=cw6Va1ZW7iI) [Rafa Gómez](https://twitter.com/rafaoe) y [Javi Ferrer](https://twitter.com/JavierCane)
+On their very fun and interesting talk, Rafa and Javi talked about how to test our CQRS architectures. They made a good introduction of the different types of tests they normally use when developing CQRS applications, when they prefer to use them. They also introduced some really interesting test anti-patterns with seriously cool names.
 
 ## Event Organisation and Food
 
