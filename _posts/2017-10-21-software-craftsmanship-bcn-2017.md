@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software Craftsmanship Barcelona 2017
-date: 2017-10-20 08:00:00.000000000 +00:00
+date: 2017-10-23 08:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
@@ -11,9 +11,11 @@ categories:
   - Software Craftsmanship
   - Events
 author: Manuel J. Tordesillas
-small_image: placeholder.jpg
+small_image: scbcn17-thumbnail.jpg
 written_in: english
 ---
+
+[SCBCN17 Logo](/assets/scbcn17-logo.jpeg)
 
 Two weekends ago, a few colleagues from Codesai and I attended the Software Craftsmanship Barcelona 2017. While some of them had already come in previous years, I was a first timer and my expectations were very high. I have heard very positive comments from attendees to previous editions. For the year I lived in Barcelona, I became a member of the community and tried to attend to all the katas every Monday, where information about the event leaked little by little. I was lucky to get them on the first day on sale.
 
@@ -50,4 +52,6 @@ I really liked the venue, even if it is not in the most centric part of Barcelon
 
 ## The community
 
-I would also like to thank the Software Craftsmanship community, I am proud to belong to a community where we set aside our differences and talk about how to continue improving on both our professional and personal facets of our lives. I leave the event with more desire to continue learning than ever. Will be back!
+I would also like to thank the Software Craftsmanship community, I am proud to belong to such a group of people where we find a safe space to talk about how to continue improving on both our professional and personal facets of our lives. I have joined many interesting hall talks and finally devirtualized people like [Rachel](https://twitter.com/bberrycarmen) or [Modesto](https://twitter.com/msanjuan). I leave the event with more desire to continue learning than ever. Will be back!
+
+[Group Picture](/assets/scbcn17-group.jpeg)
