@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software Craftsmanship Barcelona 2017
-date: 2017-10-23 08:00:00.000000000 +00:00
+date: 2017-11-03 08:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
@@ -25,13 +25,13 @@ I would like to thank the organisers and the community, all this anticipation an
 
 It was hard to choose which talks to attend to but thanks to autentia, we can watch all the talks over and over again. From every talk I attended to I took home at least one important learning pill.
 
-Native and browser SPA versions using re-frame, ClojureScript and ReactNative [Manuel Rivero](https://twitter.com/trikitrok)
+[Native and browser SPA versions using re-frame, ClojureScript and ReactNative](https://www.youtube.com/watch?v=p1fXJyomXNQ) [Manuel Rivero](https://twitter.com/trikitrok)
 On this talk, my colleague and mentor Manuel shared his learnings from one of his projects using ClojureScript and re-frame. I found the concept of effects and coeffects very interesting and I am tempted to get over the parentheses (or “elegant weapons for a more civilized age” as he prefers to call them) and start learning Clojure.
 
 [Simplicidad (para desarrolladores)](https://www.youtube.com/watch?v=6FDxbCzh2sI) [Edu Ferro](https://twitter.com/eferro)
 Edu made a very convincing case for the need of developers to put their feet on the ground and design solutions with simplicity in mind. I really liked the concept that he introduced for introducing new features in our systems:  refactor the code before integrating that feature for it to fit as if it was designed with the rest of the system from the get go.
 
-Slow Life (Como montárselo bien como programador) [Luis Rovirosa](https://twitter.com/luisrovirosa), [Jordi Anguela](https://twitter.com/jordianguela)
+[Slow Life (Como montárselo bien como programador)](https://www.youtube.com/watch?v=BtxhAD3gcPI) [Luis Rovirosa](https://twitter.com/luisrovirosa), [Jordi Anguela](https://twitter.com/jordianguela)
 Luis and Jordi tried to make us reflect whether we feel we are doing well or not as developers in both our professional and personal lives. I found the talk very insightful, with tips and tricks to prioritize our objectives and to reach the point where we want to be. I felt reflected on most of the points they brought across since I have lived similar moments along my personal and professional career.
 
 [TDD: Mi libro de recetas](https://www.youtube.com/watch?v=o9yspCrKHV0) [Modesto Sanjuan](https://twitter.com/msanjuan)
