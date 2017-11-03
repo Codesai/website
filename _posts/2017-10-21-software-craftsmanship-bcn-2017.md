@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software Craftsmanship Barcelona 2017
-date: 2017-11-03 08:00:00.000000000 +00:00
+date: 2017-11-03 09:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
