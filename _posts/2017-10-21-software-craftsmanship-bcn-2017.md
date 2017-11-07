@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software Craftsmanship Barcelona 2017
-date: 2017-11-03 09:00:00.000000000 +00:00
+date: 2017-11-08 08:00:00.0 +02:00
 type: post
 published: true
 status: publish
@@ -17,7 +17,7 @@ written_in: english
 
 ![SCBCN17 Logo](/assets/scbcn17-logo.jpeg)
 
-Three weekends ago, a few colleagues from Codesai and I attended the Software Craftsmanship Barcelona 2017. While some of them had already come in previous years, I was a first timer and my expectations were very high. I have heard very positive comments from attendees to previous editions. For the year I lived in Barcelona, I became a member of the community and tried to attend to all the katas every Monday, where information about the event leaked little by little. I was lucky to get them on the first day on sale.
+Four weekends ago, a few colleagues from Codesai and I attended the Software Craftsmanship Barcelona 2017. While some of them had already come in previous years, I was a first timer and my expectations were very high. I have heard very positive comments from attendees to previous editions. For the year I lived in Barcelona, I became a member of the community and tried to attend to all the katas every Monday, where information about the event leaked little by little. I was lucky to get them on the first day on sale.
 
 I would like to thank the organisers and the community, all this anticipation and nerves for getting the tickets were well worth it. 
 
@@ -37,7 +37,7 @@ Luis and Jordi tried to make us reflect whether we feel we are doing well or not
 [TDD: Mi libro de recetas](https://www.youtube.com/watch?v=o9yspCrKHV0) [Modesto Sanjuan](https://twitter.com/msanjuan)
 Modesto made a very practical talk about why he uses TDD and some tools to avoid some of it pitfalls. Very interesting discussions were raised about naming, test structuring and assertions that made me reassess my knowledge about TDD.
 
-The Economics of Continuous Delivery [Adrian Perreau](https://twitter.com/eidrien)
+[The Economics of Continuous Delivery](https://www.youtube.com/watch?v=2-ILyErMUuQ) [Adrian Perreau](https://twitter.com/eidrien)
 Adrian presented a very interesting and mathematical approach on how to sell Continuous Delivery to stakeholders in the language they most commonly understand, MONEY! 
 With the aid of  some mathematical formulas he showed us how to calculate the effort and money needed in traditional Integration and Delivery compared with Continuous Delivery. (Hint: Continuous Delivery is the clear winner)
 
