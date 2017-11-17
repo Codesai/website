@@ -17,7 +17,7 @@ written_in: english
 
 ![SCBCN17 Logo](/assets/scbcn17-logo.jpeg)
 
-Four weekends ago, a few colleagues from Codesai and I attended the Software Craftsmanship Barcelona 2017. While some of them had already come in previous years, I was a first timer and my expectations were very high. I have heard very positive comments from attendees to previous editions. For the year I lived in Barcelona, I became a member of the community and tried to attend to all the katas every Monday, where information about the event leaked little by little. I was lucky to get them on the first day on sale.
+Four weekends ago, a few colleagues from Codesai and I attended the <a href="http://scbcn.github.io/">Software Craftsmanship Barcelona 2017 conference</a>. While some of them had already come in previous years, I was a first timer and my expectations were very high. I have heard very positive comments from attendees to previous editions. For the year I lived in Barcelona, I became a member of the community and tried to attend to all the katas every Monday, where information about the event leaked little by little. I was lucky to get them on the first day on sale.
 
 I would like to thank the organisers and the community, all this anticipation and nerves for getting the tickets were well worth it. 
 
