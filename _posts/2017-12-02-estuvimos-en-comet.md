@@ -1,6 +1,6 @@
 ---
 layout: post
-title: We were at Comet Global Consulting
+title: We were at Merkle Comet
 date: 2017-12-02 17:00:00.000000000 +01:00
 type: post
 published: true
@@ -17,7 +17,7 @@ written_in: english
 
 <img src="/assets/comet-curso-tdd-4.jpg" alt="Momento 2 curso TDD Comet"/>
 
-Last October [Luis Rovirosa](https://twitter.com/luisrovirosa), [Jordi Anguela](https://twitter.com/jordianguela) and [I](https://twitter.com/trikitrok) had the pleasure to give three TDD trainings at [Comet Global Consulting](https://www.cometgc.com/#homepage) offices in Barcelona. Comet is a consulting company distributed worldwide which is very committed to deliver not only value but also high quality software to their clients.
+Last October [Luis Rovirosa](https://twitter.com/luisrovirosa), [Jordi Anguela](https://twitter.com/jordianguela) and [I](https://twitter.com/trikitrok) had the pleasure to give three TDD trainings at [Merkle Comet](https://www.cometgc.com/#homepage)'s impressive offices in Barcelona. Merkle Comet is a consulting company distributed worldwide which is very committed to deliver not only value but also high quality software to their clients.
 
 We worked with three groups comprised of people from different teams. This mix was challenging but also rewarding because the members of each team brought with them different set of problems, skills and practices, which lead to interesting discussions and opportunities to learn. All in all, I think we managed to satisfy the expectations they had about our training.
 
