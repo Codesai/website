@@ -1,7 +1,7 @@
 ---
 layout: post
 title: We were at Lambda World 2017
-date: 2017-12-05 08:00:00.0 +00:00
+date: 2017-12-04 08:00:00.0 +00:00
 type: post
 published: true
 status: publish
@@ -12,9 +12,12 @@ categories:
   - Events
   - Functional Programming
 author: Miguel Ángel Viera
-small_image: small_re-frame_talk.jpg
+small_image: lambda_world_small_logo.jpg
 written_in: english
 ---
+
+<img src="/assets/lambda_world_main_hall.jpg" alt="Lambda World Main Hall"/>
+
 This 26th and 27th of october I was a proud assistant of the [Lambda World](http://www.lambda.world/). I gathered with some colleagues from Codesai ([Manuel Rivero](http://www.twitter.com/trikitrok) and [Antonio de la Torre](http://www.twitter.com/adelatorrefoss)) and with some friends. It was also my first time on the event so I was kinda hyped.
 
 My main intention coming to the Conference was to be completely disrupted with this software programming paradigm. I’m a newbie when referring to functional programming and I've always wanted to learn it on my free time, but I’m usually stuck with topics related of what I want to improve on the clients I work on. So I thought this time it could be a great moment to finally awake that part of me that is waiting to start learning functional programming.
@@ -38,6 +41,8 @@ Also I assisted to the talk [Functional Programming in Kotlin with Kategory](Fun
 
 Finally. I would like to thank the organization. The event was fantastic and the venue simply amazing. The only thing that I can think that might be improved are the workshops. I think benches are not a good place to program, but I understand that there was no other place in the venue that might have fixed that problem. That is what tradeoffs are about :D
 
+<img src="/assets/lambda-world-organisers.jpg" alt="Lambda World organisers"/>
+
 And I would also like to give some feedback about the conference itself. In my opinion it would be really great having more topics apart from Category Theory, which was, no doubt the most discussed topic on the conference. For instance, I would have liked to have some more talks about dynamic functional languages.
 
 To conclude I’d like to thank everyone I have talked to during the conference. I had a great opportunity to meet new people and spend some time with my Codesai colleagues and friends. I hope I can make it again next year.
@@ -50,3 +55,5 @@ I got a new perspective regarding applying functional programming for my day-to-
 I finally have the chance to come to this conference and be immersed on this “world”. I got a new vision respecting to functional programming for my day-to-day work and I’m happy because I could get a lot of new roads that suddenly have opened in front of me (and I love that sensation). I will try to practice more with this paradigm and get a better understanding of it. I hope next year I can understand a 30% of what is told in the conference talks. But for a newbie, understanding a 10% I think it’s a good starting point.
 
 Thanks everybody for an amazing Lambda World 2017!
+
+<img src="/assets/lambda_world_friends.jpg" alt="Lambda World Main Hall"/>
