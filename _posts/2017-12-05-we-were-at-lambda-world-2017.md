@@ -8,7 +8,6 @@ status: publish
 categories:
   - Codesai
   - News
-  - Lambda World 2017
   - Events
   - Functional Programming
 author: Miguel Ángel Viera
@@ -50,9 +49,7 @@ To conclude I’d like to thank everyone I have talked to during the conference.
 
 I’m glad because I finally had the chance to come to this conference and immerse myself in this FP “world”.
 
-I got a new perspective regarding applying functional programming for my day-to-day work. I’m happy because I fell that a lot of new paths have suddenly opened in front of me and I love it. I will try to practice more with this paradigm and get a better understanding of it. I hope next year I can understand a 30% of what is told in the conference talks. But for a newbie, understanding a 10% I think it’s a good starting point.
-
-I finally have the chance to come to this conference and be immersed on this “world”. I got a new vision respecting to functional programming for my day-to-day work and I’m happy because I could get a lot of new roads that suddenly have opened in front of me (and I love that sensation). I will try to practice more with this paradigm and get a better understanding of it. I hope next year I can understand a 30% of what is told in the conference talks. But for a newbie, understanding a 10% I think it’s a good starting point.
+I got a new perspective on applying functional programming for my day-to-day work. I’m happy because I feel that a lot of new paths have suddenly opened in front of me and I love it. I will try to practice more with this paradigm and get a better understanding of it. I hope next year I can understand a 30% of what is told in the conference talks. But for a newbie, understanding a 10% I think it’s a good starting point.
 
 Thanks everybody for an amazing Lambda World 2017!
 
