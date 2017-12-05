@@ -17,7 +17,7 @@ written_in: english
 
 <img src="/assets/lambda_world_main_hall.jpg" alt="Lambda World Main Hall"/>
 
-This 26th and 27th of october I was a proud assistant of the [Lambda World](http://www.lambda.world/). I gathered with some colleagues from Codesai ([Manuel Rivero](http://www.twitter.com/trikitrok) and [Antonio de la Torre](http://www.twitter.com/adelatorrefoss)) and with some friends. It was also my first time on the event so I was kinda hyped.
+This last 26th and 27th of October I was a proud assistant of the [Lambda World](http://www.lambda.world/). I gathered with some colleagues from Codesai ([Manuel Rivero](http://www.twitter.com/trikitrok) and [Antonio de la Torre](http://www.twitter.com/adelatorrefoss)) and with some friends. It was also my first time on the event so I was kinda hyped.
 
 My main intention coming to the Conference was to be completely disrupted with this software programming paradigm. I’m a newbie when referring to functional programming and I've always wanted to learn it on my free time, but I’m usually stuck with topics related of what I want to improve on the clients I work on. So I thought this time it could be a great moment to finally awake that part of me that is waiting to start learning functional programming.
 
@@ -35,7 +35,7 @@ On the second day I assisted to many talks. But I particularly enjoyed the ones 
 
 The second talk by Daniel Sfregola “[A Pragmatic Introduction to Category Theory](https://www.youtube.com/watch?v=MvQxNm5gn8g)” was a kind of Category Theory Developer Oriented talk. Basically it was a summary of each category, but removing all the abstraction, and explaining it straight from a code implementation. Although the talk itself wasn’t very revealing, in my case, it was a confirmation of everything I had learned during the conference about Category Theory and I felt a little proud of myself :)
 
-Also I assisted to the talk [Functional Programming in Kotlin with Kategory](Functional Programming in Kotlin with Kategory - Raul Raja & Paco Estevez) by [Paco Estevez](https://twitter.com/pacoworks) and [Raúl Raja](https://twitter.com/raulraja) from [47 Degrees](https://twitter.com/47deg).  It was an introductory talk about the library they have developed and every feature they have brought into Kotlin. I was mesmerized by how powerful and great it looked. The talk was really enjoyable and dynamic.
+Also I assisted to the talk [Functional Programming in Kotlin with Kategory](https://www.youtube.com/watch?v=IL5XzaCMKpQ) by [Paco Estevez](https://twitter.com/pacoworks) and [Raúl Raja](https://twitter.com/raulraja) from [47 Degrees](https://twitter.com/47deg).  It was an introductory talk about the library they have developed and every feature they have brought into Kotlin. I was mesmerized by how powerful and great it looked. The talk was really enjoyable and dynamic.
  And my last session was at the Keynote “[Profunctor Optics: The Categorical Approach](https://www.youtube.com/watch?v=l1FCXUi6Vlw)” by [Bartosz Milewski](https://twitter.com/bartoszmilewski). Sadly I didn’t get a single clue of the talk. Too advanced for me. I hope I can watch it again in a year and understand it.
 
 Finally. I would like to thank the organization. The event was fantastic and the venue simply amazing. The only thing that I can think that might be improved are the workshops. I think benches are not a good place to program, but I understand that there was no other place in the venue that might have fixed that problem. That is what tradeoffs are about :D
