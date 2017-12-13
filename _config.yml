@@ -45,6 +45,14 @@ descriptions:
 environment: production
 
 clients:
+    - name: GreenPowerMonitor
+      url: http://www.greenpowermonitor.com/
+      logo: ../img/logos/gpm.png
+      description: clients/gpm.html
+    - name: Grupo ASV
+      url: http://www.grupoasv.com/es/
+      logo: ../img/logos/grupo_asv.png
+      description: clients/grupo_asv.html
     - name: Grupo Domingo Alonso
       url: https://www.aidacanarias.com/
       logo: ../img/logos/domingo_alonso.png
@@ -73,10 +81,6 @@ clients:
     #   url: http://www.besepa.com/
     #   logo: ../img/logos/besepa.png
     #   description: clients/besepa.html
-    - name: Grupo ASV
-      url: http://www.grupoasv.com/es/
-      logo: ../img/logos/grupo_asv.png
-      description: clients/grupo_asv.html
     # - name: La Casa de Mis Primos
     #   url: http://www.lacasademisprimos.com/
     #   logo: ../img/logos/lcdmp.jpg
