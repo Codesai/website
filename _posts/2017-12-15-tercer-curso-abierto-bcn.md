@@ -18,7 +18,7 @@ small_image: small_curso_tdd_bcn_3_kata.jpg
 
 En vista del éxito que habían tenido los dos cursos abiertos de TDD que habíamos hecho este año en Barcelona, nos decidimos a hacer un nuevo curso abierto en Noviembre. Los cursos en abierto me hacen especial ilusión porque fue en uno de estos cursos abiertos dado por [Carlos Blé](https://twitter.com/carlosble) en 2011 donde tuve la oportunidad de empezar a aprender sobre TDD.
 
-En principio ibamos a dar el curso [Luis](https://twitter.com/luisrovirosa?lang=en) y [yo](https://twitter.com/trikitrok), pero , desgraciadamente, [contraje el síndrome de Miller Fisher](http://garajeando.blogspot.com.es/2017/11/recovering.html), y al final Luis tuvo que dar el curso en solitario.
+En principio ibamos a dar el curso [Luis](https://twitter.com/luisrovirosa?lang=en) y [yo](https://twitter.com/trikitrok), pero, desgraciadamente, [sufrí el síndrome de Miller Fisher](http://garajeando.blogspot.com.es/2017/11/recovering.html), y al final Luis tuvo que dar el curso en solitario.
 
 Asistieron ocho personas, de las cuales siete venían de la misma empresa, [Systelab](http://www.systelabsw.com/). ¡Muchas gracias por confiar en nosotros y [kudos](https://en.wikipedia.org/wiki/Kudos) especiales para las personas que se pagaron el curso de su bolsillo! 
 
