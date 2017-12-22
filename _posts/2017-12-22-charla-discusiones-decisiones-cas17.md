@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Charla Discusiones y decisiones: herramientas para la efectividad en CAS17"
-date: 2017-12-22 11:00:00.000000000 +00:00
+date: 2017-12-22 00:00:00.000000000 +00:00
 type: post
 published: true
 status: publish
@@ -11,10 +11,10 @@ categories:
   - News
 tags: []
 author: Antonio de la Torre
-small_image: small_charla_antonio_cas17.png 
+small_image: small_charla_antonio_cas17.jpg 
 ---
 
-<img src="/assets/blabla1.jpg" alt="charla antonio cas17 1">
+<img src="/assets/cas2017-charlaantonio1.jpg" alt="charla antonio cas17 1">
 
 Hace un mes más o menos tuve el placer de dar una charla titulada “Discusiones y decisiones: herramientas para la efectividad” en la [CAS (Conferencia Agile Spain) de este año 2017 que tuvo lugar en Sevilla](https://cas2017.agile-spain.org/).
 
@@ -24,7 +24,7 @@ La charla trataba de cómo conseguir que las múltiples reuniones que segurament
 - Que este juego se divide en tres partes, la apertura en la que prima el pensamiento divergente donde no hay casi límites a las ideas, una intermedia de exploración y búsqueda de conexiones y un cierre que busca la convergencia en un conjunto de ideas que nos sirvan para dar los siguientes pasos.
 - Y que en todo momento hay que trabajar con algo tangible: una pizarra, postits, papeles, que nos permita a todos ver lo que estamos construyendo.
 
-<img src="/assets/blabla2.jpg" alt="charla antonio cas17 2">
+<img src="/assets/cas2017-charlaantonio3.jpg" alt="charla antonio cas17 3">
 
 Hacía ya casi dos años que quería profundizar en este tema y por eso agradecí tanto a la organización de la CAS que aceptase esta charla.
 Tengo una especial sensibilidad con la calidad de las reuniones que hago, sobre todo para que todo el que participe se sienta a gusto y lo pueda hacer sin sentirse coaccionado.
@@ -43,4 +43,4 @@ Para terminar muchísimas gracias a todos los asistentes y especialmente a todas
 
 ¡Nos vemos el próximo año en Alicante!
 
-
+<img src="/assets/cas2017-charlaantonio2.jpg" alt="charla antonio cas17 2">
