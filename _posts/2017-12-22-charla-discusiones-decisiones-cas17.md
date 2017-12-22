@@ -44,3 +44,7 @@ Para terminar muchísimas gracias a todos los asistentes y especialmente a todas
 ¡Nos vemos el próximo año en Alicante!
 
 <img src="/assets/cas2017-charlaantonio2.jpg" alt="charla antonio cas17 2">
+
+<div class="foot-note">
+  Gracias a <a href="https://twitter.com/DavidGomezR_">David Gómez</a> (<a href="https://twitter.com/DavidGomezR_/status/928579650695069696">1</a> y <a href="https://twitter.com/DavidGomezR_/status/928578601393541121">2</a>) y a <a href="https://twitter.com/Bea_Petazeta">Beatriz Zarzo</a> (<a href="https://twitter.com/Bea_Petazeta/status/928584476057317376">3</a>) por dejarnos usar sus magníficas fotos.
+</div>
