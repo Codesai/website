@@ -13,3 +13,6 @@ Gemfile.lock
 aero-debug.log
 aero-deploy.tar.gz
 .idea/
+global-groovy.log
+soapui-errors.log
+soapui.log
