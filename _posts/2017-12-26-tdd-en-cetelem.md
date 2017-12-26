@@ -14,7 +14,7 @@ author: Miguel Ángel Viera
 small_image: tdd-simple.svg
 ---
 
-Hace unos meses [Luis](https://twitter.com/luisrovirosa) y [yo](https://twitter.com/mangelviera) hicimos un curso de TDD para [Cetelem](https://www.cetelem.es/). Para mi fue una gran experiencia porque los asistentes estaban muy motivados. Este fue el primer curso que hacía con Luis, y me gustó muchísimo trabajar con él. Me encantó el ritmo que Luis le da al curso, su contenido eminentemente práctico y como la teoría se mezcla con la práctica de un modo muy fluido.
+Hace unos meses [Luis](https://twitter.com/luisrovirosa) y [yo](https://twitter.com/mangelviera) hicimos un curso de TDD en [Cetelem](https://www.cetelem.es/). Para mi fue una gran experiencia porque los asistentes estaban muy motivados. Este fue el primer curso que hacía con Luis, y me gustó muchísimo trabajar con él. Me encantó el ritmo que Luis le da al curso, su contenido eminentemente práctico y como la teoría se mezcla con la práctica de un modo muy fluido.
 
 En cuanto al contenido, sustituimos la [Coffe Machine kata](http://simcap.github.io/coffeemachine/) por la [Birthday Greetings kata](http://matteo.vaccari.name/blog/archives/154) para introducir los dobles de prueba de forma más gradual.
 
