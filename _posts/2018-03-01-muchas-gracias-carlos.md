@@ -13,8 +13,9 @@ author: Codesai
 small_image: carlos_ble.jpg
 ---
 
-Queríamos anunciaros que Carlos deja Codesai para emprender un nuevo proyecto personal. Un gran compañero se va y queremos agradecerle toda su labor por el equipo. Has sido fundamental para que Codesai llegase a lo que es hoy. Han sido unos años muy intensos y fructíferos en los que hemos aprendido mucho los unos de los otros.
-Nos alegramos mucho viendo la ilusión con la que emprendes tu nuevo proyecto y queremos desearte lo mejor. ¡Muchísima suerte!
+Queríamos anunciaros que Carlos deja Codesai para emprender un nuevo proyecto personal. Un gran compañero se va y queremos agradecerle toda lo que ha hecho por el equipo. Ha sido fundamental para que Codesai llegase a ser lo que es hoy. Han sido unos años muy intensos y fructíferos en los que hemos aprendido mucho los unos de los otros.
+
+Carlos, nos alegramos mucho viendo la ilusión con la que emprendes tu nuevo proyecto y queremos desearte lo mejor. ¡Muchísima suerte!
 
 **Fran:** No podría hablar de mi camino profesional sin nombrar a  Carlos. Trabajador incansable con el que he podido colaborar durante bastante tiempo de manera directa. Su visión y la capacidad de pensar diferente junto a su habilidad para establecer relaciones han hecho que pudiera aprender de él cosas que es muy difícil encontrar en otros desarrolladores de software. Espero poder seguir aprendiendo de él aunque nuestros caminos se bifurquen un poco. Muchas gracias por tu energía en Codesai y aporte a la comunidad. Tu nuevo camino seguro que deja huella e inspiración para otros.
 
