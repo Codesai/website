@@ -344,6 +344,60 @@ font header .navbar-default .navbar-nav li a:hover {
   max-width: 300px;
 }
 
+
+#collaborator {
+  text-align: center;
+  padding: 40px 0 20px 0;
+  color: #111;
+}
+
+#collaborator .section-title-custom {
+  padding-bottom: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #111;
+}
+
+#collaborator .collaborator-member {
+  padding: 20px;
+}
+
+#collaborator .collaborator-member img {
+  width: 70%;
+  height: 70%;
+}
+
+#collaborator .collaborator-member .photo .mobile {
+  display: none;
+}
+
+#collaborator .collaborator-member .photo {
+	display: inline-block;
+  position: relative;
+}
+
+#collaborator .collaborator-member .photo .bio {
+  display: none;
+}
+
+#collaborator .collaborator-member .name {
+  padding: 12px 0 6px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#collaborator .collaborator-member .underline {
+  content: "";
+  width: 50%;
+  height: 1px;
+  margin: 0 auto;
+  border-bottom: 2px solid #333;
+}
+
+
 #partners {
   text-align: center;
   padding-bottom: 60px;
