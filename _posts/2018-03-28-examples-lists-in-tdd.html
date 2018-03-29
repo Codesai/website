@@ -239,8 +239,22 @@ With practice, this technique becomes more and more a mental process. You'll sta
 <br />
 Nonetheless, writing a list of examples or other similar lightweight exploration techniques can still be very helpful for more complicated cases. This technique can also be very useful to think in a problem when you&#8217;re working on it with someone else (pairing, mob programming, etc.), because it enhances communication.
 
-<br />
-<br />
+<h3>
+5. Aknowledgements.</h3>
+Many thanks to <a href="https://twitter.com/alfredocasado?lang=en">Alfredo Casado</a>, <a href="https://twitter.com/alvarobiz">Álvaro Garcia</a>, <a href="https://twitter.com/amisai">Abel Cuenca</a>, <a href="https://twitter.com/rojo_angel">Ángel Rojo</a>, <a href="https://twitter.com/adelatorrefoss">Antonio de la Torre</a>, <a href="https://twitter.com/fran_reyes">Fran Reyes</a> and <a href="https://twitter.com/mjtordesillas">Manuel Tordesillas</a> for giving me great feedback to improve this post and for all the interesting conversations.
+
+<h3>
+6. References.</h3>
+<ul>
+<li><a href="https://www.goodreads.com/book/show/387190.Test_Driven_Development"> Test-driven Development: By Example</a>, <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a></li>
+<li><a href="http://mateuadsuara.github.io/8thlight/2015/08/18/complexity-dimensions-p1.html">Complexity dimensions - FizzBuzz part I</a>, <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a></li>
+<li><a href="http://mateuadsuara.github.io/8thlight/2015/08/19/complexity-dimensions-p2.html">Complexity dimensions - FizzBuzz part II</a>, <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a></li>
+<li><a href="http://mateuadsuara.github.io/8thlight/2015/08/20/complexity-dimensions-p3.html">Complexity dimensions - FizzBuzz part III</a>, <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a></li>
+<li><a href="http://blog.wingman-sw.com/archives/677">TDD Guided by ZOMBIES</a>, <a href="https://www.linkedin.com/in/jwgrenning/">James Grenning</a></li>
+<li><a href="https://propertesting.com/">PropEr Testing</a>, <a href="https://twitter.com/mononcqc?lang=en">Fred Hebert</a></li>
+<li><a href="https://github.com/marick/Midje/wiki/Metaconstants">Metaconstants</a>, <a href="https://twitter.com/marick">Brian Marick</a></li>
+</ul>
+<br>
 Footnotes.<br />
 <a name="nota1"></a> <span style="font-size: x-small;">[1] This concept of <b>orthogonal examples</b> is directly related to Mateu Adsuara's <b>dimensions of complexity</b> idea because each dimension of complexity can be driven using a different set of orthogonal examples. <b>Dimension of Complexity</b> is a term used by <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a> in a talk at Socrates Canarias 2016 to name an orthogonal functionality. In that talk he used dimensions of complexity to classify the examples in his tests list in different groups and help him choose the next test when doing TDD. 
 </span><br />
@@ -254,13 +268,13 @@ Footnotes.<br />
 <span style="font-size: x-small;">
 </span><span style="font-size: x-small;">Other names for the same concept that I've heard are <b>axes of change</b>, <b>directions of change</b> or <b>vectors of change</b>.
 </span><br />
-<span style="font-size: x-small;"><a name="nota2"></a> [2] Another very useful heuristic is described in <a href="https://www.blogger.com/%E2%80%9Dhttps://www.linkedin.com/in/jwgrenning/%E2%80%9D">James Grenning</a>'s <a href="https://www.blogger.com/%E2%80%9Dhttp://blog.wingman-sw.com/archives/677%E2%80%9D">TDD Guided by ZOMBIES post</a>.
+<span style="font-size: x-small;"><a name="nota2"></a> [2] Another very useful heuristic is described in <a href="https://www.linkedin.com/in/jwgrenning/">James Grenning</a>'s <a href="http://blog.wingman-sw.com/archives/677">TDD Guided by ZOMBIES post</a>.
 </span><br />
-<span style="font-size: x-small;"><a name="nota3"></a> [3] This is somehow related to <a href="https://www.blogger.com/%E2%80%9Dhttps://twitter.com/marick%E2%80%9D">Brian Marick</a>&#8217;s <a href="https://www.blogger.com/%E2%80%9Dhttps://github.com/marick/Midje/wiki/Metaconstants%E2%80%9D">metaconstants</a> which can be very useful to write tests in dynamic languages. They&#8217;re also hints about properties that might be helpful in <a href="https://www.blogger.com/%E2%80%9Dhttps://propertesting.com/book_foundations_of_property_based_testing.html%E2%80%9D">property-based testing</a>.
+<span style="font-size: x-small;"><a name="nota3"></a> [3] This is somehow related to <a href="https://twitter.com/marick">Brian Marick</a>&#8217;s <a href="https://github.com/marick/Midje/wiki/Metaconstants">metaconstants</a> which can be very useful to write tests in dynamic languages. They&#8217;re also hints about properties that might be helpful in <a href="https://propertesting.com/book_foundations_of_property_based_testing.html">property-based testing</a>.
 </span><br />
 <span style="font-size: x-small;"><a name="nota4"></a> [4] See footnote [1].
 </span><br />
-<span style="font-size: x-small;"><a name="nota5"></a> [5] Even though <b>triangulation</b> is probably the most popular, there are two other strategies for implementing new functionality in TDD: <b>obvious implementation</b> and <b>fake it</b>. <a href="https://www.blogger.com/%E2%80%9Dhttps://en.wikipedia.org/wiki/Kent_Beck%E2%80%9D">Kent Beck</a> in his <a href="https://www.blogger.com/%E2%80%9Dhttps://www.goodreads.com/book/show/387190.Test_Driven_Development%E2%80%9D"> Test-driven Development: By Example book</a> describes the three techniques and says that he prefers to use <b>obvious implementation</b> or<b> fake it</b> most of the time, and only use <b>triangulation</b> as a last resort when design gets complicated.
+<span style="font-size: x-small;"><a name="nota5"></a> [5] Even though <b>triangulation</b> is probably the most popular, there are two other strategies for implementing new functionality in TDD: <b>obvious implementation</b> and <b>fake it</b>. <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a> in his <a href="https://www.goodreads.com/book/show/387190.Test_Driven_Development"> Test-driven Development: By Example book</a> describes the three techniques and says that he prefers to use <b>obvious implementation</b> or<b> fake it</b> most of the time, and only use <b>triangulation</b> as a last resort when design gets complicated.
 </span><br />
-<span style="font-size: x-small;"><a name="nota6"></a> [6] This <b>loss of awareness of the process</b> is the price of expertise according to the <a href="https://www.blogger.com/%E2%80%9Dhttps://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition%E2%80%9D">Dreyfus model of skill acquisition</a>.
+<span style="font-size: x-small;"><a name="nota6"></a> [6] This <b>loss of awareness of the process</b> is the price of expertise according to the <a href="https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition">Dreyfus model of skill acquisition</a>.
 </span>
