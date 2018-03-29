@@ -78,7 +78,7 @@ Next, we'll explore a concrete application using a subset of the <i>Mars Rover k
 Let's start writing a list of examples that explores this problem. But how?
 <br />
 <br />
-Since the rover is receiving a sequence of commands, we can apply a useful heuristic for sequences to get us started: <a href="http://online-training.jbrains.ca/courses/wbitdd-01/">J. B. Rainsberger's "0, 1, many, oops" heuristic</a> <a href="#nota2"><sup>[2]</sup></a>.
+Since the rover is receiving a sequence of commands, we can apply a useful heuristic for sequences to get us started: <a href="https://twitter.com/jbrains?lang=en">J. B. Rainsberger</a>'s <b>"0, 1, many, oops" heuristic</b> <a href="#nota2"><sup>[2]</sup></a>.
 <br />
 <br />
 In this case, it means generating examples for: <b>no commands</b>, <b>one command</b>, <b>several commands</b> and <b>unknown commands</b>.
@@ -256,23 +256,23 @@ Many thanks to <a href="https://twitter.com/alfredocasado?lang=en">Alfredo Casad
 </ul>
 <br>
 Footnotes.<br />
-<a name="nota1"></a> <span style="font-size: x-small;">[1] This concept of <b>orthogonal examples</b> is directly related to Mateu Adsuara's <b>dimensions of complexity</b> idea because each dimension of complexity can be driven using a different set of orthogonal examples. <b>Dimension of Complexity</b> is a term used by <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a> in a talk at Socrates Canarias 2016 to name an orthogonal functionality. In that talk he used dimensions of complexity to classify the examples in his tests list in different groups and help him choose the next test when doing TDD. 
-</span><br />
-<span style="font-size: x-small;">He talked about it in these three posts: 
-</span><br />
-<ol>
-<li><span style="font-size: x-small;"><a href="http://mateuadsuara.github.io/8thlight/2015/08/18/complexity-dimensions-p1.html">Complexity dimensions - FizzBuzz part I</a></span></li>
-<li><span style="font-size: x-small;"><a href="http://mateuadsuara.github.io/8thlight/2015/08/19/complexity-dimensions-p2.html">Complexity dimensions - FizzBuzz part II</a></span></li>
-<li><span style="font-size: x-small;"><a href="http://mateuadsuara.github.io/8thlight/2015/08/20/complexity-dimensions-p3.html">Complexity dimensions - FizzBuzz part III</a></span></li>
-</ol>
-<span style="font-size: x-small;">
-</span><span style="font-size: x-small;">Other names for the same concept that I've heard are <b>axes of change</b>, <b>directions of change</b> or <b>vectors of change</b>.
+<a name="nota1"></a> <span style="font-size: x-small;">[1] This concept of <b>orthogonal examples</b> is directly related to Mateu Adsuara's <b>dimensions of complexity</b> idea because each dimension of complexity can be driven using a different set of orthogonal examples. For a definition of dimensions of complexity, see footnote [4] .
 </span><br />
 <span style="font-size: x-small;"><a name="nota2"></a> [2] Another very useful heuristic is described in <a href="https://www.linkedin.com/in/jwgrenning/">James Grenning</a>'s <a href="http://blog.wingman-sw.com/archives/677">TDD Guided by ZOMBIES post</a>.
 </span><br />
 <span style="font-size: x-small;"><a name="nota3"></a> [3] This is somehow related to <a href="https://twitter.com/marick">Brian Marick</a>&#8217;s <a href="https://github.com/marick/Midje/wiki/Metaconstants">metaconstants</a> which can be very useful to write tests in dynamic languages. They&#8217;re also hints about properties that might be helpful in <a href="https://propertesting.com/book_foundations_of_property_based_testing.html">property-based testing</a>.
 </span><br />
-<span style="font-size: x-small;"><a name="nota4"></a> [4] See footnote [1].
+<span style="font-size: x-small;"><a name="nota4"></a> [4] <b>Dimension of Complexity</b> is a term used by <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a> in a talk at Socrates Canarias 2016 to name an orthogonal functionality. In that talk he used dimensions of complexity to classify the examples in his tests list in different groups and help him choose the next test when doing TDD.
+</span><br />
+<span style="font-size: x-small;">He talked about it in these three posts: 
+</span><br />
+<ul>
+<li><span style="font-size: x-small;"><a href="http://mateuadsuara.github.io/8thlight/2015/08/18/complexity-dimensions-p1.html">Complexity dimensions - FizzBuzz part I</a></span></li>
+<li><span style="font-size: x-small;"><a href="http://mateuadsuara.github.io/8thlight/2015/08/19/complexity-dimensions-p2.html">Complexity dimensions - FizzBuzz part II</a></span></li>
+<li><span style="font-size: x-small;"><a href="http://mateuadsuara.github.io/8thlight/2015/08/20/complexity-dimensions-p3.html">Complexity dimensions - FizzBuzz part III</a></span></li>
+</ul>
+<span style="font-size: x-small;">
+</span><span style="font-size: x-small;">Other names for the same concept that I've heard are <b>axes of change</b>, <b>directions of change</b> or <b>vectors of change</b>.
 </span><br />
 <span style="font-size: x-small;"><a name="nota5"></a> [5] Even though <b>triangulation</b> is probably the most popular, there are two other strategies for implementing new functionality in TDD: <b>obvious implementation</b> and <b>fake it</b>. <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a> in his <a href="https://www.goodreads.com/book/show/387190.Test_Driven_Development"> Test-driven Development: By Example book</a> describes the three techniques and says that he prefers to use <b>obvious implementation</b> or<b> fake it</b> most of the time, and only use <b>triangulation</b> as a last resort when design gets complicated.
 </span><br />
