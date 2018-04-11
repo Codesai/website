@@ -1,0 +1,136 @@
+---
+layout: post
+title: A small kata to explore and play with property-based testing 
+date: 2018-04-11 12:30:00.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+  - Learning
+  - Property-based testing
+  - Test Driven Development
+  - Clojure/ClojureScript
+  - Katas
+
+author: Manuel Rivero
+small_image: small_cube-six.jpeg
+written_in: english
+cross_post_url: http://garajeando.blogspot.com.es/2018/03/kata-small-exercise-to-explore-and-play.html
+---
+
+<h3>1. Introduction.</h3>
+
+I've been reading <a href="https://twitter.com/mononcqc?lang=en">Fred Hebert</a>'s wonderful <a href="https://propertesting.com/">PropEr Testing online book</a> about <a href="https://ferd.ca/property-based-testing-basics.html">property-based testing</a>. So to play with it a bit, I did a small exercise. This is its description:
+<br><br>
+
+<h4>1. 1. The kata.</h4>
+
+<blockquote>
+  <p>We'll implement a function that can tell if two sequences are equal regardless of the order of their elements. The elements can be of any type.</p>
+  
+  <p>We'll use property-based testing (PBT). Use the PBT library of your language (bring it already installed).</p>
+  
+  <p>Follow these constraints:</p>
+  
+  <ol>
+  <li>You can't use or compute frequencies of elements.</li>
+  
+  <li>Work test first: write a test, then write the code to make that test pass.  </li>
+  
+  <li>If you get stuck, you can use example-based tests to drive the implementation on. However, at the end of the exercise, only property-based tests can remain.</li>
+  </ol>
+  
+  <p>Use mutation testing to check if you tests are good enough (we'll do it manually injecting failures in the implementation code (by commenting or changing parts of it) and checking if the test are able to detect the failure to avoid using more libraries).</p>
+</blockquote>
+
+<h3>2. Driving a solution using both example-based and property-based tests.</h3>
+
+I used <i>Clojure</i> and its <a href="https://github.com/clojure/test.check">test.check</a> library (an implementation of <a href="https://en.wikipedia.org/wiki/QuickCheck">QuickCheck</a>) to do the exercise. I also used my favorite <i>Clojure</i>'s test framework: <a href="https://twitter.com/marick">Brian Marick</a>'s <a href="https://github.com/marick/Midje">Midje</a> which has a macro, <a href="https://github.com/marick/Midje/wiki/Generative-testing-with-for-all">forall</a>, which makes it very easy to integrate property-based tests with <i>Midje</i>.
+<br><br>
+So I started to drive a solution using an example-based test (thanks to <i>Clojure</i>'s dynamic nature, I could use vectors of integers to write the tests. ):
+<br><br>
+<script src="https://gist.github.com/trikitrok/bb1d7884fc8b418ef58a35d3ecc789e7.js"></script>
+
+which I made pass using the following implementation:
+<br><br>
+<script src="https://gist.github.com/trikitrok/3497e9be659a4adefac191985152ce84.js"></script>
+
+Then I wrote a property-based test that failed:
+<br><br>
+<script src="https://gist.github.com/trikitrok/dde083a0743a3640377c48e4395aef66.js"></script>
+
+This is how the failure looked in <i>Midje</i> (<i>test.check</i> returns more output when a property fails, but <i>Midje</i> extracts and shows only the information it considers more useful):
+<br><br>
+<script src="https://gist.github.com/trikitrok/22c72ad72d7703d157708b01cbf43cfb.js"></script>
+
+the most useful piece of information for us in this failure message is <b>the quick-check shrunken failing values</b>. When a property-based testing library finds a counter-example for a property, it applies a <b>shrinking algorithm</b> which  tries to reduce it to <b>find a minimal counter-example that produces the same test failure</b>. 
+In this case, the <code>[1 0]</code> vector is the minimal counter-example found by the <b>shrinking algorithm</b> that makes this test fails.
+<br><br>
+
+Next I made the property-based test pass by refining the implementation a bit:
+<br><br>
+
+<script src="https://gist.github.com/trikitrok/fd93859bf9aca2db7f683e40bc3ff649.js"></script>
+
+I didn't know which property to write next, so I wrote a failing example-based test involving duplicate elements instead:
+<br><br>
+<script src="https://gist.github.com/trikitrok/374cabad9d1d02885b574776ef5d87f1.js"></script>
+
+and refined the implementation to make it pass:
+<br><br>
+<script src="https://gist.github.com/trikitrok/00575377dd651b18cd15efd7371b11af.js"></script>
+
+With this, the implementation was done (I chose a function that was easy to implement, so I could focus on thinking about properties). 
+<br><br>
+
+<h3>3. Getting rid of example-based tests.</h3>
+
+Then the next step was finding properties that could make the example-based tests redundant. I started by trying to remove the first example-based test. Since I didn't know <i>test.check</i>'s generators and combinators library, I started exploring it on the REPL with the help of its <a href="http://clojure.github.io/test.check/">API documentation</a> and <a href="https://github.com/clojure/test.check/blob/master/doc/cheatsheet.md">cheat sheet</a>.
+<br><br>
+
+My sessions on the REPL to build generators bit by bit were a process of shallowly reading bits of documentation followed by trial and error. This tinkering sometimes lead to quick successes and most of the times to failures which lead to more deep and careful reading of the documentation, and more trial and error. In the end I managed to build the generators I wanted. The <a href="http://clojure.github.io/test.check/clojure.test.check.generators.html#var-sample">sample</a> function was very useful during all the process to check what each part of the generator would generate.
+<br><br>
+For the sake of brevity I will show only summarized versions of my REPL sessions where everything seems easy and linear...
+<br><br>
+
+<h4>3. 1. First attempt: a partial success.</h4>
+
+First, I wanted to create a generator that generated two different vectors of integers so that I could replace the  example-based tests that were checking two different vectors. I used the <a href="http://clojure.github.io/test.check/clojure.test.check.generators.html#var-list-distinct">list-distinct combinator</a> to create it and the <a href="http://clojure.github.io/test.check/clojure.test.check.generators.html#var-sample">sample</a> function to be able to see what the generator would generate:
+<br><br>
+<script src="https://gist.github.com/trikitrok/ce12295941fcf6aa20181b2537944fe2.js"></script>
+
+I used this generator to write a new property which made it possible to remove the first example-based test but not the second one:
+<br><br>
+<script src="https://gist.github.com/trikitrok/647c484b69394507a501fcea1ddd5fb4.js"></script>
+
+In principle, we might think that the new property should have been enough to also allow removing the last example-based test involving duplicate elements. A quick manual mutation test, after removing that example-based test, showed that it wasn't enough: I commented the line <code> (= (count s1) (count s2))</code> in the implementation and the property-based tests weren't able to detect the regression.
+<br><br>
+
+This was due to the low probability of generating a pair of random vectors that were different because of having duplicate elements, which was what the commented line, <code> (= (count s1) (count s2))</code>, was in the implementation for. If we'd run the tests more times, we'd have finally won the lottery of generating a counter-example that would detect the regression. So we had to improve the generator in order to increase the probabilities, or, even better, make sure it'd be able to detect the regression.
+<br><br>
+<b>In practice, we'd pragmatically combine example-based and property-based tests if we needed to</b>. However, my goal was learning more about property-based testing, so I went on and tried to improve the generators (that's why this exercise has the constraint of using only property-based tests). 
+<br><br>
+
+<h4>3. 2. Second attempt: success!</h4>
+
+So, I worked a bit more on the REPL with the goal of <b>creating a generator that would always generate vectors with duplicate elements</b>. For that I used <i>test.check</i>'s <a href="http://clojure.github.io/test.check/clojure.test.check.generators.html#var-let">let</a> macro, the <a href="http://clojure.github.io/test.check/clojure.test.check.generators.html#var-tuple">tuple</a>, <a href="http://clojure.github.io/test.check/clojure.test.check.generators.html#var-such-that">such-that</a> and <a href="http://clojure.github.io/test.check/clojure.test.check.generators.html#var-not-empty">not-empty</a> combinators, and <i>Clojure</i>'s core library <a href="https://clojuredocs.org/clojure.core/repeat">repeat</a> function to build it.
+<br><br>
+The following snippet shows a summary of the work I did on the REPL to create the generator using again the <a href="http://clojure.github.io/test.check/clojure.test.check.generators.html#var-sample">sample</a> function at each tiny step to see what inputs the growing generator would generate:
+<br><br>
+<script src="https://gist.github.com/trikitrok/ff53dddf80f399f53223c8bd62885def.js"></script>
+
+Next I used this new generator to write properties that this time did detect the regression mentioned above. Notice how there are separate properties for sequences with and without duplicates:
+<br><br>
+<script src="https://gist.github.com/trikitrok/2c9f8fecb53d14f66fc4b3bab75557d0.js"></script>
+
+Finally, I managed to remove a redundant property-based test and got to this final version:
+<br><br>
+<script src="https://gist.github.com/trikitrok/aa40f03466b2bc2c3f088e2f9b2af535.js"></script>
+
+<h3>4. Conclusion.</h3>
+
+All in all, this exercise was very useful to think about properties and to explore <i>test.check</i>'s generators and combinators. Using the REPL made this exploration very interactive and a lot of fun. You can find <a href="https://github.com/trikitrok/same-not-regarding-order-kata-clojure">the code of this exercise on this GitHub repository</a>.
+<br><br>
+
+A couple of days later I proposed to solve this exercise at the last <a href="https://www.meetup.com/ClojureBCN/events/248734726/">Clojure Developers Barcelona meetup</a>. I received very positive feedback, so I'll probably propose it for a <a href="https://www.meetup.com/Barcelona-Software-Craftsmanship/">Barcelona Software Craftsmanship meetup</a> event soon.
+
