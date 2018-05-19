@@ -8,7 +8,7 @@ status: publish
 categories:
   - React
   - Om
-  - ClojureScript
+  - Clojure/ClojureScript
   - Testing
 tags: []
 author: Manuel Rivero

@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-  - Clean code
+  - Clean Code
   - Principles
   - Code Smells
   - Object Oriented Design
