@@ -9,7 +9,7 @@ categories:
   - Codesai
   - News
   - Software Craftsmanship
-  - Events
+  - Eventos
 author: Manuel J. Tordesillas
 small_image: scbcn17-thumbnail.jpeg
 written_in: english

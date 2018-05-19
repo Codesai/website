@@ -6,10 +6,11 @@ type: post
 published: true
 status: publish
 categories:
-  - Clean code
+  - Clean Code
   - Principles
   - Object Oriented Design
   - Learning
+  - Books
 tags: []
 author: Manuel Rivero
 small_image: small-teddy.jpeg
