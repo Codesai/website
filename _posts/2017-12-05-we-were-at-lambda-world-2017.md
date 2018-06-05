@@ -8,7 +8,7 @@ status: publish
 categories:
   - Codesai
   - News
-  - Events
+  - Eventos
   - Functional Programming
 author: Miguel Ángel Viera
 small_image: lambda_world_small_logo.jpg

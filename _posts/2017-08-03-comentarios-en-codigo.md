@@ -6,9 +6,8 @@ type: post
 published: true
 status: publish
 categories:
-  - Clean code
+  - Clean Code
   - Principles
-  - Comments in code
 tags: []
 author: Carlos Blé
 small_image: small_comments.png
