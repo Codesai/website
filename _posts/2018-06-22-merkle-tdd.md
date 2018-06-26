@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Back at Merkle in 2018
-date: 2018-06-22 09:00:00.000000000 +00:00
+date: 2018-06-26 09:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
