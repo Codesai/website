@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Back at Merkle in 2018
-date: 2018-06-26 09:00:00.000000000 +01:00
+date: 2018-06-26 08:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -15,10 +15,7 @@ small_image: merkle_tdd_training_1_2018_small.jpg
 written_in: english
 ---
 
-<figure>
-  <img src="/assets/merkle_tdd_training_1_2018_a.jpg" alt="Merkle TDD Training 2018 a" />
-   <figcaption>TDD training</figcaption>
-</figure>
+<img src="/assets/merkle_tdd_training_1_2018_a.jpg" alt="Merkle TDD Training 2018 a" />
 
 In the last quarter of 2017 we delivered [several TDD trainings at Merkle’s offices in Barcelona](/2017/12/we-were-at-merkle-comet) and did several consulting session with their JavaScript and Java teams. [Merkle](https://www.merkleinc.com/emea/) is a company with high quality standards for the software they develop, so we were very happy when they contacted us to collaborate again this year doing several TDD trainings and consulting sessions.
 
