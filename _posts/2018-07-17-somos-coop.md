@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Somos cooperativa
-date: 2018-07-18 08:00:00.000000000 +01:00
+date: 2018-07-17 08:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
