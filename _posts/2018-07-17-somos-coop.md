@@ -27,12 +27,14 @@ El mayor número de puntos de vista y la cantidad de debate es algo que, al prin
 
 La forma en que funcionamos no es ni mejor ni peor que la forma en que funcionan otras empresas. Son tan sólo las reglas del juego que hemos decidido darnos a nosotros mismos. Cada empresa hace lo que puede. Todas luchamos en contra de las probabilidades, muchas desaparecen después de un tiempo. Nadie puede asegurar que no sigamos el mismo destino, pero, por ahora, aquí seguimos, haciendo todo lo que podemos, con nuestras disfunciones y virtudes, con nuestros éxitos y fracasos, creciendo juntos y sobreviviendo siendo fieles a nuestros principios y valores. En cierta manera, creemos que el mero hecho de que sobrevivamos ya es disruptivo en sí mismo, porque puede servir como una narrativa alternativa<a href="#nota2">**</a> en la que un modelo de empresa de software diferente también puede ser viable.
 
-Son muchos desafíos juntos. ¿Cómo los estamos resolviendo? Bueno, según nos llegan y como buenamente podemos. No somos perfectos, pero con empatía y paciencia unos con otros vamos mejorando paulatinamente. Es un proceso de aprendizaje conjunto. Aunque reconocemos que aún somos un poco disfuncionales, coincidimos en que Codesai es uno de los grupos más fecundos en los que hemos trabajado. 
+Son muchos desafíos juntos. ¿Cómo los estamos resolviendo? Según se nos presentan y como buenamente podemos. No somos perfectos, pero con empatía y paciencia unos con otros vamos mejorando paulatinamente. Es un proceso de aprendizaje conjunto. Aunque reconocemos que aún somos un poco disfuncionales, coincidimos en que Codesai es uno de los grupos más fecundos en los que hemos trabajado. 
 
 En resumen, intentamos hacerlo lo mejor que podemos en cada momento, aprendiendo juntos y disfrutando del camino.
 
 <img src="/assets/flejesai_tenerife_2018_3.JPG" alt="Codesai en Flejesai 3" />
 
-<a name="nota1"></a> <span style="font-size: small;">* Los Flejesais son encuentros presenciales que duran varios días que hacemos unas cuantas veces al año.</span>
-
-<a name="nota2"></a> <span style="font-size: small;">** En <a href="https://www.goodreads.com/book/show/28048.Hope_in_the_Dark">Hope in the Dark: Untold Histories, Wild Possibilities</a>, <a href="https://en.wikipedia.org/wiki/Rebecca_Solnit">Rebecca Solnit</a> profundiza en la idea de la necesidad de disponer de narrativas alternativas a las habituales a la corriente general para inspirar y dar esperanza a más personas haciendo ver que hay más caminos posibles.</span>
+<p style="font-size: small;">
+  <a name="nota1"></a> * Los Flejesais son encuentros presenciales que duran varios días que hacemos unas cuantas veces al año.
+  <br>
+  <a name="nota2"></a> ** En <a href="https://www.goodreads.com/book/show/28048.Hope_in_the_Dark">Hope in the Dark: Untold Histories, Wild Possibilities</a>, <a href="https://en.wikipedia.org/wiki/Rebecca_Solnit">Rebecca Solnit</a> profundiza en la idea de la necesidad de disponer de narrativas alternativas a las habituales a la corriente general para inspirar y dar esperanza a más personas haciendo ver que hay más caminos posibles.
+</p>
