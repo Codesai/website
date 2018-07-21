@@ -20,7 +20,7 @@ cross_post_url: http://garajeando.blogspot.com.es/2018/05/improving-legacy-om-co
 ---
 
 <h3 id="introduction">Introduction.</h3>
-<p>I’m working at <a href="http://www.greenpowermonitor.com/">GreenPowerMonitor</a> as part of a team developing a challenging SPA to monitor and manage renewable energy portfolios using ClojureScript. It’s a two years old Om application which contains a lot of legacy code. When I say legacy, I’m using <a href="https://michaelfeathers.silvrback.com/">Michael Feathers</a>’ definition of legacy code as <strong><em>code without tests</em></strong>. This definition views legacy code from the perspective of <strong><em>code being difficult to evolve because of a lack of automated regression tests</em></strong>.</p>
+<p>I’m working at <a href="http://www.greenpowermonitor.com/">GreenPowerMonitor</a> as part of a team developing a challenging SPA to monitor and manage renewable energy portfolios using ClojureScript. It’s a two years old <a href="https://github.com/omcljs/om">Om</a> application which contains a lot of legacy code. When I say legacy, I’m using <a href="https://michaelfeathers.silvrback.com/">Michael Feathers</a>’ definition of legacy code as <strong><em>code without tests</em></strong>. This definition views legacy code from the perspective of <strong><em>code being difficult to evolve because of a lack of automated regression tests</em></strong>.</p>
 
 <h3 id="the-legacy-untested-om-code">The legacy (untested) Om code.</h3>
 <p>Recently I had to face one of these legacy parts when I had to fix some bugs in the user interface that was presenting all the devices of a given energy facility in a hierarchy tree (devices might be comprised of other devices). This is the original legacy view code:</p>
@@ -49,4 +49,4 @@ cross_post_url: http://garajeando.blogspot.com.es/2018/05/improving-legacy-om-co
 <p>First, we applied the humble object pattern idea to manage to write unit tests for the interesting logic of a hard to test legacy Om view, instead of having to write more expensive end-to-end tests. Then, we saw how those unit tests were far from ideal because they were highly coupled to implementation details, and how these problems were caused by a lack of separation of concerns in the code design.</p>
 
 <h3 id="next">Next.</h3>
-<p>In a future post we’ll solve the lack of separation of concerns by using effects and coeffects to isolate the logic that decides how to interact with the user from all the effectful code. This new design will make the interesting logic pure and, as such, really easy to test and reason about.</p>
+<p>In <a href="/2018/07/improving-legacy-om-code-2">a future post</a> we’ll solve the lack of separation of concerns by using effects and coeffects to isolate the logic that decides how to interact with the user from all the effectful code. This new design will make the interesting logic pure and, as such, really easy to test and reason about.</p>
