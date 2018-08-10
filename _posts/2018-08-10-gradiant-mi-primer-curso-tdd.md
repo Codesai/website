@@ -16,7 +16,7 @@ small_image: gradiant_logo.svg
 
 <img src="/assets/gradiant18_all_group.JPG" alt="La clase del curso al completo" />
 
-A principios del pasado Junio volvimos a las oficinas de [Gradiant](https://www.gradiant.org/) en Vigo para impartir nuestro [Curso de TDD](https://www.codesai.com/curso-de-tdd/). Gradiant es el acrónimo en inglés del Centro Tecnolóxico de Telecomunicacións de Galicia (Galician Research and Development Center in Advanced Telecomunications). Este centro aplica los conocimientos y experiencia de sus profesionales de investigación para aportar valor a empresas y organizaciones mediante la transferencia de conocimiento y el diseño de productos especializados.
+A principios del pasado Junio volvimos a las oficinas de [Gradiant](https://www.gradiant.org/) en Vigo para impartir nuestro [Curso de TDD](https://www.codesai.com/curso-de-tdd/). Gradiant es el acrónimo en inglés del Centro Tecnolóxico de Telecomunicacións de Galicia (Galician Research and Development Center in Advanced Telecommunications). Este centro aplica los conocimientos y experiencia de sus profesionales de investigación para aportar valor a empresas y organizaciones mediante la transferencia de conocimiento y el diseño de productos especializados.
 
 Además el campus en el que se encuentran sus oficinas está en medio del bosque, y tienen una vista preciosa desde las oficinas. Seguro que compensa el extra de tiempo de desplazamiento.
 
@@ -30,7 +30,7 @@ Como habéis podido intuir del título del post, fue mi primer curso de TDD. No 
 
 Como os podéis imaginar dar una formación no es llegar allí el primer día y leer las transparencias. El trabajo que lleva detrás es importante, incluso sorprende, porque este tipo de cursos no tienen una gran carga teórica, son muy prácticos. Pero no se trata de prepararse la teoría únicamente, pues en conjunto es muy poco tiempo, sino, sobre todo  de hacer previamente varias veces cada uno de los ejercicios, identificar los puntos de mayor dificultad, discutir las posibles soluciones, y extraer las lecciones de cada uno de ellos.
 
-Esas lecciones tienen que tener una base firme, porque no se trata solo de detectar que algo te huele mal, o intuir que por ahí van los tiros. Se trata de entender las razones por las que algo es una buena práctica o es una buena decisión de diseño. El estudio de estas bases, leyendo artículos y libros, es útil tanto para impartir la formación, como después para nuestro trabajo del día a día. 
+Esas lecciones tienen que tener una base firme, porque no se trata solo de detectar que algo te huele mal, o intuir que por ahí van los tiros. Se trata de entender las razones por las que algo es una buena práctica o es una buena decisión de diseño. Profundizar en estos fundamentos y principios me resultó muy útil, no sólo para impartir esta formación, sino también para mi día a día en el trabajo.
 
 Al final, preparar este curso nos ha llevado unas 8 semanas de trabajo, dedicando algunas horas, fuera de  los proyectos en los que cada uno estamos trabajando.
 
