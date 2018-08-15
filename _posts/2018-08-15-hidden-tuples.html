@@ -1,0 +1,27 @@
+---
+layout: post
+title: Data clumps, primitive obsession and hidden tuples
+date: 2018-08-15 05:00:00.000000000 +01:00
+type: post
+published: true
+status: publish
+categories:
+  - Connascence
+  - Refactoring
+  - Code Smells 
+  - Object-Oriented Design
+author: Manuel Rivero
+small_image: small_hidden_grasshopper.jpg
+written_in: english
+cross_post_url: http://garajeando.blogspot.com/2017/09/data-clumps-primitive-obsession-and.html
+---
+
+During the writing of <a href="/2017/07/two-examples-of-connascence-of-position">one of our posts about connascence</a> some of us were discussing whether we could consider a <a href="http://www.informit.com/articles/article.aspx?p=1400866&seqNum=8">data clump</a> a form of <a href="/2017/01/about-connascence">Connascence of Meaning</a> (CoM) or not. In the end, we agreed that data clumps are indeed a form of CoM and that introducing a class for the missing abstraction reduces their <em>connascence</em> to <a href="/2017/01/about-connascence">Connascence of Type</a> (CoT).
+<br><br>
+I had wondered in the past why we use a similar refactoring to eliminate both <em>primitive obsession</em> and <em>data clump</em> smells. Thinking about them from the point of view of <em>connascence</em> has helped me a lot to understand why. It also gave me an alternative path to get to the same conclusion, in which a <em>data clump</em> gets basically reduced to <em>an implicit form of primitive obsession</em>. The reasoning is as  follows:
+<br><br>
+The concept of <em>primitive obsession</em> might be extended to consider the collections that a given language offers as primitives. In such cases, <a href="http://garajeando.blogspot.com.es/2013/06/encapsulating-collections.html">encapsulating the collection</a> reifies a new concept that might attract code that didn't have where to "live" and thus was scattered all over. From the point of view of <em>connascence</em>, <em>primitive obsession</em> is a form of CoM that we transform into CoT by introducing a new type and then we might find <a href="/2017/01/about-connascence">Connascence of Algorithm</a> (CoA) that we'd remove by moving the offending code inside the new type. The composing elements of a data clump only make sense when they go together. This means that <strong>they're conceptually (but implicitly) grouped</strong>. In this sense <em>a data clump could be seen as a <strong>"hidden or implicit tuple"</strong></em>.
+<br><br>
+Having this <strong>"hidden or implicit tuple"</strong> in mind is now easier to see how closely related the data clump and primitive obsession smells are. In this sense, when we refactor a data clump <strong><em>what we do is removing the data clump by encapsulating a collection which is its "hidden or implicit tuple", inside a new class</em></strong>. Again, from the point of view of <em>connascence</em>, this encapsulation reduces CoM to CoT and might make evident some CoA that will make us move some behavior into the new class that becomes a <a href="https://martinfowler.com/bliki/ValueObject.html">value object</a>.
+<br><br>
+This <strong><em>"hidden or implicit tuple" concept</em></strong> helped me to make more explicit the mental process that was leading me to end up doing very similar refactorings to remove both code smells. I think that CoM unifies both cases much more easily than relating the two smells. The fact that the collection (the grouping of the elements of a data clump) is implicit also makes it more difficult to recognize a data clump as CoM in the first place. That's why I think that <strong><em>a data clump is a more implicit example of CoM than primitive obsession</em></strong>, and, thus, we might consider <strong><em>its CoM to be stronger than the one in primitive obsession</em></strong>.
