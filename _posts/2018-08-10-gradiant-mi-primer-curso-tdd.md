@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gradiant, mi primer Curso de TDD
-date: 2018-08-10 08:00:00.000000000 +01:00
+date: 2018-08-20 08:00:00.000000000 +02:00
 type: post
 published: true
 status: publish
