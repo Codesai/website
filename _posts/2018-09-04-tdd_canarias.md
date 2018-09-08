@@ -10,6 +10,7 @@ categories:
   - News
   - Test Driven Development
   - Formación
+small_image: small_potatoes-vegetables.jpeg
 author: Manuel Rivero
 ---
 
