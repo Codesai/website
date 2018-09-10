@@ -42,6 +42,6 @@ Personalmente me alegro mucho de haber decidido mover estos cursos, porque he co
 
 <img src="/assets/curso_tf_2018_2.jpg" alt="Curso Santa Cruz de Tenerife 2018 b" />
 
-Antes de terminar quería dar las gracias a [Manuel Tordesillas](https://twitter.com/mjtordesillas) por el gran trabajo que hizo preparando todas las [katas del curso en C# +(https://github.com/Codesai/curso-tdd-csharp).
+Antes de terminar quería dar las gracias a [Manuel Tordesillas](https://twitter.com/mjtordesillas) por el gran trabajo que hizo preparando todas las [katas del curso en C#](https://github.com/Codesai/curso-tdd-csharp).
 
 PS: Nuestro próximo curso en abierto de TDD será el [18 y 19 de Octubre en Barcelona](https://twitter.com/codesaidev/status/1018803220292997120), y de nuevo haremos un descuento del 50% para colectivos poco representados en la tecnología. Corre la voz ㋡
