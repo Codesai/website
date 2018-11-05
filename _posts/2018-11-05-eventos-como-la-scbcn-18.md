@@ -13,11 +13,11 @@ small_image: small_scbcn18_three.jpg
 author: Daniel Ojeda
 ---
 
-<img src="/assets/scbcn18_three.jpg" alt="Antonio, Manu y Dani en la SCBCN 18" />
-<div class="photo-footer">Este año hemos vuelto a asistir a la Software Crafters Barcelona, en la cual participamos Antonio, Manuel y yo (Dani).</div>
-
 El sábado 15 de Septiembre por la noche aterrizaba en Madrid después de haber pasado más de un año viviendo fuera, muy lejos allá en tierras niponas. Y no era sino dos semanas más tarde que iba a asistir a la Software Crafters Barcelona, pues había conseguido pillarme de antemano (y con suerte :) una entrada.<br>
 Había sido un año complicado profesionalmente hablando, con no mucho tiempo libre y un proyecto complejo durante el cual conseguimos superar, no sin dificultad, algunas situaciones delicadas, todo ello mientras estaba 100% remoto en una zona horaria diferente trabajando de noche con el horario al revés. Me hallaba en una etapa en la que no me apetecía apenas dedicarle tiempo al desarrollo fuera del horario de trabajo, y quería darle la vuelta a la tortilla una vez pusiese pie en España de nuevo. Qué mejor manera que asistir a uno de los mayores eventos de Software Crafters?
+
+<img src="/assets/scbcn18_three.jpg" alt="Antonio, Manu y Dani en la SCBCN 18" />
+<div class="photo-footer">Este año hemos vuelto a asistir a la Software Crafters Barcelona, en la cual participamos Antonio, Manuel y yo (Dani).</div>
 
 Cuando me planteé por primera vez ir a una conferencia lo que me venía a la mente era una serie de charlas interesantes, impartidas por personas muy cualificadas, y una oportunidad de conocerlas e intercambiar un par de preguntas. Con esa idea asistí a la CAS 2015 y me encontré con lo que esperaba y algo más. Ese algo más se fue potenciando según asistía a diversos eventos por España llegando hasta la SCBCN 18, y ha pasado a ser el otro gran pro de los eventos.
 
