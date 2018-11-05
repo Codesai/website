@@ -36,8 +36,9 @@ Y además en el Open Space a:
 - A su vez, participé junto con Antonio en la sesión de Let’s talk about Cooperativism propuesta por [Ángel](https://twitter.com/anxodio) en la que quisieron contar con nuestro punto de vista con respecto a las ideas que hay detrás de haber montado una Cooperativa.
 
 <img src="/assets/scbcn18_all.jpg" alt="Foto de todos los asistentes a la SCBCN 18 tomada por Autentia" />
+<div class="photo-footer">Gracias a Autentia por la foto de todos los que participamos en el evento!</div>
 
-Pero he de decir que también me salté otras tantas charlas por quedarme a hablar con una persona u otra. Las charlas pueden aportar una gran motivación a nivel técnico, pero considero que también hace falta un buen grado de motivación personal y que sin ello es difícil ponerse en marcha. Ahí es donde la comunidad que organiza y asiste a un evento se hace notar y es lo que me lleva al punto que intento expresar.
+Pero he de decir que también me salté otras tantas charlas por quedarme a hablar con una persona u otra. Las charlas pueden aportar una gran motivación a nivel técnico, pero considero que también hace falta un buen grado de motivación personal y que sin ello es difícil ponerse en marcha. Ahí es donde la comunidad que organiza y asiste a un evento se hace notar y es lo que me lleva al punto que intento expresar.<br>
 Desde un debate técnico, a un intercambio de opiniones sobre cualquier tema y el cómo te va la vida, o en mi caso en esta ocasión ¿qué ha sido de ti en Japón? Son el inamovible complemento que considero distingue a un evento, por contar con personas con objetivos parecidos y mentalidades similares a las propias, que te permiten resurgir con mucha más energía una vez finalizado que cuando cruzaste la entrada el primer día.
 
 Doy fe de que tenemos una comunidad genial en España!
