@@ -119,13 +119,21 @@
 
 .post .content p {
 	color: #111;
-  padding-top: 10px;
+  	padding-top: 10px;
 	text-align: justify;
 }
 
 .post .content img {
 	width: 100%;
 	padding: 20px;
+}
+
+.post .content .photo-footer {
+	margin-top: -20px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 12px;
+	color: gray;
 }
 
 .post .content figcaption {
@@ -160,6 +168,7 @@
 
 .post ul li {
   list-style-type: disc;
+  line-height: 28px;
 }
 
 .post ul ul {
@@ -167,7 +176,8 @@
 }
 
 .post ul ul li {
-    list-style-type: circle;
+	list-style-type: circle;
+	line-height: 28px;
 }
 
 .post .foot-note {
@@ -196,6 +206,10 @@
 
 	.post .content img {
 		padding: 0px;
+	}
+
+	.post .content .photo-footer {
+		margin-top: 0;
 	}
 
 	.post .content figcaption {
@@ -240,6 +254,10 @@
 
 	.post .content img {
 		padding: 0px;
+	}
+
+	.post .content .photo-footer {
+		margin-top: 0;
 	}
 
 	.post .content figcaption {
