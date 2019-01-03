@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Avoid using subscriptions only as app-state getters
-date: 2019-01-02 08:00:00.000000000 +01:00
+date: 2019-01-03 08:00:00.000000000 +01:00
 type: post
 categories:
   - Clojure/ClojureScript
@@ -9,8 +9,10 @@ categories:
   - re-om
   - re-frame
   - Subscriptions
-small_image:
+small_image: small_cattle-skull.jpeg
 author: Manuel Rivero & Manuel Tordesillas
+written_in: english
+cross_post_url: https://garajeando.blogspot.com/2019/01/avoid-using-subscriptions-only-as-app.html
 ---
 
 <h3>Introduction. </h3>
