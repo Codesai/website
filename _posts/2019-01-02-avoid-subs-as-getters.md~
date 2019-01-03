@@ -1,0 +1,63 @@
+---
+layout: post
+title: Avoid using subscriptions only as app-state getters
+date: 2019-01-02 08:00:00.000000000 +01:00
+type: post
+categories:
+  - Clojure/ClojureScript
+  - Om
+  - re-om
+  - re-frame
+  - Subscriptions
+small_image:
+author: Manuel Rivero & Manuel Tordesillas
+---
+
+When you start working with re-frame or re-om subscriptions, it might happen that you end up using them as mere getters of `app-state`. This is a missed opportunity because using subscriptions in this way, we are not taking advantage of all the value that subscriptions provide, and we run the risk of leaking pieces of untested logic into our views.
+
+We'll illustrate this problem with a small real example written with re-om subscriptions (in an app using re-frame subscriptions the problem would look similar).
+
+Have a look at this piece of view code (some details of this form have been elided for brevity sake):
+
+<script src="https://gist.github.com/trikitrok/201a88170cd2807d71ed339473fc48ab.js"></script>
+https://gist.github.com/trikitrok/201a88170cd2807d71ed339473fc48ab
+
+
+that is using subscriptions written in this namespace:
+
+<script src="https://gist.github.com/trikitrok/ee79f94e3e4062266f7fe0a639a73e36.js"></script>
+https://gist.github.com/trikitrok/ee79f94e3e4062266f7fe0a639a73e36
+
+
+Focus on this piece of view which is where a misuse of subscriptions appears:
+
+<script src="https://gist.github.com/trikitrok/ee70228ba5eaf3ad70113946b6880346.js"></script>
+https://gist.github.com/trikitrok/ee70228ba5eaf3ad70113946b6880346
+
+
+The only thing that we need to render this piece of view is `next-generation`.
+
+To compute `next-generation` the code is using several subscriptions to get some data from the `app-state` and binding to local vars (blablabinding, blablabinding, ...),
+which are then fed to a couple of private functions (`get-next-generation` and `delay->interval`) which are also defined in the view to obtain the value of `next-generation`.
+
+This is a bad use of subscriptions. Remember subscriptions are *query functions* on `app-state` that, used well, *help to make views as dumb (with no logic) as possible*. If you *push as much logic as possible into subscriptions*, you might achieve views that are so dumb you nearly don't need to test, and decide to limit your unit tests to do only [subcutaneous testing](https://martinfowler.com/bliki/SubcutaneousTest.html) of your SPA.
+
+We can refactor the code shown above to remove all the leaked logic from the view by writing only one subscription called `next-generation` which will produce the only information that the view needs. As a result `get-next-generation` and `delay->interval` functions will be pushed into the logic inside the `next-generation` subscription and dissappear from the view.
+
+This is the resulting view code after this change:
+
+<script src="https://gist.github.com/trikitrok/14ba88c994be3187ccbca170fca86d91.js"></script>
+https://gist.github.com/trikitrok/14ba88c994be3187ccbca170fca86d91
+
+
+and this is the resulting pure logic of the new subscription (notice that, since `get-next-generation` function wasn't pure, we had to change it a bit to make it pure.
+):
+
+<script src="https://gist.github.com/trikitrok/730c5aaade747504c08152c26c9f7836.js"></script>
+https://gist.github.com/trikitrok/730c5aaade747504c08152c26c9f7836
+
+
+After this change the view is much dumber and we can test the previously untested logic of `get-next-generation` and `delay->interval` functions through the `next-generation` subscription. This design is also much better than the previous one because it *hides how we obtain the data that the view needs*: now both the view and the tests ignore, and so are not coupled, to how the data the view needs is obtained. We might refactor both the `app-state` and the logic now in `get-next-generation` and `delay->interval` functions without affecting the view. This is another example of how *what is more stable than how*. Subscriptions also make it easier to share code between different views and, in the case of re-frame (and soon in re-om as well), are optimized to minimize unnecessary rerenderings of the views.  
+
+The idea to remember is that subscriptions themselves don't make code more testable and maintainable. It's the way we use subscriptions that produces better code. For that *the logic must be in the right place* which is *not inside the view but behind the subscriptions that provide the data that the view needs*. If we keep writing *"getter" subscriptions" and placing logic in views, we won't gain the advantages the subscriptions concept provides and we'll write poorly designed views coupled to leaked bunches of (very likely untested) logic.
+
