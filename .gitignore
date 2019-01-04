@@ -1,7 +1,6 @@
 _site/docker-compose.yml
 _site/en/docker-compose.yml
-_site/*
-!_site/.gitkeep
+_site/
 
 .bundle
 .sass-cache
