@@ -1,7 +1,6 @@
 # Codesai website
 
-Jekyll based website for Codesai. You can [read further details in the wiki](https://bitbucket.org/codesai/codesaiweb/wiki/Home).
-
+Jekyll based website for Codesai. 
 
 # Setup
 
