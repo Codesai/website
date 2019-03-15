@@ -14,6 +14,8 @@ categories:
 author: Manuel Rivero & Alfredo Casado
 small_image: small_builders.jpeg
 written_in: english
+cross_post_url: http://garajeando.blogspot.com/2017/08/in-small-piece-of-code.html
+published_in_blog: Manuel Rivero
 ---
 
 In a [previous post](/2017/07/two-examples-of-connascence-of-position) we talked about *positional parameters* and how they can suffer from **Connascence of Position, (CoP)**. Then we saw how, in some cases, we might introduce *named parameters* to remove the *CoP* and transform it into **Connascence of Name, (CoN)**, but always being careful to not hiding cases of **Connascence of Meaning, (CoM)**. In this post we'll focus on languages that don't provide *named parameters* and see different techniquess to remove the CoP.

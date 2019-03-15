@@ -12,6 +12,8 @@ tags: []
 author: Daniel Ojeda & Manuel Rivero
 small_image: small_apples.jpeg
 written_in: english
+cross_post_url: http://garajeando.blogspot.com/2018/06/improving-your-reds.html
+published_in_blog: Manuel Rivero
 ---
 
 Improving your reds is a simple tip that is described by [Steve Freeman](http://hol.gandi.ws/) and [Nat Pryce](http://www.natpryce.com/) in their wonderful book [Growing Object-Oriented Software, Guided by Tests](https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests).

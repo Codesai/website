@@ -12,6 +12,7 @@ categories:
   - Formación
 small_image: small_potatoes-vegetables.jpeg
 author: Manuel Rivero
+cross_post_url: http://garajeando.blogspot.com/2018/09/cursos-en-abierto-en-canarias.html
 ---
 
 En la primera mitad de este año no habíamos podido hacer ningún [curso de TDD](/curso-de-tdd/) en abierto. Nos absorbió el trabajo diario, la agenda de eventos en los que participamos, y todas las reuniones, decisiones y papeleos que tuvimos para lanzar nuestra cooperativa. Era una pena porque nos encanta hacer cursos en abierto por el entusiasmo y las ganas de trabajar y de aprender con las que vienen las personas que asisten a ellos. Para nosotros estos cursos son también muy interesantes porque nos permiten conocer a personas, que, en ocasiones, acaban colaborando con Codesai. Ese fue, por ejemplo, mi caso o el de [Luis](https://twitter.com/luisrovirosa).

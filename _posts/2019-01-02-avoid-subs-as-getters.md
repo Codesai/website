@@ -13,6 +13,7 @@ small_image: small_cattle-skull.jpeg
 author: Manuel Rivero & Manuel Tordesillas
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2019/01/avoid-using-subscriptions-only-as-app.html
+published_in_blog: Manuel Rivero
 ---
 
 <h3>Introduction. </h3>
