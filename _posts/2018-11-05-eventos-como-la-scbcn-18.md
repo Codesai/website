@@ -9,6 +9,9 @@ categories:
   - News
   - Software Craft
   - Events
+  - Eventos
+  - Comunidad
+  - Community
 small_image: small_scbcn18_three.jpg
 author: Daniel Ojeda
 ---
