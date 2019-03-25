@@ -6,6 +6,8 @@ type: post
 published: true
 status: publish
 categories:
+  - Comunidad
+  - Community
   - Learning
   - Clojure/ClojureScript
   - Functional Programming

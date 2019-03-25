@@ -6,7 +6,10 @@ type: post
 published: true
 status: publish
 categories:
+  - Comunidad
+  - Community
   - Eventos
+  - Events
   - Codesai
   - News
   - Charlas

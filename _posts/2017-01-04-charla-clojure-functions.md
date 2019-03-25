@@ -3,6 +3,8 @@ title: Charla sobre funciones en Clojure
 layout: post
 date: 2017-01-04T00:08:00+00:00
 categories:
+  - Comunidad
+  - Community
   - Learning
   - Clojure/ClojureScript
   - Functional Programming

@@ -7,7 +7,10 @@ published: true
 status: publish
 categories:
 - Codesai
+- Comunidad
+- Community
 - Eventos
+- Events
 - Charlas
 tags: []
 author: 'Antonio de la Torre'
