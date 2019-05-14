@@ -8,7 +8,7 @@ status: publish
 categories:
   - Codesai
   - News
-  - Software Craftsmanship
+  - Software Craft
   - Comunidad
   - Community
   - Eventos

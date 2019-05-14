@@ -8,7 +8,7 @@ status: publish
 categories:
   - Codesai
   - News
-  - Software Craftsmanship
+  - Software Craft
   - Eventos
   - Clojure/ClojureScript
   - re-frame
