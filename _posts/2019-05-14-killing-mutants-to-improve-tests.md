@@ -20,16 +20,16 @@ One of the pieces we have developed to achieved that goal is [reffects-store](ht
 
 After we finished writing the code for the store, we decided to use [mutation testing](https://en.wikipedia.org/wiki/Mutation_testing) to evaluate the quality of our tests. *Mutation testing* is a technique in which, you introduce bugs, (*mutations*), into your production code, and then run your tests for each mutation. If your tests fail, it's ok, the mutation was "killed", that means that they were able to defend you against the regression caused by the mutation. If they don't, it means your tests are not defending you against that regression. The higher the percentage of mutations killed, the more effective your tests are.
 
-There are tools that do this automatically. [stryker](https://stryker-mutator.io/)<a href="#nota2"><sup>[2]</sup></a> is one of them. When you run *stryker*, it will create many mutant versions of your production code, and run your tests for each mutant (that's how mutations are called in *stryker*'s' documentation) version of the code. If your tests fail then the mutant is killed. If your tests passed, the mutant survived. Let's have a look at the the result of runnning *stryker* against [reffects-store](https://github.com/trovit/reffects-store)'s code:
+There are tools that do this automatically, [stryker](https://stryker-mutator.io/)<a href="#nota2"><sup>[2]</sup></a> is one of them. When you run *stryker*, it will create many mutant versions of your production code, and run your tests for each mutant (that's how mutations are called in *stryker*'s' documentation) version of the code. If your tests fail then the mutant is killed. If your tests passed, the mutant survived. Let's have a look at the the result of runnning *stryker* against [reffects-store](https://github.com/trovit/reffects-store)'s code:
 
 <script src="https://gist.github.com/trikitrok/0fe2dee6b69016d784849f61d3cae80f.js"></script>
 
 Notice how *stryker* shows the details of every mutation that survived our tests, and look at the summary the it produces at the end of the process.
 
-All the survinving mutants were produced by mutations to the `store.js` file. Having a closer look to the mutations in *stryker*'s output we found that the functions with mutant code were `unsubscribeAllListeners` and `unsubscribeListener`.
+All the surviving mutants were produced by mutations to the `store.js` file. Having a closer look to the mutations in *stryker*'s output we found that the functions with mutant code were `unsubscribeAllListeners` and `unsubscribeListener`.
 After a quick check of their tests, it was esay to find out why `unsubscribeAllListeners` was having surviving mutants. Since it was a function we used only in tests for cleaning the state after each test case was run, we had forgotten to test it. 
 
-However, finding out why `unsubscribeListener` mutants were survinving took us a bit more time and thinking.
+However, finding out why `unsubscribeListener` mutants were surviving took us a bit more time and thinking.
 Let's have a look at the tests that were exercising the code used to subscribe and unsubscribe listeners of state changes:
 
 <script src="https://gist.github.com/trikitrok/62a6892d957ffc21d9f9430fd4b2f359.js"></script>
@@ -46,7 +46,7 @@ After this change, when we run *stryker* we got the following output:
 
 No mutants survived!! This means this new version of the tests is more reliable and will protect us better from regressions than the initial version. 
 
-Mutation testing is a great tool to know if you can trut your tests. This is event more true when working with legacy code.
+Mutation testing is a great tool to know if you can trust your tests. This is event more true when working with legacy code.
 
 **Acknowledgements.**
 
