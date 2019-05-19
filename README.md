@@ -29,6 +29,10 @@ UPDATE 20/10/2017
 
 (Antonio. Ubuntu 17.04) I have to fix some configuration files. There are in this branch fix/config_error_in_ubuntu_17.04
 
+UPDATE 19/05/2019: Antonio
+
+Ubuntu 18.04 LTS, works nice, and does not need `sudo`.
+
 ## IMPORTANT
 
 ***The develop branch should always be ready to be deployed***
@@ -50,11 +54,13 @@ The first step is to create a new branch from the latest **develop** with a quic
 To create a post, simply add a new file in the `_posts` folder named `YYYY-MM-DD-name-of-the-post.md`, the name specified becomes the **permalink**. At the top of the file you have to write a small yaml specification, the **bare minimum** to start a post is:
 
 ```
+
 ---
 layout: post
 title: My Post Title nicely written
 author: Crazy Cockatoo
 ---
+
 ```
 
 You can now write your post below, remember that we now use **markdown** and you can mix in some html if needed. We are now using [**kramdown**](https://kramdown.gettalong.org/quickref.html) as recommended by jekyll, you may prefer this [**markdown quicksheet**](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
