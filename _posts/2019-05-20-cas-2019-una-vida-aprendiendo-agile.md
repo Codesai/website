@@ -21,8 +21,6 @@ El vídeo ya está disponible desde hace tiempo (gracias [Autentia!](https://www
 
 ## ¿Cómo surgió la idea? 
 
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Ya tenemos agenda para el evento de la semana que viene en <a href="https://twitter.com/sngular?ref_src=twsrc%5Etfw">@sngular</a> <a href="https://twitter.com/hashtag/Oviedo?src=hash&amp;ref_src=twsrc%5Etfw">#Oviedo</a> Os esperamos <a href="https://t.co/IiQvgxNu7y">pic.twitter.com/IiQvgxNu7y</a></p>&mdash; José Luis Vallejo (@jlvallejo) <a href="https://twitter.com/jlvallejo/status/1006553138155999232?ref_src=twsrc%5Etfw">June 12, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
 Por motivo de [la inauguración de las nuevas oficinas de Sngular en Oviedo](https://twitter.com/jlvallejo/status/1006553138155999232) el pasado 21 de junio, tuve el honor de que me propusieran para dar la charla inaugural del evento, como representante de la comunidad y como organizador del grupo [Agile Asturias](https://www.meetup.com/es-ES/Agile-Asturias/).
 Sentía la relevancia del momento, así que pensé que una charla muy técnica sobre dinámicas o retrospectivas iba a ser poco inspirador, tenía que ser algo con un poco más de alma.
 
@@ -52,20 +50,11 @@ Y efectivamente estudiando sobre ella encajaba como un guante. Así que reorden�
 
 Y llegó la CAS. Estaba bastante nervioso, así que no me centré demasiado en ninguna charla durante la jornada. A diferencia de otras ocasiones no buscaba tanto la información precisa, si no el clima adecuado para la historia tan personal que quería contar.
 
-
-
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Reencontrando a viejos amigos <a href="https://twitter.com/adelatorrefoss?ref_src=twsrc%5Etfw">@adelatorrefoss</a> <a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://twitter.com/atSistemas?ref_src=twsrc%5Etfw">@atSistemas</a> Toda la vida en Agile <a href="https://t.co/TaWBAQPkcV">pic.twitter.com/TaWBAQPkcV</a></p>&mdash; Felix Bragado (@fbragado) <a href="https://twitter.com/fbragado/status/1073255369995108352?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
-
 Empecé mi charla buscando la complicidad del público, recordando que esta era una sesión más para escuchar que para tomar notas, y creo que funcionó, porque me sentí muy a gusto desde el primer momento.
 
 Pero no me imaginaba que iba a tener un un ayudante inesperado. ¡El proyector se quemó en mitad de la exposición! 
 
-
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr"><a href="https://twitter.com/adelatorrefoss?ref_src=twsrc%5Etfw">@adelatorrefoss</a> en la <a href="https://twitter.com/hashtag/cas2018?src=hash&amp;ref_src=twsrc%5Etfw">#cas2018</a> presentando su ponencia sin presentación <a href="https://twitter.com/hashtag/YOLO?src=hash&amp;ref_src=twsrc%5Etfw">#YOLO</a> style XD <a href="https://t.co/82BUuSTnUD">pic.twitter.com/82BUuSTnUD</a></p>&mdash; Endika García (@endikabatura) <a href="https://twitter.com/endikabatura/status/1073259309901987840?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
-
-Aquí el proyector acaba de explotar y mientras intentaba continuar, pidiendo a la gente que se quedase conmigo, veía a los técnicos entrar y salir intentando solucionar el problema.
+Mientras intentaba continuar, pidiendo a la gente que se quedase conmigo, veía a los técnicos entrar y salir intentando solucionar el problema.
 
 
 <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Olé la capacidad de improvisación de <a href="https://twitter.com/adelatorrefoss?ref_src=twsrc%5Etfw">@adelatorrefoss</a> ante la adversidad técnica 🔝<a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://twitter.com/hashtag/Keepitreal?src=hash&amp;ref_src=twsrc%5Etfw">#Keepitreal</a> <a href="https://twitter.com/hashtag/keepcalm?src=hash&amp;ref_src=twsrc%5Etfw">#keepcalm</a> 💆🏻‍♂️ <a href="https://t.co/YkzTogDMDW">pic.twitter.com/YkzTogDMDW</a></p>&mdash; Laura Azcona (@lauraazcona) <a href="https://twitter.com/lauraazcona/status/1073263069541949441?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
