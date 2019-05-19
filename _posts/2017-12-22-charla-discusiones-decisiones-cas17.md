@@ -13,7 +13,7 @@ categories:
   - Charlas
   - News
 tags: []
-author: Antonio de la Torre
+author: Toño de la Torre
 small_image: small_charla_antonio_cas17.jpg 
 ---
 
