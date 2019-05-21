@@ -147,6 +147,11 @@
 	padding: 10px 0;
 }
 
+.twitter-embeds .twitter-tweet {
+	display: table;
+  margin: 0 auto;
+}
+
 .post .youtube-embed, .post .slideshare-embed {
 	text-align: center;
 	padding: 10px 0;
@@ -218,8 +223,8 @@
 	}
 
 	.twitter-embeds .twitter-tweet {
-		margin-left: auto;
-		margin-right: auto;
+		display: table;
+    margin: 0 auto;
 	}
 
 	.video .title {
@@ -266,8 +271,8 @@
 	}
 
 	.twitter-embeds .twitter-tweet {
-		margin-left: auto;
-		margin-right: auto;
+		display: table;
+    margin: 0 auto;
 	}
 
 	.post .youtube-embed iframe {

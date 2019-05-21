@@ -43,9 +43,10 @@ Y efectivamente estudiando sobre ella encajaba como un guante. Así que reorden�
 
 ## CAS 2018
 
-
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Empezamos!! <a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://t.co/4XygBVqFt5">pic.twitter.com/4XygBVqFt5</a></p>&mdash; Toño de la Torre (@adelatorrefoss) <a href="https://twitter.com/adelatorrefoss/status/1073137848658878464?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<section class="twitter-embeds">
+  <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Empezamos!! <a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://t.co/4XygBVqFt5">pic.twitter.com/4XygBVqFt5</a></p>&mdash; Toño de la Torre (@adelatorrefoss) <a href="https://twitter.com/adelatorrefoss/status/1073137848658878464?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> 
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</section>
 
 
 Y llegó la CAS. Estaba bastante nervioso, así que no me centré demasiado en ninguna charla durante la jornada. A diferencia de otras ocasiones no buscaba tanto la información precisa, si no el clima adecuado para la historia tan personal que quería contar.
@@ -56,24 +57,24 @@ Pero no me imaginaba que iba a tener un un ayudante inesperado. ¡El proyector s
 
 Mientras intentaba continuar, pidiendo a la gente que se quedase conmigo, veía a los técnicos entrar y salir intentando solucionar el problema.
 
-
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Olé la capacidad de improvisación de <a href="https://twitter.com/adelatorrefoss?ref_src=twsrc%5Etfw">@adelatorrefoss</a> ante la adversidad técnica 🔝<a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://twitter.com/hashtag/Keepitreal?src=hash&amp;ref_src=twsrc%5Etfw">#Keepitreal</a> <a href="https://twitter.com/hashtag/keepcalm?src=hash&amp;ref_src=twsrc%5Etfw">#keepcalm</a> 💆🏻‍♂️ <a href="https://t.co/YkzTogDMDW">pic.twitter.com/YkzTogDMDW</a></p>&mdash; Laura Azcona (@lauraazcona) <a href="https://twitter.com/lauraazcona/status/1073263069541949441?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
+<section class="twitter-embeds">
+  <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Olé la capacidad de improvisación de <a href="https://twitter.com/adelatorrefoss?ref_src=twsrc%5Etfw">@adelatorrefoss</a> ante la adversidad técnica 🔝<a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://twitter.com/hashtag/Keepitreal?src=hash&amp;ref_src=twsrc%5Etfw">#Keepitreal</a> <a href="https://twitter.com/hashtag/keepcalm?src=hash&amp;ref_src=twsrc%5Etfw">#keepcalm</a> 💆🏻‍♂️ <a href="https://t.co/YkzTogDMDW">pic.twitter.com/YkzTogDMDW</a></p>&mdash; Laura Azcona (@lauraazcona) <a href="https://twitter.com/lauraazcona/status/1073263069541949441?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</section>
 
 Cuando ya vinieron los técnicos a informar que no había remedio, hubo un fugaz momento que pensé en cancelar. Pero enseguida decidí que había que seguir, porque aunque las imágenes eran interesantes, era mucho más relevante toda la emoción que había volcado en mi pequeña historia y quería tranmitirla.
   
 Así que solventamos el problema, dando la vuelta al portátil y pidiendo a la gente que ocupase las primeras filas de la sala.
 
  
-
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr"><a href="https://twitter.com/adelatorrefoss?ref_src=twsrc%5Etfw">@adelatorrefoss</a> luchando contra el entorno y abriéndose a la audiencia como un campeón. ¡Enhorabuena Toño! <br>Veníamos sobre todo a escuchar tu experiencia, aunque las fotos fueran chulas. <a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://t.co/hMmaJlaPhY">pic.twitter.com/hMmaJlaPhY</a></p>&mdash; Enrique de la Cruz Martínez (@encrumar) <a href="https://twitter.com/encrumar/status/1073264449396592640?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
+<section class="twitter-embeds">
+  <blockquote class="twitter-tweet"><p lang="es" dir="ltr"><a href="https://twitter.com/adelatorrefoss?ref_src=twsrc%5Etfw">@adelatorrefoss</a> luchando contra el entorno y abriéndose a la audiencia como un campeón. ¡Enhorabuena Toño! <br>Veníamos sobre todo a escuchar tu experiencia, aunque las fotos fueran chulas. <a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://t.co/hMmaJlaPhY">pic.twitter.com/hMmaJlaPhY</a></p>&mdash; Enrique de la Cruz Martínez (@encrumar) <a href="https://twitter.com/encrumar/status/1073264449396592640?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</section>
 
 Así terminó la charla, como dice Enrique desnudándome (un poco) ante los asistentes y con una sensación muy agradable de haber compartido mi camino en un ambiente de confianza.
 
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Gracias por el feedback! <a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://t.co/lxNd9MCu7K">pic.twitter.com/lxNd9MCu7K</a></p>&mdash; Toño de la Torre (@adelatorrefoss) <a href="https://twitter.com/adelatorrefoss/status/1073289226127622146?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-
+<section class="twitter-embeds">
+  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Gracias por el feedback! <a href="https://twitter.com/hashtag/CAS2018?src=hash&amp;ref_src=twsrc%5Etfw">#CAS2018</a> <a href="https://t.co/lxNd9MCu7K">pic.twitter.com/lxNd9MCu7K</a></p>&mdash; Toño de la Torre (@adelatorrefoss) <a href="https://twitter.com/adelatorrefoss/status/1073289226127622146?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+</section>
 
 El feedback fue muy bueno, tanto el que dejaron en la urna, como el que me fueron dando el resto del día y todo el día siguiente: bastantes personas se acercaron a felicitarme por la charla y por superar con aparente naturalidad el problema del proyector; y lo más valioso para mi, compartir que se vieron identificadas en algunas partes del relato.
 
