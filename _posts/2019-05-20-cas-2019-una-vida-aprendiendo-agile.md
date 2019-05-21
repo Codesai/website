@@ -37,7 +37,7 @@ La charla me gustó cómo quedó y cómo la expuse, me sentí muy cómodo en el 
 Y como no es muy habitual tener ya el trabajo hecho, ya que tenía tiempo, pedí feedback a algunos amigos. Entre los que me contestaron estaba [José Manuel Beas](https://jmbeas.es/), para el que [dar un feedback trabajado es norma](https://twitter.com/bberrycarmen/status/1119561541702103040), me comentó que podría darle la estructura del [Viaje del Héroe](https://es.wikipedia.org/wiki/Monomito).
 
 <div style="display: table; margin: 0 auto;">
-  <img src="/assets/post-una-vida-monomito-900.png"  alt="Diagrama del Viaje del Héroe">
+  <img src="/assets/post-una-vida-monomito-450.png"  alt="Diagrama del Viaje del Héroe">
 </div>
 
 Y efectivamente estudiando sobre ella encajaba como un guante. Así que reordené algunos eventos y reforcé algo la épica y el drama en ciertos momentos de la historia para que fuera mucho más atractiva.
@@ -97,10 +97,5 @@ Más sobre el Monomito o El viaje del héroe contado por Juan Gómez-Jurado: [TO
 <div style="display: table; margin: 0 auto;">
   <img src="/assets/post-una-vida-oficial3.jpg" alt="Primer plano de Toño de la Torre dando la charla">
 </div>
-
-
 *Todos los derechos reservados por [conferenciaagilespain](https://www.flickr.com/photos/167768694@N04/46356687692/in/album-72157701587805742/)*
-
-
-
 
