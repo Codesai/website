@@ -13,7 +13,7 @@ categories:
 small_image: accurate-boy-build-298825.jpg
 author: Manuel Rivero
 written_in: english
-#cross_post_url: 
+cross_post_url: https://garajeando.blogspot.com/2019/05/the-curious-case-of-negative-builder.html
 ---
 
 Recently, one of the teams I'm coaching at my current client, asked me to help them with a problem, they were experiencing while using TDD to add and validate new mandatory query string parameters<a href="#nota1"><sup>[1]</sup></a>. This is a shortened version (validating fewer parameters than the original code) of the tests they were having problems with: 
