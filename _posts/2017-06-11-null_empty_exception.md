@@ -9,7 +9,7 @@ categories:
   - Clean Code
   - Principles
   - Code Smells
-  - Object Oriented Design
+  - Object-Oriented Design
   - Design Patterns
 tags: []
 author: Carlos Blé

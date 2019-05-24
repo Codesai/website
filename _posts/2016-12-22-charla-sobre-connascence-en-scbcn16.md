@@ -12,7 +12,7 @@ categories:
   - Eventos
   - Events
   - Charlas
-  - Object Oriented Design
+  - Object-Oriented Design
   - Connascence
 tags: []
 author: 'Fran Reyes & Alfredo Casado'

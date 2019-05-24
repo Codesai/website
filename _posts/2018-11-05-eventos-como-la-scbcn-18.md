@@ -35,7 +35,7 @@ Este año me vi asistiendo a charlas como:
 
 Y además en el Open Space a:
 - React Architecture con [Gorka](https://twitter.com/gorkma) y [Mikel](https://twitter.com/mikelros_) de 540.
-- Object Oriented Design Workshop de nuevo con [Pedro Santos](https://twitter.com/@pedromsantos).
+- Object-Oriented Design Workshop de nuevo con [Pedro Santos](https://twitter.com/@pedromsantos).
 - Y también participé junto con Antonio en la sesión de Let’s talk about Cooperativism propuesta por [Ángel](https://twitter.com/anxodio) en la que quisieron contar con nuestro punto de vista con respecto a las ideas que hay detrás de haber montado una Cooperativa.
 
 <img src="/assets/scbcn18_all.jpg" alt="Foto de todos los asistentes a la SCBCN 18 tomada por Autentia" />

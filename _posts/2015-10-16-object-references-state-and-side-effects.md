@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-  - Object Oriented Design
+  - Object-Oriented Design
   - Clean Code
   - C#
   - .Net

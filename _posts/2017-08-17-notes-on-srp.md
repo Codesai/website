@@ -8,7 +8,7 @@ status: publish
 categories:
   - Clean Code
   - Principles
-  - Object Oriented Design
+  - Object-Oriented Design
   - Learning
   - Books
 tags: []
