@@ -58,7 +58,7 @@ Leaving behind the typical recipe and adapting the idea of the builder pattern t
 
 **Acknowledgements.**
 
-Many thanks to my colleague <a href="https://twitter.com/adelatorrefoss">Antonio de la Torre</a> and all the colleagues of the **Prime Services Team** at [LIFULL Connect](https://www.lifullconnect.com/) for all the mobs we enjoy together. Thanks also to [Markus Spiske](https://www.pexels.com/@markusspiske)  for the [photo used in this post](https://www.pexels.com/photo/accurate-boy-build-building-298825/) and to [Pexels](https://www.pexels.com/).
+Many thanks to my <a href="https://codesai.com/">Codesai</a> colleagues <a href="https://twitter.com/adelatorrefoss">Antonio de la Torre</a> and <a href="https://twitter.com/fran_reyes">Fran Reyes</a>, and to all the colleagues of the **Prime Services Team** at [LIFULL Connect](https://www.lifullconnect.com/) for all the mobs we enjoy together. Thanks also to [Markus Spiske](https://www.pexels.com/@markusspiske)  for the [photo used in this post](https://www.pexels.com/photo/accurate-boy-build-building-298825/) and to [Pexels](https://www.pexels.com/).
 
 **Footnotes**:
 
