@@ -10,6 +10,7 @@ categories:
   - News
   - Software Craft
   - Eventos
+  - Events
   - Clojure/ClojureScript
   - re-frame
   - React

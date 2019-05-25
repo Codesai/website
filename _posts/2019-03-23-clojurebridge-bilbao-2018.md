@@ -8,6 +8,7 @@ categories:
   - Community
   - Comunidad
   - Eventos
+  - Events
 small_image: clojurebridge.png
 author: Manuel Rivero
 written_in: english

@@ -7,6 +7,7 @@ published: true
 status: publish
 categories:
   - Eventos
+  - Events
   - Codesai
   - News
   - Charlas

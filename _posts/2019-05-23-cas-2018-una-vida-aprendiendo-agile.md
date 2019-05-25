@@ -4,7 +4,7 @@ title: "CAS 2018: Una vida descubriendo Agile"
 date: 2019-05-23 08:00:00.000000000 +02:00
 type: post
 categories:
-  - Talks
+  - Charlas
   - Agile
   - Conferences
   - Personal  
