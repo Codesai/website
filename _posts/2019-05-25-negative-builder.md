@@ -34,7 +34,7 @@ To add a new mandatory parameter, for example `sourceId`, following the TDD cycl
 
 <script src="https://gist.github.com/trikitrok/9d62133a3ea3ba8b4aff07b55afe196d.js"></script>
 
-So far so good, the problem comes when you change the production code to make this test pass, in that momento you'll see how the first test that was asserting that a query string with all the parameters was valid starts to fail (if you check the query string of that tests and the one in the new test, you'll see how they are the same). Not only that, all the previous tests that were asserting that a query string was invalid because a given parameter was lacking won't be "true" anymore because after this change they could fail for more than one reason. 
+So far so good, the problem comes when you change the production code to make this test pass, in that moment you'll see how the first test that was asserting that a query string with all the parameters was valid starts to fail (if you check the query string of that tests and the one in the new test, you'll see how they are the same). Not only that, all the previous tests that were asserting that a query string was invalid because a given parameter was lacking won't be "true" anymore because after this change they could fail for more than one reason. 
 
 So to carry on, you'd need to fix the first test and also change all the previous ones so that they fail again only for the reason described in the test name:
 
