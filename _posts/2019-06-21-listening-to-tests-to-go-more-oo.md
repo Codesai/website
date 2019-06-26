@@ -18,11 +18,13 @@ cross_post_url: https://garajeando.blogspot.com/2019/05/the-curious-case-of-nega
 
 <h3>Introduction. </h3>
 
-blabla
+Recently in the B2B team at [LIFULL Connect](https://www.lifullconnect.com/), we improved the validation of the clicks our API receive using a service that detects whether the clicks were made by a bot or a human being. 
+
+So we used TDD to add this new validation to the previously existing validation that checked if the click contained all mandatory information. This was the resulting code:
 
 <script src="https://gist.github.com/trikitrok/76c9082ae1a3add22e0695f92a658cbc.js"></script>
 
-blabla
+and these were its tests:
 
 <script src="https://gist.github.com/trikitrok/328f80a0c5c8cdc1cbe67e5ac4c51171.js"></script>
 
