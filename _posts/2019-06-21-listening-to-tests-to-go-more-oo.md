@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Going more OO after listening to your tests"
-date: 2019-06-20 08:00:00.000000000 +01:00
+title: "An example of improving a design to have less fragile tests"
+date: 2019-06-27 06:00:00.000000000 +01:00
 type: post
 categories:
   - Testing
@@ -28,11 +28,15 @@ and these were its tests:
 
 <script src="https://gist.github.com/trikitrok/328f80a0c5c8cdc1cbe67e5ac4c51171.js"></script>
 
-blabla
+The problem with these tests is that they know too much. They are coupled to many implementation details. They not only know the concrete validations we apply to a click and the order in which they are applied, but also details about what gets logged when a concrete validations fails. There are multiple axes of change that will make these tests break, which will make them fragile and a future maintanance burden, if changes along those axes are required.
+
+So what might we do about that fragility when those changes come?
 
 <h3>Improving the design to have less fragile tests. </h3>
 
-blabla composing validations blabla
+As we said before the test fragility was hinting to a design problem in the `ClickValidation` code. The problem is that it's concentrating too much knowledge because it's written in a procedural style in which it's querying every concrete validation if the click is ok, combining the result of all concrete validations and knowing when to log a non valid cilck. Those are too many responsibilities for `ClickValidation` and that is causing the fragility in the tests.
+
+We can revert this situation by changing to a more object-oriented implementation in which responsibilities are better distributed. After this change, the new design will compose validations in a way that will result in `ClickValidation` being only in charge of combining the result of a given sequence of validations. Let's see how that design might look:
 
 First we create an interface, `ClickValidator`, that any object that validates clicks should implement:
 
