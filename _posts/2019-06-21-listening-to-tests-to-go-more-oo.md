@@ -18,7 +18,7 @@ cross_post_url: https://garajeando.blogspot.com/2019/05/the-curious-case-of-nega
 
 <h3>Introduction. </h3>
 
-Recently in the B2B team at [LIFULL Connect](https://www.lifullconnect.com/), we improved the validation of the clicks our API receive using a service that detects whether the clicks were made by a bot or a human being. 
+Recently in the B2B team at [LIFULL Connect](https://www.lifullconnect.com/), we improved the validation of the clicks our API receive using a service that detects whether the clicks were made by a bot or a human being.
 
 So we used TDD to add this new validation to the previously existing validation that checked if the click contained all mandatory information. This was the resulting code:
 
@@ -28,13 +28,13 @@ and these were its tests:
 
 <script src="https://gist.github.com/trikitrok/328f80a0c5c8cdc1cbe67e5ac4c51171.js"></script>
 
-The problem with these tests is that they know too much. They are coupled to many implementation details. They not only know the concrete validations we apply to a click and the order in which they are applied, but also details about what gets logged when a concrete validations fails. There are multiple axes of change that will make these tests break, which will make them fragile and a future maintanance burden, if changes along those axes are required.
+The problem with these tests is that they know too much. They are coupled to many implementation details. They not only know the concrete validations we apply to a click and the order in which they are applied, but also details about what gets logged when a concrete validations fails. There are multiple axes of change that will make these tests break, which will make them fragile and a future maintenance burden, if changes along those axes are required.
 
 So what might we do about that fragility when those changes come?
 
 <h3>Improving the design to have less fragile tests. </h3>
 
-As we said before the test fragility was hinting to a design problem in the `ClickValidation` code. The problem is that it's concentrating too much knowledge because it's written in a procedural style in which it's querying every concrete validation if the click is ok, combining the result of all concrete validations and knowing when to log a non valid cilck. Those are too many responsibilities for `ClickValidation` and that is causing the fragility in the tests.
+As we said before the test fragility was hinting to a design problem in the `ClickValidation` code. The problem is that it's concentrating too much knowledge because it's written in a procedural style in which it's querying every concrete validation if the click is ok, combining the result of all concrete validations and knowing when to log a non valid click. Those are too many responsibilities for `ClickValidation` and that is causing the fragility in the tests.
 
 We can revert this situation by changing to a more object-oriented implementation in which responsibilities are better distributed. After this change, the new design will compose validations in a way that will result in `ClickValidation` being only in charge of combining the result of a given sequence of validations. Let's see how that design might look:
 
@@ -42,9 +42,9 @@ First we create an interface, `ClickValidator`, that any object that validates c
 
 <script src="https://gist.github.com/trikitrok/f99484860f82f9dcb04ee2da38ffc39f.js"></script>
 
-Next we create a new class `NoBotClickValidator` that wraps the `BotClickDetector` class. 
+Next we create a new class `NoBotClickValidator` that wraps the `BotClickDetector` class.
 `NoBotClickValidator` not only adapts `BotClickDetector` to implement the `ClickValidator` interface,
-but also enrichs its behavior by taking charge of logging in case the click is not valid. 
+but also enrichs its behavior by taking charge of logging in case the click is not valid.
 
 <script src="https://gist.github.com/trikitrok/c4a928f6f7420a339240f0f52fe4f8b1.js"></script>
 
@@ -58,12 +58,11 @@ Then we refactor the click validation so that the validation is now done by comp
 
 The new validation code has several advantages over the previous one:
 
-* It does not depend on concrete validations any more 
+* It does not depend on concrete validations any more
 * It does not depend on the order in which the validations are made.
-* All details about logging have desappeared from the code.
+* All details about logging have disappeared from the code.
 
-This new version has only one responsibility: it applies several validations in sequence, if all of them are valid, it will accept the click, 
-but if any given validation fails, it will reject the click and stop applying the rest of the validations. If you think about it, it's behaving like an `and` operator.
+This new version has only one responsibility: it applies several validations in sequence, if all of them are valid, it will accept the click, but if any given validation fails, it will reject the click and stop applying the rest of the validations. If you think about it, it's behaving like an `and` operator.
 
 These are the tests for the new version of the click validation:
 
@@ -86,8 +85,7 @@ In this case, the tests were fragile because the code was procedural and had man
 Then we showed how refactoring the original code to be more object-oriented and separating better its responsibilities,
 removed the fragility of the tests.
 
-When faced with this kind of fragility in tests, it's easy and very usual to "blame the mocks", 
+When faced with this kind of fragility in tests, it's easy and very usual to "blame the mocks",
 but, we believe, it would be more productive to *listen to the tests* to notice which improvements in our design they are suggesting.
-If we act on the feedback the tests give us about our design, we can use test doubles in our advantage, as powerful feedback tools 
+If we act on the feedback the tests give us about our design, we can use test doubles in our advantage, as powerful feedback tools
 that help us improve our designs, instead of just suffering them.
-
