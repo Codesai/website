@@ -90,7 +90,7 @@ that help us improve our designs, instead of just suffering them.
 
 **Acknowledgements.**
 
-Many thanks to my <a href="https://codesai.com/">Codesai</a> colleague <a href="https://twitter.com/fran_reyes">Fran Reyes</a> for his feedback on the post, and to my colleagues at [LIFULL Connect](https://www.lifullconnect.com/) for all the mobs we enjoy together.
+Many thanks to my <a href="https://codesai.com/">Codesai</a> colleagues <a href="https://twitter.com/fran_reyes">Fran Reyes</a>, <a href="https://twitter.com/adelatorrefoss">Antonio de la Torre</a> and <a href="https://twitter.com/mjtordesillas">Manuel Tordesillas</a>, and to my <a href="https://twitter.com/deAprendices">Aprendices</a> colleagues <a href="https://twitter.com/pclavijo">Paulo Clavijo</a> and <a href="https://twitter.com/mintxelas">Fermin Saez</a> for their feedback on the post, and to my colleagues at [LIFULL Connect](https://www.lifullconnect.com/) for all the mobs we enjoy together.
 
 **Footnotes**:
 
