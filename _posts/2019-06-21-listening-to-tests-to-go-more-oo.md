@@ -115,6 +115,32 @@ This other version of the tests, on the other hand, keeps protecting the busines
 
 Notice how this version of the tests keeps in its setup the knowledge of which sequence of validations should be used, and how it only uses test doubles for `NoBotClickValidator`.
 
+<h4>4. Avoid exposing internals.</h4>
+
+The fact that we're injecting into `ClickValidation` an object, `ClickParamsValidator`, that we realized we didn't need to double, it's a smell which points to the possibility that `ClickParamsValidator` is an internal detail of `ClickValidation` instead of its peer. So by injecting it, we're coupling `ClickValidation` users, or at least the code that creates it, to an internal detail of `ClickValidation`: `ClickParamsValidator`.
+
+A better version of this code would hide `ClickParamsValidator` by instantiating it inside `ClickValidation`'s constructor:
+
+<script src="https://gist.github.com/trikitrok/e5a538fc19f40e6309ea0d52a91729e3.js"></script>
+
+With this change `ClickValidation` recovers the knowledge of the sequence of validations which in the previous section was located in the code that created `ClickValidation`.
+
+There are some stereotypes that can help us identify real collaborators (peers):
+
+1. **Dependencies**: services that the object needs from its environment so that it can fulfill its responsibilities.
+2. **Notifications**: other parts of the system that need to know when the object changes state or performs an action.
+3. **Adjustments or Policies**: objects that tweak or adapt the object's behaviour to the needs of the system. 
+
+Following these stereotypes, we could argue that `NoBotClickValidator` is also an internal detail of `ClickValidation` and shouldn't be exposed to the tests by injecting it. Hiding it we'd arrive to this other version of `ClickValidation`: 
+
+<script src="https://gist.github.com/trikitrok/70fca43eac0655974e357ee6daabd445.js"></script>
+
+in which we have to inject the real dependencies of the validation, and no internal details are exposed to the client code. This version is very similar to the one we'd have got using tests doubles only for infrastructure. 
+
+The advantage of this version would be that its tests would know the least possible about `ClickValidation`. They'd know only `ClickValidation`'s boundaries marked by the ports injected through its constructor, and ClickValidation`'s public API. That will reduce the coupling between tests and production code, and facilitate refactorings of the validation logic.
+
+The drawback is that the combinations of test cases in `ClickValidationTest` would grow, and may of those test cases would talk about situations happening in the validation boundaries that might be far apart from `ClickValidation`'s callers. This might make the tests hard to understand, specially if some of the validations have a complex logic. When this problem gets severe, we may reduce it by injecting and use test doubles for very complex validators, this is a trade-off in which we decide to accept some coupling with the internal of `ClickValidation` in order to improve the understandability of its tests. In our case, the bot detection was one of those complex components, so we decided to test it separatedly, and inject it in `ClickValidation` so we could double it in `ClickValidation`'s tests, which is why we kept the penultimate version of `ClickValidation`.
+
 <h3>Conclusion. </h3>
 
 In this post, we tried to play with an example to show how *listening to the tests*<a href="#nota4"><sup>[4]</sup></a> we can detect possible design problems, and how we can use that feedback to improve both the design of our code and its tests, when changes that expose those design problems are required.
