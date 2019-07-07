@@ -125,7 +125,7 @@ A better version of this code would hide `ClickParamsValidator` by instantiating
 
 With this change `ClickValidation` recovers the knowledge of the sequence of validations which in the previous section was located in the code that created `ClickValidation`.
 
-There are some stereotypes that can help us identify real collaborators (peers):
+There are some stereotypes that can help us identify real collaborators (peers)<a href="#nota4"><sup>[4]</sup></a>:
 
 1. **Dependencies**: services that the object needs from its environment so that it can fulfill its responsibilities.
 2. **Notifications**: other parts of the system that need to know when the object changes state or performs an action.
@@ -139,23 +139,23 @@ in which we have to inject the real dependencies of the validation, and no inter
 
 The advantage of this version would be that its tests would know the least possible about `ClickValidation`. They'd know only `ClickValidation`'s boundaries marked by the ports injected through its constructor, and ClickValidation`'s public API. That will reduce the coupling between tests and production code, and facilitate refactorings of the validation logic.
 
-The drawback is that the combinations of test cases in `ClickValidationTest` would grow, and may of those test cases would talk about situations happening in the validation boundaries that might be far apart from `ClickValidation`'s callers. This might make the tests hard to understand, specially if some of the validations have a complex logic. When this problem gets severe, we may reduce it by injecting and use test doubles for very complex validators, this is a trade-off in which we decide to accept some coupling with the internal of `ClickValidation` in order to improve the understandability of its tests. In our case, the bot detection was one of those complex components, so we decided to test it separatedly, and inject it in `ClickValidation` so we could double it in `ClickValidation`'s tests, which is why we kept the penultimate version of `ClickValidation`.
+The drawback is that the combinations of test cases in `ClickValidationTest` would grow, and may of those test cases would talk about situations happening in the validation boundaries that might be far apart from `ClickValidation`'s callers. This might make the tests hard to understand, specially if some of the validations have a complex logic. When this problem gets severe, we may reduce it by injecting and use test doubles for very complex validators, this is a trade-off in which we decide to accept some coupling with the internal of `ClickValidation` in order to improve the understandability of its tests. In our case, the bot detection was one of those complex components, so we decided to test it separately, and inject it in `ClickValidation` so we could double it in `ClickValidation`'s tests, which is why we kept the penultimate version of `ClickValidation`.
 
 <h3>Conclusion. </h3>
 
-In this post, we tried to play with an example to show how *listening to the tests*<a href="#nota4"><sup>[4]</sup></a> we can detect possible design problems, and how we can use that feedback to improve both the design of our code and its tests, when changes that expose those design problems are required.
+In this post, we tried to play with an example to show how *listening to the tests*<a href="#nota5"><sup>[5]</sup></a> we can detect possible design problems, and how we can use that feedback to improve both the design of our code and its tests, when changes that expose those design problems are required.
 
 In this case, the initial tests were fragile because the production code was procedural and had too many responsibilities. The tests were fragile also because they were using test doubles for some collaborators when it wasn't worth to do it.
 
 Then we showed how refactoring the original code to be more object-oriented and separating better its responsibilities, could
 remove some of the fragility of the tests. We also showed how reducing the use of test doubles only to those collaborators that really needs to be substituted can improve the tests and reduce their fragility. Finally, we showed how we can go too far in trying to make the tests flexible and robust, and accidentally stop protecting a business rule, and how a less flexible version of the tests can fix that.
 
-When faced with fragility due to coupling between tests and the code being tested caused by using test doubles, it's easy and very usual to "blame the mocks", but, we believe, it would be more productive to *listen to the tests* to notice which improvements in our design they are suggesting. If we act on this feedback the tests doubles give us about our design, we can use tests doubles in our advantage, as powerful feedback tools<a href="#nota5"><sup>[5]</sup></a>,
+When faced with fragility due to coupling between tests and the code being tested caused by using test doubles, it's easy and very usual to "blame the mocks", but, we believe, it would be more productive to *listen to the tests* to notice which improvements in our design they are suggesting. If we act on this feedback the tests doubles give us about our design, we can use tests doubles in our advantage, as powerful feedback tools<a href="#nota6"><sup>[6]</sup></a>,
 that help us improve our designs, instead of just suffering and blaming them.
 
 **Acknowledgements.**
 
-Many thanks to my <a href="https://codesai.com/">Codesai</a> colleagues <a href="https://twitter.com/alfredocasado?lang=en">Alfredo Casado</a>, <a href="https://twitter.com/fran_reyes">Fran Reyes</a>, <a href="https://twitter.com/adelatorrefoss">Antonio de la Torre</a> and <a href="https://twitter.com/mjtordesillas">Manuel Tordesillas</a>, and to my <a href="https://twitter.com/deAprendices">Aprendices</a> colleagues <a href="https://twitter.com/pclavijo">Paulo Clavijo</a> and <a href="https://twitter.com/mintxelas">Fermin Saez</a> for their feedback on the post, and to my colleagues at [LIFULL Connect](https://www.lifullconnect.com/) for all the mobs we enjoy together.
+Many thanks to my <a href="https://codesai.com/">Codesai</a> colleagues <a href="https://twitter.com/alfredocasado?lang=en">Alfredo Casado</a>, <a href="https://twitter.com/fran_reyes">Fran Reyes</a>, <a href="https://twitter.com/adelatorrefoss">Antonio de la Torre</a> and <a href="https://twitter.com/mjtordesillas">Manuel Tordesillas</a>, and to my <a href="https://twitter.com/deAprendices">Aprendices</a> colleagues <a href="https://twitter.com/pclavijo">Paulo Clavijo</a>, <a href="https://twitter.com/alvarobiz?lang=en">Álvaro García</a> and <a href="https://twitter.com/mintxelas">Fermin Saez</a> for their feedback on the post, and to my colleagues at [LIFULL Connect](https://www.lifullconnect.com/) for all the mobs we enjoy together.
 
 **Footnotes**:
 
@@ -172,11 +172,15 @@ Many thanks to my <a href="https://codesai.com/">Codesai</a> colleagues <a href=
 </div>
 
 <div class="foot-note">
-  <a name="nota4"></a> [4] Difficulties in testing might be a hint of design problems. Have a look at this interesting <a href="http://www.mockobjects.com/search/label/listening%20to%20the%20tests">series of posts about listening to the tests</a> by <a href="Steve Freeman">Steve Freeman</a>.
+  <a name="nota4"></a> [4] From <a href="http://www.growing-object-oriented-software.com/">Growing Object-Oriented Software, Guided by Tests</a> > Chapter 6, Object-Oriented Style > Object Peer Stereotypes, page 52. You can also read about these stereotypes in a post by <a href="Steve Freeman">Steve Freeman</a>: <a href="http://www.mockobjects.com/2006/10/different-kinds-of-collaborators.html">Object Collaboration Stereotypes</a>.
 </div>
 
 <div class="foot-note">
-  <a name="nota5"></a> [5] According to <a href="http://www.natpryce.com/">Nat Pryce</a> mocks were designed as a feedback tool for designing OO code following the 'Tell, Don't Ask' principle: "In my opinion it's better to focus on the benefits of different design styles in different contexts (there are usually many in the same system) and what that implies for modularisation and inter-module interfaces. Different design styles have different techniques that are
+  <a name="nota5"></a> [5] Difficulties in testing might be a hint of design problems. Have a look at this interesting <a href="http://www.mockobjects.com/search/label/listening%20to%20the%20tests">series of posts about listening to the tests</a> by <a href="Steve Freeman">Steve Freeman</a>.
+</div>
+
+<div class="foot-note">
+  <a name="nota6"></a> [6] According to <a href="http://www.natpryce.com/">Nat Pryce</a> mocks were designed as a feedback tool for designing OO code following the 'Tell, Don't Ask' principle: "In my opinion it's better to focus on the benefits of different design styles in different contexts (there are usually many in the same system) and what that implies for modularisation and inter-module interfaces. Different design styles have different techniques that are
 most applicable for test-driving code written in those styles, and there are different tools that help you with those techniques. Those tools should give useful feedback about the external and *internal* quality of the system so that programmers can 'listen to the tests'. That's what we -- with the help of many vocal users over many years -- designed jMock to do for 'Tell, Don't Ask' object-oriented design." (from <a href="https://groups.google.com/forum/#!topic/growing-object-oriented-software/dOmOIafFDcI">a conversation in Growing Object-Oriented Software Google Group</a>). <br> <br>I think that if your design follows a different OO style, it might be preferable to stick to a classical TDD style which nearly limits the use of test doubles only to infrastructure and undesirable side-effects.
 </div>
 
