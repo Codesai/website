@@ -39,4 +39,4 @@ Hemos visto como es posible blablablabla en PL/SQL usando utPSQL. Estos tests se
 En el próximo post de esta serie enseñaremos como se pueden aplicar técnicas de refactoring y de diseño blabla para refactorizar el código PL/SQL de la kata Gilded Rose en pequeños pasos de refactoring manteniendo los tests en verde en todo momento.
 
 <h3>Agradecimientos</h3>
-Me gustaría agradecer a mi compañero [Manuel Rivero](https://twitter.com/trikitrok?lang=en) por ayudarme a revisar y editar este post, y a los desarrolladores del equipo de Mutua Tinerfeña por blablabla
+Me gustaría agradecer a mi compañero [Manuel Rivero](https://twitter.com/trikitrok?lang=en) por ayudarme a revisar y editar este post, y a los desarrolladores del equipo de Mutua Tinerfeña por blablabla.
