@@ -8,7 +8,7 @@ categories:
   - PL/SQL
   - Katas
   - Refactoring
-small_image: lala
+small_image: small_bicycle.jpg
 author: Fran Reyes
 ---
 
