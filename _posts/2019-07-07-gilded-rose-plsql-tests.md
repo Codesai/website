@@ -26,13 +26,13 @@ Una de las prácticas que hicimos fue resolver la [kata Gilded Rose en PL/SQL](h
 
 La herramienta que usamos para testear el código PL/SQL fue [utPSQL](http://utplsql.org/about/) que es un framework de testing open-source para PL/SQL and SQL. utPSQL nos permite lanzar los tests de manera muy fácil. 
 
-Para escribir los tests hay que crear un paquete<a href="#nota1"><sup>[1]</sup></a>. En la especificación del paquete hay que añadir una serie de anotaciones, y, por último, escribir en el body el propio test.
+Para escribir los tests hay que crear un paquete<a href="#nota1"><sup>[1]</sup></a>. En la especificación del paquete hay que añadir una serie de anotaciones, y, por último, escribir el propio test en el cuerpo del paquete.
 
-Para lanzar todos los tests desde la base de datos<a href="#nota2"><sup>[2]</sup></a> hay hacer una llamada a la "librería" de la siguiente forma:
+Para lanzar todos los tests desde la base de datos<a href="#nota2"><sup>[2]</sup></a> hay que hacer la siguiente llamada a la "librería":
 
 `begin ut.run(); end;`
 
-Esta llamada buscará en el schema todos los paquetes que contengan las anotaciones y lanzará los tests. Existe la posibilidad de lanzar los tests de un sólo paquete indicándolo como un argumento.
+Esta llamada buscará en el schema todos los paquetes que contengan las anotaciones y lanzará sus tests. Existe también la posibilidad de lanzar sólo los tests de un determinado paquete indicándolo como un argumento.
 
 Estos son los tests para la kata Gilded Rose en PL/SQL:
 <script src="https://gist.github.com/franreyes/037db9310136bfdc189b42025ab77d93.js"></script>
@@ -40,7 +40,7 @@ Estos son los tests para la kata Gilded Rose en PL/SQL:
 Aunque pueda parecer sorprendente, los tests resultantes son bastante legibles. La legibilidad de los tests, en comparación con otras librerías similares, es uno de los puntos a favor de utPSQL.
 
 <h3>Conclusiones</h3> 
-Hemos visto como es posible hacer testing en PL/SQL usando utPSQL. Estos tests crearán una red de seguridad que nos permitirá refactorizar el código preservando el comportamiento. 
+Hemos visto como es posible hacer testing en PL/SQL usando utPSQL. Estos tests crearán una red de seguridad que nos permitirá refactorizar el código, o lo que es lo mismo, mejorar su diseño preservando su comportamiento. 
 
 En el próximo post de esta serie enseñaremos como se pueden aplicar técnicas de refactoring y de diseño para mejorar el código PL/SQL de la kata Gilded Rose en pequeños pasos manteniendo los tests en verde en todo momento.
 
@@ -52,5 +52,5 @@ Me gustaría agradecer a mi compañero [Manuel Rivero](https://twitter.com/triki
 </div>
 
 <div class="foot-note">
-	<a name="nota2"></a> [2] Existe la posibilidad de lanzar los tests desde una términal, lo que permite vincularlo a un sistema de integración continua de manera muy sencilla.
+	<a name="nota2"></a> [2] También existe la posibilidad de lanzar los tests desde una términal, lo que permite vincularlos a un sistema de integración continua de manera muy sencilla.
 </div>
