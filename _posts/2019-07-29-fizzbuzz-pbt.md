@@ -75,7 +75,7 @@ I think the resulting properties are quite readable even if you don't know Cloju
 **Footnotes**:
 
 <div class="foot-note">
-  <a name="nota1"></a> [1] I'm not saying that you should property-based testing with this constraints. They probably make no sense in real cases. The constraints were meant to make it fun.
+  <a name="nota1"></a> [1] I'm not saying that you should do property-based testing with this constraints. They probably make no sense in real cases. The constraints were meant to make doing the kata fun.
 </div>
 
 
