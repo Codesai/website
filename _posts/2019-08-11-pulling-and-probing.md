@@ -54,12 +54,16 @@ Notice that we'are passing to the babla fuinction the probe, the check, the numb
 
 We showed an example of a way of reducing the time your asynchronous tests have to wait for some things to happen while still avoiding false positives and show how the approach can be abstracted and reused in other parts of your code. We're using this helper in several other tests in our code base.
 
-We hope you've fond this approach interesting. If you want to learn more about this and several other techniques to test async code, have a look at the balbla chapter of the wonderful GOOS book by Steve Freeman and Nat Pryce.
+We hope you've fond this approach interesting. If you want to learn more about this and several other techniques to test async code, have a look at the wonderful GOOS book<a href="#nota2"><sup>[2]</sup></a> by Steve Freeman and Nat Pryce.
 
 **Footnotes**:
 
 <div class="foot-note">
   <a name="nota1"></a> [1] I'm not saying that you should property-based testing with this constraints. They probably make no sense in real cases. The constraints were meant to make it fun.
+</div>
+
+<div class="foot-note">
+  <a name="nota2"></a> [2] Have a look at chapter 27: <b>Testing Asynchronous code</b>.
 </div>
 
 
