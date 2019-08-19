@@ -61,14 +61,6 @@ clients:
       url: https://www.aidacanarias.com/
       logo: ../img/logos/domingo_alonso.png
       description: clients/domingo_alonso.html
-    - name: SaludOnNet
-      url: https://www.saludonnet.com/
-      logo: ../img/logos/salud_on_net.png
-      description: clients/salud_on_net.html
-    - name: Antevenio
-      url: http://www.antevenio.com/
-      logo: ../img/logos/antevenio.png
-      description: clients/antevenio.html
     - name: TheMotion
       url: https://www.themotion.com/
       logo: ../img/logos/the_motion.png
