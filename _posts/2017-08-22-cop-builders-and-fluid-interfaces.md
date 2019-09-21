@@ -11,6 +11,7 @@ categories:
   - Refactoring
   - Code Smells
   - Testing
+  - Builders
 author: Manuel Rivero & Alfredo Casado
 small_image: small_builders.jpeg
 written_in: english
