@@ -59,11 +59,13 @@ header {
 
 .course {
   display: flex;
+  justify-content: center;
   max-width: 1024px;
 
   .insights {
     flex-basis: 66%;
 
+    // TODO fix course-label positioning
     .course-label {
       font-family: $lekton;
       display: inline-flex;
@@ -82,10 +84,59 @@ header {
       font-weight: bolder;
       line-height: 1.2;
     }
+
+    .course-description {
+      font-size: 1.5rem;
+    }
+
+    .title {
+      font-family: $lekton;
+      margin-top: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    section p {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem;
+      line-height: 1.5;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid $green;
+    }
   }
 
   .summary {
     flex-basis: 33%;
+    max-width: 297px;
+    max-height: 567px;
+    margin-left: 1rem;
+    border-radius: 5px;
     background-color: $blueish-green;
+
+    .open-course {
+      font-family: $lekton;
+      padding: 1rem 0.5rem;
+      line-height: 1.2;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+
+      .announcement {
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+      }
+
+      .dates {
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+
+      .place {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
