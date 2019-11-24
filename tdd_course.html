@@ -26,7 +26,7 @@ permalink: /tdd-course/
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton&display=swap">
     <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/tdd_course.css' />
 
-    <script src='{{ site.baseurl_root }}/js/vendor/jquery-1.10.2.min.js'></script>
+    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
     <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
     <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
 
@@ -69,7 +69,7 @@ permalink: /tdd-course/
         <div class="course">
             <div class="course-label">Curso</div>
 
-            <div class="information">
+            <div id="course-information" class="information">
                 <div class="insights">
                     <div class="course-title">Test Driven Development (TDD)</div>
                     <div class="course-description">
@@ -108,7 +108,7 @@ permalink: /tdd-course/
                         <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
                     </section>
                 </div>
-                <div class="summary">
+                <div id="course-summary" class="summary">
                     <div class="open-course">
                         <div class="announcement">Próximas fechas en abierto</div>
                         <div class="dates">28-29 Noviembre</div>
@@ -135,4 +135,22 @@ permalink: /tdd-course/
     </div>
 
 </body>
+
+<script>
+    window.addEventListener('scroll', () => {
+        const summaryElement = document.getElementById('course-summary');
+        const courseInformationHeight = document.getElementById('course-information').offsetHeight;
+        const summaryHeight = summaryElement.offsetHeight;
+        const currentScroll = document.documentElement.scrollTop;
+        const scrollableArea = courseInformationHeight - summaryHeight;
+        console.log(courseInformationHeight, summaryHeight, currentScroll, scrollableArea);
+
+        // TODO fix quick scroll
+        if (currentScroll <= 124 || currentScroll > scrollableArea + 124) return;
+
+        const translateYValue = Math.max(0, currentScroll - 124);
+        summaryElement.style.transform = `translateY(${translateYValue}px)`;
+    });
+</script>
+
 </html>
