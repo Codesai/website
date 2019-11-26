@@ -80,9 +80,36 @@ permalink: /tdd-course/
                     <section class="contents">
                         <div class="title"><span>< </span>Contenidos<span> /></span></div>
                         <div class="description">
-                            <p>Oh wau some text here</p>
+                            <div class="daily-agenda">
+                                <div class="day">Primer día</div>
+                                <div class="topics">
+                                    <div class="group"><span>1.</span> Introducción a TDD</div>
+                                    <div class="subgroup"><span>&bull;</span> ¿Por qué TDD?</div>
+                                    <div class="subgroup"><span>&bull;</span> Ciclo de TDD</div>
+
+                                    <div class="group"><span>2. </span>Refactoring & Clean Code</div>
+                                    <div class="subgroup"><span>&bull;</span> Refactoring</div>
+                                    <div class="subgroup"><span>&bull;</span> Code Smells</div>
+                                    <div class="subgroup"><span>&bull;</span> Código habitable</div>
+                                    <div class="subgroup"><span>&bull;</span> Principios de diseño</div>
+                                </div>
+                            </div>
                             <hr>
-                            <p>And some text over here</p>
+                            <div class="daily-agenda">
+                                <div class="day">Segundo día</div>
+                                <div class="topics">
+                                    <div class="group"><span>3. </span>Patrones, sostenibilidad y variaciones del ciclo básico</div>
+
+                                    <div class="group"><span>4. </span>Test doubles</div>
+                                    <div class="subgroup"><span>&bull;</span> Interaction-based testing</div>
+                                    <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
+
+                                    <div class="group"><span>5. </span>Outside-in TDD</div>
+                                    <div class="subgroup"><span>&bull;</span> Ventajas sobre inside-out</div>
+                                    <div class="subgroup"><span>&bull;</span> Classicist vs Mockist</div>
+                                    <div class="subgroup"><span>&bull;</span> Mal uso de los test doubles y consejos para evitarlo</div>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -139,12 +166,11 @@ permalink: /tdd-course/
 
 <script>
     window.addEventListener('scroll', () => {
-        const summaryElement = document.getElementById('course-summary');
         const courseInformationHeight = document.getElementById('course-information').offsetHeight;
+        const summaryElement = document.getElementById('course-summary');
         const summaryHeight = summaryElement.offsetHeight;
         const currentScroll = document.documentElement.scrollTop;
         const scrollableArea = courseInformationHeight - summaryHeight;
-        console.log(courseInformationHeight, summaryHeight, currentScroll, scrollableArea);
 
         // TODO fix flickering on quick scroll. Maybe use anime.js
         let translateYValue = Math.max(0, currentScroll - 124);

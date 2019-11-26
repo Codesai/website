@@ -119,6 +119,46 @@ header {
             line-height: 1.5;
           }
 
+          // TODO adapt flex model for number & title so that two liners & bullets align (ref group 3)
+          &.contents .daily-agenda {
+            display: flex;
+            margin-top: 1rem;
+
+            .day {
+              font-family: $lekton;
+              flex-shrink: 0;
+              width: 166px;
+              font-size: 1.25rem;
+              font-weight: bold;
+              text-transform: uppercase;
+              color: $blueish-green;
+            }
+
+            .topics {
+              font-size: 1.25rem;
+              letter-spacing: 0.025rem;
+
+              .group {
+                font-weight: bold;
+                margin-bottom: 1rem;
+
+                span {
+                  font-size: 1.12rem;
+                  font-weight: bold;
+                  color: $blueish-green;
+                }
+              }
+
+              .subgroup {
+                margin: 0 0 1rem 2rem;
+
+                span {
+                  color: $blueish-green;
+                }
+              }
+            }
+          }
+
           &.where p.unicode {
             margin-top: 1.5rem;
             font-family: $lekton;
