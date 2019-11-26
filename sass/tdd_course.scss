@@ -12,6 +12,7 @@ $blueish-green-to-green-gradient: linear-gradient(180deg, $blueish-green-hex 0%,
 
 $assistant: 'Assistant', sans-serif;
 $lekton: 'Lekton', sans-serif;
+$signika: 'Signika', sans-serif;
 
 body {
   font-family: $assistant;
@@ -71,6 +72,12 @@ header {
     margin-top: 2rem;
     font-size: 2rem;
     font-weight: bold;
+
+    span {
+      font-family: $signika;
+      color: $blueish-green;
+      font-weight: lighter;
+    }
   }
 
   .course {
@@ -130,7 +137,7 @@ header {
         width: 297px;
         height: 567px;
         margin-left: 2rem;
-        border-radius: 5px;
+        border-radius: 20px;
         background: $blueish-green-to-green-gradient;
 
         .open-course {
