@@ -61,6 +61,23 @@ header {
   }
 }
 
+.codesai-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+  background-color: black;
+
+  .content {
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: white;
+  }
+}
+
 .course-page {
   display: flex;
   flex-direction: column;
@@ -180,26 +197,77 @@ header {
         border-radius: 20px;
         background: $blueish-green-to-green-gradient;
 
-        .open-course {
-          font-family: $lekton;
-          padding: 1rem 0.5rem;
-          line-height: 1.2;
-          text-align: center;
-          font-weight: bold;
-          color: white;
+        .padded-area {
+          padding: 1rem;
 
-          .announcement {
-            margin-bottom: 0.5rem;
-            font-size: 1.25rem;
+          .codesai-button {
+            display: flex;
           }
 
-          .dates {
-            font-size: 2rem;
-            text-transform: uppercase;
+          .open-course {
+            font-family: $lekton;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+
+            .announcement {
+              margin-bottom: 0.5rem;
+              font-size: 1.25rem;
+            }
+
+            .dates {
+              font-size: 2rem;
+              text-transform: uppercase;
+            }
+
+            .place {
+              font-size: 1.5rem;
+            }
           }
 
-          .place {
-            font-size: 1.5rem;
+          .hint {
+            display: flex;
+            margin-bottom: 1.25rem;
+
+            .icon {
+              flex-shrink: 0;
+              width: 38px;
+            }
+
+            .info {
+              font-size: 1.125rem;
+
+              &.download {
+                align-self: center;
+                padding: 1px;
+                border-bottom: 2px solid white;
+              }
+
+              .highlight {
+                font-family: $signika;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                span {
+                  font-size: 1rem;
+                  font-weight: normal;
+                }
+              }
+
+              .detail {
+                line-height: 1.75rem;
+
+                & + .highlight {
+                  margin-top: 0.75rem;
+                }
+
+                span {
+                  font-weight: bold;
+                }
+              }
+            }
           }
         }
       }
