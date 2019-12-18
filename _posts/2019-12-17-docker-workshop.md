@@ -21,7 +21,7 @@ So I was the person in charge to prepare it. And here I would like to share a wa
 
 # Learn by doing
 
-I really believe in the philosophy for learning new things is tighly related with practise, practise, practise... And that's also in Codesai's DNA, so I wanted to ideate a way to explain a bit of theory of Docker and exercises to apply that theory. The theory I explained answers the following:
+I really believe in the philosophy for learning new things is tighly related with practice, practice, practice... And that's also in Codesai's DNA, so I wanted to ideate a way to explain a bit of theory of Docker and exercises to apply that theory. The theory I explained answers the following:
 
 - The whys:
   - Why Docker?
