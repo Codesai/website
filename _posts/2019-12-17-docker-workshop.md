@@ -15,13 +15,13 @@ written_in: english
 
 # Introduction
 
-In my current client we are having some time to learn new things outside of our current context/stack. The people on the team asked for an introduction to Docker because I introduced it for our CI and some local testing to remove connecting to real environments from the local machines to run the integration tests.
+In one of our current clients we are having some learning time for new things outside of our current context/stack. One of the proposals of the team was a Docker workshop because I introduced it for our CI and our local testing environments to avoid connecting to production from the local machines to run the our tests.
 
-So I was the person designated to do it. And here I want to share the way to learn Docker from scratch I thought myself.
+So I was the person designated to prepare it. And here I want to share the way to learn Docker from scratch I thought myself.
 
 # Learn by doing
 
-I really believe in the philosophy for learning new things is tighly related with practise, practise, practise... And that's also Codesai DNA, so I wanted to ideate an idea to share some initial context with a some theory of Docker. To answer:
+I really believe in the philosophy for learning new things is tighly related with practise, practise, practise... And that's also Codesai DNA, so I wanted to ideate a way to explain a bit of theory of Docker and exercises to apply that theory. The theory I explained answers the following:
 
 - The whys:
   - Why Docker?
@@ -32,11 +32,11 @@ I really believe in the philosophy for learning new things is tighly related wit
   - How Docker improve the previous problem?
   - How Docker can help us?
 
-After that I wanted to create an small exercise where the people could assemble two different applications with different languages and let them see one of the advantages of Docker. **Removing the complexity on dedicated infrastructure** for a concrete language/stack.
+And the small exercise consist on assembling two different applications with different languages and let people see one of the advantages of Docker. **Removing the complexity of dedicated infrastructure** for a concrete language/stack.
 
-And for the last trick I wanted them to see how easy is to build, push an image and publish your Docker container in a famous service as Heroku. So in the last part of the workshop we do that explained with some easy steps that can be also found on the README of the Heroku folder.
+And for the last trick I wanted them to see how easy is to build, push an image and publish your Docker container in a famous service like Heroku. So in the last part of the workshop we do that. The steps explaining how to do publish your app on Heroku can be also found on the README file inside of the *heroku/* folder from the root of the repository.
 
-So I want you to check it yourself and bring me some feedback and enjoy what I prepared too. **Let's Dockerize everything!!**.
+So I want you to check it yourself and bring me some feedback and enjoy what I prepared. **Let's Dockerize everything!!**.
 
-Here is the repository with the content and the exercises. **Each folder has a README.md** explaining what to do. The main README.md is just theory of Docker. Enjoy! [Docker Workshop Repo](https://github.com/Groxalf/docker-workshop)
+Here is the repository with the content and the exercises. **Each folder has a README.md** explaining what to do. The main README.md is just the theory of Docker. Enjoy! [Docker Workshop Repo](https://github.com/Groxalf/docker-workshop)
 
