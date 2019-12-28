@@ -2,7 +2,7 @@
 layout: post
 title: "Me vuelvo a Subversion!"
 type: post
-date: 2019-12-27 18:00:00.000000000 +01:00
+date: 2019-12-28 10:00:00.000000000 +01:00
 small_image: svn-meme.jpg
 author: Alfredo Casado
 ---
