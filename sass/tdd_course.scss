@@ -324,8 +324,37 @@ header {
       }
 
       .contact {
+        display: flex;
+        flex-direction: column;
         flex-basis: 50%;
         padding-left: 1.5rem;
+
+        .field {
+          display: flex;
+          margin-bottom: 1rem;
+          flex-direction: column;
+
+          label {
+            margin-bottom: 0.25rem;
+            font-size: 1.2rem;
+            color: white;
+          }
+
+          input {
+            font-family: $assistant;
+            padding: 0.6rem 0.8rem;
+            font-size: 1rem;
+            border: none;
+          }
+
+          textarea {
+            font-family: $assistant;
+            padding: 0.6rem 0.8rem;
+            font-size: 1rem;
+            resize: none;
+            border: none;
+          }
+        }
       }
     }
   }
