@@ -69,6 +69,10 @@ header {
   border-radius: 20px;
   background-color: black;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   .content {
     font-size: 1.125rem;
     font-weight: bold;
@@ -354,6 +358,11 @@ header {
             resize: none;
             border: none;
           }
+        }
+
+        .codesai-button {
+          margin-top: 0.5rem;
+          max-width: 220px;
         }
       }
     }
