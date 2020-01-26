@@ -25,6 +25,7 @@ permalink: /tdd-course/
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=swap">
+    <link rel='stylesheet' href='/css/ionicons.min.css' />
     <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/tdd_course.css' />
 
     <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
@@ -222,12 +223,38 @@ permalink: /tdd-course/
                                   placeholder="Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto"></textarea>
                     </div>
 
-                    <div class="codesai-button" onclick="submitContactForm()">
+                    <div id="submit-contact-form" class="codesai-button" tabindex="0" onclick="submitContactForm()">
                         <div class="content">Enviar</div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="logo">
+                <img src="{{ site.baseurl_root }}/assets/logos/codesai_logo_green_white.svg" alt="">
+            </div>
+            <div class="links">
+                <div class="social">
+                    <a href="https://twitter.com/codesaidev">
+                        <i class="ion-social-twitter"></i>
+                    </a>
+                    <a href="https://twitter.com/codesaidev">
+                        <i class="ion-social-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/codesaidev">
+                        <i class="ion-social-rss"></i>
+                    </a>
+                </div>
+                <div class="legal">
+                    <a href="/legal-advertisement">Aviso Legal</a>
+                    &bull;
+                    <a href="/cookie-policy">Política de Cookies</a>
+                    &bull;
+                    <a href="/privacy-policy">Política de Privacidad</a>
+                </div>
+            </div>
+        </footer>
     </div>
 
 </body>
@@ -248,6 +275,16 @@ permalink: /tdd-course/
 
         summaryElement.style.transform = `translateY(${translateYValue}px)`;
     });
+
+    const submitContactFormButton = document.getElementById("submit-contact-form");
+    if (submitContactFormButton) {
+        submitContactFormButton.addEventListener('keyup', (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                submitContactFormButton.click();
+            }
+        });
+    }
 
     function submitContactForm() {
         const email = document.getElementById('email').value;
