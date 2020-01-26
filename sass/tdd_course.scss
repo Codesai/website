@@ -126,12 +126,12 @@ header {
         }
 
         .course-description {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
         }
 
         section {
           p {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             margin: 0 0 0.5rem;
             line-height: 1.5;
           }
@@ -152,7 +152,7 @@ header {
             }
 
             .topics {
-              font-size: 1.25rem;
+              font-size: 1.15rem;
               letter-spacing: 0.025rem;
 
               .group {
@@ -291,9 +291,42 @@ header {
     }
   }
 
-  .call-to-action {
+  .call-to-action-wrapper {
+    display: flex;
+    justify-content: center;
     height: 500px;
     width: 100%;
     background: $blueish-green-to-green-gradient;
+
+    .call-to-action {
+      display: flex;
+      max-width: 945px;
+      margin-top: 3rem;
+
+      .message {
+        flex-basis: 50%;
+        padding-right: 1.5rem;
+
+        .highlight {
+          font-family: $lekton;
+          margin-bottom: 1rem;
+          font-size: 2.2rem;
+          font-weight: bolder;
+          line-height: 1.2;
+          color: white;
+        }
+
+        p {
+          margin: 0 0 0.5rem;
+          font-size: 1.15rem;
+          line-height: 1.5;
+        }
+      }
+
+      .contact {
+        flex-basis: 50%;
+        padding-left: 1.5rem;
+      }
+    }
   }
 }
