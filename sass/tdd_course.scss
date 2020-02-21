@@ -123,12 +123,25 @@ header {
       text-transform: uppercase;
       color: $blueish-green;
       border: 1px solid $blueish-green;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        display: none;
+      }
     }
 
     .information {
       display: flex;
+      padding: 0 1rem;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: column;
+      }
 
       .insights {
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          order: 2;
+        }
 
         .course-title {
           font-family: $lekton;
@@ -152,6 +165,7 @@ header {
           // TODO adapt flex model for number & title so that two liners & bullets align (ref group 3)
           &.contents .daily-agenda {
             display: flex;
+            flex-direction: column;
             margin-top: 1rem;
 
             .day {
@@ -165,6 +179,7 @@ header {
             }
 
             .topics {
+              margin: 1rem 0 0 2rem;
               font-size: 1.15rem;
               letter-spacing: 0.025rem;
 
@@ -209,6 +224,10 @@ header {
         margin-left: 2rem;
         border-radius: 20px;
         background: $blueish-green-to-green-gradient;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          order: 1;
+        }
 
         .padded-area {
           padding: 1rem;
@@ -315,12 +334,12 @@ header {
 
     .call-to-action {
       display: flex;
-      max-width: $max-page-width;
+      padding: 0 1rem;
       margin-top: 3rem;
+      max-width: $max-page-width;
 
       @media screen and (max-width: $max-width-breakpoint) {
         flex-direction: column;
-        padding: 0 2rem;
         max-width: 640px;
       }
 
