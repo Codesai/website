@@ -333,24 +333,27 @@ header {
   .call-to-action-wrapper {
     display: flex;
     justify-content: center;
-    min-height: 500px;
     width: 100%;
     background: $blueish-green-to-green-gradient;
 
     .call-to-action {
       display: flex;
-      padding: 0 1rem;
-      margin-top: 3rem;
+      margin: 3rem 1rem;
       max-width: $max-page-width;
 
       @media screen and (max-width: $max-width-breakpoint) {
         flex-direction: column;
-        max-width: 640px;
+        max-width: 560px;
       }
 
       .message {
         flex-basis: 50%;
         padding-right: 1.5rem;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          flex-basis: 100%;
+          padding-right: 0;
+        }
 
         .highlight {
           font-family: $lekton;
@@ -375,6 +378,7 @@ header {
         padding-left: 1.5rem;
 
         @media screen and (max-width: $max-width-breakpoint) {
+          align-items: center;
           flex-basis: 100%;
           padding-left: 0;
         }
@@ -383,6 +387,10 @@ header {
           display: flex;
           margin-bottom: 1rem;
           flex-direction: column;
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            width: 100%;
+          }
 
           label {
             margin-bottom: 0.25rem;
@@ -409,6 +417,10 @@ header {
         .codesai-button {
           margin-top: 0.5rem;
           max-width: 220px;
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            width: 100%;
+          }
         }
       }
     }
