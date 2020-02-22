@@ -78,6 +78,10 @@ permalink: /tdd-course/
                         TDD es una técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayoría del tiempo bajo supervisión y guía del experto.
                     </div>
 
+                    <div class="summary mobile">
+                        {% include course-summaries/tdd-course.html %}
+                    </div>
+
                     <section class="contents">
                         <div class="title"><span>// </span>Contenidos</div>
                         <div class="description">
@@ -137,49 +141,8 @@ permalink: /tdd-course/
                         <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
                     </section>
                 </div>
-                <div id="course-summary" class="summary">
-                    <div class="padded-area">
-                        <div class="open-course">
-                            <div class="announcement">Próximas fechas en abierto</div>
-                            <div class="dates">28-29 Noviembre</div>
-                            <div class="place">Madrid y Barcelona</div>
-                        </div>
-
-                        <div class="hint">
-                            <div class="icon">
-                                <img src="/assets/icons/clock.svg" alt="course schedule">
-                            </div>
-                            <div class="info">
-                                <div class="highlight">2 días intensivos</div>
-                                <div class="detail">Jornada completa</div>
-                            </div>
-                        </div>
-
-                        <div class="hint">
-                            <div class="icon">
-                                <img src="/assets/icons/euro.svg" alt="course pricing">
-                            </div>
-                            <div class="info">
-                                <div class="highlight">In house: 450€ / <span>persona</span></div>
-                                <div class="detail">(I.V.A no incluido)</div>
-                                <div class="highlight">En abierto: 390€ / <span>persona</span></div>
-                                <div class="detail">(I.V.A no incluido. <span>50% de descuento</span> para colectivos poco representados en la tecnología)</div>
-                            </div>
-                        </div>
-
-                        <div class="hint">
-                            <div class="icon">
-                                <img src="/assets/icons/download.svg" alt="download course program">
-                            </div>
-                            <div class="info download">
-                                <div class="highlight">Descargar programa</div>
-                            </div>
-                        </div>
-
-                        <div class="codesai-button">
-                            <div class="content">¡Estoy interesada!</div>
-                        </div>
-                    </div>
+                <div id="course-summary-dektop" class="summary desktop">
+                    {% include course-summaries/tdd-course.html %}
                 </div>
             </div>
         </div>
