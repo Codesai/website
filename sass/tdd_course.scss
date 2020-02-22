@@ -223,10 +223,7 @@ header {
       .summary {
         flex-shrink: 0;
         width: 297px;
-        height: fit-content;
         margin-left: 2rem;
-        border-radius: 20px;
-        background: $blueish-green-to-green-gradient;
 
         @media screen and (max-width: $max-width-breakpoint) {
           order: 1;
@@ -237,6 +234,8 @@ header {
 
         .padded-area {
           padding: 1rem 1rem 1.5rem 1rem;
+          background: $blueish-green-to-green-gradient;
+          border-radius: 20px;
 
           .codesai-button {
             display: flex;
