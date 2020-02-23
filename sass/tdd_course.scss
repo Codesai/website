@@ -32,7 +32,7 @@ header {
   align-items: center;
   width: 100%;
   height: 75px;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   background-color: $blueish-gray;
 
   .logo {
@@ -112,22 +112,6 @@ header {
 
   .course {
     max-width: $max-page-width;
-
-    .course-label {
-      font-family: $lekton;
-      display: inline-flex;
-      padding: 0.3rem 0.75rem 0.05rem;
-      margin-bottom: 1rem;
-      font-weight: bold;
-      letter-spacing: 0.2rem;
-      text-transform: uppercase;
-      color: $blueish-green;
-      border: 1px solid $blueish-green;
-
-      @media screen and (max-width: $max-width-breakpoint) {
-        display: none;
-      }
-    }
 
     .information {
       display: flex;
