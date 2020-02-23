@@ -65,10 +65,18 @@ permalink: /tdd-course/
             <a href=""><span>Publicaciones</span></a>
             <a href=""><span>Contacto</span></a>
         </div>
-        <div class="mobile-menu-icon">
+        <div id="mobile-menu-trigger" class="mobile-menu-icon">
             <img src="/assets/icons/mobile-menu-icon.svg" alt="mobile menu icon">
         </div>
     </header>
+
+    <div id="mobile-menu" class="mobile-links">
+        <a href=""><span>Equipo</span></a>
+        <a href=""><span>Clientes</span></a>
+        <a href=""><span>Formación</span></a>
+        <a href=""><span>Publicaciones</span></a>
+        <a href=""><span>Contacto</span></a>
+    </div>
 
     <div class="course-page">
         <div class="course">
@@ -240,6 +248,16 @@ permalink: /tdd-course/
     //
     //     summaryElement.style.transform = `translateY(${translateYValue}px)`;
     // });
+
+    const mobileMenuTrigger = document.getElementById("mobile-menu-trigger");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileMenuTrigger) {
+        mobileMenuTrigger.addEventListener("click", _ => {
+            if (mobileMenu) {
+                mobileMenu.style.display = mobileMenu.style.display === "none" ? "flex" : "none";
+            }
+        })
+    }
 
     const submitContactFormButton = document.getElementById("submit-contact-form");
     if (submitContactFormButton) {
