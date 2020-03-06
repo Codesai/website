@@ -1,0 +1,141 @@
+---
+title: Codesai
+permalink: /new-home
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
+
+    <meta property="og:site_name" content="Codesai">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
+    <link rel='stylesheet' href='/css/ionicons.min.css' />
+    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
+
+    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
+    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
+    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
+
+    <script>
+        function saveCookie() {
+            Cookie('codesai').save();
+            $('.cookie-message').hide();
+        }
+
+        $(document).ready(function() {
+            if (Cookie('codesai').exists()) {
+                return;
+            }
+            $('.cookie-message').show();
+        });
+    </script>
+
+    {% if site.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+
+</head>
+
+<body>
+
+{% include new-header.html %}
+
+<main class="home">
+    <div class="hero">
+        <div>
+            <h1>Software y formación de calidad</h1>
+            <div><span>//</span>¿Buscas cómo optimizar tus proyectos? Contáctanos</div>
+            <div><span>//</span>Somos un equipo de alto rendimiento que busca la</div>
+            <div><span>//</span>mejora continua de sí mismo y de su entorno</div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="description">
+            <div class="text">
+                <h2 class="section-title">Parte de tu equipo</h2>
+                <p>
+                    En Codesai creemos firmemente que los mejores resultados se obtienen colaborando de manera muy cercana con los equipos internos de cada compañía. Por eso, nos gusta formar parte de ellos, enseñándoles de primera mano a mejorar sus procesos y desarrollar mejor código. Compartimos sus logros, frustraciones, dudas... sin olvidarnos de crear un buen ambiente de trabajo y sacar lo mejor de cada uno.
+                </p>
+                <p>
+
+                    Además, somos perfiles muy polivalentes, lo que nos permite afrontar el lanzamiento de productos de manera muy completa, desde lo más básico hasta fases más avanzadas.
+                </p>
+            </div>
+            <div class="image">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81RfjOhvMrL.png" alt="">
+            </div>
+        </div>
+        <div class="clients">
+            <h3>// Empresas que ya han confiado en nosotros</h3>
+            <div>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81RfjOhvMrL.png" alt="">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81RfjOhvMrL.png" alt="">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81RfjOhvMrL.png" alt="">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81RfjOhvMrL.png" alt="">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81RfjOhvMrL.png" alt="">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81RfjOhvMrL.png" alt="">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81RfjOhvMrL.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <h2 class="section-title">Nuestros servicios</h2>
+        <div class="catalogue">
+            <div class="section">
+                <div class="info">
+                    <h3>Desarrollo de software</h3>
+                    <p>Analizamos el problema hasta dar con la solución adecuada.</p>
+                    <p>De alta calidad</p>
+                    <p>Fácil de adaptar</p>
+                    <p>Barato de mantener</p>
+                    <p>Cobertura de test</p>
+                </div>
+                <a href="/">
+                    <div class="codesai-button"><div class="content">Ver proyectos</div></div>
+                </a>
+            </div>
+            <div class="section">
+                <div class="info">
+                    <h3>Formación presencial</h3>
+                    <p>Con la ayuda de nuestros cursos, cientos de developers han aprendido a mejorar su código.</p>
+                    <p>A medida del cliente</p>
+                    <p>In-house y en abierto</p>
+                    <p>Expertos en TDD, Refactoring y BDD</p>
+                </div>
+                <a href="/"><div class="codesai-button">Ver cursos</div></a>
+            </div>
+            <div class="section">
+                <div class="info">
+                    <h3>Asesoramiento y apoyo</h3>
+                    <p>Con nosotros, tu empresa llegará más lejos. Te ayudaremos a:</p>
+                    <p>Mejorar y desatascar tus proyectos</p>
+                    <p>Hacer y motivar equipos</p>
+                    <p>Escribir mejor código</p>
+                </div>
+                <p>Definir requisitos más claros</p>
+                <a href="/"><div class="codesai-button">Casos de éxito</div></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include new-footer.html %}
+
+</body>
+</html>

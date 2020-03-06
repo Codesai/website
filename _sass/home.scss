@@ -1,0 +1,111 @@
+
+.home {
+
+  h2.section-title {
+    font-family: $lekton;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+  }
+  .hero {
+    background-color: $blueish-green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+    div {
+      font-family: $lekton;
+      font-size: 1.5rem;
+
+      h1 {
+        margin: 0;
+        font-size: 2.75rem;
+        line-height: 4rem;
+      }
+
+      span {
+        color: white;
+        font-weight: bolder;
+        margin-right: 0.6rem;
+      }
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 6rem;
+
+    .description {
+      display: flex;
+      flex-direction: row;
+
+      .text {
+        padding-top: 3rem;
+        p {
+          font-size: 1rem;
+        }
+      }
+      .image {
+        img {
+          width: 256px;
+        }
+      }
+    }
+
+    .clients {
+      h3 {
+        color: $blueish-green;
+        font-size: 1.75rem;
+        font-family: $lekton;
+      }
+
+      div {
+        display: flex;
+        flex-flow: row wrap;
+
+        img {
+          padding: 0.5rem;
+          width: 128px;
+        }
+      }
+    }
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem;
+
+    .catalogue {
+      display: flex;
+      flex-direction: row;
+      border-radius: 20px;
+      box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        justify-content: space-between;
+        margin: 1rem 0;
+        padding: 0 1rem;
+        border-right: 1px solid $green;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        h2 {
+          margin-top: 0;
+        }
+
+        .codesai-button {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
