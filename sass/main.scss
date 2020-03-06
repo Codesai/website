@@ -1,0 +1,34 @@
+---
+---
+
+// TODO Make the download program link work (for the TDD course)
+// TODO call to action toastr instead of alert xD
+
+$max-page-width: 945px;
+$max-width-breakpoint: 1024px;
+
+$green: rgba(52, 235, 134, 1);
+$blueish-green: rgba(51, 235, 180, 1);
+$blueish-gray: rgba(41, 41, 46, 1);
+
+$green-hex: #34EB86;
+$blueish-green-hex: #33EBB4;
+
+$blueish-green-to-green-gradient: linear-gradient(180deg, $blueish-green-hex 0%, $green-hex 100%);
+
+$assistant: 'Assistant', sans-serif;
+$lekton: 'Lekton', sans-serif;
+$signika: 'Signika', sans-serif;
+
+body {
+  font-family: $assistant;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "../_sass/header";
+@import "../_sass/footer";
+@import "../_sass/tdd_course";
