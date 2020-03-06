@@ -54,31 +54,7 @@ permalink: /tdd-course/
 
 <body>
 
-    <header>
-        <div class="logo">
-            <a href="/">
-                <img src="{{ site.baseurl_root }}/assets/logos/codesai_logo_green_white.svg" alt="Codesai logo">
-            </a>
-        </div>
-        <div class="links">
-            <a href="/#team"><span>Equipo</span></a>
-            <a href="/clients"><span>Clientes</span></a>
-            <a href="/curso-de-tdd"><span>Formación</span></a>
-            <a href="/publications"><span>Publicaciones</span></a>
-            <a href="#call-to-action"><span>Contacto</span></a>
-        </div>
-        <div id="mobile-menu-trigger" class="mobile-menu-icon">
-            <img src="/assets/icons/mobile-menu-icon.svg" alt="mobile menu icon">
-        </div>
-    </header>
-
-    <div id="mobile-menu" class="mobile-links">
-        <a href="/#team"><span>Equipo</span></a>
-        <a href="/clients"><span>Clientes</span></a>
-        <a href="/curso-de-tdd"><span>Formación</span></a>
-        <a href="/publications"><span>Publicaciones</span></a>
-        <a href="#call-to-action"><span>Contacto</span></a>
-    </div>
+    {% include new-header.html %}
 
     <div class="course-page">
         <div class="course">
@@ -204,35 +180,9 @@ permalink: /tdd-course/
                 </div>
             </div>
         </div>
-
-        <footer>
-            <div class="logo">
-                <a href="/">
-                    <img src="{{ site.baseurl_root }}/assets/logos/codesai_logo_green_white.svg" alt="Codesai logo">
-                </a>
-            </div>
-            <div class="links">
-                <div class="social">
-                    <a href="https://twitter.com/codesaidev">
-                        <i class="ion-social-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/codesai">
-                        <i class="ion-social-linkedin"></i>
-                    </a>
-                    <a href="/atom.xml">
-                        <i class="ion-social-rss"></i>
-                    </a>
-                </div>
-                <div class="legal">
-                    <a href="/legal-advertisement">Aviso Legal</a>
-                    <span>&bull;</span>
-                    <a href="/cookie-policy">Política de Cookies</a>
-                    <span>&bull;</span>
-                    <a href="/privacy-policy">Política de Privacidad</a>
-                </div>
-            </div>
-        </footer>
     </div>
+
+    {% include new-footer.html %}
 
 </body>
 
@@ -252,16 +202,6 @@ permalink: /tdd-course/
     //
     //     summaryElement.style.transform = `translateY(${translateYValue}px)`;
     // });
-
-    const mobileMenuTrigger = document.getElementById("mobile-menu-trigger");
-    const mobileMenu = document.getElementById("mobile-menu");
-    if (mobileMenuTrigger) {
-        mobileMenuTrigger.addEventListener("click", _ => {
-            if (mobileMenu) {
-                mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
-            }
-        });
-    }
 
     const submitContactFormButton = document.getElementById("submit-contact-form");
     if (submitContactFormButton) {
