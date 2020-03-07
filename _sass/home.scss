@@ -52,6 +52,7 @@
         padding: 3rem 2rem 2rem 0;
 
         p {
+          margin-top: 0;
           font-size: 1.1rem;
           line-height: 1.6;
         }
@@ -67,19 +68,20 @@
 
     .clients {
 
-      h3 {
-        color: $blueish-green;
-        font-size: 1.75rem;
+      .trusted-by {
         font-family: $lekton;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $blueish-green;
       }
 
       div {
         display: flex;
         flex-flow: row wrap;
+        align-items: flex-end;
 
         img {
-          padding: 0.5rem;
-          width: 128px;
+          margin: 0.5rem 1rem;
         }
       }
     }
