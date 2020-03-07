@@ -1,18 +1,23 @@
 
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h2.section-title {
     font-family: $lekton;
     font-size: 2.5rem;
+    font-weight: bold;
     margin: 0.5rem 0;
   }
 
   .hero {
-    background-color: $blueish-green;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
+    padding: 3rem 1rem;
+    width: 100%;
+    background-color: $blueish-green;
 
     div {
       font-family: $lekton;
@@ -35,17 +40,20 @@
   .about {
     display: flex;
     flex-direction: column;
-    padding: 0 6rem;
+    padding: 0 1rem;
+    max-width: $max-page-width;
 
     .description {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
 
       .text {
-        padding-top: 3rem;
+        padding: 3rem 2rem 2rem 0;
 
         p {
-          font-size: 1rem;
+          font-size: 1.1rem;
+          line-height: 1.6;
         }
       }
 
