@@ -20,6 +20,10 @@ $assistant: 'Assistant', sans-serif;
 $lekton: 'Lekton', sans-serif;
 $signika: 'Signika', sans-serif;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $assistant;
   margin: 0;
