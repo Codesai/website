@@ -96,6 +96,7 @@
     flex-direction: column;
     max-width: $max-page-width;
     padding: 0 1rem;
+    margin-bottom: 3rem;
 
     .catalogue {
       display: flex;
@@ -108,12 +109,33 @@
         flex-direction: column;
         flex: 1 1 0;
         justify-content: space-between;
-        margin: 1rem 0;
-        padding: 0 1rem;
-        border-right: 1px solid $green;
+        margin: 1.25rem 0;
+        padding: 0 1.75rem;
+        border-right: 1px dotted $green;
 
         &:last-child {
           border-right: none;
+        }
+
+        .info {
+
+          .type {
+            font-family: $lekton;
+            font-size: 2rem;
+            font-weight: bolder;
+            line-height: 1.15;
+            margin-bottom: 0.5rem;
+          }
+
+          .codesai-button {
+            .content {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        a {
+          margin-top: 1rem;
         }
 
         h2 {
