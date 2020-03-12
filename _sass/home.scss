@@ -49,8 +49,17 @@
       flex-direction: row;
       justify-content: space-between;
 
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: column;
+      }
+
       .text {
         padding: 3rem 2rem 2rem 0;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          order: 2;
+          padding: 2rem 0;
+        }
 
         p {
           margin-top: 0;
@@ -60,9 +69,16 @@
       }
 
       .image {
+        display: flex;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          justify-content: center;
+          order: 1;
+          margin-top: 2rem;
+        }
 
         img {
-          width: 256px;
+          width: 320px;
         }
       }
     }
