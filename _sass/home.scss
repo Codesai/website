@@ -198,7 +198,28 @@
     }
 
     .image img {
+      margin-top: 1.5rem;
       width: 320px;
+    }
+
+    .description {
+      padding-left: 2rem;
+
+      .section-title {
+        margin: 0 0 1rem 0;
+        line-height: 1.25;
+      }
+
+      p {
+        margin-top: 0;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .codesai-button {
+        margin-top: 0.5rem;
+        width: 312px;
+      }
     }
 
     > div {
@@ -207,10 +228,6 @@
 
       @media screen and (max-width: $max-width-breakpoint) {
         align-items: center;
-      }
-
-      .codesai-button {
-        width: 312px;
       }
     }
   }
