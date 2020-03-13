@@ -191,6 +191,10 @@
     padding: 0 1rem;
     max-width: $max-page-width;
     margin: 3rem 0;
+
+    .codesai-button {
+      width: 256px;
+    }
   }
 }
 
