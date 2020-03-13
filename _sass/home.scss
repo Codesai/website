@@ -194,7 +194,6 @@
 
     @media screen and (max-width: $max-width-breakpoint) {
       flex-direction: column;
-      margin: 0 0 1rem;
     }
 
     .image {
@@ -217,6 +216,10 @@
     .description {
       padding-left: 2rem;
 
+      @media screen and (max-width: $max-width-breakpoint) {
+        padding-left: 0;
+      }
+
       .section-title {
         margin: 0 0 1rem 0;
         line-height: 1.25;
@@ -228,9 +231,17 @@
         line-height: 1.6;
       }
 
-      .codesai-button {
+      .button {
         margin-top: 0.5rem;
-        width: 312px;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          display: flex;
+          justify-content: center;
+        }
+
+        .codesai-button {
+          width: 312px;
+        }
       }
     }
   }
