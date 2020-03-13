@@ -192,15 +192,19 @@
     max-width: $max-page-width;
     margin: 3rem 0;
 
-
     @media screen and (max-width: $max-width-breakpoint) {
       flex-direction: column;
       margin: 0 0 1rem;
     }
 
+    .image img {
+      width: 320px;
+    }
+
     > div {
       display: flex;
       flex-direction: column;
+
       @media screen and (max-width: $max-width-breakpoint) {
         align-items: center;
       }
