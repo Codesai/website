@@ -129,7 +129,7 @@ permalink: /tdd-course/
                         <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
                     </section>
                 </div>
-                <div id="course-summary-dektop" class="summary desktop">
+                <div class="summary desktop">
                     {% include course-summaries/tdd-course.html %}
                 </div>
             </div>
@@ -187,21 +187,6 @@ permalink: /tdd-course/
 </body>
 
 <script>
-    // window.addEventListener('scroll', () => {
-    //     const courseInformationHeight = document.getElementById('course-information').offsetHeight;
-    //     const summaryElement = document.getElementById('course-summary');
-    //     const summaryHeight = summaryElement.offsetHeight;
-    //     const currentScroll = document.documentElement.scrollTop;
-    //     const scrollableArea = courseInformationHeight - summaryHeight;
-    //
-    //     // TODO fix flickering on quick scroll. Maybe use anime.js
-    //     let translateYValue = Math.max(0, currentScroll - 124);
-    //
-    //     if (currentScroll <= 124) translateYValue = 0;
-    //     if (currentScroll >= scrollableArea + 124) translateYValue = scrollableArea;
-    //
-    //     summaryElement.style.transform = `translateY(${translateYValue}px)`;
-    // });
 
     const submitContactFormButton = document.getElementById("submit-contact-form");
     if (submitContactFormButton) {
