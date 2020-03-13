@@ -7,18 +7,6 @@
   border-radius: 20px;
   background-color: black;
 
-  // TODO Properly vertical center the icon
-  &::after {
-    border-style: solid;
-    border-width: 0.15em 0.15em 0 0;
-    content: '';
-    display: inline-block;
-    height: 0.45em;
-    width: 0.45em;
-    transform: rotate(45deg);
-    color: $blueish-green;
-  }
-
   &:hover {
     cursor: pointer;
   }
@@ -35,7 +23,11 @@
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     color: white;
-    width: 100%;
     text-align: center;
+  }
+
+  .arrow {
+    margin-left: 0.5rem;
+    width: 16px;
   }
 }
