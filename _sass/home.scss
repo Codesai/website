@@ -268,5 +268,95 @@
       }
     }
   }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+    max-width: $max-page-width;
+    margin: 3rem 0;
+  }
+
+  .contact {
+    background-color: $blueish-green;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 8rem;
+    width: 100%;
+
+    .text {
+      max-width: 50%;
+      h2 {
+        color: white;
+        font-family: $lekton;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+        a {
+          text-decoration: underline;
+          text-decoration-color: white;
+          color: black;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      padding-left: 1.5rem;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        align-items: center;
+        flex-basis: 100%;
+        padding-left: 0;
+      }
+
+      .field {
+        display: flex;
+        margin-bottom: 1rem;
+        flex-direction: column;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          width: 100%;
+        }
+
+        label {
+          margin-bottom: 0.25rem;
+          font-size: 1.2rem;
+          color: white;
+        }
+
+        input {
+          font-family: $assistant;
+          padding: 0.6rem 0.8rem;
+          font-size: 1rem;
+          border: none;
+          border-radius: 4px;
+        }
+
+        textarea {
+          font-family: $assistant;
+          padding: 0.6rem 0.8rem;
+          font-size: 1rem;
+          resize: none;
+          border: none;
+          border-radius: 4px;
+        }
+      }
+
+      .codesai-button {
+        margin-top: 0.5rem;
+        max-width: 220px;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
