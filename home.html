@@ -165,6 +165,35 @@ permalink: /new-home
             </a>
         </div>
     </section>
+
+    <section class="people">
+        <h2 class="section-title">Quiénes somos</h2>
+        <div></div>
+    </section>
+
+    <section class="blog">
+        <h2 class="section-title">Compartiendo conocimiento</h2>
+        <p>
+            Conferencia Agile Spain, DevFest, Tarugoconf... En Codesai nos encanta participar en eventos y
+            compartir puntos de vista con otros profesionales (tanto, que incluso nos hemos atrevido a organizar
+            alguno). Y además de estar involucrados en algunas comunidades, también <strong>publicamos contenido
+            que ayude a nuestro sector a mejorar y hacer un código de calidad.</strong>
+        </p>
+        <div class="posts">
+            {% for post in site.posts limit:3 %}
+                <a href="{{ post.url }}" target="_blank" class="post">
+                    <div>
+                        <img src="/assets/{{ post.small_image }}" alt="{{ post.title }}">
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.author }}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <a href="/publications/">
+            <div class="codesai-button"><div class="content">Cargar más contenido</div></div>
+        </a>
+    </section>
 </main>
 
 {% include new-footer.html %}

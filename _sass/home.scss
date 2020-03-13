@@ -196,5 +196,56 @@
       width: 256px;
     }
   }
+
+  .people {
+
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+    max-width: $max-page-width;
+    margin: 3rem 0;
+
+    .posts {
+      display: flex;
+      flex-direction: row;
+      margin: 0.5rem 0;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .post {
+        flex: 1 1 0;
+        margin: 0 0.5rem;
+        text-align: start;
+        padding: 0.5rem;
+        border-radius: 20px;
+        &:hover {
+          background-color: $blueish-green;
+          opacity: 0.85;
+          transition: 0.5s;
+          transform: scale(1.05);
+        }
+        h3 {
+          margin: 0;
+          font-family: $lekton;
+          text-decoration: underline;
+          text-decoration-color: $blueish-green;
+        }
+        p {
+          color: $blueish-gray;
+          margin: 0.5rem 0;
+        }
+        img {
+          width: 100%;
+          height: 180px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
 }
 
