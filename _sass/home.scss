@@ -246,8 +246,54 @@
     }
   }
 
-  .people {
+  .team {
+    padding: 0 1rem;
 
+    .team-card {
+      width: 306px;
+      padding-bottom: 0.66rem;
+      border-radius: 10px;
+      background-color: $blueish-green;
+      overflow: hidden;
+
+      .details {
+        display: flex;
+        position: relative;
+        min-height: 80px;
+
+        .photo {
+          position: absolute;
+          z-index: 1;
+
+          img {
+            width: 120px;
+            height: 100px;
+            object-fit: cover;
+            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+          }
+        }
+
+        .name {
+          align-self: center;
+          padding: 0 0.66rem 0 140px;
+          font-family: $lekton;
+          font-size: 1.75rem;
+          font-weight: bold;
+          line-height: 1.15;
+          color: white;
+        }
+      }
+
+      .bio {
+        position: relative;
+        z-index: 2;
+        margin: 0 0.66rem;
+        padding: 1rem;
+        height: 200px;
+        border-radius: 8px;
+        background-color: white;
+      }
+    }
   }
 
   .blog {
