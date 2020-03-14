@@ -54,15 +54,15 @@
         width: 120px;
         height: 100px;
         object-fit: cover;
-        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        clip-path: url(#member-photo-clip-path);
       }
     }
 
     .name {
       align-self: center;
-      padding: 0 0.66rem 0 140px;
+      padding: 0 0.66rem 0 132px;
       font-family: $lekton;
-      font-size: 1.75rem;
+      font-size: 1.6rem;
       font-weight: bold;
       line-height: 1.15;
       color: white;
