@@ -49,6 +49,9 @@
     .photo {
       position: absolute;
       z-index: 1;
+      // solves a small buggy rendering issue where some border is visible
+      left: -1px;
+      top: -1px;
 
       img {
         width: 120px;
