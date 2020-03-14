@@ -296,8 +296,20 @@
         background-color: white;
 
         .social-links {
+          display: flex;
+          justify-content: center;
           margin-top: 1rem;
           height: 78px;
+
+          .icons {
+            position: absolute;
+            bottom: 10px;
+
+            a img {
+              margin: 0 5px;
+              padding: 3px;
+            }
+          }
         }
       }
     }
