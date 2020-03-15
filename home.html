@@ -164,7 +164,7 @@ permalink: /new-home
             </p>
             <div class="button">
                 <a href="/">
-                    {% include components/codesai-button.html content='Ver más información' %}
+                    {% include components/codesai-button.html content='Más información' %}
                 </a>
             </div>
         </div>
@@ -244,40 +244,43 @@ permalink: /new-home
             {% endfor %}
         </div>
         <a href="/publications/">
-            {% include components/codesai-button.html content='Cargar más contenido' %}
+            {% include components/codesai-button.html content='Más contenido' %}
         </a>
-    </section>
+    </section
+    >
     <section class="partners">
         <h2 class="section-title">Colaboran con nosotros</h2>
     </section>
-    <section class="contact">
-        <div class="text">
-            <h2>Contacta con nosotros</h2>
-            <p>
-                ¿Tienes dudas? ¿Quieres saber más sobre
-                nuestra forma de trabajar y en todo lo que
-                podemos aportar a tu equipo? Cuéntanoslo
-                en <a href="mailto:contact@codesai.com">contact@codesai.com</a> o rellena el
-                formulario de contacto que tienes al lado.
-            </p>
-            <p>
-                ¡Intentaremos responderte con la mayor
-                brevedad posible!
-            </p>
-        </div>
-        <div class="form">
-            <div class="field">
-                <label for="email">Email</label>
-                <input id="email" type="text" required />
-            </div>
 
-            <div class="field">
-                <label for="subject">¿Cómo podemos ayudarte?</label>
-                <textarea id="subject" rows="4" required></textarea>
+    <section id="call-to-action" class="call-to-action-wrapper">
+        <div class="call-to-action">
+            <div class="message">
+                <div class="highlight">¡OK! Me interesa realizar el curso de Test Driven Development (TDD)</div>
+                <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto que tienes al lado.</p>
+                <p>¡Intentaremos responderte con la mayor brevedad posible!</p>
             </div>
+            <div class="contact">
+                <div class="field">
+                    <label for="email">* Email</label>
+                    <input id="email" name="entry.579934409" type="text" required />
+                </div>
 
-            <div id="submit-contact-form" class="codesai-button" tabindex="0">
-                <div class="content">Enviar</div>
+                <div class="field">
+                    <label for="name">Nombre completo</label>
+                    <input id="name" name="entry.1588628238" type="text" required />
+                </div>
+
+                <div class="field">
+                    <label for="subject">¿Qué te gustaría contarnos?</label>
+                    <textarea id="subject"
+                              name="entry.2072593880"
+                              rows="4"
+                              placeholder="Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto"></textarea>
+                </div>
+
+                <div id="submit-contact-form" class="codesai-button" tabindex="0" onclick="submitContactForm()">
+                    <div class="content">Enviar</div>
+                </div>
             </div>
         </div>
     </section>
