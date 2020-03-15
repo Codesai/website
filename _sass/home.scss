@@ -128,7 +128,7 @@
     flex-direction: column;
     max-width: $max-page-width;
     padding: 0 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     @media screen and (max-width: $max-width-breakpoint) {
       max-width: 100%;
@@ -206,7 +206,7 @@
     flex-direction: row;
     padding: 0 1rem;
     max-width: $max-page-width;
-    margin: 3rem 0;
+    margin-bottom: 4rem;
 
     @media screen and (max-width: $max-width-breakpoint) {
       flex-direction: column;
@@ -270,6 +270,7 @@
   .team {
     width: 100%;
     max-width: $max-page-width;
+    margin-bottom: 4rem;
 
     .section-title {
       text-align: center;
@@ -300,7 +301,7 @@
     text-align: center;
     padding: 0 1rem;
     max-width: $max-page-width;
-    margin: 3rem 0;
+    margin-bottom: 4rem;
 
     .codesai-button {
       width: 280px;
@@ -361,7 +362,7 @@
     text-align: center;
     padding: 0 1rem;
     max-width: $max-page-width;
-    margin: 3rem 0;
+    margin-bottom: 4rem;
   }
 
   .call-to-action-wrapper {
