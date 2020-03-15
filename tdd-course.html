@@ -148,76 +148,16 @@ permalink: /tdd-course/
 <!--            <div class="title"><span>// </span>Lo que dicen de nuestro curso</div>-->
         </div>
 
-        <div id="call-to-action" class="call-to-action-wrapper">
-            <div class="call-to-action">
-                <div class="message">
-                    <div class="highlight">¡OK! Me interesa realizar el curso de Test Driven Development (TDD)</div>
-                    <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto que tienes al lado.</p>
-                    <p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-                </div>
-                <div class="contact">
-                    <div class="field">
-                        <label for="email">* Email</label>
-                        <input id="email" name="entry.579934409" type="text" required />
-                    </div>
-
-                    <div class="field">
-                        <label for="name">Nombre completo</label>
-                        <input id="name" name="entry.1588628238" type="text" required />
-                    </div>
-
-                    <div class="field">
-                        <label for="subject">¿Qué te gustaría contarnos?</label>
-                        <textarea id="subject"
-                                  name="entry.2072593880"
-                                  rows="4"
-                                  placeholder="Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto"></textarea>
-                    </div>
-
-                    <div id="submit-contact-form" class="codesai-button" tabindex="0" onclick="submitContactForm()">
-                        <div class="content">Enviar</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include components/call-to-action.html
+            title='¡OK! Me interesa realizar el curso de Test Driven Development (TDD)'
+            text='<p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto que tienes al lado.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
+            defaultMessage='Sent from the TDD Course page, no message specified'
+            messagePlaceHolder='Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto'
+        %}
     </div>
 
     {% include new-footer.html %}
 
 </body>
-
-<script>
-
-    const submitContactFormButton = document.getElementById("submit-contact-form");
-    if (submitContactFormButton) {
-        submitContactFormButton.addEventListener('keyup', (event) => {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                submitContactFormButton.click();
-            }
-        });
-    }
-
-    function submitContactForm() {
-        const email = document.getElementById('email').value;
-        const name = document.getElementById('name').value || 'noname';
-        const subject = document.getElementById('subject').value || 'Sent from TDD Course page, no message specified';
-
-        if (!email) {
-            alert("Por favor especifica tu correo electrónico en el formulario");
-            return;
-        }
-
-        fetch(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsR_MlKnk_ZdClyNbtA0g6c75XYCN_7yxNcZyuxvJ29KCRdw/formResponse?entry.579934409=${email}&entry.1588628238=${name}&entry.2072593880=${subject}`, {
-            method: 'POST',
-            mode: 'no-cors'
-        }).then(_ => {
-            alert("Hemos recibido tu mensaje, gracias!")
-        })
-        .catch(errorMessage => {
-            alert("Ha habido un problema al enviar tu mensaje, puedes escribirnos directamente a contact@codesai.com\n\nDetails:\n" + errorMessage)
-        });
-    }
-</script>
 
 </html>
