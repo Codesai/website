@@ -3,6 +3,12 @@ layout: post
 title: "El valor de escribir el test primero"
 type: post
 date: 2020-02-16 15:00:00.000000000 +01:00
+categories:
+  - Testing
+  - Test Driven Development
+  - Object-Oriented Design
+  - Design Patterns
+  - Refactoring
 small_image: cas2019_dani_toño.jpg
 author: Daniel Ojeda
 ---
