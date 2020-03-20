@@ -1,0 +1,78 @@
+---
+title: Codesai
+permalink: /new-clients
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
+
+    <meta property="og:site_name" content="Codesai">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
+    <link rel='stylesheet' href='/css/ionicons.min.css' />
+    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
+
+    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
+    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
+    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
+
+    <script>
+        function saveCookie() {
+            Cookie('codesai').save();
+            $('.cookie-message').hide();
+        }
+
+        $(document).ready(function() {
+            if (Cookie('codesai').exists()) {
+                return;
+            }
+            $('.cookie-message').show();
+        });
+    </script>
+
+    {% if site.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
+</head>
+<body>
+{% include new-header.html %}
+<main class="clients">
+    <section class="big-clients">
+    </section>
+    <section class="other-clients">
+        <h3>Hemos ayudado también a mejorar el código de todas estas empresas:</h3>
+        <div>
+            <img src="/assets/logos/normalized/typeform.jpg" alt="Typeform logo">
+            <img src="/assets/logos/normalized/schibsted.jpg" alt="Schibsted logo">
+            <img src="/assets/logos/normalized/velneo.jpg" alt="Velneo logo">
+            <img src="/assets/logos/normalized/gradiant.jpg" alt="Gradiant logo">
+            <img src="/assets/logos/normalized/scytl.jpg" alt="Scytl logo">
+            <img src="/assets/logos/normalized/cetelem.jpg" alt="Cetelem logo">
+            <img src="/assets/logos/normalized/besepa.jpg" alt="Besepa logo">
+        </div>
+    </section>
+    {% include components/call-to-action.html
+    title='¡Descubre todo lo que podemos hacer por tu empresa!'
+    text='<p>¿Tienes dudas? ¿Quieres saber más sobre nuestra forma de trabajar y en todo lo que podemos aportar a tu equipo? Cuéntanoslo en contact@codesai.com o rellena el formulario de contacto que tienes al lado.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
+    defaultMessage='Sent from the Clients page, no message specified'
+    messagePlaceHolder='Me interesaría recibir información sobre posibles colaboraciones con mi empresa'
+    %}
+</main>
+{% include new-footer.html %}
+</body>
+</html>
