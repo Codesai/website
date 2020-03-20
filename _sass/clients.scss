@@ -9,6 +9,10 @@
     max-width: $max-page-width;
     margin-top: 3rem;
 
+    @media screen and (max-width: $max-width-breakpoint) {
+      padding: 0 2rem;
+    }
+
     .client {
       margin-bottom: 3rem;
       h2 {
@@ -49,6 +53,10 @@
     flex-direction: column;
     max-width: $max-page-width;
     margin-bottom: 3rem;
+
+    @media screen and (max-width: $max-width-breakpoint) {
+      padding: 0 2rem;
+    }
 
     h2 {
       font-family: $lekton;
