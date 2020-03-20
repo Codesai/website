@@ -8,6 +8,39 @@
     flex-direction: column;
     max-width: $max-page-width;
     margin-top: 3rem;
+
+    .client {
+      h2 {
+        font-family: $lekton;
+        font-size: 3rem;
+        letter-spacing: 0.2em;
+        margin: 0;
+      }
+      h3 {
+        color: $blueish-green;
+        text-transform: uppercase;
+        font-family: $lekton;
+        letter-spacing: 0.2em;
+      }
+      p {
+        font-family: $lekton;
+      }
+
+      .tech {
+        h3 {
+          background-color: $blueish-green;
+          display: inline-block;
+          color: white;
+          margin: 0;
+          padding: 0.5rem 1rem;
+        }
+        .stack {
+          font-family: $assistant;
+          background-color: #EDF7F5;
+          padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        }
+      }
+    }
   }
 
   .other-clients {
@@ -16,7 +49,7 @@
     max-width: $max-page-width;
     margin-bottom: 3rem;
 
-    h3 {
+    h2 {
       font-family: $lekton;
       font-style: normal;
       font-weight: normal;
@@ -24,6 +57,7 @@
       line-height: 32px;
       text-align: center;
     }
+
     div {
       display: flex;
       flex-flow: row wrap;
