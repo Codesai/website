@@ -11,9 +11,15 @@
         </div>
         <div class="social-links">
             <div class="icons">
-                <a href="#"><img src="/assets/icons/twitter.svg" alt="twitter link"></a>
-                <a href="#"><img src="/assets/icons/linkedin.svg" alt="linkedin link"></a>
-                <a href="#"><img src="/assets/icons/github.svg" alt="github link"></a>
+                {% if include.twitter_handle %}
+                    <a href="https://twitter.com/{{ include.twitter_handle }}/" target="_blank"><img src="/assets/icons/twitter.svg" alt="twitter link"></a>
+                {% endif %}
+                {% if include.linkedin_profile %}
+                    <a href="{{ include.linkedin_profile }}" target="_blank"><img src="/assets/icons/linkedin.svg" alt="linkedin link"></a>
+                {% endif %}
+                {% if include.github_user %}
+                    <a href="https://github.com/{{ include.github_user }}/" target="_blank"><img src="/assets/icons/github.svg" alt="github link"></a>
+                {% endif %}
             </div>
             <img src="/assets/shapes/team-card-bottom-polygon.svg" alt="">
         </div>
