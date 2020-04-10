@@ -40,6 +40,12 @@
   margin-bottom: 3rem;
   align-items: center;
   padding: 1.5rem 0;
+  @media screen and (max-width: $max-width-breakpoint) {
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1.5rem 1.5rem 0;
+    margin: 1.5rem 1rem;
+  }
 
   .member_img {
     padding: 0 1.5rem;
@@ -69,7 +75,8 @@
     }
 
     p {
-      margin: 0;
+      margin: 1rem 0;
+      font-size: 1.125rem;
     }
   }
 
@@ -80,6 +87,10 @@
     padding: 1.5rem 1rem 1.5rem 2rem;
     box-sizing: border-box;
     position: relative;
+    @media screen and (max-width: $max-width-breakpoint) {
+      flex-direction: row;
+      padding: 2rem 0 0.75rem 0;
+    }
 
     &:before {
       content: '';
@@ -91,6 +102,13 @@
       display: block;
       right: 0;
       top: -10px;
+      @media screen and (max-width: $max-width-breakpoint) {
+        transform: rotate(90deg);
+        right: unset;
+        top: unset;
+        bottom: -65px;
+        left: 10px;
+      }
     }
 
     li a {
@@ -98,6 +116,11 @@
       height: 24px;
       display: block;
       margin: .5rem auto;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: row;
+        margin: 0 .5rem;
+      }
     }
   }
 }
