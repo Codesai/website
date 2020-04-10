@@ -16,7 +16,7 @@
     .client {
       display: flex;
       flex-direction: row;
-      padding-bottom: 5rem;
+      padding-bottom: 3rem;
       background: url(/assets/icons/back-line.svg) repeat-y 75px top;
       @media screen and (max-width: $max-width-breakpoint) {
         flex-direction: column;
@@ -74,6 +74,30 @@
             background-color: #EDF7F5;
             padding: 0.5rem 0.5rem 0.5rem 1.5rem;
           }
+        }
+      }
+    }
+
+    .closing-hexagon {
+      display: flex;
+      flex-direction: row;
+      background: url(/assets/icons/back-line.svg) repeat-y 75px top;
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: column;
+        background: url(/assets/icons/back-line.svg) repeat-y center top;
+        align-items: center;
+      }
+      span {
+        width: 32px;
+        height: 32px;
+        background: url(/assets/shapes/small-hexaback.svg) no-repeat center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3.7rem;
+        @media screen and (max-width: $max-width-breakpoint) {
+          margin-left: 0;
+          margin-top: 4rem
         }
       }
     }
