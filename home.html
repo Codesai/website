@@ -224,6 +224,7 @@ permalink: /new-home
         </div>
         <h2 class="section-title">Quiénes somos</h2>
 
+        <!-- TODO: Make it work on mobile -->
         <div class="team-cards">
             <svg width="0" height="0" viewBox="0 0 120 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -307,6 +308,7 @@ permalink: /new-home
             alguno). Y además de estar involucrados en algunas comunidades, también <strong>publicamos contenido
             que ayude a nuestro sector a mejorar y hacer un código de calidad.</strong>
         </p>
+        <!-- TODO: Are we putting videos too? How do we decide which videos/posts?-->
         <div class="posts">
             {% for post in site.posts limit:3 %}
                 <a href="{{ post.url }}" target="_blank" class="post">
@@ -325,6 +327,7 @@ permalink: /new-home
     >
     <section class="partners">
         <h2 class="section-title">Colaboran con nosotros</h2>
+        <!-- TODO: Wait for partners to give us permission -->
     </section>
 
     {% include components/call-to-action.html
