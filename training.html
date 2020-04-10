@@ -52,6 +52,47 @@ permalink: /training
 <body>
 {% include new-header.html %}
 <main class="training">
+    <section class="introduction">
+        <div class="text">
+            <h1>Te enseñamos a desarrollar mejor código</h1>
+            <p>
+                Todos nuestros cursos son <strong>in-house y presenciales</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.
+            </p>
+            <p>
+                <strong>Además, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</strong>
+            </p>
+        </div>
+        <div class="image">
+            <!-- TODO: Replace with image from prototype -->
+            <img src="/assets/home/mid_picture.png" alt="">
+        </div>
+    </section>
+    <section class="courses">
+        {%
+            include components/course.html
+            name='Test Driven Development (TDD)'
+            description='La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.'
+            link='/tdd-course'
+            logo='/assets/icons/tdd-logo.svg'
+        %}
+        {%
+            include components/course.html
+            name='Test Driven Development (TDD)'
+            description='La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.'
+            link='/tdd-course'
+            logo='/assets/icons/tdd-logo.svg'
+        %}
+        {%
+            include components/course.html
+            name='Test Driven Development (TDD)'
+            description='La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.'
+            link='/tdd-course'
+            logo='/assets/icons/tdd-logo.svg'
+        %}
+        <div class="closing-hexagon">
+            <span></span>
+        </div>
+    </section>
     {%
         include components/call-to-action.html
         title='¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!'
