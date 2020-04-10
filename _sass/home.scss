@@ -94,22 +94,28 @@
     // TODO client logos in SVG or PNG? to preserve quality as in Figma
     // TODO review ManuT's feedback on the tdd course page
     .clients {
-
+      @media screen and (max-width: $max-width-breakpoint) {
+        margin: 0 1rem;
+      }
       .trusted-by {
         font-family: $lekton;
-        font-size: 1.6rem;
+        background-color: $blueish-green;
+        display: inline-block;
+        color: white;
+        margin: 0;
+        padding: 0.5rem 1rem;
         font-weight: bold;
-        color: $blueish-green;
-
-        @media screen and (max-width: $max-width-breakpoint) {
-          padding: 0 1rem;
-        }
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
       }
 
       div {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        font-family: $assistant;
+        background-color: #EDF7F5;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
 
         img {
           margin: 1rem 1.5rem;
