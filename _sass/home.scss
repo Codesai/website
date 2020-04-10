@@ -404,7 +404,6 @@
           font-family: $lekton;
           margin-bottom: 1rem;
           font-size: 2.2rem;
-          font-weight: bolder;
           line-height: 1.2;
           color: white;
 
@@ -467,7 +466,7 @@
 
         .codesai-button {
           margin-top: 0.5rem;
-          max-width: 220px;
+          max-width: 280px;
 
           @media screen and (max-width: $max-width-breakpoint) {
             width: 100%;
