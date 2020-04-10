@@ -49,9 +49,7 @@ permalink: /new-home
     {% if site.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
-
 </head>
-
 <body>
 
 {% include new-header.html %}
@@ -209,6 +207,15 @@ permalink: /new-home
     </section>
 
     <section class="team">
+        <div class="team_mask">
+            <svg width="178" height="199" viewBox="0 0 178 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clipPath id="teamMask">
+                        <path d="M167.422 157.091C173.929 153.334 177.938 146.39 177.938 138.876L177.938 60.9092C177.938 53.3948 173.929 46.4511 167.422 42.6939L99.9005 3.71051C93.3929 -0.0467027 85.3751 -0.0467032 78.8674 3.71051L11.3461 42.6939C4.83843 46.4511 0.82953 53.3948 0.829529 60.9092L0.829521 138.876C0.82952 146.39 4.83842 153.334 11.3461 157.091L78.8674 196.075C85.375 199.832 93.3928 199.832 99.9005 196.075L167.422 157.091Z" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
         <h2 class="section-title">Quiénes somos</h2>
 
         <div class="team-cards">
@@ -245,7 +252,7 @@ permalink: /new-home
             %}
             {% include components/member-card.html
                 photo='/assets/team/fran_reyes.jpg'
-                name='Fran<br> Reyes'
+                name='Fran Reyes'
                 bio='Se preocupa por hacer las cosas bien y mejorar continuamente. Defensor de los métodos ágiles por ser una manera de construir software excelente. Aunque su trayectoria es técnica, le interesan otras áreas del producto final (negocio, UX, operaciones, etc).'
                 twitter_handle='fran_reyes'
                 linkedin_profile='https://www.linkedin.com/in/franreyesperdomo/'
@@ -253,19 +260,11 @@ permalink: /new-home
             %}
             {% include components/member-card.html
                 photo='/assets/team/antonio_de_la_torre.jpg'
-                name='Antonio<br> de la Torre'
+                name='Antonio de la Torre'
                 bio='Encontró su sitio natural en equipos interesados en la mejora continua, y en hacer un código bonito. Desarrolla sobre todo en Javascript y Groovy. Busca la integración de todos los perfiles, especialmente los de diseño en el desarrollo del producto.'
                 twitter_handle='adelatorrefoss'
                 linkedin_profile='https://www.linkedin.com/in/antoniodelatorre/'
                 github_user='adelatorrefoss'
-            %}
-            {% include components/member-card.html
-                photo='/assets/team/ruben_diaz.jpg'
-                name='Rubén<br> Díaz'
-                bio='Aprendiendo y desarrollando desde 2014, le encanta seguir las prácticas de XP y colaborar con negocio para entregar valor lo antes posible. Intenta jubilarse habiendo borrado más código del que ha escrito. Co-organizador de Socrates Canaries 2019.'
-                twitter_handle='rubendm23'
-                linkedin_profile='https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/'
-                github_user='rubendm92'
             %}
             {% include components/member-card.html
                 photo='/assets/team/miguel_viera.jpg'
@@ -282,6 +281,14 @@ permalink: /new-home
                 twitter_handle='trikitrok'
                 linkedin_profile='https://www.linkedin.com/in/manuel-rivero-54411271/'
                 github_user='trikitrok'
+            %}
+            {% include components/member-card.html
+                photo='/assets/team/ruben_diaz.jpg'
+                name='Rubén Díaz'
+                bio='Aprendiendo y desarrollando desde 2014, le encanta seguir las prácticas de XP y colaborar con negocio para entregar valor lo antes posible. Intenta jubilarse habiendo borrado más código del que ha escrito. Co-organizador de Socrates Canaries 2019.'
+                twitter_handle='rubendm23'
+                linkedin_profile='https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/'
+                github_user='rubendm92'
             %}
         </div>
     </section>

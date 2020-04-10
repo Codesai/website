@@ -1,27 +1,20 @@
 <div class="team-card">
-    <div class="details">
-        <div class="photo">
-            <img src="{{ include.photo }}" alt="">
-        </div>
-        <div class="name">{{ include.name }}</div>
+    <div class="member_img">
+        <img src="{{ include.photo }}" alt="{{ include.name }}">
     </div>
-    <div class="bio">
-        <div class="text">
-            {{ include.bio }}
-        </div>
-        <div class="social-links">
-            <div class="icons">
-                {% if include.twitter_handle %}
-                    <a href="https://twitter.com/{{ include.twitter_handle }}/" target="_blank"><img src="/assets/icons/twitter.svg" alt="twitter link"></a>
-                {% endif %}
-                {% if include.linkedin_profile %}
-                    <a href="{{ include.linkedin_profile }}" target="_blank"><img src="/assets/icons/linkedin.svg" alt="linkedin link"></a>
-                {% endif %}
-                {% if include.github_user %}
-                    <a href="https://github.com/{{ include.github_user }}/" target="_blank"><img src="/assets/icons/github.svg" alt="github link"></a>
-                {% endif %}
-            </div>
-            <img src="/assets/shapes/team-card-bottom-polygon.svg" alt="">
-        </div>
+    <div class="member_info">
+        <h4>{{ include.name }}</h4>
+        <p>{{ include.bio }}</p>
     </div>
+    <ul class="social">
+        {% if include.twitter_handle %}
+            <li><a href="https://twitter.com/{{ include.twitter_handle }}/" target="_blank"><img src="/assets/icons/icon_media_tw_green.svg" alt="twitter link"></a></li>
+        {% endif %}
+        {% if include.linkedin_profile %}
+            <li><a href="{{ include.linkedin_profile }}" target="_blank"><img src="/assets/icons/icon_media_linkedin_green.svg" alt="linkedin link"></a></li>
+        {% endif %}
+        {% if include.github_user %}
+            <li><a href="https://github.com/{{ include.github_user }}/" target="_blank"><img src="/assets/icons/icon_media_git_green.svg" alt="github link"></a></li>
+        {% endif %}
+    </ul>
 </div>

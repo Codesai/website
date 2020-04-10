@@ -32,72 +32,72 @@
   }
 }
 
-
 .team-card {
-  margin: 11px;
-  width: 292px;
-  padding-bottom: 0.66rem;
-  border-radius: 10px;
+  display: flex;
   background-color: $blueish-green;
-  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  align-items: center;
+  padding: 1.5rem 0;
 
-  .details {
-    display: flex;
-    position: relative;
-    min-height: 80px;
+  .member_img {
+    padding: 0 1.5rem;
 
-    .photo {
-      position: absolute;
-      z-index: 1;
-      // solves a small buggy rendering issue where some border is visible
-      left: -1px;
-      top: -1px;
+    img {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      width: 200px;
+      height: auto;
+      clip-path: url(#teamMask);
+      -webkit-clip-path: url(#teamMask);
 
-      img {
-        width: 120px;
-        height: 100px;
-        object-fit: cover;
-        clip-path: url(#member-photo-clip-path);
-      }
-    }
-
-    .name {
-      align-self: center;
-      padding: 0 0.66rem 0 132px;
-      font-family: $lekton;
-      font-size: 1.6rem;
-      font-weight: bold;
-      line-height: 1.15;
-      color: white;
     }
   }
 
-  .bio {
+  .member_info {
+    padding-right: 2rem;
+
+    h4 {
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .social {
     display: flex;
+    z-index: 10000;
     flex-direction: column;
-    align-items: center;
+    padding: 1.5rem 1rem 1.5rem 2rem;
+    box-sizing: border-box;
     position: relative;
-    z-index: 2;
-    margin: 0 0.66rem;
-    padding: 1rem 1rem 0 1rem;
-    border-radius: 8px;
-    background-color: white;
 
-    .social-links {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-      height: 78px;
+    &:before {
+      content: '';
+      background: url(/assets/shapes/back_member_rrss.svg) no-repeat left center;
+      height: 200px;
+      width: 72px;
+      position: absolute;
+      z-index: -1;
+      display: block;
+      right: 0;
+      top: -10px;
+    }
 
-      .icons {
-        position: absolute;
-        bottom: 10px;
-
-        a img {
-          margin: 0 5px;
-          padding: 3px;
-        }
-      }
+    li a {
+      width: 24px;
+      height: 24px;
+      display: block;
+      margin: .5rem auto;
     }
   }
 }

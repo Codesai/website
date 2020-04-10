@@ -284,25 +284,23 @@
     max-width: $max-page-width;
     margin-bottom: 4rem;
 
+    .team_mask{
+      width: 0;
+      height: 0;
+    }
+
     .section-title {
       text-align: center;
     }
 
     .team-cards {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
-      max-height: 1400px;
 
       @media screen and (max-width: $max-width-breakpoint) {
-        max-height: 1800px;
-        max-width: 640px;
         margin: 0 auto;
-      }
-
-      @media screen and (max-width: 670px) {
-        max-height: unset;
       }
     }
   }
