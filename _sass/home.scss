@@ -275,6 +275,26 @@
       flex-direction: column;
     }
 
+    .section-title {
+      margin: 0 0 1rem 0;
+      line-height: 1.25;
+
+      &.mobile {
+        display: none;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          text-align: unset;
+          display: block;
+        }
+      }
+
+      &.desktop {
+        @media screen and (max-width: $max-width-breakpoint) {
+          display: none;
+        }
+      }
+    }
+
     .image {
 
       @media screen and (max-width: $max-width-breakpoint) {
@@ -298,15 +318,6 @@
 
       @media screen and (max-width: $max-width-breakpoint) {
         padding-left: 0;
-      }
-
-      .section-title {
-        margin: 0 0 1rem 0;
-        line-height: 1.25;
-
-        @media screen and (max-width: $max-width-breakpoint) {
-          text-align: unset;
-        }
       }
 
       p {
