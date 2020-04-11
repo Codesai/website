@@ -112,16 +112,19 @@
       div {
         display: flex;
         flex-flow: row wrap;
-        align-items: center;
         font-family: $assistant;
         background-color: #EDF7F5;
         padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        border-radius: 0 16px 16px 16px;
+        @media screen and (max-width: $max-width-breakpoint) {
+          justify-content: center;
+        }
 
         img {
-          margin: 1rem 1.5rem;
+          margin: 1rem;
 
           @media screen and (max-width: $max-width-breakpoint) {
-            max-width: 270px;
+            max-width: 224px;
           }
         }
       }
@@ -155,7 +158,8 @@
       position: relative;
       overflow: hidden;
       @media screen and (max-width: $max-width-breakpoint) {
-        overflow: visible;
+        overflow-x: hidden;
+        overflow-y: visible;
         box-shadow: none;
       }
 
