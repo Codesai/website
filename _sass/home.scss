@@ -170,31 +170,37 @@
       .shape {
         position: absolute;
         z-index: -1;
+
         &.first {
           left: -13px;
           top: -45px;
           transform: rotate(-14deg) scale(1.5);
+
           @media screen and (max-width: $max-width-breakpoint) {
             left: -96px;
             top: -65px;
             transform: rotate(-14deg) scale(2, 1.8);
           }
         }
+
         &.second {
           left: 406px;
           top: -94px;
           transform: rotate(165deg) scale(1.6, 2);
+
           @media screen and (max-width: $max-width-breakpoint) {
             right: -88px;
             left: unset;
-            top: 403px;
+            top: 444px;
             transform: rotate(67deg) scale(1.6, 2);
           }
         }
+
         &.third {
           right: 10px;
           top: -58px;
           transform: rotate(9deg) scale(1.5);
+
           @media screen and (max-width: $max-width-breakpoint) {
             left: -103px;
             top: unset;
@@ -217,6 +223,7 @@
         justify-content: space-between;
         margin: 1.25rem 0;
         padding: 0 1.75rem;
+        font-size: 1.1rem;
         border-right: 1px dotted $blueish-green;
 
         @media screen and (max-width: $max-width-breakpoint) {
