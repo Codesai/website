@@ -20,6 +20,7 @@ Por lo que en conjunto, hacía ya un tiempo que lo habíamos valorado como un bu
 Un placer tenerte con nosotros Rubén!
 
 ![Rubén](/assets/incorporacion_ruben_handshake.png)
+<div class="photo-footer">Nos remitimos a una foto que hicimos de coña hace un año. Un pequeño "edit" y listo, Rubén nunca llegó a sospechar nada ;)</div>
 
 *Gracias a Dani y todo el equipo por la calurosa bienvenida. Probablemente no se me conozca tanto en la comunidad como a otros, así que aquí va un poco sobre mí.*
 
