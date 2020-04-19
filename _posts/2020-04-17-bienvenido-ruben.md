@@ -28,7 +28,7 @@ Un placer tenerte con nosotros Rubén!
 Me encanta trabajar en entornos en los que se siguen prácticas de eXtreme Programming, colaborando con negocio para aportar valor y aprendiendo todo lo posible del resto de personas con las que trabajo.*
 
 
-*Hará unos 6 años que conozco a varios miembros de Codesai. Desde 2014 nos juntábamos Miguel, Ronny, Dani y yo para hacer katas, a las que a veces se nos unía gente como Manu Rivero, Alfredo o Fran. También nos cruzamos en muchos eventos de desarrollo, en los que también conocí a Toño y Manu Tordesillas.
+*Hará unos 6 años que conozco a varios miembros de Codesai. Desde 2014 nos juntábamos Miguel, Ronny, Dani y yo para hacer katas, a las que a veces se nos unía gente como Manu Rivero, Alfredo o Fran. También nos cruzamos en muchos eventos de desarrollo, en los que conocí a Toño y Manu Tordesillas.
 Son gente con la que comparto inquietudes y sus posts/charlas siempre han sido referencia para mí en el aprendizaje.
 He hablado con Miguel y Dani en alguna ocasión para unirme a Codesai, hasta que finalmente surgió la oportunidad en febrero de este año (justo en el momento de mayor estabilidad laboral, ¿eh?).*
 
