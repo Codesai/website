@@ -315,6 +315,7 @@ permalink: /new-home
             que ayude a nuestro sector a mejorar y hacer un código de calidad.</strong>
         </p>
 
+        <!-- TODO mix posts & videos, label them & style them accordingly -->
         <div class="posts">
             {% for post in site.posts limit:3 %}
                 <a href="{{ post.url }}" target="_blank" class="post">
@@ -326,9 +327,11 @@ permalink: /new-home
                 </a>
             {% endfor %}
         </div>
-        <a href="/publications/">
-            {% include components/codesai-button.html content='Ver más contenido' %}
-        </a>
+        <div class="actions">
+            <a href="/publications/">
+                {% include components/codesai-button.html content='Ver más contenido' %}
+            </a>
+        </div>
     </section>
 
     {% include components/call-to-action.html
