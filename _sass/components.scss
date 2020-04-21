@@ -32,6 +32,7 @@
   }
 }
 
+
 .team-card {
   display: flex;
   background-color: $blueish-green;
@@ -60,16 +61,11 @@
     }
 
     img {
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
+      filter: grayscale(33%);
       width: 180px;
       height: 200px;
       object-fit: cover;
-      clip-path: url(#teamMask);
-      -webkit-clip-path: url(#teamMask);
+      clip-path: url(#hexagonalMask);
     }
   }
 
