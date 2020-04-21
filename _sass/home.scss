@@ -459,8 +459,8 @@
           position: relative;
           width: 150px;
           height: calc(150px * 1.111);
-          clip-path: url(#hexagonMask);
-          filter: url(#greenOverlay);
+          clip-path: url(#hexagonalMask);
+          filter: url(#greenOverlayFilter);
 
           img {
             width: 100%;
