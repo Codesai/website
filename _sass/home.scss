@@ -442,6 +442,27 @@
     padding: 0 1rem;
     max-width: $max-page-width;
     margin-bottom: 4rem;
+    .partner-mask {
+      width: 0;
+      height: 0;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin: 36px 0 0;
+      list-style: none;
+      padding: 0;
+      li {
+        margin: 0 12px;
+        img {
+          width: 90px;
+          height: 100px;
+          object-fit: cover;
+          clip-path: url(#partnerMask);
+          -webkit-clip-path: url(#partnerMask);
+        }
+      }
+    }
   }
 
   .call-to-action-wrapper {
