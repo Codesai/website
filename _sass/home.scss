@@ -435,7 +435,7 @@
     }
   }
 
-  .partners {
+  .collaborators {
     width: 100%;
     max-width: $max-page-width;
     margin-bottom: 4rem;
@@ -444,11 +444,11 @@
       text-align: center;
     }
 
-    .partner-cards {
+    .collaborator-cards {
       display: flex;
       justify-content: center;
 
-      .partner-card {
+      .collaborator-card {
         display: flex;
         flex-direction: column;
         align-items: center;
