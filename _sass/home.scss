@@ -461,6 +461,7 @@
           object-fit: cover;
           clip-path: url(#partnerMask);
           -webkit-clip-path: url(#partnerMask);
+          filter: url(#partnerBackgroundColor);
         }
       }
     }
