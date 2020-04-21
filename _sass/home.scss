@@ -453,6 +453,9 @@
       margin: 36px 0 0;
       list-style: none;
       padding: 0;
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: column;
+      }
       li {
         margin: 0 12px;
         img {
