@@ -65,6 +65,7 @@
       width: 180px;
       height: calc(180px * 1.111);
       object-fit: cover;
+      -webkit-clip-path: url(#hexagonalMask);
       clip-path: url(#hexagonalMask);
     }
   }
