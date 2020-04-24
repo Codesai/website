@@ -228,6 +228,7 @@
 
         @media screen and (max-width: $max-width-breakpoint) {
           border-right: unset;
+          flex: unset;
         }
 
         &:last-child {
