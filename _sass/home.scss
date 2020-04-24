@@ -87,6 +87,7 @@
 
           @media screen and (max-width: $max-width-breakpoint) {
             max-width: 280px;
+            max-height: 386px;
           }
         }
       }
@@ -317,6 +318,7 @@
         @media screen and (max-width: $max-width-breakpoint) {
           margin: 0.5rem 0 1rem 0;
           max-width: 280px;
+          max-height: 386px;
         }
       }
     }
