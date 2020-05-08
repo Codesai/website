@@ -23,8 +23,15 @@ y algo que decir tenga un espacio para participar. Así que si queréis particip
 El nombre, decidido bajo arduo consenso y discusiones interminables de 10 minutos o más, 
 es **The Big Branch Theory**. Para el quien no pille la tontería, pensad en Trunk Based Development, una práctica de la que hemos hablado en muchas ocasiones... sí, ese es el nivel jaja.
 
-De momento llevamos ya un par de capítulos publicados donde hablamos sobre pair programing y microservicios, así variadito para empezar. Y como estaréis ya ansios@s, sin más preámbulo podéis escucharlos a continuación:
+De momento llevamos ya 3 capítulos publicados donde hablamos sobre pair programing, microservicios, y aprendizje, así variadito para empezar. Y como estaréis ya ansios@s, sin más preámbulo podéis escucharlos a continuación:
+
+Podeís agregar el [feed del podcast](https://anchor.fm/s/56e0f78/podcast/rss)
+
+
+O simplemente escucharlo a continuación:
 
 <iframe src="https://open.spotify.com/embed-podcast/episode/0dUvwkecs5vZGXzxjW5rfZ" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 <iframe src="https://open.spotify.com/embed-podcast/episode/75wJbJ4vSmrySMfNBrBVK9" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<iframe src="https://open.spotify.com/embed-podcast/episode/66xV3t7JXTsuEFTfHPiM1b" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
