@@ -18,12 +18,15 @@
       flex-direction: row;
       padding-bottom: 3rem;
       background: url(/assets/icons/back-line.svg) repeat-y 75px top;
+
       @media screen and (max-width: $max-width-breakpoint) {
         flex-direction: column;
         background: url(/assets/icons/back-line-h.svg) repeat-x left 75px;
         align-items: center;
       }
+
       .image {
+
         span {
           width: 151px;
           height: 145px;
@@ -32,12 +35,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
           img {
             width: 70%;
             height: auto;
           }
         }
       }
+
       .info {
         margin-bottom: 3rem;
         margin-left: 2rem;
@@ -45,6 +50,7 @@
         @media screen and (max-width: $max-width-breakpoint) {
           margin: 0;
         }
+
         h2 {
           font-family: $lekton;
           font-size: 3rem;
@@ -52,6 +58,7 @@
           letter-spacing: 0.2em;
           margin: 0;
         }
+
         h3 {
           color: $blueish-green;
           text-transform: uppercase;
@@ -59,6 +66,7 @@
           letter-spacing: 0.2em;
           font-size: 1rem;
         }
+
         p {
           font-family: $lekton;
           font-size: 1rem;
@@ -77,6 +85,7 @@
               vertical-align: bottom;
             }
           }
+
           .stack {
             font-family: $assistant;
             background-color: #EDF7F5;
@@ -95,6 +104,7 @@
         background: url(/assets/icons/back-line.svg) repeat-y center top;
         align-items: center;
       }
+
       span {
         width: 32px;
         height: 32px;
@@ -144,6 +154,7 @@
       }
     }
   }
+
   .call-to-action-wrapper {
     display: flex;
     justify-content: center;
