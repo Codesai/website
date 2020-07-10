@@ -1,81 +1,127 @@
 ---
-layout: page
 ---
-<div class="post">
-    <div class="container">
-        <div class="row">
-            <div class="content">
-                <h1>{{ page.title }}</h1>
-                <div class="post-info-wrapper">
-                    {% if page.written_in == 'english' %}
-                        <p class="italic">Published by <span class="bold">{{ page.author }}</span> on <span class="bold">{{ page.date | date: "%d/%m/%Y" }}</span></p>
-                    {% else %}
-                        <p class="italic">Publicado por <span class="bold">{{ page.author }}</span> el <span class="bold">{{ page.date | date: "%d/%m/%Y" }}</span></p>
-                    {% endif %}
-                </div>
-                <div class="post-categories">
-                  <p>
-                      {% for category in page.categories %}
-                        {% if forloop.last == true %}
-                            <a href="{{site.baseurl}}/publications/categories/#{{category|slugize}}">{{category}}</a>
-                        {% else %}
-                            <a href="{{site.baseurl}}/publications/categories/#{{category|slugize}}">{{category}}</a>,
-                        {% endif %}
-                      {% endfor %}
-                  </p>
-                </div>
-                <hr/>
+<!DOCTYPE html>
+<html lang="es">
+<head>
 
-                {{ content }}
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-                {% if page.cross_post_url %}
-                    <p>
-                       {% if page.written_in == 'english' %}
-                            Originally published in <a href="{{ page.cross_post_url }}"> 
-                            {% if page.published_in_blog %}    
-                                {{ page.published_in_blog }}'s blog</a>.
-                            {% else %}    
-                                {{ page.author }}'s blog</a>.
-                            {% endif %}
-                       {% else %}
-                            Publicado originalmente en <a href="{{ page.cross_post_url }}">el blog de 
-                            {% if page.published_in_blog %}    
-                                {{ page.published_in_blog }}.
-                            {% else %}    
-                                 {{ page.author }}</a>.
-                            {% endif %}
-                       {% endif %}
-                    </p>
-                {% endif %}
+    <title>Codesai Blog</title>
+    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
 
-                <div class="back-to-blog">
-                    <a href="/publications#posts">Volver a posts</a>
-                </div>
+    <meta property="og:site_name" content="Codesai">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
 
-                {% if site.environment == 'production' %}
-                    <div id="disqus_thread"></div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
+    <link rel='stylesheet' href='/css/ionicons.min.css' />
+    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
 
-                    <script>
-                        var disqus_config = function () {
-                            this.page.url = '{{ site.url | append: page.url }}';
-                            this.page.identifier =  {% if page.meta.dsq_thread_id %}
-                                                        '{{ page.meta.dsq_thread_id }}'
-                                                    {% else %}
-                                                        '{{ page.title }}'
-                                                    {% endif %};
-                        };
+    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
+    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
+    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
 
-                        (function() {  // DON'T EDIT BELOW THIS LINE
-                            var d = document, s = d.createElement('script');
-                            s.src = '//codesai.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
+    <script>
+        function saveCookie() {
+            Cookie('codesai').save();
+            $('.cookie-message').hide();
+        }
 
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-                {% endif %}
-            </div>
-        </div>
+        $(document).ready(function() {
+            if (Cookie('codesai').exists()) {
+                return;
+            }
+            $('.cookie-message').show();
+        });
+    </script>
+
+    {% if site.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+</head>
+<body>
+
+{% include new-header.html %}
+<main class="post">
+    <h1>{{ page.title }}</h1>
+    <div class="post-info">
+        {% if page.written_in == 'english' %}
+            <p>Published by <em>{{ page.author }}</em> on <em>{{ page.date | date: "%d/%m/%Y" }}</em></p>
+        {% else %}
+            <p>Publicado por <em>{{ page.author }}</em> el <em>{{ page.date | date: "%d/%m/%Y" }}</em></p>
+        {% endif %}
     </div>
-</div>
+    <div class="post-categories">
+      <p>
+          {% for category in page.categories %}
+            {% if forloop.last == true %}
+                <a href="{{site.baseurl}}/publications/categories/#{{category|slugize}}">{{category}}</a>
+            {% else %}
+                <a href="{{site.baseurl}}/publications/categories/#{{category|slugize}}">{{category}}</a>,
+            {% endif %}
+          {% endfor %}
+      </p>
+    </div>
+    <hr/>
+
+    {{ content }}
+
+    {% if page.cross_post_url %}
+        <p>
+           {% if page.written_in == 'english' %}
+                Originally published in <a href="{{ page.cross_post_url }}">
+                {% if page.published_in_blog %}
+                    {{ page.published_in_blog }}'s blog</a>.
+                {% else %}
+                    {{ page.author }}'s blog</a>.
+                {% endif %}
+           {% else %}
+                Publicado originalmente en <a href="{{ page.cross_post_url }}">el blog de
+                {% if page.published_in_blog %}
+                    {{ page.published_in_blog }}.
+                {% else %}
+                     {{ page.author }}</a>.
+                {% endif %}
+           {% endif %}
+        </p>
+    {% endif %}
+
+    <div class="back-to-blog">
+        <a href="/publications#posts">Volver a posts</a>
+    </div>
+
+    {% if site.environment == 'production' %}
+        <div id="disqus_thread"></div>
+
+        <script>
+            var disqus_config = function () {
+                this.page.url = '{{ site.url | append: page.url }}';
+                this.page.identifier =  {% if page.meta.dsq_thread_id %}
+                                            '{{ page.meta.dsq_thread_id }}'
+                                        {% else %}
+                                            '{{ page.title }}'
+                                        {% endif %};
+            };
+
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = '//codesai.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    {% endif %}
+</main>
+{% include new-footer.html %}
+</body>
+</html>
