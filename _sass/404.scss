@@ -13,4 +13,12 @@
     font-size: 4rem;
     margin: 0;
   }
+
+  img {
+    width: 60%;
+
+    @media screen and (max-width: $max-width-breakpoint) {
+      width: 100%;
+    }
+  }
 }
