@@ -1,0 +1,156 @@
+---
+title: Curso de Code Smells & Refactoring
+permalink: /curso-de-refactoring/
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
+
+    <meta property="og:site_name" content="Codesai">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
+    <link rel='stylesheet' href='/css/ionicons.min.css' />
+    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
+
+    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
+    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
+    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
+
+    <script>
+        function saveCookie() {
+            Cookie('codesai').save();
+            $('.cookie-message').hide();
+        }
+
+        $(document).ready(function() {
+            if (Cookie('codesai').exists()) {
+                return;
+            }
+            $('.cookie-message').show();
+        });
+    </script>
+
+    {% if site.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
+
+</head>
+
+<body>
+
+    {% include header.html %}
+
+    <div class="course-page">
+        <div class="course">
+
+            <div id="course-information" class="information">
+                <div class="insights">
+                    <div class="course-title">Code smells & Refactoring</div>
+                    <div class="course-description">
+                        <p>
+                            El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.
+                        </p>
+                        <p>
+                            A través de ejemplos y katas, aprenderemos sobre code smells, técnicas de refactoring y  principios de diseño orientado a objetos. Asimismo, veremos el papel fundamental del refactoring en el desarrollo de software, y reflexionaremos sobre la deuda técnica, los ciclos de refactoring y la economía del refactoring (cómo hacerlo de manera responsable).
+                        </p>
+                    </div>
+
+                    <div class="summary mobile">
+                        {% include course-summaries/tdd-course.html %}
+                    </div>
+
+                    <section class="contents">
+                        <div class="title"><span>// </span>Contenidos</div>
+                        <div class="description">
+                            <div class="daily-agenda">
+                                <div class="day">Primer día</div>
+                                <div class="topics">
+                                    <div class="group"><span>1.</span> Introducción</div>
+                                    <div class="group"><span>2. </span> Code smells y refactors relacionados</div>
+                                    <div class="subgroup"><span>&bull;</span> Code smells en clases</div>
+                                    <div class="subgroup"><span>&bull;</span> Code smells entre clases</div>
+                                    <div class="group"><span>3. </span> Diseño lo suficientemente bueno</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="daily-agenda">
+                                <div class="day">Segundo día</div>
+                                <div class="topics">
+                                    <div class="group"><span>4. </span>Refactors principales y patrones de refactoring</div>
+                                    <div class="subgroup"><span>&bull;</span> Refactors principales</div>
+                                    <div class="subgroup"><span>&bull;</span> Narrow change</div>
+                                    <div class="subgroup"><span>&bull;</span> Parallel change</div>
+                                    <div class="group"><span>5. </span>Arquitectura hexagonal</div>
+                                    <div class="group"><span>6. </span>Flujos de trabajo y economía del refactor</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="languages">
+                        <div class="title"><span>// </span>Lenguajes</div>
+                        <p>Generalmente, usamos Java porque es el lenguaje en el que la mayor parte de la gente se defiende, pero en el curso se pueden usar también otros lenguajes, eso no es problema. Si Java / IntelliJ no es para ti un problema, será la opción por defecto.</p>
+                    </section>
+
+                    <section class="requirements">
+                        <div class="title"><span>// </span>Requisitos</div>
+                        <p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
+                        <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
+                        <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>
+                    </section>
+
+                    <section class="who">
+                        <div class="title"><span>// </span>¿Para quién está pensado?</div>
+                        <p>Este es un curso para personas que sepan programar. Fundamentalmente programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas. Lo que hace falta es venir con ganas y la mente abierta. Si nunca has probado TDD antes, te sorprenderá.</p>
+                    </section>
+
+                    <section class="where">
+                        <div class="title"><span>// </span>In-house y en abierto</div>
+                        <p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
+                        <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
+                    </section>
+                </div>
+                <div class="summary desktop">
+                    {% include course-summaries/tdd-course.html %}
+                </div>
+            </div>
+        </div>
+
+        <div class="photos">
+            <div class="photo">
+                <img src="/assets/courses/tdd_course_0.png" alt="">
+            </div>
+            <div class="photo">
+                <img src="/assets/courses/tdd_course_1.png" alt="">
+            </div>
+        </div>
+
+        {% include components/call-to-action.html
+            title='¡OK! Me interesa realizar el curso de Code smells & Refactoring'
+            text='<p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
+            defaultMessage='Sent from the Refactoring Course page, no message specified'
+            messagePlaceHolder='Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
