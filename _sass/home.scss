@@ -507,8 +507,8 @@
 
         img {
           object-fit: cover;
-          width: 150px;
-          height: calc(150px * 1.111);
+          width: 115px;
+          height: calc(115px * 1.111);
           -webkit-clip-path: url(#hexagonalMask);
           clip-path: url(#hexagonalMask);
           filter: url(#greenOverlayFilter);
