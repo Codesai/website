@@ -1,0 +1,46 @@
+---
+title: Online Open Space
+permalink: /online-open-space
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="Evento online Open Space organizado por Codesai y Lifull Connect">
+
+    <meta property="og:site_name" content="Online Open Space">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="Evento online Open Space organizado por Codesai y Lifull Connect">
+    <meta property="og:url" content="{{ site.url }}">
+<!--    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
+    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/online-open-space.css' />
+
+</head>
+<body>
+
+<main class="online-open-space">
+    <section class="hero">
+        <div>
+            <!-- TODO: Code snippet background -->
+            <h1>Desarrollo de software y formación</h1>
+            <div><span>//</span>Aceleramos la entrega de valor</div>
+            <div><span>//</span>Cuidando la calidad interna y externa</div>
+            <div><span>//</span>Formando parte de tu equipo, haciéndolo crecer</div>
+        </div>
+    </section>
+
+</main>
+
+
+</body>
+</html>

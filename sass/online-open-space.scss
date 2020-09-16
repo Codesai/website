@@ -1,0 +1,28 @@
+---
+---
+
+$max-page-width: 980px;
+$tablet-breakpoint: 768px;
+
+$green-100: hsl(200, 97, 98, 1);
+$green-200: hsl(170, 97, 95, 1);
+$green-500: hsl(170, 97, 41, 1);
+
+$orange-100: hsl(74, 100, 97, 1);
+$orange-500: hsl(24, 98, 47, 1);
+
+$assistant: 'Assistant', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $assistant;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
