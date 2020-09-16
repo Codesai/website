@@ -1,15 +1,20 @@
 ---
 ---
 
-$max-page-width: 980px;
+@function pxToRem($px) {
+  $rem: $px / 16;
+  @return #{$rem}rem;
+}
+
+$max-content-width: 980px;
 $tablet-breakpoint: 768px;
 
-$green-100: hsl(200, 97, 98, 1);
-$green-200: hsl(170, 97, 95, 1);
-$green-500: hsl(170, 97, 41, 1);
+$green-100: hsl(200, 97, 98);
+$green-200: hsl(170, 97, 95);
+$green-500: hsl(170, 97, 41);
 
-$orange-100: hsl(74, 100, 97, 1);
-$orange-500: hsl(24, 98, 47, 1);
+$orange-100: hsl(74, 100, 97);
+$orange-500: hsl(24, 98, 47);
 
 $assistant: 'Assistant', sans-serif;
 
@@ -24,5 +29,124 @@ body {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.online-open-space {
+
+  .width-boundary {
+    max-width: $max-content-width;
+  }
+
+  section.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+    .background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(2px) brightness(0.4);
+        transform: scale(1.05);
+      }
+    }
+
+    .info {
+      font-weight: bold;
+      text-align: center;
+      color: $green-100;
+      z-index: 10;
+
+      .title {
+        margin-bottom: 24px;
+        font-size: pxToRem(48);
+      }
+
+      .date, .time {
+        font-size: pxToRem(36);
+      }
+
+      .logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36px;
+
+        svg + svg {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+
+  section.details {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+
+    .background {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      bottom: 0;
+      left: -40px;
+      background-color: $orange-500;
+      transform: rotate(-1.5deg);
+      z-index: -10;
+    }
+
+    .content {
+
+      .block + .block {
+        margin-top: 20px;
+      }
+
+      .block {
+        color: $orange-100;
+
+        .title {
+          width: 100%;
+          font-size: pxToRem(56);
+          font-weight: bold;
+        }
+
+        p + p {
+          margin-top: 12px;
+        }
+
+        p {
+          font-size: pxToRem(20);
+          font-weight: 500;
+        }
+
+        &.left {
+          .title { text-align: left; }
+          p { padding-left: 40px; }
+        }
+
+        &.right {
+          .title { text-align: right; }
+          p { padding-right: 40px; }
+        }
+      }
+    }
+  }
 }
 
