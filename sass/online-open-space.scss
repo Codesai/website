@@ -80,10 +80,18 @@ p {
       .title {
         margin-bottom: 24px;
         font-size: pxToRem(48);
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          font-size: pxToRem(36);
+        }
       }
 
       .date, .time {
         font-size: pxToRem(36);
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          font-size: pxToRem(28);
+        }
       }
 
       .logos {
@@ -94,6 +102,18 @@ p {
 
         svg + svg {
           margin-left: 40px;
+
+          @media screen and (max-width: $tablet-breakpoint) {
+            margin: 20px 0 0 0;
+          }
+        }
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          flex-direction: column;
+
+          svg {
+            max-width: calc(100% - 24px);
+          }
         }
       }
     }
@@ -171,9 +191,13 @@ p {
       $speaker-card-width: 460px;
       display: grid;
       justify-content: center;
-      grid-template-columns: repeat(auto-fill, minmax(100%, $speaker-card-width));
+      grid-template-columns: repeat(auto-fill, $speaker-card-width);
       grid-gap: 40px;
       width: 100%;
+
+      @media screen and (max-width: ($speaker-card-width + 24px)) {
+        grid-template-columns: repeat(auto-fill, calc(100% - 24px));
+      }
 
       .speaker {
         $photo-width: 130px;
@@ -182,6 +206,11 @@ p {
         position: relative;
         width: $speaker-card-width;
         max-width: 100%;
+
+        @media screen and (max-width: ($speaker-card-width + 24px)) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
 
         .photo {
           width: $photo-width;
@@ -212,8 +241,10 @@ p {
           color: $green-100;
           background-color: $green-500;
 
-          @media screen and (max-width: 460px) {
+          @media screen and (max-width: ($speaker-card-width + 24px)) {
             width: unset;
+            top: ($photo-height - 32px);
+            left: 16px;
             right: 0;
           }
         }
@@ -221,6 +252,10 @@ p {
         .description {
           margin: 74px 0 0 16px;
           font-size: pxToRem(16);
+
+          @media screen and (max-width: ($speaker-card-width + 24px)) {
+            margin: 28px 0 0 0;
+          }
         }
       }
     }
