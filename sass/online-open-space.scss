@@ -103,13 +103,14 @@ p {
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 40px 0;
+    padding: 40px 0 100px;
+    overflow: hidden;
 
     .background {
       position: absolute;
       top: -40px;
       right: -40px;
-      bottom: 0;
+      bottom: 50px;
       left: -40px;
       background-color: $orange-500;
       transform: rotate(-1.5deg);
@@ -156,7 +157,7 @@ p {
   section.predefined-speakers {
     display: flex;
     justify-content: center;
-    padding: 40px 0;
+    padding-bottom: 40px;
 
     .title {
       font-size: pxToRem(56);
