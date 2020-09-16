@@ -38,7 +38,12 @@ p {
 .online-open-space {
 
   .width-boundary {
+    width: 100%;
     max-width: $max-content-width;
+
+    @media screen and (max-width: ($max-content-width + 24px)) {
+      padding: 0 12px;
+    }
   }
 
   section.hero {
@@ -97,7 +102,6 @@ p {
   section.details {
     display: flex;
     justify-content: center;
-    width: 100%;
     position: relative;
     padding: 40px 0;
 
@@ -115,7 +119,7 @@ p {
     .content {
 
       .block + .block {
-        margin-top: 20px;
+        margin-top: 40px;
       }
 
       .block {
@@ -144,6 +148,78 @@ p {
         &.right {
           .title { text-align: right; }
           p { padding-right: 40px; }
+        }
+      }
+    }
+  }
+
+  section.predefined-speakers {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+
+    .title {
+      font-size: pxToRem(56);
+      font-weight: bold;
+      text-align: center;
+      color: $green-500;
+      margin-bottom: 50px;
+    }
+
+    .speakers {
+      $speaker-card-width: 460px;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fill, minmax(100%, $speaker-card-width));
+      grid-gap: 40px;
+      width: 100%;
+
+      .speaker {
+        $photo-width: 130px;
+        $photo-height: 160px;
+        display: flex;
+        position: relative;
+        width: $speaker-card-width;
+        max-width: 100%;
+
+        .photo {
+          width: $photo-width;
+          height: $photo-height;
+          flex-shrink: 0;
+          border-radius: 4px;
+          overflow: hidden;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15), 0px -2px 6px rgba(0, 0, 0, 0.1);
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .name {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          top: 12px;
+          left: ($photo-width - 16px);
+          padding: 0 12px;
+          width: 220px;
+          height: 50px;
+          font-size: pxToRem(22);
+          font-weight: bold;
+          color: $green-100;
+          background-color: $green-500;
+
+          @media screen and (max-width: 460px) {
+            width: unset;
+            right: 0;
+          }
+        }
+
+        .description {
+          margin: 74px 0 0 16px;
+          font-size: pxToRem(16);
         }
       }
     }
