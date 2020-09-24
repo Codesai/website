@@ -78,11 +78,20 @@ p {
       z-index: 10;
 
       .title {
-        margin-bottom: 24px;
-        font-size: pxToRem(48);
+        font-size: pxToRem(64);
 
         @media screen and (max-width: $tablet-breakpoint) {
-          font-size: pxToRem(36);
+          font-size: pxToRem(48);
+        }
+      }
+
+      .subtitle {
+        font-size: pxToRem(18);
+        font-weight: 600;
+        margin-bottom: 32px;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          font-size: pxToRem(14);
         }
       }
 
@@ -113,6 +122,10 @@ p {
 
           svg {
             max-width: calc(100% - 24px);
+
+            &:last-child {
+              max-height: 56px;
+            }
           }
         }
       }
@@ -170,6 +183,51 @@ p {
           .title { text-align: right; }
           p { padding-right: 40px; }
         }
+      }
+    }
+
+    .tickets {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+
+      a {
+        text-decoration: none;
+        color: $orange-100;
+
+        .button {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          font-size: pxToRem(32);
+          width: pxToRem(400);
+          height: pxToRem(75);
+          border: 4px solid $orange-100;
+          border-radius: 4px;
+          transition: background-color 0.2s ease;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+          }
+        }
+      }
+    }
+
+    .time-slot + .time-slot {
+      margin-top: 16px;
+    }
+
+    .time-slot {
+      display: flex;
+      font-size: pxToRem(20);
+      padding-left: 80px;
+
+      svg {
+        margin-right: 8px;
+      }
+
+      .time {
+        margin-right: 24px;
       }
     }
   }
