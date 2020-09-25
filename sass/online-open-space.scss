@@ -261,6 +261,10 @@ p {
       text-align: center;
       color: $green-500;
       margin-bottom: 50px;
+
+      &.with-margin {
+        margin-top: 32px;
+      }
     }
 
     .speakers {
@@ -306,6 +310,7 @@ p {
         .name {
           display: flex;
           align-items: center;
+          justify-content: space-between;
           position: absolute;
           top: 12px;
           left: ($photo-width - 16px);
@@ -316,6 +321,12 @@ p {
           font-weight: bold;
           color: $green-100;
           background-color: $green-500;
+
+          a {
+            height: 24px;
+            text-decoration: unset;
+            color: inherit;
+          }
 
           @media screen and (max-width: ($speaker-card-width + 24px)) {
             width: unset;
@@ -328,6 +339,12 @@ p {
         .description {
           margin: 74px 0 0 16px;
           font-size: pxToRem(16);
+
+          .talk {
+            font-size: pxToRem(18);
+            font-weight: 600;
+            margin-bottom: 8px;
+          }
 
           @media screen and (max-width: ($speaker-card-width + 24px)) {
             margin: 28px 0 0 0;
