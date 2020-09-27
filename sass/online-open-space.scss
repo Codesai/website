@@ -84,6 +84,16 @@ p {
           font-size: pxToRem(48);
         }
       }
+      
+      .motto {
+        font-size: pxToRem(20);
+        font-weight: 950;
+        margin-bottom: 16px;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          font-size: pxToRem(14);
+        }
+      }
 
       .subtitle {
         font-size: pxToRem(18);
