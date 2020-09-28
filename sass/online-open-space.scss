@@ -85,13 +85,30 @@ p {
         }
       }
 
-      .subtitle {
+      .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 48px;
         font-size: pxToRem(18);
         font-weight: 600;
-        margin-bottom: 32px;
 
         @media screen and (max-width: $tablet-breakpoint) {
           font-size: pxToRem(14);
+          margin: 8px 0 48px;
+        }
+
+        .divider {
+          content: "";
+          height: 2px;
+          width: 80px;
+          background-color: $green-100;
+          margin: 12px 0 8px;
+
+          @media screen and (max-width: $tablet-breakpoint) {
+            height: 1px;
+            width: 60px;
+          }
         }
       }
 
