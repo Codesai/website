@@ -20,9 +20,23 @@ cross_post_url:
 
 In our previous post about caring work, we told that the developers of the teams we coach decide which caring work is needed using a variation of the concerns mechanism<a href="#nota11"><sup>[1]</sup></a> presented by <a href="https://twitter.com/XaV1uzz">Xavi Gost</a>. This post will explain how we have adapted the concerns mechanism to our context and what we've learned using it with two teams in four different projects during the last year and a half<a href="#nota11"><sup>[2]</sup></a>.
 
+In his talk, Xavi Gost, talked about a process they had been experimenting with for several months. This process is based on the premise that developing software is a team endevour and on seeing the code as an implicit representation of the actual consensus inside a team about the software they are developing in a given moment. He also talked about how aknowledging the existence of this tacit consensus may cause problems in the team. According to Xavi Gost this consensus is not an end state, instead it is a set of agreements, tacit or explicit, that make sense for the team given their current context, that will evolve to adapt to contextual changes.
+
+The process he presented gives the team a way to raise concerns about the current team consensus. Anytime a pair is working on some code and sees something that they don't understand or think might be problematic, they can raise a concern to discuss it. For them raising a concern means describing it in a *Concern* card on the team board. Once the teams feels that there are enough concerns to discuss, or that there is some concern that is urgent, they hold a meeting called *Review* in which they review the pieces of code that caused those concerns, discuss them and reach to a new concensus. The outcome of this meeting may also include adding *Technical Debt* cards or *Chore* cards to the team board. <- [añadir una nota explicando qué quieren decir]
+
+We found this process very interesting because it: 
+- Fosters technical conversations
+- Serves as a space to manage conflicts and reach new agreements 
+- Helps to transmit knowledge 
+- Detects technical debt
+
+## Adapting it to our context
+
+*** Our context blabla
 
 ...energy and time to work on caring tasks which are concerned with keeping the health of the ecosystem composed of the code, the team and the client, so that it can continue evolving, being habitable for the team and producing value.
 
+*** What are concerns and what are their outcomes?
 
 En slack:
 Manuel Rivero  10 months ago
@@ -30,16 +44,7 @@ No hace falta pedir disculpas
 Manuel Rivero  10 months ago
 La cosa es no perder de vista que el objetivo de los concerns, tal y cómo los introdujimos, es sobre todo el aprendizaje (el consenso es más secundario aunque también se consigue), por eso es importante que estén los coaches del equipo (Fran, Álvaro y/o yo).Cuando el equipo ya no necesite coaches, pueden usar el mecanismo de concerns de otra forma, y destinarlo más a buscar consenso y alineación.
 
-## Our context
-
-
-## What are concerns and what are their outcomes?
-
-
-
 ## How are we using them at the moment?
-
-
 
 Applying the caring work narrative depends highly on the context of each company. Please, do not take this as a “a recipe for applying caring work” or “the way to apply caring work”. What is important is to understand the concept, then you will have to adapt it to your own context.
 
