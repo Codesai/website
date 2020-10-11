@@ -1,0 +1,51 @@
+---
+---
+
+// TODO Make the download program link work (for the TDD course)
+// TODO call to action toastr instead of alert xD
+
+$max-page-width: 945px;
+$max-width-breakpoint: 1024px;
+$tablet-breakpoint: 768px;
+
+$blueish-green: rgba(3, 204, 171, 1);
+$blueish-gray: rgba(41, 41, 46, 1);
+
+$blueish-green-hex: #03CCAB;
+
+$assistant: 'Assistant', sans-serif;
+$lekton: 'Lekton', sans-serif;
+$signika: 'Signika', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $assistant;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@import "../_sass/components";
+
+@import "../_sass/header";
+@import "../_sass/footer";
+@import "../_sass/home";
+@import "../_sass/clients";
+@import "../_sass/training";
+@import "../_sass/tdd_course";
+@import "../_sass/publications";
+@import "../_sass/posts";
+@import "../_sass/404";
+@import "../_sass/policies";
+@import "../_sass/categories";

@@ -1,0 +1,346 @@
+---
+title: Codesai
+permalink: /
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
+
+    <meta property="og:site_name" content="Codesai">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
+    <link rel='stylesheet' href='/css/ionicons.min.css' />
+    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
+
+    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
+    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
+    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
+
+    <script>
+        function saveCookie() {
+            Cookie('codesai').save();
+            $('.cookie-message').hide();
+        }
+
+        $(document).ready(function() {
+            if (Cookie('codesai').exists()) {
+                return;
+            }
+            $('.cookie-message').show();
+        });
+    </script>
+
+    {% if site.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+</head>
+<body>
+
+{% include header.html %}
+
+<!-- TODO: Tablet breakpoints for team-cards, courses section-title and sharing knowledge -->
+<main class="home">
+    <section class="hero">
+        <div>
+            <!-- TODO: Code snippet background -->
+            <h1>Desarrollo de software y formación</h1>
+            <div><span>//</span>Aceleramos la entrega de valor</div>
+            <div><span>//</span>Cuidando la calidad interna y externa</div>
+            <div><span>//</span>Formando parte de tu equipo, haciéndolo crecer</div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="description">
+            <div class="text">
+                <h2 class="section-title">Parte de tu equipo</h2>
+                <p>
+                    En Codesai creemos firmemente que los mejores resultados se obtienen colaborando de manera muy cercana con los equipos internos de cada compañía. Por eso, nos gusta <strong>formar parte de ellos, enseñándoles de primera mano a mejorar sus procesos y desarrollar mejor código</strong>. Compartimos sus logros, frustraciones, dudas... sin olvidarnos de crear un buen ambiente de trabajo y sacar lo mejor de cada uno.
+                </p>
+                <p>
+                    Procuramos tener perfiles muy polivalentes, lo que nos permite apoyarte en múltiples vertientes del desarrollo de tu producto. Desde el equipo técnico, pero codo con codo con negocio.
+                </p>
+            </div>
+            <div class="image">
+                <img src="/assets/home/top_picture.png" alt="">
+            </div>
+        </div>
+        <div class="clients">
+            <h3 class="trusted-by">
+                <img src="/assets/icons/thumbs_up.svg" alt="thumbs up">
+                Empresas que han confiado en nosotros
+            </h3>
+            <div>
+                <img src="/assets/clients/lifull-connect.svg" alt="Lifull Connect logo">
+                <img src="/assets/clients/buyviu.svg" alt="Buyviu logo">
+                <img src="/assets/clients/green-power-monitor.svg" alt="Green Power Monitor logo">
+                <img src="/assets/clients/grupo-asv.svg" alt="Grupo ASV logo">
+                <img src="/assets/clients/domingo-alonso.svg" alt="Domingo Alonso logo">
+                <img src="/assets/clients/themotion.svg" alt="TheMotion logo">
+                <img src="/assets/clients/typeform.svg" alt="Typeform logo">
+                <img src="/assets/clients/merkle.svg" alt="Merkle logo">
+                <img src="/assets/clients/schibsted.svg" alt="Schibsted logo">
+                <img src="/assets/clients/velneo.svg" alt="Velneo logo">
+                <img src="/assets/clients/gradiant.svg" alt="Gradiant logo">
+                <img src="/assets/clients/ve.svg" alt="Ve logo">
+                <img src="/assets/clients/mutua.png" alt="Mutua logo">
+                <img src="/assets/clients/besepa.svg" alt="Besepa logo">
+                <img src="/assets/clients/gtt.svg" alt="gtt logo">
+                <img src="/assets/clients/cetelem.svg" alt="Cetelem logo">
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title">Nuestros servicios</h2>
+        <div class="catalogue">
+            <img src="/assets/shapes/hexaback.svg" alt="Hexagon 1" class="shape first">
+            <img src="/assets/shapes/hexaback.svg" alt="Hexagon 2" class="shape second">
+            <img src="/assets/shapes/hexaback.svg" alt="Hexagon 3" class="shape third">
+            <div class="section">
+                <div class="info">
+                    <div class="type">Desarrollo de software</div>
+                    <p>Podemos ser tu equipo o formar parte del mismo, promoviendo las buenas prácticas y la comunicación.</p>
+                    <p>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Prácticas XP, Agile</span>
+                    </p>
+                    <p>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Código habitable</span>
+                    </p>
+                    <p>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Cercanía con negocio</span>
+                    </p>
+                    <p>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Probado y sostenible</span>
+                    </p>
+                </div>
+                <a href="/clients/">
+                    {% include components/codesai-button.html content='Ver proyectos' %}
+                </a>
+            </div>
+            <div class="section">
+                <div class="info">
+                    <div class="type">Formación presencial</div>
+                    <p>Ofertamos varios cursos en los que obtener conocimientos clave para adquirir un mejor ritmo y entorno de desarrollo.</p>
+                    <p>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Eminentemente prácticos</span>
+                    </p>
+                    <p>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Transversales a tu negocio</span>
+                    </p>
+                    <p>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>DDD, TDD, Refactoring...</span>
+                    </p>
+                    <p>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Detallado y con ejemplos</span>
+                    </p>
+                </div>
+                <a href="/curso-de-tdd/">
+                    {% include components/codesai-button.html content='Ver cursos' %}
+                </a>
+            </div>
+            <div class="section">
+                <div class="info">
+                    <div class="type">Asesoramiento y apoyo</div>
+                    <p>Si requieres de una ayuda puntual, podemos evaluar tu situación y ofrecerte posibles soluciones.</p>
+                    <p>
+                       <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Consultoría específica</span>
+                    </p>
+                    <p>
+                       <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Observamos y sugerimos</span>
+                    </p>
+                    <p>
+                       <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Desbloqueamos problemas</span>
+                    </p>
+                    <p>
+                       <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>Prevenimos que surjan</span>
+                    </p>
+                </div>
+                <a href="/clients/">
+                    {% include components/codesai-button.html content='Casos de éxito' %}
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h2 class="section-title mobile">Expertos en formación Test Driven Development (TDD)</h2>
+        <div class="image">
+            <img src="/assets/home/mid_picture.png" alt="">
+        </div>
+        <div class="description">
+            <h2 class="section-title desktop">Expertos en formación Test Driven Development (TDD)</h2>
+            <p>
+                TDD es para nosotros nuestra forma de trabajo habitual, por eso cuando impartimos una formación de TDD lo hacemos desde el convencimiento de que esta técnica aporta grandes beneficios y puede elevar como ninguna otra el nivel técnico de un equipo de desarrollo. En Codesai nos sentimos orgullosos de ser referentes tanto en la aplicación como en la formación en Test Driven Development, contando con algunos de los profesionales más reconocidos en el sector y la comunidad en la aplicación de esta técnica.
+            </p>
+            <p>
+                Somos conscientes de que aplicar TDD de manera efectiva es muy complejo, y cómo muchos equipos tiran la toalla al probarlo durante un tiempo. En nuestra experiencia, contar con un equipo de profesionales expertos puede reducir la curva de adaptación y marcar la diferencia que permita al equipo extraer el valor que esta técnica puede aportar.
+            </p>
+            <div class="button">
+                <a href="/curso-de-tdd/">
+                    {% include components/codesai-button.html content='Más información' %}
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <h2 class="section-title">Quiénes somos</h2>
+
+        <!-- TODO: Change avatar image style -->
+        <div class="team-cards">
+            {% include components/member-card.html
+                photo='/assets/team/alfredo_casado.jpg'
+                name='Alfredo Casado'
+                bio='Más de 20 años programando. Durante los últimos años ha liderado equipos con métodos ágiles como Extreme Programming y prácticas como DDD (Domain Driven Design). Miembro veterano y conocido de la  comunidad Java Hispano.'
+                twitter_handle='AlfredoCasado'
+                linkedin_profile='https://www.linkedin.com/in/alfredo-casado/'
+                github_user='AlfredoCasado'
+            %}
+            {% include components/member-card.html
+                photo='/assets/team/daniel_ojeda.jpg'
+                name='Daniel Ojeda'
+                bio='Aplicar las metodologías agiles en el día a día le permiten realizar un mejor trabajo y redescubrir su pasión por el desarrollo de software. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria y co-organizador de Socrates Canaries 2016.'
+                twitter_handle='SuuiGD'
+                linkedin_profile='https://www.linkedin.com/in/danielojedaloisel/'
+                github_user='Suui'
+            %}
+            {% include components/member-card.html
+                photo='/assets/team/manuel_tordesillas.jpg'
+                name='Manuel Tordesillas'
+                bio='Ingeniero en Informática y Electrónica con 6 años de experiencia en el desarrollo de Software. Considera esenciales el aprendizaje y la mejora continua para conseguir dejar una marca positiva en la sociedad y la industria.'
+                twitter_handle='mjtordesillas'
+                linkedin_profile='https://www.linkedin.com/in/mjtordesillas/'
+                github_user='mjtordesillas'
+            %}
+            {% include components/member-card.html
+                photo='/assets/team/fran_reyes.jpg'
+                name='Fran Reyes'
+                bio='Se preocupa por hacer las cosas bien y mejorar continuamente. Defensor de los métodos ágiles por ser una manera de construir software excelente. Aunque su trayectoria es técnica, le interesan otras áreas del producto final (negocio, UX, operaciones, etc).'
+                twitter_handle='fran_reyes'
+                linkedin_profile='https://www.linkedin.com/in/franreyesperdomo/'
+                github_user='franreyes'
+            %}
+            {% include components/member-card.html
+                photo='/assets/team/antonio_de_la_torre.jpg'
+                name='Toño de la Torre'
+                bio='Encontró su sitio natural en equipos interesados en la mejora continua, y en hacer un código bonito. Desarrolla sobre todo en Javascript y Groovy. Busca la integración de todos los perfiles, especialmente los de diseño en el desarrollo del producto.'
+                twitter_handle='adelatorrefoss'
+                linkedin_profile='https://www.linkedin.com/in/antoniodelatorre/'
+                github_user='adelatorrefoss'
+            %}
+            {% include components/member-card.html
+                photo='/assets/team/miguel_viera.jpg'
+                name='Miguel Viera'
+                bio='Apasionado del desarrollo y de la formación continua para lograr mejores soluciones. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria. Co-organizador del congreso internacional SoCraTes 2016 (Software Craftsmanship and Testing) en España.'
+                twitter_handle='mangelviera'
+                linkedin_profile='https://www.linkedin.com/in/miguel-viera/'
+                github_user='Groxalf'
+            %}
+            {% include components/member-card.html
+                photo='/assets/team/manuel_rivero.jpg'
+                name='Manuel Rivero'
+                bio='Empezó de nuevo hace pocos años como desarrollador web. Co-fundador de la comunidad Software Craftsmanship de Barcelona, involucrado en la comunidad Clojure Developers Barcelona y co-fundador de la comunidad Aprendices.'
+                twitter_handle='trikitrok'
+                linkedin_profile='https://www.linkedin.com/in/manuel-rivero-54411271/'
+                github_user='trikitrok'
+            %}
+            {% include components/member-card.html
+                photo='/assets/team/ruben_diaz.jpg'
+                name='Rubén Díaz'
+                bio='Aprendiendo y desarrollando desde 2014, le encanta seguir las prácticas de XP y colaborar con negocio para entregar valor lo antes posible. Intenta jubilarse habiendo borrado más código del que ha escrito. Co-organizador de Socrates Canaries 2019.'
+                twitter_handle='rubendm23'
+                linkedin_profile='https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/'
+                github_user='rubendm92'
+            %}
+        </div>
+    </section>
+
+    <section class="collaborators">
+        <h2 class="section-title">Colaboran con nosotros</h2>
+
+        <div class="collaborator-cards">
+            <div class="collaborator-card">
+                <img src="/assets/partners/alvaro.jpeg" alt="Álvaro García">
+                <div class="name">Álvaro García</div>
+                <div class="role">Principal Software Engineer</div>
+            </div>
+            <div class="collaborator-card">
+                <img src="http://gravatar.com/avatar/6f6a60115023a94084d76b506e7df43e?s=200" alt="Maica Trinidad">
+                <div class="name">Maica Trinidad</div>
+                <div class="role">Agile Coach</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <h2 class="section-title">Compartiendo conocimiento</h2>
+        <p>
+            Conferencia Agile Spain, DevFest, Tarugoconf... En Codesai nos encanta participar en eventos y
+            compartir puntos de vista con otros profesionales (tanto, que incluso nos hemos atrevido a organizar
+            alguno). Y además de estar involucrados en algunas comunidades, también <strong>publicamos contenido
+            que esperamos que pueda ayudar y aportar a nuestro sector.</strong>
+        </p>
+
+        <!-- TODO mix posts & videos, label them & style them accordingly -->
+        <div class="posts">
+            {% for post in site.posts limit:3 %}
+                <a href="{{ post.url }}" target="_blank" class="post">
+                    <div>
+                        <img src="/assets/{{ post.small_image }}" alt="{{ post.title }}">
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.author }}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <div class="actions">
+            <a href="/publications/">
+                {% include components/codesai-button.html content='Ver más contenido' %}
+            </a>
+        </div>
+    </section>
+
+    {% include components/call-to-action.html
+        title='¡Contáctanos!'
+        text='<p>¿Tienes dudas? Si quieres saber más sobre nuestra forma de trabajar y en lo que podemos aportar, no dudes en escribirnos a contact@codesai.com o rellenando el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
+        defaultMessage='Sent from the Home page, no message specified'
+        messagePlaceHolder='Me gustaría obtener más información, saber qué podríais aportarme y cómo colaborar.'
+    %}
+
+    {% include components/masks.html %}
+    {% include components/filters.html %}
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>

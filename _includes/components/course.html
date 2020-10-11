@@ -1,0 +1,37 @@
+<div class="course">
+    <div class="image">
+        <span>
+            <img src="{{ include.logo }}" alt="{{ include.name }} course">
+        </span>
+    </div>
+    <div class="description">
+        <h2>{{ include.name }}</h2>
+        <p>{{ include.description }}</p>
+        <div class="info">
+            <h3>
+                <img src="/assets/icons/teaching.svg" alt="teaching info">
+                Información
+            </h3>
+            <div>
+                <div class="schedule">
+                    <img src="/assets/icons/clock-green.svg" alt="Clock">
+
+                    <div class="text">
+                        <p><strong>2 días intensivos</strong></p>
+                        <p>Jornada completa</p>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <img src="/assets/icons/euro-green.svg" alt="Euro">
+                    <div class="text">
+                        <p><strong>Desde {{ include.starting_price }}€/persona</strong></p>
+                        <p>I.V.A. no incluido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{{ include.link }}">
+            {% include components/codesai-button.html content='Ver más información' %}
+        </a>
+    </div>
+</div>

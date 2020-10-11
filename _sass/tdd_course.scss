@@ -1,0 +1,255 @@
+
+.course-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  width: 100%;
+
+  @media screen and (max-width: $max-width-breakpoint) {
+    margin-top: 2rem;
+  }
+
+  .title {
+    font-family: $lekton;
+    margin: 2rem 0 0.25rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+
+    span {
+      font-family: $signika;
+      color: $blueish-green;
+      font-weight: lighter;
+    }
+  }
+
+  .course {
+    max-width: $max-page-width;
+
+    .information {
+      display: flex;
+      padding: 0 1rem;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .insights {
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          order: 2;
+          max-width: 560px;
+        }
+
+        .course-title {
+          font-family: $lekton;
+          margin-bottom: 1rem;
+          font-size: 3rem;
+          font-weight: bolder;
+          line-height: 1.2;
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            font-size: 2.75rem;
+          }
+        }
+
+        .course-description {
+          font-size: 1.2rem;
+        }
+
+        section {
+          p {
+            font-size: 1.1rem;
+            margin: 0 0 0.5rem;
+            line-height: 1.5;
+          }
+
+          // TODO adapt flex model for number & title so that two liners & bullets align (ref group 3)
+          &.contents .daily-agenda {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+
+            .day {
+              font-family: $lekton;
+              flex-shrink: 0;
+              width: 166px;
+              font-size: 1.25rem;
+              font-weight: bold;
+              text-transform: uppercase;
+              color: $blueish-green;
+            }
+
+            .topics {
+              margin: 1rem 0 0 2rem;
+              font-size: 1.1rem;
+              letter-spacing: 0.025rem;
+
+              .group {
+                font-weight: bold;
+                margin-bottom: 1rem;
+
+                span {
+                  font-size: 1.12rem;
+                  font-weight: bold;
+                  color: $blueish-green;
+                }
+              }
+
+              .subgroup {
+                margin: 0 0 1rem 2rem;
+
+                span {
+                  color: $blueish-green;
+                }
+              }
+            }
+          }
+
+          &.where p.unicode {
+            margin-top: 1.5rem;
+            font-family: $lekton;
+            font-weight: bold;
+          }
+        }
+
+        hr {
+          border: 0;
+          border-top: 1px solid $blueish-green;
+        }
+      }
+
+      .summary {
+        flex-shrink: 0;
+        width: 297px;
+        margin-left: 2rem;
+        position: relative;
+
+        &.mobile {
+          display: none;
+          margin: 2rem 0 0 0;
+          width: 100%;
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        &.desktop {
+          @media screen and (max-width: $max-width-breakpoint) {
+            display: none;
+          }
+        }
+
+        .padded-area {
+          padding: 1rem 1rem 1.5rem 1rem;
+          background-color: $blueish-green;
+          border-radius: 20px;
+          max-width: 420px;
+          position: sticky;
+          top: 2rem;
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            position: static;
+          }
+
+          .codesai-button {
+            display: flex;
+          }
+
+          .open-course {
+            font-family: $lekton;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+
+            .announcement {
+              margin-bottom: 0.5rem;
+              font-size: 1.25rem;
+            }
+
+            .dates {
+              font-size: 2rem;
+              text-transform: uppercase;
+            }
+
+            .place {
+              font-size: 1.5rem;
+            }
+          }
+
+          .hint {
+            display: flex;
+            margin-bottom: 1.25rem;
+
+            .icon {
+              flex-shrink: 0;
+              width: 38px;
+            }
+
+            .info {
+              font-size: 1.125rem;
+
+              &.download {
+                align-self: center;
+                padding: 1px;
+                border-bottom: 2px solid white;
+              }
+
+              .highlight {
+                font-family: $assistant;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                span {
+                  font-size: 1rem;
+                  font-weight: normal;
+                }
+              }
+
+              .detail {
+                line-height: 1.75rem;
+
+                & + .highlight {
+                  margin-top: 0.75rem;
+                }
+
+                span {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2.25rem;
+
+    .photo {
+      margin: 0.75rem;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .testimonials {
+    margin-top: 3rem;
+
+    .tweets {
+      display: flex;
+    }
+  }
+}

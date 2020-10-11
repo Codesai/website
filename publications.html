@@ -1,43 +1,186 @@
 ---
-layout: page
-title: Publications
+title: Codesai
 permalink: /publications/
 ---
 
-<section id="blog-posts">
-	<div class="container">
+<!DOCTYPE html>
+<html lang="es">
+<head>
 
-		<div id="publication-tabs">
-			<div class="row">
-				<ul>
-					<li role="presentation" class="col-xs-6 active"><a href="#posts-tab" aria-controls="posts-tab" role="tab" data-toggle="tab">Posts</a></li>
-					<li role="presentation" class="col-xs-6" ><a href="#videos-tab" aria-controls="videos-tab" role="tab" data-toggle="tab">Videos</a></li>
-				</ul>
-			</div>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-			<div class="row">
-				<div class="col-md-12 bottom-separator"></div>
-			</div>
-		</div>
-		
-		<div class="tab-content">
-			<div role="tabpanel" class="tab-pane fade in active" id="posts-tab">
-				{% include blog-posts.html %}
-			</div>
+    <title>Codesai Blog</title>
+    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
 
-			<div role="tabpanel" class="tab-pane fade" id="videos-tab">
-				<div class="tab-area">
-					{% include videos.html %}
-				</div>
-			</div>
+    <meta property="og:site_name" content="Codesai">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
 
-		</div>
-	</div>
-</section>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
+    <link rel='stylesheet' href='/css/ionicons.min.css' />
+    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
+
+    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
+    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
+    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
+
+    <script>
+        function saveCookie() {
+            Cookie('codesai').save();
+            $('.cookie-message').hide();
+        }
+
+        $(document).ready(function() {
+            if (Cookie('codesai').exists()) {
+                return;
+            }
+            $('.cookie-message').show();
+        });
+    </script>
+
+    {% if site.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+</head>
+<body>
+
+{% include header.html %}
+
+<main class="publications">
+    <ul class="tabs">
+        <li class="active" id="showPosts">Posts</li>
+        <li id="showVideos"><a>Videos</a></li>
+    </ul>
+
+    <div class="posts" id="postsTab">
+        {% for post in site.posts %}
+            <div class="post">
+                <div class="image">
+                    {% if post.small_image %}
+                        <div class="small-image" style="background-image: url(../assets/{{ post.small_image}})"></div>
+                    {% else %}
+                        <div class="small-image" style="background-image: url(../img/logo.svg); width: 80%; margin: auto;"></div>
+                    {% endif %}
+                </div>
+                <div class="content">
+                    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                    <p>{{ post.date | date: "%d/%m/%Y" }}</p>
+                    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="videos hidden" id="videosTab">
+        {% include new-published-video.html title="Clean code & refactoring + live coding" speakers="Alfredo Casado y Miguel Viera" video-id="CIfBC56tPEI" %}
+
+        {% include new-published-video.html title="Introducción a TDD + live coding" speakers="Alfredo Casado y Miguel Viera" video-id="zmjmgdOB1pM" %}
+
+        {% include new-published-video.html title="Arquitectura Hexagonal + live coding" speakers="Alfredo Casado y Miguel Viera" video-id="u-0PfHpKwT4" %}
+
+        {% include new-published-video.html title="El legacy vino para quedarse" speakers="Antonio de la Torre" video-id="WRiQPOn7Fcc" %}
+
+        {% include new-published-video.html title="TDD no es escribir el test primero" speakers="Daniel Ojeda" video-id="nS1gqqf6Cb0" %}
+
+        {% include new-published-video.html title="Listening to the tests" speakers="Fran Reyes" video-id="e-d1P-kZIfs" %}
+
+        {% include new-published-video.html title="Una vida descubriendo Agile" speakers="Antonio de la Torre" video-id="y9FLkaN7Yxo" %}
+
+        {% include new-published-video.html title="Effects, coeffects and subscriptions: a pit of success for SPAs" speakers="Manuel Rivero" video-id="ZucGhy8fGVA" %}
+
+        {% include new-published-video.html title="Valores y principios en el diseño del software" speakers="Fran Reyes" video-id="sXLCBcELu5Y" %}
+
+        {% include new-published-video.html title="Discusiones y decisiones: herramientas para la efectividad" speakers="Antonio de la Torre" video-id="fDvr-fs01m8" %}
+
+        {% include new-published-video.html title="Learned lessons in a real world project" speakers="Luis Rovirosa" video-id="HfAsrpF0Reo" %}
+
+        {% include new-published-video.html title="Slow life o cómo montárselo bien como desarrollador" speakers="Luis Rovirosa y Jordi Anguela" video-id="BtxhAD3gcPI" %}
+
+        {% include new-published-video.html title="Native and browser SPA versions using re-frame, ClojureScript and ReactNative" speakers="Manuel Rivero" video-id="p1fXJyomXNQ" %}
+
+        {% include new-published-video.html title="Replace String Constants with Type III" speakers="Carlos Blé" video-id="b9rv37eyeRw" %}
+
+        {% include new-published-video.html title="Replace String Constants with Type II" speakers="Carlos Blé" video-id="o8PVNrfl1p8" %}
+
+        {% include new-published-video.html title="Replace String Constants with Type I" speakers="Carlos Blé" video-id="RIyqsyxhQmA" %}
+
+        {% include new-published-video.html title="Sequence Comprehensions en Clojure" speakers="Manuel Rivero" video-id="rxegilFlZIc" %}
+
+        {% include new-published-video.html title="Aprender a distinguir el problema de las soluciones" speakers="Carlos Blé" video-id="IqUo9kCWQrw" %}
+
+        {% include new-published-video.html title="El camino del aprendizaje" speakers="Modesto San Juan y Ronny Ancorini" video-id="V0Z9RcgeRbU" %}
+
+        {% include new-published-video.html title="Funciones en Clojure" speakers="Manuel Rivero" video-id="HmAU-z5dPS8" %}
+
+        {% include new-published-video.html title="Comunidades de necesidad vs comunidades de soluciones" speakers="Antonio de la Torre" video-id="jzV7pMshyic" %}
+
+        {% include new-published-video.html title="OOP &amp; Connascence" speakers="Alfredo Casado" video-id="bIr5fPom7B4" %}
+
+        {% include new-published-video.html title="Stop complaining Start doing" speakers="Luis Rovirosa" video-id="SYMXS6hv8d8" %}
+
+        {% include new-published-video.html title="Técnicas de lectura rápida" speakers="Daniel Ojeda" video-id="o6sNTK671XU" %}
+
+        {% include new-published-video.html title="Destructuring en Clojure" speakers="Manuel Rivero" video-id="qMcjufX8czs" %}
+
+        {% include new-published-video.html title="Refactoring C# sequences: Safe Unwrap" speakers="Carlos Blé" video-id="DpGk34Lqo-A" %}
+
+        {% include new-published-video.html title="Refactoring JavaScript orientado a objetos" speakers="Carlos Blé" video-id="se8k3D7E-ik" %}
+
+        {% include new-published-video.html title="Refactoring JavaScript con estilo funcional" speakers="Carlos Blé" video-id="_cObNw1B8E8" %}
+
+        {% include new-published-video.html title="Kata de las Cartas en JavaScript" speakers="Carlos Blé" video-id="LJQnxDZQHoo" %}
+
+        {% include new-published-video.html title="Transformation Priority Premise with JavaScript" speakers="Carlos Blé" video-id="D2gFmSUeA3w" %}
+
+        {% include new-published-video.html title="Refactoring to functional style JavaScript" speakers="Carlos Blé" video-id="ZFDeJA2emg4" %}
+
+        {% include new-published-video.html title="Cards Kata in JavaScript" speakers="Carlos Blé" video-id="C8Ea80oOumg" %}
+
+        {% include new-published-video.html title="Implementando algoritmos con TDD" speakers="Carlos Blé" video-id="vL78Cm5BJBU" %}
+
+        {% include new-published-video.html title="Apertura Mejorando Software CAS 2015" speakers="Carlos Blé" video-id="_G-Qm_IDJhI" %}
+
+        {% include new-published-video.html title="Entrevistas AprendiendoTDD: Carlos Blé" speakers="Carlos Blé" video-id="SkGlzxkiKPs" %}
+
+        {% include new-published-video.html title="TDD Concretar en lugar de abstraer" speakers="Carlos Blé" video-id="xkIMzuxKpU4" %}
+    </div>
+</main>
+
+
+{% include footer.html %}
 
 <script>
-	var tabToBeShown = document.location.hash + '-tab';
-	if (tabToBeShown) {
-		$('#publication-tabs a[href="' + tabToBeShown + '"]').tab('show');
-	}
+    document.getElementById('showPosts').addEventListener('click', () => {
+        document.getElementById('postsTab').classList.remove('hidden');
+        document.getElementById('videosTab').classList.add('hidden');
+        document.getElementById('showPosts').classList.add('active');
+        document.getElementById('showVideos').classList.remove('active');
+    });
+    document.getElementById('showVideos').addEventListener('click', () => {
+        document.getElementById('postsTab').classList.add('hidden');
+        document.getElementById('videosTab').classList.remove('hidden');
+        document.getElementById('showPosts').classList.remove('active');
+        document.getElementById('showVideos').classList.add('active');
+    });
+
+    document.querySelectorAll('.youtube-player > div').forEach(e => {
+        e.addEventListener('click', () => {
+            const iframe = document.createElement("iframe");
+            const embed = "https://www.youtube.com/embed/ID?autoplay=1";
+            iframe.setAttribute("src", embed.replace("ID", e.dataset.id));
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allowfullscreen", "1");
+            e.parentNode.replaceChild(iframe, e);
+        })
+    });
 </script>
+</body>
+</html>

@@ -45,6 +45,10 @@ descriptions:
 environment: production
 
 clients:
+    - name: Lifull Connect
+      url: https://www.lifullconnect.com/
+      logo: ../img/logos/lifull-connect.svg
+      description: clients/lifull-connect.html
     - name: Buyviu
       url: https://buyviu.com/
       logo: ../img/logos/buyviu.png
@@ -61,6 +65,10 @@ clients:
       url: https://www.aidacanarias.com/
       logo: ../img/logos/domingo_alonso.png
       description: clients/domingo_alonso.html
+    - name: Mutua Tinerfeña
+      url: https://mutuatfe.es/
+      logo: ../img/logos/mutua.png
+      description: clients/mutua.html
     - name: TheMotion
       url: https://www.themotion.com/
       logo: ../img/logos/the_motion.png

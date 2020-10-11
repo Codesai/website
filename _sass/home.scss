@@ -1,0 +1,530 @@
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  h2.section-title {
+    font-family: $lekton;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin: 0.5rem 0;
+
+    @media screen and (max-width: $max-width-breakpoint) {
+      text-align: center;
+    }
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    width: 100%;
+    background-color: $blueish-green;
+
+    div {
+      font-family: $lekton;
+      font-size: 1.5rem;
+
+      h1 {
+        margin: 0;
+        font-size: 2.75rem;
+        line-height: 4rem;
+      }
+
+      span {
+        color: white;
+        font-weight: bolder;
+        margin-right: 0.6rem;
+      }
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    max-width: $max-page-width;
+    margin-bottom: 3rem;
+
+    .description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 1rem;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: column;
+      }
+
+      .text {
+        padding: 3rem 2rem 2rem 0;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          order: 2;
+          padding: 2rem 0;
+        }
+
+        p {
+          margin-top: 0;
+          font-size: 1.1rem;
+          line-height: 1.6;
+        }
+      }
+
+      .image {
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          display: flex;
+          justify-content: center;
+          order: 1;
+        }
+
+        img {
+          max-width: 320px;
+          margin-top: -41px;
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            max-width: 280px;
+            max-height: 386px;
+          }
+        }
+      }
+    }
+
+    // TODO client logos in SVG or PNG? to preserve quality as in Figma
+    // TODO review ManuT's feedback on the tdd course page
+    .clients {
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        margin: 0 1rem;
+      }
+
+      .trusted-by {
+        font-family: $lekton;
+        background-color: $blueish-green;
+        display: inline-block;
+        color: white;
+        margin: 0;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          width: 100%;
+        }
+      }
+
+      div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-family: $assistant;
+        background-color: #EDF7F5;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        border-radius: 0 10px 10px 10px;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          border-radius: 0 0 10px 10px;
+        }
+
+        img {
+          object-fit: contain;
+          margin: 1rem;
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            max-width: 224px;
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: $max-page-width;
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: $max-width-breakpoint) {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+      margin-top: 2rem;
+    }
+
+    .section-title {
+      margin: 0 0 1rem 0;
+    }
+
+    .catalogue {
+      display: flex;
+      flex-direction: row;
+      border-radius: 20px;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: unset;
+        // If overflow-x & y have different values, it is computed causing scroll if one is visible and the other auto
+        overflow: visible;
+        box-shadow: none;
+      }
+
+      .shape {
+        position: absolute;
+        z-index: -1;
+
+        &.first {
+          left: -13px;
+          top: -45px;
+          transform: rotate(-14deg) scale(1.5);
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            left: -96px;
+            top: -65px;
+            transform: rotate(-14deg) scale(2, 1.8);
+          }
+        }
+
+        &.second {
+          left: 406px;
+          top: -94px;
+          transform: rotate(165deg) scale(1.6, 2);
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            right: -88px;
+            left: unset;
+            top: 444px;
+            transform: rotate(67deg) scale(1.6, 2);
+          }
+        }
+
+        &.third {
+          right: 10px;
+          top: -58px;
+          transform: rotate(9deg) scale(1.5);
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            left: -103px;
+            top: unset;
+            transform: rotate(-45deg) scale(2, 2.2);
+            bottom: -92px;
+          }
+        }
+      }
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        justify-content: space-between;
+        margin: 1.25rem 0;
+        padding: 0 1.75rem;
+        font-size: 1.1rem;
+        border-right: 1px dotted $blueish-green;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          border-right: unset;
+          flex: unset;
+          max-width: 520px;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+
+        .info {
+          .type {
+            font-family: $lekton;
+            font-size: 2rem;
+            font-weight: bolder;
+            line-height: 1.15;
+            margin-bottom: 0.5rem;
+          }
+
+          p {
+            img {
+              margin-right: 0.5rem;
+            }
+          }
+
+          .codesai-button {
+            .content {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        a {
+          margin-top: 1rem;
+        }
+
+        h2 {
+          margin-top: 0;
+        }
+
+        .codesai-button {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem;
+    max-width: $max-page-width;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: $max-width-breakpoint) {
+      flex-direction: column;
+    }
+
+    .section-title {
+      margin: 0 0 1rem 0;
+      line-height: 1.25;
+
+      &.mobile {
+        display: none;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          text-align: unset;
+          display: block;
+        }
+      }
+
+      &.desktop {
+        @media screen and (max-width: $max-width-breakpoint) {
+          display: none;
+        }
+      }
+    }
+
+    .image {
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        display: flex;
+        justify-content: center;
+      }
+
+      img {
+        margin-top: 1.5rem;
+        max-width: 320px;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          margin: 0.5rem 0 1rem 0;
+          max-width: 280px;
+          max-height: 386px;
+        }
+      }
+    }
+
+    .description {
+      padding-left: 2rem;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        padding-left: 0;
+      }
+
+      p {
+        margin-top: 0;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .button {
+        margin-top: 0.5rem;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          display: flex;
+          justify-content: center;
+        }
+
+        .codesai-button {
+          width: 280px;
+        }
+      }
+    }
+  }
+
+  .team {
+    width: 100%;
+    max-width: $max-page-width;
+    margin-bottom: 4rem;
+
+    .team_mask{
+      width: 0;
+      height: 0;
+    }
+
+    .section-title {
+      text-align: center;
+    }
+
+    .team-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .blog {
+    width: 100%;
+    max-width: $max-page-width;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: $max-width-breakpoint) {
+      padding: 0 1rem;
+    }
+
+    .section-title {
+      text-align: center;
+    }
+
+    p {
+      margin-top: 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .posts {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 0.5rem 0;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        justify-content: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .post {
+        margin: 0 0.5rem;
+        padding: 0.5rem;
+        width: 290px;
+        border-radius: 10px;
+        transition: background-color 0.25s ease;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          &:last-child {
+            display: none;
+          }
+        }
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          margin: 0.5rem;
+
+          &:last-child {
+            display: block;
+          }
+        }
+
+        &:hover {
+          background-color: $blueish-green;
+        }
+
+        img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        h3 {
+          margin: 0;
+          font-family: $lekton;
+          text-decoration: underline;
+          text-decoration-color: $blueish-green;
+        }
+
+        p {
+          color: $blueish-gray;
+          margin: 0.5rem 0;
+        }
+      }
+    }
+
+    .actions {
+      text-align: center;
+
+      .codesai-button {
+        width: 280px;
+      }
+    }
+  }
+
+  .collaborators {
+    width: 100%;
+    max-width: $max-page-width;
+    margin-bottom: 4rem;
+
+    .section-title {
+      text-align: center;
+    }
+
+    .collaborator-cards {
+      display: flex;
+      justify-content: center;
+
+      @media screen and (max-width: $tablet-breakpoint) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .collaborator-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        margin: 0 1rem;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          margin: 1rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        img {
+          object-fit: cover;
+          width: 115px;
+          height: calc(115px * 1.111);
+          -webkit-clip-path: url(#hexagonalMask);
+          clip-path: url(#hexagonalMask);
+          filter: url(#greenOverlayFilter);
+        }
+
+        .name {
+          font-size: 1.125rem;
+          font-weight: bold;
+          margin: 0.75rem 0 0.25rem;
+        }
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+

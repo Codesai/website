@@ -1,0 +1,185 @@
+.publications {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 1170px;
+
+  @media screen and (max-width: $max-width-breakpoint) {
+    margin: 24px;
+  }
+
+  .tabs {
+    border-bottom: 2px solid black;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    li {
+      transition: background-color 0.3s ease;
+      border-radius: 3px 3px 0 0;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      width: 50%;
+      cursor: pointer;
+      color: black;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      letter-spacing: 0.02em;
+      font-weight: 600;
+
+      &.active {
+        background-color: #111;
+        color: $blueish-green;
+      }
+    }
+  }
+
+  .posts {
+    margin-top: 12px;
+    .post {
+      width: 100%;
+      min-height: 150px;
+      background-color: white;
+      border-bottom: 1px dotted #ddd;
+      padding: 24px;
+      display: flex;
+      flex-direction: row;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 30%;
+        @media screen and (max-width: $max-width-breakpoint) {
+          width: 100%;
+        }
+        .small-image {
+          width: 100%;
+          height: 180px;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      .content {
+        width: 70%;
+        @media screen and (max-width: $max-width-breakpoint) {
+          width: 100%;
+          margin-top: 24px;
+        }
+        h2 {
+          font-size: 30px;
+          color: #333;
+          padding: 0;
+          margin: 0;
+          font-weight: 600;
+        }
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+        p {
+          font-size: 15px;
+          line-height: 28px;
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+
+  .videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+    .video {
+      display: flex;
+      flex-direction: column;
+      width: 480px;
+      max-width: 100%;
+      min-height: 360px;
+      padding: 16px 16px 30px;
+      text-align: center;
+      .youtube-player {
+        height: 280px;
+        position: relative;
+        padding-bottom: 280px;
+        overflow: hidden;
+        width: 100%;
+        background: #000;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          padding-bottom: 140px;
+        }
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 100;
+          background: transparent;
+        }
+
+        img {
+          bottom: 0;
+          display: block;
+          left: 0;
+          margin: auto;
+          max-width: 100%;
+          width: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          border: none;
+          height: auto;
+          cursor: pointer;
+          transform: scale(1);
+
+          &:hover {
+            transition: transform 0.5s ease;
+            transform: scale(1.05);
+          }
+        }
+
+        .play {
+          height: 72px;
+          width: 72px;
+          left: 50%;
+          top: 50%;
+          margin-left: -36px;
+          margin-top: -36px;
+          position: absolute;
+          background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+          cursor: pointer;
+        }
+      }
+      h3 {
+        font-size: 1.4em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 5px 0 0;
+        margin: 0;
+      }
+      p {
+        color: $blueish-green;
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}

@@ -1,0 +1,125 @@
+---
+title: Codesai
+permalink: /training/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
+
+    <meta property="og:site_name" content="Codesai">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
+    <link rel='stylesheet' href='/css/ionicons.min.css' />
+    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
+
+    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
+    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
+    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
+
+    <script>
+        function saveCookie() {
+            Cookie('codesai').save();
+            $('.cookie-message').hide();
+        }
+
+        $(document).ready(function() {
+            if (Cookie('codesai').exists()) {
+                return;
+            }
+            $('.cookie-message').show();
+        });
+    </script>
+
+    {% if site.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+</head>
+<body>
+{% include header.html %}
+<main class="training">
+    <section class="introduction">
+        <div class="text">
+            <h1>Te enseñamos a desarrollar mejor código</h1>
+            <p>
+                Todos nuestros cursos son <strong>in-house y presenciales</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.
+            </p>
+            <p>
+                <strong>Además, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</strong>
+            </p>
+        </div>
+        <div class="image">
+            <!-- TODO: Replace with image from prototype -->
+            <img src="/assets/home/mid_picture.png" alt="">
+        </div>
+    </section>
+    <section class="courses">
+        {%
+            include components/course.html
+            name='Test Driven Development (TDD)'
+            description='La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.'
+            link='/curso-de-tdd/'
+            logo='/assets/icons/tdd-logo.svg'
+            starting_price='450'
+        %}
+        {%
+            include components/course.html
+            name='Code smells & Refactoring'
+            description='El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.'
+            link='/curso-de-refactoring/'
+            logo='/assets/icons/refactoring-logo.svg'
+            starting_price='450'
+        %}
+        {%
+            include components/course.html
+            name='Refactoring Databases'
+            description='Aprende técnicas para evolucionar de forma segura e incremental el diseño de tu base de datos. A través de ejemplos y ejercicios, aprenderemos técnicas de testing y refactoring que nos permitirán obtener feedback inmediato.'
+            link='/curso-refactoring-databases/'
+            logo='/assets/icons/tdd-logo.svg'
+            starting_price='600'
+        %}
+        {%
+            include components/course.html
+            name='DDD guiado por tests'
+            description='En este curso veremos cómo usar TDD para aplicar Domain Driven Design (DDD) y conseguir sus beneficios a nivel de macro y microarquitectura. Trabajaremos ejemplos de cómo desacoplar la lógica de negocio de la infraestructura tecnológica, y explicaremos el beneficio de invertir más en el modelado y el lenguaje de negocio.'
+            link='/curso-de-ddd/'
+            logo='/assets/icons/tdd-logo.svg'
+            starting_price='600'
+        %}
+        {%
+            include components/course.html
+            name='Desarrollo ágil de producto'
+            description='El objetivo de este curso es que los alumnos conozcan la base sobre la que se fundamentan la gestión de producto agile y los principios básicos detrás de la forma de pensar agile (mindset). Asimismo, exploraremos la gestión eficiente del backlog, la creación de historias de usuario, diferentes enfoques de estimación...'
+            link='/curso-de-desarrollo-agil-producto/'
+            logo='/assets/icons/tdd-logo.svg'
+            starting_price='450'
+        %}
+        <div class="closing-hexagon">
+            <span></span>
+        </div>
+    </section>
+    {%
+        include components/call-to-action.html
+        title='¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!'
+        text='<p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
+        defaultMessage='Sent from the Training page, no message specified'
+        messagePlaceHolder=''
+    %}
+</main>
+{% include footer.html %}
+</body>
+</html>

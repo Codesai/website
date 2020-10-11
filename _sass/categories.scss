@@ -1,0 +1,18 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  max-width: $max-page-width;
+  margin: 3rem auto;
+
+  @media screen and (max-width: $max-width-breakpoint) {
+    padding: 0 2rem;
+  }
+
+  h3 {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    color: $blueish-green;
+  }
+}

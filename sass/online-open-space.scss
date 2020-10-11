@@ -1,0 +1,374 @@
+---
+---
+
+@function pxToRem($px) {
+  $rem: $px / 16;
+  @return #{$rem}rem;
+}
+
+$max-content-width: 980px;
+$tablet-breakpoint: 768px;
+
+$green-100: hsl(200, 97, 98);
+$green-200: hsl(170, 97, 95);
+$green-500: hsl(170, 97, 41);
+
+$orange-100: hsl(74, 100, 97);
+$orange-500: hsl(24, 98, 47);
+
+$assistant: 'Assistant', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $assistant;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.online-open-space {
+
+  .width-boundary {
+    width: 100%;
+    max-width: $max-content-width;
+
+    @media screen and (max-width: ($max-content-width + 24px)) {
+      padding: 0 16px;
+    }
+  }
+
+  section.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+    .background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(2px) brightness(0.4);
+        transform: scale(1.05);
+      }
+    }
+
+    .info {
+      font-weight: bold;
+      text-align: center;
+      color: $green-100;
+      z-index: 10;
+
+      .title {
+        font-size: pxToRem(64);
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          font-size: pxToRem(48);
+        }
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 48px;
+        font-size: pxToRem(18);
+        font-weight: 600;
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          font-size: pxToRem(14);
+          margin: 8px 0 48px;
+        }
+
+        .divider {
+          content: "";
+          height: 2px;
+          width: 80px;
+          background-color: $green-100;
+          margin: 12px 0 8px;
+
+          @media screen and (max-width: $tablet-breakpoint) {
+            height: 1px;
+            width: 60px;
+          }
+        }
+      }
+
+      .date, .time {
+        font-size: pxToRem(36);
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          font-size: pxToRem(28);
+        }
+      }
+
+      .logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36px;
+
+        svg + svg {
+          margin-left: 40px;
+
+          @media screen and (max-width: $tablet-breakpoint) {
+            margin: 20px 0 0 0;
+          }
+        }
+
+        @media screen and (max-width: $tablet-breakpoint) {
+          flex-direction: column;
+
+          svg {
+            max-width: calc(100% - 32px);
+
+            &:last-child {
+              max-height: 56px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.details {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 40px 0 100px;
+    overflow: hidden;
+
+    .background {
+      position: absolute;
+      top: -60px;
+      right: -40px;
+      bottom: 50px;
+      left: -40px;
+      background-color: $orange-500;
+      transform: rotate(-1.5deg);
+      z-index: -10;
+    }
+
+    .content {
+
+      .block + .block {
+        margin-top: 40px;
+      }
+
+      .block {
+        color: $orange-100;
+
+        .title {
+          width: 100%;
+          font-size: pxToRem(56);
+          font-weight: bold;
+
+          @media screen and (max-width: $tablet-breakpoint) {
+            font-size: pxToRem(48);
+          }
+        }
+
+        p + p {
+          margin-top: 12px;
+        }
+
+        p {
+          font-size: pxToRem(20);
+          font-weight: 500;
+
+          @media screen and (max-width: $tablet-breakpoint) {
+            font-size: pxToRem(18);
+          }
+        }
+
+        &.left {
+          .title { text-align: left; }
+          p { padding-left: 40px; }
+        }
+
+        &.right {
+          .title { text-align: right; }
+          p { padding-right: 40px; }
+        }
+      }
+    }
+
+    .tickets {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+
+      a {
+        text-decoration: none;
+        color: $orange-100;
+        max-width: calc(100% - 32px);
+
+        .button {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          font-size: pxToRem(32);
+          width: pxToRem(400);
+          max-width: 100%;
+          height: pxToRem(75);
+          border: 4px solid $orange-100;
+          border-radius: 4px;
+          transition: background-color 0.2s ease;
+
+          @media screen and (max-width: $tablet-breakpoint) {
+            font-size: pxToRem(24);
+          }
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+          }
+        }
+      }
+    }
+
+    .time-slot + .time-slot {
+      margin-top: 16px;
+    }
+
+    .time-slot {
+      display: flex;
+      font-size: pxToRem(20);
+      padding-left: 80px;
+
+      @media screen and (max-width: 440px) {
+        padding-left: 12px;
+      }
+
+      svg {
+        margin-right: 8px;
+      }
+
+      .time {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  section.predefined-speakers {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    .title {
+      font-size: pxToRem(56);
+      font-weight: bold;
+      text-align: center;
+      color: $green-500;
+      margin-bottom: 50px;
+
+      &.with-margin {
+        margin-top: 32px;
+      }
+    }
+
+    .speakers {
+      $speaker-card-width: 460px;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fill, $speaker-card-width);
+      grid-gap: 40px;
+      width: 100%;
+
+      @media screen and (max-width: ($speaker-card-width + 24px)) {
+        grid-template-columns: repeat(auto-fill, calc(100% - 24px));
+      }
+
+      .speaker {
+        $photo-width: 130px;
+        $photo-height: 160px;
+        display: flex;
+        position: relative;
+        width: $speaker-card-width;
+        max-width: 100%;
+
+        @media screen and (max-width: ($speaker-card-width + 24px)) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .photo {
+          width: $photo-width;
+          height: $photo-height;
+          flex-shrink: 0;
+          border-radius: 4px;
+          overflow: hidden;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15), 0px -2px 6px rgba(0, 0, 0, 0.1);
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .name {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: absolute;
+          top: 12px;
+          left: ($photo-width - 16px);
+          padding: 0 12px;
+          width: 220px;
+          height: 50px;
+          font-size: pxToRem(22);
+          font-weight: bold;
+          color: $green-100;
+          background-color: $green-500;
+
+          a {
+            height: 24px;
+            text-decoration: unset;
+            color: inherit;
+          }
+
+          @media screen and (max-width: ($speaker-card-width + 24px)) {
+            width: unset;
+            top: ($photo-height - 32px);
+            left: 16px;
+            right: 0;
+          }
+        }
+
+        .description {
+          margin: 74px 0 0 16px;
+          font-size: pxToRem(16);
+
+          .talk {
+            font-size: pxToRem(18);
+            font-weight: 600;
+            margin-bottom: 8px;
+          }
+
+          @media screen and (max-width: ($speaker-card-width + 24px)) {
+            margin: 28px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
