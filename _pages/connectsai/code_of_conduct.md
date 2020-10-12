@@ -6,11 +6,12 @@ Queremos fomentar una comunidad abierta y acogedora, por eso los organizadores n
 
 El objetivo de este documento es comunicar el comportamiento esperado para todas las personas que participen (asistentes, speakers y organización), así como las implicancias de un comportamiento inaceptable.
 
-Ante cualquier duda o incidente, ya sea que se está sufriendo u observando, pueden escribirnos a connectsai@codesai.com
+**Ante cualquier duda o incidente pueden escribirnos a connectsai@codesai.com**, ya sea que se esté sufriendo u observando.
 
 ## Nuestros estándares
 
 Ejemplos de comportamiento que contribuyen a crear un ambiente positivo:
+
 - Uso de lenguaje amable e inclusivo
 - Respeto a diferentes puntos de vista y experiencias
 - Aceptación de críticas constructivas
@@ -39,7 +40,5 @@ El equipo de organizadores está obligado a mantener la confidencialidad de la p
 ## Alcance
 
 Este código de conducta aplica durante el evento, en los canales de participación en las diferentes herramientas.
- 
 
 _Este código de conducta está adaptado del de [AsturiasHacking](https://github.com/asturiashacking/core/blob/master/coc/CODE_OF_CONDUCT.md) y [Visibles.Online](https://visibles.online/codigo-de-conducta/)_
-
