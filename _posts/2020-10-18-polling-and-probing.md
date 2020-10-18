@@ -13,7 +13,7 @@ author: Manuel Rivero
 written_in: english
 ---
 
-<h3>Introduction. </h3>
+<h2>Introduction. </h2>
 
 Some time ago we were developing a code that stored some data with a given [TTL](https://en.wikipedia.org/wiki/Time_to_live). We wanted to check not only that the data was stored correctly but also that it expired after the given TTL. This is an example of testing asynchronous code.
 
@@ -23,7 +23,7 @@ When testing asynchronous code we need to carefully coordinate the test with the
 
 In this case the test always fails but in other cases it might be worse, failing intermittently when the system is working, or passing when the system is broken. We need to make the test wait to give the action we are testing time to complete successfully and fail if this doesn't happen within a given timeout period.
 
-<h3>Sleeping is not the best option.</h3>
+<h2>Sleeping is not the best option.</h2>
 This is an improved version of the previous test in which we are making the test code wait before the checking that the data has expired to give the code under test time to run:
 
 <script src="https://gist.github.com/trikitrok/22abb9f0148f94f50081a9672d3b50ea.js"></script>
@@ -32,7 +32,7 @@ The problem with the simple sleeping approach is that in some runs the timeout m
 
 Since the intermittent failures happen because the timeout is too close to the time the behavior we are testing takes to run, many teams decide to reduce the frequency of those failures by increasing the time each test sleeps before checking that the action under test was successful. This is not practical because it soon leads to test suites that take too long to run.
 
-<h3>Alternative approaches. </h3>
+<h2>Alternative approaches. </h2>
 
 If we are able to detect success sooner, succeeding tests will provide rapid feedback, and we only have to wait for failing tests to timeout. This is a much better approach than waiting the same amount of time for each test regardless it fails or succeeds.
 
@@ -40,7 +40,7 @@ There are two main strategies to detect success sooner: **capturing notification
 
 In the case we are using as an example, polling was the only option because redis didn't send any monitoring events we could listen to.
 
-<h3>Polling for changes. </h3>
+<h2>Polling for changes. </h2>
 To detect success as soon as possible, we're going to probe several times separated by a time interval which will be shorter than the previous timeout. If the result of a probe is what we expect the test pass, if the result we expect is not there yet, we sleep a bit and retry. If after several retries, the expected value is not there, the test will fail.
 
 Have a look at the `checkThatDataHasExpired` method in the following code:
@@ -49,7 +49,7 @@ Have a look at the `checkThatDataHasExpired` method in the following code:
 
 By polling for changes we avoid always waiting the maximum amount of time. Only in the worst case scenario, when consuming all the retries without detecting success, we'll wait as much as in the just sleeping approach that used a fixed timeout.
 
-<h3>Extracting a helper.</h3>
+<h2>Extracting a helper.</h2>
 
 Scattering ad hoc low level code that polls and probes like the one in `checkThatDataHasExpired` throughout your tests not only make them difficult to understand, but also is a very bad case of duplication. So we extracted it to a helper so we could reuse it in different situations.
 
@@ -63,17 +63,17 @@ This is how the previous tests would look after using the helper:
 
 Notice that we're passing the probe, the check, the number of probes and the sleep time between probes to the `AsyncTestHelpers::assertWithPolling` function.
 
-<h3>Conclusions.</h3>
+<h2>Conclusions.</h2>
 
 We showed an example in Php of an approach to test asynchronous code described by [Steve Freeman](https://www.higherorderlogic.com/) and [Nat Pryce](http://www.natpryce.com/) in their [Growing Object-Oriented Software, Guided by Tests](https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests) book. This approach avoids flickering test and produces much faster test suites than using a fixed timeout. We also showed how we abstracted this approach by extracting a helper function that we are reusing in our code. 
 
 We hope you've found this approach interesting. If you want to learn more about this and several other techniques to effectively test asynchronous code, have a look at the wonderful [Growing Object-Oriented Software, Guided by Tests](https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests) book<a href="#nota4"><sup>[4]</sup></a>.
 
-# Acknowledgements
+<h2>Acknowledgements.</h2>
 
 Thanks to my Codesai colleagues for reading the initial drafts and giving me feedback and to [Chrisy Totty](https://www.pexels.com/@tottster) for the lovely cat picture.
 
-<h3>Notes.</h3>
+<h2>Notes.</h2>
 
 <div class="foot-note">
   <a name="nota1"></a> [1] This is a nice example of <i>Connascence of Timing (CoT)</i>. <i>CoT</i> happens when when the timing of the execution of multiple components is important. In this case the action being tested must run before the assertion that checks its observable effects. That's the coordination we talk about. Check <a href="https://codesai.com/2017/01/about-connascence">our post about Connascence</a> to learn more about this interesting topic.
@@ -94,7 +94,7 @@ Thanks to my Codesai colleagues for reading the initial drafts and giving me fee
 </div>
 
 
-<h3>References.</h3>
+<h2>References.</h2>
 
 * [Growing Object-Oriented Software, Guided by Tests](https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests), [Steve Freeman](https://www.higherorderlogic.com/) and [Nat Pryce](http://www.natpryce.com/) (chapter 27: <i>Testing Asynchronous Code</i>)
 
