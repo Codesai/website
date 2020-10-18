@@ -11,6 +11,7 @@ categories:
 small_image: sleepy_cat.jpg
 author: Manuel Rivero
 written_in: english
+cross_post_url: https://garajeando.blogspot.com/2020/10/sleeping-is-not-best-option.html
 ---
 
 <h2>Introduction. </h2>
