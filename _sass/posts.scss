@@ -26,6 +26,15 @@
     padding: 0 20px;
   }
 
+  code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+
   .post-info {
     p {
       color: #111;
@@ -36,6 +45,7 @@
       line-height: 28px;
       margin: 0 0 10px;
     }
+
     em {
       font-weight: bold;
     }
@@ -52,6 +62,10 @@
     }
   }
 
+  .foot-note {
+    padding-bottom: 5px;
+    font-size: 80%;
+  }
 
   .back-to-blog {
     padding: 30px;

@@ -14,7 +14,7 @@ permalink: /connectsai
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="Evento online Open Space organizado por Codesai y Lifull Connect">
 
-    <meta property="og:site_name" content="Online Open Space">
+    <meta property="og:site_name" content="Connectsai. Online Open Space">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_ES">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
@@ -31,7 +31,7 @@ permalink: /connectsai
 <main class="online-open-space">
     <section class="hero">
         <div class="background">
-            <img src="/assets/connectsai/hero-bg.png" alt="hero background image">
+            <img src="/assets/connectsai/hero-bg.jpg" alt="hero background image">
         </div>
         <div class="info width-boundary">
             <div class="title">Connectsai</div>
@@ -65,6 +65,11 @@ permalink: /connectsai
                 <p>La asistencia es <b>gratuita e ilimitada</b>, no íbamos a poner límites en esta primera edición!</p>
             </div>
 
+            <div class="block left">
+                <div class="title">Código de Conducta</div>
+                <p>El Connectsai se rige por un <a href="https://github.com/Codesai/codesai.github.io/blob/master/_pages/connectsai/code_of_conduct.md">CÓDIGO DE CONDUCTA</a> que es de obligado cumplimiento por parte de todas las personas: organizadoras y asistentes. ¡No olvides echarle un vistazo!</p>
+            </div>
+           
             <div class="block tickets">
                 <a href="https://www.eventbrite.com/e/connectsai-tickets-121453768491?ref=estw">
                     <div class="button">Consigue tu entrada</div>
@@ -72,7 +77,7 @@ permalink: /connectsai
             </div>
 
             <div class="block left">
-                <div class="title agenda">Agenda</div>
+                <div id="agenda" class="title agenda">Agenda</div>
                 <div class="time-slot">
                     <div class="time">09h30</div>
                     <div class="activity">Introducción y presentación del evento</div>
@@ -83,26 +88,30 @@ permalink: /connectsai
                 </div>
                 <div class="time-slot">
                     <div class="time">11h00</div>
-                    <div class="activity">Charlas de los speakers</div>
+                    <div class="activity">Charlas programadas</div>
                 </div>
                 <div class="time-slot">
                     <div class="time">12h00</div>
-                    <div class="activity">Charlas del Open Space</div>
+                    <div class="activity">Charlas Open Space</div>
                 </div>
                 <div class="time-slot">
-                    <div class="time">15h00</div>
+                    <div class="time">13h00</div>
+                    <div class="activity">Charlas Open Space</div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">14h00</div>
                     <div class="activity">Pausa para comer</div>
                 </div>
                 <div class="time-slot">
+                    <div class="time">15h00</div>
+                    <div class="activity">Charlas programadas</div>
+                </div>
+                <div class="time-slot">
                     <div class="time">16h00</div>
-                    <div class="activity">Charlas de los speakers</div>
+                    <div class="activity">Charlas Open Space</div>
                 </div>
                 <div class="time-slot">
                     <div class="time">17h00</div>
-                    <div class="activity">Charlas del Open Space</div>
-                </div>
-                <div class="time-slot">
-                    <div class="time">18h00</div>
                     <div class="activity">Cierre y feedback</div>
                 </div>
             </div>
@@ -128,7 +137,7 @@ permalink: /connectsai
                     </div>
                     <div class="name">Toño de la Torre <a href="https://twitter.com/adelatorrefoss" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
                     <div class="description">
-                        <div>Encontró su sitio natural en equipos interesados en la mejora continua, y en hacer un código bonito. Desarrolla sobre todo en Javascript y Groovy. Busca la integración de todos los perfiles, especialmente los de diseño en el desarrollo del producto.</div>
+                        <div>Desarrollador de software, encontró su sitio natural en equipos interesados en el bienestar de las personas, en la mejora continua, y en hacer un código mantenible.</div>
                     </div>
                 </div>
             </div>
@@ -157,6 +166,26 @@ permalink: /connectsai
                 </div>
                 <div class="speaker">
                     <div class="photo">
+                        <img src="/assets/connectsai/speaker_raquel_lainde.jpg" alt="speaker photo">
+                    </div>
+                    <div class="name">Raquel Lainde <a href="https://twitter.com/lainde" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
+                    <div class="description">
+                        <div class="talk">Conciliación laboral en tiempos de pandemia mundial</div>
+                        <div>Growth Hacker y Consultora en diversidad infiltrada en (enamorada de) la comunidad agile. Conciliando desde casa en soledad con una manada de tres fieras desde hace 12 años. Obsesionada en mostrar cómo la innovación y rentabilidad están ligadas al desarrollo de culturas inclusivas en las organizaciones IT.</div>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="photo">
+                        <img src="/assets/connectsai/speaker_marta_manso.jpg" alt="speaker photo">
+                    </div>
+                    <div class="name">Marta Manso <a href="https://twitter.com/MartaMans0" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
+                    <div class="description">
+                        <div class="talk">Cómo entregar más por menos (y que no nos despidan en el intento)</div>
+                        <div>Tras desarrollar software durante 10 años, descubrió la gestión de producto por casualidad y desde entonces no ha parado de aprender al respecto. A comienzos de 2020 dejó su amada Bilbao para ser Product Manager en una fintech de Barcelona que resultó ser un acierto. El año de mudarse a Barcelona, quizá no tanto.</div>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="photo">
                         <img src="/assets/connectsai/speaker_alfredo.jpg" alt="speaker photo">
                     </div>
                     <div class="name">Alfredo Casado <a href="https://twitter.com/AlfredoCasado" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
@@ -177,6 +206,26 @@ permalink: /connectsai
                 </div>
                 <div class="speaker">
                     <div class="photo">
+                        <img src="/assets/connectsai/speaker_roman_zukov.jpg" alt="speaker photo">
+                    </div>
+                    <div class="name">Roman Zukov <a href="https://twitter.com/zuko_mann" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
+                    <div class="description">
+                        <div class="talk">Deno. En busca del valle encantado</div>
+                        <div>Programador fullstack. Fan de mis dos loros, musica rock y desarrollo front end. Últimamente muy enfocado en aprender SEO en mi tiempo libre y parece que cada dia más fan de arquitectura hexagonal. Aprendiendo cada día</div>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="photo">
+                        <img src="/assets/connectsai/speaker_cristina_del_canto.jpg" alt="speaker photo">
+                    </div>
+                    <div class="name">Cristina del Canto <a href="#" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
+                    <div class="description">
+                        <div class="talk">Cómo encaramos de forma iterativa la fusión de dos gigantes de la agregación</div>
+                        <div>Cris es la Head of Product del área de B2B de Lifull Connect. Disfruta entendiendo a clientes y usuarios y buscando cómo entregarles valor de forma continua. Ve la experimentación como la base de la evolución de los productos, los equipos y las personas. Aficionada a la lectura y a la compra de libros técnicos, no necesariamente en ese orden.</div>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="photo">
                         <img src="/assets/connectsai/speaker_adela.jpg" alt="speaker photo">
                     </div>
                     <div class="name">Adela Tort <a href="https://twitter.com/AdelaTort" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
@@ -192,47 +241,27 @@ permalink: /connectsai
                     <div class="name">Ana Carmona <a href="https://twitter.com/nhan_bcn" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
                     <div class="description">
                         <div class="talk">4 visiones, 4 formas de vivir el teletrabajo en esta nueva realidad</div>
-                        <div>Donec rutrum arcu non congue volutpat. In hac habitasse platea dictumst. Duis pulvinar viverra nunc, in aliquam elit interdum vel. Aliquam erat volutpat.</div>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="photo">
-                        <img src="/assets/connectsai/speaker_marta_manso.jpg" alt="speaker photo">
-                    </div>
-                    <div class="name">Marta Manso <a href="https://twitter.com/MartaMans0" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
-                    <div class="description">
-                        <div class="talk">Cómo entregar más por menos (y que no nos despidan en el intento)</div>
-                        <div>Tras desarrollar software durante 10 años, descubrió la gestión de producto por casualidad y desde entonces no ha parado de aprender al respecto. A comienzos de 2020 dejó su amada Bilbao para ser Product Manager en una fintech de Barcelona que resultó ser un acierto. El año de mudarse a Barcelona, quizá no tanto.</div>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="photo">
-                        <img src="/assets/connectsai/speaker_roman_zukov.jpg" alt="speaker photo">
-                    </div>
-                    <div class="name">Roman Zukov <a href="https://twitter.com/zuko_mann" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
-                    <div class="description">
-                        <div class="talk">TBD</div>
-                        <div>Programador fullstack. Fan de mis dos loros, musica rock y desarrollo front end. Últimamente muy enfocado en aprender SEO en mi tiempo libre y parece que cada dia más fan de arquitectura hexagonal. Aprendiendo cada día</div>
+                        <div>Ingeniera informática de La Salle con más de 15 años de experiencia, software crafter  y especialista en Legacy Code (alguien tiene que darle amor al código viejito). Agile "evangelist" los últimos años ayudando a todo aquel que quiera introducirse en el mindset del desarrollo de software ágil y difundiendo las buenas prácticas asociadas al refactoring, clean code y testing. Su frase ante cualquier reto que le pongan es “si no lo sé, lo aprendo”. Madre de dos perlas y amante del aprendizaje, sea en el ámbito que sea. En su tiempo libre disfruta de la montaña, los amigos y su familia (mientras que el COVid lo permita)</div>
                     </div>
                 </div>
                 <div class="speaker">
                     <div class="photo">
                         <img src="/assets/connectsai/speaker_gema_cuenca.jpg" alt="speaker photo">
                     </div>
-                    <div class="name">Gema Cuenca <a href="https://twitter.com/zuko_mann" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
+                    <div class="name">Gema Cuenca <a href="https://twitter.com/gecual" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
                     <div class="description">
                         <div class="talk">4 visiones, 4 formas de vivir el teletrabajo en esta nueva realidad</div>
-                        <div>Donec rutrum arcu non congue volutpat. In hac habitasse platea dictumst. Duis pulvinar viverra nunc, in aliquam elit interdum vel. Aliquam erat volutpat.</div>
+                        <div>Matemática almeriense que descubrió el mundo de la programación hace ya 16 años durante su tiempo afincada en Italia. Recién aterrizada en las metodologías ágiles, se ha convertido en una aprendiz de Scrum Master, rol que compagina con el de desarrolladora fullstack.</div>
                     </div>
                 </div>
                 <div class="speaker">
                     <div class="photo">
                         <img src="/assets/connectsai/speaker_ismael_benitez.png" alt="speaker photo">
                     </div>
-                    <div class="name">Ismael Benítez <a href="https://twitter.com/zuko_mann" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
+                    <div class="name">Ismael Benítez <a href="https://twitter.com/isma_tech" target="_blank">{% include online-open-space/twitter.svg %}</a></div>
                     <div class="description">
                         <div class="talk">4 visiones, 4 formas de vivir el teletrabajo en esta nueva realidad</div>
-                        <div>Donec rutrum arcu non congue volutpat. In hac habitasse platea dictumst. Duis pulvinar viverra nunc, in aliquam elit interdum vel. Aliquam erat volutpat.</div>
+                        <div>Software Engineer & Data Analyst en LifullConnect  los 4 últimos años. Amante de los números, el código de calidad, la documentación basada en tests, automatización y la cultura de aportar el máximo valor en todo momento. Perseverante en cada objetivo que me propongo e incómodo cada vez que me acerco a la zona de confort.</div>
                     </div>
                 </div>
             </div>
