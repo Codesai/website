@@ -18,7 +18,12 @@
 
   img {
     width: 100%;
-    padding: 20px;
+    padding: 1rem;
+    vertical-align: middle;
+  }
+
+  figure {
+    margin: 0;
   }
 
   ul {
@@ -33,6 +38,13 @@
     background-color: #f9f2f4;
     border-radius: 4px;
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+
+  figcaption {
+    font-size: 11px;
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
   }
 
   .post-info {
