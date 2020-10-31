@@ -18,25 +18,20 @@ cross_post_url:
 
 ## Introduction
 
-In our previous [post about caring work](https://codesai.com/2020/06/caring), we told that the developers of the teams we coach decide which caring work is needed using a variation of the concerns mechanism<a href="#nota11"><sup>[1]</sup></a> presented by <a href="https://twitter.com/XaV1uzz">Xavi Gost</a>. This post will explain how we have adapted the concerns mechanism to our context and what we've learned using it with two teams in four different projects during the last year and a half<a href="#nota11"><sup>[2]</sup></a>.
+In our previous [post about caring work](https://codesai.com/2020/06/caring), we told that the developers of the teams we coach decide which caring work is needed using a variation of the concerns concept<a href="#nota11"><sup>[1]</sup></a> presented by <a href="https://twitter.com/XaV1uzz">Xavi Gost</a>. This post will explain how we have adapted it to our context and what we've learned using concerns with two teams in four different projects during the last year and a half<a href="#nota2"><sup>[2]</sup></a>.
 
-In his talk, Xavi Gost, talked about a mechanism they had been experimenting with for several months. This mechanism is based on the premise that developing software is a team endeavour and on seeing the code as an implicit representation of the actual consensus inside a team about the software they are developing in a given moment. He also talked about how acknowledging the existence of this tacit consensus may cause problems in the team. According to Xavi Gost this consensus is not an end state, instead it is a set of agreements, tacit or explicit, that make sense for the team given their current context, that will evolve to adapt to contextual changes.
+In his talk, Xavi Gost, talked about an idea they had been experimenting with for several months. It is based on the premise that developing software is a team endeavour and on seeing the code as an implicit representation of the actual consensus inside a team about the software they are developing in a given moment. He also talked about how acknowledging the existence of this tacit consensus may cause problems in the team. According to Xavi Gost this consensus is not an end state, instead it is a set of agreements, tacit or explicit, that make sense for the team given their current context, that will evolve to adapt to contextual changes.
 
-The mechanism he presented gives the team a way to raise concerns about the current team consensus. Anytime a pair is working on some code and sees something that they don't understand or think might be problematic, they can raise a concern to discuss it. For them raising a concern means describing it in a *Concern* card on the team board. Once the teams feels that there are enough concerns to discuss, or that there is some concern that is urgent, they hold a meeting called *Review* in which they review the pieces of code that caused those concerns, discuss them and reach to a new consensus. The outcome of this meeting may also include adding *Technical Debt* cards or *Chore* cards to the team board. <- [añadir una nota explicando qué quieren decir y hablando del curso de Product Owning de Makoto. Le escribí un email a Aitor porque la web de Makoto da errores]
-
-We found this mechanism very interesting because it:
+The mechanism he presented gives the team a way to raise concerns about the current team consensus. Anytime a pair is working on some code and sees something that they don't understand or think might be problematic, they can raise a concern to discuss it. For them raising a concern means describing it in a *Concern* card on the team board. Once the teams feels that there are enough concerns to discuss, or that there is some concern that is urgent, they hold a meeting called *Review* in which they review the pieces of code that caused those concerns, discuss them and reach to a new consensus. The outcome of this meeting may also include adding *Technical Debt* cards or *Chore* cards to the team board<a href="#nota3"><sup>[3]</sup></a>. 
+We found his idea very interesting because it:
 - Fosters technical conversations
 - Serves as a space to manage conflicts and reach new agreements
 - Helps to transmit knowledge
 - Detects technical debt
 
-## Adapting the idea to our context
+## Adapting it to our context
 
-*** Our context blabla
-
-Sacar contexto de la charla de reffects… <- ¿es posible? No
-
-As we mentioned in our [previous post about caring work](https://codesai.com/2020/06/caring), we started working with Lifull at the beginning of 2019. We were hired to coach their B2B team. The context was difficult because of the delivery pressure on the team, and its size and skills level, but we had the advantage of a great group of people and the acceptance of the caring work narrative by the leadership of the company. <- nota al pie: Marc Sturlese, then CTO, and Hernán Castagnola (chequear si se escribía así), then CPO. 
+As we mentioned in our [previous post about caring work](https://codesai.com/2020/06/caring), we started working with Lifull at the beginning of 2019. We were hired to coach their Barcelona B2B team. The context was difficult because of the delivery pressure on the team, and the size and skills level of the team, but we had the advantage of a great group of people and the acceptance of the caring work narrative by the leadership of the company. <- nota al pie: Marc Sturlese, then CTO, and Hernán Castagnola (chequear si se escribía así), then CPO. 
 
 We had detected some change levers <- (nota detallando cuáles detectamos) and applied some practices to work on them from the outset (pair programming, remote first), of them the most impactful one was the caring work narrative. In practice, this meant that the B2B team started devoting a percentage of time in every iteration to work on caring tasks (descriptions of items of caring work). The developers are the ones that decide which caring work is needed. <- relacionar con este tipo de trabajo en DevOps.
 ** ...energy and time to work on caring tasks which are concerned with keeping the health of the ecosystem composed of the code, the team and the client, so that it can continue evolving, being habitable for the team and producing value.
@@ -115,6 +110,11 @@ Finally, thanks to my Codesai colleagues for reading the initial drafts and givi
 <a name="nota1"></a> [1] Described by <a href="https://twitter.com/XaV1uzz">Xavi Gost</a> in his talk <a href="https://www.youtube.com/watch?v=pp8j1ggCaoM"> CDD (Desarrollo dirigido por consenso)</a>.
 
 <a name="nota2"></a> [2] I'm limiting the scope of this post to the experiences of using concerns with the teams in Lifull Connect Barcelona. Other Codesai colleagues are applying them in other teams of Lifull Connect Madrid and their mileage may vary.
+
+<a name="nota3"></a> [3] <em>Technical Debt</em> and <em>Chore</em> cards describe a technical debt item and a trivial task, respectively. These different types of work and some more are described in <a href="http://www.makotosquad.com/"> Makoto</a>'s <em>Product Owning Course</em>. I highly recommend this course.
+
+<a name="nota4"></a> [4] <a href="https://www.linkedin.com/in/marcsturlese/">Marc Sturlese</a>Marc Sturlese, then CTO, and <a href="https://www.linkedin.com/in/hernanjaviercastagnola/">Hernán Castagnola</a>.
+
 
 ## References
 
