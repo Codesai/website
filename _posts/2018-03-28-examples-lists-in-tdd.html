@@ -16,10 +16,10 @@ cross_post_url: http://garajeando.blogspot.com.es/2018/03/examples-lists.html
 
 <h3>
 1. Introduction. </h3>
-During coding dojos and some mentoring sessions I've noticed that most people just start test-driving code without having thought a bit about the problem first. Unfortunately, <b>writing a list of examples</b> before starting to do TDD is a practice that is most of the times neglected.
+During coding dojos and some mentoring sessions I've noticed that most people just start test-driving code without having thought a bit about the problem first. Unfortunately, <strong>writing a list of examples</b> before starting to do TDD is a practice that is most of the times neglected.
 <br />
 <br />
-<b>Writing a list of examples</b> is very useful because having to find a list of concrete examples
+<strong>Writing a list of examples</b> is very useful because having to find a list of concrete examples
 forces you to think about the problem at hand. In order to write each concrete example in the list,
 you need to understand what you are trying to do and how you will know when it is working. This exploration of the problem space improves your knowledge of the domain, which will later be very useful while doing TDD to design a solution. However, just generating a list of examples is not enough.
 <br />
@@ -29,13 +29,13 @@ you need to understand what you are trying to do and how you will know when it i
 A frequent problem I've seen in beginners' lists is that many of the examples are redundant because they would drive the same piece of behavior. When two examples drive the same behavior, we say that they overlap with each other, they are overlapping examples.
 <br />
 <br />
-To explore the problem space effectively, we need to find examples that drive different pieces of behavior, i.e. that do not overlap. From now on, I will refer to those non-overlapping examples as <b>orthogonal examples</b><a href="#nota1"><sup>[1]</sup></a>.
+To explore the problem space effectively, we need to find examples that drive different pieces of behavior, i.e. that do not overlap. From now on, I will refer to those non-overlapping examples as <strong>orthogonal examples</b><a href="#nota1"><sup>[1]</sup></a>.
 <br />
 <br />
-Keeping this idea of <b>orthogonal examples</b> in mind while exploring a problem space, will help us prune examples that don't add value, and keep just the ones that will force us to drive new behavior.
+Keeping this idea of <strong>orthogonal examples</b> in mind while exploring a problem space, will help us prune examples that don't add value, and keep just the ones that will force us to drive new behavior.
 <br />
 <br />
-<b>How can we get those orthogonal examples?</b>
+<strong>How can we get those orthogonal examples?</b>
 <br />
 <ol>
 <li>Start by writing all the examples that come to your mind. </li>
@@ -78,10 +78,10 @@ Next, we'll explore a concrete application using a subset of the <i>Mars Rover k
 Let's start writing a list of examples that explores this problem. But how?
 <br />
 <br />
-Since the rover is receiving a sequence of commands, we can apply a useful heuristic for sequences to get us started: <a href="https://twitter.com/jbrains?lang=en">J. B. Rainsberger</a>'s <b>"0, 1, many, oops" heuristic</b> <a href="#nota2"><sup>[2]</sup></a>.
+Since the rover is receiving a sequence of commands, we can apply a useful heuristic for sequences to get us started: <a href="https://twitter.com/jbrains?lang=en">J. B. Rainsberger</a>'s <strong>"0, 1, many, oops" heuristic</b> <a href="#nota2"><sup>[2]</sup></a>.
 <br />
 <br />
-In this case, it means generating examples for: <b>no commands</b>, <b>one command</b>, <b>several commands</b> and <b>unknown commands</b>.
+In this case, it means generating examples for: <strong>no commands</b>, <strong>one command</b>, <strong>several commands</b> and <strong>unknown commands</b>.
 <br />
 <br />
 I will use the following notation for examples:
@@ -93,7 +93,7 @@ Meaning that, given the rover is in an initial location with <i>x</i> and <i>y</
 
 <br />
 <br />
-Then our first example corresponding to <b>no commands</b> might be any of:
+Then our first example corresponding to <strong>no commands</b> might be any of:
 <br />
 <blockquote>
 <code>(0, 0, "N"), "" -&gt; (0, 0, "N")</code><br />
@@ -110,10 +110,10 @@ where we have used <i>any_x</i>, <i>any_y</i> and <i>any_direction</i> to make e
 
 <br />
 <br />
-Next, we focus on receiving <b>one command</b>.
+Next, we focus on receiving <strong>one command</b>.
 <br />
 <br />
-In this case there are a lot of possible examples, but we are only interested on those that are orthogonal. Following our recommendations to get orthogonal examples, you can get to the following set of 16 examples that can be used to drive all the <b>one command</b> behavior (we're using <i>any_x</i>, <i>any_y</i> where we can):
+In this case there are a lot of possible examples, but we are only interested on those that are orthogonal. Following our recommendations to get orthogonal examples, you can get to the following set of 16 examples that can be used to drive all the <strong>one command</b> behavior (we're using <i>any_x</i>, <i>any_y</i> where we can):
 
 <br />
 <blockquote>
@@ -143,45 +143,45 @@ There're already important properties about the problem that we can learn from t
 Sometimes it can also be useful to think in different ways of grouping the examples to see how they may relate to each other.
 <br />
 <br />
-For instance, we might group the examples above <b>by the direction the rover faces initially</b>:
+For instance, we might group the examples above <strong>by the direction the rover faces initially</b>:
 
 <br />
 <blockquote>
-<b>Facing East</b><br />
+<strong>Facing East</b><br />
 <code>(1, any_y, "E"), "f"     -&gt;  (2, any_y, "E")</code><br />
 <code>(4, any_y, "E"), "b"     -&gt;  (3, any_y, "E")</code><br />
 <code>(any_x, any_y, "E"), "l" -&gt;  (any_x, any_y, "N")</code><br />
 <code>(any_x, any_y, "E"), "r" -&gt;  (any_x, any_y, "S")</code>  <br />
-<b>Facing West</b><br />
+<strong>Facing West</b><br />
 <code>(5, any_y, "W"), "f"     -&gt;  (4, any_y, "W")</code>
   ...</blockquote>
-or, <b>by the command the rover receives</b>:
+or, <strong>by the command the rover receives</b>:
 
 <br />
 <blockquote>
-<b>Move forward</b><br />
+<strong>Move forward</b><br />
 <code>(1, any_y, "E"), "f"     -&gt;  (2, any_y, "E")</code><br />
 <code>(5, any_y, "W"), "f"     -&gt;  (4, any_y, "W")</code>  <br />
 <code>(any_x, 3, "N"), "f"     -&gt;  (any_x, 4, "N")</code>  <br />
 <code>(any_x, 8, "S"), "f"     -&gt;  (any_x, 7, "S")</code>  <br />
-<b>Move backward</b><br />
+<strong>Move backward</b><br />
 <code>(4, any_y, "E"), "b"     -&gt;  (3, any_y, "E")</code><br />
 <code>(2, any_y, "W"), "b"     -&gt;  (3, any_y, "W")</code> <br />
   ...</blockquote>
 Trying to classify the examples helps us explore different ways in which we can use them to make the code grow by
-discovering what <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a> calls <b>dimensions of complexity</b> of the problem<a href="#nota4"><sup>[4]</sup></a>. Each dimension of complexity can be driven using a different set of orthogonal examples, so this knowledge can be useful to choose the next example when doing TDD.
+discovering what <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a> calls <strong>dimensions of complexity</b> of the problem<a href="#nota4"><sup>[4]</sup></a>. Each dimension of complexity can be driven using a different set of orthogonal examples, so this knowledge can be useful to choose the next example when doing TDD.
 <br />
 <br />
 Which of the two groupings shown above might be more useful to drive the problem?
 <br />
 <br />
-In this case, I think that the <b>by the command the rover receives</b> grouping is more useful,
+In this case, I think that the <strong>by the command the rover receives</b> grouping is more useful,
 because each group will help us drive a whole behavior (the command). If we were to use the
-<b>by the direction the rover faces initially</b> grouping, we'd end up with partially implemented
+<strong>by the direction the rover faces initially</b> grouping, we'd end up with partially implemented
 behaviors (commands) after using each group of examples.
 <br />
 <br />
-Once we have the <b>one command</b> examples, let's continue using the <b>"0, 1, many, oops" heuristic</b> and find examples for the <b>several commands</b> category.
+Once we have the <strong>one command</b> examples, let's continue using the <strong>"0, 1, many, oops" heuristic</b> and find examples for the <strong>several commands</b> category.
 <br />
 <br />
 We can think of many different examples:
@@ -198,7 +198,7 @@ The thing is that any of them might be thought as a composition of several comma
 <blockquote>
 <code>(7, 4, "E"), "r" -&gt; (7, 4, "S"), "b" -&gt;  (7, 5, "S")</code>
   &#8230;</blockquote>
-Then the only new behavior these examples would drive is <b>composing commands</b>.
+Then the only new behavior these examples would drive is <strong>composing commands</b>.
 <br />
 <br />
 So It turns out that there's only one orthogonal example in this category. We might choose any of them, like the following one for instance:
@@ -206,13 +206,13 @@ So It turns out that there's only one orthogonal example in this category. We mi
 <br />
 <blockquote>
 <code>(7, 4, "E"), "frrbbl" -&gt;  (10, 4, "S")</code></blockquote>
-This doesn't mean that when we're later doing TDD, we have to use only this example to drive the behavior. We can use more overlapping examples if we're unsure on how to implement it and we need to use <b>triangulation</b><a href="#nota5"><sup>[5]</sup></a>.
+This doesn't mean that when we're later doing TDD, we have to use only this example to drive the behavior. We can use more overlapping examples if we're unsure on how to implement it and we need to use <strong>triangulation</b><a href="#nota5"><sup>[5]</sup></a>.
 <br />
 <br />
-Finally, we can consider the "oops" category which for us is <b>unknown commands</b>. In this case, we need to find out how we'll handle them and this might involve some conversations.
+Finally, we can consider the "oops" category which for us is <strong>unknown commands</b>. In this case, we need to find out how we'll handle them and this might involve some conversations.
 <br />
 <br />
-Let's say that we find out that we should ignore <b>unknown commands</b>, then this might be an example:
+Let's say that we find out that we should ignore <strong>unknown commands</b>, then this might be an example:
 
 <br />
 <blockquote>
@@ -256,13 +256,13 @@ Many thanks to <a href="https://twitter.com/alfredocasado?lang=en">Alfredo Casad
 </ul>
 <br>
 Footnotes.<br />
-<a name="nota1"></a> <span style="font-size: x-small;">[1] This concept of <b>orthogonal examples</b> is directly related to Mateu Adsuara's <b>dimensions of complexity</b> idea because each dimension of complexity can be driven using a different set of orthogonal examples. For a definition of dimensions of complexity, see footnote [4] .
+<a name="nota1"></a> <span style="font-size: x-small;">[1] This concept of <strong>orthogonal examples</b> is directly related to Mateu Adsuara's <strong>dimensions of complexity</b> idea because each dimension of complexity can be driven using a different set of orthogonal examples. For a definition of dimensions of complexity, see footnote [4] .
 </span><br />
 <span style="font-size: x-small;"><a name="nota2"></a> [2] Another very useful heuristic is described in <a href="https://www.linkedin.com/in/jwgrenning/">James Grenning</a>'s <a href="http://blog.wingman-sw.com/archives/677">TDD Guided by ZOMBIES post</a>.
 </span><br />
 <span style="font-size: x-small;"><a name="nota3"></a> [3] This is somehow related to <a href="https://twitter.com/marick">Brian Marick</a>&#8217;s <a href="https://github.com/marick/Midje/wiki/Metaconstants">metaconstants</a> which can be very useful to write tests in dynamic languages. They&#8217;re also hints about properties that might be helpful in <a href="https://propertesting.com/book_foundations_of_property_based_testing.html">property-based testing</a>.
 </span><br />
-<span style="font-size: x-small;"><a name="nota4"></a> [4] <b>Dimension of Complexity</b> is a term used by <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a> in a talk at Socrates Canarias 2016 to name an orthogonal functionality. In that talk he used dimensions of complexity to classify the examples in his tests list in different groups and help him choose the next test when doing TDD.
+<span style="font-size: x-small;"><a name="nota4"></a> [4] <strong>Dimension of Complexity</b> is a term used by <a href="https://twitter.com/mateuadsuara">Mateu Adsuara</a> in a talk at Socrates Canarias 2016 to name an orthogonal functionality. In that talk he used dimensions of complexity to classify the examples in his tests list in different groups and help him choose the next test when doing TDD.
 </span><br />
 <span style="font-size: x-small;">He talked about it in these three posts: 
 </span><br />
@@ -272,9 +272,9 @@ Footnotes.<br />
 <li><span style="font-size: x-small;"><a href="http://mateuadsuara.github.io/8thlight/2015/08/20/complexity-dimensions-p3.html">Complexity dimensions - FizzBuzz part III</a></span></li>
 </ul>
 <span style="font-size: x-small;">
-</span><span style="font-size: x-small;">Other names for the same concept that I've heard are <b>axes of change</b>, <b>directions of change</b> or <b>vectors of change</b>.
+</span><span style="font-size: x-small;">Other names for the same concept that I've heard are <strong>axes of change</b>, <strong>directions of change</b> or <strong>vectors of change</b>.
 </span><br />
-<span style="font-size: x-small;"><a name="nota5"></a> [5] Even though <b>triangulation</b> is probably the most popular, there are two other strategies for implementing new functionality in TDD: <b>obvious implementation</b> and <b>fake it</b>. <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a> in his <a href="https://www.goodreads.com/book/show/387190.Test_Driven_Development"> Test-driven Development: By Example book</a> describes the three techniques and says that he prefers to use <b>obvious implementation</b> or<b> fake it</b> most of the time, and only use <b>triangulation</b> as a last resort when design gets complicated.
+<span style="font-size: x-small;"><a name="nota5"></a> [5] Even though <strong>triangulation</b> is probably the most popular, there are two other strategies for implementing new functionality in TDD: <strong>obvious implementation</b> and <strong>fake it</b>. <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a> in his <a href="https://www.goodreads.com/book/show/387190.Test_Driven_Development"> Test-driven Development: By Example book</a> describes the three techniques and says that he prefers to use <strong>obvious implementation</b> or<strong> fake it</b> most of the time, and only use <strong>triangulation</b> as a last resort when design gets complicated.
 </span><br />
-<span style="font-size: x-small;"><a name="nota6"></a> [6] This <b>loss of awareness of the process</b> is the price of expertise according to the <a href="https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition">Dreyfus model of skill acquisition</a>.
+<span style="font-size: x-small;"><a name="nota6"></a> [6] This <strong>loss of awareness of the process</b> is the price of expertise according to the <a href="https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition">Dreyfus model of skill acquisition</a>.
 </span>
