@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Concerns mechanism"
-date: 2020-10-19 06:00:00.000000000 +01:00
+date: 2020-11-01 06:00:00.000000000 +01:00
 type: post
 categories:
   - Caring Work
@@ -18,11 +18,12 @@ cross_post_url:
 
 ## Introduction
 
-In our previous [post about caring work](https://codesai.com/2020/06/caring), we told that the developers of the teams we coach decide which caring work is needed using a variation of the concerns concept<a href="#nota11"><sup>[1]</sup></a> presented by <a href="https://twitter.com/XaV1uzz">Xavi Gost</a>. This post will explain how we have adapted it to our context and what we've learned using concerns with two teams in four different projects during the last year and a half<a href="#nota2"><sup>[2]</sup></a>.
+In our previous [post about caring work](https://codesai.com/2020/06/caring), we told that the developers of the teams we coach decide which caring work is needed using a variation of the concerns concept<a href="#nota1"><sup>[1]</sup></a> presented by <a href="https://twitter.com/XaV1uzz">Xavi Gost</a>. This post will explain how we have adapted it to our context and what we've learned using concerns with two teams in four different projects during the last year and a half<a href="#nota2"><sup>[2]</sup></a>.
 
 In his talk, Xavi Gost, talked about an idea they had been experimenting with for several months. It is based on the premise that developing software is a team endeavour and on seeing the code as an implicit representation of the actual consensus inside a team about the software they are developing in a given moment. He also talked about how acknowledging the existence of this tacit consensus may cause problems in the team. According to Xavi Gost this consensus is not an end state, instead it is a set of agreements, tacit or explicit, that make sense for the team given their current context, that will evolve to adapt to contextual changes.
 
 The mechanism he presented gives the team a way to raise concerns about the current team consensus. Anytime a pair is working on some code and sees something that they don't understand or think might be problematic, they can raise a concern to discuss it. For them raising a concern means describing it in a *Concern* card on the team board. Once the teams feels that there are enough concerns to discuss, or that there is some concern that is urgent, they hold a meeting called *Review* in which they review the pieces of code that caused those concerns, discuss them and reach to a new consensus. The outcome of this meeting may also include adding *Technical Debt* cards or *Chore* cards to the team board<a href="#nota3"><sup>[3]</sup></a>. 
+
 We found his idea very interesting because it:
 - Fosters technical conversations
 - Serves as a space to manage conflicts and reach new agreements
@@ -31,16 +32,22 @@ We found his idea very interesting because it:
 
 ## Adapting it to our context
 
-As we mentioned in our [previous post about caring work](https://codesai.com/2020/06/caring), we started working with Lifull at the beginning of 2019. We were hired to coach their Barcelona B2B team. The context was difficult because of the delivery pressure on the team, and the size and skills level of the team, but we had the advantage of a great group of people and the acceptance of the caring work narrative by the leadership of the company. <- nota al pie: Marc Sturlese, then CTO, and Hernán Castagnola (chequear si se escribía así), then CPO. 
+As we mentioned in our [previous post about caring work](https://codesai.com/2020/06/caring), we started working with Lifull at the beginning of 2019. We were hired to coach their Barcelona B2B team. The context was difficult because of the delivery pressure on the team, and the size and skills level of the team, but we had the advantage of a great group of people and the acceptance of the caring work narrative by the leadership of the company<a href="#nota4"><sup>[4]</sup></a>. 
 
-We had detected some change levers <- (nota detallando cuáles detectamos) and applied some practices to work on them from the outset (pair programming, remote first), of them the most impactful one was the caring work narrative. In practice, this meant that the B2B team started devoting a percentage of time in every iteration to work on caring tasks (descriptions of items of caring work). The developers are the ones that decide which caring work is needed. <- relacionar con este tipo de trabajo en DevOps.
-** ...energy and time to work on caring tasks which are concerned with keeping the health of the ecosystem composed of the code, the team and the client, so that it can continue evolving, being habitable for the team and producing value.
+We had detected some change levers ( "Improving Technical Skills", "Knowledge Diffusion", "Knowledge Crystallization", "Changing Habits", "All Team Product Owning","Remote First" +and “The Caring Work Narrative”).
 
+As we mentioned in a previous post, of those change levers, the most impactful one was “The Caring Work Narrative”. In practice, this meant that the B2B team started devoting a percentage of energy and time in every iteration to work on caring tasks. Caring tasks are concerned with keeping the health of the ecosystem composed of the code, the team and the client, so that it can continue evolving, being habitable for the team and producing value. <- nota relacionar con este tipo de trabajo en DevOps.
+
+
+*** (descriptions of items of caring work). The developers are the ones that decide which caring work is needed. 
+
+Initially, we applied changes in the team to start acting on most of the change levers mentioned above, that were based on what we have observed during a one week consultancy in which [Joan Valduvieco](https://twitter.com/jvalduvieco) and I, learned about how the team worked, and in our intuition and previous experiences. We knew we didn’t have all the answers, just a few change levers that might move the system to more useful dynamics and some likely next steps. We also knew that they might not work as well as we expected.
 
 ---- naturaleza de los sistemas complejos, cynefin, concerns y lean
-However a complex system is a system in constant flux in which cause and effect can only be deduced in retrospect (if they can at all). In this kind of system there are no best practices, only heuristics. We need to probe, sense and respond. <- nota referencia a Cynefin
 
-We didn’t have all the answers from the outset, just a few change levers that might move the system to more useful dynamics and some likely next steps. however that might as well not work as well as we expected. We (the team and us) had to detect new problems and try to solve them as we go. So that should be our way of work: detect problems while at work, prioritize them, act on some change levers to change the situation, observe what happens and adapt consequently.
+A complex system is a system in constant flux in which cause and effect can only be deduced in retrospect (if they can at all). In this kind of system there are no best practices, only heuristics. We need to probe, sense and respond. <- nota referencia a Cynefin
+
+We (the team and us) had to detect new problems and try to solve them as we go. So that should be our way of work: detect problems while at work, prioritize them, act on some change levers to change the situation, observe what happens and adapt consequently.
 
 "You can't change anything from outside it. Standing apart, looking down, taking the overview, you see the pattern. What's wrong, what's missing. You want to fix it. But you can't patch it. You have to be in it, weaving it. You have to be part of the weaving."
 —U. K. Le Guin
@@ -61,16 +68,24 @@ El equipo necesitaba un espacio de reflexión sobre su práctica para poder mejo
 Retrospectives are blabla. Why not use them then? In this particular case we didn't want to use the retrospective because we wanted to protect the autonomy of the technical team to decide what caring work to work on. We decided that we needed this strong boundary because we detected a strong power imbalance between the product and tech teams.  <- nota Later this strong boundary was exported to other teams but this doesn't mean that it's necessary in every context. Depending on the culture dynamics the retrospective might be enough. 
 ** Añadir aquí también que queríamos que el foco de esta reflexión fuesen las tareas de cuidado, y que estas estaban a cargo del equipo técnico
 
-So we adapted the concerns mechanism described by Xavi to our particular needs. First, we widen Xavi's definition of concern. Instead of focusing only on blabla code, we decided to generate concerns about any inefficiency or waste that the team (including us) observed in the whole software value stream from development to delivery. (<- nota: después en una conversación personal con [Ricardo Borillo](https://twitter.com/borillo?lang=en)  para una investigación que está desarrollando sobre cómo se usan los concerns in the wild, descubrí que ellos lo usan de la misma manera pero que en la charla Xavi no lo llegó a transmitir porque se centró excesivamente en las reviews de código).
+So we adapted the concerns mechanism described by Xavi to our particular needs. First, we widen Xavi's definition of concern. Instead of focusing only on blabla code, we decided to generate concerns about any inefficiency or waste that the team (including us) observed in the whole software value stream from development to delivery. (<- nota: después en una conversación personal con [Ricardo Borillo](https://twitter.com/borillo?lang=en)  para una investigación que está desarrollando sobre cómo se usan los concerns in the wild, descubrí que ellos los usan de la misma manera pero que en la charla Xavi no lo llegó a transmitir porque se centró excesivamente en las reviews de código).
 
-Our goal was to develop the team skills and improve the blabla developer experience by having an environment, practices, architecture and infrastructure which helped the members of the team to work better, learn and with less stress. (nota -> this is related with the Gabriel's idea of software habitability and Bolboaca idea of Usable software Design, which, we think, are both based on Deming's idea that a system has a huge influence on a person's performance: "A Bad System Will Beat a Good Person Every Time." W. Edwards Deming https://en.wikipedia.org/wiki/W._Edwards_Deming)
+Our goal was to develop the team skills and improve the blabla developer experience by having an environment, practices, architecture and infrastructure which helped the members of the team to work better, learn and with less stress. (nota -> this is related with Gabriel's idea of software habitability and Bolboaca’s idea of Usable software Design, which, we think, are both based on Deming's idea that a system has a huge influence on a person's performance: "A Bad System Will Beat a Good Person Every Time." W. Edwards Deming https://en.wikipedia.org/wiki/W._Edwards_Deming)
 
 Conversación con Mario en slack
 el objetivo de los concerns, tal y cómo los introdujimos, es sobre todo el aprendizaje (el consenso es más secundario aunque también se consigue), por eso es importante que estén los coaches del equipo. Cuando el equipo ya no necesite coaches, pueden usar el mecanismo de concerns de otra forma, y destinarlo más a buscar consenso y alineación.
 
-Since we were outnumbered by the team members (nota -> at the beginning only Fran and I worked with the team, later Antonio de la Torre and Manuel Tordesillas joined us but by that time the team had doubled in size, so we still were outnumbered), the concerns mechanism also provided us a tool for coaching a posteriori that complemented the mob and pairing sessions we had with the team.
+Since we were outnumbered by the team members (nota -> at the beginning only Fran Reyes and I worked with the team, later Antonio de la Torre and Manuel Tordesillas joined us but by that time the team had already doubled in size, so we still were outnumbered), the concerns mechanism also provided us a tool for coaching a posteriori that complemented the mob and pairing sessions we had with the team.
 
-Applying the concerns mechanism depends highly on the context of each team. Please, do not take this as “a recipe or the way" to apply the concerns mechanism. This is only how we adapted the concept to our context. You will need to understand it and adapt it to your own context.
+
+
+
+
+
+
+
+
+
 
 ### How does the process work at the moment?
 
@@ -115,7 +130,6 @@ Finally, thanks to my Codesai colleagues for reading the initial drafts and givi
 
 <a name="nota4"></a> [4] <a href="https://www.linkedin.com/in/marcsturlese/">Marc Sturlese</a>Marc Sturlese, then CTO, and <a href="https://www.linkedin.com/in/hernanjaviercastagnola/">Hernán Castagnola</a>.
 
-
 ## References
 
 ### Books
@@ -124,8 +138,13 @@ Finally, thanks to my Codesai colleagues for reading the initial drafts and givi
 
 - [Patterns of Software: Tales from the Software Community](https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf), [Richard P. Gabriel](https://en.wikipedia.org/wiki/Richard_P._Gabriel)
 
+- [Lean Software Development: An Agile Toolkit](https://www.goodreads.com/book/show/194338.Lean_Software_Development), [Mary Poppendieck and Tom Poppendieck](http://www.poppendieck.com/people.htm)
+
 - [The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations](https://www.goodreads.com/book/show/26083308-the-devops-handbook), 
-[Gene Kim](https://twitter.com/RealGeneKim), [Jez Humble](https://twitter.com/jezhumble), [Patrick Debois](http://www.jedi.be/blog/), [John Willis](https://www.linkedin.com/in/johnwillisatlanta/)
+[Gene Kim](https://twitter.com/RealGeneKim), [Jez Humble](https://twitter.com/jezhumble), [Patrick Debois](http://www.jedi.be/blog/) and [John Willis](https://www.linkedin.com/in/johnwillisatlanta/)
+
+- [The Cynefin mini book](https://www.infoq.com/minibooks/cynefin-mini-book/), [Greg Brougham](https://twitter.com/sailinggreg)
+
 
 ### Articles
 
@@ -139,8 +158,4 @@ Finally, thanks to my Codesai colleagues for reading the initial drafts and givi
 
 - [CDD (Desarrollo dirigido por consenso)](https://www.youtube.com/watch?v=pp8j1ggCaoM), [Xavi Gost](https://twitter.com/XaV1uzz)
 
-
-
-
-
-
+- [The Cynefin Framework](https://www.youtube.com/watch?v=N7oz366X0-8), [Dave Snowden](https://en.wikipedia.org/wiki/Dave_Snowden)
