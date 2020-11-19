@@ -1,4 +1,3 @@
-
 .course-page {
   display: flex;
   flex-direction: column;
@@ -165,20 +164,24 @@
             line-height: 1.2;
             text-align: center;
             font-weight: bold;
-            color: white;
 
             .announcement {
               margin-bottom: 0.5rem;
               font-size: 1.25rem;
+              color: black;
             }
 
             .dates {
               font-size: 2rem;
               text-transform: uppercase;
+              margin: 0;
+              color: white;
             }
 
             .place {
               font-size: 1.5rem;
+              margin: 0;
+              color: white;
             }
           }
 
