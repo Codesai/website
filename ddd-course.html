@@ -75,7 +75,12 @@ permalink: /cursos/ddd/
                      </div>
 
                     <div class="summary mobile">
-                        {% include course-summaries/ddd-course.html %}
+                        {%
+                            include course-summary.html
+                            price='600'
+                            special_discount='<span>50% de descuento</span> para colectivos poco representados en la tecnología'
+                            contact_link='/cursos/ddd/#call-to-action'
+                        %}
                     </div>
 
                     <section class="contents">
@@ -123,7 +128,12 @@ permalink: /cursos/ddd/
                     </section>
                 </div>
                 <div class="summary desktop">
-                    {% include course-summaries/ddd-course.html %}
+                    {%
+                        include course-summary.html
+                        price='600'
+                        special_discount='<span>50% de descuento</span> para colectivos poco representados en la tecnología'
+                        contact_link='/cursos/ddd/#call-to-action'
+                    %}
                 </div>
             </div>
         </div>

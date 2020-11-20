@@ -72,7 +72,14 @@ permalink: /curso-de-tdd/
                     </div>
 
                     <div class="summary mobile">
-                        {% include course-summaries/tdd-course.html %}
+                        {%
+                            include course-summary.html
+                            open_edition_dates='17-18 diciembre'
+                            open_edition_place='Remoto'
+                            price='450'
+                            special_discount='<span>50% de descuento</span> para colectivos poco representados en la tecnología'
+                            contact_link='/curso-de-tdd/#call-to-action'
+                        %}
                     </div>
 
                     <section class="contents">
@@ -135,7 +142,14 @@ permalink: /curso-de-tdd/
                     </section>
                 </div>
                 <div class="summary desktop">
-                    {% include course-summaries/tdd-course.html %}
+                    {%
+                        include course-summary.html
+                        open_edition_dates='17-18 diciembre'
+                        open_edition_place='Remoto'
+                        price='450'
+                        special_discount='<span>50% de descuento</span> para colectivos poco representados en la tecnología'
+                        contact_link='/curso-de-tdd/#call-to-action'
+                    %}
                 </div>
             </div>
         </div>
