@@ -8,7 +8,8 @@
         <div class="open-course">
             <h2 class="announcement">Próximas fechas en abierto</h2>
             <p class="dates">{{ include.open_edition_dates }}</p>
-            <p class="place">{{ include.open_edition_place }}</p>
+            <p class="place">{{ include.open_edition_place }} {{ include.price }}€ / <span>persona</span></p>
+            <p class="detail">(I.V.A no incluido.{% if include.special_discount %} {{ include.special_discount }}{% endif %})</p>
         </div>
         {% endif %}
         <div class="hint">
@@ -33,10 +34,8 @@
                 </svg>
             </div>
             <div class="info">
-                <div class="highlight">In house: {{ include.price }}€ / <span>persona</span></div>
+                <div class="highlight">{{ include.price }}€ / <span>persona</span></div>
                 <div class="detail">(I.V.A no incluido)</div>
-                <div class="highlight">En abierto: {{ include.price }}€ / <span>persona</span></div>
-                <div class="detail">(I.V.A no incluido.{% if include.special_discount %} {{ include.special_discount }}{% endif %})</div>
             </div>
         </div>
         <a href="{{ include.contact_link }}">
