@@ -95,6 +95,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  z-index: 2;
 
   .desktop-text {
     margin: 0;
