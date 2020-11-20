@@ -86,24 +86,29 @@ header {
 }
 
 .banner-announcement {
-  position: sticky;
-  top: 0;
-  background-color: #EDF7F5;
-  font-family: $lekton;
-  padding: 0.75rem 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
-  z-index: 2;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 0 48px;
+  height: 62px;
+  font-family: $lekton;
+  background-color: #EDF7F5;
+  z-index: 99999;
+
+  .codesai-button {
+    height: 40px;
+  }
 
   .desktop-text {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: pxToRem(20);
   }
 
   .mobile-text {
-    font-size: 1rem;
+    font-size: pxToRem(16);
     display: none;
 
     &:visited {
