@@ -72,7 +72,11 @@ permalink: /cursos/cd-databases/
                     </div>
 
                     <div class="summary mobile">
-                    {% include course-summaries/cd-database-course.html %}
+                        {%
+                            include course-summary.html
+                            price='600'
+                            contact_link='/cursos/cd-databases/#call-to-action'
+                        %}
                     </div>
 
                     <section class="contents">
@@ -131,7 +135,11 @@ permalink: /cursos/cd-databases/
                     </section>
                 </div>
                 <div class="summary desktop">
-                    {% include course-summaries/cd-database-course.html %}
+                    {%
+                        include course-summary.html
+                        price='600'
+                        contact_link='/cursos/cd-databases/#call-to-action'
+                    %}
                 </div>
             </div>
         </div>
