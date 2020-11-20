@@ -105,6 +105,10 @@ header {
   .mobile-text {
     font-size: 1rem;
     display: none;
+
+    &:visited {
+      color: $blueish-green;
+    }
   }
 
   @media screen and (max-width: $max-width-breakpoint) {
