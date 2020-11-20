@@ -161,6 +161,7 @@
           max-width: 420px;
           position: sticky;
           top: 2rem;
+          border-radius: 0 10px 10px 10px;
 
           @media screen and (max-width: $max-width-breakpoint) {
             position: static;
@@ -172,28 +173,26 @@
 
           .open-course {
             font-family: $lekton;
-            margin-bottom: 2rem;
+            margin-bottom: 24px;
             line-height: 1.2;
             text-align: center;
             font-weight: bold;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid $blueish-green;
 
             .announcement {
-              margin-bottom: 0.5rem;
-              font-size: 1.25rem;
+              margin-bottom: pxToRem(8);
+              font-size: pxToRem(18);
               color: black;
             }
 
             .dates {
-              font-size: 2rem;
+              font-size: pxToRem(24);
               text-transform: uppercase;
               margin: 0;
               color: $blueish-green;
             }
 
             .place {
-              font-size: 1.5rem;
+              font-size: pxToRem(24);
               margin: 0;
               color: $blueish-green;
             }
@@ -217,7 +216,6 @@
             }
 
             .info {
-              font-size: 1.125rem;
 
               &.download {
                 align-self: center;
@@ -227,6 +225,7 @@
 
               .highlight {
                 font-family: $assistant;
+                font-size: pxToRem(18);
                 font-weight: bold;
                 text-transform: uppercase;
 
@@ -237,6 +236,7 @@
               }
 
               .detail {
+                font-size: pxToRem(16);
                 line-height: 1.75rem;
 
                 & + .highlight {
@@ -245,6 +245,11 @@
 
                 span {
                   font-weight: bold;
+                }
+
+                .special-discount {
+                  line-height: 1;
+                  font-size: pxToRem(14);
                 }
               }
             }
