@@ -117,7 +117,6 @@ header {
   }
 
   @media screen and (max-width: $max-width-breakpoint) {
-    flex-direction: column;
 
     .desktop-text,
     .desktop-link {
