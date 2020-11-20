@@ -84,3 +84,38 @@ header {
     }
   }
 }
+
+.banner-announcement {
+  position: sticky;
+  top: 0;
+  background-color: #EDF7F5;
+  font-family: $lekton;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+
+  .desktop-text {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .mobile-text {
+    font-size: 1rem;
+    display: none;
+  }
+
+  @media screen and (max-width: $max-width-breakpoint) {
+    flex-direction: column;
+
+    .desktop-text,
+    .desktop-link {
+      display: none;
+    }
+
+    .mobile-text {
+      display: block;
+    }
+  }
+}
