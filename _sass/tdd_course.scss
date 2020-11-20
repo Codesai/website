@@ -125,6 +125,19 @@
         margin-left: 2rem;
         position: relative;
 
+        h3 {
+          background-color: $blueish-green;
+          font-size: 1rem;
+          display: inline-block;
+          color: white;
+          margin: 0;
+          padding: 0.5rem 1rem;
+
+          img {
+            vertical-align: bottom;
+          }
+        }
+
         &.mobile {
           display: none;
           margin: 2rem 0 0 0;
@@ -144,8 +157,7 @@
 
         .padded-area {
           padding: 1rem 1rem 1.5rem 1rem;
-          background-color: $blueish-green;
-          border-radius: 20px;
+          background-color: #EDF7F5;
           max-width: 420px;
           position: sticky;
           top: 2rem;
@@ -175,13 +187,13 @@
               font-size: 2rem;
               text-transform: uppercase;
               margin: 0;
-              color: white;
+              color: $blueish-green;
             }
 
             .place {
               font-size: 1.5rem;
               margin: 0;
-              color: white;
+              color: $blueish-green;
             }
           }
 
@@ -192,6 +204,10 @@
             .icon {
               flex-shrink: 0;
               width: 38px;
+
+              svg {
+                color: $blueish-green;
+              }
             }
 
             .info {
