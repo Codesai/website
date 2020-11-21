@@ -3,6 +3,8 @@ exclude:
   - "README.md"
   - "LICENSE.md"
   - "*.gemspec"
+  - ".idea/"
+  - "Makefile"
 
 
 keep_files:
