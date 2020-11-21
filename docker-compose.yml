@@ -1,9 +1,0 @@
-version: '2'
-services:
-    web:
-        image: jekyll/jekyll:4.1.0
-        command: bash -c "./scripts/development_build.sh"
-        ports:
-            - 4000:4000
-        volumes:
-            - .:/srv/jekyll:cached
