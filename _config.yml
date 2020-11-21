@@ -1,13 +1,10 @@
 exclude:
   - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
   - "README.md"
   - "LICENSE.md"
   - "*.gemspec"
-  - docker-compose.yml
   - "/scripts/"
-  - package.json
+
 
 keep_files:
   - "CNAME"

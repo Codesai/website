@@ -1,9 +1,8 @@
 version: '2'
 services:
     web:
-        privileged: true
-        build: .
-        command: bash -c "ntpd -s && ./scripts/development_build.sh"
+        image: jekyll/jekyll:4.1.0
+        command: bash -c "./scripts/development_build.sh"
         ports:
             - 4000:4000
         volumes:

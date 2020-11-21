@@ -9,6 +9,7 @@ _site/
 .ruby-version
 .vscode/
 
+.jekyll-cache
 aero-debug.log
 aero-deploy.tar.gz
 .idea/
