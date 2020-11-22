@@ -1,25 +1,17 @@
 exclude:
   - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
   - "README.md"
   - "LICENSE.md"
   - "*.gemspec"
-  - docker-compose.yml
-  - "/scripts/"
-  - package.json
+  - ".idea/"
+  - "Makefile"
+
 
 keep_files:
   - "CNAME"
   - ".git"
   - ".gitignore"
 
-gems:
-#  - jekyll-multiple-languages-plugin
-
-# jekyll-multiple-languages-plugin
-# languages: ["es", "en"]
-# exclude_from_localizations: ["js", "css", "fonts", "img", "assets", "_posts", "atom.xml", "sitemap.xml"]
 
 # Site settings
 title: Codesai

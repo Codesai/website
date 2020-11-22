@@ -1,6 +1,6 @@
 ---
-title: Curso de TDD
-permalink: /curso-de-tdd/
+title: Curso de Continuous Delivery con bases de datos
+permalink: /cursos/cd-databases/
 ---
 
 <!DOCTYPE html>
@@ -61,24 +61,21 @@ permalink: /curso-de-tdd/
 
             <div id="course-information" class="information">
                 <div class="insights">
-                    <div class="course-title">Test Driven Development (TDD)</div>
+                    <div class="course-title">Continuous Delivery con bases de datos</div>
                     <div class="course-description">
                         <p>
-                            TDD es una técnica que, aplicada correctamente, nos permite desarrollar código con un buen diseño, cumpliendo estrictamente las necesidades de negocio.
+                            El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.
                         </p>
                         <p>
-                            En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los conocimientos de manera práctica en Pair Programming con el resto de asistentes, siempre bajo la guía de nuestros mentores.
+                            A través de ejemplos y katas, aprenderemos sobre técnicas de refactoring y sobre cómo evolucionar la base de datos. Asimismo, veremos algunos smells y herramientas para enfrentarnos a entornos complicados.
                         </p>
                     </div>
 
                     <div class="summary mobile">
                         {%
                             include course-summary.html
-                            open_edition_dates='17-18 diciembre'
-                            open_edition_place='En remoto'
-                            price='450'
-                            special_discount='Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología'
-                            contact_link='/curso-de-tdd/#call-to-action'
+                            price='600'
+                            contact_link='/cursos/cd-databases/#call-to-action'
                         %}
                     </div>
 
@@ -88,31 +85,26 @@ permalink: /curso-de-tdd/
                             <div class="daily-agenda">
                                 <div class="day">Primer día</div>
                                 <div class="topics">
-                                    <div class="group"><span>1.</span> Introducción a TDD</div>
-                                    <div class="subgroup"><span>&bull;</span> ¿Por qué TDD?</div>
-                                    <div class="subgroup"><span>&bull;</span> Ciclo de TDD</div>
-
-                                    <div class="group"><span>2. </span>Refactoring & Clean Code</div>
-                                    <div class="subgroup"><span>&bull;</span> Refactoring</div>
-                                    <div class="subgroup"><span>&bull;</span> Code Smells</div>
-                                    <div class="subgroup"><span>&bull;</span> Código habitable</div>
-                                    <div class="subgroup"><span>&bull;</span> Principios de diseño</div>
+                                    <div class="group"><span>1.</span> Desafios y principios</div>
+                                    <div class="group"><span>2. </span> Enfoques stated-based y migration-based</div>
+                                    <div class="group"><span>3. </span> Profundizando en el enfoque migration-based</div>
+                                    <div class="subgroup"><span>&bull;</span> Tools (SQL & DSLs)</div>
+                                    <div class="subgroup"><span>&bull;</span> Aplicación de migraciones</div>
+                                    <div class="subgroup"><span>&bull;</span> Drifts</div>
+                                    <div class="subgroup"><span>&bull;</span> Conflictos</div>
+                                    <div class="subgroup"><span>&bull;</span> Manejando muchas migraciones</div>
+                                    <div class="subgroup"><span>&bull;</span> Rollback vs Forward</div>
                                 </div>
                             </div>
                             <hr>
                             <div class="daily-agenda">
                                 <div class="day">Segundo día</div>
                                 <div class="topics">
-                                    <div class="group"><span>3. </span>Patrones, sostenibilidad y variaciones del ciclo básico</div>
-
-                                    <div class="group"><span>4. </span>Test doubles</div>
-                                    <div class="subgroup"><span>&bull;</span> Interaction-based testing</div>
-                                    <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
-
-                                    <div class="group"><span>5. </span>Outside-in TDD</div>
-                                    <div class="subgroup"><span>&bull;</span> Ventajas sobre inside-out</div>
-                                    <div class="subgroup"><span>&bull;</span> Classicist vs Mockist</div>
-                                    <div class="subgroup"><span>&bull;</span> Mal uso de los test doubles y consejos para evitarlo</div>
+                                    <div class="group"><span>4. </span> Smells en base de datos</div>
+                                    <div class="group"><span>5. </span> Concepto y flujo del refactoring</div>
+                                    <div class="group"><span>6. </span> Refactors</div>
+                                    <div class="group"><span>7. </span> Testing en base de datos</div>
+                                    <div class="group"><span>8. </span> TDD en base de datos</div>
                                 </div>
                             </div>
                         </div>
@@ -120,57 +112,44 @@ permalink: /curso-de-tdd/
 
                     <section class="languages">
                         <div class="title"><span>// </span>Lenguajes</div>
-                        <p>Generalmente, usamos Java porque es el lenguaje en el que la mayor parte de la gente se defiende, pero en el curso se pueden usar también otros lenguajes, eso no es problema. Si Java / IntelliJ no es para ti un problema, será la opción por defecto.</p>
+                        <p>En los ejercicios utilizaremos el lenguaje SQL y cualquier editor con el que te sientas cómodo, pero veremos algunos ejemplos de DSLs en PHP y Java</p>
+                        <p>En cuanto al motor de base de datos (Oracle, SQLServer...), la mayoría de ejercicios son independientes pero algunos aspectos pueden depender del mismo. Ponte en contacto con nosotros e intentaremos ver cómo adaptarlo a lo que utilizas a diario.</p>
                     </section>
 
                     <section class="requirements">
                         <div class="title"><span>// </span>Requisitos</div>
-                        <p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
-                        <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
+                        <p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git. Respecto al motor de base de datos se podría valorar usar un servidor compartido por cuestiones de rendimiento</p>
+                        <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de un portátil a otro sin preocuparse por la privacidad de la cuenta.</p>
                         <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>
                     </section>
 
                     <section class="who">
                         <div class="title"><span>// </span>¿Para quién está pensado?</div>
-                        <p>Este es un curso para personas que sepan programar. Fundamentalmente programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas. Lo que hace falta es venir con ganas y la mente abierta. Si nunca has probado TDD antes, te sorprenderá.</p>
+                        <p>Fundamentalmente para programadores o DBAs que quieran conocer más sobre cómo evolucionar la base de datos y disponer de batería de pruebas automáticas. Y especialmente útil para entornos complejos (múltiples consumidores, lógica en db, etc)</p>
                     </section>
 
                     <section class="where">
-                        <div class="title"><span>// </span>In-house y en abierto</div>
-                        <p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
+                        <div class="title"><span>// </span>In-house</div>
+                        <p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
                         <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
                     </section>
                 </div>
                 <div class="summary desktop">
                     {%
                         include course-summary.html
-                        open_edition_dates='17-18 diciembre'
-                        open_edition_place='Remoto'
-                        price='450'
-                        special_discount='Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología'
-                        contact_link='/curso-de-tdd/#call-to-action'
+                        price='600'
+                        contact_link='/cursos/cd-databases/#call-to-action'
                     %}
                 </div>
             </div>
         </div>
 
-        <div class="photos">
-            <div class="photo">
-                <img src="/assets/courses/tdd_course_0.png" alt="">
-            </div>
-            <div class="photo">
-                <img src="/assets/courses/tdd_course_1.png" alt="">
-            </div>
-        </div>
-
-        <div class="testimonials">
-<!--            <div class="title"><span>// </span>Lo que dicen de nuestro curso</div>-->
-        </div>
+        <div class="photos"></div>
 
         {% include components/call-to-action.html
-            title='¡OK! Me interesa realizar el curso de Test Driven Development (TDD)'
+            title='¡OK! Me interesa realizar el curso de Continuos Delivery con bases de datos'
             text='<p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
-            defaultMessage='Sent from the TDD Course page, no message specified'
+            defaultMessage='Sent from the Refactoring Course page, no message specified'
             messagePlaceHolder='Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto'
         %}
     </div>

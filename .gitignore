@@ -1,5 +1,3 @@
-_site/docker-compose.yml
-_site/en/docker-compose.yml
 _site/
 
 .bundle
@@ -9,8 +7,8 @@ _site/
 .ruby-version
 .vscode/
 
-aero-debug.log
-aero-deploy.tar.gz
+.jekyll-cache
+.jekyll-metadata
 .idea/
 global-groovy.log
 soapui-errors.log
