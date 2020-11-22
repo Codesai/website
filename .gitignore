@@ -13,3 +13,5 @@ _site/
 global-groovy.log
 soapui-errors.log
 soapui.log
+
+Gemfile.lock
