@@ -55,7 +55,7 @@ tests using decorators
 
 <h2>Notes.</h2>
 
-<a name="nota1"></a> [1] You'd fin this code smell described in [Bill Wake](https://xp123.com/articles/)'s wonderful [Refactoring Workbook](https://www.goodreads.com/book/show/337298.Refactoring_Workbook)
+<a name="nota1"></a> [1] You can find this code smell described in [Bill Wake](https://xp123.com/articles/)'s wonderful [Refactoring Workbook](https://www.goodreads.com/book/show/337298.Refactoring_Workbook)
 
 <h2>References.</h2>
 
