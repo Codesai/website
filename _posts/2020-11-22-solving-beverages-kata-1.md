@@ -7,7 +7,7 @@ categories:
   - Katas
   - Learning 
   - Refactoring
-small_image: 
+small_image: solving_beverage_kata1_small_image.jpg
 author: Manuel Rivero
 written_in: english
 ---
