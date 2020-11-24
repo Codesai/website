@@ -44,7 +44,9 @@ Given the current design, if we decided to add the new feature straigth away, we
 
 This is a fine example of a code smell called **Combinatorial Explosion*<a href="#nota1"><sup>[1]</sup></a>). In this case, the problem is caused by using inheritance to represent the pricing of beverages plus supplements. 
 
-In order to make it easier to introduce the new feature, we did a bit of preparatory refactoring first to remove this code smell.
+In order to make it easier to introduce the new feature, we did a bit of preparatory refactoring first to remove this code smell. A way to avoid this combinatorial explosion would be using composition instead of inheritance. 
+
+In this particular case, we could see each supplement as a small increment to the initial beverage price. If we combine these increments using the addition operator, we can compute the total price. One way of 
 
 decorator
 <script src="https://gist.github.com/trikitrok/bdb22d3d3b66408f4049deb3f27188fb.js"></script>
