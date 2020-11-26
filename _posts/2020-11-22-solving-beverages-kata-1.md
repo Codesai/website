@@ -31,7 +31,7 @@ To get an idea of the kind of problem we are facing, we'll have a look at the co
 A closer look reveals that the initial design uses inheritance and polymorphism to enable the differences in computing the price of each allowed combination of beverage and supplements. This is the inheritance hierarchy:
 
 <figure style="overflow: hidden; margin:auto;">
-<img src="/assets/beverages_prices_inheritance_hierarchy.png" alt="Inheritance hierarchy in the initial code" />
+<img src="/assets/solving_beverage_kata_initial_uml.jpg" alt="Inheritance hierarchy in the initial code" />
 </figure>
 
 If that diagram is not enough to scare you, have a quick look at the unit tests of the code:
