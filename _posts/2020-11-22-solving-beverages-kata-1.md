@@ -22,31 +22,38 @@ As part of the kata, we are asked to **add an optional cinnamon supplement that 
 
 <h2>The initial code. </h2>
 
-To get an idea of the kind of problem we are facing, we'll have a look at the code. There are 8 files: a `Beverage` interface and classes for each type of beverages and for each allowed combination of beverage and supplements. 
+To get an idea of the kind of problem we are facing, we'll have a look at the code. There are 8 files: a `Beverage` interface and 7 classes, one for each type of beverage and one for each allowed combination of beverages and supplements. 
 
 <figure style="overflow: hidden; margin:auto;">
 <img src="/assets/solving_beverage_kata_initial_code_folder.png" alt="initial code files" />
+<figcaption><em>Initial code.</em></figcaption>
 </figure>
 
 A closer look reveals that the initial design uses inheritance and polymorphism to enable the differences in computing the price of each allowed combination of beverage and supplements. This is the inheritance hierarchy:
 
 <figure style="overflow: hidden; margin:auto;">
 <img src="/assets/solving_beverage_kata_initial_uml.jpg" alt="Inheritance hierarchy in the initial code" />
+<figcaption><em>Class diagram showing the inheritance hierarchy in the initial code.</em></figcaption>
 </figure>
 
 If that diagram is not enough to scare you, have a quick look at the unit tests of the code:
 
 <script src="https://gist.github.com/trikitrok/a9b2b77762045a77cfd9c6854046add7.js"></script>
 
-<h2>A bit of preparatory refactoring first. </h2>
+<h2>First, a bit of preparatory refactoring . </h2>
 
-Given the current design, if we decided to add the new feature straigth away, we'd end up with 14 classes (2 * the initial number of classes). If you think about it, this would happen for each new supplement we decided to add. This design would force us to double the number of classes for each new supplement we decided to add. If we added n supplements, we'd multiply the initial number of classes by 2<sup>n</sup>.
+Given the current design, if we decided to add the new feature straigth away, we would end up with 14 classes (2 times the initial number of classes). If you think about it, this would happen for each new supplement we decided to add. It would be the same for each new supplement we were required to add: we would be forced to double the number of classes, that means that to adding n supplements more would mean multiplying the initial number of classes by 2<sup>n</sup>.
 
-This is a fine example of a code smell called **Combinatorial Explosion*<a href="#nota1"><sup>[1]</sup></a>). In this case, the problem is caused by using inheritance to represent the pricing of beverages plus supplements. 
+This exponential growth in the number of classes is a typical symptom of a code smell called **Combinatorial Explosion**<a href="#nota1"><sup>[1]</sup></a>). In this particular case the problem is caused by using inheritance to represent the pricing of beverages plus supplements. 
 
-In order to make it easier to introduce the new feature, we did a bit of preparatory refactoring first to remove this code smell. The recommended refactoring for this code smell is [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html) which leads to a code that uses composition instead of inheritance to avoid the combinatorial explosion. If all the variants<a href="#nota2"><sup>[2]</sup></a>) keep the same interface, we'd be creating an example of the decorator design pattern.
+In order to introduce the new cinnamon supplement, we thoung sensible to do a bit of preparatory refactoring first in order to remove the **Combinatorial Explosion** code smell. The recommended refactoring for this code smell is [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html) which leads to a code that uses composition instead of inheritance to avoid the combinatorial explosion. If all the variants<a href="#nota2"><sup>[2]</sup></a>(supplements) keep the same interface, we'd be creating an example of the decorator design pattern<a href="#nota3"><sup>[3]</sup></a>. <- (nota poner que miren Head First Design Patterns que está muy bien y en cuyo ejemplo nos  inspiramos para esta kata)
 
-In this particular case, we could see each supplement as a small increment to the initial beverage price. If we combine these increments using the addition operator, we can compute the total price. One way of 
+<figure style="max-height:400px; max-width:400px; overflow: hidden; margin:auto;">
+<img src="/assets/solving_beverage_kata_decorator_uml.jpg" alt="Class diagram for the decorator design pattern" />
+<figcaption><em>Class diagram for the decorator design pattern.</em></figcaption>
+</figure>
+
+We could see each supplement as a small increment to the initial beverage price. If we combine these increments using the addition operator, we can compute the total price. One way of 
 
 decorator
 <script src="https://gist.github.com/trikitrok/bdb22d3d3b66408f4049deb3f27188fb.js"></script>
