@@ -7,6 +7,7 @@ categories:
   - Katas
   - Learning 
   - Refactoring
+  - Design Patterns
 small_image: solving_beverage_kata1_small_image.jpg
 author: Manuel Rivero
 written_in: english
@@ -40,7 +41,7 @@ If that diagram is not enough to scare you, have a quick look at the unit tests 
 
 <script src="https://gist.github.com/trikitrok/a9b2b77762045a77cfd9c6854046add7.js"></script>
 
-<h2>First, a bit of preparatory refactoring . </h2>
+<h2>First, we make the change easy. </h2>
 
 Given the current design, if we decided to add the new feature straigth away, we would end up with 14 classes (2 times the initial number of classes). If you think about it, this would happen for each new supplement we decided to add. It would be the same for each new supplement we were required to add: we would be forced to double the number of classes, that means that to adding n supplements more would mean multiplying the initial number of classes by 2<sup>n</sup>.
 
@@ -48,14 +49,39 @@ This exponential growth in the number of classes is a typical symptom of a code 
 
 In order to introduce the new cinnamon supplement, we thoung sensible to do a bit of preparatory refactoring first in order to remove the **Combinatorial Explosion** code smell. The recommended refactoring for this code smell is [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html) which leads to a code that uses composition instead of inheritance to avoid the combinatorial explosion. If all the variants<a href="#nota2"><sup>[2]</sup></a>(supplements) keep the same interface, we'd be creating an example of the decorator design pattern<a href="#nota3"><sup>[3]</sup></a>. <- (nota poner que miren Head First Design Patterns que está muy bien y en cuyo ejemplo nos  inspiramos para esta kata)
 
-<figure style="max-height:400px; max-width:400px; overflow: hidden; margin:auto;">
+<figure style="max-height:500px; max-width:500px; overflow: hidden; margin:auto;">
 <img src="/assets/solving_beverage_kata_decorator_uml.jpg" alt="Class diagram for the decorator design pattern" />
 <figcaption><em>Class diagram for the decorator design pattern.</em></figcaption>
 </figure>
 
-We could see each supplement as a small increment to the initial beverage price. If we combine these increments using the addition operator, we can compute the total price. One way of 
+The decorator pattern provides an alternative to subclassing for extending behavior. It involves a set of decorator classes that wrap concrete components and keep the same interface that the concrete components. A decorator change the behavior of a wrapped component by adding new functionality before and/or after delegating to the concrete component.
 
-decorator
+Applying the decorator pattern design to compute the pricing of beverages plus supplements, we would find that the the beverages correspond to the concrete components, tea, coffee and hot chocolate; whereas the supplements, milk and cream correspond to the decorators.
+
+<figure style="max-height:700px; max-width:700px; overflow: hidden; margin:auto;">
+<img src="/assets/solving_beverage_kata_refactoring_uml.jpg" alt="New design class diagram using the decorator design pattern" />
+<figcaption><em>Design using the decorator design pattern to compute the pricing of beverages plus supplements.</em></figcaption>
+</figure>
+
+We can obtain the behavior for a given combination of supplements and beverage by composing supplements (decorators) with a beverage (base component). 
+
+For instance, if we had the following `WithMilk` decorator for the milk supplement pricing,
+
+<script src="https://gist.github.com/trikitrok/7933c57fa80cca49b4e50b8f7b218a87.js"></script>
+
+we would compose it with a `Tea` instance to create the behavior that computes the price of a tea with milk:
+
+<script src="https://gist.github.com/trikitrok/8b351378049afcdd127a9c78b8f60913.js"></script>
+
+
+
+ are  could see each supplement as a small increment to the initial beverage price. If we combine these increments using the addition operator, we can compute the total price. One way of 
+
+
+<h2>Then, we make the easy change. </h2> 
+
+Once we had the new design based in composition instead of inheritance in place, adding the requested feature is as easy as creating a new decorator to represent the cinnamon supplement pricing:
+
 <script src="https://gist.github.com/trikitrok/bdb22d3d3b66408f4049deb3f27188fb.js"></script>
 
 tests using decorators
@@ -63,6 +89,9 @@ tests using decorators
 <script src="https://gist.github.com/trikitrok/223b064324a93957418f48a26557f3e8.js"></script>
 
 <h2>Notes.</h2>
+
+Añadir una nota para la cita de Kent Beck:
+"for each desired change, make the change easy (warning: this may be hard), then make the easy change"
 
 <a name="nota1"></a> [1] You can find this code smell described in [Bill Wake](https://xp123.com/articles/)'s wonderful [Refactoring Workbook](https://www.goodreads.com/book/show/337298.Refactoring_Workbook)
 
