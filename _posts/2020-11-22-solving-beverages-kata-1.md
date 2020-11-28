@@ -8,12 +8,13 @@ categories:
   - Learning 
   - Refactoring
   - Design Patterns
+  - SOLID
 small_image: solving_beverage_kata1_small_image.jpg
 author: Manuel Rivero
 written_in: english
 ---
 
-<h2>Introduction. </h2>
+<h2>Introduction.</h2>
 
 We are going to show a possible solution [the Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata) that we developed recently with some people from [Women Tech Makers Barcelona](https://www.meetup.com/wtmbcn/) with whom I'm doing [Codesai's Practice Program](https://github.com/Codesai/practice_program) twice a month.
 
@@ -41,13 +42,13 @@ If that diagram is not enough to scare you, have a quick look at the unit tests 
 
 <script src="https://gist.github.com/trikitrok/a9b2b77762045a77cfd9c6854046add7.js"></script>
 
-<h2>First, we make the change easy. </h2>
+<h2>First, we make the change easy<a href="#nota1"><sup>[1]</sup></a>). </h2>
 
 Given the current design, if we decided to add the new feature straigth away, we would end up with 14 classes (2 times the initial number of classes). If you think about it, this would happen for each new supplement we decided to add. It would be the same for each new supplement we were required to add: we would be forced to double the number of classes, that means that to adding n supplements more would mean multiplying the initial number of classes by 2<sup>n</sup>.
 
-This exponential growth in the number of classes is a typical symptom of a code smell called **Combinatorial Explosion**<a href="#nota1"><sup>[1]</sup></a>). In this particular case the problem is caused by using inheritance to represent the pricing of beverages plus supplements. 
+This exponential growth in the number of classes is a typical symptom of a code smell called **Combinatorial Explosion**<a href="#nota2"><sup>[2]</sup></a>). In this particular case the problem is caused by using inheritance to represent the pricing of beverages plus supplements. 
 
-In order to introduce the new cinnamon supplement, we thoung sensible to do a bit of preparatory refactoring first in order to remove the **Combinatorial Explosion** code smell. The recommended refactoring for this code smell is [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html) which leads to a code that uses composition instead of inheritance to avoid the combinatorial explosion. If all the variants<a href="#nota2"><sup>[2]</sup></a>(supplements) keep the same interface, we'd be creating an example of the decorator design pattern<a href="#nota3"><sup>[3]</sup></a>. <- (nota poner que miren Head First Design Patterns que está muy bien y en cuyo ejemplo nos  inspiramos para esta kata)
+In order to introduce the new cinnamon supplement, we thoung sensible to do a bit of preparatory refactoring first in order to remove the **Combinatorial Explosion** code smell. The recommended refactoring for this code smell is [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html) which leads to a code that uses composition instead of inheritance to avoid the combinatorial explosion. If all the variants<a href="#nota3"><sup>[3]</sup></a>(supplements) keep the same interface, we'd be creating an example of the decorator design pattern<a href="#nota4"><sup>[4]</sup></a>. 
 
 <figure style="max-height:500px; max-width:500px; overflow: hidden; margin:auto;">
 <img src="/assets/solving_beverage_kata_decorator_uml.jpg" alt="Class diagram for the decorator design pattern" />
@@ -73,33 +74,81 @@ we would compose it with a `Tea` instance to create the behavior that computes t
 
 <script src="https://gist.github.com/trikitrok/8b351378049afcdd127a9c78b8f60913.js"></script>
 
+A nice thing about decorators is that, since they have the same interface as the component they wrap, they are transparent for the client code<a href="#nota5"><sup>[5]</sup></a> which never has to know that it's dealing with a decorator. This allows us to pass them around in place of the wrapped object which makes it possible to compose behaviors using as many decorators as we like. The following example shows how to compose the behavior for computing the price of a coffee with milk and cream<a href="#nota6"><sup>[6]</sup></a>. 
 
+<script src="https://gist.github.com/trikitrok/4f183053c117a6b9ad08d873f6b34551.js"></script>
 
- are  could see each supplement as a small increment to the initial beverage price. If we combine these increments using the addition operator, we can compute the total price. One way of 
+After applying the [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html) refactoring we get to a design that uses composition instead of inheritance to create all the combinations of supplements and beverages. This fixes the **Combinatorial Explosion** code smell.
+
+<figure style="overflow: hidden; margin:auto;">
+<img src="/assets/solving_beverages_kata_decorators_refactoring.png" alt="files after refactoring introducing the decorator design pattern" />
+<figcaption><em>Code after refactoring introducing the decorator design pattern.</em></figcaption>
+</figure>
+
+You can have a look at the rest of the test after this refactoring in this [gist](https://gist.github.com/trikitrok/223b064324a93957418f48a26557f3e8).
 
 
 <h2>Then, we make the easy change. </h2> 
 
-Once we had the new design based in composition instead of inheritance in place, adding the requested feature is as easy as creating a new decorator to represent the cinnamon supplement pricing:
+Once we had the new design based in composition instead of inheritance in place, adding the requested feature is as easy as creating a new decorator that represents the cinnamon supplement pricing:
 
 <script src="https://gist.github.com/trikitrok/bdb22d3d3b66408f4049deb3f27188fb.js"></script>
 
-tests using decorators
+<figure style="overflow: hidden; margin:auto;">
+<img src="/assets/solving_beverages_kata_decorators_for_supplements.png" alt="code after adding the new feature" />
+<figcaption><em>Code after adding the new feature.</em></figcaption>
+</figure>
 
-<script src="https://gist.github.com/trikitrok/223b064324a93957418f48a26557f3e8.js"></script>
+Remember that using the initial design adding this feature would have involved multiplying by two the number of classes.
+
+
+<h2>What have we gained and lost with this refactoring?</h2>
+
+After the refactoring we have a new design that uses the decorator design pattern. This is a flexible alternative design to subclassing for extending behavior that allows us to add behavior dynamically to the objects wrapped by the decorators. 
+
+Using this runtime flexibility, we managed to fix the **Combinatorial Explosion** code smell and that made it easier to add the new feature. Now, instead of multiplying the number of casses by two, adding a new supplement only involves adding one new decorator class that represents the new supplement pricing. This new design makes the client code [open-closed](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) to the axis of change of addig of new supplements.
+
+On the flip side, we have introduced some complexity related to creating the different compositions of decorators and components. At the moment this complexity is being managed by the client code (notice the chains of `new`s in the tests snippets above). 
+
+There's also something else that we have lost in the process. In the initial design only some combinations of beverages and supplements were allowed. This fact was encoded in the initial inheritance hierarchy. Now with our decorators we can dynamically add any possible combination of beverages and supplements.
+
+All in all, we think that the refactoring leaves us in a better spot because we'll be likely required to add new supplements, and there are usual improvements we can make to the design to isolate the client code from the kind of complexity we have introduced.
+
+<h2>Conclusion.</h2>
+
+We have shown an example of preparatory refactoring to make easier the addition of a new feature, and learned about the **Combinatorial Explosion** code smell and how to fix it using the decorator design pattern to get a new design in which we have protected the client code against variations involving new supplements.
+
+In a following post we will show how to encapsulate the creation of the different compositions of decorators and components using builders and/or factories to hide that complexity from client code, and show how we can limit again the allowed combinations that are part of the menu.
 
 <h2>Notes.</h2>
 
-Añadir una nota para la cita de Kent Beck:
-"for each desired change, make the change easy (warning: this may be hard), then make the easy change"
+<a name="nota1"></a> [1] This and the next header come from [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck)'s quote:
 
-<a name="nota1"></a> [1] You can find this code smell described in [Bill Wake](https://xp123.com/articles/)'s wonderful [Refactoring Workbook](https://www.goodreads.com/book/show/337298.Refactoring_Workbook)
+>"For each desired change, make the change easy (warning: this may be hard), then make the easy change"
+
+<a name="nota2"></a> [2] You can find this code smell described in [Bill Wake](https://xp123.com/articles/)'s wonderful [Refactoring Workbook](https://www.goodreads.com/book/show/337298.Refactoring_Workbook).
+
+<a name="nota3"></a> [3] In this context **variant** means to a variation in behavior. For instance, each derived class in a hierarchy is a **variant** of the base class. 
+
+<a name="nota4"></a> [4] Have a look at the chapter devoted to the decorator design pattern in the great [Head First Design Patterns](https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns). It's the most didactic and fun explanation of the pattern I've ever found. This kata is heavily inspired in the example used in that chapter to explain the pattern.
+
+<a name="nota5"></a> [5] In this context **client code** means code that uses objects implementing the interface that both the components and decorators implement, which in the kata would correspond to the `Beverage` interface.
+
+<a name="nota6"></a> [6] Also know as a "cortado leche y leche" in [Gran Canaria](https://en.wikipedia.org/wiki/Gran_Canaria) :)
+
+<a name="nota7"></a> [7] Complexity is most often the price we pay for flexibility. That's why we should always assess  if the gains are worth the price.
+
+<a name="nota8"></a> [7] **Protected variations** is another way to refer to the open-closed principle. I particularly prefer that way to refer to this design principle because I think it is expressed in a way that relates less to object orientation. Have a look at [Craig Larman](https://en.wikipedia.org/wiki/Craig_Larman)'s great article about it: [Protected Variation: The Importance of Being Closed](https://martinfowler.com/ieeeSoftware/protectedVariation.pdf)
 
 <h2>References.</h2>
 
 * [The Beverages Prices Refactoring kata: a kata to practice refactoring away from an awful application of inheritance](/2019/04/beverages_prices_kata)
 
 * [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html)
+
+* [Protected Variation: The Importance of Being Closed](https://martinfowler.com/ieeeSoftware/protectedVariation.pdf), [Craig Larman](https://en.wikipedia.org/wiki/Craig_Larman)
+
+* [Open-closed Principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle)
 
 * [Refactoring Workbook](https://www.goodreads.com/book/show/337298.Refactoring_Workbook), [William C. Wake](https://xp123.com/articles/)
 
