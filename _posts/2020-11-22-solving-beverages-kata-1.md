@@ -5,7 +5,7 @@ date: 2020-11-22 06:00:00.000000000 +01:00
 type: post
 categories:
   - Katas
-  - Learning 
+  - Learning
   - Refactoring
   - Design Patterns
   - SOLID
@@ -16,15 +16,15 @@ written_in: english
 
 <h2>Introduction.</h2>
 
-We are going to show a possible solution [the Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata) that we developed recently with some people from [Women Tech Makers Barcelona](https://www.meetup.com/wtmbcn/) with whom I'm doing [Codesai's Practice Program](https://github.com/Codesai/practice_program) twice a month.
+We are going to show a possible solution to [the Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata) that we developed recently with some people from [Women Tech Makers Barcelona](https://www.meetup.com/wtmbcn/) with whom I'm doing [Codesai's Practice Program](https://github.com/Codesai/practice_program) twice a month.
 
-[The Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata) shows an example of inheritance gone astray. The initial code computes the price of the different beverages that are sold in a coffe house. There are some supplements that can be added to those beverages. Each supplement increases the price a bit. Not all combinations of drinks and supplements are possible.
+[The Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata) shows an example of inheritance gone astray. The initial code computes the price of the different beverages that are sold in a coffee house. There are some supplements that can be added to those beverages. Each supplement increases the price a bit. Not all combinations of drinks and supplements are possible.
 
 As part of the kata, we are asked to **add an optional cinnamon supplement that costs 0.05€ to all our existing catalog of beverages**. We are also advised to refactor the initial code a bit before introducing the new feature. Let's see why.
 
 <h2>The initial code. </h2>
 
-To get an idea of the kind of problem we are facing, we'll have a look at the code. There are 8 files: a `Beverage` interface and 7 classes, one for each type of beverage and one for each allowed combination of beverages and supplements. 
+To get an idea of the kind of problem we are facing, we'll have a look at the code. There are 8 files: a `Beverage` interface and 7 classes, one for each type of beverage and one for each allowed combination of beverages and supplements.
 
 <figure style="overflow: hidden; margin:auto;">
 <img src="/assets/solving_beverage_kata_initial_code_folder.png" alt="initial code files" />
@@ -42,29 +42,29 @@ If that diagram is not enough to scare you, have a quick look at the unit tests 
 
 <script src="https://gist.github.com/trikitrok/a9b2b77762045a77cfd9c6854046add7.js"></script>
 
-<h2>First, we make the change easy<a href="#nota1"><sup>[1]</sup></a>). </h2>
+<h2>First, we make the change easy<a href="#nota1"><sup>[1]</sup></a>. </h2>
 
-Given the current design, if we decided to add the new feature straigth away, we would end up with 14 classes (2 times the initial number of classes). If you think about it, this would happen for each new supplement we decided to add. It would be the same for each new supplement we were required to add: we would be forced to double the number of classes, that means that to adding n supplements more would mean multiplying the initial number of classes by 2<sup>n</sup>.
+Given the current design, if we decided to add the new feature straight away, we would end up with 14 classes (2 times the initial number of classes). If you think about it, this would happen for each new supplement we decided to add. It would be the same for each new supplement we were required to add: we would be forced to double the number of classes, that means that to add n supplements more would mean multiplying the initial number of classes by 2<sup>n</sup>.
 
-This exponential growth in the number of classes is a typical symptom of a code smell called **Combinatorial Explosion**<a href="#nota2"><sup>[2]</sup></a>). In this particular case the problem is caused by using inheritance to represent the pricing of beverages plus supplements. 
+This exponential growth in the number of classes is a typical symptom of a code smell called **Combinatorial Explosion**<a href="#nota2"><sup>[2]</sup></a>. In this particular case the problem is caused by using inheritance to represent the pricing of beverages plus supplements.
 
-In order to introduce the new cinnamon supplement, we thoung sensible to do a bit of preparatory refactoring first in order to remove the **Combinatorial Explosion** code smell. The recommended refactoring for this code smell is [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html) which leads to a code that uses composition instead of inheritance to avoid the combinatorial explosion. If all the variants<a href="#nota3"><sup>[3]</sup></a>(supplements) keep the same interface, we'd be creating an example of the decorator design pattern<a href="#nota4"><sup>[4]</sup></a>. 
+In order to introduce the new cinnamon supplement, we thought sensible to do a bit of preparatory refactoring first in order to remove the **Combinatorial Explosion** code smell. The recommended refactoring for this code smell is [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html) which leads to a code that uses composition instead of inheritance to avoid the combinatorial explosion. If all the variants<a href="#nota3"><sup>[3]</sup></a> (supplements) keep the same interface, we'd be creating an example of the decorator design pattern<a href="#nota4"><sup>[4]</sup></a>.
 
 <figure style="max-height:500px; max-width:500px; overflow: hidden; margin:auto;">
 <img src="/assets/solving_beverage_kata_decorator_uml.jpg" alt="Class diagram for the decorator design pattern" />
 <figcaption><em>Class diagram for the decorator design pattern.</em></figcaption>
 </figure>
 
-The decorator pattern provides an alternative to subclassing for extending behavior. It involves a set of decorator classes that wrap concrete components and keep the same interface that the concrete components. A decorator change the behavior of a wrapped component by adding new functionality before and/or after delegating to the concrete component.
+The decorator pattern provides an alternative to subclassing for extending behavior. It involves a set of decorator classes that wrap concrete components and keep the same interface that the concrete components. A decorator changes the behavior of a wrapped component by adding new functionality before and/or after delegating to the concrete component.
 
-Applying the decorator pattern design to compute the pricing of beverages plus supplements, we would find that the the beverages correspond to the concrete components, tea, coffee and hot chocolate; whereas the supplements, milk and cream correspond to the decorators.
+Applying the decorator pattern design to compute the pricing of beverages plus supplements, we would find that the beverages correspond to the concrete components, tea, coffee and hot chocolate; whereas the supplements, milk and cream correspond to the decorators.
 
 <figure style="max-height:700px; max-width:700px; overflow: hidden; margin:auto;">
 <img src="/assets/solving_beverage_kata_refactoring_uml.jpg" alt="New design class diagram using the decorator design pattern" />
 <figcaption><em>Design using the decorator design pattern to compute the pricing of beverages plus supplements.</em></figcaption>
 </figure>
 
-We can obtain the behavior for a given combination of supplements and beverage by composing supplements (decorators) with a beverage (base component). 
+We can obtain the behavior for a given combination of supplements and beverage by composing supplements (decorators) with a beverage (base component).
 
 For instance, if we had the following `WithMilk` decorator for the milk supplement pricing,
 
@@ -74,7 +74,7 @@ we would compose it with a `Tea` instance to create the behavior that computes t
 
 <script src="https://gist.github.com/trikitrok/8b351378049afcdd127a9c78b8f60913.js"></script>
 
-A nice thing about decorators is that, since they have the same interface as the component they wrap, they are transparent for the client code<a href="#nota5"><sup>[5]</sup></a> which never has to know that it's dealing with a decorator. This allows us to pass them around in place of the wrapped object which makes it possible to compose behaviors using as many decorators as we like. The following example shows how to compose the behavior for computing the price of a coffee with milk and cream<a href="#nota6"><sup>[6]</sup></a>. 
+A nice thing about decorators is that, since they have the same interface as the component they wrap, they are transparent for the client code<a href="#nota5"><sup>[5]</sup></a> which never has to know that it's dealing with a decorator. This allows us to pass them around in place of the wrapped object which makes it possible to compose behaviors using as many decorators as we like. The following example shows how to compose the behavior for computing the price of a coffee with milk and cream<a href="#nota6"><sup>[6]</sup></a>.
 
 <script src="https://gist.github.com/trikitrok/4f183053c117a6b9ad08d873f6b34551.js"></script>
 
@@ -88,7 +88,7 @@ After applying the [Replace Inheritance with Delegation](https://refactoring.com
 You can have a look at the rest of the test after this refactoring in this [gist](https://gist.github.com/trikitrok/223b064324a93957418f48a26557f3e8).
 
 
-<h2>Then, we make the easy change. </h2> 
+<h2>Then, we make the easy change. </h2>
 
 Once we had the new design based in composition instead of inheritance in place, adding the requested feature is as easy as creating a new decorator that represents the cinnamon supplement pricing:
 
@@ -104,11 +104,11 @@ Remember that using the initial design adding this feature would have involved m
 
 <h2>What have we gained and lost with this refactoring?</h2>
 
-After the refactoring we have a new design that uses the decorator design pattern. This is a flexible alternative design to subclassing for extending behavior that allows us to add behavior dynamically to the objects wrapped by the decorators. 
+After the refactoring we have a new design that uses the decorator design pattern. This is a flexible alternative design to subclassing for extending behavior that allows us to add behavior dynamically to the objects wrapped by the decorators.
 
-Using this runtime flexibility, we managed to fix the **Combinatorial Explosion** code smell and that made it easier to add the new feature. Now, instead of multiplying the number of casses by two, adding a new supplement only involves adding one new decorator class that represents the new supplement pricing. This new design makes the client code [open-closed](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) to the axis of change of addig of new supplements.
+Using this runtime flexibility, we managed to fix the **Combinatorial Explosion** code smell and that made it easier to add the new feature. Now, instead of multiplying the number of cases by two, adding a new supplement only involves adding one new decorator class that represents the new supplement pricing. This new design makes the client code [open-closed](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) to the axis of change of adding new supplements.
 
-On the flip side, we have introduced some complexity related to creating the different compositions of decorators and components. At the moment this complexity is being managed by the client code (notice the chains of `new`s in the tests snippets above). 
+On the flip side, we have introduced some complexity related to creating the different compositions of decorators and components. At the moment this complexity is being managed by the client code (notice the chains of `new`s in the tests snippets above).
 
 There's also something else that we have lost in the process. In the initial design only some combinations of beverages and supplements were allowed. This fact was encoded in the initial inheritance hierarchy. Now with our decorators we can dynamically add any possible combination of beverages and supplements.
 
@@ -118,7 +118,13 @@ All in all, we think that the refactoring leaves us in a better spot because we'
 
 We have shown an example of preparatory refactoring to make easier the addition of a new feature, and learned about the **Combinatorial Explosion** code smell and how to fix it using the decorator design pattern to get a new design in which we have protected the client code against variations involving new supplements.
 
-In a following post we will show how to encapsulate the creation of the different compositions of decorators and components using builders and/or factories to hide that complexity from client code, and show how we can limit again the allowed combinations that are part of the menu.
+In a future post we will show how to encapsulate the creation of the different compositions of decorators and components using builders and/or factories to hide that complexity from client code, and show how we can limit again the allowed combinations that are part of the menu.
+
+<h2>Aknowledgements.</h2>
+
+I’d like to thank the WTM study group, and especially [Inma Navas](https://twitter.com/InmaCNavas) for solving this kata with me.
+
+Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts and giving me feedback and to [Chrisy Totty](https://www.pexels.com/@tottster) for the lovely cat picture.
 
 <h2>Notes.</h2>
 
@@ -128,13 +134,13 @@ In a following post we will show how to encapsulate the creation of the differen
 
 <a name="nota2"></a> [2] You can find this code smell described in [Bill Wake](https://xp123.com/articles/)'s wonderful [Refactoring Workbook](https://www.goodreads.com/book/show/337298.Refactoring_Workbook).
 
-<a name="nota3"></a> [3] In this context **variant** means to a variation in behavior. For instance, each derived class in a hierarchy is a **variant** of the base class. 
+<a name="nota3"></a> [3] In this context **variant** means a variation in behavior. For instance, each derived class in a hierarchy is a **variant** of the base class.
 
 <a name="nota4"></a> [4] Have a look at the chapter devoted to the decorator design pattern in the great [Head First Design Patterns](https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns). It's the most didactic and fun explanation of the pattern I've ever found. This kata is heavily inspired in the example used in that chapter to explain the pattern.
 
 <a name="nota5"></a> [5] In this context **client code** means code that uses objects implementing the interface that both the components and decorators implement, which in the kata would correspond to the `Beverage` interface.
 
-<a name="nota6"></a> [6] Also know as a "cortado leche y leche" in [Gran Canaria](https://en.wikipedia.org/wiki/Gran_Canaria) :)
+<a name="nota6"></a> [6] Also known as a "cortado leche y leche" in [Gran Canaria](https://en.wikipedia.org/wiki/Gran_Canaria) :)
 
 <a name="nota7"></a> [7] Complexity is most often the price we pay for flexibility. That's why we should always assess  if the gains are worth the price.
 
@@ -153,3 +159,5 @@ In a following post we will show how to encapsulate the creation of the differen
 * [Refactoring Workbook](https://www.goodreads.com/book/show/337298.Refactoring_Workbook), [William C. Wake](https://xp123.com/articles/)
 
 * [Head First Design Patterns](https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns), [Eric Freeman](https://en.wikipedia.org/wiki/Eric_Freeman_(writer)), [Kathy Sierra](https://en.wikipedia.org/wiki/Kathy_Sierra), [Bert Bates](https://twitter.com/bertbates?lang=en), [Elisabeth Robson](https://www.elisabethrobson.com/)
+
+
