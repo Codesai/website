@@ -12,6 +12,7 @@ categories:
 small_image: solving_beverage_kata1_small_image.jpg
 author: Manuel Rivero
 written_in: english
+cross_post_url: https://garajeando.blogspot.com/2020/11/solving-beverages-prices-refactoring.html
 ---
 
 <h2>Introduction.</h2>
@@ -122,7 +123,7 @@ In a future post we will show how to encapsulate the creation of the different c
 
 I’d like to thank the WTM study group, and especially [Inma Navas](https://twitter.com/InmaCNavas) for solving this kata with me.
 
-Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts and giving me feedback and to [Chrisy Totty](https://www.pexels.com/@tottster) for the lovely cat picture.
+Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts and giving me feedback and and to [Lisa Fotios](https://www.pexels.com/@fotios-photos) for her picture.
 
 <h2>Notes.</h2>
 
