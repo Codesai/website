@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Solving the Beverages Prices Refactoring kata (1): composition over inheritance"
-date: 2020-11-22 06:00:00.000000000 +01:00
+date: 2020-11-30 06:00:00.000000000 +01:00
 type: post
 categories:
   - Katas
@@ -12,6 +12,7 @@ categories:
 small_image: solving_beverage_kata1_small_image.jpg
 author: Manuel Rivero
 written_in: english
+cross_post_url: https://garajeando.blogspot.com/2020/11/solving-beverages-prices-refactoring.html
 ---
 
 <h2>Introduction.</h2>
@@ -52,12 +53,12 @@ In order to introduce the new cinnamon supplement, we thought sensible to do a b
 
 <figure style="max-height:500px; max-width:500px; overflow: hidden; margin:auto;">
 <img src="/assets/solving_beverage_kata_decorator_uml.jpg" alt="Class diagram for the decorator design pattern" />
-<figcaption><em>Class diagram for the decorator design pattern.</em></figcaption>
+<figcaption><em>Class diagram for the decorator design pattern<a href="#nota5"><sup>[5]</sup></a>.</em></figcaption>
 </figure>
 
 The decorator pattern provides an alternative to subclassing for extending behavior. It involves a set of decorator classes that wrap concrete components and keep the same interface that the concrete components. A decorator changes the behavior of a wrapped component by adding new functionality before and/or after delegating to the concrete component.
 
-Applying the decorator pattern design to compute the pricing of beverages plus supplements, we would find that the beverages correspond to the concrete components, tea, coffee and hot chocolate; whereas the supplements, milk and cream correspond to the decorators.
+Applying the decorator pattern design to compute the pricing of beverages plus supplements, the beverages would correspond to the concrete components, tea, coffee and hot chocolate; whereas the supplements, milk and cream would correspond to the decorators.
 
 <figure style="max-height:700px; max-width:700px; overflow: hidden; margin:auto;">
 <img src="/assets/solving_beverage_kata_refactoring_uml.jpg" alt="New design class diagram using the decorator design pattern" />
@@ -74,7 +75,7 @@ we would compose it with a `Tea` instance to create the behavior that computes t
 
 <script src="https://gist.github.com/trikitrok/8b351378049afcdd127a9c78b8f60913.js"></script>
 
-A nice thing about decorators is that, since they have the same interface as the component they wrap, they are transparent for the client code<a href="#nota5"><sup>[5]</sup></a> which never has to know that it's dealing with a decorator. This allows us to pass them around in place of the wrapped object which makes it possible to compose behaviors using as many decorators as we like. The following example shows how to compose the behavior for computing the price of a coffee with milk and cream<a href="#nota6"><sup>[6]</sup></a>.
+A nice thing about decorators is that, since they have the same interface as the component they wrap, they are transparent for the client code<a href="#nota6"><sup>[6]</sup></a> which never has to know that it's dealing with a decorator. This allows us to pass them around in place of the wrapped object which makes it possible to compose behaviors using as many decorators as we like. The following example shows how to compose the behavior for computing the price of a coffee with milk and cream<a href="#nota7"><sup>[7]</sup></a>.
 
 <script src="https://gist.github.com/trikitrok/4f183053c117a6b9ad08d873f6b34551.js"></script>
 
@@ -86,7 +87,6 @@ After applying the [Replace Inheritance with Delegation](https://refactoring.com
 </figure>
 
 You can have a look at the rest of the test after this refactoring in this [gist](https://gist.github.com/trikitrok/223b064324a93957418f48a26557f3e8).
-
 
 <h2>Then, we make the easy change. </h2>
 
@@ -101,14 +101,13 @@ Once we had the new design based in composition instead of inheritance in place,
 
 Remember that using the initial design adding this feature would have involved multiplying by two the number of classes.
 
-
 <h2>What have we gained and lost with this refactoring?</h2>
 
 After the refactoring we have a new design that uses the decorator design pattern. This is a flexible alternative design to subclassing for extending behavior that allows us to add behavior dynamically to the objects wrapped by the decorators.
 
-Using this runtime flexibility, we managed to fix the **Combinatorial Explosion** code smell and that made it easier to add the new feature. Now, instead of multiplying the number of cases by two, adding a new supplement only involves adding one new decorator class that represents the new supplement pricing. This new design makes the client code [open-closed](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) to the axis of change of adding new supplements.
+Thanks to this runtime flexibility we managed to fix the **Combinatorial Explosion** code smell and that made it easier to add the new feature. Now, instead of multiplying the number of cases by two, adding a new supplement only involves adding one new decorator class that represents the new supplement pricing. This new design makes the client code [open-closed](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) to the axis of change of adding new supplements.
 
-On the flip side, we have introduced some complexity related to creating the different compositions of decorators and components. At the moment this complexity is being managed by the client code (notice the chains of `new`s in the tests snippets above).
+On the flip side, we have introduced some complexity<a href="#nota8"><sup>[8]</sup></a> related to creating the different compositions of decorators and components. At the moment this complexity is being managed by the client code (notice the chains of `new`s in the tests snippets above).
 
 There's also something else that we have lost in the process. In the initial design only some combinations of beverages and supplements were allowed. This fact was encoded in the initial inheritance hierarchy. Now with our decorators we can dynamically add any possible combination of beverages and supplements.
 
@@ -116,7 +115,7 @@ All in all, we think that the refactoring leaves us in a better spot because we'
 
 <h2>Conclusion.</h2>
 
-We have shown an example of preparatory refactoring to make easier the addition of a new feature, and learned about the **Combinatorial Explosion** code smell and how to fix it using the decorator design pattern to get a new design in which we have protected the client code against variations involving new supplements.
+We have shown an example of preparatory refactoring to make easier the addition of a new feature, and learned about the **Combinatorial Explosion** code smell and how to fix it using the decorator design pattern to get a new design in which we have protected the client code<a href="#nota9"><sup>[9]</sup></a> against variations involving new supplements.
 
 In a future post we will show how to encapsulate the creation of the different compositions of decorators and components using builders and/or factories to hide that complexity from client code, and show how we can limit again the allowed combinations that are part of the menu.
 
@@ -124,7 +123,7 @@ In a future post we will show how to encapsulate the creation of the different c
 
 I’d like to thank the WTM study group, and especially [Inma Navas](https://twitter.com/InmaCNavas) for solving this kata with me.
 
-Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts and giving me feedback and to [Chrisy Totty](https://www.pexels.com/@tottster) for the lovely cat picture.
+Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts and giving me feedback and and to [Lisa Fotios](https://www.pexels.com/@fotios-photos) for her picture.
 
 <h2>Notes.</h2>
 
@@ -138,13 +137,15 @@ Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts an
 
 <a name="nota4"></a> [4] Have a look at the chapter devoted to the decorator design pattern in the great [Head First Design Patterns](https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns). It's the most didactic and fun explanation of the pattern I've ever found. This kata is heavily inspired in the example used in that chapter to explain the pattern.
 
-<a name="nota5"></a> [5] In this context **client code** means code that uses objects implementing the interface that both the components and decorators implement, which in the kata would correspond to the `Beverage` interface.
+<a name="nota5"></a> [5] We could have also solved this problem composing functions instead of objects, but we wanted to practice with objects in this solution of the kata. That might be an interesting exercise for another practice session.
 
-<a name="nota6"></a> [6] Also known as a "cortado leche y leche" in [Gran Canaria](https://en.wikipedia.org/wiki/Gran_Canaria) :)
+<a name="nota6"></a> [6] In this context **client code** means code that uses objects implementing the interface that both the components and decorators implement, which in the kata would correspond to the `Beverage` interface.
 
-<a name="nota7"></a> [7] Complexity is most often the price we pay for flexibility. That's why we should always assess  if the gains are worth the price.
+<a name="nota7"></a> [7] Also known as a "cortado leche y leche" in [Gran Canaria](https://en.wikipedia.org/wiki/Gran_Canaria) :)
 
-<a name="nota8"></a> [7] **Protected variations** is another way to refer to the open-closed principle. I particularly prefer that way to refer to this design principle because I think it is expressed in a way that relates less to object orientation. Have a look at [Craig Larman](https://en.wikipedia.org/wiki/Craig_Larman)'s great article about it: [Protected Variation: The Importance of Being Closed](https://martinfowler.com/ieeeSoftware/protectedVariation.pdf)
+<a name="nota8"></a> [8] Complexity is most often the price we pay for flexibility. That's why we should always assess  if the gains are worth the price.
+
+<a name="nota9"></a> [9] **Protected variations** is another way to refer to the open-closed principle. I particularly prefer that way to refer to this design principle because I think it is expressed in a way that relates less to object orientation. Have a look at [Craig Larman](https://en.wikipedia.org/wiki/Craig_Larman)'s great article about it: [Protected Variation: The Importance of Being Closed](https://martinfowler.com/ieeeSoftware/protectedVariation.pdf)
 
 <h2>References.</h2>
 
