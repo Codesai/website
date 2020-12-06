@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Testeando una integración con SNS"
-date: 2020-12-11 12:30:00.000000000 +01:00
+date: 2020-12-07 12:30:00.000000000 +01:00
 type: post
 categories:
 - Testing
@@ -67,19 +67,20 @@ Dado que la publicación de mensajes en SNS es asíncrona, en este test usamos u
 
 En el post sobre la integración con S3 hablamos de la importancia de testear en producción para asegurarnos que todo funciona como es debido. En este caso tenemos alguna idea sobre lo que nos gustaría hacer, pero no hemos llegado a implementar nada aún porque, de momento, no hemos querido invertir más en esta feature.
 
-Lo que nos interesa probar en producción es que si la aplicación lanza un evento, éste llega a los suscriptores del topic de SNS. Podríamos seguir un enfoque parecido al de S3; tener un proceso que publique periódicamente un evento y revisar que se puede consumir en el otro extremo. Hemos pensado desplegar un cronjob que periódicamente llame a un endpoint de la API que publique un evento en SNS, suscribir una cola nueva a este topic y leer de la cola para verificar que el mensaje llega.
+Lo que nos interesaría probar en producción es que si la aplicación lanza un evento, éste llega a los suscriptores del topic de SNS. Para conseguirlo podríamos seguir un enfoque parecido al que utilizamos para testear la integración con S3: tener un proceso que publique periódicamente un evento y revisar que se puede consumir en el otro extremo. Hemos pensado que desplegar un cronjob que periódicamente llame a un endpoint de la API que publique un evento en SNS, y suscribir una cola nueva a este topic y leer de la cola podría servir para verificar que el mensaje llega.
 
-Lo ideal sería que ese evento se publique en el mismo topic que se usan para los eventos reales, pero tendríamos que tener en cuenta que ese evento no puede provocar efectos no deseados en el entorno de producción. En este punto se nos ocurren 2 alternativas:
+Lo ideal sería que ese evento se publique en el mismo topic que se usa para los eventos reales, pero tendríamos que evitar que ese evento provoque efectos no deseados en el entorno de producción. En este punto se nos ocurren 2 maneras alternativas para conseguirlo:
 
-* Usar un evento de la aplicación que sea idempotente y sobre un dato que controlemos. Por ejemplo, teniendo un anuncio en producción que está despublicado, podemos llamar a un endpoint que despublique anuncios, que lanzará el evento de despublicar sobre el anuncio. No habría efecto visible en producción, pero validaríamos que el mensaje llega. Sin embargo, puede que a futuro no quisiéramos que se propaguen eventos cuando no hay cambio de estado o que haya algún cambio en cómo se gestiona el evento y rompamos nuestro test por el motivo que no esperamos.
+1. Usar un evento de la aplicación que sea idempotente y sobre un dato que controlemos. Por ejemplo, teniendo un anuncio en producción que está despublicado, podemos llamar a un endpoint que haga que un anuncio deje de estar publicado, que lanzará el evento correspondiente. Validando el evento que llega, podríamos testear el servicio sin producir ningún efecto visible en producción. Sin embargo, puede que en el futuro no quisiéramos que se propaguen eventos cuando no hay cambio de estado o que haya algún cambio en cómo se gestiona el evento y rompamos nuestro test por el motivo que no esperamos.
 
-* Por otro lado, podemos acordar con el equipo que está consumiendo eventos un evento “vacío” que ellos puedan ignorar, pero que nosotros podamos verificar por nuestro lado. Necesitamos un poco más de coordinación entre equipos y algo más de código custom para las pruebas, pero nos aseguramos que el test en producción solo se rompe por los motivos adecuados.
+2. Por otro lado, podemos acordar con el equipo que está consumiendo eventos un evento sintético que ellos puedan ignorar, pero que nosotros podamos verificar por nuestro lado. Necesitaríamos un poco más de coordinación entre equipos y algo más de código custom para las pruebas, pero nos aseguraríamos que el test en producción solo se rompería por los motivos adecuados.
 
-Como ya hemos dicho, no es algo que aún hayamos hecho ni tomado una decisión firme sobre cómo implementarlo. En el momento en el que lo hagamos, actualizaremos con una nueva publicación contando qué opción hemos tomado o si hemos encontrado alternativas mejores a las que tenemos hoy.
+Como ya hemos dicho, aún no hemos testeado esta integración  en producción ni tomado una decisión firme sobre cómo hacerlo. Eso será material para otra publicación en la que detallaremos lo que hayamos hecho.
+
 
 ## Agradecimientos
 
-Gracias a mis compañeros de Codesai por el feedback en las versiones iniciales de este post.
+Gracias a mis compañeros de Codesai por el feedback en las versiones iniciales de este post y al equipo de B2B de LifullConnect por ser parte del trabajo que se describe aquí.
 
 ## Notas
 
@@ -88,3 +89,7 @@ Gracias a mis compañeros de Codesai por el feedback en las versiones iniciales 
 ## Referencias
 
 * [xUnit Test Patterns, Refactoring Test Code, Gerard Meszaros](https://www.goodreads.com/book/show/337302.xUnit_Test_Patterns)
+
+* [Testeando una integración con S3](https://codesai.com/2020/10/testing-s3)
+
+* [Testing in production the safe way](https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1), [Cindy Sridharan](https://twitter.com/copyconstruct)
