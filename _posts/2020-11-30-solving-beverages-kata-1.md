@@ -45,7 +45,7 @@ If that diagram is not enough to scare you, have a quick look at the unit tests 
 
 <h2>First, we make the change easy<a href="#nota1"><sup>[1]</sup></a>. </h2>
 
-Given the current design, if we decided to add the new feature straight away, we would end up with 14 classes (2 times the initial number of classes). If you think about it, this would happen for each new supplement we decided to add. It would be the same for each new supplement we were required to add: we would be forced to double the number of classes, that means that to add n supplements more would mean multiplying the initial number of classes by 2<sup>n</sup>.
+Given the current design, if we decided to add the new feature straight away, we would end up with 14 classes (2 times the initial number of classes). If you think about it, this would happen for each new supplement we were required to add: we would be forced to double the number of classes. Adding n supplements more would mean multiplying the initial number of classes by 2<sup>n</sup>.
 
 This exponential growth in the number of classes is a typical symptom of a code smell called **Combinatorial Explosion**<a href="#nota2"><sup>[2]</sup></a>. In this particular case the problem is caused by using inheritance to represent the pricing of beverages plus supplements.
 
@@ -105,7 +105,7 @@ Remember that using the initial design adding this feature would have involved m
 
 After the refactoring we have a new design that uses the decorator design pattern. This is a flexible alternative design to subclassing for extending behavior that allows us to add behavior dynamically to the objects wrapped by the decorators.
 
-Thanks to this runtime flexibility we managed to fix the **Combinatorial Explosion** code smell and that made it easier to add the new feature. Now, instead of multiplying the number of cases by two, adding a new supplement only involves adding one new decorator class that represents the new supplement pricing. This new design makes the client code [open-closed](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) to the axis of change of adding new supplements.
+Thanks to this runtime flexibility we managed to fix the **Combinatorial Explosion** code smell and that made it easier to add the new feature. Now, instead of multiplying the number of classes by two, adding a new supplement only involves adding one new decorator class that represents the new supplement pricing. This new design makes the client code [open-closed](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) to the axis of change of adding new supplements.
 
 On the flip side, we have introduced some complexity<a href="#nota8"><sup>[8]</sup></a> related to creating the different compositions of decorators and components. At the moment this complexity is being managed by the client code (notice the chains of `new`s in the tests snippets above).
 
@@ -149,7 +149,7 @@ Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts an
 
 <h2>References.</h2>
 
-* [The Beverages Prices Refactoring kata: a kata to practice refactoring away from an awful application of inheritance](/2019/04/beverages_prices_kata)
+* [The Beverages Prices Refactoring kata: a kata to practice refactoring away from an awful application of inheritance](/2019/04/beverages_prices_kata), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
 
 * [Replace Inheritance with Delegation](https://refactoring.com/catalog/replaceSuperclassWithDelegate.html)
 
