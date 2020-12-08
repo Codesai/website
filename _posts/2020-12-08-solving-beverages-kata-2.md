@@ -88,6 +88,8 @@ Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts an
 
 * [The Beverages Prices Refactoring kata: a kata to practice refactoring away from an awful application of inheritance](/2019/04/beverages_prices_kata), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
 
+* [Solving the Beverages Prices Refactoring kata (1): composition over inheritance](/2020/11/solving-beverages-kata-1), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
+
 * [Encapsulate Classes with Factory](https://www.informit.com/articles/article.aspx?p=1398606&seqNum=3), [Joshua Kerievsky](https://wiki.c2.com/?JoshuaKerievsky)
 
 * [Encapsulate Composite with Builder](https://www.informit.com/articles/article.aspx?p=1398606&seqNum=5), [Joshua Kerievsky](https://wiki.c2.com/?JoshuaKerievsky)
