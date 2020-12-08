@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Solving the Beverages Prices Refactoring kata (2): limiting the options in the menu"
-date: 2020-12-02 06:00:00.000000000 +01:00
+date: 2020-12-08 06:00:00.000000000 +01:00
 type: post
 categories:
   - Katas
