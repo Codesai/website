@@ -9,7 +9,7 @@ categories:
   - Refactoring
   - Design Patterns
   - SOLID
-small_image: 
+small_image:
 author: Manuel Rivero
 written_in: english
 ---
@@ -20,30 +20,32 @@ This the second and final part of a series of posts showing a solution to [the B
 
 In the previous post we introduced a design based on composition that fixed the **Combinatorial Explosion** code smell and produced a flexible solution applying the decorator design pattern.
 
-There is a potential problem in the resulting because the client code, the code that wants to find out the price of beverages, has too much knowledge<a href="#nota1"><sup>[1]</sup></a> <- (nota: knowledge meas coupling or connascence <- link) about how to create and compose beverages and supplements. 
+There is a potential problem in that solution because the client code, the code that wants to find out the price of beverages, has too much knowledge<a href="#nota1"><sup>[1]</sup></a> <- (nota: knowledge means coupling or connascence <- link) about how to create and compose beverages and supplements.
 
-Have a look, for instance, at `new WithCream(new WithMilk(new Coffee()))`. That line of code knows about the constructors and their number of arguments of three classes and how they should be composed. This might not be a big problem, for the code of this kata, since the client code is only comprised of a few tests, but, in a larger code base, this problem might spread across numerous classes generating a code smell known as **Creation Sprawl**<a href="#nota2"><sup>[2]</sup></a>(nota: hablar del code smell en el libro de Joshua Keriesvsky placing creational responsibilities in classes that should not be playing any role in object creation.).
+Have a look, for instance, at the following line `new WithCream(new WithMilk(new Coffee()))`. It knows about three classes and how they are being composed. In the case of this kata, that might not be a big problem, since the client code is only comprised of a few tests, but, in a larger code base, this problem might spread across numerous classes generating a code smell known as **Creation Sprawl**<a href="#nota2"><sup>[2]</sup></a>(nota: hablar del code smell en el libro de Joshua Keriesvsky placing creational responsibilities in classes that should not be playing any role in object creation).
 
-We'll show how to reduce client knowledge of concrete classes and simplify their composition by encapsulating the creational knowledge, behind a nice, readable interface that we'll keep all the complexity of combining the supplements (decorators) and beverages (components) hidden from the client code.
+In this post, we'll try to reduce client knowledge of concrete component and decorator classes and their composition by encapsulating all the creational knowledge, behind a nice, readable interface that we'll keep all the complexity of combining the supplements (decorators) and beverages (components) hidden from the client code.
 
-Another more subtle problem in design based on composition has to do with something that we have inadvertently lost:  the fact that not all combinations of beverages and supplements were allowed in the menu. That knowledge was implicitly encoded in the initial inheritance hierarchy, and disappeared with it. In the current design we can dynamically create any combination of beverages and supplements, including those that were not included in the original menu, like, for instance a tea with cinnamon, milk and cream (doing `new WithCinnamon(new WithCream(new WithMilk(new Tea())))`) which you might find delicious :). In this post we'll show a way of recovering that limitation of options back.
+Another more subtle problem in design based on composition has to do with something that we have inadvertently lost:  the fact that not all combinations of beverages and supplements were allowed in the menu. That knowledge was implicitly encoded in the initial inheritance hierarchy, and disappeared with it. In the current design we can dynamically create any combination of beverages and supplements, including those that were not included in the original menu, like, for instance a tea with cinnamon, milk and cream (doing `new WithCinnamon(new WithCream(new WithMilk(new Tea())))`) which you might find delicious :).We'll also explore possible ways to recover that limitation of options.
 
+We'll start by examining some creational patterns that are usually applied along with the decorator design pattern.
 
+<h2>Using *Creation Methods* and the *Factory pattern*<a href="#nota3"><sup>[3]</sup></a>. </h2>
 
-
-
-For that we'll examine some patterns that are usually applied to compose decorators.
-
-<h2>Using creation methods. </h2> 
+We might apply the [Encapsulate Classes with Factory](https://www.informit.com/articles/article.aspx?p=1398606&seqNum=3) refactoring<a href="#nota4"><sup>[4]</sup></a>(<- described in chapter blabla of Refactoring to Patterns) to introduce a **Factory class** with an interface that provides a **creation method** for each entry in the menu, that is, we would have a method for making  coffee, another one for making tea, another one for making coffee with milk, and so on, and so forth. 
 
 
-Ok, let's think how we could apply it for our case. We might create a method for each possible entry in the menu, that is, we would have a method for making a coffee, another one for making blabla, and so on, and so forth. Although that would be easy for the client code because it hides the complexities of the combination of decorators, we'd have a problem somehow similar to the initial combinatorial explosion we were trying to avoid, in this case we would suffer a combinatorial explosion of methods. This means the factory method design pattern is not the way to go.
+At first sight, this would move us forward because it would solve the two problems we discussed in the introduction. On one hand, it would encapsulate all the creational logic hiding the complexity related to composing decorators and components behind the Factory interface. On the other hand, it would also limit the possible combinations of beverages and supplements just by limiting the methods in the interface of the Factory to only the combinations available in the menu. 
+
+Although that would simplify the client code and reduce the overall coupling, we would end up with a problem somehow similar to the initial **combinatorial explosion** code smell we were trying to avoid when we decided to introduce the decorator design pattern. The difference, in this case, would be that instead of multiplying the number of classes by two when adding a new supplement, we’d multiply the number of creational methods in the interface of the Factory by two. We would suffer from a combinatorial explosion of methods instead of from a combinatorial explosion of classes. 
+
+A solution using the **Factory pattern** would be ok if we had a small number of options or if we didn’t expect the number of supplements to grow, but, as we said in the previous post we think it likely that we’ll be required to add new supplements so prefer want to keep a design that is easy to evolve along the axis of change of adding new supplements. This means the **Factory pattern** is not the way to go for us this time. Let’s have a look at a more flexible solution.
 
 <h2>The builder design pattern. </h2>
 
-We can create a nice readable fluent interface to compose the beverages and supplements bit by bit using the builder design pattern. Like in the case of the factory method design pattern, using the builder would encapsulate the complexity of combining decorators from the client code. 
+We can create a nice readable fluent interface to compose the beverages and supplements bit by bit using the builder design pattern. Like in the case of the factory method design pattern, using the builder would encapsulate the complexity of combining decorators from the client code.
 
-However the fluent API produced by the builder design pattern has the advantage of not suffering from a combinatorial explosion of methods. This blabla because builder is more flexible as as such is more suited for more complex creation use cases.
+However the fluent API produced by the builder design pattern has the advantage of not suffering from a combinatorial explosion of methods. This blabla because builder is more flexible and as such is more suited for more complex creation use cases.
 
 <h2>A hybrid. </h2>
 
@@ -56,13 +58,13 @@ From GOF:
 
 Creational design patterns abstract the instantiation process.They help make a system independent of how its objects are created,composed, and represented
 
-Creational patterns become important as systems evolve to depend moreon object composition than class inheritance. As that happens,emphasis shifts away from hard-coding a fixed set of behaviors towarddefining a smaller set of fundamental behaviors that can be composedinto any number of more complex ones. Thus creating objects withparticular behaviors requires more than simply instantiating a class. 
+Creational patterns become important as systems evolve to depend more on object composition than class inheritance. As that happens,emphasis shifts away from hard-coding a fixed set of behaviors toward defining a smaller set of fundamental behaviors that can be composed into any number of more complex ones. Thus creating objects with particular behaviors requires more than simply instantiating a class.
 
-There are two recurring themes in these patterns. First, they allencapsulate knowledge about which concrete classes the system uses.Second, they hide how instances of these classes are created and puttogether
+There are two recurring themes in these patterns. First, they all encapsulate knowledge about which concrete classes the system uses.Second, they hide how instances of these classes are created and put together
 
-All the system at large knows about the objects is theirinterfaces as defined by abstract classes. Consequently, thecreational patterns give you a lot of flexibility in whatgetscreated, who creates it, how it gets created, and when
+All the system at large knows about the objects is their interfaces as defined by abstract classes. Consequently, the creational patterns give you a lot of flexibility in what gets created, who creates it, how it gets created, and when
 
-Often, designs start out using Factory Method and evolvetoward the other creational patterns as the designer discovers wheremore flexibility is needed.
+Often, designs start out using Factory Method and evolve toward the other creational patterns as the designer discovers wheremore flexibility is needed.
 
 --------------------------------
 
@@ -84,15 +86,17 @@ Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts an
 
 <h2>References.</h2>
 
-* [The Beverages Prices Refactoring kata: a kata to practice refactoring away from an awful application of inheritance](/2019/04/beverages_prices_kata)
+* [The Beverages Prices Refactoring kata: a kata to practice refactoring away from an awful application of inheritance](/2019/04/beverages_prices_kata), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
 
 * [Encapsulate Classes with Factory](https://www.informit.com/articles/article.aspx?p=1398606&seqNum=3), [Joshua Kerievsky](https://wiki.c2.com/?JoshuaKerievsky)
+
+* [Encapsulate Composite with Builder](https://www.informit.com/articles/article.aspx?p=1398606&seqNum=5), [Joshua Kerievsky](https://wiki.c2.com/?JoshuaKerievsky)
 
 *  [Refactoring to Patterns](https://www.goodreads.com/book/show/85041.Refactoring_to_Patterns), [Joshua Kerievsky](https://wiki.c2.com/?JoshuaKerievsky)
 
 * [Factory method design pattern](https://en.wikipedia.org/wiki/Factory_method_pattern)
 
-* [Builder design pattern](https://en.wikipedia.org/wiki/Builder_pattern) 
+* [Builder design pattern](https://en.wikipedia.org/wiki/Builder_pattern)
 
 * [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.goodreads.com/book/show/85009.Design_Patterns), Erich Gamma, Ralph Johnson, John Vlissides, Richard Helm
 
