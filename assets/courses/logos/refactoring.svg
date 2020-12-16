@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="131px" height="145px" viewBox="0 0 131 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>refactoring</title>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="refectoring">
-            <path d="M55.3849,2.6794875 C61.5729,-0.8931625 69.1969,-0.8931625 75.3849,2.6794875 L120.7699,28.8824875 C126.9579,32.4551875 130.7699,39.0576875 130.7699,46.2029875 L130.7699,98.6089875 C130.7699,105.753987 126.9579,112.356987 120.7699,115.928988 L75.3849,142.132988 C69.1969,145.704988 61.5729,145.704988 55.3849,142.132988 L10,115.928988 C3.812,112.356987 0,105.753987 0,98.6089875 L0,46.2029875 C0,39.0576875 3.812,32.4551875 10,28.8824875 L55.3849,2.6794875 Z" id="Path" fill="#03CCAB" fill-rule="nonzero"></path>
-            <g id="Group-4" transform="translate(25.000000, 32.000000)">
+        <g id="refectoring" transform="translate(-176.000000, -30.000000)">
+            <g id="Group-4" transform="translate(176.000000, 30.000000)">
                 <g id="Group-3" transform="translate(9.000000, 2.000000)" fill="#2C2C2C" fill-rule="nonzero">
                     <g id="Group-2">
                         <path d="M35,32 L34.999,40 L28.9062,40 L28.906,32 L35,32 Z M61.088,0 L61.088,40 L36.999,40 L37,30 L28.906,30 L28.9062,9.8135 L38.7198,9.8135 L38.7198,0 L61.088,0 Z M46.1688,15.3101 L43.8251,15.3101 L43.8251,29.3811 L46.1688,29.3811 L46.1688,15.3101 Z M50.3372,15.3412 L48.4952,16.7905 L52.8665,22.3456 L48.4952,27.9007 L50.3372,29.35 L55.849,22.3456 L50.3372,15.3412 Z M39.6567,15.3412 L34.1449,22.3456 L39.6567,29.35 L41.4984,27.9007 L37.1274,22.3456 L41.4984,16.7905 L39.6567,15.3412 Z" id="Shape"></path>
