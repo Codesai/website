@@ -72,7 +72,23 @@ The fluent API produced by the builder design pattern has the advantage of not s
 Although we have managed to encapsulate the complexity of composing beverages and supplements, our success is only partial because we can still create any combination of beverages and supplements. We’ll fix this last problem in the next section.
 
 <h2>A hybrid solution combining factory and builder patterns. </h2>
+Let’s try to limit the options in the menu by combining the creation methods of the factory pattern and the builder design pattern. 
 
+First, we’ll use the creation methods, blabla, blabla and blabla, in a factory to create different builders for each type of beverage, blabla, blabla and blabla, respectively.
+
+código de la factoría
+
+Each of the builders will have only methods to select the supplements which are possible in the menu for a given type of beverage. The following code snippets show the code of two of them.
+
+código de un par de builders
+
+This design solves the problem of limiting the options in the menu and still reads well. Have a look at the resulting tests:
+
+código de los tests
+
+The problem is that the new builders present duplication: the code related to supplements that can be used with different beverages and the code in the `make` method that composes and creates the decorated beverage. 
+
+We can remove this duplication if we avoid complecting interfaces and implementations.
 
 <h2>Using interfaces to remove the remaining duplication. </h2>
 We might remove the duplication that remained after the previous refactoring by segregating the interface of the three builders with interfaces instead of three classes, and creating only one builder that implements those three interfaces.
