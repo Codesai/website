@@ -30,16 +30,18 @@ Another more subtle problem in design based on composition has to do with someth
 
 We'll start by examining some creational patterns that are usually applied along with the decorator design pattern.
 
-<h2>Using *Creation Methods* and the *Factory pattern*<a href="#nota3"><sup>[3]</sup></a>. </h2>
+<h2>Using the *Factory pattern*. </h2>
 
-We might apply the [Encapsulate Classes with Factory](https://www.informit.com/articles/article.aspx?p=1398606&seqNum=3) refactoring<a href="#nota4"><sup>[4]</sup></a>(<- described in chapter blabla of Refactoring to Patterns) to introduce a **Factory class** with an interface that provides a **creation method** for each entry in the menu, that is, we would have a method for making  coffee, another one for making tea, another one for making coffee with milk, and so on, and so forth. 
+In order to encapsulate the blabla and hide its details from client code, we might use the **Factory pattern** described by Joshua Kerievsky in his Refactoring To Patterns book. A Factory is a blabla. <a href="#nota3"><sup>[3]</sup></a><- no confundir con otros patrones con nombres similares como Factory Method pattern or Abstract Factory Pattern.
+
+We might apply the [Encapsulate Classes with Factory](https://www.informit.com/articles/article.aspx?p=1398606&seqNum=3) refactoring<a href="#nota4"><sup>[4]</sup></a>(<- described in chapter blabla of Refactoring to Patterns) to introduce a **Factory class** with an interface that provides a **creation method** for each entry in the menu, that is, we would have a method for making  coffee, another one for making tea, another one for making coffee with milk, and so on, and so forth.
 
 
-At first sight, this would move us forward because it would solve the two problems we discussed in the introduction. On one hand, it would encapsulate all the creational logic hiding the complexity related to composing decorators and components behind the Factory interface. On the other hand, it would also limit the possible combinations of beverages and supplements just by limiting the methods in the interface of the Factory to only the combinations available in the menu. 
+Before starting the refactoring, let’s think about the consequences of using this pattern to see if it leaves us in a better design spot or not. At first sight, the **Factory pattern** would move us forward because it would solve the two problems we discussed in the introduction. On one hand, it would encapsulate all the creational logic hiding the complexity related to composing decorators and components behind the Factory interface. On the other hand, it would also limit the possible combinations of beverages and supplements just by limiting the methods in the interface of the Factory to only the combinations available in the menu. 
 
-Although that would simplify the client code and reduce the overall coupling, we would end up with a problem somehow similar to the initial **combinatorial explosion** code smell we were trying to avoid when we decided to introduce the decorator design pattern. The difference, in this case, would be that instead of multiplying the number of classes by two when adding a new supplement, we’d multiply the number of creational methods in the interface of the Factory by two. We would suffer from a combinatorial explosion of methods instead of from a combinatorial explosion of classes. 
+Although that would simplify the client code and reduce the overall coupling, we would also create a maintenance problem somehow similar to the initial **combinatorial explosion** code smell we were trying to avoid when we decided to introduce the decorator design pattern. The difference, in this case, would be that instead of multiplying the number of classes by two when adding a new supplement, we’d multiply the number of creational methods in the interface of the **Factory** by two. So, we might say that we would suffer from a *combinatorial explosion of methods* instead of from a *combinatorial explosion of classes*. 
 
-A solution using the **Factory pattern** would be ok if we had a small number of options or if we didn’t expect the number of supplements to grow, but, as we said in the previous post we think it likely that we’ll be required to add new supplements so prefer want to keep a design that is easy to evolve along the axis of change of adding new supplements. This means the **Factory pattern** is not the way to go for us this time. Let’s have a look at a more flexible solution.
+A solution using the **Factory pattern** would be ok if we had a small number of options or if we didn’t expect the number of supplements to grow, but, as we said in the previous post we think it likely that we’ll be required to add new supplements so prefer want to keep a design that is easy to evolve along the axis of change of adding new supplements. This means the **Factory pattern** is not the way to go for us this time. It’s not flexible enough for our current needs. Let’s have a look at a more flexible solution.
 
 <h2>The builder design pattern. </h2>
 
@@ -82,7 +84,11 @@ Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts an
 
 <h2>Notes.</h2>
 
+<a name="nota1"></a> [1]
 
+<a name="nota2"></a> [2]
+
+<a name="nota3"></a> [3]
 
 <h2>References.</h2>
 
@@ -106,6 +112,5 @@ Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts an
 
 * [Builder design pattern](https://en.wikipedia.org/wiki/Builder_pattern)
 * [The Beverages Prices Refactoring kata: a kata to practice refactoring away from an awful application of inheritance](/2019/04/beverages_prices_kata), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
-
 
 * [Solving the Beverages Prices Refactoring kata (1): composition over inheritance](/2020/11/solving-beverages-kata-1), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
