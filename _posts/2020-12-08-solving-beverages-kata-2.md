@@ -43,36 +43,32 @@ Although that would simplify the client code and reduce the overall coupling, we
 
 A solution using the **Factory pattern** would be ok if we had a small number of options or if we didn’t expect the number of supplements to grow, but, as we said in the previous post we think it likely that we’ll be required to add new supplements so prefer want to keep a design that is easy to evolve along the axis of change of adding new supplements. This means the **Factory pattern** is not the way to go for us this time. It’s not flexible enough for our current needs. Let’s have a look at a more flexible solution.
 
-<h2>The builder design pattern. </h2>
+<h2>Using the builder design pattern. </h2>
 
 We can create a nice readable fluent interface to compose the beverages and supplements bit by bit using the builder design pattern. Like in the case of the factory method design pattern, using the builder would encapsulate the complexity of combining decorators from the client code.
 
 However the fluent API produced by the builder design pattern has the advantage of not suffering from a combinatorial explosion of methods. This blabla because builder is more flexible and as such is more suited for more complex creation use cases.
 
-<h2>A hybrid. </h2>
+<h2>A hybrid solution combining factory and builder patterns. </h2>
 
 
 <h2>Using interfaces to remove the remaining duplication. </h2>
+We might remove the duplication that remained after the previous refactoring by segregating the interface of the three builders with interfaces instead of three classes, and creating only one builder that implements those three interfaces.
 
---------------------------------
+código aquí
 
-From GOF:
+Notice how, in the creation methods,  we feed the base beverage into the builder through its constructor, and how each of those creation methods return the appropriate interface.
 
-Creational design patterns abstract the instantiation process.They help make a system independent of how its objects are created,composed, and represented
-
-Creational patterns become important as systems evolve to depend more on object composition than class inheritance. As that happens,emphasis shifts away from hard-coding a fixed set of behaviors toward defining a smaller set of fundamental behaviors that can be composed into any number of more complex ones. Thus creating objects with particular behaviors requires more than simply instantiating a class.
-
-There are two recurring themes in these patterns. First, they all encapsulate knowledge about which concrete classes the system uses.Second, they hide how instances of these classes are created and put together
-
-All the system at large knows about the objects is their interfaces as defined by abstract classes. Consequently, the creational patterns give you a lot of flexibility in what gets created, who creates it, how it gets created, and when
-
-Often, designs start out using Factory Method and evolve toward the other creational patterns as the designer discovers wheremore flexibility is needed.
-
---------------------------------
+This would be a possible solution of the problems we described at the beginning of this post. We only need to prevent client code accessing auxiliary classes (such as commands, components and decorators), so that it can see only the static methods that create the builders. We can do this either by creating packages (see this commit: blabla) or, at least in Java, by using inner classes (see this commit: blabla). Which option to use is possibly a matter of size and personal taste?.
 
 
+<h2>Conclusions. </h2>
+In this series of posts we’ve learned about a possible code smell we can find when using inheritance and learned to refactor it to a design using composition instead. 
 
-<h2>Conclusion.</h2>
+We have also explored different ways to avoid creation sprawl and reduce coupling.
+
+We have also learned and used several patterns: decorator, factory, builder and command, and some related refactoring. We have also used some design principles (such as coupling, cohesion, open-closed principle or interface segregation principle), and code smells (such as combinatorial explosion or creation sprawl) to judge different solutions and guide our refactorings.
+
 
 
 
@@ -114,3 +110,23 @@ Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts an
 * [The Beverages Prices Refactoring kata: a kata to practice refactoring away from an awful application of inheritance](/2019/04/beverages_prices_kata), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
 
 * [Solving the Beverages Prices Refactoring kata (1): composition over inheritance](/2020/11/solving-beverages-kata-1), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
+
+
+
+
+--------------------------------
+
+From GOF:
+
+Creational design patterns abstract the instantiation process.They help make a system independent of how its objects are created,composed, and represented
+
+Creational patterns become important as systems evolve to depend more on object composition than class inheritance. As that happens,emphasis shifts away from hard-coding a fixed set of behaviors toward defining a smaller set of fundamental behaviors that can be composed into any number of more complex ones. Thus creating objects with particular behaviors requires more than simply instantiating a class.
+
+There are two recurring themes in these patterns. First, they all encapsulate knowledge about which concrete classes the system uses.Second, they hide how instances of these classes are created and put together
+
+All the system at large knows about the objects is their interfaces as defined by abstract classes. Consequently, the creational patterns give you a lot of flexibility in what gets created, who creates it, how it gets created, and when
+
+Often, designs start out using Factory Method and evolve toward the other creational patterns as the designer discovers wheremore flexibility is needed.
+
+--------------------------------
+
