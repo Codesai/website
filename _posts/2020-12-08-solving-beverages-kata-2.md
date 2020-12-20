@@ -59,7 +59,9 @@ For the second version we need to somehow delay the decorations until the end by
 
 Functions were not first-class citizens in Java until the blabla version. From then on, you can treat functions as any other kind of value, and the implementation of the command pattern changes a lot. Still, I chose to follow the “traditional” command design pattern implementation in the kata, so we could learn and practice it.
 
-Ok, so what we do is create small objects, that encapsulate the composition of decorations and store them in a collection. When the `make` method gets executed we trverse that collection of supplements and create the composed beverage. <- nota (this might also be written as a reduce over the supplements collection.
+Ok, so what we do is create small objects, that encapsulate the composition of decorations and store them in a collection. When the `make` method gets executed we traverse that collection of supplements and create the composed beverage. <- nota (this might also be written as a reduce over the supplements collection.
+
+código aquí
 
 Notice how we used the beverage as the initial value to create the composed beverage.
 
