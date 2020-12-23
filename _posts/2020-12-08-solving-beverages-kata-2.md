@@ -45,31 +45,21 @@ A solution using the **Factory pattern** would be ok if we had a small number of
 
 <h2>Using the builder design pattern. </h2>
 
-We can create a nice readable fluent interface to compose the beverages and supplements bit by bit using the builder design pattern. Like in the case of the factory method design pattern, using the builder would encapsulate the complexity of combining decorators from the client code.
+We can create a nice readable fluent interface to compose the beverages and supplements bit by bit using the builder design pattern. Like the factory pattern, a builder would encapsulate the complexity of combining decorators from the client code.
+
+Builders are very useful blabla.  
+
+The implementation of this builder is going to be a bit special because, in this case, we are incrementally composing objects, not just storing the values for its fields as in most of the other cases we have shown in previous posts <- (nota We have dedicated several previous posts to builders añadir links a esos posts).
 
 Let’s have a look at how we have implemented it
 
-Builders are very useful blabla. We have dedicated several previous posts to them. <- (nota con links a esos posts)  The implementation of this builder is going to be a bit special because, in this case, we are composing objects, not storing values for its fields as in most of the other cases we have shown in previous posts.
+<script src="https://gist.github.com/trikitrok/9603a635892e6f29b574bfcfe7a983d5.js"></script>
 
-We can do this in several ways:
-We might keep the state of the partially composed object applying the decorations until we finish building it.
-We might store the decorations we want to apply and reduce over them to compose the object at the end before returning it. 
-
-For the second version we need to somehow delay the decorations until the end by storing them. In a language in which functions are not first class citizens <- (nota contando que significa esto), we can use the command design pattern to store and delay these creations.  The command pattern gives us the ability to blabla : store behavior, so we can apply it later, pass it to blabla, etc.
-
-Functions were not first-class citizens in Java until the blabla version. From then on, you can treat functions as any other kind of value, and the implementation of the command pattern changes a lot. Still, I chose to follow the “traditional” command design pattern implementation in the kata, so we could learn and practice it.
-
-Ok, so what we do is create small objects, that encapsulate the composition of decorations and store them in a collection. When the `make` method gets executed we traverse that collection of supplements and create the composed beverage. <- nota (this might also be written as a reduce over the supplements collection.
-
-código aquí
-
-Notice how we used the beverage as the initial value to create the composed beverage.
-
-
+Notice how we keep the state of the partially composed object applying the decorations until we finish building it. Notice also how we used the beverage as the initial value to create the composed beverage.
 
 The fluent API produced by the builder design pattern has the advantage of not suffering from a combinatorial explosion of methods that using the **Factory pattern** did. This is because the builder design pattern offers more flexibility than the **Factory pattern** and that makes it more suitable for a creation use case as complex as composing components and decorators.
 
-Although we have managed to encapsulate the complexity of composing beverages and supplements, our success is only partial because we can still create any combination of beverages and supplements. We’ll fix this last problem in the next section.
+Although we have managed to encapsulate the complexity of composing beverages and supplements without causing a combinatorial explosion, our success is only partial because we can still create any combination of beverages and supplements. We’ll fix this last problem in the next section.
 
 <h2>A hybrid solution combining factory and builder patterns. </h2>
 Let’s try to limit the options in the menu by combining the creation methods of the factory pattern and the builder design pattern. 
