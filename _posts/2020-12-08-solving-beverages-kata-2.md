@@ -16,14 +16,13 @@ written_in: english
 
 <h2>Introduction.</h2>
 
-This the second and final part of a series of posts showing a solution to [the Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata) developed recently with some people from [Women Tech Makers Barcelona](https://www.meetup.com/wtmbcn/) with whom I'm doing [Codesai's Practice Program](https://github.com/Codesai/practice_program) twice a month.
+This the last post in a series of posts showing a possible solution to [the Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata) that I recently developed with some people from [Women Tech Makers Barcelona](https://www.meetup.com/wtmbcn/) with whom I'm working through [Codesai's Practice Program](https://github.com/Codesai/practice_program) twice a month.
 
-In the previous post we introduced a design based on composition that fixed the **Combinatorial Explosion** code smell and produced a flexible solution applying the decorator design pattern.
+In the [previous post](/2020/11/solving-beverages-kata-1) we introduced a design based on composition that fixed the **Combinatorial Explosion** code smell and produced a flexible solution applying the decorator design pattern.
 
-There is a potential problem in that solution because the client code, the code that wants to find out the price of beverages, has too much knowledge<a href="#nota1"><sup>[1]</sup></a> <- (nota: knowledge means coupling or connascence <- link) about how to create and compose beverages and supplements.
+There was a potential problem in that solution because the client code, the code that needed to find out the price of the beverages, knowed<a href="#nota1"><sup>[1]</sup></a> too much about how to create and compose beverages and supplements.
 
-Have a look, for instance, at the following line `new WithCream(new WithMilk(new Coffee()))`. It knows about three classes and how they are being composed. In the case of this kata, that might not be a big problem, since the client code is only comprised of a few tests, but, in a larger code base, this problem might spread across numerous classes generating a code smell known as **Creation Sprawl**<a href="#nota2"><sup>[2]</sup></a>(nota: hablar del code smell en el libro de Joshua Keriesvsky placing creational responsibilities in classes that should not be playing any role in object creation).
-
+Have a look, for instance, at the following line `new WithCream(new WithMilk(new Coffee()))`. It knows about three classes and how they are being composed. In the case of this kata, that might not be a big problem, since the client code is only comprised of a few tests, but, in a larger code base, this problem might spread across numerous classes generating a code smell known as **Creation Sprawl**<a href="#nota2"><sup>[2]</sup></a>
 In this post, we'll try to reduce client knowledge of concrete component and decorator classes and their composition by encapsulating all the creational knowledge, behind a nice, readable interface that we'll keep all the complexity of combining the supplements (decorators) and beverages (components) hidden from the client code.
 
 Another more subtle problem in design based on composition has to do with something that we have inadvertently lost:  the fact that not all combinations of beverages and supplements were allowed in the menu. That knowledge was implicitly encoded in the initial inheritance hierarchy, and disappeared with it. In the current design we can dynamically create any combination of beverages and supplements, including those that were not included in the original menu, like, for instance a tea with cinnamon, milk and cream (doing `new WithCinnamon(new WithCream(new WithMilk(new Tea())))`) which you might find delicious :).We'll also explore possible ways to recover that limitation of options.
@@ -32,7 +31,7 @@ We'll start by examining some creational patterns that are usually applied along
 
 <h2>Using the *Factory pattern*. </h2>
 
-In order to encapsulate the blabla and hide its details from client code, we might use the **Factory pattern** described by Joshua Kerievsky in his Refactoring To Patterns book. A Factory is a blabla. <a href="#nota3"><sup>[3]</sup></a><- no confundir con otros patrones con nombres similares como Factory Method pattern or Abstract Factory Pattern.
+In order to encapsulate the creational code and hide its details from client code, we might use the **Factory pattern** described by [Joshua Kerievsky](https://wiki.c2.com/?JoshuaKerievsky) in his [Refactoring to Patterns](https://www.goodreads.com/book/show/85041.Refactoring_to_Patterns). A **Factory** is a class that implements one or more **Creation Methods**. A **Creation Method** is a static or non-static method the creates and returns an object instance<a href="#nota3"><sup>[3]</sup></a>.
 
 We might apply the [Encapsulate Classes with Factory](https://www.informit.com/articles/article.aspx?p=1398606&seqNum=3) refactoring<a href="#nota4"><sup>[4]</sup></a>(<- described in chapter blabla of Refactoring to Patterns) to introduce a **Factory class** with an interface that provides a **creation method** for each entry in the menu, that is, we would have a method for making  coffee, another one for making tea, another one for making coffee with milk, and so on, and so forth.
 
@@ -104,15 +103,22 @@ We have also learned and used several patterns: decorator, factory, builder and 
 
 I’d like to thank the WTM study group, and especially [Inma Navas](https://twitter.com/InmaCNavas) for solving this kata with me.
 
-Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts and giving me feedback and to [Chrisy Totty](https://www.pexels.com/@tottster) for the lovely cat picture.
+Thanks to my Codesai colleagues and [Inma Navas](https://twitter.com/InmaCNavas) for reading the initial drafts and giving me feedback and to [Chrisy Totty](https://www.pexels.com/@tottster) for the lovely cat picture.
 
 <h2>Notes.</h2>
 
-<a name="nota1"></a> [1]
+<a name="nota1"></a> [1] Knowledge here means coupling or [connascence](/2017/01/about-connascence).
 
-<a name="nota2"></a> [2]
+<a name="nota2"></a> [2] **Creation Sprawl** is a code smell that happens when the knowledge for creating an object is spread out across numerous classes, so that creational responsibilities are placed in classes that should now be playing any role in object creation. This code smell was described by [Joshua Kerievsky](https://wiki.c2.com/?JoshuaKerievsky) in his [Refactoring to Patterns](https://www.goodreads.com/book/show/85041.Refactoring_to_Patterns) book.
 
-<a name="nota3"></a> [3]
+
+<a name="nota3"></a> [3] Don’t confuse the **Factory Pattern** with design patterns with similar names like [Factory method pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) or [Abstract factory pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern). These two design patterns are creational patterns described in the [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.goodreads.com/book/show/85009.Design_Patterns) book.
+
+A **Factory Method** is “a non-static method that returns a base class or an interface type and that is implemented in a hierarchy to enable polymorphic creation” whereas an **Abstract Factory** is “an interface for creating fqamiñlies of related or dependent objects without specifying their concrete classes”.
+
+In the **Factory Pattern** a **Factory** is “any class that implements one or more **Creation Methods**” which are “static or non-static methods that create and return an object instance”. This definition is more general. Every **Abstract Factory** is a **Factory** (but not the other way around), and every **Factory Method** is a **Creation Method** (but not necessarily the reverse). **Creation Method** also includes what [Martin Fowler](https://martinfowler.com/) called “factory method” in [Refactoring](https://www.goodreads.com/book/show/44936.Refactoring) (which is not the **Factory Method** design pattern) and [Joshua Bloch](https://en.wikipedia.org/wiki/Joshua_Bloch) called “static factory” (probably a less confusing name than Fowler’s one) in [Effective Java](https://www.goodreads.com/book/show/34927404-effective-java).
+ 
+
 
 <h2>References.</h2>
 
@@ -135,6 +141,9 @@ Thanks to my Codesai colleagues and Inma Navas for reading the initial drafts an
 * [Factory method design pattern](https://en.wikipedia.org/wiki/Factory_method_pattern)
 
 * [Builder design pattern](https://en.wikipedia.org/wiki/Builder_pattern)
+
+* [Abstract factory pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
+
 * [The Beverages Prices Refactoring kata: a kata to practice refactoring away from an awful application of inheritance](/2019/04/beverages_prices_kata), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
 
 * [Solving the Beverages Prices Refactoring kata (1): composition over inheritance](/2020/11/solving-beverages-kata-1), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
@@ -150,7 +159,7 @@ Creational design patterns abstract the instantiation process.They help make a s
 
 Creational patterns become important as systems evolve to depend more on object composition than class inheritance. As that happens,emphasis shifts away from hard-coding a fixed set of behaviors toward defining a smaller set of fundamental behaviors that can be composed into any number of more complex ones. Thus creating objects with particular behaviors requires more than simply instantiating a class.
 
-There are two recurring themes in these patterns. First, they all encapsulate knowledge about which concrete classes the system uses.Second, they hide how instances of these classes are created and put together
+There are two recurring themes in these patterns. First, they all encapsulate knowledge about which concrete classes the system uses. Second, they hide how instances of these classes are created and put together
 
 All the system at large knows about the objects is their interfaces as defined by abstract classes. Consequently, the creational patterns give you a lot of flexibility in what gets created, who creates it, how it gets created, and when
 
