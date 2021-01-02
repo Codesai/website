@@ -50,12 +50,14 @@ In this case you can introduce the builder by applying the [Encapsulate Composit
 
 <script src="https://gist.github.com/trikitrok/9603a635892e6f29b574bfcfe7a983d5.js"></script>
 
-Notice how we keep the state of the partially composed object and apply the decorations incrementally until it’s returned by the `build` method. Notice also how the beverage is the initial state in the process of creating the composite object. In this implementation we decided to give the builder a [fluent interface](https://en.wikipedia.org/wiki/Fluent_interface), that is not a requirement to write a builder, though.
+Notice how we keep the state of the partially composed object and apply the decorations incrementally until it’s returned by the `build` method. Notice also how the beverage is the initial state in the process of creating the composite object.
 
 
 These are the tests after introducing the builder design pattern:
 
-código aquí
+<script src="https://gist.github.com/trikitrok/53f2f13a7d13348d58782f57afe3bd90.js"></script>
+
+Notice the [fluent interface](https://en.wikipedia.org/wiki/Fluent_interface) that we decided for the builder. Although a fluent interface is not a requirement to write a builder, we think it reads nice.
 
 As we said before using a builder does not suffer from the combinatorial explosion of methods that the **Factory pattern** did. The builder design pattern is more flexible than the **Factory pattern** which makes it more suitable for composing components and decorators. 
 
@@ -64,43 +66,34 @@ Still, our success is only partial because the builder can create any combinatio
 We’ll fix this last problem in the next section.
 
 <h2>A hybrid solution combining factory and builder patterns. </h2>
-Let’s try to limit the options on the menu by combining the creation methods of the factory pattern and the builder design pattern. 
+Let’s try to limit the possible combinations of beverages and supplements to the options on the menu by combining the creation methods of the factory pattern and the builder design pattern (<- nota el Factory Pattern no requiere una clase separada).
 
-First, we’ll use the creation methods, blabla, blabla and blabla, in a factory to create different builders for each type of beverage, blabla, blabla and blabla, respectively.
+To do so, we added to `BeverageMachine` the creation methods, `coffee`, `tea` and `hotChocolate`, that create different builders for each type of beverage: `CoffeeBuilder`, `TeaBuilder`and `HotChocolateBuilder`, respectively. Each of the builders has only the public methods to select the supplements which are possible on the menu for a given type of beverage. 
 
-código de la factoría
+<script src="https://gist.github.com/trikitrok/052e9e066edab3a14f7527bbe290a332.js"></script>
 
-Each of the builders will have only methods to select the supplements which are possible on the menu for a given type of beverage. The following code snippets show the code of two of them.
+Notice that we chose to write the builders as inner classes of the `BeverageMachine` class. They could have been independent classes, but we prefer the inner classes because it hides the details of the implementation of the different builders.
 
-código de un par de builders
+This is the first design that solves the problem of limiting the possible combinations of beverages and supplements to only the options on the menu. It still encapsulates the creational logic and still reads well. In fact the tests haven't changed at all because `BeverageMachine`’s public interface is exactly the same.
 
-This design solves the problem of limiting the options on the menu and still reads well. Have a look at the resulting tests:
+However, the new builders present duplication: the code related to supplements that can be used with different beverages and the code in the `make` method. 
 
-código de los tests
+What is different for the clients that call the `coffee` method and the clients that call the `tea` or `hotChocolate` methods are the public methods they can use on each builder, that is, the interfaces. When we had only one builder, we had an interface with methods that were not interesting for some of its clients.
 
-The problem is that the new builders present duplication: the code related to supplements that can be used with different beverages and the code in the `make` method that composes and creates the decorated beverage. 
+By having three builders we segregated the interfaces so that no client was forced to depend on methods it does not use (<- nota ISP). However we didn’t need to introduce classes to segregate the interfaces, we could have just used, well, interfaces. As we’ll see in the next session using interfaces would have avoided the duplication in the implementation of the builders.
 
-We can remove this duplication if we avoid complecting interfaces and implementations.
+<h2>Segregating interfaces better by using interfaces. </h2>
 
-<h2>Using interfaces to remove the remaining duplication. </h2>
-We might remove the duplication that remained after the previous refactoring by segregating the interface of the three builders with interfaces instead of three classes, and creating only one builder that implements those three interfaces.
+As we said, instead of directly using three different builder classes, it’s better to use three interfaces, one each for each kind of builder. That would also comply with the [Interface Segregation Principle](https://wiki.c2.com/?InterfaceSegregationPrinciple), but, using the interfaces helps us avoid having duplicated code in the implementation of the builders, because we can write only one builder class, `Beverage Machine`, that implements the three interfaces.
 
-código aquí
+<script src="https://gist.github.com/trikitrok/668a601f7f092d93050ec3ec10d115ec.js"></script>
 
-Notice how, in the creation methods,  we feed the base beverage into the builder through its constructor, and how each of those creation methods return the appropriate interface.
-
-This would be a possible solution of the problems we described at the beginning of this post. We only need to prevent client code accessing auxiliary classes (such as commands, components and decorators), so that it can see only the static methods that create the builders. We can do this either by creating packages (see this commit: blabla) or, at least in Java, by using inner classes (see this commit: blabla). Which option to use is possibly a matter of size and personal taste?.
-
+Notice how, in the creation methods, we feed the base beverage into `BeverageMachine` through its constructor, and how each of those creation methods return the appropriate interface. Notice also that `BeverageMachine`’s public interface remains the same, so this refactor won’t change the tests at all.
 
 <h2>Conclusions. </h2>
-In this series of posts we’ve learned about a possible code smell we can find when using inheritance and learned to refactor it to a design using composition instead. 
+In this last post of the series dedicated to the Beverages Prices Refactoring kata, we’ve explored different ways to avoid **creation sprawl**, reduce coupling with client code and reduce implicit creational domain knowledge in client code.
 
-We have also explored different ways to avoid creation sprawl and reduce coupling.
-
-We have also learned and used several patterns: decorator, factory, builder and command, and some related refactoring. We have also used some design principles (such as coupling, cohesion, open-closed principle or interface segregation principle), and code smells (such as combinatorial explosion or creation sprawl) to judge different solutions and guide our refactorings.
-
-
-
+In doing so, we have learned about and applied several creational patterns (factory pattern, and builder design pattern), and some related refactorings. We have also used some design principles (such as coupling, open-closed principle or interface segregation principle), and code smells (such as combinatorial explosion or creation sprawl) to judge different solutions and guide our refactorings.
 
 <h2>Aknowledgements.</h2>
 
@@ -160,20 +153,4 @@ In the **Factory Pattern** a **Factory** is “any class that implements one or 
 
 * [Protected Variation: The Importance of BeingClosed](https://www.martinfowler.com/ieeeSoftware/protectedVariation.pdf), [Craig Larman](https://en.wikipedia.org/wiki/Craig_Larman)
 
-
---------------------------------
-
-From GOF:
-
-Creational design patterns abstract the instantiation process.They help make a system independent of how its objects are created,composed, and represented
-
-Creational patterns become important as systems evolve to depend more on object composition than class inheritance. As that happens,emphasis shifts away from hard-coding a fixed set of behaviors toward defining a smaller set of fundamental behaviors that can be composed into any number of more complex ones. Thus creating objects with particular behaviors requires more than simply instantiating a class.
-
-There are two recurring themes in these patterns. First, they all encapsulate knowledge about which concrete classes the system uses. Second, they hide how instances of these classes are created and put together
-
-All the system at large knows about the objects is their interfaces as defined by abstract classes. Consequently, the creational patterns give you a lot of flexibility in what gets created, who creates it, how it gets created, and when
-
-Often, designs start out using Factory Method and evolve toward the other creational patterns as the designer discovers wheremore flexibility is needed.
-
---------------------------------
 
