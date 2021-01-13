@@ -194,9 +194,14 @@ Many thanks to [Alfredo Casado](https://twitter.com/alfredocasado?lang=en), [Ál
 
 ### 7\. Footnotes. 
 <a name="nota1"></a>[1] This concept of **orthogonal examples** is directly related to Mateu Adsuara's **dimensions of complexity** idea because each dimension of complexity can be driven using a different set of orthogonal examples. For a definition of dimensions of complexity, see footnote [4]. 
+
 <a name="nota2"></a>[2] Another very useful heuristic is described in [James Grenning](https://www.linkedin.com/in/jwgrenning/)'s [TDD Guided by ZOMBIES post](http://blog.wingman-sw.com/archives/677).
+
 <a name="nota3"></a>[3] This is somehow related to [Brian Marick](https://twitter.com/marick)’s [metaconstants](https://github.com/marick/Midje/wiki/Metaconstants) which can be very useful to write tests in dynamic languages. They’re also hints about properties that might be helpful in [property-based testing](https://propertesting.com/book_foundations_of_property_based_testing.html). 
+
 <a name="nota4"></a>[4] **Dimension of Complexity** is a term used by [Mateu Adsuara](https://twitter.com/mateuadsuara) in a talk at Socrates Canarias 2016 to name an orthogonal functionality. In that talk he used dimensions of complexity to classify the examples in his tests list in different groups and help him choose the next test when doing TDD. He talked about it in these three posts: [Complexity dimensions - FizzBuzz part I](http://mateuadsuara.github.io/8thlight/2015/08/18/complexity-dimensions-p1.html), [Complexity dimensions - FizzBuzz part II](http://mateuadsuara.github.io/8thlight/2015/08/19/complexity-dimensions-p2.html) and [Complexity dimensions - FizzBuzz part III](http://mateuadsuara.github.io/8thlight/2015/08/20/complexity-dimensions-p3.html).
 Other names for the same concept that I've heard are **axes of change**, **directions of change** or **vectors of change**.
+
 <a name="nota5"></a>[5] Even though **triangulation** is probably the most popular, there are two other strategies for implementing new functionality in TDD: **obvious implementation** and **fake it**. [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) in his [Test-driven Development: By Example book](https://www.goodreads.com/book/show/387190.Test_Driven_Development) describes the three techniques and says that he prefers to use **obvious implementation** or **fake it** most of the time, and only use **triangulation** as a last resort when design gets complicated.
+
 <a name="nota6"></a>[6] This **loss of awareness of the process** is the price of expertise according to the [Dreyfus model of skill acquisition](https://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition).
