@@ -48,13 +48,14 @@
         const email = document.getElementById('email').value;
         const name = document.getElementById('name').value || 'noname';
         const subject = document.getElementById('subject').value || '{{ include.defaultMessage }}';
+        const origin = '{{ include.origin }}';
 
         if (!email) {
             alert("Por favor especifica tu correo electrónico en el formulario");
             return;
         }
 
-        fetch(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsR_MlKnk_ZdClyNbtA0g6c75XYCN_7yxNcZyuxvJ29KCRdw/formResponse?entry.579934409=${email}&entry.1588628238=${name}&entry.2072593880=${subject}`, {
+        fetch(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsR_MlKnk_ZdClyNbtA0g6c75XYCN_7yxNcZyuxvJ29KCRdw/formResponse?entry.579934409=${email}&entry.1588628238=${name}&entry.2072593880=${subject}&entry.1529347029=${origin}`, {
             method: 'POST',
             mode: 'no-cors'
         }).then(_ => {
