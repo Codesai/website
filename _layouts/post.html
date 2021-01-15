@@ -123,5 +123,17 @@
     {% endif %}
 </main>
 {% include footer.html %}
+<script>
+    document.querySelectorAll('.youtube-player > div').forEach(e => {
+        e.addEventListener('click', () => {
+            const iframe = document.createElement("iframe");
+            const embed = "https://www.youtube.com/embed/ID?autoplay=1";
+            iframe.setAttribute("src", embed.replace("ID", e.dataset.id));
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allowfullscreen", "1");
+            e.parentNode.replaceChild(iframe, e);
+        })
+    });
+</script>
 </body>
 </html>

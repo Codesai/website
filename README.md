@@ -110,24 +110,9 @@ This is convenient since you can always edit your gist later without having to e
 
 ## Youtube embedded videos
 
-To add a youtube video, you can use the youtube-video template provided in the includes. It will add a responsive, full-width youtube video to the post. Simply replace the src parameter with the one of your video :)
+To add a youtube video, you can use the published-video template provided in the includes. It will add a responsive, full-width youtube video to the post. Simply replace the src parameter with the one of your video :)
 
 ```
-{% include youtube-video.html video-id="bIr5fPom7B4" %}
+{% include published-video.html video-id="bIr5fPom7B4" speakers="Me" title="Awesome video" %}
 ```
 
-
-## Bootstrap
-
-Remember that you can use bootstrap classes inside the posts to organize stuff as you please. Be sure to check it's **responsive**.
-
-```
-<div class="row">
-    <div class="col-md-6">
-        Interesting things to say
-    </div>
-    <div class="col-md-6">
-        <img src="my-compressed-image.png" alt="image">
-    </div>
-</div>
-```

@@ -5,6 +5,6 @@
       <div class="play"></div>
     </div>
   </div>
-  <h3>{{ include.title }}</h3>
-  <p>{{ include.speakers }}</p>
+  {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+  {% if include.speakers %}<p>{{ include.speakers }}</p>{% endif %}
 </div>
