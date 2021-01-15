@@ -32,7 +32,7 @@ I'd like to thank Modesto for lending me his computer when mine crashed just bef
 This is the video of the talk, (thanks <a href="https://www.youtube.com/user/AutentiaMedia">Autentia</a> for recording all the talks and for being so kind to me when I was having technical difficulties). I hope you'll find it interesting:
 <br><br> 
 
-{% include youtube-video.html video-id="p1fXJyomXNQ" %}
+{% include published-video.html video-id="p1fXJyomXNQ" %}
 
 and these are <a href="https://docs.google.com/presentation/d/1Rha0DTEdDfq_uoek6ksju3vPnJkiyS3zBfAhFvsf5Fo/edit?usp=sharing">the slides</a> that I've improved after the talk using Modesto's feedback (thanks!!): .
 <br><br> 

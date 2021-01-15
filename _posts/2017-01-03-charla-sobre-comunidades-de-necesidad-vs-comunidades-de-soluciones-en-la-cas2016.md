@@ -47,7 +47,7 @@ Los amigos de [Autentia](https://www.autentia.com/) acaban de publicar el video 
 
 Al inicio hago un pequeño y emotivo homenaje a la comunidad agile.
 
-{% include youtube-video.html video-id="jzV7pMshyic" %}
+{% include published-video.html video-id="jzV7pMshyic" %}
 
 Y aquí tenéis las slides que utilizamos en la charla:
 

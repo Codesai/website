@@ -53,7 +53,7 @@ Mi sensación al dar la charla en la CAS fue bastante agridulce. Por un lado el 
 
 Este es el vídeo de la charla
 
-{% include youtube-video.html video-id="sXLCBcELu5Y" %}
+{% include published-video.html video-id="sXLCBcELu5Y" %}
 
 y estas son [las slides](http://buildingthepath.com/talk-cas-2017/). 
 

@@ -37,7 +37,7 @@ Creo que ser capaces de distinguir mejor entre problema y solución, es decir, s
 
 Este es el video de mi charla **Distinguir entre Problema y Solución** que han publicado recientemente nuestros buenos amigos de [Autentia](https://www.autentia.com/)<a href="#nota2"><sup>[2]</sup></a>.
 
-{% include youtube-video.html video-id="IqUo9kCWQrw" %}
+{% include published-video.html video-id="IqUo9kCWQrw" %}
 
 Y estas son las slides de la charla:
 
