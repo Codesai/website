@@ -16,14 +16,14 @@ written_in: english
 
 <h2>Introduction.</h2>
 
-This the last post in a series of posts showing a possible solution to [the Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata) that I recently developed with some people from [Women Tech Makers Barcelona](https://www.meetup.com/wtmbcn/) with whom I'm working through [Codesai's Practice Program](https://github.com/Codesai/practice_program) twice a month.
+This is the second and last post in a series of posts showing a possible solution to [the Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata) that I recently developed with some people from [Women Tech Makers Barcelona](https://www.meetup.com/wtmbcn/) with whom I'm working through [Codesai's Practice Program](https://github.com/Codesai/practice_program) twice a month.
 
 In the [previous post](/2020/11/solving-beverages-kata-1) we introduced a design based on composition that fixed the **Combinatorial Explosion** code smell and produced a flexible solution applying the decorator design pattern.
 
-There was a potential problem in that solution because the client code, the code that needed to find out the price of the beverages, knowed<a href="#nota1"><sup>[1]</sup></a> too much about how to create and compose beverages and supplements.
+There was a potential problem in that solution because the client code, the code that needed to find out the price of the beverages, knew<a href="#nota1"><sup>[1]</sup></a> too much about how to create and compose beverages and supplements.
 
 Have a look, for instance, at the following line `new WithCream(new WithMilk(new Coffee()))`. It knows about three classes and how they are being composed. In the case of this kata, that might not be a big problem, since the client code is only comprised of a few tests, but, in a larger code base, this problem might spread across numerous classes generating a code smell known as **Creation Sprawl**<a href="#nota2"><sup>[2]</sup></a>
-In this post, we'll try to reduce client knowledge of concrete component and decorator classes and their composition by encapsulating all the creational knowledge, behind a nice, readable interface that we'll keep all the complexity of combining the supplements (decorators) and beverages (components) hidden from the client code.
+In this post, we'll try to reduce client knowledge of concrete component and decorator classes and their composition by encapsulating all the creational knowledge behind a nice, readable interface that we'll keep all the complexity of combining the supplements (decorators) and beverages (components) hidden from the client code.
 
 Another more subtle problem in design based on composition has to do with something that we have inadvertently lost:  the fact that not all combinations of beverages and supplements were allowed on the menu. That knowledge was implicitly encoded in the initial inheritance hierarchy, and disappeared with it. In the current design we can dynamically create any combination of beverages and supplements, including those that were not included in the original menu, like, for instance a tea with cinnamon, milk and cream (doing `new WithCinnamon(new WithCream(new WithMilk(new Tea())))`) which you might find delicious :).We'll also explore possible ways to recover that limitation of options.
 
@@ -36,7 +36,7 @@ In order to encapsulate the creational code and hide its details from client cod
 We might apply the [Encapsulate Classes with Factory](https://www.informit.com/articles/article.aspx?p=1398606&seqNum=3) refactoring<a href="#nota4"><sup>[4]</sup></a> to introduce a **Factory** class with an interface which provided a **creation method** for each entry on the menu, that is, it would have a method for making  coffee, another one for making tea, another one for making coffee with milk, and so on, and so forth.
 
 
-Before starting to refactor, let’s think a bit about the consequences of introducing this pattern to assess if it will leave us in a better design spot or not. At first sight, introducing the **Factory pattern** seems to simplify client code and reduce the overall coupling. It would solve the two problems we discussed in the introduction. On one hand, it would encapsulate all the creational logic hiding the complexity related to composing decorators and components behind the Factory interface. On the other hand, just by limiting the methods in the interface of the **Factory**, it would also limit the combinations of beverages and supplements to only the ones available on the menu. 
+Before starting to refactor, let’s think a bit about the consequences of introducing this pattern to assess if it will leave us in a better design spot or not. At first sight, introducing the **Factory pattern** seems to simplify client code and reduce the overall coupling because it encapsulates all the creational logic hiding the complexity related to composing decorators and components behind its interface which solves the first problem we discussed in the introduction. The second one, limiting the combinations of beverages and supplements to only the ones available on the menu, is solved just by limiting the methods in the interface of the **Factory**. 
 
 However, it would also create a maintenance problem somehow similar to the initial **combinatorial explosion** code smell we were trying to avoid when we decided to introduce the decorator design pattern. As we said, the interface of the **Factory** would have a method for each combination of beverages and supplements available on the menu. This means that to add a new supplement we’d have to multiply the number of **Creation methods** in the interface of the **Factory** by two. So, we might say that, introducing the  **Factory pattern**,  we’d get an interface suffering from a *combinatorial explosion of methods*<a href="#nota5"><sup>[5]</sup></a>.
 
@@ -50,7 +50,7 @@ In this case you can introduce the builder by applying the [Encapsulate Composit
 
 <script src="https://gist.github.com/trikitrok/9603a635892e6f29b574bfcfe7a983d5.js"></script>
 
-Notice how we keep the state of the partially composed object and apply the decorations incrementally until it’s returned by the `build` method. Notice also how the beverage is the initial state in the process of creating the composite object.
+Notice how we keep the state of the partially composed object and apply the decorations incrementally until it’s returned by the `make` method. Notice also how the beverage is the initial state in the process of creating the composite object.
 
 
 These are the tests after introducing the builder design pattern:
@@ -59,7 +59,7 @@ These are the tests after introducing the builder design pattern:
 
 Notice the [fluent interface](https://en.wikipedia.org/wiki/Fluent_interface) that we decided for the builder. Although a fluent interface is not a requirement to write a builder, we think it reads nice.
 
-As we said before using a builder does not suffer from the combinatorial explosion of methods that the **Factory pattern** did. The builder design pattern is more flexible than the **Factory pattern** which makes it more suitable for composing components and decorators. 
+As we said before, using a builder does not suffer from the combinatorial explosion of methods that the **Factory pattern** did. The builder design pattern is more flexible than the **Factory pattern** which makes it more suitable for composing components and decorators. 
 
 Still, our success is only partial because the builder can create any combination of beverages and supplements. A drawback of using a builder instead of a factory is usually that clients require to have more domain knowledge. In this case, the current solution forces the client code to hold a bit of domain knowledge: it knows which combinations of beverages and supplements are available on the menu. 
 
