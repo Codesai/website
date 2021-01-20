@@ -66,7 +66,7 @@ Still, our success is only partial because the builder can create any combinatio
 We’ll fix this last problem in the next section.
 
 <h2>A hybrid solution combining factory and builder patterns. </h2>
-Let’s try to limit the possible combinations of beverages and supplements to the options on the menu by combining the creation methods of the factory pattern and the builder design pattern (<- nota el Factory Pattern no requiere una clase separada).
+Let’s try to limit the possible combinations of beverages and supplements to the options on the menu by combining the creation methods of the factory pattern and the builder design pattern.
 
 To do so, we added to `BeverageMachine` the creation methods, `coffee`, `tea` and `hotChocolate`, that create different builders for each type of beverage: `CoffeeBuilder`, `TeaBuilder`and `HotChocolateBuilder`, respectively. Each of the builders has only the public methods to select the supplements which are possible on the menu for a given type of beverage. 
 
@@ -80,7 +80,7 @@ However, the new builders present duplication: the code related to supplements t
 
 What is different for the clients that call the `coffee` method and the clients that call the `tea` or `hotChocolate` methods are the public methods they can use on each builder, that is, the interfaces. When we had only one builder, we had an interface with methods that were not interesting for some of its clients.
 
-By having three builders we segregated the interfaces so that no client was forced to depend on methods it does not use (<- nota ISP). However we didn’t need to introduce classes to segregate the interfaces, we could have just used, well, interfaces. As we’ll see in the next session using interfaces would have avoided the duplication in the implementation of the builders.
+By having three builders we segregated the interfaces so that no client was forced to depend on methods it does not use<a href="#nota9"><sup>[9]</sup></a>. However we didn’t need to introduce classes to segregate the interfaces, we could have just used, well, interfaces. As we’ll see in the next session using interfaces would have avoided the duplication in the implementation of the builders.
 
 <h2>Segregating interfaces better by using interfaces. </h2>
 
@@ -122,6 +122,7 @@ In the **Factory Pattern** a **Factory** is “any class that implements one or 
 
 <a name="nota8"></a> [8] We have devoted several posts to builders: [Remove data structures noise from your tests with builders](/2015/07/remove-data-structures-noise-from-your-tests-with-builders), [Refactoring tests using builder functions in Clojure/ClojureScript](/2016/10/refactoring-tests-using-builder-functions-in-clojure-clojureScript), [In a small piece of code](/2017/08/cop-builders-and-fluid-interfaces), [The curious case of the negative builder](/2019/05/negative-builder).
 
+<a name="nota9"></a> [9] Following the [Interface Segregation Principle](https://en.wikipedia.org/wiki/Interface_segregation_principle) that states that “no client should be forced to depend on methods it does not use”.
 
 <h2>References.</h2>
 
@@ -153,4 +154,5 @@ In the **Factory Pattern** a **Factory** is “any class that implements one or 
 
 * [Protected Variation: The Importance of BeingClosed](https://www.martinfowler.com/ieeeSoftware/protectedVariation.pdf), [Craig Larman](https://en.wikipedia.org/wiki/Craig_Larman)
 
+* [Interface Segregation Principle](https://en.wikipedia.org/wiki/Interface_segregation_principle)
 
