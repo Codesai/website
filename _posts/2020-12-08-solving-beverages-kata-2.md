@@ -9,7 +9,7 @@ categories:
   - Refactoring
   - Design Patterns
   - SOLID
-small_image:
+small_image: small-solving-beverage-kata.jpg
 author: Manuel Rivero
 written_in: english
 ---
@@ -40,7 +40,7 @@ However, it would also create a maintenance problem somehow similar to the initi
 
 Knowing that, we might conclude that a solution using the *factory pattern* would be interesting only when having a small number of options or if we didn’t expect the number of supplements to grow. As we said in the previous post, we think it likely that we’ll be required to add new supplements so we prefer a design that is easy to evolve along the axis of change of adding new supplements<a href="#nota6"><sup>[6]</sup></a>. This means the *factory pattern* is not the way to go for us this time because it’s not flexible enough for our current needs. We'll have to explore more flexible alternatives<a href="#nota7"><sup>[7]</sup></a>.
 
-##Let’s try using the *Builder design pattern*.
+## Let’s try using the *Builder design pattern*.
 
 The *builder design pattern* is often used for constructing complex and/or composite objects<a href="#nota8"><sup>[8]</sup></a>. Using it we might create a nice readable interface to compose the beverages and supplements bit by bit. Like the *factory pattern*, a *builder* would encapsulate the complexity of combining decorators from the client code. Unlike the *factory pattern*, a *builder* allows to construct the composite following a varying process. It’s this last characteristic that will avoid the  *combinatorial explosion of methods* that made us discard the *factory pattern*. 
 
@@ -62,14 +62,14 @@ Still, our success is only partial because the builder can create any combinatio
 
 We’ll fix this last problem in the next section.
 
-<h2>A hybrid solution combining *factory* and *builder* patterns. </h2>
+## A hybrid solution combining *factory* and *builder* patterns.
 Let’s try to limit the possible combinations of beverages and supplements to the options on the menu by combining the *creation methods* of the *factory pattern* and the *builder design pattern*.
 
 To do so, we added to `BeverageMachine` the *creation methods*, `coffee`, `tea` and `hotChocolate`, that create different *builders* for each type of beverage: `CoffeeBuilder`, `TeaBuilder`and `HotChocolateBuilder`, respectively. Each of the *builders* has only the public methods to select the supplements which are possible on the menu for a given type of beverage. 
 
 <script src="https://gist.github.com/trikitrok/052e9e066edab3a14f7527bbe290a332.js"></script>
 
-Notice that we chose to write the *builders* as *inner classes* of the `BeverageMachine` class. They could have been independent classes, but we prefer the inner classes because it hides the details of the implementation of the different *builders*.
+Notice that we chose to write the *builders* as *inner classes* of the `BeverageMachine` class. They could have been independent classes, but we prefer **inner classes** because the *builders* are only used by `BeverageMachine` and this way they don't appear anywhere else.
 
 This is the first design that solves the problem of limiting the possible combinations of beverages and supplements to only the options on the menu. It still encapsulates the creational logic and still reads well. In fact the tests haven't changed at all because `BeverageMachine`’s public interface is exactly the same.
 
@@ -81,22 +81,18 @@ By having three *builders* we segregated the interfaces so that no client was fo
 
 <h2>Segregating interfaces better by using interfaces. </h2>
 
-As we said, instead of directly using three different *builder* classes, it’s better to use three interfaces, one each for each kind of *builder*. That would also comply with the [Interface Segregation Principle](https://wiki.c2.com/?InterfaceSegregationPrinciple), but, using the interfaces helps us avoid having duplicated code in the implementation of the *builders*, because we can write only one builder class, `Beverage Machine`, that implements the three interfaces.
+As we said, instead of directly using three different *builder* classes, it’s better to use three interfaces, one for each kind of *builder*. That would also comply with the [Interface Segregation Principle](https://wiki.c2.com/?InterfaceSegregationPrinciple), but, using the interfaces helps us avoid having duplicated code in the implementation of the *builders*, because we can write only one builder class, `Beverage Machine`, that implements the three interfaces.
 
 <script src="https://gist.github.com/trikitrok/668a601f7f092d93050ec3ec10d115ec.js"></script>
 
-Notice how, in the creation methods, we feed the base beverage into `BeverageMachine` through its constructor, and how each of those creation methods return the appropriate interface. Notice also that `BeverageMachine`’s public interface remains the same, so this refactor won’t change the tests at all.
+Notice how, in the creation methods, we feed the base beverage into `BeverageMachine` through its constructor, and how each of those creation methods return the appropriate interface. Notice also that `BeverageMachine`’s public interface remains the same, so this refactor won’t change the tests at all. You can check the resulting builder interfaces in Gist: [TeaBuilder](https://gist.github.com/trikitrok/9420325932714352a09c685786e18f1c), [HotChocolateBuilder](https://gist.github.com/trikitrok/0c4af1a07ad0fa3b65fddf4b1d71b1be) and [CoffeeBuilder](https://gist.github.com/trikitrok/222265947f93435c7fef4ea07075e185).
 
 <h2>Conclusions. </h2>
-In this last post of the series dedicated to the [Beverages Prices Refactoring kata]((/2019/04/beverages_prices_kata)), we’ve explored different ways to avoid *creation sprawl*, reduce coupling with client code and reduce implicit creational domain knowledge in client code.
-
-In doing so, we have learned about and applied several creational patterns (*factory pattern*, and *builder design pattern*), and some related refactorings. We have also used some design principles (such as *coupling*, *open-closed principle* or *interface segregation principle*), and code smells (such as *combinatorial explosion* or *creation sprawl*) to judge different solutions and guide our refactorings.
+In this last post of the series dedicated to the [Beverages Prices Refactoring kata]((/2019/04/beverages_prices_kata)), we’ve explored different ways to avoid *creation sprawl*, reduce coupling with client code and reduce implicit creational domain knowledge in client code. In doing so, we have learned about and applied several creational patterns (*factory pattern*, and *builder design pattern*), and some related refactorings. We have also used some design principles (such as *coupling*, *open-closed principle* or *interface segregation principle*), and code smells (such as *combinatorial explosion* or *creation sprawl*) to judge different solutions and guide our refactorings.
 
 <h2>Aknowledgements.</h2>
 
-I’d like to thank the WTM study group, and especially [Inma Navas](https://twitter.com/InmaCNavas) for solving this kata with me.
-
-Thanks to my Codesai colleagues and [Inma Navas](https://twitter.com/InmaCNavas) for reading the initial drafts and giving me feedback and to [Chrisy Totty](https://www.pexels.com/@tottster) for the lovely cat picture.
+I’d like to thank the WTM study group, and especially [Inma Navas](https://twitter.com/InmaCNavas) for solving this kata with me. Thanks also to my Codesai colleagues and to [Inma Navas](https://twitter.com/InmaCNavas) for reading the initial drafts and giving me feedback and to [Amelia Hallsworth](https://www.pexels.com/@amelia-hallsworth) for the picture.
 
 <h2>Notes.</h2>
 
