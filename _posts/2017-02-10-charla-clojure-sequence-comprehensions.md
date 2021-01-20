@@ -21,7 +21,7 @@ El tema de esta charla fue las sequence comprehensions usando `for`.
 
 Aquí les comparto la grabación de la charla:
 
-{% include youtube-video.html video-id="rxegilFlZIc" %}
+{% include published-video.html video-id="rxegilFlZIc" %}
 
 y aquí pueden encontrar [los ejemplos que usamos](https://gist.github.com/trikitrok/b10e2af0225f85491728).
 

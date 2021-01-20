@@ -49,21 +49,21 @@ El código debe ser expresar con claridad lo que hace sin necesidad de
  el contexto**, cosa que el código en sí no puede contar por más limpio que sea.
  Los comentarios nos permiten:
 
-    - Explicar por qué, para qué y también por qué no, y qué evitar. 
-    - Por qué se decidió implementar concretamente de la manera que está.
-    - Por qué se descartó implementarlo de otra manera que quizás parece más obvia o natural.
-    - Para qué se usa ese código, dónde encaja, qué otros posibles usos podría tener. Si existe alguna situación en la que pudiera ser prescindible y borrarse.
-    - Lo que se probó y no funcionó, para que no vuelva a invertir el tiempo la persona que viene.
-    - Lo que se estudió y se descartó. Cuáles fueron las conclusiones de la investigación.
-    - Los efectos colaterales que provocarían cambios aparentemente inocuos. Por ejemplo condiciones de carrera o interbloqueos al cambiar de orden dos líneas de código. Un salto de línea que parece insignificante y hace
+- Explicar por qué, para qué y también por qué no, y qué evitar. 
+- Por qué se decidió implementar concretamente de la manera que está.
+- Por qué se descartó implementarlo de otra manera que quizás parece más obvia o natural.
+- Para qué se usa ese código, dónde encaja, qué otros posibles usos podría tener. Si existe alguna situación en la que pudiera ser prescindible y borrarse.
+- Lo que se probó y no funcionó, para que no vuelva a invertir el tiempo la persona que viene.
+- Lo que se estudió y se descartó. Cuáles fueron las conclusiones de la investigación.
+- Los efectos colaterales que provocarían cambios aparentemente inocuos. Por ejemplo condiciones de carrera o interbloqueos al cambiar de orden dos líneas de código. Un salto de línea que parece insignificante y hace
     que luego la importación de un fichero en un sistema externo deje de funcionar...
-    - Si existen parámetros globales de configuración u otros factores externos que podrían afectar a este código o que haya que tener en cuenta para
+- Si existen parámetros globales de configuración u otros factores externos que podrían afectar a este código o que haya que tener en cuenta para
     su correcto funciomaniento. 
-    - Si en caso de fallo se puede ir a mirar algún tipo de log o cualquier otra forma de depuración. Sobre todo en tests de integración.
-    - Si el sistema puede crecer hasta un punto en que el código dejará de servir. Es decir, si hemos elegido una solución potencialmente de corto recorrido. Por ejemplo una librería que ya no tiene soporte o un sistema que sólo aguantará hasta N usuarios. 
-    - Ayudar a entender cómo se comporta una librería o framework cuando interactuamos de cierta forma que podría no estar documentada o ser poco intuitiva.
-    - Sorpresas de software de terceros, para que sólo nos la llevemos una vez.
-    - Describir un API pública de propósito general.
+- Si en caso de fallo se puede ir a mirar algún tipo de log o cualquier otra forma de depuración. Sobre todo en tests de integración.
+- Si el sistema puede crecer hasta un punto en que el código dejará de servir. Es decir, si hemos elegido una solución potencialmente de corto recorrido. Por ejemplo una librería que ya no tiene soporte o un sistema que sólo aguantará hasta N usuarios. 
+- Ayudar a entender cómo se comporta una librería o framework cuando interactuamos de cierta forma que podría no estar documentada o ser poco intuitiva.
+- Sorpresas de software de terceros, para que sólo nos la llevemos una vez.
+- Describir un API pública de propósito general.
     
 No es que haya que hablar sobre todos los elementos de esta lista en todos los casos. Algunos de estos criterios serán aplicables a veces y otras no. Creo que es evidente
 que no todo bloque de código llevará comentarios ni muchísimo menos. Todavía oigo a gente decir que todas las rutinas deben llevar comentarios. Así sin más, no tiene sentido. Cuando pongo comentarios además me gusta poner la fecha, aunque se podría 

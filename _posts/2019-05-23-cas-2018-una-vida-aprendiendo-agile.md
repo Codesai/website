@@ -86,7 +86,7 @@ Así que quedé muy satisfecho con el trabajo de recordar 14 años de mi vida, c
 ¡Gracias!
 
 
-{% include youtube-video.html video-id="y9FLkaN7Yxo" %}
+{% include published-video.html video-id="y9FLkaN7Yxo" %}
    
 ### Referencias
 

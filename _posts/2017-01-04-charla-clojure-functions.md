@@ -21,7 +21,7 @@ Esta vez profundizamos en las diferentes maneras de definir funciones.
 
 Aquí les comparto la grabación de la charla:
 
-{% include youtube-video.html video-id="HmAU-z5dPS8" %}
+{% include published-video.html video-id="HmAU-z5dPS8" %}
 
 y aquí pueden encontrar [los ejemplos que usamos](https://gist.github.com/trikitrok/b14d12f78113ad8494fc).
 

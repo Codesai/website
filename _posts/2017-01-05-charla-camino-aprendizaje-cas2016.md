@@ -30,7 +30,7 @@ Ha sido muy emocionante poder aportar nuestro pequeño grano de arena a la CAS 2
 
 Este es el video de la charla publicado recientemente por nuestros amigos de [Autentia](https://www.autentia.com/)<a href="#nota1"><sup>[1]</sup></a>. 
 
-{% include youtube-video.html video-id="azVsa8XQp8c" %}
+{% include published-video.html video-id="azVsa8XQp8c" %}
 
 
 <div class="foot-note">

@@ -36,6 +36,6 @@ Tuve la oportunidad de presentarla en esta pasada CAS 2019, y ahora se puede ver
 
 Muchas gracias a la organización de la CAS 2019, a Autentia por la producción del vídeo, y a toda persona que haya apreciado la charla :)
 
-{% include youtube-video.html video-id="nS1gqqf6Cb0" %}
+{% include published-video.html video-id="nS1gqqf6Cb0" %}
 
 Las slides se pueden [ver en Slideshare](https://www.slideshare.net/DanielOjedaLoisel/tdd-no-es-escribir-el-test-primero)

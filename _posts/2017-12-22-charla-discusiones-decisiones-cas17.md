@@ -37,7 +37,7 @@ Si esta separación queda clara para todos, la discusión se desarrolla mucho m�
 Mis sensaciones dando la charla fueron agridulces. Sentí que la charla necesitaba aún algo más de rodaje para poder tocar todos los temas que quería en tan poco tiempo. Quería incidir en la parte teórica que fundamenta toda reunión, porque la parte práctica estaba seguro que todos la tenemos más vista. Sin embargo, el feedback de algunas personas me hizo darme cuenta de que podía haberme parado un poco más en los ejemplos prácticos.
 
 Os comparto el video de la charla, espero que os resulte interesante. Quería aprovechar para una vez más darle muchísimas gracias a <a href="https://www.youtube.com/user/AutentiaMedia">Autentia</a> por grabarla y por la labor brutal que está haciendo para difundir eventos técnicos. 
-{% include youtube-video.html video-id="fDvr-fs01m8" %}
+{% include published-video.html video-id="fDvr-fs01m8" %}
 
 Y estas son las trasparencias:
 {% include slideshare-slides.html src="https://www.slideshare.net/slideshow/embed_code/key/BOAT3BXZ9jtPPR" %}
