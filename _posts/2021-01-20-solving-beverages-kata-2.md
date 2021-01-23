@@ -12,6 +12,7 @@ categories:
 small_image: small-solving-beverage-kata.jpg
 author: Manuel Rivero
 written_in: english
+cross_post_url: https://garajeando.blogspot.com/2021/01/solving-beverages-prices-refactoring.html
 ---
 
 <h2>Introduction.</h2>
@@ -88,7 +89,7 @@ As we said, instead of directly using three different *builder* classes, it’s 
 Notice how, in the creation methods, we feed the base beverage into `BeverageMachine` through its constructor, and how each of those creation methods return the appropriate interface. Notice also that `BeverageMachine`’s public interface remains the same, so this refactor won’t change the tests at all. You can check the resulting builder interfaces in Gist: [TeaBuilder](https://gist.github.com/trikitrok/9420325932714352a09c685786e18f1c), [HotChocolateBuilder](https://gist.github.com/trikitrok/0c4af1a07ad0fa3b65fddf4b1d71b1be) and [CoffeeBuilder](https://gist.github.com/trikitrok/222265947f93435c7fef4ea07075e185).
 
 <h2>Conclusions. </h2>
-In this last post of the series dedicated to the [Beverages Prices Refactoring kata]((/2019/04/beverages_prices_kata)), we’ve explored different ways to avoid *creation sprawl*, reduce coupling with client code and reduce implicit creational domain knowledge in client code. In doing so, we have learned about and applied several creational patterns (*factory pattern*, and *builder design pattern*), and some related refactorings. We have also used some design principles (such as *coupling*, *open-closed principle* or *interface segregation principle*), and code smells (such as *combinatorial explosion* or *creation sprawl*) to judge different solutions and guide our refactorings.
+In this last post of the series dedicated to the [Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata), we’ve explored different ways to avoid *creation sprawl*, reduce coupling with client code and reduce implicit creational domain knowledge in client code. In doing so, we have learned about and applied several creational patterns (*factory pattern*, and *builder design pattern*), and some related refactorings. We have also used some design principles (such as *coupling*, *open-closed principle* or *interface segregation principle*), and code smells (such as *combinatorial explosion* or *creation sprawl*) to judge different solutions and guide our refactorings.
 
 <h2>Aknowledgements.</h2>
 
