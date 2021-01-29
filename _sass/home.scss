@@ -133,10 +133,7 @@
         img {
           object-fit: contain;
           margin: 1rem;
-
-          @media screen and (max-width: $max-width-breakpoint) {
-            max-width: 224px;
-          }
+          max-width: 224px;
         }
       }
     }
