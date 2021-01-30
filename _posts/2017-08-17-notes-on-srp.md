@@ -11,6 +11,7 @@ categories:
   - Object-Oriented Design
   - Learning
   - Books
+  - SOLID
 tags: []
 author: Manuel Rivero
 small_image: small-teddy.jpeg
