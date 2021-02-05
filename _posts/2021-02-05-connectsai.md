@@ -8,7 +8,7 @@ categories:
 - Testing
 - DDD
 - Agile
-small_image: post/remote-event.jpeg
+small_image: posts/remote-event.jpeg
 author: Codesai
 written_in: spanish
 ---
