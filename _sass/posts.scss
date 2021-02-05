@@ -29,6 +29,13 @@
     }
   }
 
+  h2 {
+    margin: 16px 0 20px 0;
+    font-family: $lekton;
+    font-size: pxToRem(28);
+    font-weight: bold;
+  }
+
   h3 {
     font-size: pxToRem(28);
     font-weight: 300;
