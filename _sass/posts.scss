@@ -1,25 +1,50 @@
 .post {
   display: flex;
   flex-direction: column;
-  max-width: $max-page-width;
-  margin: 3rem auto 0;
+  max-width: 720px;
+  margin: 64px auto;
+  line-height: 2rem;
+  font-size: pxToRem(19);
 
   @media screen and (max-width: $max-width-breakpoint) {
-    padding: 0 2rem;
+    padding: 0 24px;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    margin: 42px auto;
+    padding: 0 12px;
+    font-size: pxToRem(16);
+    line-height: 1.8rem;
   }
 
   h1 {
-    font-size: 36px;
+    margin: 0 0 24px 0;
+    font-family: $lekton;
+    font-size: pxToRem(42);
+    font-weight: bold;
+    line-height: 3rem;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      font-size: pxToRem(28);
+    }
   }
 
   h3 {
-    font-size: 28px;
+    font-size: pxToRem(28);
     font-weight: 300;
     margin: 0.5rem 0;
   }
 
+  p {
+    margin: 0 0 1.25rem 0;
+  }
+
+  li p {
+    margin: 0 0 0.5rem 0;
+  }
+
   a {
-    color: #428bca;
+    color: $blueish-green;
   }
 
   img {
@@ -34,7 +59,7 @@
 
   ul {
     list-style: initial;
-    padding: 0 20px;
+    padding-left: 20px;
   }
 
   blockquote {
@@ -62,8 +87,6 @@
 
   .post-info {
     p {
-      color: #111;
-      padding-top: 10px;
       text-align: justify;
       font-style: italic;
       font-size: 16px;
@@ -78,10 +101,8 @@
 
   .post-categories {
     p {
-      color: #111;
-      padding-top: 10px;
       text-align: justify;
-      font-size: 13px;
+      font-size: pxToRem(16);
       line-height: 28px;
       margin: 0 0 10px;
     }
