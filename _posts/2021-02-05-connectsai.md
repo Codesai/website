@@ -27,7 +27,7 @@ Pero con dudas o no llegó el gran día y tuvimos la fortuna de que el evento co
 * Si vas a grabar la charla, que quede claro que es opcional, la gente puede echarse atrás por el miedo a que se grabe o no.
 
 ![Connectsai Wall](/assets/posts/connectsai-wall.png)
-_Kudos a Aitor Alzola [@aitortxu](https://twitter.com/aitortxu) por su fantásticas manos con la facilitación gráfica_
+_Kudos a Aitor Alzola [@aitortxu](https://twitter.com/aitortxu) por su fantásticas manos para la facilitación gráfica_
 
 Con todos estos aprendizajes, esperamos que en la siguiente edición (que no sabemos si se llamará así o no) podamos mejorar nuestro desempeño como organizadores. Aún así el feedback recibido ha sido muy positivo, la gente ha disfrutado mucho del evento y de volver a encontrarse con gente y sobretodo el nivel de las charlas preparadas que teníamos con las speakers que se mostraron dispuestas a colaborar en ese día con nosotros. Desde aquí queremos dar las gracias por brindarnos su tiempo y esfuerzo para que esto saliera bien.
 
