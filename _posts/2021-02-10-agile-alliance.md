@@ -10,7 +10,7 @@ categories:
 - DDD
 - Juan Banda
 - Agile Alliance
-small_image: posts/entrevistas-agile-alliance.jpeg
+small_image: posts/entrevistas-agile-alliance.jpg
 author: Codesai
 written_in: spanish
 ---
