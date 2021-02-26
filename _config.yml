@@ -35,33 +35,3 @@ descriptions:
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
 environment: production
-
-clients:
-    - name: Lifull Connect
-      url: https://www.lifullconnect.com/
-      logo: ../img/logos/lifull-connect.svg
-      description: clients/lifull-connect.html
-    - name: Buyviu
-      url: https://buyviu.com/
-      logo: ../img/logos/buyviu.png
-      description: clients/buyviu.html
-    - name: GreenPowerMonitor
-      url: http://www.greenpowermonitor.com/
-      logo: ../img/logos/gpm.png
-      description: clients/gpm.html
-    - name: Grupo ASV
-      url: http://www.grupoasv.com/es/
-      logo: ../img/logos/grupo_asv.png
-      description: clients/grupo_asv.html
-    - name: Grupo Domingo Alonso
-      url: https://www.aidacanarias.com/
-      logo: ../img/logos/domingo_alonso.png
-      description: clients/domingo_alonso.html
-    - name: Mutua Tinerfeña
-      url: https://mutuatfe.es/
-      logo: ../img/logos/mutua.png
-      description: clients/mutua.html
-    - name: TheMotion
-      url: https://www.themotion.com/
-      logo: ../img/logos/the_motion.png
-      description: clients/the_motion.html
