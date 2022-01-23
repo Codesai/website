@@ -12,7 +12,7 @@ categories:
 - Good Practices
 - Interfaces
 small_image: posts/entrevistas-agile-alliance.jpg
-author: <a href="https://www.twitter.com/mangelviera">Miguel Viera</a>
+author: Miguel Viera
 written_in: spanish
 ---
 
