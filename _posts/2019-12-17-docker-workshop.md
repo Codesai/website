@@ -10,6 +10,8 @@ categories:
   - Workshop
 small_image: docker.jpeg
 author: Miguel Viera
+twitter: mangelviera
+twitter: mangelviera
 written_in: english
 ---
 

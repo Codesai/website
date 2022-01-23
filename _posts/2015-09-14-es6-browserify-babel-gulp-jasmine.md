@@ -10,6 +10,7 @@ categories:
   - ES6
 cross_post_url: http://www.carlosble.com/2015/09/es6-browserify-babel-gulp-jasmine/
 author: Carlos Blé
+twitter: carlosble
 small_image: es6.svg
 written_in: english
 ---

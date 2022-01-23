@@ -10,6 +10,7 @@ categories:
   - Continuous Delivery
 small_image: svn-meme.jpg
 author: Alfredo Casado
+twitter: AlfredoCasado
 ---
 
 Estaba el otro día viendo la charla [Continuous delivery and the theory of constraints](https://vimeo.com/338843900) de Steve Smith, que de paso os recomiendo, y en un momento de la charla el autor relatando una experiencia pasada en un equipo que usaba subversion en lugar de git u otro DVCS, decía algo como: 

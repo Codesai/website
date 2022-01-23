@@ -13,6 +13,7 @@ categories:
   - Property-based testing
   - Katas
 author: Manuel Rivero
+twitter: trikitrok
 small_image: small_child_painting.jpg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com.es/2018/03/generating-bingo-cards-with-clojurespec.html

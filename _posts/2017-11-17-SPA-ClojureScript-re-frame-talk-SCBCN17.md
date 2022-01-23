@@ -17,6 +17,7 @@ categories:
   - Effects and Coeffects
   - Subscriptions
 author: Manuel Rivero
+twitter: trikitrok
 cross_post_url: http://garajeando.blogspot.com.es/2017/11/nativebrowser-spa-versions-using.html
 small_image: small_re-frame_talk.jpg
 written_in: english

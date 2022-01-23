@@ -10,6 +10,7 @@ categories:
   - DevOps
 cross_post_url: http://www.modestosanjuan.com/powershell-cuidado-que-a-eq-a-no-siempre-es-true/
 author: Modesto San Juan
+twitter: msanjuan
 small_image: small_powershell_logo.png
 ---
 Este es uno de esos ejemplos en los que es importante intentar documentarse todo lo posible al desarrollar en un lenguaje/plataforma que no conocemos. Es frecuente asumir conceptos basados en nuestros conocimientos previos de otros lenguajes, pero en ocasiones nos puede jugar malas pasadas. En este caso voy a mostrar un ejemplo muy sencillo en el que yo asumí erróneamente el funcionamiento de algo tan sencillo como un operador de comparación.

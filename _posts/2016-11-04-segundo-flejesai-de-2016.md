@@ -15,6 +15,7 @@ meta:
   _icl_lang_duplicate_of: '3176'
   cwp_meta_box_check: 'No'
 author: Carlos Blé
+twitter: carlosble
 small_image: small_flejesai.jpg
 ---
 

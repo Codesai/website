@@ -10,7 +10,8 @@ categories:
   - News
   - Test Driven Development
   - Formación
-author: Miguel Ángel Viera, Alfredo Casado & Manuel Rivero
+author: Miguel Viera, Alfredo Casado & Manuel Rivero
+twitter: codesaidev
 small_image: merkle_tdd_training_1_2018_small.jpg
 written_in: english
 ---

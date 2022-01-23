@@ -12,6 +12,7 @@ categories:
 - Agile Alliance
 small_image: posts/entrevistas-agile-alliance.jpg
 author: Codesai
+twitter: codesaidev
 written_in: spanish
 ---
 

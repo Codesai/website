@@ -13,6 +13,7 @@ categories:
 - Interfaces
 small_image: posts/entrevistas-agile-alliance.jpg
 author: Miguel Viera
+twitter: mangelviera
 written_in: spanish
 ---
 

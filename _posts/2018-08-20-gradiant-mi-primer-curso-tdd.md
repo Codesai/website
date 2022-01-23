@@ -11,6 +11,7 @@ categories:
   - Formación
   - News
 author: Toño de la Torre
+twitter: adelatorrefoss
 small_image: gradiant_logo.svg
 ---
 

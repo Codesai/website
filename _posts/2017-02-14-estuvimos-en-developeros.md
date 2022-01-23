@@ -15,6 +15,7 @@ categories:
   - Charlas
   - .Net
 author: José Déniz
+twitter: JoseDeniz13
 small_image: small_codesai_en_developeros.png
 ---
 

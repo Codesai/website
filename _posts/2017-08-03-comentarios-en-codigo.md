@@ -10,6 +10,7 @@ categories:
   - Principles
 tags: []
 author: Carlos Blé
+twitter: carlosble
 small_image: small_comments.png
 written_in: spanish
 ---

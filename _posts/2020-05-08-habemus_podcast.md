@@ -8,6 +8,7 @@ categories:
   - News
 small_image: the_big_branch_theory.jpg
 author: Alfredo Casado
+twitter: AlfredoCasado
 ---
 
 Haciendo caso omiso de todas las recomendaciones sanitarias para este confinamiento hemos decidido, como podréis adivinar por el título, ¡crear un podcast!

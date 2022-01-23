@@ -14,6 +14,7 @@ categories:
   - Community
 small_image: small_scbcn18_three.jpg
 author: Daniel Ojeda
+twitter: danielojed4
 ---
 
 El sábado 15 de Septiembre por la noche aterrizaba en Madrid después de haber pasado más de un año viviendo fuera, muy lejos allá en tierras niponas. Y no era sino dos semanas más tarde que iba a asistir a la Software Crafters Barcelona, pues había conseguido pillarme de antemano (y con suerte :) una entrada.<br>

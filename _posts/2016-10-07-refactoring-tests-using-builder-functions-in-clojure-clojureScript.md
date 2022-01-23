@@ -14,6 +14,7 @@ categories:
   - Code Smells
   - Builders  
 author: Manuel Rivero
+twitter: trikitrok
 cross_post_url: http://garajeando.blogspot.com.es/2016/10/using-builders-to-remove-duplication-in.html
 small_image: clojure_logo.svg
 written_in: english

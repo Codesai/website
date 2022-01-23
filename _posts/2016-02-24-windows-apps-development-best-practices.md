@@ -11,6 +11,7 @@ categories:
   - .Net
 cross_post_url: http://www.carlosble.com/2016/02/windows-apps-development-best-practices/
 author: Carlos Blé
+twitter: carlosble
 small_image: dotnet.svg
 written_in: english
 ---

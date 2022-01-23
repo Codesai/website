@@ -9,7 +9,8 @@ categories:
   - Codesai
   - Flejesai
   - Organization
-author: Antonio de la Torre
+author: Toño de la Torre
+twitter: adelatorrefoss
 small_image: flejesai2017-2-autumn.jpg
 ---
 

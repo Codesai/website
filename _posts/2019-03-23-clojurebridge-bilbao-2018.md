@@ -11,6 +11,7 @@ categories:
   - Events
 small_image: clojurebridge.png
 author: Manuel Rivero
+twitter: trikitrok
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2019/03/our-experience-at-clojurebridge-bilbao.html
 published_in_blog: Manuel Rivero

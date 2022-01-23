@@ -13,7 +13,8 @@ categories:
   - Startups
   - News
 tags: []
-author: Antonio de la Torre
+author: Toño de la Torre
+twitter: adelatorrefoss
 small_image: sosz17_small_openspace.jpg
 ---
 

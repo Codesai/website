@@ -10,6 +10,7 @@ categories:
   - DevOps
 cross_post_url: http://www.modestosanjuan.com/como-crear-appx-para-sideloading-desde-integracion-continua/
 author: Modesto San Juan
+twitter: msanjuan
 small_image: small_automate_all.jpg
 ---
 

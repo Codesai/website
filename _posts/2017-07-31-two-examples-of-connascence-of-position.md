@@ -10,7 +10,8 @@ categories:
   - Connascence
   - Refactoring
   - Code Smells
-author: Manuel Rivero & Fran Reyes
+author: Manuel Rivero
+twitter: trikitrok
 small_image: small_houses.jpg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com/2017/07/two-examples-of-connascence-of-position.html

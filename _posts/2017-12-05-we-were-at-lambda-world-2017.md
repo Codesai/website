@@ -13,7 +13,8 @@ categories:
   - Eventos
   - Events
   - Functional Programming
-author: Miguel Ángel Viera
+author: Miguel Viera
+twitter: mangelviera
 small_image: lambda_world_small_logo.jpg
 written_in: english
 ---

@@ -14,6 +14,7 @@ categories:
   - SOLID
 tags: []
 author: Manuel Rivero
+twitter: trikitrok
 small_image: small-teddy.jpeg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com.es/2017/08/notes-on-srp-from-agile-principles.html

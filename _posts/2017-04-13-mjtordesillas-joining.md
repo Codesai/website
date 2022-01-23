@@ -10,6 +10,7 @@ categories:
   - News
 tags: []
 author: Manuel J. Tordesillas
+twitter: mjtordesillas
 small_image: manuel_tordesillas.jpg
 written_in: english
 ---

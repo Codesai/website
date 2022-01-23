@@ -11,6 +11,7 @@ categories:
   - SOLID
 small_image: small-solving-beverage-kata.jpg
 author: Manuel Rivero
+twitter: trikitrok
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2021/01/solving-beverages-prices-refactoring.html
 ---

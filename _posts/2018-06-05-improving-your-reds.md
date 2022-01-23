@@ -10,6 +10,7 @@ categories:
   - Testing
 tags: []
 author: Daniel Ojeda & Manuel Rivero
+twitter: codesaidev
 small_image: small_apples.jpeg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com/2018/06/improving-your-reds.html

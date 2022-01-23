@@ -11,6 +11,7 @@ categories:
   - News
 tags: []
 author: Manuel Rivero
+twitter: trikitrok
 small_image: gradiant_logo.svg
 ---
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

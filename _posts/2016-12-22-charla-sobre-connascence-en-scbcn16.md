@@ -15,7 +15,8 @@ categories:
   - Object-Oriented Design
   - Connascence
 tags: []
-author: 'Fran Reyes & Alfredo Casado'
+author: Fran Reyes & Alfredo Casado
+twitter: codesaidev
 small_image: small_connascence.png
 ---
 

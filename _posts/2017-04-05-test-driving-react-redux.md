@@ -13,6 +13,7 @@ categories:
   - Test Driven Development
 tags: []
 author: Carlos Blé
+twitter: carlosble
 small_image: redux.svg
 written_in: english
 ---

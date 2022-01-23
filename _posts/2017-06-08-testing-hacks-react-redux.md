@@ -12,6 +12,7 @@ categories:
   - Testing
 tags: []
 author: Carlos Blé
+twitter: carlosble
 small_image: redux.svg
 written_in: english
 ---

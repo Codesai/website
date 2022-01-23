@@ -12,6 +12,7 @@ categories:
   - News
 tags: []
 author: Fran Reyes
+twitter: fran_reyes
 small_image: small_cas_fran_building.jpg
 ---
 

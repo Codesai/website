@@ -10,6 +10,7 @@ categories:
   - DevOps
 cross_post_url: http://www.modestosanjuan.com/powershell-switch-parameters/
 author: Modesto San Juan
+twitter: msanjuan
 small_image: small_powershell_logo.png
 ---
 

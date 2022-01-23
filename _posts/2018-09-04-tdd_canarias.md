@@ -12,6 +12,7 @@ categories:
   - Formación
 small_image: small_potatoes-vegetables.jpeg
 author: Manuel Rivero
+twitter: trikitrok
 cross_post_url: http://garajeando.blogspot.com/2018/09/cursos-en-abierto-en-canarias.html
 ---
 

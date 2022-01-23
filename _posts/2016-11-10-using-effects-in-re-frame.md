@@ -14,6 +14,7 @@ categories:
 - Learning
 - Testing
 author: Manuel Rivero
+twitter: trikitrok
 cross_post_url: http://garajeando.blogspot.com.es/2016/11/using-effects-in-re-frame.html
 small_image: cljs.svg
 written_in: english

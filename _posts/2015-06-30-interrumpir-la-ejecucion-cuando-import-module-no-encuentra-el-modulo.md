@@ -10,6 +10,7 @@ categories:
   - DevOps
 cross_post_url: http://www.modestosanjuan.com/interrumpir-la-ejecucion-cuando-import-module-no-encuentra-el-modulo/
 author: Modesto San Juan
+twitter: msanjuan
 small_image: small_powershell_logo.png
 ---
 Esto es un truco sencillo y muy básico de PowerShell, pero puede desconcertar bastante a quien está empezando o utiliza PowerShell de forma esporádica.

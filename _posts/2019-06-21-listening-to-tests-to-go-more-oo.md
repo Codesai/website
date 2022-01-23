@@ -13,6 +13,7 @@ categories:
   - Test Doubles
 small_image: black-and-white-keys-music-534283.jpg
 author: Manuel Rivero
+twitter: trikitrok
 written_in: english
 cross_post_url: http://garajeando.blogspot.com/2019/06/an-example-of-improving-design-to-have.html
 ---

@@ -16,7 +16,8 @@ meta:
   cwp_meta_box_check: 'No'
   _thumbnail_id: '2979'
   dsq_thread_id: '5143338033'
-author: Antonio de la Torre
+author: Toño de la Torre
+twitter: adelatorrefoss
 small_image: small_four_rules_cover.jpg
 ---
 

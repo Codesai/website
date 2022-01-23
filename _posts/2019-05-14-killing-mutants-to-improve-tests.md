@@ -10,6 +10,7 @@ categories:
   - JavaScript
 small_image: boy_child_hero.jpg
 author: Manuel Rivero
+twitter: trikitrok
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2019/05/killing-mutants-to-improve-your-tests.html
 ---

@@ -1,6 +1,7 @@
 ---
 title: ¿Necesitas programar un servicio para Windows? Prueba Topshelf
-author: msanjuan
+author: Modesto San Juan
+twitter: msanjuan
 layout: post
 date: 2015-06-15T23:44:42+00:00
 type: post
@@ -11,6 +12,7 @@ categories:
   - C#
 cross_post_url: http://www.modestosanjuan.com/necesitas-programar-un-servicio-para-windows-prueba-topshelf/
 author: Modesto San Juan
+twitter: msanjuan
 small_image: small_topshelf_logo.png
 
 ---

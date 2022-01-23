@@ -13,7 +13,8 @@ categories:
 - Events
 - Charlas
 tags: []
-author: 'Antonio de la Torre'
+author: Toño de la Torre
+twitter: adelatorrefoss
 small_image: small_charla_antonio.jpg
 ---
 

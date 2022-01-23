@@ -10,6 +10,7 @@ categories:
   - Pair Programming
 cross_post_url: http://www.carlosble.com/2015/12/pairing-dont-have-to-agree-on-the-plan/
 author: Carlos Blé
+twitter: carlosble
 small_image: small_dolphins.jpg
 written_in: english
 ---

@@ -9,6 +9,7 @@ categories:
   - Conferences
   - Personal  
 author: Toño de la Torre
+twitter: adelatorrefoss
 small_image: small-post-una-vida-cas-2018-talk-245.jpeg
 ---
 

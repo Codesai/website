@@ -10,6 +10,7 @@ categories:
 - PHP
 small_image: aws-sns.svg
 author: Rubén Díaz
+twitter: rubendm23
 written_in: spanish
 ---
 

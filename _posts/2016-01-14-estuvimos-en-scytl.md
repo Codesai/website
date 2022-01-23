@@ -13,6 +13,7 @@ categories:
   - News
 tags: []
 author: Carlos Blé
+twitter: carlosble
 small_image: small_scytl.png
 cross_post_url: http://www.carlosble.com/2016/01/i-visited-scytl/
 written_in: english

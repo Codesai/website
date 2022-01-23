@@ -13,7 +13,8 @@ categories:
   - Codesai
   - News
   - Charlas
-author: 'Alfredo Casado, Manuel Tordesillas, José Déniz'
+author: Codesai
+twitter: codesaidev
 small_image: wtm_madrid.jpg
 ---
 

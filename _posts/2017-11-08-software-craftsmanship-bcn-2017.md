@@ -14,6 +14,7 @@ categories:
   - Eventos
   - Events
 author: Manuel J. Tordesillas
+twitter: mjtordesillas
 small_image: scbcn17-thumbnail.jpeg
 written_in: english
 ---

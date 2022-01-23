@@ -13,6 +13,7 @@ categories:
   - News
 tags: []
 author: Carlos Blé
+twitter: carlosble
 small_image: small_fon_logo.jpg
 cross_post_url: http://www.carlosble.com/2016/05/asi-fue-mi-paso-por-fon/
 ---

@@ -11,6 +11,7 @@ categories:
   - News
 tags: []
 author: Manuel Rivero
+twitter: trikitrok
 small_image: small-comet-curso-tdd.jpg
 written_in: english
 ---

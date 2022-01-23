@@ -12,6 +12,7 @@ categories:
   - News
   - Charlas
 author: Carlos Blé
+twitter: carlosble
 small_image: small_test_academy_carlos.jpg
 ---
 

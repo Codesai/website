@@ -10,6 +10,7 @@ categories:
   - .Net
 cross_post_url: http://www.carlosble.com/2015/05/c-asynawait-and-task-parallel-library/
 author: Carlos Blé
+twitter: carlosble
 small_image: csharp_logo.svg
 written_in: english
 ---

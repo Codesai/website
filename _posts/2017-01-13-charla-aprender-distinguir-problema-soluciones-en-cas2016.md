@@ -13,7 +13,8 @@ categories:
 - Events
 - Charlas
 tags: []
-author: 'Carlos Blé'
+author: Carlos Blé
+twitter: carlosble
 small_image: small_cas06_carlos.jpg
 ---
 

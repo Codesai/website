@@ -15,6 +15,7 @@ categories:
   - Codesai
 tags: []
 author: Manuel Rivero
+twitter: trikitrok
 cross_post_url: http://garajeando.blogspot.com.es/2016/12/recorded-talk-about-destructuring-in.html
 small_image: clojure_logo.svg
 ---

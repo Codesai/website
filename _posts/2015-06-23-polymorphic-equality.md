@@ -14,6 +14,7 @@ categories:
   - Object-Oriented Design
 cross_post_url: http://www.carlosble.com/2015/06/polymorphic-equality/
 author: Carlos Blé
+twitter: carlosble
 small_image: csharp_logo.svg
 written_in: english
 ---

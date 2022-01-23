@@ -14,6 +14,7 @@ categories:
   - News
 tags: []
 author: Toño de la Torre
+twitter: adelatorrefoss
 small_image: small_charla_antonio_cas17.jpg 
 ---
 

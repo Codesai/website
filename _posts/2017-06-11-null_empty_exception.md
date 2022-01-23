@@ -13,6 +13,7 @@ categories:
   - Design Patterns
 tags: []
 author: Carlos Blé
+twitter: carlosble
 small_image: small_pairing_minions.jpg
 written_in: spanish
 ---

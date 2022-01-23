@@ -10,6 +10,7 @@ categories:
   - Pair Programming
 cross_post_url: http://www.carlosble.com/2015/07/productive-pair-programming/
 author: Carlos Blé
+twitter: carlosble
 small_image: small_pair_programming.jpg
 written_in: english
 ---

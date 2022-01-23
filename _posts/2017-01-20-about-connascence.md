@@ -11,6 +11,7 @@ categories:
   - Refactoring
   - Code Smells
 author: Manuel Rivero
+twitter: trikitrok
 small_image: small_jim.jpeg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com/2017/01/about-connascence.html

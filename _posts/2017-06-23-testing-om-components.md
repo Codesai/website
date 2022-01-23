@@ -12,6 +12,7 @@ categories:
   - Testing
 tags: []
 author: Manuel Rivero
+twitter: trikitrok
 small_image: cljs.svg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com.es/2017/06/testing-om-components-with-cljs-react.html

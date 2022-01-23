@@ -10,6 +10,7 @@ categories:
 - Agile
 small_image: posts/remote-event.jpeg
 author: Codesai
+twitter: codesaidev
 written_in: spanish
 ---
 

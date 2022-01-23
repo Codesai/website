@@ -10,6 +10,7 @@ categories:
   - Team
   - News
 author: Codesai
+twitter: codesaidev
 ---
 
 <img src="/assets/flejesai_tenerife_2018.JPG" alt="Codesai en Flejesai 1" />

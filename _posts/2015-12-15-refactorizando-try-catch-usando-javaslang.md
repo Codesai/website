@@ -12,7 +12,8 @@ categories:
   - Refactoring
   - Learning
 cross_post_url: http://josemanueldeniz.es/refactorizando-try-catch-usando-javaslang/
-author: José Manuel Déniz
+author: José Déniz
+twitter: JoseDeniz13
 small_image: small_javaslang-logo.png
 ---
 

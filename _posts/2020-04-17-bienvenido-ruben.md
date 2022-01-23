@@ -7,7 +7,8 @@ categories:
   - Codesai
   - News
 small_image: incorporacion_ruben.png
-author: Daniel Ojeda y Rubén Díaz
+author: Codesai
+twitter: codesaidev
 ---
 
 Contamos hoy con una buena noticia, bien recibida dada la situación actual, y es que a partir de ahora somos uno más en Codesai! Queríamos escribir un pequeño post dándole la bienvenida a Rubén, presentándole un poquito desde mi perspectiva y luego la suya.

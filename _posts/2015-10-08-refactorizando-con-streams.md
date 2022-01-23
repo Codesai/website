@@ -11,7 +11,8 @@ categories:
   - Refactoring
   - Learning
 cross_post_url: http://josemanueldeniz.es/refactorizando-con-streams/
-author: José Manuel Déniz
+author: José Déniz
+twitter: JoseDeniz13
 small_image: small_java_logo.png
 ---
 

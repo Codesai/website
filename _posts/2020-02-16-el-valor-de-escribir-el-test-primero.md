@@ -11,6 +11,7 @@ categories:
   - Refactoring
 small_image: cas2019_dani_toño.jpg
 author: Daniel Ojeda
+twitter: danielojed4
 ---
 
 Toda persona que haya investigado un poco el Test Driven Development estará familiarizada con los 3 pasos que implica:

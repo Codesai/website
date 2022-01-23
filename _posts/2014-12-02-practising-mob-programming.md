@@ -10,6 +10,7 @@ categories:
   - Mob Programming
 cross_post_url: http://www.carlosble.com/2014/12/practising-mob-programming/
 author: Carlos Blé
+twitter: carlosble
 small_image: small_mobProg.jpg
 written_in: english
 ---

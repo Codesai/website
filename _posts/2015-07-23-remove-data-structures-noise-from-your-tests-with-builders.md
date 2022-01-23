@@ -13,6 +13,7 @@ categories:
   - Code Smells
   - Builders
 author: Carlos Blé
+twitter: carlosble
 cross_post_url: http://www.carlosble.com/2015/07/remove-data-structures-noise-from-your-tests-with-builders/
 small_image: small_bonsai.jpg
 written_in: english

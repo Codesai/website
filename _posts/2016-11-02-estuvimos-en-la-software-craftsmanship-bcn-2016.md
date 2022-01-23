@@ -18,7 +18,8 @@ meta:
   cwp_meta_box_check: 'No'
   _thumbnail_id: '3130'
   dsq_thread_id: '5273164097'
-author: Daniel Ojeda y Miguel Viera
+author: Codesai
+twitter: codesaidev
 small_image: small_scbcn16.jpg
 ---
 

@@ -11,6 +11,7 @@ categories:
   - News
 tags: []
 author: Manuel Rivero
+twitter: trikitrok
 small_image: ve_interactive_logo.svg
 ---
 

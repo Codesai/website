@@ -10,6 +10,7 @@ categories:
   - Refactoring
 small_image: small_bicycle.jpg
 author: Fran Reyes
+twitter: fran_reyes
 ---
 
 <h3>Contexto. </h3>

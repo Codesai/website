@@ -14,7 +14,8 @@ categories:
 - Charlas
 - Learning
 tags: []
-author: 'Ronny Ancorini'
+author: Ronny Ancorini
+twitter: RonnyAnc
 small_image: small_charla_ronny_modesto.jpeg
 ---
 

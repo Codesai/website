@@ -10,7 +10,8 @@ categories:
   - JavaScript
   - News
 tags: []
-author: Antonio de la Torre
+author: Toño de la Torre
+twitter: adelatorrefoss
 small_image: small_velneo.png
 ---
 

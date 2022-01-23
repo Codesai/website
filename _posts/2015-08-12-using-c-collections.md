@@ -12,6 +12,7 @@ categories:
   - Implementation Patterns
 cross_post_url: http://www.carlosble.com/2015/08/using-c-collections/
 author: Carlos Blé
+twitter: carlosble
 small_image: csharp_logo.svg
 written_in: english
 ---

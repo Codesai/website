@@ -11,6 +11,7 @@ categories:
   - Charlas
   - Codesai
 author: Manuel Rivero
+twitter: trikitrok
 cross_post_url: http://garajeando.blogspot.com.es/2016/12/recorded-talk-about-functions-in.html
 small_image: clojure_logo.svg
 ---

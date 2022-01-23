@@ -10,6 +10,7 @@ categories:
   - DevOps
 cross_post_url: http://www.modestosanjuan.com/powershell-las-ventajas-de-usar-parametros-y-variables-tipados/
 author: Modesto San Juan
+twitter: msanjuan
 small_image: small_powershell_logo.png
 ---
 

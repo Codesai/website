@@ -9,6 +9,7 @@ categories:
 - Codesai
 tags: []
 author: Carlos Blé
+twitter: carlosble
 small_image: small_equipo.jpg
 ---
 

@@ -10,6 +10,7 @@ categories:
   - Clojure/ClojureScript
 small_image: baby-child-hand-1776137.jpg
 author: Manuel Rivero
+twitter: trikitrok
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2019/07/playing-fizzbuzz-with-property-based.html
 ---

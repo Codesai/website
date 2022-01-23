@@ -10,7 +10,8 @@ categories:
   - Test Driven Development
   - News
 tags: []
-author: Miguel Ángel Viera
+author: Miguel Viera
+twitter: mangelviera
 small_image: tdd-simple.svg
 ---
 

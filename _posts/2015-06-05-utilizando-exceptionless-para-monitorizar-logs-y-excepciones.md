@@ -1,6 +1,7 @@
 ---
 title: Utilizando Exceptionless para monitorizar logs y excepciones
 author: Modesto San Juan
+twitter: msanjuan
 layout: post
 date: 2015-06-05T18:11:52+00:00
 type: post
@@ -13,6 +14,7 @@ categories:
   - DevOps
 cross_post_url: http://www.modestosanjuan.com/utilizando-extensionless-para-monitorizar-logs-y-excepciones/
 author: Modesto San Juan
+twitter: msanjuan
 small_image: small_exceptionless_logo.png
 ---
 Cada vez que abordo un nuevo desarrollo, considero que la generación de trazas es una parte vital ya que es uno de los mecanismos que nos va a permitir diagnosticar e identificar cualquier tipo de problema cuando estemos en producción, en ocasiones incluso antes de que los propios usuarios lleguen a reportarlo.

@@ -1,6 +1,7 @@
 ---
 title: Mocking (stubbing) async calls (async/await)
-author: Carlos Ble
+author: Carlos Blé
+twitter: carlosble
 layout: post
 date: 2015-02-10T11:57:16+00:00
 type: post
@@ -13,6 +14,7 @@ categories:
   - .Net
 cross_post_url: http://www.carlosble.com/2015/02/mocking-stubbing-async-calls-asyncawait/
 author: Carlos Blé
+twitter: carlosble
 small_image: csharp_logo.svg
 written_in: english
 ---

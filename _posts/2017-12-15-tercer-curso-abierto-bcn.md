@@ -11,6 +11,7 @@ categories:
   - News
 tags: []
 author: Manuel Rivero
+twitter: trikitrok
 small_image: small_curso_tdd_bcn_3_kata.jpg 
 ---
 
