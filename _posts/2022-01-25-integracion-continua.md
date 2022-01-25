@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Huyendo de las ramas"
-date: 2022-01-31 00:00:00.000000000 +00:00
+date: 2022-01-25 00:00:00.000000000 +00:00
 type: post
 categories:
 - Good Practices

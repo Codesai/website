@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Restringiendo interfaces"
-date: 2022-01-19 00:00:00.000000000 +00:00
+date: 2022-01-31 00:00:00.000000000 +00:00
 type: post
 categories:
 - Refactoring
