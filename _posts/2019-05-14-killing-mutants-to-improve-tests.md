@@ -4,7 +4,7 @@ title: "Killing mutants to improve your tests"
 date: 2019-05-14 08:00:00.000000000 +01:00
 type: post
 categories:
-  - Mutant Testing
+  - Mutation Testing
   - Learning
   - Testing
   - JavaScript
