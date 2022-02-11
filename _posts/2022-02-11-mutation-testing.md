@@ -73,7 +73,7 @@ Para evitar estos problemas seguramente decidiría no borrar la condición innec
 
 ## Conclusión
 
-Como hemos visto, mutation testing es una herramienta muy útil que nos puede ayudar a encontrar tests que se nos han olvidado y asegurar más nuestro código en las zonas más críticas. Configurarlo para nuestro proyecto es relativamente sencillo (al menos ese es el caso con Stryker en Javascript y PIT en Java), pero tenemos que saber interpretar los datos que nos da y decidir si debemos añadir tests o modificar nuestro código para que mate todas las mutaciones sin perder legibilidad.
+Como hemos visto, mutation testing es una herramienta muy útil que nos puede ayudar a encontrar tests que se nos han olvidado y asegurar más nuestro código en las zonas más críticas. Configurarlo para nuestro proyecto es relativamente sencillo (al menos ese es el caso con Stryker en Javascript o PIT en Java), pero tenemos que saber interpretar los datos que nos da y decidir si debemos añadir tests, o bien modificar nuestro código para que mate todas las mutaciones sin perder legibilidad.
 
 ## Agradecimientos
 
