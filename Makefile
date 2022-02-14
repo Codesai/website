@@ -5,4 +5,4 @@ start:
 		-v="$(shell pwd):/srv/jekyll" \
 		-p 4000:4000 \
 		-it jekyll/jekyll:${JEKYLL_VERSION} \
-		jekyll serve --force_polling --incremental --config _config.yml,_local_config.yml
+		jekyll server --watch --drafts --config _config.yml,_local_config.yml

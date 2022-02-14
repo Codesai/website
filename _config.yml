@@ -1,5 +1,6 @@
 exclude:
   - "/vendor/"
+  - "/_drafts/"
   - "README.md"
   - "LICENSE.md"
   - "*.gemspec"
