@@ -15,9 +15,9 @@ categories:
 tags: []
 author: Manuel Rivero
 twitter: trikitrok
-small_image: 
+small_image: lsp_notes.jpg
 written_in: english
-cross_post_url: 
+cross_post_url: https://garajeando.blogspot.com/2022/02/notes-on-lsp-from-agile-principles.html
 ---
 
 I continue sharing my notes on SOLID to prepare the ground for the upcoming [The Big Branch Theory Podcast](https://thebigbranchtheorypodcast.github.io/) episode about Liskov Substitution Principle. 
@@ -89,4 +89,5 @@ Ok, so these are the raw notes I took while reading the chapter devoted to <b>Li
 
 * "The [...] IS-A is too broad to act as a definition of a subtype. The true definition of a subtype is substitutable, where <b>substitutability is defined by either an explicit or implicit contract</b>"
 
+<a href="https://www.pexels.com/es-es/@padrinan?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Foto de Miguel Á. Padriñán en Pexels</a>
 
