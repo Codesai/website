@@ -36,3 +36,9 @@ descriptions:
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
 environment: production
+
+languages: ["es", "en"] # First language is default
+exclude_from_localizations: ["javascript", "css", "sass", "img", "fonts", "js", "scripts"]
+
+plugins:
+  - jekyll-multiple-languages-plugin
