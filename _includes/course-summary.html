@@ -22,7 +22,7 @@
             </div>
             <div class="info">
                 <div class="highlight">{{ include.hours }} horas</div>
-                <div class="detail">Presencial o remoto</div>
+                <div class="detail">{{ include.place | default: 'Presencial o remoto'}}</div>
             </div>
         </div>
 
