@@ -1,5 +1,5 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-cp _i18n/es/_posts _i18n/en/_posts
+cp -r _i18n/es/_posts _i18n/en
 
 bundle exec jekyll build
