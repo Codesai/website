@@ -154,9 +154,9 @@ Espero que te haya gustado el post y que me des feedback de qué te ha parecido.
 **Referencias**:
 
 <div class="foot-note">
-  <a name="nota1"></a> [1] [Refactoring. Martin Fowler](https://martinfowler.com/books/refactoring.html). Autor del catálogo de refactoring más conocido y autor de la definición de la mayoría de ellos y sus correspondientes Code Smells. Mencionados en el post: `Refactoring to Polymorphism y Data Clump`.
+  <a name="nota1"></a> [1] <a href="https://martinfowler.com/books/refactoring.html">Refactoring. Martin Fowler</a>. Autor del catálogo de refactoring más conocido y autor de la definición de la mayoría de ellos y sus correspondientes Code Smells. Mencionados en el post: `Refactoring to Polymorphism y Data Clump`.
 </div>
 <div class="foot-note">
-  <a name="nota2"></a> [2] [Design Patterns. The "Gang of Four": Erich Gamma, Richard Helm, Ralph Johnson. John Vlissides](https://www.amazon.es/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8). Autores de la definición de los patrones de diseño más conocidos, entre ellos el `State Pattern` mencionado en el post.
+  <a name="nota2"></a> [2] <a href="https://www.amazon.es/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8">Design Patterns. The "Gang of Four": Erich Gamma, Richard Helm, Ralph Johnson. John Vlissides</a>. Autores de la definición de los patrones de diseño más conocidos, entre ellos el `State Pattern` mencionado en el post.
 </div>
 
