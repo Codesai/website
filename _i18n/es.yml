@@ -1,3 +1,70 @@
 pages:
   home:
     title: Desarrollo de software y formación
+    slogan1: Aceleramos la entrega de valor
+    slogan2: Cuidando la calidad interna y externa
+    slogan3: Formando parte de tu equipo, haciéndolo crecer
+    about:
+      title: Parte de tu equipo
+      first_paragraph: En Codesai creemos firmemente que los mejores resultados se obtienen colaborando de manera muy cercana con los equipos internos de cada compañía. Por eso, nos gusta <strong>formar parte de ellos, enseñándoles de primera mano a mejorar sus procesos y desarrollar mejor código</strong>. Compartimos sus logros, frustraciones, dudas... sin olvidarnos de crear un buen ambiente de trabajo y sacar lo mejor de cada uno.
+      second_paragraph: Procuramos tener perfiles muy polivalentes, lo que nos permite apoyarte en múltiples vertientes del desarrollo de tu producto. Desde el equipo técnico, pero codo con codo con negocio.
+    clients:
+      title: Empresas que han confiado en nosotros
+    services:
+      title: Nuestros servicios
+      software_development:
+        title: Desarrollo de software
+        description: Podemos ser tu equipo o formar parte del mismo, promoviendo las buenas prácticas y la comunicación.
+        bullet1: Prácticas XP, Agile
+        bullet2: Código habitable
+        bullet3: Cercanía con negocio
+        bullet4: Probado y sostenible
+        call_to_action: Ver proyectos
+      courses:
+        title: Formación y cursos
+        description: Ofertamos varios cursos en los que obtener conocimientos clave para adquirir un mejor ritmo y entorno de desarrollo.
+        bullet1: Eminentemente prácticos
+        bullet2: Transversales a tu negocio
+        bullet3: DDD, TDD, Refactoring...
+        bullet4: Detallado y con ejemplos
+        call_to_action: Ver cursos
+      consultancy:
+        title: Asesoramiento y apoyo
+        description: Si requieres de una ayuda puntual, podemos evaluar tu situación y ofrecerte posibles soluciones.
+        bullet1: Consultoría específica
+        bullet2: Observamos y sugerimos
+        bullet3: Desbloqueamos problemas
+        bullet4: Prevenimos que surjan
+        call_to_action: Casos de éxito
+    tdd:
+      title: Expertos en formación Test Driven Development (TDD)
+      first_paragraph: TDD es para nosotros nuestra forma de trabajo habitual, por eso cuando impartimos una formación de TDD lo hacemos desde el convencimiento de que esta técnica aporta grandes beneficios y puede elevar como ninguna otra el nivel técnico de un equipo de desarrollo. En Codesai nos sentimos orgullosos de ser referentes tanto en la aplicación como en la formación en Test Driven Development, contando con algunos de los profesionales más reconocidos en el sector y la comunidad en la aplicación de esta técnica.
+      second_paragraph: Somos conscientes de que aplicar TDD de manera efectiva es muy complejo, y cómo muchos equipos tiran la toalla al probarlo durante un tiempo. En nuestra experiencia, contar con un equipo de profesionales expertos puede reducir la curva de adaptación y marcar la diferencia que permita al equipo extraer el valor que esta técnica puede aportar.
+      more_info: Más información
+    team:
+      title: Quiénes somos
+      alfredo: Más de 20 años programando. Durante los últimos años ha liderado equipos con métodos ágiles como Extreme Programming y prácticas como DDD (Domain Driven Design). Miembro veterano y conocido de la comunidad Java Hispano.
+      dani: Aplicar las metodologías agiles en el día a día le permiten realizar un mejor trabajo y redescubrir su pasión por el desarrollo de software. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria y co-organizador de Socrates Canaries 2016.
+      manu_tordesillas: Ingeniero en Informática y Electrónica con 6 años de experiencia en el desarrollo de Software. Considera esenciales el aprendizaje y la mejora continua para conseguir dejar una marca positiva en la sociedad y la industria.
+      fran: Se preocupa por hacer las cosas bien y mejorar continuamente. Defensor de los métodos ágiles por ser una manera de construir software excelente. Aunque su trayectoria es técnica, le interesan otras áreas del producto final (negocio, UX, operaciones, etc).
+      antonio: Encontró su sitio natural en equipos interesados en la mejora continua, y en hacer un código bonito. Desarrolla sobre todo en Javascript y Groovy. Busca la integración de todos los perfiles, especialmente los de diseño en el desarrollo del producto.
+      miguel: Apasionado del desarrollo y de la formación continua para lograr mejores soluciones. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria. Co-organizador del congreso internacional SoCraTes 2016 (Software Craftsmanship and Testing) en España.
+      manu_rivero: Empezó de nuevo hace pocos años como desarrollador web. Co-fundador de la comunidad Software Craftsmanship de Barcelona, involucrado en la comunidad Clojure Developers Barcelona y co-fundador de la comunidad Aprendices.
+      ruben: Aprendiendo y desarrollando desde 2014, le encanta seguir las prácticas de XP y colaborar con negocio para entregar valor lo antes posible. Intenta jubilarse habiendo borrado más código del que ha escrito. Co-organizador de Socrates Canaries 2019.
+    collaborators: Colaboran con nosotros
+    blog:
+      title: Compartiendo conocimiento
+      paragraph: Conferencia Agile Spain, DevFest, Tarugoconf... En Codesai nos encanta participar en eventos y compartir puntos de vista con otros profesionales (tanto, que incluso nos hemos atrevido a organizar alguno). Y además de estar involucrados en algunas comunidades, también <strong>publicamos contenido que esperamos que pueda ayudar y aportar a nuestro sector.</strong>
+      call_to_action: Ver más contenido
+    contact_us:
+      title: ¡Contáctanos!
+      first_paragraph: ¿Tienes dudas? Si quieres saber más sobre nuestra forma de trabajar y en lo que podemos aportar, no dudes en escribirnos a contact@codesai.com o rellenando el formulario de contacto.
+      second_paragraph: ¡Intentaremos responderte con la mayor brevedad posible!
+      mail: Email
+      name: Nombre completo
+      message: ¿Qué te gustaría contarnos?
+      placeholder: Me gustaría obtener más información, saber qué podríais aportarme y cómo colaborar.
+      send: Enviar mensaje
+
+
+

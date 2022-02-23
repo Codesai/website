@@ -60,21 +60,21 @@ permalink: /
         <div>
             <!-- TODO: Code snippet background -->
             <h1>{% translate pages.home.title %}</h1>
-            <div><span>//</span>Aceleramos la entrega de valor</div>
-            <div><span>//</span>Cuidando la calidad interna y externa</div>
-            <div><span>//</span>Formando parte de tu equipo, haciéndolo crecer</div>
+            <div><span>//</span>{% translate pages.home.slogan1 %}</div>
+            <div><span>//</span>{% translate pages.home.slogan2 %}</div>
+            <div><span>//</span>{% translate pages.home.slogan3 %}</div>
         </div>
     </section>
 
     <section class="about">
         <div class="description">
             <div class="text">
-                <h2 class="section-title">Parte de tu equipo</h2>
+                <h2 class="section-title">{% translate pages.home.about.title %}</h2>
                 <p>
-                    En Codesai creemos firmemente que los mejores resultados se obtienen colaborando de manera muy cercana con los equipos internos de cada compañía. Por eso, nos gusta <strong>formar parte de ellos, enseñándoles de primera mano a mejorar sus procesos y desarrollar mejor código</strong>. Compartimos sus logros, frustraciones, dudas... sin olvidarnos de crear un buen ambiente de trabajo y sacar lo mejor de cada uno.
+                    {% translate pages.home.about.first_paragraph %}
                 </p>
                 <p>
-                    Procuramos tener perfiles muy polivalentes, lo que nos permite apoyarte en múltiples vertientes del desarrollo de tu producto. Desde el equipo técnico, pero codo con codo con negocio.
+                    {% translate pages.home.about.second_paragraph %}
                 </p>
             </div>
             <div class="image">
@@ -84,7 +84,7 @@ permalink: /
         <div class="clients">
             <h3 class="trusted-by">
                 <img src="/assets/icons/thumbs_up.svg" alt="thumbs up">
-                Empresas que han confiado en nosotros
+                {% translate pages.home.clients.title %}
             </h3>
             <div>
                 <img src="/assets/clients/lifull-connect.svg" alt="Lifull Connect logo">
@@ -108,30 +108,30 @@ permalink: /
     </section>
 
     <section class="services">
-        <h2 class="section-title">Nuestros servicios</h2>
+        <h2 class="section-title">{% translate pages.home.services.title %}</h2>
         <div class="catalogue">
             <img src="/assets/shapes/hexaback.svg" alt="Hexagon 1" class="shape first">
             <img src="/assets/shapes/hexaback.svg" alt="Hexagon 2" class="shape second">
             <img src="/assets/shapes/hexaback.svg" alt="Hexagon 3" class="shape third">
             <div class="section">
                 <div class="info">
-                    <div class="type">Desarrollo de software</div>
-                    <p>Podemos ser tu equipo o formar parte del mismo, promoviendo las buenas prácticas y la comunicación.</p>
+                    <div class="type">{% translate pages.home.services.software_development.title %}</div>
+                    <p>{% translate pages.home.services.software_development.description %}</p>
                     <p>
                         <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Prácticas XP, Agile</span>
+                        <span>{% translate pages.home.services.software_development.bullet1 %}</span>
                     </p>
                     <p>
                         <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Código habitable</span>
+                        <span>{% translate pages.home.services.software_development.bullet2 %}</span>
                     </p>
                     <p>
                         <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Cercanía con negocio</span>
+                        <span>{% translate pages.home.services.software_development.bullet3 %}</span>
                     </p>
                     <p>
                         <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Probado y sostenible</span>
+                        <span>{% translate pages.home.services.software_development.bullet4 %}</span>
                     </p>
                 </div>
                 <a href="/clients/">
@@ -140,23 +140,23 @@ permalink: /
             </div>
             <div class="section">
                 <div class="info">
-                    <div class="type">Formación y cursos</div>
-                    <p>Ofertamos varios cursos en los que obtener conocimientos clave para adquirir un mejor ritmo y entorno de desarrollo.</p>
+                    <div class="type">{% translate pages.home.services.courses.title %}</div>
+                    <p>{% translate pages.home.services.courses.description %}</p>
                     <p>
                         <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Eminentemente prácticos</span>
+                        <span>{% translate pages.home.services.courses.bullet1 %}</span>
                     </p>
                     <p>
                         <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Transversales a tu negocio</span>
+                        <span>{% translate pages.home.services.courses.bullet2 %}</span>
                     </p>
                     <p>
                         <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>DDD, TDD, Refactoring...</span>
+                        <span>{% translate pages.home.services.courses.bullet3 %}</span>
                     </p>
                     <p>
                         <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Detallado y con ejemplos</span>
+                        <span>{% translate pages.home.services.courses.bullet4 %}</span>
                     </p>
                 </div>
                 <a href="/cursos/">
@@ -165,23 +165,23 @@ permalink: /
             </div>
             <div class="section">
                 <div class="info">
-                    <div class="type">Asesoramiento y apoyo</div>
-                    <p>Si requieres de una ayuda puntual, podemos evaluar tu situación y ofrecerte posibles soluciones.</p>
+                    <div class="type">{% translate pages.home.services.consultancy.title %}</div>
+                    <p>{% translate pages.home.services.consultancy.description %}</p>
                     <p>
-                       <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Consultoría específica</span>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>{% translate pages.home.services.consultancy.bullet1 %}</span>
                     </p>
                     <p>
-                       <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Observamos y sugerimos</span>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>{% translate pages.home.services.consultancy.bullet2 %}</span>
                     </p>
                     <p>
-                       <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Desbloqueamos problemas</span>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>{% translate pages.home.services.consultancy.bullet3 %}</span>
                     </p>
                     <p>
-                       <img src="/assets/icons/tick.svg" alt="Tick">
-                        <span>Prevenimos que surjan</span>
+                        <img src="/assets/icons/tick.svg" alt="Tick">
+                        <span>{% translate pages.home.services.consultancy.bullet4 %}</span>
                     </p>
                 </div>
                 <a href="/clients/">
@@ -192,17 +192,17 @@ permalink: /
     </section>
 
     <section class="courses">
-        <h2 class="section-title mobile">Expertos en formación Test Driven Development (TDD)</h2>
+        <h2 class="section-title mobile">{% translate pages.home.tdd.title %}</h2>
         <div class="image">
             <img src="/assets/home/mid_picture.png" alt="">
         </div>
         <div class="description">
-            <h2 class="section-title desktop">Expertos en formación Test Driven Development (TDD)</h2>
+            <h2 class="section-title desktop">{% translate pages.home.tdd.title %}</h2>
             <p>
-                TDD es para nosotros nuestra forma de trabajo habitual, por eso cuando impartimos una formación de TDD lo hacemos desde el convencimiento de que esta técnica aporta grandes beneficios y puede elevar como ninguna otra el nivel técnico de un equipo de desarrollo. En Codesai nos sentimos orgullosos de ser referentes tanto en la aplicación como en la formación en Test Driven Development, contando con algunos de los profesionales más reconocidos en el sector y la comunidad en la aplicación de esta técnica.
+                {% translate pages.home.tdd.first_paragraph %}
             </p>
             <p>
-                Somos conscientes de que aplicar TDD de manera efectiva es muy complejo, y cómo muchos equipos tiran la toalla al probarlo durante un tiempo. En nuestra experiencia, contar con un equipo de profesionales expertos puede reducir la curva de adaptación y marcar la diferencia que permita al equipo extraer el valor que esta técnica puede aportar.
+                {% translate pages.home.tdd.second_paragraph %}
             </p>
             <div class="button">
                 <a href="/curso-de-tdd/">
@@ -213,7 +213,7 @@ permalink: /
     </section>
 
     <section class="team" id="team">
-        <h2 class="section-title">Quiénes somos</h2>
+        <h2 class="section-title">{% translate pages.home.team.title %}</h2>
 
         <!-- TODO: Change avatar image style -->
         <div class="team-cards">
@@ -293,7 +293,7 @@ permalink: /
     </section>
 
     <section class="collaborators">
-        <h2 class="section-title">Colaboran con nosotros</h2>
+        <h2 class="section-title">{% translate pages.home.collaborators %}</h2>
 
         <div class="collaborator-cards">
             <div class="collaborator-card">
@@ -310,12 +310,9 @@ permalink: /
     </section>
 
     <section class="blog">
-        <h2 class="section-title">Compartiendo conocimiento</h2>
+        <h2 class="section-title">{% translate pages.home.blog.title %}</h2>
         <p>
-            Conferencia Agile Spain, DevFest, Tarugoconf... En Codesai nos encanta participar en eventos y
-            compartir puntos de vista con otros profesionales (tanto, que incluso nos hemos atrevido a organizar
-            alguno). Y además de estar involucrados en algunas comunidades, también <strong>publicamos contenido
-            que esperamos que pueda ayudar y aportar a nuestro sector.</strong>
+            {% translate pages.home.blog.paragraph %}
         </p>
 
         <!-- TODO mix posts & videos, label them & style them accordingly -->
