@@ -1,7 +1,7 @@
 
 <footer>
     <div class="logo">
-        <a href="/">
+        <a href="{% translate urls.home %}">
             <img src="{{ site.baseurl_root }}/assets/logos/codesai_logo_green_white.svg" alt="Codesai logo">
         </a>
     </div>
@@ -18,11 +18,11 @@
             </a>
         </div>
         <div class="legal">
-            <a href="/legal-advertisement">Aviso Legal</a>
+            <a href="{% translate urls.legal_advertisement %}">Aviso Legal</a>
             <span>&bull;</span>
-            <a href="/cookie-policy">Política de Cookies</a>
+            <a href="{% translate urls.cookie_policy %}">Política de Cookies</a>
             <span>&bull;</span>
-            <a href="/privacy-policy">Política de Privacidad</a>
+            <a href="{% translate urls.privacy_policy %}">Política de Privacidad</a>
         </div>
     </div>
 </footer>

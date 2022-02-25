@@ -73,7 +73,13 @@ urls:
   clients: /en/clients/
   courses: /en/courses/
   tdd: /en/courses/tdd
+  ddd: /en/cursos/ddd/
+  refactoring: /en/cursos/refactoring/
+  user_stories: /en/cursos/user-stories/
+  cd_databases: /en/cursos/cd-databases/
+  intellij_guru: /en/cursos/intellij-guru/
   blog: /en/publications/
+  contact: /en/#call-to-action
   legal_advertisement: /en/legal-advertisement/
   cookie_policy: /en/cookie-policy/
   privacy_policy: /en/privacy-policy/

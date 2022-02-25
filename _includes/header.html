@@ -1,16 +1,16 @@
 
 <header>
     <div class="logo">
-        <a href="/">
+        <a href="{% translate urls.home %}">
             <img src="{{ site.baseurl_root }}/assets/logos/codesai_logo_green_white.svg" alt="Codesai logo">
         </a>
     </div>
     <div class="links">
-        <a href="/#team"><span>Equipo</span></a>
-        <a href="/clients"><span>Clientes</span></a>
-        <a href="/cursos"><span>Formación</span></a>
-        <a href="/publications"><span>Publicaciones</span></a>
-        <a href="/#call-to-action"><span>Contacto</span></a>
+        <a href="{% translate urls.team %}"><span>Equipo</span></a>
+        <a href="{% translate urls.clients %}"><span>Clientes</span></a>
+        <a href="{% translate urls.courses %}"><span>Formación</span></a>
+        <a href="{% translate urls.blog %}"><span>Publicaciones</span></a>
+        <a href="{% translate urls.contact %}"><span>Contacto</span></a>
     </div>
     <div id="mobile-menu-trigger" class="mobile-menu-icon">
         <img src="/assets/icons/mobile-menu-icon.svg" alt="mobile menu icon">
@@ -18,11 +18,11 @@
 </header>
 
 <div id="mobile-menu" class="mobile-links">
-    <a href="/#team"><span>Equipo</span></a>
-    <a href="/clients"><span>Clientes</span></a>
-    <a href="/cursos"><span>Formación</span></a>
-    <a href="/publications"><span>Publicaciones</span></a>
-    <a href="/#call-to-action"><span>Contacto</span></a>
+    <a href="{% translate urls.team %}"><span>Equipo</span></a>
+    <a href="{% translate urls.clients %}"><span>Clientes</span></a>
+    <a href="{% translate urls.courses %}"><span>Formación</span></a>
+    <a href="{% translate urls.blog %}"><span>Publicaciones</span></a>
+    <a href="{% translate urls.contact %}"><span>Contacto</span></a>
 </div>
 
 <script>
