@@ -67,6 +67,14 @@ components:
     name: Nombre completo
     message: ¿Qué te gustaría contarnos?
     send: Enviar mensaje
+
+header:
+  links:
+    team: Team
+    clients: Clients
+    courses: Courses
+    blog: Publications
+    contact: Contact
 urls:
   home: /en/
   team: /en/#team
