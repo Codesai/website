@@ -75,6 +75,11 @@ header:
     courses: Formación
     blog: Publicaciones
     contact: Contacto
+footer:
+  links:
+    legal_advertisement: Aviso Legal
+    cookie_policy: Política de Cookies
+    privacy_policy: Política de Privacidad
 urls:
   home: /
   team: /#team
