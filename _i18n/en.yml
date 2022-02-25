@@ -67,5 +67,15 @@ components:
     name: Nombre completo
     message: ¿Qué te gustaría contarnos?
     send: Enviar mensaje
+urls:
+  home: /en/
+  team: /en/#team
+  clients: /en/clients/
+  courses: /en/courses/
+  tdd: /en/courses/tdd
+  blog: /en/publications/
+  legal_advertisement: /en/legal-advertisement/
+  cookie_policy: /en/cookie-policy/
+  privacy_policy: /en/privacy-policy/
 
 

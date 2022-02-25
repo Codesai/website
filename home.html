@@ -136,7 +136,7 @@ permalink: /
             <span>{% translate pages.home.services.software_development.bullet4 %}</span>
           </p>
         </div>
-        <a href="/clients/">
+        <a href="{% translate urls.clients %}">
           {% capture button_text %}{{site.translations[site.lang].pages.home.services.software_development.call_to_action}}{% endcapture %}
           {% include components/codesai-button.html content=button_text %}
         </a>
@@ -162,7 +162,7 @@ permalink: /
             <span>{% translate pages.home.services.courses.bullet4 %}</span>
           </p>
         </div>
-        <a href="/cursos/">
+        <a href="{% translate urls.courses %}">
           {% capture button_text %}{{site.translations[site.lang].pages.home.services.courses.call_to_action}} {% endcapture %}
           {% include components/codesai-button.html content=button_text %}
         </a>
@@ -188,7 +188,7 @@ permalink: /
             <span>{% translate pages.home.services.consultancy.bullet4 %}</span>
           </p>
         </div>
-        <a href="/clients/">
+        <a href="{% translate urls.clients %}">
           {% capture button_text %}{{site.translations[site.lang].pages.home.services.consultancy.call_to_action}} {% endcapture %}
           {% include components/codesai-button.html content=button_text %}
         </a>
@@ -210,7 +210,7 @@ permalink: /
         {% translate pages.home.tdd.second_paragraph %}
       </p>
       <div class="button">
-        <a href="/curso-de-tdd/">
+        <a href="{% translate urls.tdd %}">
           {% capture button_text %} {{site.translations[site.lang].pages.home.tdd.call_to_action}}{% endcapture %}
           {% include components/codesai-button.html content=button_text %}
         </a>
@@ -341,7 +341,7 @@ permalink: /
       {% endfor %}
     </div>
     <div class="actions">
-      <a href="/publications/">
+      <a href="{% translate urls.blog %}">
         {% capture button_text %} {{site.translations[site.lang].pages.home.blog.call_to_action}} {% endcapture %}
         {% include components/codesai-button.html content=button_text %}
       </a>
