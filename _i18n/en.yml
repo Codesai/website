@@ -5,44 +5,44 @@ pages:
     slogan2: Taking care of both internal and external quality
     slogan3: Being part of your team, helping it grow
     about:
-      title: Parte de tu equipo
-      first_paragraph: En Codesai creemos firmemente que los mejores resultados se obtienen colaborando de manera muy cercana con los equipos internos de cada compañía. Por eso, nos gusta <strong>formar parte de ellos, enseñándoles de primera mano a mejorar sus procesos y desarrollar mejor código</strong>. Compartimos sus logros, frustraciones, dudas... sin olvidarnos de crear un buen ambiente de trabajo y sacar lo mejor de cada uno.
-      second_paragraph: Procuramos tener perfiles muy polivalentes, lo que nos permite apoyarte en múltiples vertientes del desarrollo de tu producto. Desde el equipo técnico, pero codo con codo con negocio.
+      title: Part of your team
+      first_paragraph: We firmly believe that working in tight collaboration with every team yields the best results. We enjoy <strong>being part of those teams, teaching them first-hand to improve their processes and to write better code</strong>. We share their accomplishments, frustration and doubts... while creating a good working environment and nurturing the best in every team member.
+      second_paragraph: We aim to keep our profiles versatile. This versatility enables us to support you on the development of your product from many different aspects.
     clients:
-      title: Empresas que han confiado en nosotros
+      title: Companies that have placed their trust on us
     services:
-      title: Nuestros servicios
+      title: Our services
       software_development:
-        title: Desarrollo de software
-        description: Podemos ser tu equipo o formar parte del mismo, promoviendo las buenas prácticas y la comunicación.
-        bullet1: Prácticas XP, Agile
-        bullet2: Código habitable
-        bullet3: Cercanía con negocio
-        bullet4: Probado y sostenible
-        call_to_action: Ver proyectos
+        title: Software development
+        description: We can be your team or we can integrate in yours, nurturing communication and good practices.
+        bullet1: XP Practices, Agile
+        bullet2: Habitable code
+        bullet3: Proximity with stakeholders
+        bullet4: Tested and sustainable
+        call_to_action: Our projects
       courses:
-        title: Formación y cursos
-        description: Ofertamos varios cursos en los que obtener conocimientos clave para adquirir un mejor ritmo y entorno de desarrollo.
-        bullet1: Eminentemente prácticos
-        bullet2: Transversales a tu negocio
+        title: Courses and Training
+        description: We offer a variety of courses, providing key knowledge required for a productive and sustainable development.
+        bullet1: Hands-on approach
+        bullet2: Cross-cutting
         bullet3: DDD, TDD, Refactoring...
-        bullet4: Detallado y con ejemplos
-        call_to_action: Ver cursos
+        bullet4: In-depth and with examples
+        call_to_action: Our courses
       consultancy:
-        title: Asesoramiento y apoyo
-        description: Si requieres de una ayuda puntual, podemos evaluar tu situación y ofrecerte posibles soluciones.
-        bullet1: Consultoría específica
-        bullet2: Observamos y sugerimos
-        bullet3: Desbloqueamos problemas
-        bullet4: Prevenimos que surjan
-        call_to_action: Casos de éxito
+        title: Consultancy and support
+        description: If find your company in need of help, we can evaluate your situation and offer you possible solutions.
+        bullet1: Specific consultancy
+        bullet2: We observe and suggest
+        bullet3: We help fixing problems
+        bullet4: We prevent them from arising
+        call_to_action: Success stories
     tdd:
       title: Expertos en formación Test Driven Development (TDD)
       first_paragraph: TDD es para nosotros nuestra forma de trabajo habitual, por eso cuando impartimos una formación de TDD lo hacemos desde el convencimiento de que esta técnica aporta grandes beneficios y puede elevar como ninguna otra el nivel técnico de un equipo de desarrollo. En Codesai nos sentimos orgullosos de ser referentes tanto en la aplicación como en la formación en Test Driven Development, contando con algunos de los profesionales más reconocidos en el sector y la comunidad en la aplicación de esta técnica.
       second_paragraph: Somos conscientes de que aplicar TDD de manera efectiva es muy complejo, y cómo muchos equipos tiran la toalla al probarlo durante un tiempo. En nuestra experiencia, contar con un equipo de profesionales expertos puede reducir la curva de adaptación y marcar la diferencia que permita al equipo extraer el valor que esta técnica puede aportar.
       call_to_action: Más información
     team:
-      title: Quiénes somos
+      title: About us
       alfredo: Más de 20 años programando. Durante los últimos años ha liderado equipos con métodos ágiles como Extreme Programming y prácticas como DDD (Domain Driven Design). Miembro veterano y conocido de la comunidad Java Hispano.
       dani: Aplicar las metodologías agiles en el día a día le permiten realizar un mejor trabajo y redescubrir su pasión por el desarrollo de software. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria y co-organizador de Socrates Canaries 2016.
       manu_tordesillas: Ingeniero en Informática y Electrónica con 6 años de experiencia en el desarrollo de Software. Considera esenciales el aprendizaje y la mejora continua para conseguir dejar una marca positiva en la sociedad y la industria.
@@ -51,22 +51,22 @@ pages:
       miguel: Apasionado del desarrollo y de la formación continua para lograr mejores soluciones. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria. Co-organizador del congreso internacional SoCraTes 2016 (Software Craftsmanship and Testing) en España.
       manu_rivero: Empezó de nuevo hace pocos años como desarrollador web. Co-fundador de la comunidad Software Craftsmanship de Barcelona, involucrado en la comunidad Clojure Developers Barcelona y co-fundador de la comunidad Aprendices.
       ruben: Aprendiendo y desarrollando desde 2014, le encanta seguir las prácticas de XP y colaborar con negocio para entregar valor lo antes posible. Intenta jubilarse habiendo borrado más código del que ha escrito. Co-organizador de Socrates Canaries 2019.
-    collaborators: Colaboran con nosotros
+    collaborators: Our collaborators
     blog:
-      title: Compartiendo conocimiento
+      title: Sharing knowledge
       paragraph: Conferencia Agile Spain, DevFest, Tarugoconf... En Codesai nos encanta participar en eventos y compartir puntos de vista con otros profesionales (tanto, que incluso nos hemos atrevido a organizar alguno). Y además de estar involucrados en algunas comunidades, también <strong>publicamos contenido que esperamos que pueda ayudar y aportar a nuestro sector.</strong>
-      call_to_action: Ver más contenido
+      call_to_action: More content
     contact:
-      title: ¡Contáctanos!
-      text: <p>¿Tienes dudas? Si quieres saber más sobre nuestra forma de trabajar y en lo que podemos aportar, no dudes en escribirnos a contact@codesai.com o rellenando el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-      placeholder: Me gustaría obtener más información, saber qué podríais aportarme y cómo colaborar.
+      title: Contact us!
+      text: <p>Any questions? If you want to know more about how we can help, please do not hesitate in writing us at contact@codesai.com or filling our contact form.</p><p>We will get back to you as soon as possible!</p>
+      placeholder: I would like to get more information. How can you help me? How can we collaborate?
 
 components:
   call_to_action:
     mail: Email
-    name: Nombre completo
-    message: ¿Qué te gustaría contarnos?
-    send: Enviar mensaje
+    name: Name
+    message: What would you like to share with us?
+    send: Send message
 
 header:
   links:
