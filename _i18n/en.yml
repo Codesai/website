@@ -6,7 +6,7 @@ pages:
     slogan3: Being part of your team, helping it grow
     about:
       title: Part of your team
-      first_paragraph: We firmly believe that working in tight collaboration with every team yields the best results. We enjoy <strong>being part of those teams, teaching them first-hand to improve their processes and to write better code</strong>. We share their accomplishments, frustration and doubts... while creating a good working environment and nurturing the best in every team member.
+      first_paragraph: We firmly believe that working in tight collaboration with every team yields the best results. We enjoy <strong>being part of your teams, teaching them first-hand to improve their processes and to write better code</strong>. We share your accomplishments, frustration and doubts... while creating a good working environment and nurturing the best in every team member.
       second_paragraph: We aim to keep our profiles versatile. This versatility enables us to support you on the development of your product from many different aspects.
     clients:
       title: Companies that have placed their trust on us
@@ -30,7 +30,7 @@ pages:
         call_to_action: Our courses
       consultancy:
         title: Consultancy and support
-        description: If find your company in need of help, we can evaluate your situation and offer you possible solutions.
+        description: If your company finds itself in need of help, we can evaluate your situation and offer you possible solutions.
         bullet1: Specific consultancy
         bullet2: We observe and suggest
         bullet3: We help fixing problems
