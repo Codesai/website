@@ -364,5 +364,13 @@ permalink: /
 
 {% include footer.html %}
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var associates = document.querySelector('.team-cards');
+    for (var i = associates.children.length; i >= 0; i--) associates.appendChild(associates.children[Math.random() * i | 0]);
+  });
+
+</script>
+
 </body>
 </html>
