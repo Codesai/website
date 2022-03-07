@@ -6,14 +6,14 @@
     </div>
     <div class="info">
         <h2>{{ include.name }}</h2>
-        <h3>La empresa//</h3>
+        <h3>{% translate pages.clients.profile.title %}</h3>
         <p>{{ include.about }}</p>
-        <h3>Nuestra aportación//</h3>
+        <h3>{% translate pages.clients.profile.our_work %}</h3>
         <p>{{ include.work }}</p>
         <div class="tech">
             <h3>
                 <img src="/assets/icons/tech.svg" alt="tech logo">
-                Tecnologías empleadas
+                {% translate pages.clients.profile.technologies.title %}
             </h3>
             <div class="stack">
                 {{ include.stack }}
