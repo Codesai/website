@@ -113,6 +113,34 @@ pages:
       title: ¡Descubre todo lo que podemos hacer por tu empresa!
       text: <p>¿Tienes dudas? ¿Quieres saber más sobre nuestra forma de trabajar y en todo lo que podemos aportar a tu equipo? Cuéntanoslo en contact@codesai.com o rellena el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
       placeholder: Me interesaría recibir información sobre posibles colaboraciones con mi empresa
+  training:
+    header: Te enseñamos a desarrollar mejor código
+    text: <p>Todos nuestros cursos son <strong>in-house</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.</p><p><strong>Además, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</strong></p>
+    courses:
+      tdd:
+        name: Test Driven Development (TDD)
+        description: La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.
+        link: /curso-de-tdd/
+      code_smells_refactoring:
+        name: Code smells & Refactoring
+        description: El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.
+        link: link
+      ddd:
+        name: DDD driven by test
+        description: El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.
+        link: /cursos/ddd/
+      user_stories:
+        name: Historias de usuario
+        description: El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario, identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.
+        link: /cursos/user-stories/
+      cd_databases:
+        name: Continuous Delivery con bases de datos
+        description: El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.
+        link: /cursos/cd-databases/
+    contact:
+      title: ¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!
+      text: <p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+      placeholder: ¿Te interesa alguna de nuestras formaciones? Inscríbite para futuros cursos abiertos o si te interesa que demos alguna formación en tu empresa.
 
 components:
   call_to_action:
@@ -120,6 +148,13 @@ components:
     name: Nombre completo
     message: ¿Qué te gustaría contarnos?
     send: Enviar mensaje
+  course:
+    information: Información
+    hours: horas
+    modality: Presencial o remoto.
+    price_ratio: €/persona
+    iva_excluded: I.V.A. no incluido.
+    button: Ver más información
 
 header:
   links:

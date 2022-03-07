@@ -10,28 +10,29 @@
         <div class="info">
             <h3>
                 <img src="/assets/icons/teaching.svg" alt="teaching info">
-                Información
+                {% translate components.course.information %}
             </h3>
             <div>
                 <div class="schedule">
                     <img src="/assets/icons/clock-green.svg" alt="Clock">
 
                     <div class="text">
-                        <p><strong>{{ include.hours }} horas</strong></p>
-                        <p>Presencial o remoto.</p>
+                        <p><strong>{{ include.hours }} {% translate components.course.hours %}</strong></p>
+                        <p>{% translate components.course.modality %}</p>
                     </div>
                 </div>
                 <div class="pricing">
                     <img src="/assets/icons/euro-green.svg" alt="Euro">
                     <div class="text">
-                        <p><strong>{{ include.starting_price }}€/persona</strong></p>
-                        <p>I.V.A. no incluido.</p>
+                        <p><strong>{{ include.starting_price }} {% translate components.course.price_ratio %}</strong></p>
+                        <p>{% translate components.course.iva_excluded %}</p>
                     </div>
                 </div>
             </div>
         </div>
         <a href="{{ include.link }}">
-            {% include components/codesai-button.html content='Ver más información' %}
+            {% capture button %}{{ site.translations[site.lang].components.course.button }}{% endcapture %}
+            {% include components/codesai-button.html content=button %}
         </a>
     </div>
 </div>

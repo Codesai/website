@@ -55,13 +55,8 @@ permalink_en: /courses/
 <main class="training">
     <section class="introduction">
         <div class="text">
-            <h1>Te enseñamos a desarrollar mejor código</h1>
-            <p>
-                Todos nuestros cursos son <strong>in-house</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.
-            </p>
-            <p>
-                <strong>Además, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</strong>
-            </p>
+            <h1>{% translate pages.training.header %}</h1>
+            {% translate pages.training.text %}
         </div>
         <div class="image">
             <!-- TODO: Replace with image from prototype -->
@@ -69,51 +64,66 @@ permalink_en: /courses/
         </div>
     </section>
     <section class="courses">
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.tdd.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.tdd.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.tdd.link }}{% endcapture %}
         {%
             include components/course.html
-            name='Test Driven Development (TDD)'
-            description='La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.'
-            link='/curso-de-tdd/'
+            name=name
+            description=description
+            link=link
             logo='/assets/courses/logos/tdd.svg'
             starting_price='450'
             days='2'
             hours='16'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.link }}{% endcapture %}
         {%
             include components/course.html
-            name='Code smells & Refactoring'
-            description='El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.'
-            link='/cursos/refactoring/'
+            name=name
+            description=description
+            link=link
             logo='/assets/courses/logos/refactoring.svg'
             starting_price='550'
             days='2.5'
             hours='20'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.ddd.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.ddd.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.ddd.link }}{% endcapture %}
         {%
             include components/course.html
-            name='DDD driven by test'
-            description='El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.'
-            link='/cursos/ddd/'
+            name=name
+            description=description
+            link=link
             logo='/assets/courses/logos/ddd.svg'
             starting_price='600'
             days='2'
             hours='16'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.user_stories.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.user_stories.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.user_stories.link }}{% endcapture %}
         {%
             include components/course.html
-            name='Historias de usuario'
-            description='El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario, identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.'
-            link='/cursos/user-stories/'
+            name=name
+            description=description
+            link=link
             logo='/assets/courses/logos/ddd.svg'
             starting_price='290'
             days='1'
             hours='8'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.cd_databases.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.cd_databases.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.cd_databases.link }}{% endcapture %}
         {%
             include components/course.html
-            name='Continuous Delivery con bases de datos'
-            description='El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.'
-            link='/cursos/cd-databases/'
+            name=name
+            description=description
+            link=link
             logo='/assets/courses/logos/refactoring.svg'
             starting_price='600'
             days='2'
@@ -123,12 +133,15 @@ permalink_en: /courses/
             <span></span>
         </div>
     </section>
+    {% capture title %}{{ site.translations[site.lang].pages.training.contact.title }}{% endcapture %}
+    {% capture text %}{{ site.translations[site.lang].pages.training.contact.text }}{% endcapture %}
+    {% capture placeholder %}{{ site.translations[site.lang].pages.training.contact.placeholder }}{% endcapture %}
     {%
         include components/call-to-action.html
-        title='¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!'
-        text='<p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
+        title=title
+        text=text
         defaultMessage='Sent from the Training page, no message specified'
-        messagePlaceHolder=''
+        messagePlaceHolder=placeholder
         origin='Listado de cursos'
     %}
 </main>
