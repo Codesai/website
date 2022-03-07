@@ -134,7 +134,7 @@ pages:
       code_smells_refactoring:
         name: Code smells & Refactoring
         description: El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.
-        link: link
+        link: /cursos/refactoring/
       ddd:
         name: DDD driven by test
         description: El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.
