@@ -1,3 +1,13 @@
+metas:
+  language: es
+  description: Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.
+  short_description: XP, desarrollo de software, formación, asesoramiento y apoyo.
+  locale: es_ES
+
+cookie_banner:
+  message: <p>El sitio web https://www.codesai.com/ utiliza cookies propias y de terceros para recopilar información que ayuda a optimizar su visita a sus páginas web. No se utilizarán las cookies para recoger información de carácter personal. Usted puede permitir su uso o rechazarlo, también puede cambiar su configuración siempre que lo desee. Encontrará más información en nuestra <a href="/cookie-policy">Política de Cookies</a>.</p>
+  button: Aceptar
+
 pages:
   home:
     title: Desarrollo de software y formación
@@ -143,6 +153,7 @@ pages:
       placeholder: ¿Te interesa alguna de nuestras formaciones? Inscríbite para futuros cursos abiertos o si te interesa que demos alguna formación en tu empresa.
   courses:
     tdd:
+      name: Curso de TDD
       title: Test Driven Development (TDD)
       text: '<p>TDD es una técnica que, aplicada correctamente, nos permite desarrollar código con un buen diseño, cumpliendo estrictamente las necesidades de negocio.</p>
              <p>En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los conocimientos de manera práctica en Pair Programming con el resto de asistentes, siempre bajo la guía de nuestros mentores.</p>'
@@ -196,6 +207,8 @@ pages:
           title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
           text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
           placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+  404:
+    text: ¡Vaya! Parece que no hemos encontrado nada aquí :(
 
   legal_advertisement:
     title: '<h1>Aviso legal</h1>'
