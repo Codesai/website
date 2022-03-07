@@ -141,6 +141,62 @@ pages:
       title: ¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!
       text: <p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
       placeholder: ¿Te interesa alguna de nuestras formaciones? Inscríbite para futuros cursos abiertos o si te interesa que demos alguna formación en tu empresa.
+  courses:
+    tdd:
+      title: Test Driven Development (TDD)
+      text: '<p>TDD es una técnica que, aplicada correctamente, nos permite desarrollar código con un buen diseño, cumpliendo estrictamente las necesidades de negocio.</p>
+             <p>En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los conocimientos de manera práctica en Pair Programming con el resto de asistentes, siempre bajo la guía de nuestros mentores.</p>'
+      agenda:
+        title: Contenido
+        day_1:
+          title: Primer día
+          content: '<div class="topics">
+                      <div class="group"><span>1.</span> Introducción a TDD</div>
+                      <div class="subgroup"><span>&bull;</span> ¿Por qué TDD?</div>
+                      <div class="subgroup"><span>&bull;</span> Ciclo de TDD</div>
+
+                      <div class="group"><span>2. </span>Refactoring & Clean Code</div>
+                      <div class="subgroup"><span>&bull;</span> Refactoring</div>
+                      <div class="subgroup"><span>&bull;</span> Code Smells</div>
+                      <div class="subgroup"><span>&bull;</span> Código habitable</div>
+                      <div class="subgroup"><span>&bull;</span> Principios de diseño</div>
+                  </div>'
+        day_2:
+          title: Segundo día
+          content: '<div class="topics">
+          <div class="group"><span>3. </span>Patrones, sostenibilidad y variaciones del ciclo básico</div>
+
+          <div class="group"><span>4. </span>Test doubles</div>
+          <div class="subgroup"><span>&bull;</span> Interaction-based testing</div>
+          <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
+
+          <div class="group"><span>5. </span>Outside-in TDD</div>
+          <div class="subgroup"><span>&bull;</span> Ventajas sobre inside-out</div>
+          <div class="subgroup"><span>&bull;</span> Classicist vs Mockist</div>
+          <div class="subgroup"><span>&bull;</span> Mal uso de los test doubles y consejos para evitarlo</div>
+      </div>'
+      languages:
+        title: Lenguajes
+        text: Generalmente, usamos Java porque es el lenguaje en el que la mayor parte de la gente se defiende, pero en el curso se pueden usar también otros lenguajes, eso no es problema. Si Java / IntelliJ no es para ti un problema, será la opción por defecto.
+      requirements:
+        title: Requisitos
+        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
+              <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
+              <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+      target:
+        title: ¿Para quién está pensado?
+        text: '<p>Este es un curso para personas que sepan programar. Fundamentalmente programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas. Lo que hace falta es venir con ganas y la mente abierta. Si nunca has probado TDD antes, te sorprenderá.</p>'
+      where:
+        title: In-house y en abierto
+        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+      form:
+          call_to_action:
+            link: /curso-de-tdd/#call-to-action
+          title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
+          text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+          placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+
   legal_advertisement:
     title: '<h1>Aviso legal</h1>'
     text: '<p>CODESAI DEV S.COOP, con CIF/NIF no: F74446410 y dirección en: C/ Purita de la Riva 4, 2B, 33002 - Oviedo (Asturias), no puede asumir ninguna responsabilidad derivada del uso incorrecto, inapropiado o ilícito de la información aparecida en las páginas web de: <a href="https://www.codesai.com/">https://www.codesai.com/</a></p><p>Que CODESAI DEV S.COOP consta inscrita en el Registro Mercantil de Sociedades Cooperativas, Tomo LX, Folio 5963, Asiento 1a. Número de inscripción de la Entidad 2833-SMT.</p><p>Con los límites establecidos en la ley, CODESAI DEV S.COOP no asume ninguna responsabilidad derivada de la falta de veracidad, integridad, actualización y precisión de los datos o informaciones que contienen sus páginas web.</p> <p>Los contenidos e información no vinculan a CODESAI DEV S.COOP ni constituyen opiniones, consejos o asesoramiento legal de ningún tipo pues se trata meramente de un servicio ofrecido con carácter informativo y divulgativo.</p> <p>Las páginas de Internet de CODESAI DEV S.COOP pueden contener enlaces (links) a otras páginas de terceras partes que CODESAI DEV S.COOP no puede controlar. Por lo tanto, CODESAI DEV S.COOP no puede asumir responsabilidades por el contenido que pueda aparecer en páginas de terceros.</p> <p>Los textos, imágenes, sonidos, animaciones, software y el resto de contenidos incluidos en este website son propiedad exclusiva de CODESAI DEV S.COOP o sus licenciantes. Cualquier acto de transmisión, distribución, cesión, reproducción, almacenamiento o comunicación pública total o parcial, deberá contar con el consentimiento expreso de CODESAI DEV S.COOP.</p> <p>Asimismo, para acceder a algunos de los servicios que CODESAI DEV S.COOP ofrece a través del sitio web, deberá proporcionar algunos datos de carácter personal. En cumplimiento de lo establecido en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos le informamos que, mediante la cumplimentación de los presentes formularios, sus datos personales quedarán incorporados y serán tratados en los ficheros de CODESAI DEV S.COOP con el fin de poderle prestar y ofrecer nuestros servicios así como para informarle de las mejoras del sitio Web.</p> <p> Le informamos también de que tendrá la posibilidad en todo momento de ejercer los derechos de acceso, rectificación, cancelación, oposición, limitación y portabilidad de sus datos de carácter personal, de manera gratuita mediante email a: contact@codesai.com o en la dirección: C/ Purita de la Riva 4, 2B, 33008 - Oviedo (Asturias).</p>'
@@ -574,6 +630,13 @@ components:
     price_ratio: €/persona
     iva_excluded: I.V.A. no incluido.
     button: Ver más información
+  course_summary:
+    special_discount: Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología
+    hours: horas
+    default_modality_text: Presencial o remoto
+    participant: persona
+    iva_excluded: (I.V.A no incluido)
+    button: ¡Me interesa!
 
 header:
   links:
