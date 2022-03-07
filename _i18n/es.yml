@@ -10,6 +10,7 @@ cookie_banner:
 
 pages:
   home:
+    name: Codesai. Inicio
     title: Desarrollo de software y formación
     slogan1: Aceleramos la entrega de valor
     slogan2: Cuidando la calidad interna y externa
@@ -71,6 +72,7 @@ pages:
       text: <p>¿Tienes dudas? Si quieres saber más sobre nuestra forma de trabajar y en lo que podemos aportar, no dudes en escribirnos a contact@codesai.com o rellenando el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
       placeholder: Me gustaría obtener más información, saber qué podríais aportarme y cómo colaborar.
   clients:
+    title: Codesai. Nuestros clientes
     profile:
       title: La empresa
       our_work: Nuestra aportación
@@ -124,6 +126,7 @@ pages:
       text: <p>¿Tienes dudas? ¿Quieres saber más sobre nuestra forma de trabajar y en todo lo que podemos aportar a tu equipo? Cuéntanoslo en contact@codesai.com o rellena el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
       placeholder: Me interesaría recibir información sobre posibles colaboraciones con mi empresa
   training:
+    title: Codesai. Formaciones
     header: Te enseñamos a desarrollar mejor código
     text: <p>Todos nuestros cursos son <strong>in-house</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.</p><p><strong>Además, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</strong></p>
     courses:
@@ -153,7 +156,7 @@ pages:
       placeholder: ¿Te interesa alguna de nuestras formaciones? Inscríbite para futuros cursos abiertos o si te interesa que demos alguna formación en tu empresa.
   courses:
     tdd:
-      name: Curso de TDD
+      name: Codesai. Curso de TDD
       title: Test Driven Development (TDD)
       text: '<p>TDD es una técnica que, aplicada correctamente, nos permite desarrollar código con un buen diseño, cumpliendo estrictamente las necesidades de negocio.</p>
              <p>En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los conocimientos de manera práctica en Pair Programming con el resto de asistentes, siempre bajo la guía de nuestros mentores.</p>'
@@ -207,16 +210,29 @@ pages:
           title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
           text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
           placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+    cd-databases:
+      title: Codesai. Curso de Continuous Delivery con bases de datos
+    ddd:
+      title: Codesai. Curso DDD Driven by test
+    intellij:
+      title: Codesai. IntelliJ Guru
+    code_smells_refactoring:
+      title: Codesai. Curso de Code Smells & Refactoring
   publications:
-    title: Publicaciones
+    title: Codesai. Blog
     posts: Posts
     videos: Videos
-  404:
+  categories:
+    title: Categorías
+  not_found:
+    title: '404'
     text: ¡Vaya! Parece que no hemos encontrado nada aquí :(
   legal_advertisement:
+    name: Codesai. Aviso Legal
     title: '<h1>Aviso legal</h1>'
     text: '<p>CODESAI DEV S.COOP, con CIF/NIF no: F74446410 y dirección en: C/ Purita de la Riva 4, 2B, 33002 - Oviedo (Asturias), no puede asumir ninguna responsabilidad derivada del uso incorrecto, inapropiado o ilícito de la información aparecida en las páginas web de: <a href="https://www.codesai.com/">https://www.codesai.com/</a></p><p>Que CODESAI DEV S.COOP consta inscrita en el Registro Mercantil de Sociedades Cooperativas, Tomo LX, Folio 5963, Asiento 1a. Número de inscripción de la Entidad 2833-SMT.</p><p>Con los límites establecidos en la ley, CODESAI DEV S.COOP no asume ninguna responsabilidad derivada de la falta de veracidad, integridad, actualización y precisión de los datos o informaciones que contienen sus páginas web.</p> <p>Los contenidos e información no vinculan a CODESAI DEV S.COOP ni constituyen opiniones, consejos o asesoramiento legal de ningún tipo pues se trata meramente de un servicio ofrecido con carácter informativo y divulgativo.</p> <p>Las páginas de Internet de CODESAI DEV S.COOP pueden contener enlaces (links) a otras páginas de terceras partes que CODESAI DEV S.COOP no puede controlar. Por lo tanto, CODESAI DEV S.COOP no puede asumir responsabilidades por el contenido que pueda aparecer en páginas de terceros.</p> <p>Los textos, imágenes, sonidos, animaciones, software y el resto de contenidos incluidos en este website son propiedad exclusiva de CODESAI DEV S.COOP o sus licenciantes. Cualquier acto de transmisión, distribución, cesión, reproducción, almacenamiento o comunicación pública total o parcial, deberá contar con el consentimiento expreso de CODESAI DEV S.COOP.</p> <p>Asimismo, para acceder a algunos de los servicios que CODESAI DEV S.COOP ofrece a través del sitio web, deberá proporcionar algunos datos de carácter personal. En cumplimiento de lo establecido en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos le informamos que, mediante la cumplimentación de los presentes formularios, sus datos personales quedarán incorporados y serán tratados en los ficheros de CODESAI DEV S.COOP con el fin de poderle prestar y ofrecer nuestros servicios así como para informarle de las mejoras del sitio Web.</p> <p> Le informamos también de que tendrá la posibilidad en todo momento de ejercer los derechos de acceso, rectificación, cancelación, oposición, limitación y portabilidad de sus datos de carácter personal, de manera gratuita mediante email a: contact@codesai.com o en la dirección: C/ Purita de la Riva 4, 2B, 33008 - Oviedo (Asturias).</p>'
   cookie_policy:
+    title: Codesai. Política de Cookies
     text: '<h1>POLÍTICA DE COOKIES</h1>
 
     <p>CODESAI DEV S.COOP informa acerca del uso de las cookies en su página web: <a
@@ -422,6 +438,7 @@ pages:
 
     </ul>'
   privacy_policy:
+    title: Codesai. Política de Privacidad
     text: '<h1>POLÍTICA DE PRIVACIDAD</h1>
 
     <h2>Protección de datos de carácter personal según el RGPD</h2>

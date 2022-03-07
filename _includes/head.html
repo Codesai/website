@@ -6,13 +6,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title>{{ page.title }}</title>
+    <title>{% translate page.title %}</title>
     <meta name="description" content="{% translate metas.description %}">
 
     <meta property="og:site_name" content="Codesai">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="{% translate metas.locale %}">
-    <meta property="og:title" content="{{ include.title }}">
+    <meta property="og:title" content="{% translate page.title %}">
     <meta property="og:description" content="{% translate metas.description %}">
     <meta property="og:url" content="{{ site.url }}">
     <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
