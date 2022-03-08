@@ -262,6 +262,44 @@ pages:
                <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
     ddd:
       title: Codesai. Curso DDD Driven by test
+      name: Domain Driven Design Driven by Tests
+      text: '<p>El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.</p>
+             <p>Explicaremos cómo a través de herramientas como Context Mapping y Event Storming podemos crear un lenguaje común en la organización que nos ayude construir soluciones software durables y mantenibles.</p>
+             <p>Explicaremos cómo trasladar estos conceptos al código y la arquitectura a través de ejemplos concretos haciendo uso de los patrones tácticos de DDD como agregados, repositorios o value objects. Veremos también mecanismos de comunicación entre diferentes Bounded contexts y realizaremos una introducción a event sourcing y CQRS.</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso DDD driven by test
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/ddd/#call-to-action
+      content:
+        title: Contenidos
+        day_1:
+          title: Primer día
+          agenda: '<div class="topics">
+                    <div class="group"><span>1.</span> Introducción a DDD</div>
+                    <div class="group"><span>2. </span>Event storming</div>
+                    <div class="subgroup">Explicaremos la dinamica y realizaremos un ejercicio practico</div>
+                    <div class="group"><span>3.</span> Patrones tácticos</div>
+                    <div class="subgroup">Partiendo del Event Storming anterior explicaremos cómo trasladar estos conceptos al código mediante una sesión de live coding y un ejercicio propuesto
+                 </div>'
+        day_2:
+          title: Segundo día
+          agenda: '<div class="topics">
+                    <div class="group"><span>4. </span>Repaso y ampliación de los patrones tácticos</div>
+                    <div class="group"><span>5. </span>Estrategia y context mapping</div>
+                    <div class="group"><span>6. </span>Ejercicio práctico de comunicación entre Bounded contexts</div>
+                    <div class="group"><span>7. </span>Introducción a event sourcing y CQRS</div>
+                 </div>'
+      tools:
+        title: Tecnología y material necesario
+        text: '<p>El código y los ejemplos del curso están realizados en java. Se podrían adaptar estos ejemplos y ejercicios a cualquier otro lenguaje orientado a objetos si fuera necesario.</p>
+               <p>El curso se impartirá online, por tanto será necesario que todos los asistentes dispongan de una conexión lo suficientemente buena para mantener videoconferencias de manera fluida. Si el curso se realiza con el material en java será necesario contar con un JDK 11 o superior y algún entorno de desarrollo, nosotros nos sentimos más cómodos con IntelliJ pero todos los ejemplos están construidos de forma que se puedan desarrollar en cualquier IDE.</p>'
+      who:
+        title: ¿Para quién está pensado?
+        text: <p>El curso aborda algunos conceptos avanzados de arquitectura software, para un buen aprovechamiento del mismo recomendamos que los asistentes tengan conocimientos de orientación a objetos y al menos experiencia básico escribiendo pruebas automáticas.</p>
+      where:
+        title: In-house y en abierto
+        text: <p>El curso se puede realizar in-house para un equipo de desarrollo o empresa concreta que quiera contratarlo. También realizaremos ediciones en abierto, si quieres consultar el calendario de próximos cursos en abierto o contactar con nosotros para un curso in-house lo puedes hacer a través del formulario al final de esa página.</p>
     intellij:
       title: Codesai. IntelliJ Guru
     code_smells_refactoring:
