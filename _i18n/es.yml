@@ -268,6 +268,39 @@ pages:
       title: Codesai. Curso de Code Smells & Refactoring
     user_stories:
       title: Curso de Historias de usuario
+      name: Historias de usuario
+      text: '<p>El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario,
+             identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.</p>
+             <p>A través de ejemplos y actividades, aprenderemos a entender el concepto de historias de usuario. Asimismo, veremos algunos smells y técnicas para enfrentarnos a su complejidad.</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de Historias de usuario
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/user-stories/#call-to-action
+      content:
+          title: Contenido
+          agenda: '<div class="topics">
+                        <div class="group"><span>1.</span> Introducción</div>
+                        <div class="group"><span>2. </span> Buenas historias de usuario</div>
+                        <div class="subgroup"><span>&bull;</span> INVEST</div>
+                        <div class="subgroup"><span>&bull;</span> Smells</div>
+                        <div class="group"><span>3. </span> Heurísticas para partir historias de usuario</div>
+                        <div class="subgroup"><span>&bull;</span> Heurísticas de alto nivel</div>
+                        <div class="subgroup"><span>&bull;</span> Heurísticas por atributos de calidad</div>
+                        <div class="subgroup"><span>&bull;</span> Heurísticas por experiencia de usuario</div>
+                        <div class="subgroup"><span>&bull;</span> Heurísticas por comportamiento</div>
+                    </div>'
+      who:
+        title: ¿Para quién está pensado?
+        text: '<p>El curso está pensado para cualquier equipo que tenga que enfrentarse a desarrollar en un entorno de entrega de valor continua</p>
+               <p>A diferencia de muchos cursos de esta temática, no está pensando únicamente para product owners. El curso ofrece valor para todos los perfiles (técnicos, negocio...), ya que las habilidades y técnicas que se adquieren aplican a varios niveles</p>'
+      consulting:
+        title: Te ayudamos en tu dominio
+        text: <p>Despues de hacer el curso podrás aplicar a tu propio contexto lo que has aprendido mediante sesiones especiales en las que trabajaremos con ejemplos a los que te enfrentas a diario (precio y duración de las sesiones a consultar).</p>
+      where:
+        title: In-house
+        text: '<p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
   publications:
     title: Codesai. Blog
     posts: Posts
