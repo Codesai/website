@@ -133,23 +133,23 @@ pages:
       tdd:
         name: Test Driven Development (TDD)
         description: La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.
-        link: /en/courses/tdd
+        link: /en/trainings/tdd
       code_smells_refactoring:
         name: Code smells & Refactoring
         description: El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.
-        link: /en/courses/refactoring
+        link: /en/trainings/refactoring
       ddd:
         name: DDD driven by test
         description: El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.
-        link: /en/courses/ddd
+        link: /en/trainings/ddd
       user_stories:
         name: Historias de usuario
         description: El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario, identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.
-        link: /en/courses/user-stories
+        link: /en/trainings/user-stories
       cd_databases:
         name: Continuous Delivery con bases de datos
         description: El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.
-        link: /en/courses/cd-databases
+        link: /en/trainings/cd-databases
     contact:
       title: ¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!
       text: <p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
@@ -205,7 +205,7 @@ pages:
         text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
                <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
       call_to_action:
-        link: /en/courses/tdd#call-to-action
+        link: /en/trainings/tdd#call-to-action
         title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
@@ -218,7 +218,7 @@ pages:
         title: ¡OK! Me interesa realizar el curso de Continuos Delivery con bases de datos
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
-        link: /en/courses/cd-databases/#call-to-action
+        link: /en/trainings/cd-databases/#call-to-action
       content:
         title: Contenidos
         day_1:
@@ -269,7 +269,7 @@ pages:
         title: ¡OK! Me interesa realizar el curso DDD driven by test
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
-        link: /en/courses/ddd/#call-to-action
+        link: /en/trainings/ddd/#call-to-action
       content:
         title: Contenidos
         day_1:
@@ -308,7 +308,7 @@ pages:
         text: <p>Si deseas iniciar el proceso de inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
         where: Remoto
-        link: /en/courses/intellij-guru/#call-to-action
+        link: /en/trainings/intellij-guru/#call-to-action
       content:
         title: Contenidos
         agenda: '<div class="topics">
@@ -359,7 +359,7 @@ pages:
         title: ¡OK! Me interesa realizar el curso de Code smells & Refactoring
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
-        link: /en/courses/refactoring/#call-to-action
+        link: /en/trainings/refactoring/#call-to-action
       content:
         title: Contenidos
         day_1:
@@ -407,7 +407,7 @@ pages:
         title: ¡OK! Me interesa realizar el curso de Historias de usuario
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
-        link: /en/courses/user-stories/#call-to-action
+        link: /en/trainings/user-stories/#call-to-action
       content:
         title: Contenido
         agenda: '<div class="topics">
@@ -904,13 +904,13 @@ urls:
   home: /en
   team: /en/#team
   clients: /en/clients/
-  courses: /en/courses/
-  tdd: /en/courses/tdd
-  ddd: /en/courses/ddd/
-  refactoring: /en/courses/refactoring/
-  user_stories: /en/courses/user-stories/
-  cd_databases: /en/courses/cd-databases/
-  intellij_guru: /en/courses/intellij-guru/
+  courses: /en/trainings/
+  tdd: /en/trainings/tdd
+  ddd: /en/trainings/ddd/
+  refactoring: /en/trainings/refactoring/
+  user_stories: /en/trainings/user-stories/
+  cd_databases: /en/trainings/cd-databases/
+  intellij_guru: /en/trainings/intellij-guru/
   blog: /en/publications/
   contact: /en/#call-to-action
   legal_advertisement: /en/legal-advertisement/

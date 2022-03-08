@@ -1,6 +1,6 @@
 environment: development
 
-languages: ["es"] # First language is default
+languages: ["es", "en"] # First language is default
 
 plugins:
   - jekyll-multiple-languages-plugin
