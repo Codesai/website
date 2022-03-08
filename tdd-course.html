@@ -20,14 +20,14 @@ permalink_en: /en/courses/tdd/
 
                     <div class="summary mobile">
                         {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
-                        {% capture discount %}{{ site.translations[site.lang].components.course_summary.call_to_action.link }}{% endcapture %}
+                        {% capture link %}{{ site.translations[site.lang].components.course_summary.call_to_action.link }}{% endcapture %}
                         {%
                             include course-summary.html
                             price='450'
                             days='2'
                             hours='16'
-                            special_discount=special_discount
-                            contact_link=discount
+                            special_discount=discount
+                            contact_link=link
                         %}
                     </div>
 
