@@ -212,12 +212,62 @@ pages:
           placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
     cd-databases:
       title: Codesai. Curso de Continuous Delivery con bases de datos
+      name: Continuous Delivery con bases de datos
+      text: '<p>El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.</p>
+             <p>A través de ejemplos y katas, aprenderemos sobre técnicas de refactoring y sobre cómo evolucionar la base de datos. Asimismo, veremos algunos smells y herramientas para enfrentarnos a entornos complicados.</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de Continuos Delivery con bases de datos
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/cd-databases/#call-to-action
+      content:
+        title: Contenidos
+        day_1:
+          title: Primer día
+          agenda: '<div class="topics">
+                      <div class="group"><span>1.</span> Desafíos y principios</div>
+                      <div class="group"><span>2. </span> Enfoques state-based y migration-based</div>
+                      <div class="group"><span>3. </span> Profundizando en el enfoque migration-based</div>
+                      <div class="subgroup"><span>&bull;</span> Tools (SQL & DSLs)</div>
+                      <div class="subgroup"><span>&bull;</span> Aplicación de migraciones</div>
+                      <div class="subgroup"><span>&bull;</span> Drifts</div>
+                      <div class="subgroup"><span>&bull;</span> Conflictos</div>
+                      <div class="subgroup"><span>&bull;</span> Manejando muchas migraciones</div>
+                      <div class="subgroup"><span>&bull;</span> Rollback vs Forward</div>
+                  </div>'
+        day_2:
+          title: Segundo día
+          agenda: '<div class="topics">
+                        <div class="group"><span>4. </span> Smells en base de datos</div>
+                        <div class="group"><span>5. </span> Concepto y flujo del refactoring</div>
+                        <div class="group"><span>6. </span> Refactors</div>
+                        <div class="group"><span>7. </span> Testing en base de datos</div>
+                        <div class="group"><span>8. </span> TDD en base de datos</div>
+                    </div>'
+      languages:
+        title: Lenguajes
+        text: '<p>En los ejercicios utilizaremos el lenguaje SQL y cualquier editor con el que te sientas cómodo, pero veremos algunos ejemplos de DSLs en PHP y Java</p>
+              <p>En cuanto al motor de base de datos (Oracle, SQLServer...), la mayoría de ejercicios son independientes pero algunos aspectos pueden depender del mismo. Ponte en contacto con nosotros e intentaremos ver cómo adaptarlo a lo que utilizas a diario.</p>'
+      requirements:
+        title: Requisitos
+        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git. Respecto al motor de base de datos se podría valorar usar un servidor compartido por cuestiones de rendimiento</p>
+               <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de un portátil a otro sin preocuparse por la privacidad de la cuenta.</p>
+               <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+      who:
+        title: ¿Para quién está pensado?
+        text: '<p>Fundamentalmente para programadores o DBAs que quieran conocer más sobre cómo evolucionar la base de datos y disponer de batería de pruebas automáticas. Y especialmente útil para entornos complejos (múltiples consumidores, lógica en db, etc)</p>'
+      where:
+        title: In-house
+        text: '<p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
     ddd:
       title: Codesai. Curso DDD Driven by test
     intellij:
       title: Codesai. IntelliJ Guru
     code_smells_refactoring:
       title: Codesai. Curso de Code Smells & Refactoring
+    user_stories:
+      title: Curso de Historias de usuario
   publications:
     title: Codesai. Blog
     posts: Posts
