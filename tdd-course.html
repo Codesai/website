@@ -1,7 +1,7 @@
 ---
 title: pages.courses.tdd.title
 permalink: /curso-de-tdd/
-permalink_en: /en/courses/tdd/
+permalink_en: /courses/tdd/
 ---
 
 {% include head.html %}
@@ -67,13 +67,15 @@ permalink_en: /en/courses/tdd/
                     </section>
                 </div>
                 <div class="summary desktop">
+                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                    {% capture link %}{{ site.translations[site.lang].pages.courses.tdd.call_to_action.link }}{% endcapture %}
                     {%
                         include course-summary.html
                         price='450'
                         days='2'
                         hours='16'
-                        special_discount='Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología'
-                        contact_link='/curso-de-tdd/#call-to-action'
+                        special_discount=discount
+                        contact_link=link
                     %}
                 </div>
             </div>
@@ -91,9 +93,9 @@ permalink_en: /en/courses/tdd/
         <div class="testimonials">
 <!--            <div class="title"><span>// </span>Lo que dicen de nuestro curso</div>-->
         </div>
-        {% capture title %}{{ site.translations[site.lang].pages.courses.tdd.form.title }}{% endcapture %}
-        {% capture text %}{{ site.translations[site.lang].pages.courses.tdd.form.text }}{% endcapture %}
-        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.tdd.form.placeholder }}{% endcapture %}
+        {% capture title %}{{ site.translations[site.lang].pages.courses.tdd.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.courses.tdd.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.tdd.call_to_action.placeholder }}{% endcapture %}
         {% include components/call-to-action.html
             title=title
             text=text

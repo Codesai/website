@@ -204,12 +204,11 @@ pages:
         title: In-house y en abierto
         text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
                <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
-      form:
-          call_to_action:
-            link: /curso-de-tdd/#call-to-action
-          title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
-          text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-          placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+      call_to_action:
+        link: /curso-de-tdd/#call-to-action
+        title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
     cd-databases:
       title: Codesai. Curso de Continuous Delivery con bases de datos
       name: Continuous Delivery con bases de datos
@@ -879,6 +878,9 @@ components:
     iva_excluded: I.V.A. no incluido.
     button: Ver más información
   course_summary:
+    title: Información
+    open_dates:
+      title: Próximas fechas en abierto
     special_discount: Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología
     hours: horas
     default_modality_text: Presencial o remoto

@@ -1,12 +1,12 @@
 <div class="course-summary">
     <h3>
         <img src="/assets/icons/teaching.svg" alt="teaching logo">
-        Información
+        {% translate components.course_summary.title %}
     </h3>
     <div class="padded-area">
         {% if include.open_edition_dates %}
         <div class="open-course">
-            <h2 class="announcement">Próximas fechas en abierto</h2>
+            <h2 class="announcement">{% translate components.course_summary.open_dates.title %}</h2>
             <p class="dates">{{ include.open_edition_dates }}</p>
             <p class="place">{{ include.open_edition_place }}</p>
             <p class="detail">{% if include.open_edition_message %} {{ include.open_edition_message }}{% endif %}</p>

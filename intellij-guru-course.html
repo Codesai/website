@@ -55,11 +55,12 @@ permalink_en: /courses/intellij-guru/
                 </div>
                 <div class="summary desktop">
                     {% capture link %}{{ site.translations[site.lang].pages.courses.intellij.call_to_action.link }}{% endcapture %}
+                    {% capture where %}{{ site.translations[site.lang].pages.courses.intellij.call_to_action.where }}{% endcapture %}
                     {%
                         include course-summary.html
                         price='290'
                         hours='8'
-                        place='Remoto'
+                        place=where
                         contact_link=link
                     %}
                     <img class="jb-training-logo" src="/img/partners/jetbrains-training-partner.svg" alt="JetBrains">
