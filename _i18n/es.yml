@@ -302,6 +302,55 @@ pages:
         text: <p>El curso se puede realizar in-house para un equipo de desarrollo o empresa concreta que quiera contratarlo. También realizaremos ediciones en abierto, si quieres consultar el calendario de próximos cursos en abierto o contactar con nosotros para un curso in-house lo puedes hacer a través del formulario al final de esa página.</p>
     intellij:
       title: Codesai. IntelliJ Guru
+      name: IntelliJ Guru
+      text: <p>El objetivo de este curso es que saques el máximo provecho a las herramientas de desarrollo de JetBrains, partiendo de IntelliJ como entorno de aprendizaje. A través de ejemplos y actividades, iremos descubriendo muchas de las funcionalidades que nos ofrece.</p>
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de IntelliJ Guru
+        text: <p>Si deseas iniciar el proceso de inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        where: Remoto
+        link: /cursos/intellij-guru/#call-to-action
+      content:
+        title: Contenidos
+        agenda: '<div class="topics">
+                    <div class="group"><span>1.</span> Introducción y filosofía al refactoring automático</div>
+                    <div class="subgroup"><span>&bull;</span> Shortcuts (atajos)</div>
+                    <div class="subgroup"><span>&bull;</span> Live templates</div>
+                    <div class="subgroup"><span>&bull;</span> Navegar por el código</div>
+                    <div class="subgroup"><span>&bull;</span> Catálogo de refactorings</div>
+                    <div class="subgroup"><span>&bull;</span> Asistentes de entrenamiento</div>
+                    <div class="group"><span>2. </span> Refactorings automáticos</div>
+                    <div class="subgroup"><span>&bull;</span> Refactorings clásicos</div>
+                    <div class="subgroup"><span>&bull;</span> Refactoring a patrones</div>
+                    <div class="subgroup"><span>&bull;</span> Análisis de código</div>
+                    <div class="group"><span>3. </span> Testing</div>
+                    <div class="subgroup"><span>&bull;</span> Scratch files</div>
+                    <div class="subgroup"><span>&bull;</span> Http requests</div>
+                    <div class="subgroup"><span>&bull;</span> Debugging</div>
+                    <div class="subgroup"><span>&bull;</span> Integración con frameworks de testing</div>
+                    <div class="subgroup"><span>&bull;</span> Plugins</div>
+                    <div class="subgroup"><span>&bull;</span> Env files</div>
+                    <div class="subgroup"><span>&bull;</span> Integración con Docker</div>
+                    <div class="group"><span>4. </span> Integración con herramientas de build</div>
+                    <div class="subgroup"><span>&bull;</span> Maven</div>
+                    <div class="subgroup"><span>&bull;</span> Gradle</div>
+                    <div class="group"><span>5. </span> Control de versiones</div>
+                    <div class="subgroup"><span>&bull;</span> Histórico local</div>
+                    <div class="subgroup"><span>&bull;</span> Hooks</div>
+                    <div class="subgroup"><span>&bull;</span> Resolución de conflictos</div>
+                    <div class="group"><span>6. </span> Pairing remoto</div>
+                    <div class="group"><span>7. </span> Integración con Spring</div>
+                </div>'
+      who:
+        title: ¿Para quién está pensado?
+        text: '<p>El curso está pensado para cualquier equipo que quiera exprimir al máximo cualquier herramienta de desarrollo de JetBrains.</p>
+               <p>En el curso usaremos principalmente IntelliJ IDEA, pero muchas de las funcionalidades que veremos están disponibles en los otros IDEs de JetBrains (WebStorm, PhpStorm, RubyMine, Rider, etc).</p>'
+      where:
+        title: Modalidades
+        text: '<p>El curso se imparte in-house (cerrado para la empresa que lo contrata) o en abierto en fechas señaladas.</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
+               <p class="unicode">Durante el año iremos anunciando fechas de ediciones en abierto a las que podrás apuntarte en el formulario de abajo.</p>'
+
     code_smells_refactoring:
       title: Codesai. Curso de Code Smells & Refactoring
       name: Code smells & Refactoring
