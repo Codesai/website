@@ -266,6 +266,51 @@ pages:
       title: Codesai. IntelliJ Guru
     code_smells_refactoring:
       title: Codesai. Curso de Code Smells & Refactoring
+      name: Code smells & Refactoring
+      text: '<p>El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.</p>
+             <p>A través de ejemplos y katas, aprenderemos sobre code smells, técnicas de refactoring y  principios de diseño orientado a objetos. Asimismo, veremos el papel fundamental del refactoring en el desarrollo de software, y reflexionaremos sobre la deuda técnica, los ciclos de refactoring y la economía del refactoring (cómo hacerlo de manera responsable).</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de Code smells & Refactoring
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/refactoring/#call-to-action
+      content:
+        title: Contenidos
+        day_1:
+          title: Primer día
+          agenda: '<div class="topics">
+                      <div class="group"><span>1.</span> Introducción</div>
+                      <div class="group"><span>2. </span> Code smells y refactors relacionados</div>
+                      <div class="subgroup"><span>&bull;</span> Code smells en clases</div>
+                      <div class="subgroup"><span>&bull;</span> Code smells entre clases</div>
+                  </div>'
+        day_2:
+          title: Segundo día
+          agenda: '<div class="topics">
+                    <div class="group"><span>3. </span> Diseño lo suficientemente bueno</div>
+                    <div class="group"><span>4. </span>Refactors principales y patrones de refactoring</div>
+                 </div>'
+        day_3:
+          title: Tercer día
+          agenda: '<div class="topics">
+                    <div class="group"><span>5. </span>Arquitectura hexagonal</div>
+                    <div class="group"><span>6. </span>Flujos de trabajo y economía del refactor</div>
+                 </div>'
+      languages:
+        title: Lenguajes
+        text: <p>Generalmente, usamos Java porque es el lenguaje en el que la mayor parte de la gente se defiende, pero en el curso se pueden usar también otros lenguajes, eso no es problema. Si Java / IntelliJ no es para ti un problema, será la opción por defecto.</p>
+      requirements:
+        title: Requisitos
+        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
+               <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
+               <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+      who:
+        title: ¿Para quién está pensado?
+        text: <p>Fundamentalmente para programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas.</p>
+      where:
+        title: In-house y en abierto
+        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
     user_stories:
       title: Curso de Historias de usuario
       name: Historias de usuario
