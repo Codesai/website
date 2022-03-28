@@ -37,22 +37,21 @@ The users repository is at the boundary of our domain. It's a *port* that *allow
 
 Focusing on the responsibilities results in more stable interfaces. As I heard [Sandi Metz](https://sandimetz.com/) say once:
 
-<quote>"You can trade the unpredictability of what others do for the constancy of what you want."</quote>
+<quote>"You can trade the unpredictability of what others do for the constancy of what you want."</quote><a href="#nota1"><sup>[1]</sup></a>
+which is a very nice way to explain the *"Program to an interface, not an implementation"*</quote><a href="#nota2"><sup>[2]</sup></a> design principle.
 
 
-which is a very nice way to explain the *"Program to Interfaces, not implementations"* design principle.
+*How those responsibilities are carried out* is something that each different implementation (or *adapter*) of the users repository *port* is responsible for. However, the terms of *the contract that its clients rely on, must be respected by all of the adapters*. They must play their *roles*. In this sense, *any adapter must be substitutable by any other without the clients being affected*, (yes, you're right, it's the [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)).
 
-*How those responsibilities are carried out* is something that each different implementation (or *adapter*) of the users repository *port* is responsible for. However, the terms of *the contract that its clients rely on, must be respected by all of the adapters*. They must play their *roles*. In this sense, *any adapter must be substitutable by any other without the clients being affected*, (yes, you're right, it's the [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)). 
+<h2>Role or contract tests.</h2>
 
-<h2>Role or contract tests.</h2> 
+The only way to ensure this *substitutability* is by testing each adapter to check if it also *respects the terms of the contract*, i. e. it *fulfills its role*. Those tests would ensure that the Liskov substitution principle is respected<a href="#nota3"><sup>[3]</sup></a>.
 
-The only way to ensure this *substitutability* is by testing each adapter to check if it also *respects the terms of the contract*, i. e. it *fulfills its role*. Those tests would ensure that the Liskov substitution principle is respected<a href="#nota1"><sup>[1]</sup></a>.
-
-I will use the term *role test* used by Sandi Metz because *contract test* has become overloaded<a href="#nota2"><sup>[2]</sup></a>.
+I will use the term *role test* used by Sandi Metz because *contract test* has become overloaded<a href="#nota4"><sup>[4]</sup></a>.
 
 Ok, but how can we test that all the possible implementations of the user repository respect the contract without repeating a bunch of test code? In the following posts we’ll answer this question in several languages.
 
-<h2>Using shared examples in RSpec to write role tests.</h2> 
+<h2>Using shared examples in RSpec to write role tests.</h2>
 
 There’s one very readable way to do it in Ruby using [RSpec](https://rspec.info/).
 
@@ -72,21 +71,25 @@ This solution is very readable and reduces a lot of duplication in the tests. Ho
 
 <h2>Notes.</h2>
 
-<a name="nota1"></a> This is similar to [J. B. Rainsberger](http://www.jbrains.ca/)'s idea of *contract tests* mentioned in his [Integrated Tests Are A Scam talk](https://vimeo.com/80533536) and also to [Jason Gorman](http://codemanship.co.uk/parlezuml/blog/)'s idea of [polymorphic testing](http://codemanship.co.uk/parlezuml/blog/?postid=1183).
+<a name="nota1"></a> You can find a slightly different wording of it in her great talk [Less - The Path to Better Design](https://vimeo.com/26330100)  at 29’48’’.
 
-<a name="nota2"></a> For example Martin Fowler uses contract test to define a different concept in [Contract Test](https://martinfowler.com/bliki/ContractTest.html).
+<a name="nota2"></a> Presented in chapter one of [Design Patterns: Elements of Reusable Object-Oriented Software](https://en.wikipedia.org/wiki/Design_Patterns) book.
+
+<a name="nota3"></a> This is similar to [J. B. Rainsberger](http://www.jbrains.ca/)'s idea of *contract tests* mentioned in his [Integrated Tests Are A Scam talk](https://vimeo.com/80533536) and also to [Jason Gorman](http://codemanship.co.uk/parlezuml/blog/)'s idea of [polymorphic testing](http://codemanship.co.uk/parlezuml/blog/?postid=1183).
+
+<a name="nota4"></a> For example Martin Fowler uses contract test to define a different concept in [Contract Test](https://martinfowler.com/bliki/ContractTest.html).
 
 <h2>References.</h2>
 
 * [Practical Object-Oriented Design, An Agile Primer Using Ruby](https://www.poodr.com/), [Sandi Metz](https://sandimetz.com/)
 * [Defining Object-Oriented Design](https://www.youtube.com/watch?v=HGT8bKSS6XQ), [Sandi Metz](https://sandimetz.com/)
 * [Less - The Path to Better Design](https://vimeo.com/26330100), [Sandi Metz](https://sandimetz.com/)
+* [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.goodreads.com/book/show/85009.Design_Patterns), [Erich Gamma](https://en.wikipedia.org/wiki/Erich_Gamma), [Ralph Johnson](http://software-pattern.org/Author/29), [John Vlissides](https://en.wikipedia.org/wiki/John_Vlissides), [Richard Helm](https://wiki.c2.com/?RichardHelm)
 * [Liskov Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
 * [Integrated Tests Are A Scam talk](https://vimeo.com/80533536), [J. B. Rainsberger](http://www.jbrains.ca/)
 * [101 Uses For Polymorphic Testing (Okay... Three)](http://codemanship.co.uk/parlezuml/blog/?postid=1183), [Jason Gorman](http://codemanship.co.uk/parlezuml/blog/)
 
 
+Photo from [Anna Rye in Pexels](https://www.pexels.com/es-es/@anna-rye-70977670?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 
-
-Foto de [Anna Rye en Pexels](https://www.pexels.com/es-es/@anna-rye-70977670?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 
