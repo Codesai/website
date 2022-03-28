@@ -10,6 +10,7 @@ categories:
 - DDD
 - Naming
 - Good Practices
+- Types
 - Interfaces
 small_image: posts/restringiendo-interfaces.png
 author: Miguel Viera

@@ -6,10 +6,13 @@ type: post
 categories:
 - Refactoring
 - Design
+- Design Patterns
 - Kotlin
 - DDD
 - Naming
 - Good Practices
+- SOLID
+- Types
 - Interfaces
 small_image: posts/restringiendo-interfaces.png
 author: Miguel Viera
@@ -135,13 +138,13 @@ opción menos aparente, pero que más se adapta al problema. **Pensar en los lí
 
 Espero que te haya gustado el post y que me des feedback de qué te ha parecido.
 
-
 **Referencias**:
 
-1. [Refactoring. Martin Fowler](https://martinfowler.com/books/refactoring.html). Mencionados en el post: `Refactoring to Polymorphism y Data Clump`.
-2. [Design Patterns. The "Gang of Four": Erich Gamma, Richard Helm, Ralph Johnson. John Vlissides](https://www.amazon.es/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8). El mencionado en el post `State Pattern`.
-3. [About Connascence. Codesai](https://codesai.com/2017/01/about-connascence).
-4. [Examples lists in TDD. Codesai](https://codesai.com/2018/03/examples-lists-in-tdd).
-5. [Single Responsibility ¿Principle?. The Big Branch Theory](https://www.thebigbranchtheory.dev/post/single-responsablity/).
-6. [Code Smells. Martin Fowler](https://martinfowler.com/bliki/CodeSmell.html).  
-7. [Data clumps, primitive obsession and hidden tuples. Codesai](https://codesai.com/2018/08/hidden-tuples).
+1. [Refactoring](https://martinfowler.com/books/refactoring.html), [Martin Fowler](https://martinfowler.com/). Mencionados en el post: `Refactoring to Polymorphism y Data Clump`.
+2. [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.goodreads.com/book/show/85009.Design_Patterns), [Erich Gamma](https://en.wikipedia.org/wiki/Erich_Gamma), [Ralph Johnson](http://software-pattern.org/Author/29), [John Vlissides](https://en.wikipedia.org/wiki/John_Vlissides), [Richard Helm](https://wiki.c2.com/?RichardHelm). El mencionado en el post `State Pattern`.
+3. [About Connascence](https://codesai.com/2017/01/about-connascence), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
+4. [Examples lists in TDD](https://codesai.com/2018/03/examples-lists-in-tdd), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
+5. [Single Responsibility ¿Principle?](https://www.thebigbranchtheory.dev/post/single-responsablity/), [The Big Branch Theory podcasts](https://www.thebigbranchtheory.dev/).
+6. [Code Smells](https://martinfowler.com/bliki/CodeSmell.html), [Martin Fowler](https://martinfowler.com/).  
+7. [Data clumps, primitive obsession and hidden tuples](https://codesai.com/2018/08/hidden-tuples), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
+8. [Refactoring Kata Tennis to State Pattern](http://garajeando.blogspot.com/2012/11/refactoring-kata-tennis-to-state-pattern.html), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
