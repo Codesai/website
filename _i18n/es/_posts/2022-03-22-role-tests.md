@@ -38,14 +38,15 @@ The users repository is at the boundary of our domain. It's a *port* that *allow
 Focusing on the responsibilities results in more stable interfaces. As I heard [Sandi Metz](https://sandimetz.com/) say once:
 
 <quote>"You can trade the unpredictability of what others do for the constancy of what you want."</quote><a href="#nota1"><sup>[1]</sup></a>
-which is a very nice way to explain the *"Program to an interface, not an implementation"*</quote><a href="#nota2"><sup>[2]</sup></a> design principle.
 
+
+which is a very nice way to explain the *"Program to an interface, not an implementation"*</quote><a href="#nota2"><sup>[2]</sup></a> design principle.
 
 *How those responsibilities are carried out* is something that each different implementation (or *adapter*) of the users repository *port* is responsible for. However, the terms of *the contract that its clients rely on, must be respected by all of the adapters*. They must play their *roles*. In this sense, *any adapter must be substitutable by any other without the clients being affected*, (yes, you're right, it's the [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)).
 
 <h2>Role or contract tests.</h2>
 
-The only way to ensure this *substitutability* is by testing each adapter to check if it also *respects the terms of the contract*, i. e. it *fulfills its role*. Those tests would ensure that the Liskov substitution principle is respected<a href="#nota3"><sup>[3]</sup></a>.
+The only way to ensure this *substitutability* is by testing each adapter to check if it also *respects the terms of the contract*, i. e. it *fulfils its role*. Those tests would ensure that the *Liskov substitution principle* is respected<a href="#nota3"><sup>[3]</sup></a>.
 
 I will use the term *role test* used by Sandi Metz because *contract test* has become overloaded<a href="#nota4"><sup>[4]</sup></a>.
 
@@ -67,7 +68,6 @@ Then for each implementation of the users repository you just need to include th
 You could still add any other test that only has to do with a given implementation in its specific test.
 
 This solution is very readable and reduces a lot of duplication in the tests. However, the idea of *contract or role tests* is not only important from the point of view of avoiding duplication in test code. In dynamic languages, such as Ruby, they also serve as a mean to *highlight and document the role of duck types* that might otherwise go unnoticed because there is no interface construct.
-
 
 <h2>Notes.</h2>
 
@@ -91,5 +91,4 @@ This solution is very readable and reduces a lot of duplication in the tests. Ho
 
 
 Photo from [Anna Rye in Pexels](https://www.pexels.com/es-es/@anna-rye-70977670?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
-
 
