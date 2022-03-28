@@ -13,7 +13,7 @@ categories:
   - Test doubles
 author: Manuel Rivero
 twitter: trikitrok
-small_image:
+small_image: small_contract_tests.jpg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com/2015/08/contract-tests-for-interfaces.html
 ---
@@ -37,7 +37,8 @@ The users repository is at the boundary of our domain. It's a *port* that *allow
 
 Focusing on the responsibilities results in more stable interfaces. As I heard [Sandi Metz](https://sandimetz.com/) say once:
 
-*"You can trade the unpredictability of what others do for the constancy of what you want."*
+<quote>"You can trade the unpredictability of what others do for the constancy of what you want."</quote>
+
 
 which is a very nice way to explain the *"Program to Interfaces, not implementations"* design principle.
 
@@ -74,4 +75,18 @@ This solution is very readable and reduces a lot of duplication in the tests. Ho
 <a name="nota1"></a> This is similar to [J. B. Rainsberger](http://www.jbrains.ca/)'s idea of *contract tests* mentioned in his [Integrated Tests Are A Scam talk](https://vimeo.com/80533536) and also to [Jason Gorman](http://codemanship.co.uk/parlezuml/blog/)'s idea of [polymorphic testing](http://codemanship.co.uk/parlezuml/blog/?postid=1183).
 
 <a name="nota2"></a> For example Martin Fowler uses contract test to define a different concept in [Contract Test](https://martinfowler.com/bliki/ContractTest.html).
+
+<h2>References.</h2>
+
+* [Practical Object-Oriented Design, An Agile Primer Using Ruby](https://www.poodr.com/), [Sandi Metz](https://sandimetz.com/)
+* [Defining Object-Oriented Design](https://www.youtube.com/watch?v=HGT8bKSS6XQ), [Sandi Metz](https://sandimetz.com/)
+* [Less - The Path to Better Design](https://vimeo.com/26330100), [Sandi Metz](https://sandimetz.com/)
+* [Liskov Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
+* [Integrated Tests Are A Scam talk](https://vimeo.com/80533536), [J. B. Rainsberger](http://www.jbrains.ca/)
+* [101 Uses For Polymorphic Testing (Okay... Three)](http://codemanship.co.uk/parlezuml/blog/?postid=1183), [Jason Gorman](http://codemanship.co.uk/parlezuml/blog/)
+
+
+
+
+Foto de [Anna Rye en Pexels](https://www.pexels.com/es-es/@anna-rye-70977670?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 
