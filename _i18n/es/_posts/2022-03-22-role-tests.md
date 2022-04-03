@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Role tests for implementation of interfaces discovered through TDD
-date: 2022-03-22 18:30:00.000000000 +01:00
+date: 2022-04-03 18:30:00.000000000 +01:00
 type: post
 published: true
 status: publish
