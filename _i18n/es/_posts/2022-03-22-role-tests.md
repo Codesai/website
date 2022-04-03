@@ -21,7 +21,7 @@ cross_post_url: http://garajeando.blogspot.com/2015/08/contract-tests-for-interf
 
 <h2>Introduction.</h2>
 
-Working through the first three iterations of a [workshop's exercise](https://github.com/aleasoluciones/pycones2014), we produced several [application services](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/) that at some point collaborated with a users repository](http://martinfowler.com/eaaCatalog/repository.html) that we hadn't yet created so we used a [test double](https://martinfowler.com/bliki/TestDouble.html) in its place in their tests.
+Working through the first three iterations of a [workshop's exercise](https://github.com/aleasoluciones/pycones2014), we produced several [application services](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/) that at some point collaborated with a users [repository](http://martinfowler.com/eaaCatalog/repository.html) that we hadn't yet created so we used a [test double](https://martinfowler.com/bliki/TestDouble.html) in its place in their tests.
 
 These are the tests:
 
@@ -38,10 +38,10 @@ The users repository is at the boundary of our domain. It's a [*port*](https://a
 
 Focusing on the responsibilities results in more stable interfaces. As I heard [Sandi Metz](https://sandimetz.com/) say once:
 
-<quote>"You can trade the unpredictability of what others do for the constancy of what you want."</quote><a href="#nota2"><sup>[2]</sup></a>
+*"You can trade the unpredictability of what others do for the constancy of what you want."*<a href="#nota2"><sup>[2]</sup></a>
 
 
-which is a very nice way to explain the *"Program to an interface, not an implementation"*</quote><a href="#nota3"><sup>[3]</sup></a> design principle.
+which is a very nice way to explain the *"Program to an interface, not an implementation"*<a href="#nota3"><sup>[3]</sup></a> design principle.
 
 *How those responsibilities are carried out* is something that each different implementation (or *adapter*) of the users repository *port* is responsible for. However, the terms of *the contract that its clients rely on, must be respected by all of the adapters*. They must play their *roles*. In this sense, *any adapter must be substitutable by any other without the clients being affected*, (yes, you're right, it's the [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)).
 
