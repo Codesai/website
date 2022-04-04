@@ -72,7 +72,7 @@ This solution is very readable and reduces a lot of duplication in the tests. Ho
 
 <h2>Notes.</h2>
 
-<a name="nota1"></a> Read more about objects communicating by sending and receiving messages in [Alan Kays Definition Of Object Oriented](https://wiki.c2.com/?AlanKaysDefinitionOfObjectOriented)
+<a name="nota1"></a> Read more about objects communicating by sending and receiving messages in [Alan Kay's Definition Of Object Oriented](https://wiki.c2.com/?AlanKaysDefinitionOfObjectOriented)
 
 <a name="nota2"></a> You can find a slightly different wording of it in her great talk [Less - The Path to Better Design](https://vimeo.com/26330100)  at 29’48’’.
 
