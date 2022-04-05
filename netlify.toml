@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/year/:month/:day/:slug "
+  to = "/posts/year/:month/:day/:slug "
+  status = 301
+  force = true

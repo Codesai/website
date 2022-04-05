@@ -19,7 +19,7 @@ title: Codesai
 url: https://www.codesai.com
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
-permalink: :year/:month/:title
+permalink: /posts/:year/:month/:title
 
 # Build settings
 markdown: kramdown
