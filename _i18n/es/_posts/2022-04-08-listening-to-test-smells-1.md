@@ -152,14 +152,22 @@ a function or a class to behave in a different way depending on its value. This 
 
 <h2>References.</h2>
 
-[The Deep Synergy Between Testability and Good Design](https://vimeo.com/15007792), [Michael Feathers](https://michaelfeathers.silvrback.com/)
-[Flag Argument](https://martinfowler.com/bliki/FlagArgument.html), [Martin Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer))
-[Code pollution](https://enterprisecraftsmanship.com/posts/code-pollution/), [Vladimir Khorikov](https://twitter.com/vkhorikov?lang=en)
-Decorator Pattern
-Singleton Pattern
-Kent Beck hablando de cómo tratar singletons en TDD By Example
-Guice https://github.com/google/guice
-Guice Scopes https://github.com/google/guice/wiki/Scopes
+- [The Deep Synergy Between Testability and Good Design](https://vimeo.com/15007792),
+[Michael Feathers](https://michaelfeathers.silvrback.com/)
+- [Flag Argument](https://martinfowler.com/bliki/FlagArgument.html), [Martin Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer))
+- [Code pollution](https://enterprisecraftsmanship.com/posts/code-pollution/), [Vladimir Khorikov](https://twitter.com/vkhorikov?lang=en)
+- [Guice](https://github.com/google/guice)
+- [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
+- [Singleton Pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+- [Guice Scopes](https://github.com/google/guice/wiki/Scopes)
+- Kent Beck hablando de cómo tratar singletons -> sale en Refactoring to Patterns en los refactorings relacionados con Singleton.
+- [Why Singletons Are Controversial](https://code.google.com/archive/p/google-singleton-detector/wikis/WhySingletonsAreControversial.wiki)
+- [Clean Code Talks - Global State and Singletons
+](https://testing.googleblog.com/2008/11/clean-code-talks-global-state-and.html), [Miško Hevery](http://misko.hevery.com/about/)
+
+
+
+
 
 
 
