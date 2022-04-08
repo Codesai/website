@@ -73,15 +73,15 @@ This solution is very readable and reduces a lot of duplication in the tests. Ho
 
 <h2>Notes.</h2>
 
-<a name="nota1"></a> Read more about objects communicating by sending and receiving messages in [Alan Kay's Definition Of Object Oriented](https://wiki.c2.com/?AlanKaysDefinitionOfObjectOriented)
+<a name="nota1"></a> [1] Read more about objects communicating by sending and receiving messages in [Alan Kay's Definition Of Object Oriented](https://wiki.c2.com/?AlanKaysDefinitionOfObjectOriented)
 
-<a name="nota2"></a> You can find a slightly different wording of it in her great talk [Less - The Path to Better Design](https://vimeo.com/26330100)  at 29’48’’.
+<a name="nota2"></a> [2] You can find a slightly different wording of it in her great talk [Less - The Path to Better Design](https://vimeo.com/26330100)  at 29’48’’.
 
-<a name="nota3"></a> Presented in chapter one of [Design Patterns: Elements of Reusable Object-Oriented Software](https://en.wikipedia.org/wiki/Design_Patterns) book.
+<a name="nota3"></a> [3] Presented in chapter one of [Design Patterns: Elements of Reusable Object-Oriented Software](https://en.wikipedia.org/wiki/Design_Patterns) book.
 
-<a name="nota4"></a> This is similar to [J. B. Rainsberger](http://www.jbrains.ca/)'s idea of *contract tests* mentioned in his [Integrated Tests Are A Scam talk](https://vimeo.com/80533536) and also to [Jason Gorman](http://codemanship.co.uk/parlezuml/blog/)'s idea of [polymorphic testing](http://codemanship.co.uk/parlezuml/blog/?postid=1183).
+<a name="nota4"></a> [4] This is similar to [J. B. Rainsberger](http://www.jbrains.ca/)'s idea of *contract tests* mentioned in his [Integrated Tests Are A Scam talk](https://vimeo.com/80533536) and also to [Jason Gorman](http://codemanship.co.uk/parlezuml/blog/)'s idea of [polymorphic testing](http://codemanship.co.uk/parlezuml/blog/?postid=1183).
 
-<a name="nota5"></a> For example [Martin Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)) uses contract test to define a different concept in [Contract Test](https://martinfowler.com/bliki/ContractTest.html).
+<a name="nota5"></a> [5] For example [Martin Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)) uses contract test to define a different concept in [Contract Test](https://martinfowler.com/bliki/ContractTest.html).
 
 <h2>References.</h2>
 
