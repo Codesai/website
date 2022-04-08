@@ -10,6 +10,7 @@ categories:
   - Object-Oriented Design
   - Design Patterns
   - Refactoring
+  - Test Smells
   - Test Doubles
 small_image: black-and-white-keys-music-534283.jpg
 author: Manuel Rivero

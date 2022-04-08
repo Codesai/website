@@ -10,6 +10,7 @@ categories:
   - Test Driven Development
   - Contract testing
   - Role testing
+  - Object-Oriented Design  
   - Polymorphic testing
   - Test doubles
 author: Manuel Rivero
@@ -80,7 +81,7 @@ This solution is very readable and reduces a lot of duplication in the tests. Ho
 
 <a name="nota4"></a> This is similar to [J. B. Rainsberger](http://www.jbrains.ca/)'s idea of *contract tests* mentioned in his [Integrated Tests Are A Scam talk](https://vimeo.com/80533536) and also to [Jason Gorman](http://codemanship.co.uk/parlezuml/blog/)'s idea of [polymorphic testing](http://codemanship.co.uk/parlezuml/blog/?postid=1183).
 
-<a name="nota5"></a> For example Martin Fowler uses contract test to define a different concept in [Contract Test](https://martinfowler.com/bliki/ContractTest.html).
+<a name="nota5"></a> For example [Martin Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)) uses contract test to define a different concept in [Contract Test](https://martinfowler.com/bliki/ContractTest.html).
 
 <h2>References.</h2>
 
