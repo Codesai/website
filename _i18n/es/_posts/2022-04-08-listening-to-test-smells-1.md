@@ -153,18 +153,6 @@ Notice the factory method that returns a unique instance of the `GalleryAdsRepos
 No introduce problemas de testeabilidad en otras clases porque esta única instancia es inyectada por constructor en todos las clases que la necesitan como colaboradora.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <h2>Conclusions.</h2>
 
 We show a recent example we found working for a client that illustrates how testability problems may usually point, if we listen to them, to the detection of underlying design problems. In this case the problems in the test were pointing to a lack of cohesion in the production code that was being tested. The original class had too many responsibilities.
@@ -198,12 +186,10 @@ a function or a class to behave in a different way depending on its value. This 
 
 From The Clean Code Talks - "Global State and Singletons":
 
-08:30 All of your test flakiness will come from some form of uncontrolled global state. 10:20 Singleton with capital ’S’. Refers to the design pattern where the Singleton has a private constructor and has a global instance variable. Lowercase ’s’ singleton means I only have a single instance of something because I only called the new operator once. 11:44 Singleton pattern is bad because it introduces potentially infinite global variables. 13:00 If global variables are bad… how can Singletons be good? (They can't & aren't good.) 15:10 How do I assert that a method in my class calls another method on a singleton? You can’t. There’s no seams. Instead, you need to instantiate the class under test and the instantiation of its dependencies. 18:54 Deceptive API. Singletons hide the details. There’s hidden dependencies. You can have unexpected side effects. 25:00 Dependency injection orders code naturally. A class will explicitly declare its dependencies. And it enforces correct order of method calls/setup. 29:10 Review: - Global state is the root of 90% of your testing problems - Global state can’t be controlled by tests - Singleton pattern is just global state Q&A 32:00 Q: Without a Singleton I have to pass a dependency all the way down a long chain and that seems excessive. Isn’t that bad? A: That’s a myth. Let’s say you have a database and you instantiate it all the way in your main method. Wouldn’t you have to then pass it all the way down? No you don’t. You need to change the way you structure your code. You probably mix object instantiation with business logic. Instead, you should have a factory that knows how to create and wire up all the dependencies. 36:28 Q: Isn’t a ‘House’ factory inconvenient because then you have to pass thousands of things into the method? A: If House needs 1000 things then your house has a design problem because it has too many responsibilities. You need to decompose and re-structure your classes.
+08:30 All of your test flakiness will come from some form of uncontrolled global state. 10:20 Singleton with capital ’S’. Refers to the design pattern where the Singleton has a private constructor and has a global instance variable. Lowercase ’s’ singleton means I only have a single instance of something because I only called the new operator once. 11:44 Singleton pattern is bad because it introduces potentially infinite global variables. 13:00 If global variables are bad… how can Singletons be good? (They can't & aren't good.) 15:10 How do I assert that a method in my class calls another method on a singleton? You can’t. There’s no seams. Instead, you need to instantiate the class under test and the instantiation of its dependencies. 18:54 Deceptive API. Singletons hide the details. There’s hidden dependencies. You can have unexpected side effects. 25:00 Dependency injection orders code naturally. A class will explicitly declare its dependencies. And it enforces correct order of method calls/setup. 29:10 Review: - Global state is the root of 90% of your testing problems https://www.pexels.com- Global state can’t be controlled by tests - Singleton pattern is just global state Q&A 32:00 Q: Without a Singleton I have to pass a dependency all the way down a long chain and that seems excessive. Isn’t that bad? A: That’s a myth. Let’s say you have a database and you instantiate it all the way in your main method. Wouldn’t you have to then pass it all the way down? No you don’t. You need to change the way you structure your code. You probably mix object instantiation with business logic. Instead, you should have a factory that knows how to create and wire up all the dependencies. 36:28 Q: Isn’t a ‘House’ factory inconvenient because then you have to pass thousands of things into the method? A: If House needs 1000 things then your house has a design problem because it has too many responsibilities. You need to decompose and re-structure your classes.
 
+Foto from [cottonbro](https://www.pexels.com/es-es/@cottonbro/) in [Pexels](https://www.pexels.com).
 
-
-
-Photo from blabla
 
 
 
