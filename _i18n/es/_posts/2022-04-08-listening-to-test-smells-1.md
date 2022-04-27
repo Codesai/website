@@ -186,19 +186,17 @@ a function or a class to behave in a different way depending on its value. This 
 - [Growing Object-Oriented Software, Guided by Tests](https://www.goodreads.com/en/book/show/4268826-growing-object-oriented-software-guided-by-tests), [Steve Freeman](https://twitter.com/sf105?lang=en), [Nat Pryce](http://www.natpryce.com/articles.html)
 - [The Deep Synergy Between Testability and Good Design](https://www.youtube.com/watch?v=4cVZvoFGJTU),
 [Michael Feathers](https://michaelfeathers.silvrback.com/)
-- [Design Patterns Explained: A New Perspective on Object-Oriented Design](https://www.goodreads.com/book/show/85021.Design_Patterns_Explained), Alan Shalloway, [James R. Trott](https://www.semanticscholar.org/author/James-R.-Trott/46648275)
+- [Design Patterns Explained: A New Perspective on Object-Oriented Design](https://www.goodreads.com/book/show/85021.Design_Patterns_Explained), [Alan Shalloway](https://twitter.com/alshalloway), [James R. Trott](https://www.semanticscholar.org/author/James-R.-Trott/46648275)
 - [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.goodreads.com/book/show/85009.Design_Patterns), [Erich Gamma](https://en.wikipedia.org/wiki/Erich_Gamma), [Ralph Johnson](http://software-pattern.org/Author/29), [John Vlissides](https://en.wikipedia.org/wiki/John_Vlissides), [Richard Helm](https://wiki.c2.com/?RichardHelm)
+- [Clean Code Talks - Global State and Singletons
+](https://testing.googleblog.com/2008/11/clean-code-talks-global-state-and.html), [Miško Hevery](http://misko.hevery.com/about/)
+- [Why Singletons Are Controversial](https://code.google.com/archive/p/google-singleton-detector/wikis/WhySingletonsAreControversial.wiki)
 - [Flag Argument](https://martinfowler.com/bliki/FlagArgument.html), [Martin Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer))
 - [Code pollution](https://enterprisecraftsmanship.com/posts/code-pollution/), [Vladimir Khorikov](https://twitter.com/vkhorikov?lang=en)
 - [Guice](https://github.com/google/guice)
 - [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern) <- quitar y poner link en texto
 - [Singleton Pattern](https://en.wikipedia.org/wiki/Singleton_pattern) <- quitar y poner link en texto
 - [Guice Scopes](https://github.com/google/guice/wiki/Scopes)
-- [Why Singletons Are Controversial](https://code.google.com/archive/p/google-singleton-detector/wikis/WhySingletonsAreControversial.wiki)
-- [Clean Code Talks - Global State and Singletons
-](https://testing.googleblog.com/2008/11/clean-code-talks-global-state-and.html), [Miško Hevery](http://misko.hevery.com/about/)
-
-
 
 
 From The Clean Code Talks - "Global State and Singletons":
