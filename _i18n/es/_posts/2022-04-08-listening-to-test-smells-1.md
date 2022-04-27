@@ -131,13 +131,13 @@ These design improvements are reflected in its new tests:
 
 which are reduced only to the set of tests concerned with testing the obtention of the gallery ads in the original tests of `RealTimeGalleryAdsRepository`.
 
-<h2>Storing the cached values between calls.</h2>
+<h2>Persisting the cached values between calls.</h2>
 
-You might be thinking that now that we don't have a static field, how are we ensuring that the cached values persist between different calls to blabla.
+You might be asking yourselves, how are we going to ensure that the cached values persist between calls now that we don't have a static field anymore.
 
-Well, we don't need to keep a static field in the class for that. The only thing we need is that the composition of `CachedGalleryAdsRepository` and `RealTimeGalleryAdsRepository` is created only once, and that we use that single instance for the lifetime of the application. That is a different concern that we can achieve by a different mechanism.
+Well, the answer is that we don't need to keep a static field in our classes for that. The only thing we need is that the composition of `CachedGalleryAdsRepository` and `RealTimeGalleryAdsRepository` is created only once, and that we use that single instance for the lifetime of the application. That is a concern that we can achieve using a different mechanism.
 
-For that we used the **singleton pattern** <- nota a la charla de Miško Hevery. Notice the lowercase letter. We are not referring to the [Singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern) with capital ’S’ described in the design patterns book. The Singleton design pattern intent is to “ensure that only one instance of the singleton class ever exists; and provide global access to that instance”. The second part of the intent is problematic because it introduces global state into the application. Using global state creates high coupling in the form of hidden dependencies and possible actions at a distance, thus drastically reducing testability. 
+We used the **singleton pattern** <- nota a la charla de Miško Hevery. Notice the lowercase letter. We are not referring to the [Singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern) with capital ’S’ described in the design patterns book. The Singleton design pattern intent is to “ensure that only one instance of the singleton class ever exists; and provide global access to that instance”. The second part of that intent, “providing global access”, is problematic because it introduces global state into the application. Using global state creates high coupling (in the form of hidden dependencies and possible actions at a distance) that drastically reduces testability. 
 
 The lowercase ’s’ singleton avoids those testability problems because its intent is only to “ensure that only one instance of some class ever exists because its new operator is called only once”. We remove the global access part. This is done by avoiding mixing object instantiation with business logic by using separated factories that know how to create and wire up all the dependencies using dependency injection.
 
@@ -165,21 +165,11 @@ No introduce problemas de testeabilidad en otras clases porque esta única insta
 
 
 
-<h2>Conclusion.</h2>
+<h2>Conclusions.</h2>
 
+We show a recent example we found working for a client that illustrates how testability problems may usually point, if we listen to them, to the detection of underlying design problems. In this case the problems in the test were pointing to a lack of cohesion in the production code that was being tested. The original class had too many responsibilities.
 
-blabla los smells en los tests  blabla pueden llevarnos a blabla
-
-la falta de cohesión blabla suele causar muchos problemas en el testing
-como sus tests reflejaban la clase inicial tenía demasiadas responsabilidades:
-* la principal
-* la política de expiración de la cache
-* persistir los datos cacheados
-
-El refactoring que hicimos consistió básicamente en utilizar OO para separar los concerns aprovechando.
-
-El resultado fueron clases con mayor cohesion que dieron lugar a tests más enfocados.
-
+We refactored the production code to separate concerns by going more OO applying the decorator design pattern. The result was more cohesive production classes that led to more focused tests, and removed the design problems we had detected in the original design. 
 
 <h2>Notes.</h2>
 
