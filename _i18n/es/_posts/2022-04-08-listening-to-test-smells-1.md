@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Listening to test smells: detecting lack of cohesion and violation of encapsulation
+title: 'Listening to test smells: detecting lack of cohesion and violation of encapsulation'
 date: 2022-04-03 18:30:00.000000000 +01:00
 type: post
 published: true
@@ -46,7 +46,7 @@ This is why they devoted talks, several posts and a chapter of their book (chapt
 
 <img src="http://www.growing-object-oriented-software.com/figures/listening-to-tests.svg"
     alt="TDD cycle steps including listening to the tests."
-    style="float: left; margin-right: 10px;" />
+    style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
 Párrafo entero del que extraje la primera cita del GOOS:  “Sometimes we find it difficult to write a test for some functionality we want to add to our code. In our experience, this usually means that our design can be improved — perhaps the class is too tightly coupled to its environment or does not have clear responsibilities. When this happens, we first check whether it’s an opportunity to improve our code, before working around the design by making the test more complicated or using more sophisticated tools. We’ve found that the qualities that make an object easy to test also make our code responsive to change.”
 
