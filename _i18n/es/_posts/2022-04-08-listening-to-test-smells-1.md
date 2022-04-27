@@ -135,18 +135,35 @@ which are reduced only to the set of tests concerned with testing the obtention 
 
 You might be thinking that now that we don't have a static field, how are we ensuring that the cached values persist between different calls to blabla.
 
-Well, we don't need a static field in the classes for that.
+Well, we don't need to keep a static field in the class for that. The only thing we need is that the composition of `CachedGalleryAdsRepository` and `RealTimeGalleryAdsRepository` is created only once, and that we use that single instance for the lifetime of the application. That is a different concern that we can achieve by a different mechanism.
 
-The only thing we need is that the composition of `CachedGalleryAdsRepository` and `RealTimeGalleryAdsRepository` is created only once,
-and that we use that single instance for the lifetime of the application.
+For that we used the **singleton pattern** <- nota a la charla de Miško Hevery. Notice the lowercase letter. We are not referring to the [Singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern) with capital ’S’ described in the design patterns book. The Singleton design pattern intent is to “ensure that only one instance of the singleton class ever exists; and provide global access to that instance”. The second part of the intent is problematic because it introduces global state into the application. Using global state creates high coupling in the form of hidden dependencies and possible actions at a distance, thus drastically reducing testability. 
 
-That is a different concern that we can achieve by a different mechanism.
+The lowercase ’s’ singleton avoids those testability problems because its intent is only to “ensure that only one instance of some class ever exists because its new operator is called only once”. We remove the global access part. This is done by avoiding mixing object instantiation with business logic by using separated factories that know how to create and wire up all the dependencies using dependency injection.
 
-For example, we might use a dependency injection framework like [Guice](https://github.com/google/guice) and its `@Singleton` annotation.
+We might create this singleton, for instance, by using a dependency injection framework like [Guice](https://github.com/google/guice) and its `@Singleton` annotation.
 
-In our case we coded the singleton pattern<a href="#nota4"><sup>[4]</sup></a> ourselves:
+In our case we coded it<a href="#nota4"><sup>[4]</sup></a><- ya no va aquí ourselves:
 
 <script src="https://gist.github.com/trikitrok/082c40d8d869ba568e1da6869aabed07.js"></script>
+Notice the factory method that returns a unique instance of the `GalleryAdsRepository` interface that caches values. This factory method is never used by business logic, it’s only used by instantiation logic in factories that know how to create and wire up all the dependencies using dependency injection.
+
+  means never calling the code that creates that unique instance from production code
+
+No introduce problemas de testeabilidad en otras clases porque esta única instancia es inyectada por constructor en todos las clases que la necesitan como colaboradora.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <h2>Conclusion.</h2>
 
@@ -185,14 +202,13 @@ a function or a class to behave in a different way depending on its value. This 
 - [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
 - [Singleton Pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
 - [Guice Scopes](https://github.com/google/guice/wiki/Scopes)
-- Kent Beck hablando de cómo tratar singletons -> sale en Refactoring to Patterns en los refactorings relacionados con Singleton.
 - [Why Singletons Are Controversial](https://code.google.com/archive/p/google-singleton-detector/wikis/WhySingletonsAreControversial.wiki)
 - [Clean Code Talks - Global State and Singletons
 ](https://testing.googleblog.com/2008/11/clean-code-talks-global-state-and.html), [Miško Hevery](http://misko.hevery.com/about/)
 
 From The Clean Code Talks - "Global State and Singletons":
 
-08:30 All of your test flakiness will come from some form of uncontrolled global state. 10:20 Singleton with capital ’S’. Refers to the design pattern where the Singleton has a private constructor and has a global instance variable. Lowercase ’s’ singleton means I only have a single instance of something because I only called the new operator once. 11:44 Singleton pattern is bad because it introduces potentially infinite global variables. 13:00 If global variables are bad… how can Singletons be good? (They can't & aren't good.) 15:10 How do I assert that a method in my class calls another method on a singleton? You can’t. There’s no seams. Instead, you need to instantiate the class under test and the instantiation of its dependencies. 18:54 Deceptive API. Singletons hide the details. There’s hidden dependencies. You can have unexpected side effects. 25:00 Dependency injection orders code naturally. A class will explicitly declare its dependencies. And it enforces correct order of method calls/setup. 29:10 Review: - Global state is the root of 90% of your testing problems - Global state can’t be controlled by tests - Singleton pattern is just global state Q&A 32:00 Q: Without a Singleton I have to pass a dependency all the way down a long chain and that seems excessive. Isn’t that bad? A: That’s a myth. Let’s say you have a database and you instantiate it all the way in your main method. Wouldn’t you have to then pass it all the way down? No you don’t. You need to change the way you structure you code. You probably mix object instantiation with business logic. Instead, you should have a factory that knows how to create and wire up all the dependencies. 36:28 Q: Isn’t a ‘House’ factory inconvenient because then you have to pass thousands of things into the method? A: If House needs 1000 things then your house has a design problem because it has too many responsibilities. You need to decompose and re-structure your classes.
+08:30 All of your test flakiness will come from some form of uncontrolled global state. 10:20 Singleton with capital ’S’. Refers to the design pattern where the Singleton has a private constructor and has a global instance variable. Lowercase ’s’ singleton means I only have a single instance of something because I only called the new operator once. 11:44 Singleton pattern is bad because it introduces potentially infinite global variables. 13:00 If global variables are bad… how can Singletons be good? (They can't & aren't good.) 15:10 How do I assert that a method in my class calls another method on a singleton? You can’t. There’s no seams. Instead, you need to instantiate the class under test and the instantiation of its dependencies. 18:54 Deceptive API. Singletons hide the details. There’s hidden dependencies. You can have unexpected side effects. 25:00 Dependency injection orders code naturally. A class will explicitly declare its dependencies. And it enforces correct order of method calls/setup. 29:10 Review: - Global state is the root of 90% of your testing problems - Global state can’t be controlled by tests - Singleton pattern is just global state Q&A 32:00 Q: Without a Singleton I have to pass a dependency all the way down a long chain and that seems excessive. Isn’t that bad? A: That’s a myth. Let’s say you have a database and you instantiate it all the way in your main method. Wouldn’t you have to then pass it all the way down? No you don’t. You need to change the way you structure your code. You probably mix object instantiation with business logic. Instead, you should have a factory that knows how to create and wire up all the dependencies. 36:28 Q: Isn’t a ‘House’ factory inconvenient because then you have to pass thousands of things into the method? A: If House needs 1000 things then your house has a design problem because it has too many responsibilities. You need to decompose and re-structure your classes.
 
 
 
