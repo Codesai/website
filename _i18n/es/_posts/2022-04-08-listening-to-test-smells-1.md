@@ -97,41 +97,41 @@ Hablar de las fuerzas del patrón decorator <- Mirar el libro Design Patterns Ex
 
 Este patrón nos da una idea de cómo podríamos separar las responsabilidades de blabla y de cachear.
 
-blabla move the cache responsibility to a different class, `CachedGalleryAdsRepository`, which decorates the `RealTimeGalleryAdsRepository` class.
+So we moved the responsibility of caching the ads to a different class, `CachedGalleryAdsRepository`, which decorated the `RealTimeGalleryAdsRepository` class.
 
-Código de CachedGalleryAdsRepository:
+This is the code of the `CachedGalleryAdsRepository` class:
 <script src="https://gist.github.com/trikitrok/965181644c5aa7e7b51ae0944634611c.js"></script>
 
-sus tests:
-https://gist.github.com/trikitrok/df4e6039d77e019bc45fee93cc9c5b19
+and these are its tests:
+<script src="https://gist.github.com/trikitrok/df4e6039d77e019bc45fee93cc9c5b19.js"></script>
 
-notice how blabla are the two tests that blabla but now they don't know anything about the inner details
-of `RealTimeGalleryAdsRepository`. They only know about the logic related to the life and expiration of the cached values
-and that when the cache is refreshed they call a collaborator that implements the `GalleryAdsRepository` interface.
-hablar de como que estos tests coinciden con el segundo grupo de tests que había en los tests originales de `RealTimeGalleryAdsRepository`
-Notice how now we're caching the gallery ads instead of an instance of the `SearchResult` and we don't know anything about the `AdsRepository`.
+Notice how we found here the two tests that were previously testing the life and expiration of the cached values in the test of the original `RealTimeGalleryAdsRepository`: `when_cache_has_not_expired_the_cached_values_are_used` and `when_cache_expires_new_values_are_retrieved`. 
 
-We have also improved the code by introducing `Duration` blabla, removing Primitive Obsession blabla.
+Furthermore, looking at them more closely, we can see how, in this new design, those tests are also simpler because they don't know anything about the inner details
+of `RealTimeGalleryAdsRepository`. They only know about the logic related to the life and expiration of the cached values and that when the cache is refreshed they call a collaborator that implements the `GalleryAdsRepository` interface, this means that now we're caching gallery ads instead of an instance of the `SearchResult` and we don't know anything about the `AdsRepository`.
 
-There's no static field anymore.
+On a side note, we also improved the code by using the `Duration` value object from `java.time` to remove the [Primitive Obsession smell](https://www.informit.com/articles/article.aspx?p=1400866&seqNum=9) caused by using a long to represent milliseconds.
 
+Another very important improvement is that we don’t need the static field anymore.
 
-Now `RealTimeGalleryAdsRepository` has only one responsibility: blabla, and it does not know anything about caching values.
-Notice how this also reduces the numbers of collaborators of the class, no need for a `Clock`.
+And what about  `RealTimeGalleryAdsRepository`? 
 
-El código blabla
+If we have a look ats its new code:
+
 <script src="https://gist.github.com/trikitrok/fa4a85345fbc40e641fce5035669886a.js"></script>
 
-Its concerns is only how to map gallery adds from the result of the `AdsRepository` so it's more cohesive than the original version
+we can notice that its only concern is how to obtain the list of gallery ads mapping them from the result of its collaborator `AdsRepository`, and it does not know anything about caching values. So the new design is more cohesive than in the original one.
+Notice how we removed both the `resetCache` method that was before polluting its interface only for testing purposes, and the flag argument, `useCache`, in the constructor.
 
-and these are its tests:
+We also reduced its number of collaborators because there’s no need for a `Clock` anymore. That collaborator was needed for a different concern that is now taken care of in the decorator `CachedGalleryAdsRepository`.
+
+These design improvements are reflected in its new tests:
 
 <script src="https://gist.github.com/trikitrok/35749a8b111aacb23f0d8cd290cc7e79.js"></script>
 
-which are concerned with blabla,
-relacionar con primer subconjunto de tests en la versión anterior en los tests originales de `RealTimeGalleryAdsRepository`
+which are reduced only to the set of tests concerned with testing the obtention of the gallery ads in the original tests of `RealTimeGalleryAdsRepository`.
 
-in which there's less setup and blabla
+<h2>Storing the cached values between calls.</h2>
 
 You might be thinking that now that we don't have a static field, how are we ensuring that the cached values persist between different calls to blabla.
 
