@@ -22,13 +22,13 @@ cross_post_url:
 
 <h2>Introduction.</h2>
 
-We'd like to show another example of how difficulties found while testing can signal design problems in our code. <- Poner las referencia a otros posts anteriores en una nota al pie.
+We'd like to show another example of how difficulties found while testing can signal design problems in our code<a href="#nota1"><sup>[1]</sup></a>.
 
 We believe that a good design is one that supports the evolution of a code base at a sustainable pace and that testability is a requirement for evolvability. This is not something new; we can find this idea in many places.
 
-[Michael Feathers](https://michaelfeathers.silvrback.com/) says *“every time you encounter a testability problem, there is an underline design problem”*. <- nota a la charla
+[Michael Feathers](https://michaelfeathers.silvrback.com/) says *“every time you encounter a testability problem, there is an underline design problem”*<a href="#nota2"><sup>[2]</sup></a>.
 
-Nat Pryce and Steve Freeman also think that this relationship between testability and good design exists:  
+[Nat Pryce](http://www.natpryce.com/articles.html) and [Steve Freeman](https://twitter.com/sf105?lang=en) also think that this relationship between testability and good design exists<a href="#nota3"><sup>[3]</sup></a>:  
 
 *“[...] We’ve found that the qualities that make an object easy to test also make our code responsive to change”* 
 
@@ -38,9 +38,9 @@ and also use it to detect design problems and know what to refactor:
 
 and to improve their TDD practice:
 
-*“[...] sensitise yourself to find the rough edges in your tests and use them for rapid feedback about what to do with the code. […] don't stop at the immediate problem (an ugly test) but look deeper for why I'm in this situation (weakness in the design) and address that.”* <- nota a la fuente de la cita [Synaesthesia: Listening to Test Smells](http://www.mockobjects.com/2007/03/synaesthesia-listening-to-test-smells.html)
+*“[...] sensitise yourself to find the rough edges in your tests and use them for rapid feedback about what to do with the code. […] don't stop at the immediate problem (an ugly test) but look deeper for why I'm in this situation (weakness in the design) and address that.”*<a href="#nota4"><sup>[4]</sup></a>
 
-This is why they devoted talks, several posts and a chapter of their book (chapter 20) to listening to the tests (<- nota a los posts sobre este tema: Have a look at this interesting series of posts about listening to the tests by Steve Freeman) and even added it to the TDD cycle steps:
+This is why they devoted talks, several posts and a chapter of their GOOS book (chapter 20) to listening to the tests<a href="#nota5"><sup>[5]</sup></a> and even added it to the TDD cycle steps:
 
 
 <img src="http://www.growing-object-oriented-software.com/figures/listening-to-tests.svg"
@@ -51,7 +51,7 @@ Next we’ll show you an example of how we've recently applied this in a client.
 
 <h2>The problem.</h2>
 
-Recently I was asked to help a pair that was developing a new feature in a legacy code base of one of our clients. They were having problems with the following test<a href="#nota1"><sup>[1]</sup></a>:
+Recently I was asked to help a pair that was developing a new feature in a legacy code base of one of our clients. They were having problems with the following test<a href="#nota6"><sup>[6]</sup></a>:
 
 <script src="https://gist.github.com/trikitrok/8e50ae685aa01d16703d88371bec232d.js"></script>
 
@@ -65,7 +65,7 @@ Looking at the code of `RealTimeGalleryAdsRepository` you can learn why.
 The `cachedSearchResult` field is static and that was breaking the isolation between tests.
 Even though they were using different instances of `RealTimeGalleryAdsRepository` in each test, they were sharing the same value of the `cachedSearchResult` field because static state is associated with the class. So a new public method, `resetCache`, was added to the class only to ensure isolation between different tests.
 
-Adding code to your production code base only in order to enable unit testing is a unit testing anti-pattern<a href="#nota3"><sup>[3]</sup></a>, but they didn’t know how to get rid of the `resetCache` method, and that’s why I was called in to help.
+Adding code to your production code base only in order to enable unit testing is a unit testing anti-pattern<a href="#nota7"><sup>[7]</sup></a>, but they didn’t know how to get rid of the `resetCache` method, and that’s why I was called in to help.
 
 Let’s examine the tests in `RealTimeGalleryAdsRepositoryTests` to see if they can point to more fundamental design problems. 
 
@@ -75,7 +75,7 @@ whereas, the other group, comprised of `when_cache_has_not_expired_the_cached_va
 This test smell was a hint that the production class might lack cohesion, i.e., it might have several responsibilities.
 
 It turns out that there was another code smell that confirmed our suspicion. Notice the boolean parameter `useCache` in `RealTimeGalleryAdsRepository` constructor.
-That was a clear example of a **flag argument**<a href="#nota2"><sup>[2]</sup></a>. `useCache` was making the class behave differently depending on its value:
+That was a clear example of a **flag argument**<a href="#nota8"><sup>[8]</sup></a>. `useCache` was making the class behave differently depending on its value:
 a. It cached the list of gallery ads when `useCache` was true.
 b. It did not cache them when `useCache` was false.
 
@@ -166,14 +166,24 @@ We refactored the production code to separate concerns by going more OO applying
 
 <h2>Notes.</h2>
 
-<a name="nota1"></a> We have simplified the client's code to remove some distracting details and try to highlight its key problems.
+<a name="nota1"></a> [1]  <- Poner aquí las referencias a otros posts anteriores sobre este mismo tema.
 
-<a name="nota2"></a> A [flag Argument](https://martinfowler.com/bliki/FlagArgument.html) is a kind of argument that is telling
-a function or a class to behave in a different way depending on its value. This might be a signal of poor cohesion in the function or class.
+<a name="nota2"></a> [2] Listen to his great talk about this relationship: [The Deep Synergy Between Testability and Good Design](https://www.youtube.com/watch?v=4cVZvoFGJTU)
 
-<a name="nota3"></a> [Vladimir Khorikov](https://twitter.com/vkhorikov?lang=en) calls this unit testing anti-pattern [Code pollution](https://enterprisecraftsmanship.com/posts/code-pollution/).
+<a name="nota3"></a> [3] This is the complete paragraph from chapter 20 (título?)  of the GOOS book <- link: “Sometimes we find it difficult to write a test for some functionality we want to add to our code. In our experience, this usually means that our design can be improved — perhaps the class is too tightly coupled to its environment or does not have clear responsibilities. When this happens, we first check whether it’s an opportunity to improve our code, before working around the design by making the test more complicated or using more sophisticated tools. We’ve found that the qualities that make an object easy to test also make our code responsive to change.”
 
-<a name="nota4"></a> No introduce problemas de testeabilidad en otras clases porque esta única instancia es inyectada por constructor en todos las clases que la necesitan como colaboradora.
+<a name="nota4"></a> [4]  This quote is from their post [Synaesthesia: Listening to Test Smells](http://www.mockobjects.com/2007/03/synaesthesia-listening-to-test-smells.html).
+
+<a name="nota5"></a> [5]  Have a look at this interesting [series of posts about listening to the tests]( [Steve Freeman](https://twitter.com/sf105?lang=en)) by  [Steve Freeman](https://twitter.com/sf105?lang=en). It’s a raw version of the content that you’ll find in chapter 20 (título?) of their book.
+
+<a name="nota6"></a> [6] We have simplified the client's code to remove some distracting details and try to highlight its key problems.
+
+<a name="nota7"></a> [7] [Vladimir Khorikov](https://twitter.com/vkhorikov?lang=en) calls this unit testing anti-pattern [Code pollution](https://enterprisecraftsmanship.com/posts/code-pollution/).
+
+<a name="nota8"></a> [8] A [flag Argument](https://martinfowler.com/bliki/FlagArgument.html) is a kind of argument that is telling a function or a class to behave in a different way depending on its value. This might be a signal of poor cohesion in the function or class.
+
+
+No introduce problemas de testeabilidad en otras clases porque esta única instancia es inyectada por constructor en todos las clases que la necesitan como colaboradora.
 
 <h2>References.</h2>
 - [Growing Object-Oriented Software, Guided by Tests](https://www.goodreads.com/en/book/show/4268826-growing-object-oriented-software-guided-by-tests), [Steve Freeman](https://twitter.com/sf105?lang=en), [Nat Pryce](http://www.natpryce.com/articles.html)
