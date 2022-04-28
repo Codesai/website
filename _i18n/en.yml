@@ -53,24 +53,24 @@ pages:
       second_paragraph: We are aware that applying TDD effectively is very complex and that many teams throw in the towel after trying it for a while. In our experience, having a team of experienced professionals can reduce the initial difficulty curve and make a difference in helping the team to extract all the value that this technique can provide them with.
       call_to_action: More Info
     team:
-      title: Quiénes somos
-      alfredo: Más de 20 años programando. Durante los últimos años ha liderado equipos con métodos ágiles como Extreme Programming y prácticas como DDD (Domain Driven Design). Miembro veterano y conocido de la comunidad Java Hispano.
-      dani: Aplicar las metodologías agiles en el día a día le permiten realizar un mejor trabajo y redescubrir su pasión por el desarrollo de software. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria y co-organizador de Socrates Canaries 2016.
-      manu_tordesillas: Ingeniero en Informática y Electrónica con 6 años de experiencia en el desarrollo de Software. Considera esenciales el aprendizaje y la mejora continua para conseguir dejar una marca positiva en la sociedad y la industria.
-      fran: Se preocupa por hacer las cosas bien y mejorar continuamente. Defensor de los métodos ágiles por ser una manera de construir software excelente. Aunque su trayectoria es técnica, le interesan otras áreas del producto final (negocio, UX, operaciones, etc).
-      antonio: Encontró su sitio natural en equipos interesados en la mejora continua, y en hacer un código bonito. Desarrolla sobre todo en Javascript y Groovy. Busca la integración de todos los perfiles, especialmente los de diseño en el desarrollo del producto.
-      miguel: Apasionado del desarrollo y de la formación continua para lograr mejores soluciones. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria. Co-organizador del congreso internacional SoCraTes 2016 (Software Craftsmanship and Testing) en España.
-      manu_rivero: Empezó de nuevo hace pocos años como desarrollador web. Co-fundador de la comunidad Software Craftsmanship de Barcelona, involucrado en la comunidad Clojure Developers Barcelona y co-fundador de la comunidad Aprendices.
-      ruben: Aprendiendo y desarrollando desde 2014, le encanta seguir las prácticas de XP y colaborar con negocio para entregar valor lo antes posible. Intenta jubilarse habiendo borrado más código del que ha escrito. Co-organizador de Socrates Canaries 2019.
-    collaborators: Colaboran con nosotros
+      title: About Us
+      alfredo: More than 20 years programming. During the last years he has led teams with Agile methods such as Extreme Programming and practices such as DDD (Domain Driven Design). Veteran and well known member of the Hispanic Java community.
+      dani: Applying Agile methodologies on a daily basis allows him to do a better job and reignite his passion for software development. Co-founder of the Software Craftsmanship community of Gran Canaria and co-organizer of Socrates Canaries 2016.
+      manu_tordesillas: Computer and Electronics Engineer with 6 years of experience in software development. He considers learning and continuous improvement essential to leave a positive mark on society and industry.
+      fran: Cares about getting things right and continuous improvement. Advocate of Agile methods as a way to build excellent software. Although his background is technical, he is interested in other areas related to the final product (business, UX, operations, etc).
+      antonio: He found organically his place in teams interested in continuous improvement and in building beautiful code. He develops mainly in Javascript and Groovy. He seeks the integration of all profiles, especially design profiles in product development.
+      miguel: Passionate about development and continuous training to achieve better solutions. Co-founder of the Software Craftsmanship community of Gran Canaria. Co-organizer of the international congress SoCraTes 2016 (Software Craftsmanship and Testing) in Spain.
+      manu_rivero: Started again a few years ago as a web developer. Co-founder of the Software Craftsmanship community in Barcelona, involved in the Clojure Developers Barcelona community and co-founder of the Apprentices Community.
+      ruben: Learning and developing since 2014, he loves following XP practices and collaborating with the business to deliver value as quickly as possible. Intends to retire having deleted more code than he has written. Co-organizer of Socrates Canaries 2019.
+    collaborators: Our Collaborators
     blog:
-      title: Compartiendo conocimiento
-      paragraph: Conferencia Agile Spain, DevFest, Tarugoconf... En Codesai nos encanta participar en eventos y compartir puntos de vista con otros profesionales (tanto, que incluso nos hemos atrevido a organizar alguno). Y además de estar involucrados en algunas comunidades, también <strong>publicamos contenido que esperamos que pueda ayudar y aportar a nuestro sector.</strong>
-      call_to_action: Ver más contenido
+      title: Sharing Knowledge
+      paragraph: Agile Spain Conference, DevFest, Tarugoconf... At Codesai we love to participate in events and share points of view with other professionals (so much so, that we have even dared to organize some). In addition to being involved in some communities, we also <strong>publish content that we hope can help and contribute to our industry.</strong>
+      call_to_action: View more content
     contact:
-      title: ¡Contáctanos!
-      text: <p>¿Tienes dudas? Si quieres saber más sobre nuestra forma de trabajar y en lo que podemos aportar, no dudes en escribirnos a contact@codesai.com o rellenando el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-      placeholder: Me gustaría obtener más información, saber qué podríais aportarme y cómo colaborar.
+      title: Contact us!
+      text: <p>Any questions? If you want to know more about our line of work and how we can help, do not hesitate to contact us at contact@codesai.com or by filling out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+      placeholder: I would like to get more information.
   clients:
     title: Codesai. Nuestros clientes
     profile:
@@ -866,10 +866,10 @@ pages:
 
 components:
   call_to_action:
-    mail: Email
-    name: Nombre completo
-    message: ¿Qué te gustaría contarnos?
-    send: Enviar mensaje
+    mail: E-mail
+    name: Full Name
+    message: What can we do to help?
+    send: Send Message
   course:
     information: Información
     hours: horas
