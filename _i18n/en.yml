@@ -48,10 +48,10 @@ pages:
         bullet4: We prevent further problems from arising
         call_to_action: Success stories
     tdd:
-      title: Expertos en formación Test Driven Development (TDD)
-      first_paragraph: TDD es para nosotros nuestra forma de trabajo habitual, por eso cuando impartimos una formación de TDD lo hacemos desde el convencimiento de que esta técnica aporta grandes beneficios y puede elevar como ninguna otra el nivel técnico de un equipo de desarrollo. En Codesai nos sentimos orgullosos de ser referentes tanto en la aplicación como en la formación en Test Driven Development, contando con algunos de los profesionales más reconocidos en el sector y la comunidad en la aplicación de esta técnica.
-      second_paragraph: Somos conscientes de que aplicar TDD de manera efectiva es muy complejo, y cómo muchos equipos tiran la toalla al probarlo durante un tiempo. En nuestra experiencia, contar con un equipo de profesionales expertos puede reducir la curva de adaptación y marcar la diferencia que permita al equipo extraer el valor que esta técnica puede aportar.
-      call_to_action: Más información
+      title: Test Driven Development (TDD) training experts
+      first_paragraph: TDD is part of our daily workflow, so when we provide TDD training we do it with the conviction that this technique greatly benefits and raises the technical level of a development team. At Codesai we are proud to be a reference in both the application and training in Test Driven Development, with some of the most recognized professionals in the industry and the community in the application of this technique.
+      second_paragraph: We are aware that applying TDD effectively is very complex and that many teams throw in the towel after trying it for a while. In our experience, having a team of experienced professionals can reduce the initial difficulty curve and make a difference in helping the team to extract all the value that this technique can provide them with.
+      call_to_action: More Info
     team:
       title: Quiénes somos
       alfredo: Más de 20 años programando. Durante los últimos años ha liderado equipos con métodos ágiles como Extreme Programming y prácticas como DDD (Domain Driven Design). Miembro veterano y conocido de la comunidad Java Hispano.
