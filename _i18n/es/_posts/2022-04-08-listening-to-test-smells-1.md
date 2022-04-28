@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Listening to test smells: detecting lack of cohesion and violation of encapsulation'
+title: 'Listening to test smells: detecting lack of cohesion and violations of encapsulation'
 date: 2022-04-03 18:30:00.000000000 +01:00
 type: post
 published: true
@@ -24,7 +24,7 @@ cross_post_url:
 
 We'd like to show another example of how difficulties found while testing can signal design problems in our code. <- Poner las referencia a otros posts anteriores en una nota al pie.
 
-We believe that a good design is one that supports the evolution of a code base at a sustainable pace and that testability is a requirement for evolvability. This is not something new we can found this idea in many places.
+We believe that a good design is one that supports the evolution of a code base at a sustainable pace and that testability is a requirement for evolvability. This is not something new; we can find this idea in many places.
 
 [Michael Feathers](https://michaelfeathers.silvrback.com/) says *“every time you encounter a testability problem, there is an underline design problem”*. <- nota a la charla
 
@@ -59,7 +59,7 @@ that was testing the `RealTimeGalleryAdsRepository` class:
 
 <script src="https://gist.github.com/trikitrok/db615b7ddea29d5280db20ee4a5f55c3.js"></script>
 
-They had managed to test drive the functionality but they were unhappy with the results. The thing that was bothering them was the `resetCache` method in the RealTimeGalleryAdsRepository` class. As its name implies, its intent was to reset the cache. This would have been fine, if this had been a requirement, but that was not the case. The method had been added only for testing purposes.
+They had managed to test drive the functionality but they were unhappy with the results. The thing that was bothering them was the `resetCache` method in the `RealTimeGalleryAdsRepository` class. As its name implies, its intent was to reset the cache. This would have been fine, if this had been a requirement, but that was not the case. The method had been added only for testing purposes.
 
 Looking at the code of `RealTimeGalleryAdsRepository` you can learn why.
 The `cachedSearchResult` field is static and that was breaking the isolation between tests.
@@ -74,7 +74,7 @@ One group, comprised of `maps_all_ads_with_photo_to_gallery_ads`, `ignore_ads_wi
 whereas, the other group, comprised of `when_cache_has_not_expired_the_cached_values_are_used` and `when_cache_expires_new_values_are_retrieved` is testing the life and expiration of some cached values. 
 This test smell was a hint that the production class might lack cohesion, i.e., it might have several responsibilities.
 
-In turns that there was another code smell that confirmed our suspicion. Notice the boolean parameter `useCache` in `RealTimeGalleryAdsRepository` constructor.
+It turns out that there was another code smell that confirmed our suspicion. Notice the boolean parameter `useCache` in `RealTimeGalleryAdsRepository` constructor.
 That was a clear example of a **flag argument**<a href="#nota2"><sup>[2]</sup></a>. `useCache` was making the class behave differently depending on its value:
 a. It cached the list of gallery ads when `useCache` was true.
 b. It did not cache them when `useCache` was false.
@@ -86,7 +86,7 @@ After seeing all this, I told the pair that the real problem was the lack of coh
 To strengthen cohesion we need to separate concerns. Let’s see the problem from the point of view of the client of the `RealTimeGalleryAdsRepository` class, (<-nota we’ll see that this point of view is generally useful because the test is also a client of the tested class.) and think about what it would want from the `RealTimeGalleryAdsRepository`. It would be something like “obtain the gallery ads for me”, that would be the responsibility of the `RealTimeGalleryAdsRepository`, and that’s what the `GalleryAdsRepository` represents.
 
 
-Notice that to satisfy that responsibility we do not need to use a cache, only get some ads from the AdsRepository and map them (the original functionality also included some enrichments using data from other sources but we remove them from the example for the sake of simplicity). Caching is an optimization that we might do or not, it’s a refinement or embellishment to how we satisfy the responsibility but it’s not necessary to satisfy it. In this case caching changes the how but not the what.
+Notice that to satisfy that responsibility we do not need to use a cache, only get some ads from the AdsRepository and map them (the original functionality also included some enrichments using data from other sources but we remove them from the example for the sake of simplicity). Caching is an optimization that we might do or not, it’s a refinement or embellishment to how we satisfy the responsibility but it’s not necessary to satisfy it. In this case, caching changes the “how” but not the “what”.
 
 This matches very well with the Decorator design pattern because this pattern “comes into play when there are a variety of optional functions that can precede or follow another function that is always executed”<-nota al libro Design Patterns Explained. Using it would allow us to attach additional behaviour (caching) to the basic required behaviour that satisfied the role that the client needs (“obtain the gallery ads for me”). This way instead of having a flag parameter (like `useCache` in the original code) to control whether we cache or not, we might add caching by composing objects that implement the `GalleryAdsRepository`. One of them, `RealTimeGalleryAdsRepository`, would be in charge of getting ads from the AdsRepository and mapping them to gallery ads; and the other one, `CachedGalleryAdsRepository`, would cache the gallery ads. 
 
@@ -113,7 +113,7 @@ If we have a look ats its new code:
 
 <script src="https://gist.github.com/trikitrok/fa4a85345fbc40e641fce5035669886a.js"></script>
 
-we can notice that its only concern is how to obtain the list of gallery ads mapping them from the result of its collaborator `AdsRepository`, and it does not know anything about caching values. So the new design is more cohesive than in the original one.
+Wwe can notice that its only concern is how to obtain the list of gallery ads and mapping them from the result of its collaborator `AdsRepository`, and it does not know anything about caching values. So the new design is more cohesive than the original one.
 Notice how we removed both the `resetCache` method that was before polluting its interface only for testing purposes, and the flag argument, `useCache`, in the constructor.
 
 We also reduced its number of collaborators because there’s no need for a `Clock` anymore. That collaborator was needed for a different concern that is now taken care of in the decorator `CachedGalleryAdsRepository`.
