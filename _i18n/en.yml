@@ -14,7 +14,7 @@ pages:
     title: Software development and training
     slogan1: Accelerating value delivery
     slogan2: Taking care of internal and external quality
-    slogan3: Becoming part of your team, making it grow
+    slogan3: Becoming a part of your team, making it grow
     about:
       title: Part of your team
       first_paragraph: At Codesai we firmly believe that the best results are obtained by collaborating closely with the internal teams of each company. That's why we like to <strong>be a part of them, teaching them first-hand how to improve their practices and develop better code</strong>. We share their achievements, frustrations, doubts... without forgetting to create a good working environment and bring out the best in everyone.
@@ -45,7 +45,7 @@ pages:
         bullet1: Specific consulting services
         bullet2: We note and suggest
         bullet3: Unblocking problems
-        bullet4: We prevent further problems from arising
+        bullet4: Preventing further problems
         call_to_action: Success stories
     tdd:
       title: Test Driven Development (TDD) training experts
@@ -69,7 +69,7 @@ pages:
       call_to_action: View more content
     contact:
       title: Contact us!
-      text: <p>Any questions? If you want to know more about our line of work and how we can help, do not hesitate to contact us at contact@codesai.com or by filling out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+      text: <p>Any questions? If you want to know more about our line of work and how we can help, do not hesitate to contact us at <strong>contact@codesai.com</strong> or by filling out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
       placeholder: I would like to get more information.
   clients:
     title: Codesai. Nuestros clientes
