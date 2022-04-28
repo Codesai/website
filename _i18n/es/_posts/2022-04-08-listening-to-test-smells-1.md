@@ -24,9 +24,7 @@ cross_post_url:
 
 We'd like to show another example of how difficulties found while testing can signal design problems in our code. <- Poner las referencia a otros posts anteriores en una nota al pie.
 
-We believe that a good design is one that supports the evolution of a code base at a sustainable pace and that testability is a requirement for evolvability. 
-
-This is not something new we can found this idea in many places
+We believe that a good design is one that supports the evolution of a code base at a sustainable pace and that testability is a requirement for evolvability. This is not something new we can found this idea in many places.
 
 [Michael Feathers](https://michaelfeathers.silvrback.com/) says *“every time you encounter a testability problem, there is an underline design problem”*. <- nota a la charla
 
@@ -38,7 +36,8 @@ and also use it to detect design problems and know what to refactor:
 
 *“[...] where we find that our tests are awkward to write, it's usually because the design of our target code can be improved”*
 
-and use this relationship to improve their TDD practice:
+and to improve their TDD practice:
+
 *“[...] sensitise yourself to find the rough edges in your tests and use them for rapid feedback about what to do with the code. […] don't stop at the immediate problem (an ugly test) but look deeper for why I'm in this situation (weakness in the design) and address that.”* <- nota a la fuente de la cita [Synaesthesia: Listening to Test Smells](http://www.mockobjects.com/2007/03/synaesthesia-listening-to-test-smells.html)
 
 This is why they devoted talks, several posts and a chapter of their book (chapter 20) to listening to the tests (<- nota a los posts sobre este tema: Have a look at this interesting series of posts about listening to the tests by Steve Freeman) and even added it to the TDD cycle steps:
@@ -48,9 +47,7 @@ This is why they devoted talks, several posts and a chapter of their book (chapt
     alt="TDD cycle steps including listening to the tests."
     style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
-Párrafo entero del que extraje la primera cita del GOOS:  “Sometimes we find it difficult to write a test for some functionality we want to add to our code. In our experience, this usually means that our design can be improved — perhaps the class is too tightly coupled to its environment or does not have clear responsibilities. When this happens, we first check whether it’s an opportunity to improve our code, before working around the design by making the test more complicated or using more sophisticated tools. We’ve found that the qualities that make an object easy to test also make our code responsive to change.”
-
-Next we’ll show you an example of how we've recently applied this. 
+Next we’ll show you an example of how we've recently applied this in a client. 
 
 <h2>The problem.</h2>
 
@@ -86,18 +83,14 @@ After seeing all this, I told the pair that the real problem was the lack of coh
 
 <h2>Going more OO to fix the lack of cohesion.</h2>
 
-blabla separate concerns
+To strengthen cohesion we need to separate concerns. Let’s see the problem from the point of view of the client of the `RealTimeGalleryAdsRepository` class, (<-nota we’ll see that this point of view is generally useful because the test is also a client of the tested class.) and think about what it would want from the `RealTimeGalleryAdsRepository`. It would be something like “obtain the gallery ads for me”, that would be the responsibility of the `RealTimeGalleryAdsRepository`, and that’s what the `GalleryAdsRepository` represents.
 
-Pongamonos in the place of the client of la clase `RealTimeGalleryAdsRepository` and think qué querría el de `RealTimeGalleryAdsRepository`: “obtener los ads de la galería”.
-We’ll see that this point of view is generally useful because the test is also a client of the tested class.
-Fijémonos en como para satisfacer esa responsabilidad la acción que necesitamos  hacer en este caso sería obtener los valores del repositorio y mapearlos siguiendo las reglas (la funcionalidad original incluía algunos enriquecimientos, pero lo eliminamos para simplificar el ejemplo). Este es el cómo. 
-Cachear es una optimización que podríamos hacer o no, es un “embellecimiento”, un refinamiento del cómo, pero no cambia qué hacemos.
 
-Hablar de las fuerzas del patrón decorator <- Mirar el libro Design Patterns Explained que lo explica muy bien.
+Notice that to satisfy that responsibility we do not need to use a cache, only get some ads from the AdsRepository and map them (the original functionality also included some enrichments using data from other sources but we remove them from the example for the sake of simplicity). Caching is an optimization that we might do or not, it’s a refinement or embellishment to how we satisfy the responsibility but it’s not necessary to satisfy it. In this case caching changes the how but not the what.
 
-Este patrón nos da una idea de cómo podríamos separar las responsabilidades de blabla y de cachear.
+This matches very well with the Decorator design pattern because this pattern “comes into play when there are a variety of optional functions that can precede or follow another function that is always executed”<-nota al libro Design Patterns Explained. Using it would allow us to attach additional behaviour (caching) to the basic required behaviour that satisfied the role that the client needs (“obtain the gallery ads for me”). This way instead of having a flag parameter (like `useCache` in the original code) to control whether we cache or not, we might add caching by composing objects that implement the `GalleryAdsRepository`. One of them, `RealTimeGalleryAdsRepository`, would be in charge of getting ads from the AdsRepository and mapping them to gallery ads; and the other one, `CachedGalleryAdsRepository`, would cache the gallery ads. 
 
-So we moved the responsibility of caching the ads to a different class, `CachedGalleryAdsRepository`, which decorated the `RealTimeGalleryAdsRepository` class.
+So we moved the responsibility of caching the ads to the `CachedGalleryAdsRepository` class which decorated the `RealTimeGalleryAdsRepository` class.
 
 This is the code of the `CachedGalleryAdsRepository` class:
 <script src="https://gist.github.com/trikitrok/965181644c5aa7e7b51ae0944634611c.js"></script>
@@ -105,7 +98,7 @@ This is the code of the `CachedGalleryAdsRepository` class:
 and these are its tests:
 <script src="https://gist.github.com/trikitrok/df4e6039d77e019bc45fee93cc9c5b19.js"></script>
 
-Notice how we found here the two tests that were previously testing the life and expiration of the cached values in the test of the original `RealTimeGalleryAdsRepository`: `when_cache_has_not_expired_the_cached_values_are_used` and `when_cache_expires_new_values_are_retrieved`. 
+Notice how we found here again the two tests that were previously testing the life and expiration of the cached values in the test of the original `RealTimeGalleryAdsRepository`: `when_cache_has_not_expired_the_cached_values_are_used` and `when_cache_expires_new_values_are_retrieved`. 
 
 Furthermore, looking at them more closely, we can see how, in this new design, those tests are also simpler because they don't know anything about the inner details
 of `RealTimeGalleryAdsRepository`. They only know about the logic related to the life and expiration of the cached values and that when the cache is refreshed they call a collaborator that implements the `GalleryAdsRepository` interface, this means that now we're caching gallery ads instead of an instance of the `SearchResult` and we don't know anything about the `AdsRepository`.
@@ -198,6 +191,7 @@ a function or a class to behave in a different way depending on its value. This 
 - [Singleton Pattern](https://en.wikipedia.org/wiki/Singleton_pattern) <- quitar y poner link en texto
 - [Guice Scopes](https://github.com/google/guice/wiki/Scopes)
 
+Párrafo entero del que extraje la primera cita del GOOS:  “Sometimes we find it difficult to write a test for some functionality we want to add to our code. In our experience, this usually means that our design can be improved — perhaps the class is too tightly coupled to its environment or does not have clear responsibilities. When this happens, we first check whether it’s an opportunity to improve our code, before working around the design by making the test more complicated or using more sophisticated tools. We’ve found that the qualities that make an object easy to test also make our code responsive to change.”
 
 From The Clean Code Talks - "Global State and Singletons":
 
