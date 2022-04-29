@@ -88,7 +88,7 @@ To strengthen cohesion we need to separate concerns. Let’s see the problem fro
 
 Notice that to satisfy that responsibility we do not need to use a cache, only get some ads from the AdsRepository and map them (the original functionality also included some enrichments using data from other sources but we remove them from the example for the sake of simplicity). Caching is an optimization that we might do or not, it’s a refinement or embellishment to how we satisfy the responsibility but it’s not necessary to satisfy it. In this case, caching changes the “how” but not the “what”.
 
-This matches very well with the Decorator design pattern because this pattern “comes into play when there are a variety of optional functions that can precede or follow another function that is always executed”<-nota al libro Design Patterns Explained. Using it would allow us to attach additional behaviour (caching) to the basic required behaviour that satisfied the role that the client needs (“obtain the gallery ads for me”). This way instead of having a flag parameter (like `useCache` in the original code) to control whether we cache or not, we might add caching by composing objects that implement the `GalleryAdsRepository`. One of them, `RealTimeGalleryAdsRepository`, would be in charge of getting ads from the AdsRepository and mapping them to gallery ads; and the other one, `CachedGalleryAdsRepository`, would cache the gallery ads. 
+This matches very well with the [Decorator design pattern](https://en.wikipedia.org/wiki/Decorator_pattern) because this pattern “comes into play when there are a variety of optional functions that can precede or follow another function that is always executed”<a href="#nota9"><sup>[9]</sup></a>. Using it would allow us to attach additional behaviour (caching) to the basic required behaviour that satisfied the role that the client needs (“obtain the gallery ads for me”). This way instead of having a flag parameter (like `useCache` in the original code) to control whether we cache or not, we might add caching by composing objects that implement the `GalleryAdsRepository`. One of them, `RealTimeGalleryAdsRepository`, would be in charge of getting ads from the AdsRepository and mapping them to gallery ads; and the other one, `CachedGalleryAdsRepository`, would cache the gallery ads. 
 
 So we moved the responsibility of caching the ads to the `CachedGalleryAdsRepository` class which decorated the `RealTimeGalleryAdsRepository` class.
 
@@ -103,17 +103,15 @@ Notice how we found here again the two tests that were previously testing the li
 Furthermore, looking at them more closely, we can see how, in this new design, those tests are also simpler because they don't know anything about the inner details
 of `RealTimeGalleryAdsRepository`. They only know about the logic related to the life and expiration of the cached values and that when the cache is refreshed they call a collaborator that implements the `GalleryAdsRepository` interface, this means that now we're caching gallery ads instead of an instance of the `SearchResult` and we don't know anything about the `AdsRepository`.
 
-On a side note, we also improved the code by using the `Duration` value object from `java.time` to remove the [Primitive Obsession smell](https://www.informit.com/articles/article.aspx?p=1400866&seqNum=9) caused by using a long to represent milliseconds.
+On a side note, we also improved the code by using the `Duration` value object from `java.time` to remove the [primitive obsession smell](https://www.informit.com/articles/article.aspx?p=1400866&seqNum=9) caused by using a `long` to represent milliseconds.
 
 Another very important improvement is that we don’t need the static field anymore.
 
 And what about  `RealTimeGalleryAdsRepository`? 
 
-If we have a look ats its new code:
-
 <script src="https://gist.github.com/trikitrok/fa4a85345fbc40e641fce5035669886a.js"></script>
 
-Wwe can notice that its only concern is how to obtain the list of gallery ads and mapping them from the result of its collaborator `AdsRepository`, and it does not know anything about caching values. So the new design is more cohesive than the original one.
+If we have a look at its new code, we can notice that its only concern is how to obtain the list of gallery ads and mapping them from the result of its collaborator `AdsRepository`, and it does not know anything about caching values. So the new design is more cohesive than the original one.
 Notice how we removed both the `resetCache` method that was before polluting its interface only for testing purposes, and the flag argument, `useCache`, in the constructor.
 
 We also reduced its number of collaborators because there’s no need for a `Clock` anymore. That collaborator was needed for a different concern that is now taken care of in the decorator `CachedGalleryAdsRepository`.
@@ -130,32 +128,18 @@ You might be asking yourselves, how are we going to ensure that the cached value
 
 Well, the answer is that we don't need to keep a static field in our classes for that. The only thing we need is that the composition of `CachedGalleryAdsRepository` and `RealTimeGalleryAdsRepository` is created only once, and that we use that single instance for the lifetime of the application. That is a concern that we can achieve using a different mechanism.
 
-We used the **singleton pattern** <- nota a la charla de Miško Hevery. Notice the lowercase letter. We are not referring to the [Singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern) with capital ’S’ described in the design patterns book. The Singleton design pattern intent is to “ensure that only one instance of the singleton class ever exists; and provide global access to that instance”. The second part of that intent, “providing global access”, is problematic because it introduces global state into the application. Using global state creates high coupling (in the form of hidden dependencies and possible actions at a distance) that drastically reduces testability. 
+We used the **singleton pattern**<a href="#nota10"><sup>[10]</sup></a>. Notice the lowercase letter. We are not referring to the [Singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern) with capital ’S’ described in the design patterns book. The Singleton design pattern intent is to “ensure that only one instance of the singleton class ever exists; and provide global access to that instance”. The second part of that intent, “providing global access”, is problematic because it introduces global state into the application. Using global state creates high coupling (in the form of hidden dependencies and possible actions at a distance) that drastically reduces testability. 
 
 The lowercase ’s’ singleton avoids those testability problems because its intent is only to “ensure that only one instance of some class ever exists because its new operator is called only once”. We remove the global access part. This is done by avoiding mixing object instantiation with business logic by using separated factories that know how to create and wire up all the dependencies using dependency injection.
 
 We might create this singleton, for instance, by using a dependency injection framework like [Guice](https://github.com/google/guice) and its `@Singleton` annotation.
 
-In our case we coded it<a href="#nota4"><sup>[4]</sup></a><- ya no va aquí ourselves:
+In our case we coded it ourselves:
 
 <script src="https://gist.github.com/trikitrok/082c40d8d869ba568e1da6869aabed07.js"></script>
-Notice the factory method that returns a unique instance of the `GalleryAdsRepository` interface that caches values. This factory method is never used by business logic, it’s only used by instantiation logic in factories that know how to create and wire up all the dependencies using dependency injection.
-
-  means never calling the code that creates that unique instance from production code
-
-No introduce problemas de testeabilidad en otras clases porque esta única instancia es inyectada por constructor en todos las clases que la necesitan como colaboradora.
 
 
-
-
-
-
-
-
-
-
-
-
+Notice the factory method that returns a unique instance of the `GalleryAdsRepository` interface that caches values. This factory method is never used by business logic, it’s only used by instantiation logic in factories that know how to create and wire up all the dependencies using dependency injection. This doesn’t introduce testability problems because the unique instance will be injected through constructors by factories wherever is needed.
 
 
 <h2>Conclusions.</h2>
@@ -166,15 +150,15 @@ We refactored the production code to separate concerns by going more OO applying
 
 <h2>Notes.</h2>
 
-<a name="nota1"></a> [1]  <- Poner aquí las referencias a otros posts anteriores sobre este mismo tema.
+<a name="nota1"></a> [1] We showed another example of this relationship between poor testability and design problems in a previous post: [An example of listening to the tests to improve a design](https://codesai.com/posts/2019/06/listening-to-tests-to-go-more-oo).
 
 <a name="nota2"></a> [2] Listen to his great talk about this relationship: [The Deep Synergy Between Testability and Good Design](https://www.youtube.com/watch?v=4cVZvoFGJTU)
 
-<a name="nota3"></a> [3] This is the complete paragraph from chapter 20 (título?)  of the GOOS book <- link: “Sometimes we find it difficult to write a test for some functionality we want to add to our code. In our experience, this usually means that our design can be improved — perhaps the class is too tightly coupled to its environment or does not have clear responsibilities. When this happens, we first check whether it’s an opportunity to improve our code, before working around the design by making the test more complicated or using more sophisticated tools. We’ve found that the qualities that make an object easy to test also make our code responsive to change.”
+<a name="nota3"></a> [3] This is the complete paragraph from chapter 20, “Listening to the tests”, of the [GOOS book](https://www.goodreads.com/en/book/show/4268826-growing-object-oriented-software-guided-by-tests): “Sometimes we find it difficult to write a test for some functionality we want to add to our code. In our experience, this usually means that our design can be improved — perhaps the class is too tightly coupled to its environment or does not have clear responsibilities. When this happens, we first check whether it’s an opportunity to improve our code, before working around the design by making the test more complicated or using more sophisticated tools. We’ve found that the qualities that make an object easy to test also make our code responsive to change.”
 
 <a name="nota4"></a> [4]  This quote is from their post [Synaesthesia: Listening to Test Smells](http://www.mockobjects.com/2007/03/synaesthesia-listening-to-test-smells.html).
 
-<a name="nota5"></a> [5]  Have a look at this interesting [series of posts about listening to the tests]( [Steve Freeman](https://twitter.com/sf105?lang=en)) by  [Steve Freeman](https://twitter.com/sf105?lang=en). It’s a raw version of the content that you’ll find in chapter 20 (título?) of their book.
+<a name="nota5"></a> [5]  Have a look at this interesting [series of posts about listening to the tests]( [Steve Freeman](https://twitter.com/sf105?lang=en)) by [Steve Freeman](https://twitter.com/sf105?lang=en). It’s a raw version of the content that you’ll find in chapter 20, “Listening to the tests”, of their book.
 
 <a name="nota6"></a> [6] We have simplified the client's code to remove some distracting details and try to highlight its key problems.
 
@@ -182,8 +166,10 @@ We refactored the production code to separate concerns by going more OO applying
 
 <a name="nota8"></a> [8] A [flag Argument](https://martinfowler.com/bliki/FlagArgument.html) is a kind of argument that is telling a function or a class to behave in a different way depending on its value. This might be a signal of poor cohesion in the function or class.
 
+<a name="nota9"></a> [9] Have a look at the discussion in the chapter devoted to the Decorator design pattern in the great book [Design Patterns Explained: A New Perspective on Object-Oriented Design](https://www.goodreads.com/book/show/85021.Design_Patterns_Explained).
 
-No introduce problemas de testeabilidad en otras clases porque esta única instancia es inyectada por constructor en todos las clases que la necesitan como colaboradora.
+ <a name="nota10"></a> [10] [Miško Hevery](http://misko.hevery.com/about/) talks about the singleton pattern with lowercase ‘s’ in its talk [Global State and Singletons
+](https://testing.googleblog.com/2008/11/clean-code-talks-global-state-and.html) at  10:20: “Singleton with capital ’S’. Refers to the design pattern where the Singleton has a private constructor and has a global instance variable. Lowercase ’s’ singleton means I only have a single instance of something because I only called the new operator once.”
 
 <h2>References.</h2>
 - [Growing Object-Oriented Software, Guided by Tests](https://www.goodreads.com/en/book/show/4268826-growing-object-oriented-software-guided-by-tests), [Steve Freeman](https://twitter.com/sf105?lang=en), [Nat Pryce](http://www.natpryce.com/articles.html)
@@ -195,17 +181,10 @@ No introduce problemas de testeabilidad en otras clases porque esta única insta
 ](https://testing.googleblog.com/2008/11/clean-code-talks-global-state-and.html), [Miško Hevery](http://misko.hevery.com/about/)
 - [Why Singletons Are Controversial](https://code.google.com/archive/p/google-singleton-detector/wikis/WhySingletonsAreControversial.wiki)
 - [Flag Argument](https://martinfowler.com/bliki/FlagArgument.html), [Martin Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer))
+- [An example of listening to the tests to improve a design](https://codesai.com/posts/2019/06/listening-to-tests-to-go-more-oo), [Manuel Rivero](https://twitter.com/trikitrok)
 - [Code pollution](https://enterprisecraftsmanship.com/posts/code-pollution/), [Vladimir Khorikov](https://twitter.com/vkhorikov?lang=en)
 - [Guice](https://github.com/google/guice)
-- [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern) <- quitar y poner link en texto
-- [Singleton Pattern](https://en.wikipedia.org/wiki/Singleton_pattern) <- quitar y poner link en texto
 - [Guice Scopes](https://github.com/google/guice/wiki/Scopes)
-
-Párrafo entero del que extraje la primera cita del GOOS:  “Sometimes we find it difficult to write a test for some functionality we want to add to our code. In our experience, this usually means that our design can be improved — perhaps the class is too tightly coupled to its environment or does not have clear responsibilities. When this happens, we first check whether it’s an opportunity to improve our code, before working around the design by making the test more complicated or using more sophisticated tools. We’ve found that the qualities that make an object easy to test also make our code responsive to change.”
-
-From The Clean Code Talks - "Global State and Singletons":
-
-08:30 All of your test flakiness will come from some form of uncontrolled global state. 10:20 Singleton with capital ’S’. Refers to the design pattern where the Singleton has a private constructor and has a global instance variable. Lowercase ’s’ singleton means I only have a single instance of something because I only called the new operator once. 11:44 Singleton pattern is bad because it introduces potentially infinite global variables. 13:00 If global variables are bad… how can Singletons be good? (They can't & aren't good.) 15:10 How do I assert that a method in my class calls another method on a singleton? You can’t. There’s no seams. Instead, you need to instantiate the class under test and the instantiation of its dependencies. 18:54 Deceptive API. Singletons hide the details. There’s hidden dependencies. You can have unexpected side effects. 25:00 Dependency injection orders code naturally. A class will explicitly declare its dependencies. And it enforces correct order of method calls/setup. 29:10 Review: - Global state is the root of 90% of your testing problems - Global state can’t be controlled by tests - Singleton pattern is just global state Q&A 32:00 Q: Without a Singleton I have to pass a dependency all the way down a long chain and that seems excessive. Isn’t that bad? A: That’s a myth. Let’s say you have a database and you instantiate it all the way in your main method. Wouldn’t you have to then pass it all the way down? No you don’t. You need to change the way you structure your code. You probably mix object instantiation with business logic. Instead, you should have a factory that knows how to create and wire up all the dependencies. 36:28 Q: Isn’t a ‘House’ factory inconvenient because then you have to pass thousands of things into the method? A: If House needs 1000 things then your house has a design problem because it has too many responsibilities. You need to decompose and re-structure your classes.
 
 Foto from [cottonbro](https://www.pexels.com/es-es/@cottonbro/) in [Pexels](https://www.pexels.com).
 
