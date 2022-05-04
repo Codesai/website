@@ -24,7 +24,7 @@ cross_post_url:
 
 We'd like to show another example of how difficulties found while testing can signal design problems in our code<a href="#nota1"><sup>[1]</sup></a>.
 
-We believe that a good design is one that supports the evolution of a code base at a sustainable pace and that testability is a requirement for evolvability. This is not something new; we can find this idea in many places.
+We believe that a good design is one that supports the evolution of a code base at a sustainable pace and that testability is a requirement for evolvability. This is not something new, we can find this idea in many places.
 
 [Michael Feathers](https://michaelfeathers.silvrback.com/) says *“every time you encounter a testability problem, there is an underline design problem”*<a href="#nota2"><sup>[2]</sup></a>.
 
