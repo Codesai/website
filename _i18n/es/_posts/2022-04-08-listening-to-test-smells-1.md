@@ -116,25 +116,23 @@ Notice how we removed both the `resetCache` method that was before polluting its
 
 We also reduced its number of collaborators because there’s no need for a `Clock` anymore. That collaborator was needed for a different concern that is now taken care of in the decorator `CachedGalleryAdsRepository`.
 
-These design improvements are reflected in its new tests:
+These design improvements are reflected in its new tests. They are now more focused, and can only fail if the obtention of the gallery ads breaks. Having only one reason to fail comes from testing a more cohesive unit with only one reason to change.  Notice how these tests coincide with the subset of tests concerned with testing the same behaviour in the original tests of `RealTimeGalleryAdsRepository`:
 
 <script src="https://gist.github.com/trikitrok/35749a8b111aacb23f0d8cd290cc7e79.js"></script>
-
-which are reduced only to the set of tests concerned with testing the obtention of the gallery ads in the original tests of `RealTimeGalleryAdsRepository`.
 
 <h2>Persisting the cached values between calls.</h2>
 
 You might be asking yourselves, how are we going to ensure that the cached values persist between calls now that we don't have a static field anymore.
 
-Well, the answer is that we don't need to keep a static field in our classes for that. The only thing we need is that the composition of `CachedGalleryAdsRepository` and `RealTimeGalleryAdsRepository` is created only once, and that we use that single instance for the lifetime of the application. That is a concern that we can achieve using a different mechanism.
+Well, the answer is that we don't need to keep a static field in our classes for that. The only thing we need is that the composition of `CachedGalleryAdsRepository` and `RealTimeGalleryAdsRepository` is *created only once, and that we use that single instance for the lifetime of the application*. That is a concern that we can address using a different mechanism.
 
-We used the **singleton pattern**<a href="#nota10"><sup>[10]</sup></a>. Notice the lowercase letter. We are not referring to the [Singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern) with capital ’S’ described in the design patterns book. The Singleton design pattern intent is to “ensure that only one instance of the singleton class ever exists; and provide global access to that instance”. The second part of that intent, “providing global access”, is problematic because it introduces global state into the application. Using global state creates high coupling (in the form of hidden dependencies and possible actions at a distance) that drastically reduces testability. 
+We usually find in legacy code bases that this need to *create something only once, and use that single instance for the lifetime of the application* is met using the [Singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern) described in the design patterns book. The Singleton design pattern intent is to *“ensure that only one instance of the singleton class ever exists; and provide global access to that instance”*. The second part of that intent, *“providing global access”*, is problematic because it introduces global state into the application. Using global state creates high coupling (in the form of hidden dependencies and possible actions at a distance) that drastically reduces testability.
 
-The lowercase ’s’ singleton avoids those testability problems because its intent is only to “ensure that only one instance of some class ever exists because its new operator is called only once”. We remove the global access part. This is done by avoiding mixing object instantiation with business logic by using separated factories that know how to create and wire up all the dependencies using dependency injection.
+Instead we used the **singleton pattern**<a href="#nota10"><sup>[10]</sup></a>. Notice the lowercase letter. The lowercase ’s’ singleton avoids those testability problems because its intent is only to *“ensure that only one instance of some class ever exists because its new operator is called only once”*. The problematic global access part gets removed from the intent. This is done by avoiding mixing object instantiation with business logic by using separated factories that know how to create and wire up all the dependencies using dependency injection.
 
 We might create this singleton, for instance, by using a dependency injection framework like [Guice](https://github.com/google/guice) and its `@Singleton` annotation.
 
-In our case we coded it ourselves:
+In this case we coded it ourselves:
 
 <script src="https://gist.github.com/trikitrok/082c40d8d869ba568e1da6869aabed07.js"></script>
 
@@ -187,7 +185,6 @@ We refactored the production code to separate concerns by going more OO applying
 - [Guice Scopes](https://github.com/google/guice/wiki/Scopes)
 
 Foto from [cottonbro](https://www.pexels.com/es-es/@cottonbro/) in [Pexels](https://www.pexels.com).
-
 
 
 
