@@ -84,11 +84,11 @@ That was a clear example of a **flag argument**<a href="#nota8"><sup>[8]</sup></
 1. It cached the list of gallery ads when `useCache` was true.
 2. It did not cache them when `useCache` was false.
 
-After seeing all this, I told the pair that the real problem was the lack of cohesion and that we’d have to go more object-oriented in order to avoid it. After that refactoring, the need for the `resetCache` would disappear.
+After seeing all this, I told the pair that the real problem was the lack of cohesion and that we’d have to go more object-oriented in order to avoid it. After that refactoring the need for the `resetCache` would disappear.
 
 <h2>Going more OO to fix the lack of cohesion.</h2>
 
-To strengthen cohesion we need to separate concerns. Let’s see the problem from the point of view of the client of the `RealTimeGalleryAdsRepository` class, (<-nota we’ll see that this point of view is generally useful because the test is also a client of the tested class.) and think about what it would want from the `RealTimeGalleryAdsRepository`. It would be something like “obtain the gallery ads for me”, that would be the responsibility of the `RealTimeGalleryAdsRepository`, and that’s what the `GalleryAdsRepository` represents.
+To strengthen cohesion we need to separate concerns. Let’s see the problem from the point of view of the client of the `RealTimeGalleryAdsRepository` class, (this point of view is generally very useful because the test is also a client of the tested class) and think about what it would want from the `RealTimeGalleryAdsRepository`. It would be something like “obtain the gallery ads for me”, that would be the responsibility of the `RealTimeGalleryAdsRepository`, and that’s what the `GalleryAdsRepository` represents.
 
 
 Notice that to satisfy that responsibility we do not need to use a cache, only get some ads from the AdsRepository and map them (the original functionality also included some enrichments using data from other sources but we remove them from the example for the sake of simplicity). Caching is an optimization that we might do or not, it’s a refinement or embellishment to how we satisfy the responsibility but it’s not necessary to satisfy it. In this case, caching changes the “how” but not the “what”.
