@@ -65,7 +65,7 @@ Looking at the code of `RealTimeGalleryAdsRepository` you can learn why.
 The `cachedSearchResult` field is static and that was breaking the isolation between tests.
 Even though they were using different instances of `RealTimeGalleryAdsRepository` in each test, they were sharing the same value of the `cachedSearchResult` field because static state is associated with the class. So a new public method, `resetCache`, was added to the class only to ensure isolation between different tests.
 
-Adding code to your production code base only in order to enable unit testing is a unit testing anti-pattern<a href="#nota7"><sup>[7]</sup></a>, but they didn’t know how to get rid of the `resetCache` method, and that’s why I was called in to help.
+Adding code to your production code base just to enable unit testing is a unit testing anti-pattern<a href="#nota7"><sup>[7]</sup></a>, but they didn’t know how to get rid of the `resetCache` method, and that’s why I was called in to help.
 
 Let’s examine the tests in `RealTimeGalleryAdsRepositoryTests` to see if they can point to more fundamental design problems. 
 
