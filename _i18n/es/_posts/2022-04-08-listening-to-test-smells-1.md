@@ -84,7 +84,7 @@ That was a clear example of a **flag argument**<a href="#nota8"><sup>[8]</sup></
 1. It cached the list of gallery ads when `useCache` was true.
 2. It did not cache them when `useCache` was false.
 
-After seeing all this, I told the pair that the real problem was the lack of cohesion and that we’d have to go more object-oriented in order to avoid it. As a result the need for the `resetCache` would disappear.
+After seeing all this, I told the pair that the real problem was the lack of cohesion and that we’d have to go more object-oriented in order to avoid it. After that refactoring, the need for the `resetCache` would disappear.
 
 <h2>Going more OO to fix the lack of cohesion.</h2>
 
