@@ -80,8 +80,9 @@ This lack of focus was a hint that the production class might lack cohesion, i.e
 
 It turns out that there was another code smell that confirmed our suspicion. Notice the boolean parameter `useCache` in `RealTimeGalleryAdsRepository` constructor.
 That was a clear example of a **flag argument**<a href="#nota8"><sup>[8]</sup></a>. `useCache` was making the class behave differently depending on its value:
-a. It cached the list of gallery ads when `useCache` was true.
-b. It did not cache them when `useCache` was false.
+
+1. It cached the list of gallery ads when `useCache` was true.
+2. It did not cache them when `useCache` was false.
 
 After seeing all this, I told the pair that the real problem was the lack of cohesion and that we’d have to go more object-oriented in order to avoid it. As a result the need for the `resetCache` would disappear.
 
