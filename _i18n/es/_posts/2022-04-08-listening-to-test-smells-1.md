@@ -26,7 +26,7 @@ We'd like to show another example of how difficulties found while testing can si
 
 We believe that a good design is one that supports the evolution of a code base at a sustainable pace and that testability is a requirement for evolvability. This is not something new, we can find this idea in many places.
 
-[Michael Feathers](https://michaelfeathers.silvrback.com/) says *“every time you encounter a testability problem, there is an underline design problem”*<a href="#nota2"><sup>[2]</sup></a>.
+[Michael Feathers](https://michaelfeathers.silvrback.com/) says *“every time you encounter a testability problem, there is an underlying design problem”*<a href="#nota2"><sup>[2]</sup></a>.
 
 [Nat Pryce](http://www.natpryce.com/articles.html) and [Steve Freeman](https://twitter.com/sf105?lang=en) also think that this relationship between testability and good design exists<a href="#nota3"><sup>[3]</sup></a>:  
 
