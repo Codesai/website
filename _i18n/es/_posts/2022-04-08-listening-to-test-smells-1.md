@@ -71,9 +71,11 @@ Let’s examine the tests in `RealTimeGalleryAdsRepositoryTests` to see if they 
 
 Another thing we can notice is that the tests can be divided in to sets that are testing two very different behaviours:
 
-* One set of tests, comprised of `maps_all_ads_with_photo_to_gallery_ads`, `ignore_ads_with_no_photos_in_gallery_ads` and `when_no_ads_are_found_there_are_no_gallery_ads`, is testing the code that obtains the list of gallery ads,
+* One set of tests, comprised of `maps_all_ads_with_photo_to_gallery_ads`, `ignore_ads_with_no_photos_in_gallery_ads` and `when_no_ads_are_found_there_are_no_gallery_ads`, is testing the code that obtains the list of gallery ads;
 
 * whereas, the other set, comprised of `when_cache_has_not_expired_the_cached_values_are_used` and `when_cache_expires_new_values_are_retrieved` is testing the life and expiration of some cached values. 
+
+
 This test smell was a hint that the production class might lack cohesion, i.e., it might have several responsibilities.
 
 It turns out that there was another code smell that confirmed our suspicion. Notice the boolean parameter `useCache` in `RealTimeGalleryAdsRepository` constructor.
