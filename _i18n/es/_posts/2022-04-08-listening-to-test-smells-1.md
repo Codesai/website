@@ -161,7 +161,7 @@ We refactored the production code to separate concerns by going more OO applying
 
 <a name="nota4"></a> [4]  This quote is from their post [Synaesthesia: Listening to Test Smells](http://www.mockobjects.com/2007/03/synaesthesia-listening-to-test-smells.html).
 
-<a name="nota5"></a> [5]  Have a look at this interesting [series of posts about listening to the tests]( [Steve Freeman](https://twitter.com/sf105?lang=en)) by [Steve Freeman](https://twitter.com/sf105?lang=en). It’s a raw version of the content that you’ll find in chapter 20, “Listening to the tests”, of their book.
+<a name="nota5"></a> [5]  Have a look at this interesting [series of posts about listening to the tests]( [Steve Freeman](https://twitter.com/sf105?lang=en)) by [Steve Freeman](https://twitter.com/sf105?lang=en). It’s a raw version of the content that you’ll find in chapter 20, **Listening to the tests**, of their book.
 
 <a name="nota6"></a> [6] We have simplified the client's code to remove some distracting details and try to highlight its key problems.
 
