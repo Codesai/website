@@ -76,7 +76,7 @@ Another thing we can notice is that the tests can be divided in to sets that are
 * whereas, the other set, comprised of `when_cache_has_not_expired_the_cached_values_are_used` and `when_cache_expires_new_values_are_retrieved` is testing the life and expiration of some cached values. 
 
 
-This test smell was a hint that the production class might lack cohesion, i.e., it might have several responsibilities.
+This lack of focus was a hint that the production class might lack cohesion, i.e., it might have several responsibilities.
 
 It turns out that there was another code smell that confirmed our suspicion. Notice the boolean parameter `useCache` in `RealTimeGalleryAdsRepository` constructor.
 That was a clear example of a **flag argument**<a href="#nota8"><sup>[8]</sup></a>. `useCache` was making the class behave differently depending on its value:
