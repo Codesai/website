@@ -43,7 +43,7 @@ and to improve their TDD practice:
 This is why they devoted talks, several posts and a chapter of their GOOS book (chapter 20) to listening to the tests<a href="#nota5"><sup>[5]</sup></a> and even added it to the TDD cycle steps:
 
 
-<img src="http://www.growing-object-oriented-software.com/figures/listening-to-tests.svg"
+<img src="/assets/listening-to-tests.svg"
     alt="TDD cycle steps including listening to the tests."
     style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
