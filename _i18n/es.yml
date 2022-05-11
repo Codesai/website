@@ -539,260 +539,49 @@ pages:
           <li>Your Online Choices: www.youronlinechoices.com/es/</li>
       </ul>
       <p>Cookies utilizadas en www.codesai.com</p>
-      <p>A continuación se identifican las cookies que están siendo utilizadas en este portal así como su tipología y
-          función:</p>
-      <ul>
-          <li>_utma
-              <ul>
-                  <li>Duración: 2 años a partir de su instalación o actualización.</li>
-                  <li>Descripción: Recopila información anónima sobre la navegación de los usuarios por el sitio web con
-                      el fin de conocer el origen de las visitas y otros datos estadísticos.
-                      Esta cookie normalmente se almacena en el navegador en la primera visita a nuestro sitio web.
-      
-                      Si la cookie ha sido borrada a través del navegador y posteriormente vuelve a visitar nuestro
-                      sitioweb, una nueva cookie del tipo _utma se escribe con un ID único diferente.
-      
-                      Esta cookie se utiliza para determinar visitantes únicos a nuestro sitio web y se actualiza con cada
-                      vista de página.
-      
-                      Adicionalmente, esta cookie proporciona un identificador único que Google Analytics utiliza para
-                      asegurar la validez y la accesibilidad de la cookie, así como una medida de seguridad extra.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
+      <p>A continuación se identifican las cookies que están siendo utilizadas en este portal así como su tipología y función:</p>
+      <ul>_ga
+        <li>Duración: 2 años</li>
+        <li>Descripción: Sirve para distinguir a los usuarios. Generada por Google Analytics. Google almacena la
+            informacion recogida por las cookies en servidores ubicados en Estados Unidos, cumpliendo con la
+            legislación Europea en cuanto a protección de datos personales y se compromete a no compartirla con
+            terceros, excepto cuando la ley le obligue a ello o sea necesario para el funcionamiento del
+            sistema. Google no asocia su direccion IP con ninguna otra informacion que tenga. Si desea obtener
+            mas informacion acerca de las cookies usadas por Google Analytics, por favor acceda a esta
+            direccion:
+            https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw=1
+        </li>
+        <li>Tipo: Tercero</li>
+        <li>Finalidad: Analítica</li>
+      </ul>
+      <br>
+      <ul>_gat
+          <li>Duración: 1 minuto</li>
+          <li>Descripción: Utilizada para mostrar nuestra publicidad en otras páginas de la red de Google.
+              Generada por Google Analytics. Google almacena la informacion recogida por las cookies en servidores
+              ubicados en Estados Unidos, cumpliendo con la legislación Europea en cuanto a protección de datos
+              personales y se compromete a no compartirla con terceros, excepto cuando la ley le obligue a ello o
+              sea necesario para el funcionamiento del sistema. Google no asocia su direccion IP con ninguna otra
+              informacion que tenga. Si desea obtener mas informacion acerca de las cookies usadas por Google
+              Analytics, por favor acceda a esta direccion:
+              https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw=1
           </li>
-          <li>_utmb
-              <ul>
-                  <li>Duración: 30 minutos</li>
-                  <li>Descripción: Almacena información sobre la actividad de la visita a nuestro sitio web y
-                      principalmente la duración de ésta.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
+          <li>Tipo: Tercero</li>
+          <li>Finalidad: Publicidad comportamental</li>
+      </ul>
+      <br>
+      <ul>_gid
+          <li>Duración: 24 horas</li>
+          <li>Descripción: Generada por Google Analytics. Google almacena la informacion recogida por las cookies
+              en servidores ubicados en Estados Unidos, cumpliendo con la legislación Europea en cuanto a
+              protección de datos personales y se compromete a no compartirla con terceros, excepto cuando la ley
+              le obligue a ello o sea necesario para el funcionamiento del sistema. Google no asocia su direccion
+              IP con ninguna otra informacion que tenga. Si desea obtener mas informacion acerca de las cookies
+              usadas por Google Analytics, por favor acceda a esta direccion:
+              https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw
           </li>
-          <li>_utmc
-              <ul>
-                  <li>Duración: Sesión</li>
-                  <li>Descripción: Almacena información sobre la actividad de la visita a nuestro sitio web y
-                      principalmente la duración de ésta.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>_utmz
-              <ul>
-                  <li>Duración: 6 meses a partir de su instalación o actualización.</li>
-                  <li>Descripción: Esta cookie normalmente se almacena en el navegador en la primera visita a nuestro
-                      sitio web.
-      
-                      Esta cookie almacena cómo ha llegado el visitante a nuestro sitio web, ya sea directamente
-                      introduciendo la dirección del dominio, un enlace, una búsqueda web o un anuncio. La cookie se
-                      actualiza cada vez que visita nuestra web.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>_ga
-              <ul>
-                  <li>Duración: 2 años</li>
-                  <li>Descripción: Sirve para distinguir a los usuarios. Generada por Google Analytics. Google almacena la
-                      informacion recogida por las cookies en servidores ubicados en Estados Unidos, cumpliendo con la
-                      legislación Europea en cuanto a protección de datos personales y se compromete a no compartirla con
-                      terceros, excepto cuando la ley le obligue a ello o sea necesario para el funcionamiento del
-                      sistema. Google no asocia su direccion IP con ninguna otra informacion que tenga. Si desea obtener
-                      mas informacion acerca de las cookies usadas por Google Analytics, por favor acceda a esta
-                      direccion:
-                      https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw=1
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>_gat
-              <ul>
-                  <li>Duración: 1 minuto</li>
-                  <li>Descripción: Utilizada para mostrar nuestra publicidad en otras páginas de la red de Google.
-                      Generada por Google Analytics. Google almacena la informacion recogida por las cookies en servidores
-                      ubicados en Estados Unidos, cumpliendo con la legislación Europea en cuanto a protección de datos
-                      personales y se compromete a no compartirla con terceros, excepto cuando la ley le obligue a ello o
-                      sea necesario para el funcionamiento del sistema. Google no asocia su direccion IP con ninguna otra
-                      informacion que tenga. Si desea obtener mas informacion acerca de las cookies usadas por Google
-                      Analytics, por favor acceda a esta direccion:
-                      https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw=1
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Publicidad comportamental</li>
-              </ul>
-          </li>
-          <li>_gid
-              <ul>
-                  <li>Duración: 24 horas</li>
-                  <li>Descripción: Generada por Google Analytics. Google almacena la informacion recogida por las cookies
-                      en servidores ubicados en Estados Unidos, cumpliendo con la legislación Europea en cuanto a
-                      protección de datos personales y se compromete a no compartirla con terceros, excepto cuando la ley
-                      le obligue a ello o sea necesario para el funcionamiento del sistema. Google no asocia su direccion
-                      IP con ninguna otra informacion que tenga. Si desea obtener mas informacion acerca de las cookies
-                      usadas por Google Analytics, por favor acceda a esta direccion:
-                      https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Publicidad comportamental</li>
-              </ul>
-          </li>
-          <li>APISID
-              <ul>
-                  <li>Duración: 2 años</li>
-                  <li>Descripción: Al crear o iniciar sesión en una cuenta de Google se almacenan esta cookie en su
-                      ordenador con el fin de permanecer conectado a su cuenta de Google al visitar sus servicios de
-                      nuevo. Mientras permanezca con esta sesión activa y use complementos en otros sitios Web como el
-                      nuestro, Google hará uso de estas cookies para mejorar su experiencia de uso.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>HSID
-              <ul>
-                  <li>Duración: 2 años</li>
-                  <li>Descripción: Al crear o iniciar sesión en una cuenta de Google se almacenan esta cookie en su
-                      ordenador con el fin de permanecer conectado a su cuenta de Google al visitar sus servicios de
-                      nuevo. Mientras permanezca con esta sesión activa y use complementos en otros sitios Web como el
-                      nuestro, Google hará uso de estas cookies para mejorar su experiencia de uso.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>LOGIN_INFO
-              <ul>
-                  <li>Duración: 2 años</li>
-                  <li>Descripción: En algunas páginas de nuestro Sitio Web tenemos vídeos incrustados de Youtube, es un
-                      servicio de Google. Su uso implica la remisión de esta cookie además de las cookies que Google
-                      requiere si mantiene la sesión activa con su cuenta, con el propósito de visualizar los vídeos
-                      incrustados, estimar el ancho de banda y mostrar cuantas veces se ha reproducido.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>PREF
-              <ul>
-                  <li>Duración: 2 años</li>
-                  <li>Descripción: Al crear o iniciar sesión en una cuenta de Google se almacenan esta cookie en su
-                      ordenador con el fin de permanecer conectado a su cuenta de Google al visitar sus servicios de
-                      nuevo. Mientras permanezca con esta sesión activa y use complementos en otros sitios Web como el
-                      nuestro, Google hará uso de estas cookies para mejorar su experiencia de uso.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>SAPISID
-              <ul>
-                  <li>Duración: 2 años</li>
-                  <li>Descripción: En algunas páginas de nuestro Sitio Web tenemos vídeos incrustados de Youtube, es un
-                      servicio de Google. Su uso implica la remisión de esta cookie además de las cookies que Google
-                      requiere si mantiene la sesión activa con su cuenta, con el propósito de visualizar los vídeos
-                      incrustados, estimar el ancho de banda y mostrar cuantas veces se ha reproducido.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>SID
-              <ul>
-                  <li>Duración: 2 años</li>
-                  <li>Descripción: Al crear o iniciar sesión en una cuenta de Google se almacenan esta cookie en su
-                      ordenador con el fin de permanecer conectado a su cuenta de Google al visitar sus servicios de
-                      nuevo. Mientras permanezca con esta sesión activa y use complementos en otros sitios Web como el
-                      nuestro, Google hará uso de estas cookies para mejorar su experiencia de uso.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>SSID
-              <ul>
-                  <li>Duración: 2 años</li>
-                  <li>Descripción: Al crear o iniciar sesión en una cuenta de Google se almacenan esta cookie en su
-                      ordenador con el fin de permanecer conectado a su cuenta de Google al visitar sus servicios de
-                      nuevo. Mientras permanezca con esta sesión activa y use complementos en otros sitios Web como el
-                      nuestro, Google hará uso de estas cookies para mejorar su experiencia de uso.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>VISITOR_INFO1_LIVE
-              <ul>
-                  <li>Duración: 8 meses</li>
-                  <li>Descripción: En algunas páginas de nuestro Sitio Web tenemos vídeos incrustados de Youtube, es un
-                      servicio de Google. Su uso implica la remisión de esta cookie además de las cookies que Google
-                      requiere si mantiene la sesión activa con su cuenta, con el propósito de visualizar los vídeos
-                      incrustados, estimar el ancho de banda y mostrar cuantas veces se ha reproducido.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>YSC
-              <ul>
-                  <li>Duración: Al cerrar sesión</li>
-                  <li>Descripción: En algunas páginas de nuestro Sitio Web tenemos vídeos incrustados de Youtube, es un
-                      servicio de Google. Su uso implica la remisión de esta cookie además de las cookies que Google
-                      requiere si mantiene la sesión activa con su cuenta, con el propósito de visualizar los vídeos
-                      incrustados, estimar el ancho de banda y mostrar cuantas veces se ha reproducido.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>nTpXe.resume
-              <ul>
-                  <li>Duración: 1 mes</li>
-                  <li>Descripción: En algunas páginas de nuestro Sitio Web tenemos vídeos incrustados de Youtube, es un
-                      servicio de Google. Su uso implica la remisión de esta cookie además de las cookies que Google
-                      requiere si mantiene la sesión activa con su cuenta, con el propósito de visualizar los vídeos
-                      incrustados, estimar el ancho de banda y mostrar cuantas veces se ha reproducido.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>NID
-              <ul>
-                  <li>Duración: 6 meses</li>
-                  <li>Descripción: La finalidad de esta cookie es almacenar información sobre tus preferencias.</li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Personalización</li>
-              </ul>
-          </li>
-          <li>AMP_TOKEN
-              <ul>
-                  <li>Duración: 30 segundos a 1 año</li>
-                  <li>Descripción: Incluye un token que se puede utilizar para recuperar un ID de cliente del servicio de
-                      ID de cliente de AMP. Otros posibles valores indican inhabilitaciones, solicitudes en curso o
-                      errores obtenidos al recuperar un ID del servicio de ID de cliente de AMP.
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
-          <li>_gac_
-              <ul>
-                  <li>Duración: 90 días</li>
-                  <li>Descripción: Incluye información de la campaña relativa al usuario. Si has vinculado tus cuentas de
-                      Google Analytics y AdWords, las etiquetas de conversión de sitios web leerán esta cookie, a menos
-                      que la inhabilites
-                  </li>
-                  <li>Tipo: Tercero</li>
-                  <li>Finalidad: Analítica</li>
-              </ul>
-          </li>
+          <li>Tipo: Tercero</li>
+          <li>Finalidad: Publicidad comportamental</li>
       </ul>
       <p>www.codesai.com muestra información sobre su Política de cookies en la parte inferior o superior de cualquier
           página del portal con cada inicio de sesión.</p>
