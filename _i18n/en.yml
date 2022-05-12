@@ -126,9 +126,9 @@ pages:
       text: <p>Any questions? If you want to know more about our line of work and how we can help, do not hesitate to contact us at <strong>contact@codesai.com</strong> or by filling out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
       placeholder: I would like to get more information.
   training:
-    title: Codesai. Formaciones
-    header: Te enseñamos a desarrollar mejor código
-    text: <p>Todos nuestros cursos son <strong>in-house</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.</p><p><strong>Además, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</strong></p>
+    title: Codesai. Training
+    header: Teaching you how to develop better code
+    text: <p>All our courses take place <strong>in-house</strong> (although we also offer some open dates). This kind of training will help correct mistakes and fully optimize the learning process in a way which is not possible through books or videos. Moreover, you will be able to apply it safely in your daily life. Ask us about upcoming calls.</p><p><strong>In addition, we offer a 50% discount for underrepresented groups in technology.</strong></p>
     courses:
       tdd:
         name: Test Driven Development (TDD)
@@ -814,22 +814,22 @@ components:
     message: What can we do to help?
     send: Send Message
   course:
-    information: Información
-    hours: horas
-    modality: Presencial o remoto.
-    price_ratio: €/persona
-    iva_excluded: I.V.A. no incluido.
-    button: Ver más información
+    information: Information
+    hours: hours
+    modality: On-site or remote.
+    price_ratio: €/person
+    iva_excluded: V.A.T. not included.
+    button: More Information
   course_summary:
-    title: Información
+    title: Information
     open_dates:
-      title: Próximas fechas en abierto
-    special_discount: Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología
-    hours: horas
-    default_modality_text: Presencial o remoto
-    participant: persona
-    iva_excluded: (I.V.A no incluido)
-    button: ¡Me interesa!
+      title: Upcoming open dates
+    special_discount: For open dates <span>50% discount</span> for underrepresented groups in technology
+    hours: hours
+    default_modality_text: On-site or remote
+    participant: person
+    iva_excluded: (V.A.T. not included)
+    button: I'm interested!
 
 header:
   links:
