@@ -72,59 +72,59 @@ pages:
       text: <p>Any questions? If you want to know more about our line of work and how we can help, do not hesitate to contact us at <strong>contact@codesai.com</strong> or by filling out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
       placeholder: I would like to get more information.
   clients:
-    title: Codesai. Nuestros clientes
+    title: Codesai. Our Clients
     profile:
-      title: La empresa
-      our_work: Nuestra aportación
+      title: The Company
+      our_work: Our Contribution
       technologies:
-        title: Tecnologías empleadas
-        languages: Lenguajes de programación
-        tools: Librerías/frameworks
-        databases: Persistencia
-        orchestration: Orquestación de servicios
-        monitoring: Monitorización de servicios
+        title: Used Technologies
+        languages: Programming Languages
+        tools: Libraries/Frameworks
+        databases: Persistence
+        orchestration: Service Orchestration
+        monitoring: Service Monitoring
     our_clients:
       lifull:
         name: Lifull Connect
-        about: Lifull Connect es uno de los mayores agregadores a nivel mundial en los sectores de empleo, coches y moda, y el mayor en el sector inmobiliario.
-        our_work: <p>Estamos ayudando a varios equipos de Lifull Connect a cambiar su cultura y mejorar su eficiencia, tanto trabajando con código legado como en proyectos nuevos,mediante un acompañamiento intensivo, un programa de práctica deliberada y formaciones específicas (TDD, code smells, refactoring, trabajo con código legado, ...).</p><p>Llevamos más de un año ayudando a varios equipos de Lifull, y ahora estamos empezando a trabajar con un par de equipos más.</p><p>Nuestra relación con Lifull Connect está siendo una simbiosis muy enriquecedora.</p>
-        stack: <p><strong>Lenguajes de programación:</strong> PHP, Java, Kotlin, Scala, JavaScript.</p><p><strong>Librerías/frameworks:</strong> Symfony, reffects, Play.</p><p><strong>Persistencia:</strong> MySQL, Solr, S3, Spark, Redis.</p>
+        about: Lifull Connect is one of the largest worldwide aggregators in the employment, automotive and fashion industries, as well as the largest in the real estate sector.
+        our_work: <p>We have been helping several Lifull Connect teams changing their work culture and improving their efficiency, both working with legacy code and on new projects, through intensive coaching, a dedicated practice program and specific trainings (TDD, code smells, refactoring, working with legacy code...).</p><p>For over a year, we have been helping several Lifull teams and we are now starting to work with a couple of new ones.</p><p>Our collaboration with Lifull Connect is proving to be a very rewarding relationship.</p>
+        stack: <p><strong>Programming Languages:</strong> PHP, Java, Kotlin, Scala, JavaScript.</p><p><strong>Libraries/Frameworks:</strong> Symfony, reffects, Play.</p><p><strong>Persistence:</strong> MySQL, Solr, S3, Spark, Redis.</p>
       buyviu:
         name: Buyviu
-        about: Buyviu es un marketplace que publica productos de diferentes redes de afiliación y redirige tráfico a sus afiliados a cambio de comisiones por las ventas de productos. Actualmente se encuentra en cuatro países con más de 3 millones de productos en cada país y la plataforma se encuentra preparada para su expansión a nuevos países. El valor añadido de BuyViu es la capacidad de generar automáticamente vídeos de presentación para productos con sus marcas y categorías, lo que mejora la capacidad de captación de tráfico frente a otros marketplaces existentes.
-        our_work: 3 miembros de Codesai se unieron a este proyecto para asumir tareas propias del CTO, como seleccionar las tecnologías y arquitecturas adecuadas, incorporar nuevo talento y gestionar la comuniación entre el departamento técnico y los stakeholders. Gracias al trabajo diario con el equipo propio de la empresa (una de nuestras bases) conseguimos crear una cultura de trabajo que fomentara prácticas como el pair programming, TDD o integración contínua que produjo una mejora de los resultados obtenidos.
-        stack: <p><strong>Lenguajes de programación:</strong> Python, Javascript, Kotlin.</p><p><strong>Librerías/frameworks:</strong> Django, Flask, Nodejs, React, Spring Boot.</p><p><strong>Persistencia:</strong> PostgreSQL (Amazon RDS), Elasticsearch (Amazon ES), S3, Redis.</p><p><strong>Orquestación de servicios:</strong> Docker, ECS, Cloudformation, Ansible.</p><p><strong>Monitorización de servicios:</strong> Prometheus, Kibana, Grafana, CloudWatch.</p>
+        about: Buyviu is a marketplace that publishes products from different affiliate networks and redirects traffic to its affiliates in exchange for sales commissions. It currently operates in four countries with more than 3 million products in each of them, and the platform is ready to expand to new territories. BuyViu's added value is the ability to automatically generate presentation videos for products featuring its brands and categories, which improves its traffic attraction capacity when compared to other existing marketplaces.
+        our_work: 3 Codesai members joined this project to assume CTO related tasks, such as selecting the appropriate technologies and architectures, recruiting new talent and managing the communications between the technical department and the stakeholders. Thanks to the daily work with the company's own team (one of our core values) we were able to build a work culture that fostered practices such as pair programming, TDD or continuous integration, which led to an improvement in the obtained results.
+        stack: <p><strong>Programming Languages:</strong> Python, Javascript, Kotlin.</p><p><strong>Libraries/Frameworks:</strong> Django, Flask, Nodejs, React, Spring Boot.</p><p><strong>Persistence:</strong> PostgreSQL (Amazon RDS), Elasticsearch (Amazon ES), S3, Redis.</p><p><strong>Service Orchestration:</strong> Docker, ECS, Cloudformation, Ansible.</p><p><strong>Service Monitoring:</strong> Prometheus, Kibana, Grafana, CloudWatch.</p>
       green_power:
         name: Green Power Monitor
-        about: Más de 10 años de experiencia ofreciendo soluciones a medida para plantas de energías renovables. Empresa líder independiente en el sector que gestiona, controla y monitoriza cerca de 2.700 instalaciones de este tipo altededor del mundo, facilitando herramientas que permiten optimizar al máximo todo su rendimiento.
-        our_work: Dentro del equipo de front-end, ayudamos a desarrollar una SPA que constituía un auténtico desafío debido a la gran cantidad de datos a visualizar y a la necesidad de crear una experiencia de usuario sólida (además de una buena estética visual). Como parte del equipo GPM Plus, la labor de Codesai se centró en la actualización de su software de gestión y monitorización de grandes portfolios de energías renovables, manteniendo un equilibrio entre la refactorización del código legado (en C# y con una antigüedad de casi 10 años) y la creación de nuevas funcionalidades.
-        stack: <p><strong>Lenguajes de programación:</strong> Python, Javascript, Kotlin.</p><p><strong>Librerías/frameworks:</strong> Django, Flask, Nodejs, React, Spring Boot.</p><p><strong>Persistencia:</strong> PostgreSQL (Amazon RDS), Elasticsearch (Amazon ES), S3, Redis.</p><p><strong>Orquestación de servicios:</strong> Docker, ECS, Cloudformation, Ansible.</p><p><strong>Monitorización de servicios:</strong> Prometheus, Kibana, Grafana, CloudWatch.</p>
+        about: Over 10 years of experience offering tailor-made solutions for renewable power plants. This leading independent company manages, controls and monitors nearly 2,700 such facilities around the world, providing tools to optimize their performance to the fullest.
+        our_work: Within the front-end team, we helped develop a SPA that constituted a real challenge due to the large amount of data to be displayed and the need to build a robust user experience (as well as visually pleasing aesthetics). As part of the GPM Plus team, Codesai's work focused on updating its management and monitoring software for large renewable energy portfolios, keeping the balance between the refactoring of legacy code (in C# and almost 10 years old) and the creation of new functionalities.
+        stack: <p><strong>Programming Languages:</strong> Python, Javascript, Kotlin.</p><p><strong>Libraries/Frameworks:</strong> Django, Flask, Nodejs, React, Spring Boot.</p><p><strong>Persistence:</strong> PostgreSQL (Amazon RDS), Elasticsearch (Amazon ES), S3, Redis.</p><p><strong>Service Orchestration:</strong> Docker, ECS, Cloudformation, Ansible.</p><p><strong>Service Monitoring:</strong> Prometheus, Kibana, Grafana, CloudWatch.</p>
       asv:
         name: Grupo ASV
-        about: Conjunto de empresas de servicios de amplia trayectoria vinculada principalmente a los negocios de transporte sanitario, seguros y servicios funerarios, con presencia en varias provincias de España.
-        our_work: Dos de nuestros profesionales, especializados en backend y frontend, estuvieron integrados en un equipo de 14 personas a tiempo completo usando Scrum para mejorar el sistema de gestión de ambulancias de la empresa. Nuestro conocimiento tecnológico, así como la experiencia en el desarrollo de productos con metodologías y prácticas de XP, formaron parte de las buenas prácticas técnicas requeridas. Eso, junto con la buena alineación dentro del equipo, permitió alcanzar las altas exigencias de calidad que precisaba el proyecto.
+        about: This group of service companies has extensive experience, mainly linked to the medical transport, insurance and funeral services businesses, with a strong presence in several provinces of Spain.
+        our_work: Two of our professionals, specialized in backend and frontend, were embedded in a 14-person full-time team using Scrum to improve the company's ambulance management system. Our technological knowledge, as well as our experience in product development using XP methodologies and practices, were part of the required technical practices. These, along with good alignment within the team, allowed us to achieve the high quality demands that the project required.
         stack: <p>ClojureScript, Om, re-om C#</p>
       domingo_alonso:
         name: Domingo Alongo Group
-        about: Su filial, Aplicaciones Informáticas Domingo Alonso (AIDA), es la encargada del desarrollo y mantenimiento de software para gestionar la importación, reparación y venta de vehículos. El programa se utiliza a nivel internacional tanto por las empresas del grupo como por otras del sector de la automoción.
-        our_work: Nuestro mayor reto fue ayudar a AIDA a cambiar su cultura. Durante más de dos años estuvimos acompañando a su equipo, consiguiendo una mejora tanto en sus procesos (adoptando metodologías ágiles) como en el análisis de producto. Nuestra labor de mentorización se extendió también a la interiorización de prácticas técnicas de XP como TDD, pair programing, integración/deploy continuo o refactoring, y en principios de diseño orientado a objetos como DDD o arquitectura hexagonal, a la vez que generábamos nuevas funcionalidades. Toda esta transformación ágil acabó produciendo resultados tan positivos como el crecimiento profesional de los miembros de su departamento y, lo que es más importante, la generación de una cultura de mejora contínua.
+        about: Its subsidiary, Aplicaciones Informáticas Domingo Alonso (AIDA), is responsible for the development and maintenance of software to manage the import, repair and sale of vehicles. The program is internationally utilized by the group's companies as well as by others in the automotive sector.
+        our_work: Our biggest challenge was to help AIDA change its work culture. For over two years we accompanied their team, achieving an improvement both in their processes (adopting agile methodologies) and in product analysis. Our mentoring work also extended to the internalization of XP technical practices such as TDD, pair programming, continuous integration/deploy or refactoring, and object-oriented design principles such as DDD or hexagonal architecture, while at the same time generating new functionalities. All this agile transformation ended up generating positive results such as the professional growth of the members of the department and, what is more important, the generation of a culture based on continuous improvement.
         stack: <p>.Net, C#, ECMAScript 6, SQL Server, PowerShell, RabbitMQ, SignalR, WPF, Knockout</p>
       mutua_tinerfena:
         name: Mutua Tinerfeña
-        about: Mutua Tinerfeña es una aseguradora con más de 85 años de experiencia en el sector de los seguros. Actualmente es la única aseguradora canaria que opera en el archipiélago. Cuenta con software propio para gestionar los múltiples productos que oferta, además de integraciones con diferentes sistemas en el mercado. El conocimiento que se necesita para operar en este sector es elevado y complejo.
-        our_work: <p>Estamos ayudando a Mutua Tinerfeña a cambiar su cultura mediante un acompañamiento de baja intensidad pero continuo y con formaciones (TDD, historias de usuario, Impact Mapping..). Se ha conseguido mejorar tanto sus procesos, adoptando metodologías ágiles y mejorando el análisis de producto, como sus prácticas técnicas, mentorizando a su equipo en prácticas técnicas de XP como TDD, pair programming, integración/deploy continuo o refactoring.</p><p>La transformación que se está produciendo en Mutua Tinerfeña está teniendo resultados muy positivos. A la vez se está consiguiendo minimizar lo mś posible el coste y caos que podría generar el cambio de paradigma. Su equipo está creciendo poco a poco profesionalmente, interiorizando las prácticas técnicas y, por encima de todo, generando una cultura de "mejora continua".</p>
+        about: Mutua Tinerfeña is an insurance company with over 85 years of experience in the field. It is currently the only insurance company from the Canary Islands operating there. It has its own software to handle its multiple products, as well as integrations with different market systems. The knowledge required to operate in this sector is very high and complex.
+        our_work: <p>We are helping Mutua Tinerfeña to change its work culture through a low intensity but continuous support and training (TDD, user stories, Impact Mapping...). We have been able to improve both their processes, adopting agile methodologies and improving product analysis, and their technical practices, mentoring their team in XP technical practices such as TDD, pair programming, continuous integration/deployment or refactoring.</p><p>The transformation that is taking place in Mutua Tinerfeña is proving to be very positive. At the same time, it is minimizing as much as possible the costs and chaos that the paradigm shift could generate. Their team is growing professionally little by little, internalizing the technical practices and, most of all, building a culture of "continuous improvement".</p>
         stack: <p>Java, PLSQL, Scala, Kafka, JSF, Oracle Forms</p>
       the_motion:
         name: The Motion
-        about: Start-up revolucionaria dentro de la industria del video-advertising, de plataforma abierta que intenta ayudar a sus clientes a crear video-ads únicos a partir de cualquier dato de producto, para hacer crecer sus negocios de forma rápida y sencilla.
-        our_work: Ayudamos a su equipo técnico (relativamente pequeño, entre 7-10 personas) a través de sesiones de pair programming a poner en práctica TDD y a mejorar sus conocimientos sobre diseño orientado a objetos. El resultado fue bastante positivo. Quedaron bastante satisfechos, resolviendo muchas dudas sobre cómo aplicar TDD en su día a día y sobre testing en general.
+        about: Revolutionary start-up in the video-advertising industry, an open platform that aims to help its customers create unique video-ads from any product data, in order to quickly and easily grow their business.
+        our_work: We helped their technical team (relatively small, between 7-10 people) through pair programming sessions in order to implement TDD and improve their knowledge of object oriented design. The outcome was rather positive. They were very satisfied, solving many questions about how to apply TDD on a daily basis as well as about testing in general.
         stack: <p>Python</p>
     other_clients:
-      header: Hemos ayudado también a mejorar el código de todas estas empresas
+      header: We also helped improve the code of all these companies:
     contact:
-      title: ¡Descubre todo lo que podemos hacer por tu empresa!
-      text: <p>¿Tienes dudas? ¿Quieres saber más sobre nuestra forma de trabajar y en todo lo que podemos aportar a tu equipo? Cuéntanoslo en contact@codesai.com o rellena el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-      placeholder: Me interesaría recibir información sobre posibles colaboraciones con mi empresa
+      title: Discover everything we can do for your company!
+      text: <p>Any questions? If you want to know more about our line of work and how we can help, do not hesitate to contact us at <strong>contact@codesai.com</strong> or by filling out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+      placeholder: I would like to get more information.
   training:
     title: Codesai. Formaciones
     header: Te enseñamos a desarrollar mejor código
