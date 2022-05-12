@@ -96,7 +96,7 @@ pages:
         stack: <p><strong>Lenguajes de programación:</strong> Python, Javascript, Kotlin.</p><p><strong>Librerías/frameworks:</strong> Django, Flask, Nodejs, React, Spring Boot.</p><p><strong>Persistencia:</strong> PostgreSQL (Amazon RDS), Elasticsearch (Amazon ES), S3, Redis.</p><p><strong>Orquestación de servicios:</strong> Docker, ECS, Cloudformation, Ansible.</p><p><strong>Monitorización de servicios:</strong> Prometheus, Kibana, Grafana, CloudWatch.</p>
       green_power:
         name: Green Power Monitor
-        about: Más de 10 años de experiencia ofreciendo soluciones a medida para plantas de energías renovables. Empresa líder independiente en el sector que gestiona, controla y monitoriza cerca de 2.700 instalaciones de este tipo altededor del mundo, facilitando herramientas que permiten optimizar al máximo todo su rendimiento.
+        about: Más de 10 años de experiencia ofreciendo soluciones a medida para plantas de energías renovables. Empresa líder independiente en el sector que gestiona, controla y monitoriza cerca de 2.700 instalaciones de este tipo alrededor del mundo, facilitando herramientas que permiten optimizar al máximo todo su rendimiento.
         our_work: Dentro del equipo de front-end, ayudamos a desarrollar una SPA que constituía un auténtico desafío debido a la gran cantidad de datos a visualizar y a la necesidad de crear una experiencia de usuario sólida (además de una buena estética visual). Como parte del equipo GPM Plus, la labor de Codesai se centró en la actualización de su software de gestión y monitorización de grandes portfolios de energías renovables, manteniendo un equilibrio entre la refactorización del código legado (en C# y con una antigüedad de casi 10 años) y la creación de nuevas funcionalidades.
         stack: <p><strong>Lenguajes de programación:</strong> Python, Javascript, Kotlin.</p><p><strong>Librerías/frameworks:</strong> Django, Flask, Nodejs, React, Spring Boot.</p><p><strong>Persistencia:</strong> PostgreSQL (Amazon RDS), Elasticsearch (Amazon ES), S3, Redis.</p><p><strong>Orquestación de servicios:</strong> Docker, ECS, Cloudformation, Ansible.</p><p><strong>Monitorización de servicios:</strong> Prometheus, Kibana, Grafana, CloudWatch.</p>
       asv:
@@ -112,7 +112,7 @@ pages:
       mutua_tinerfena:
         name: Mutua Tinerfeña
         about: Mutua Tinerfeña es una aseguradora con más de 85 años de experiencia en el sector de los seguros. Actualmente es la única aseguradora canaria que opera en el archipiélago. Cuenta con software propio para gestionar los múltiples productos que oferta, además de integraciones con diferentes sistemas en el mercado. El conocimiento que se necesita para operar en este sector es elevado y complejo.
-        our_work: <p>Estamos ayudando a Mutua Tinerfeña a cambiar su cultura mediante un acompañamiento de baja intensidad pero continuo y con formaciones (TDD, historias de usuario, Impact Mapping..). Se ha conseguido mejorar tanto sus procesos, adoptando metodologías ágiles y mejorando el análisis de producto, como sus prácticas técnicas, mentorizando a su equipo en prácticas técnicas de XP como TDD, pair programming, integración/deploy continuo o refactoring.</p><p>La transformación que se está produciendo en Mutua Tinerfeña está teniendo resultados muy positivos. A la vez se está consiguiendo minimizar lo mś posible el coste y caos que podría generar el cambio de paradigma. Su equipo está creciendo poco a poco profesionalmente, interiorizando las prácticas técnicas y, por encima de todo, generando una cultura de "mejora continua".</p>
+        our_work: <p>Estamos ayudando a Mutua Tinerfeña a cambiar su cultura mediante un acompañamiento de baja intensidad pero continuo y con formaciones (TDD, historias de usuario, Impact Mapping..). Se ha conseguido mejorar tanto sus procesos, adoptando metodologías ágiles y mejorando el análisis de producto, como sus prácticas técnicas, mentorizando a su equipo en prácticas técnicas de XP como TDD, pair programming, integración/deploy continuo o refactoring.</p><p>La transformación que se está produciendo en Mutua Tinerfeña está teniendo resultados muy positivos. A la vez se está consiguiendo minimizar lo máximo posible el coste y caos que podría generar el cambio de paradigma. Su equipo está creciendo poco a poco profesionalmente, interiorizando las prácticas técnicas y, por encima de todo, generando una cultura de "mejora continua".</p>
         stack: <p>Java, PLSQL, Scala, Kafka, JSF, Oracle Forms</p>
       the_motion:
         name: The Motion
@@ -120,7 +120,7 @@ pages:
         our_work: Ayudamos a su equipo técnico (relativamente pequeño, entre 7-10 personas) a través de sesiones de pair programming a poner en práctica TDD y a mejorar sus conocimientos sobre diseño orientado a objetos. El resultado fue bastante positivo. Quedaron bastante satisfechos, resolviendo muchas dudas sobre cómo aplicar TDD en su día a día y sobre testing en general.
         stack: <p>Python</p>
     other_clients:
-      header: Hemos ayudado también a mejorar el código de todas estas empresas
+      header: Hemos ayudado también a mejorar el código de todas estas empresas:
     contact:
       title: ¡Descubre todo lo que podemos hacer por tu empresa!
       text: <p>¿Tienes dudas? ¿Quieres saber más sobre nuestra forma de trabajar y en todo lo que podemos aportar a tu equipo? Cuéntanoslo en contact@codesai.com o rellena el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
@@ -859,4 +859,3 @@ urls:
   legal_advertisement: /legal-advertisement/
   cookie_policy: /cookie-policy/
   privacy_policy: /privacy-policy/
-
