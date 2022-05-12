@@ -132,28 +132,28 @@ pages:
     courses:
       tdd:
         name: Test Driven Development (TDD)
-        description: La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.
+        description: The development technique that delivers quality code and excellent automatic test suites when done correctly. It is primarily a hands-on course, in which you will apply TDD by Pair Programming the majority of the time under the supervision and guidance of an expert.
         link: /en/trainings/tdd
       code_smells_refactoring:
         name: Code smells & Refactoring
-        description: El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.
+        description: The objective of this course is to introduce students to the different code smells and begin developing their ability to recognize them. We will also work on some techniques to safely and increasingly improve the existing code design.
         link: /en/trainings/refactoring
       ddd:
         name: DDD driven by test
-        description: El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.
+        description: The objective of this course is explaining the different tools offered by Domain Driven Design, both from an organizational point of view using strategic patterns and ubiquitous language, as well as from an architectural point of view using tactical patterns.
         link: /en/trainings/ddd
       user_stories:
-        name: Historias de usuario
-        description: El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario, identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.
+        name: User Stories
+        description: The objective of this course is for students to learn the essential parts of user stories, identify attributes that make them most effective and have an array of techniques for breaking them down.
         link: /en/trainings/user-stories
       cd_databases:
-        name: Continuous Delivery con bases de datos
-        description: El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.
+        name: Continuous Delivery with databases
+        description: The objective of this course is for students to learn how to continuously and safely evolve a database. In addition, we will learn about different testing techniques, particularly essential in database environments that involve a lot of accumulated logic.
         link: /en/trainings/cd-databases
     contact:
-      title: ¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!
-      text: <p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-      placeholder: ¿Te interesa alguna de nuestras formaciones? Inscríbite para futuros cursos abiertos o si te interesa que demos alguna formación en tu empresa.
+      title: Can't find the course you need? Tell us what you are looking for!
+      text: <p>At Codesai we are always open to listen to suggestions made by our customers. We would like to offer you a course that fits your needs. You can write to us at <strong>contact@codesai.com</strong> or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+      placeholder: Are you interested in any of our trainings? Sign up for future open courses or if you are interested in having us provide training for your company.
   courses:
     tdd:
       name: Codesai. Curso de TDD
