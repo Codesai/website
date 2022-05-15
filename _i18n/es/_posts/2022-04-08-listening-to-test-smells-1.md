@@ -12,7 +12,7 @@ categories:
   - Test Smells
   - Object-Oriented Design
   - Refactoring
-  - Test doubles
+  - Test Doubles
 author: Manuel Rivero
 twitter: trikitrok
 small_image:  small_listening_to_tests.jpg

@@ -12,7 +12,7 @@ categories:
   - Role testing
   - Object-Oriented Design  
   - Polymorphic testing
-  - Test doubles
+  - Test Doubles
 author: Manuel Rivero
 twitter: trikitrok
 small_image: small_contract_tests.jpg

@@ -4,10 +4,13 @@ title: "Me vuelvo a Subversion!"
 type: post
 date: 2019-12-28 10:00:00.000000000 +01:00
 categories:
-  - Trunk Based Development
-  - Git
-  - Continuous Integration
-  - Continuous Delivery
+- Trunk Based Development
+- Git
+- Continuous Integration
+- Continuous Delivery
+- Good Practices
+- XP
+- TBD
 small_image: svn-meme.jpg
 author: Alfredo Casado
 twitter: AlfredoCasado

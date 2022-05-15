@@ -8,6 +8,7 @@ categories:
 - XP
 - Continuous Integration
 - TBD
+- Trunk Based Development
 small_image: posts/branches.jpeg
 author: Rubén Díaz
 twitter: rubendm23
