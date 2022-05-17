@@ -18,7 +18,7 @@ cross_post_url:
 
 <h2>Introduction.</h2>
 
-We were recently writing code at a client to encrypt and decrypt UUIDs using a [cipher algorithm](https://en.wikipedia.org/wiki/Cipher). 
+We were recently writing code at a client to encrypt and decrypt UUIDs using a [cipher algorithm](https://en.wikipedia.org/wiki/Cipher). <-nota el código que mostramos está editado para blabla más didáctico y blabla
 
 Hablar de que queríamos mostrar cómo habíamos usado tests paramétricos para testear las funciones de blabla, y una aplicación sencilla de property-based testing blabla explorar edge cases.
 
@@ -84,6 +84,9 @@ We hope this post te anime a empezar a experimentar con property-based testing.
 - [Cipher algorithm](https://en.wikipedia.org/wiki/Cipher)
 
 Foto from [blabla](blabla) in [Pexels](https://www.pexels.com).
+
+
+
 
 “There and back again”
 
