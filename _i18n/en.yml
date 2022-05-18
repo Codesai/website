@@ -120,7 +120,7 @@ pages:
         our_work: We helped their technical team (relatively small, between 7-10 people) through pair programming sessions in order to implement TDD and improve their knowledge of object oriented design. The outcome was rather positive. They were very satisfied, solving many questions about how to apply TDD on a daily basis as well as about testing in general.
         stack: <p>Python</p>
     other_clients:
-      header: We also helped improve the code of all these companies:
+      header: "We also helped improve the code of all these companies:"
     contact:
       title: Discover everything we can do for your company!
       text: <p>Any questions? If you want to know more about our line of work and how we can help, do not hesitate to contact us at <strong>contact@codesai.com</strong> or by filling out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
