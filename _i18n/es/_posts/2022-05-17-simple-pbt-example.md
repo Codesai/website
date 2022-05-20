@@ -29,7 +29,7 @@ We started by writing examples to fixate the behaviour of the encryption functio
 
 <script src="https://gist.github.com/trikitrok/7faba1ee6a9b03285fae19a87de2f226.js"></script>
 
-(Los tests parametrizados de JUnit4 son mucho más cómodos de usar que los de JUnit4)
+(Los tests parametrizados de JUnit5 son mucho más cómodos de usar que los de JUnit4)
 
 Then we wrote parameterized tests for the decryption function using the same examples that we had used for the encryption function. Notice how the roles of being input and expected output change for the parameters of the new test.
 
@@ -41,24 +41,14 @@ Now that we had written both functions we wanted to explore edge cases.
 
 It would be great to automatically explore the possible edge cases with a tool like property-based testing so we don’t have to find them ourselves<a href="#nota2"><sup>[2]</sup></a>. 
 
-One of the most difficult parts of using property-based testing is finding out what properties we should use. 
+One of the most difficult parts of using property-based testing is finding out what properties we should use. Fortunately, there are several approaches or patterns for discovering adequate properties to apply property-based testing to a given problem. [Scott Wlaschin](https://scottwlaschin.com/) wrote a great article in which he explains several of those patterns<a href="#nota3"><sup>[3]</sup></a>. It turned out that the problem we were facing matched directly to one of the patterns described by Wlaschin, the one he calls [“There and back again”](https://fsharpforfunandprofit.com/posts/property-based-testing-2/#there-and-back-again)<a href="#nota4"><sup>[4]</sup></a>. 
 
-Fortunately, there are several approaches or patterns for discovering adequate properties to apply property-based testing to a given problem. [Scott Wlaschin](https://scottwlaschin.com/) wrote a great article in which he explains several of those patterns<a href="#nota3"><sup>[3]</sup></a>. It turned out that the problem we were facing matched directly to one of the patterns described by Wlaschin, the one he calls [“There and back again”](https://fsharpforfunandprofit.com/posts/property-based-testing-2/#there-and-back-again)<a href="#nota4"><sup>[4]</sup></a>. 
+According to Wlaschin *“There and back again” properties *“are based on combining an operation with its inverse, ending up with the same value you started with”**.
+In our case **the decryption function is the inverse of the encryption one** so the “There and back again” pattern was likely to lead us to a useful property.
 
-Hablar un poco de “There and back again” 
-Ideas:
-la propiedad de que input = f_inv( f( input)).
-Hacer una versión más genérica de l gráfico de abajo usando input en vez de ABC y f(input) en vez de 100101001
-
-
-Since **the decryption function is the inverse of the encryption one**, our problem perfectly matches the “There and back again” pattern.
-
-
-
-
-
-
-
+<img src="/assets/roundtrip_pbt.svg"
+alt="There and back again diagram."
+style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
 
 
 
@@ -68,14 +58,14 @@ Using [jqwik](https://jqwik.net/) functions we wrote a generator <- link a la do
  
 <script src="https://gist.github.com/trikitrok/a98452753a1299bff9df2a8e7b8f370d.js"></script>
 
-By default Jqwik checks the property with 1000 new randomly generated UUIDs every time this test runs. This allows us to explore the set of possible examples in order to find edge cases.
+By default Jqwik checks the property with 1000 new randomly generated UUIDs every time this test runs. This allows us to gradually explore the set of possible examples in order to find edge cases.
 
 <h2>Conclusions.</h2>
-Hemos mostrado un ejemplo sencillo en el que hemos aplicado Junit5 parameterized tests (que son más cómodos que los de JUnit4) to test the encryption and decryption functions of a cypher algorithm for UUIDs.
+We’ve shown a simple example of how we applied JUnit 5 parameterized tests (which we think have improved in usability compared to the parameterized tests in JUnit 4), to test the encryption and decryption functions of a cypher algorithm for UUIDs.
 
-Then we showed a simple example of how we can use property-based testing to explore edge cases. We also talked about how discovering properties can be the most difficult part of property-based testing, and how there are patterns that can be used to help in discovering them.
+Then we showed a simple example of how we can use property-based testing to explore our solution and find edge cases. We also talked about how discovering properties can be the most difficult part of property-based testing, and how there are patterns that can be used to help us to discover them.
 
-We hope this post te anime a empezar a experimentar con property-based testing.
+We hope this post will motivate you to start exploring property-based testing.
 
 <h2>Notes.</h2>
 
@@ -100,13 +90,6 @@ Foto from [blabla](blabla) in [Pexels](https://www.pexels.com).
 
 
 
-“There and back again”
-
-These kinds of properties are based on combining an operation with its inverse, ending up with the same value you started with.
-In the diagram below, doing X serialises ABC to some kind of binary format, and the inverse of X is some sort of deserialization that returns the same ABC value again.
-
-In addition to serialization/deserialization, other pairs of operations can be checked this way: addition/subtraction, write/read, setProperty/getProperty, and so on.
-Other pairs of functions fit this pattern too, even though they are not strict inverses, pairs such as insert/contains, create/exists , etc.
 
 
 
