@@ -251,7 +251,7 @@ pages:
         title: Requirements
         text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed. Regarding the database engine, a shared server should be considered for performance reasons.</p>
               <p>We will be doing pair programming, so it would be a good idea to create a new user for the course, in order to be able to switch between machines without worrying about your account privacy.</p>
-              <p>If you can't bring your own laptop that' s no problem, we only need one laptop per pair. Nevertheless, please let us know in advance to make sure we have the required minimum number of laptops.</p>'
+              <p>If you can''t bring your own laptop that''s no problem, we only need one laptop per pair. Nevertheless, please let us know in advance to make sure we have the required minimum number of laptops.</p>'
       who:
         title: Who is it intended for?
         text: '<p>Mainly for programmers or DBAs who want to know more about how to evolve the database and have an array of automatic tests. It is especially useful for complex environments (multiple consumers, db logic, etc).</p>'
