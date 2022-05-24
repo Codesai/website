@@ -14,7 +14,7 @@ twitter: trikitrok
 small_image:  
 written_in: english
 cross_post_url:
-—
+---
 
 <h2>Introduction.</h2>
 
