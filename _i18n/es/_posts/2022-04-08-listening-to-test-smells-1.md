@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Listening to test smells: detecting lack of cohesion and violations of encapsulation'
-date: 2022-04-03 18:30:00.000000000 +01:00
+date: 2022-05-04 18:30:00.000000000 +01:00
 type: post
 published: true
 status: publish

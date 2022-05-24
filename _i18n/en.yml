@@ -105,7 +105,7 @@ pages:
         our_work: Two of our professionals, specialized in backend and frontend, were embedded in a 14-person full-time team using Scrum to improve the company's ambulance management system. Our technological knowledge, as well as our experience in product development using XP methodologies and practices, were part of the required technical practices. These, along with good alignment within the team, allowed us to achieve the high quality demands that the project required.
         stack: <p>ClojureScript, Om, re-om C#</p>
       domingo_alonso:
-        name: Domingo Alongo Group
+        name: Domingo Alonso Group
         about: Its subsidiary, Aplicaciones Informáticas Domingo Alonso (AIDA), is responsible for the development and maintenance of software to manage the import, repair and sale of vehicles. The program is internationally utilized by the group's companies as well as by others in the automotive sector.
         our_work: Our biggest challenge was to help AIDA change its work culture. For over two years we accompanied their team, achieving an improvement both in their processes (adopting agile methodologies) and in product analysis. Our mentoring work also extended to the internalization of XP technical practices such as TDD, pair programming, continuous integration/deploy or refactoring, and object-oriented design principles such as DDD or hexagonal architecture, while at the same time generating new functionalities. All this agile transformation ended up generating positive results such as the professional growth of the members of the department and, what is more important, the generation of a culture based on continuous improvement.
         stack: <p>.Net, C#, ECMAScript 6, SQL Server, PowerShell, RabbitMQ, SignalR, WPF, Knockout</p>
@@ -120,7 +120,7 @@ pages:
         our_work: We helped their technical team (relatively small, between 7-10 people) through pair programming sessions in order to implement TDD and improve their knowledge of object oriented design. The outcome was rather positive. They were very satisfied, solving many questions about how to apply TDD on a daily basis as well as about testing in general.
         stack: <p>Python</p>
     other_clients:
-      header: We also helped improve the code of all these companies:
+      header: "We also helped improve the code of all these companies:"
     contact:
       title: Discover everything we can do for your company!
       text: <p>Any questions? If you want to know more about our line of work and how we can help, do not hesitate to contact us at <strong>contact@codesai.com</strong> or by filling out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
@@ -156,282 +156,281 @@ pages:
       placeholder: Are you interested in any of our trainings? Sign up for future open courses or if you are interested in having us provide training for your company.
   courses:
     tdd:
-      name: Codesai. Curso de TDD
+      name: Codesai. TDD Course
       title: Test Driven Development (TDD)
-      text: '<p>TDD es una técnica que, aplicada correctamente, nos permite desarrollar código con un buen diseño, cumpliendo estrictamente las necesidades de negocio.</p>
-             <p>En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los conocimientos de manera práctica en Pair Programming con el resto de asistentes, siempre bajo la guía de nuestros mentores.</p>'
+      text: '<p>TDD is a technique which, when correctly applied, allows us to develop well-designed code that strictly complies with business needs.</p>
+             <p>In this course, after every lesson during which we will delve into the foundations of TDD, we will apply the knowledge in a practical way Pair Programming with the rest of the participants, under the guidance of our mentors.</p>'
       agenda:
-        title: Contenido
+        title: Contents
         day_1:
-          title: Primer día
+          title: Day One
           content: '<div class="topics">
-                      <div class="group"><span>1.</span> Introducción a TDD</div>
-                      <div class="subgroup"><span>&bull;</span> ¿Por qué TDD?</div>
-                      <div class="subgroup"><span>&bull;</span> Ciclo de TDD</div>
+                      <div class="group"><span>1.</span> Introduction to TDD</div>
+                      <div class="subgroup"><span>&bull;</span> Why use TDD?</div>
+                      <div class="subgroup"><span>&bull;</span> TDD Cycle</div>
 
                       <div class="group"><span>2. </span>Refactoring & Clean Code</div>
                       <div class="subgroup"><span>&bull;</span> Refactoring</div>
                       <div class="subgroup"><span>&bull;</span> Code Smells</div>
-                      <div class="subgroup"><span>&bull;</span> Código habitable</div>
-                      <div class="subgroup"><span>&bull;</span> Principios de diseño</div>
+                      <div class="subgroup"><span>&bull;</span> Habitable Code</div>
+                      <div class="subgroup"><span>&bull;</span> Design Principles</div>
                   </div>'
         day_2:
-          title: Segundo día
+          title: Day Two
           content: '<div class="topics">
-          <div class="group"><span>3. </span>Patrones, sostenibilidad y variaciones del ciclo básico</div>
+          <div class="group"><span>3. </span>Patterns, sustainability and basic cycle variations</div>
 
           <div class="group"><span>4. </span>Test doubles</div>
           <div class="subgroup"><span>&bull;</span> Interaction-based testing</div>
           <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
 
           <div class="group"><span>5. </span>Outside-in TDD</div>
-          <div class="subgroup"><span>&bull;</span> Ventajas sobre inside-out</div>
+          <div class="subgroup"><span>&bull;</span> Advantages over inside-out</div>
           <div class="subgroup"><span>&bull;</span> Classicist vs Mockist</div>
-          <div class="subgroup"><span>&bull;</span> Mal uso de los test doubles y consejos para evitarlo</div>
+          <div class="subgroup"><span>&bull;</span> Misuse of test doubles and tips to avoid it</div>
       </div>'
       languages:
-        title: Lenguajes
-        text: Generalmente, usamos Java porque es el lenguaje en el que la mayor parte de la gente se defiende, pero en el curso se pueden usar también otros lenguajes, eso no es problema. Si Java / IntelliJ no es para ti un problema, será la opción por defecto.
+        title: Languages
+        text: Java is generally chosen because it is the language in which most people are proficient, but other languages can also be used in the course, no problem at all. If Java / IntelliJ is not a problem for you, this will be the default choice.
       requirements:
-        title: Requisitos
-        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
-              <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
-              <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+        title: Requirements
+        text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed.</p>
+              <p>We will be doing pair programming, so it would be a good idea to create a new user for the course, in order to be able to switch between machines without worrying about your account privacy.</p>
+              <p>If you can''t bring your own laptop that''s no problem, we only need one laptop per pair. Nevertheless, please let us know in advance to make sure we have the required minimum number of laptops.</p>'
       target:
-        title: ¿Para quién está pensado?
-        text: '<p>Este es un curso para personas que sepan programar. Fundamentalmente programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas. Lo que hace falta es venir con ganas y la mente abierta. Si nunca has probado TDD antes, te sorprenderá.</p>'
+        title: Who is it intended for?
+        text: '<p>This is a course for people who already know how to code. Mostly programmers but also testers who want to learn more about code quality and automatic testing can benefit from it. All you need is to bring an open mind and a desire to learn. If you have never tried TDD before, you might be surprised.</p>'
       where:
-        title: In-house y en abierto
-        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        title: In-house and open dates
+        text: '<p>The course can be conducted in-house (closed to the company that contracts it) or openly. We try to offer one open edition every term. It is common for small companies to send people to our open courses. If you would like to be notified of upcoming open dates, please fill out the form.</p>
+               <p class="unicode">Please note that in-house courses are held once the client hires us. We will need to know the date one month in advance in order to be able to schedule them.</p>'
       call_to_action:
         link: /en/trainings/tdd#call-to-action
-        title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
-        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        title: ¡OK! I am interested in taking the Test Driven Development (TDD) Course
+        text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would be interested in receiving updates about the courses and upcoming open dates
     cd-databases:
-      title: Codesai. Curso de Continuous Delivery con bases de datos
-      name: Continuous Delivery con bases de datos
-      text: '<p>El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.</p>
-             <p>A través de ejemplos y katas, aprenderemos sobre técnicas de refactoring y sobre cómo evolucionar la base de datos. Asimismo, veremos algunos smells y herramientas para enfrentarnos a entornos complicados.</p>'
+      title: Codesai. Continuous Delivery with Databases
+      name: Continuous Delivery with Databases
+      text: '<p>The objective of this course is for students to learn how to evolve a database continuously and securely. In addition, we will cover different testing techniques, particularly useful in environments with databases that accumulate a lot of logic.</p>
+             <p>Through examples and katas, we will learn about refactoring techniques and how to evolve the database. Also, we will cover some smells and tools to deal with complex environments.</p>'
       call_to_action:
-        title: ¡OK! Me interesa realizar el curso de Continuos Delivery con bases de datos
-        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
         link: /en/trainings/cd-databases/#call-to-action
+        title: ¡OK! I am interested in taking the Continuous Delivery with Databases Course
+        text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
-        title: Contenidos
+        title: Contents
         day_1:
-          title: Primer día
+          title: Day One
           agenda: '<div class="topics">
-                      <div class="group"><span>1.</span> Desafíos y principios</div>
-                      <div class="group"><span>2. </span> Enfoques state-based y migration-based</div>
-                      <div class="group"><span>3. </span> Profundizando en el enfoque migration-based</div>
+                      <div class="group"><span>1.</span> Challenges and principles</div>
+                      <div class="group"><span>2. </span> State-based & migration-based approaches</div>
+                      <div class="group"><span>3. </span> Further exploring the migration-based approach</div>
                       <div class="subgroup"><span>&bull;</span> Tools (SQL & DSLs)</div>
-                      <div class="subgroup"><span>&bull;</span> Aplicación de migraciones</div>
+                      <div class="subgroup"><span>&bull;</span> Migration Implementation</div>
                       <div class="subgroup"><span>&bull;</span> Drifts</div>
-                      <div class="subgroup"><span>&bull;</span> Conflictos</div>
-                      <div class="subgroup"><span>&bull;</span> Manejando muchas migraciones</div>
+                      <div class="subgroup"><span>&bull;</span> Conflicts</div>
+                      <div class="subgroup"><span>&bull;</span> Handling numerous migrations</div>
                       <div class="subgroup"><span>&bull;</span> Rollback vs Forward</div>
                   </div>'
         day_2:
-          title: Segundo día
+          title: Day Two
           agenda: '<div class="topics">
-                        <div class="group"><span>4. </span> Smells en base de datos</div>
-                        <div class="group"><span>5. </span> Concepto y flujo del refactoring</div>
+                        <div class="group"><span>4. </span> Smells in Databases</div>
+                        <div class="group"><span>5. </span> Refactoring concept and flow</div>
                         <div class="group"><span>6. </span> Refactors</div>
-                        <div class="group"><span>7. </span> Testing en base de datos</div>
-                        <div class="group"><span>8. </span> TDD en base de datos</div>
+                        <div class="group"><span>7. </span> Database Testing</div>
+                        <div class="group"><span>8. </span> TDD in Databases</div>
                     </div>'
       languages:
-        title: Lenguajes
-        text: '<p>En los ejercicios utilizaremos el lenguaje SQL y cualquier editor con el que te sientas cómodo, pero veremos algunos ejemplos de DSLs en PHP y Java</p>
-              <p>En cuanto al motor de base de datos (Oracle, SQLServer...), la mayoría de ejercicios son independientes pero algunos aspectos pueden depender del mismo. Ponte en contacto con nosotros e intentaremos ver cómo adaptarlo a lo que utilizas a diario.</p>'
+        title: Languages
+        text: '<p>In the examples we will use SQL and any editor you are comfortable with, although we will look at some examples of DSLs in PHP and Java.</p>
+              <p>As for the database engine (Oracle, SQLServer...), most exercises are standalone but certain aspects may depend on it. Contact us to see how we can adapt it to your daily needs.</p>'
       requirements:
-        title: Requisitos
-        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git. Respecto al motor de base de datos se podría valorar usar un servidor compartido por cuestiones de rendimiento</p>
-               <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de un portátil a otro sin preocuparse por la privacidad de la cuenta.</p>
-               <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+        title: Requirements
+        text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed. Regarding the database engine, a shared server should be considered for performance reasons.</p>
+              <p>We will be doing pair programming, so it would be a good idea to create a new user for the course, in order to be able to switch between machines without worrying about your account privacy.</p>
+              <p>If you can''t bring your own laptop that''s no problem, we only need one laptop per pair. Nevertheless, please let us know in advance to make sure we have the required minimum number of laptops.</p>'
       who:
-        title: ¿Para quién está pensado?
-        text: '<p>Fundamentalmente para programadores o DBAs que quieran conocer más sobre cómo evolucionar la base de datos y disponer de batería de pruebas automáticas. Y especialmente útil para entornos complejos (múltiples consumidores, lógica en db, etc)</p>'
+        title: Who is it intended for?
+        text: '<p>Mainly for programmers or DBAs who want to know more about how to evolve the database and have an array of automatic tests. It is especially useful for complex environments (multiple consumers, db logic, etc).</p>'
       where:
         title: In-house
-        text: '<p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        text: '<p>The course will be conducted in-house (closed to the company that contracts it).</p>
+               <p class="unicode">Please note that in-house courses are held once the client hires us. We will need to know the date one month in advance in order to be able to schedule them.</p>'
     ddd:
-      title: Codesai. Curso DDD Driven by test
+      title: Codesai. DDD Driven by Tests
       name: Domain Driven Design Driven by Tests
-      text: '<p>El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.</p>
-             <p>Explicaremos cómo a través de herramientas como Context Mapping y Event Storming podemos crear un lenguaje común en la organización que nos ayude construir soluciones software durables y mantenibles.</p>
-             <p>Explicaremos cómo trasladar estos conceptos al código y la arquitectura a través de ejemplos concretos haciendo uso de los patrones tácticos de DDD como agregados, repositorios o value objects. Veremos también mecanismos de comunicación entre diferentes Bounded contexts y realizaremos una introducción a event sourcing y CQRS.</p>'
+      text: '<p>The aim of this course is explaining the different tools that Domain Driven Design offers us both from an organisational point of view through the strategic patterns and the ubiquitous language as well as from an architectural perspective through the tactical patterns.</p>
+             <p>By using tools such as Context Mapping and Event Storming, we will explain how to create a common language in the organization that helps us to build durable and maintainable software solutions.</p>
+             <p>We will explain how to transfer these concepts into code and architecture through concrete examples using DDD tactical patterns such as aggregates, repositories or value objects. Also, we will cover communication mechanisms between different Bounded contexts and make an introduction to event sourcing and CQRS.</p>'
       call_to_action:
-        title: ¡OK! Me interesa realizar el curso DDD driven by test
-        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
         link: /en/trainings/ddd/#call-to-action
+        title: ¡OK! I am interested in taking the DDD Driven by Tests Course
+        text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
-        title: Contenidos
+        title: Contents
         day_1:
-          title: Primer día
+          title: Day One
           agenda: '<div class="topics">
-                    <div class="group"><span>1.</span> Introducción a DDD</div>
-                    <div class="group"><span>2. </span>Event storming</div>
-                    <div class="subgroup">Explicaremos la dinamica y realizaremos un ejercicio practico</div>
-                    <div class="group"><span>3.</span> Patrones tácticos</div>
-                    <div class="subgroup">Partiendo del Event Storming anterior explicaremos cómo trasladar estos conceptos al código mediante una sesión de live coding y un ejercicio propuesto
+                    <div class="group"><span>1.</span> Introduction to DDD</div>
+                    <div class="group"><span>2. </span>Event Storming</div>
+                    <div class="subgroup">Explanation of the dynamics and practical exercise.</div>
+                    <div class="group"><span>3.</span> Tactical Patterns</div>
+                    <div class="subgroup">Following on from the previous Event Storming, we will explain how to implement these concepts into the code by means of a live coding session and a proposed exercise.
                  </div>'
         day_2:
-          title: Segundo día
+          title: Day Two
           agenda: '<div class="topics">
-                    <div class="group"><span>4. </span>Repaso y ampliación de los patrones tácticos</div>
-                    <div class="group"><span>5. </span>Estrategia y context mapping</div>
-                    <div class="group"><span>6. </span>Ejercicio práctico de comunicación entre Bounded contexts</div>
-                    <div class="group"><span>7. </span>Introducción a event sourcing y CQRS</div>
+                    <div class="group"><span>4. </span>Review and extension of tactical patterns</div>
+                    <div class="group"><span>5. </span>Strategy & Context Mapping</div>
+                    <div class="group"><span>6. </span>Practical exercise on communication between Bounded contexts</div>
+                    <div class="group"><span>7. </span>Introduction to event sourcing and CQRS</div>
                  </div>'
       tools:
-        title: Tecnología y material necesario
-        text: '<p>El código y los ejemplos del curso están realizados en java. Se podrían adaptar estos ejemplos y ejercicios a cualquier otro lenguaje orientado a objetos si fuera necesario.</p>
-               <p>El curso se impartirá online, por tanto será necesario que todos los asistentes dispongan de una conexión lo suficientemente buena para mantener videoconferencias de manera fluida. Si el curso se realiza con el material en java será necesario contar con un JDK 11 o superior y algún entorno de desarrollo, nosotros nos sentimos más cómodos con IntelliJ pero todos los ejemplos están construidos de forma que se puedan desarrollar en cualquier IDE.</p>'
+        title: Technologies & Materials
+        text: '<p>The code and examples in the course are written in Java. These examples and exercises could be adapted to any other object-oriented language if necessary.</p>
+               <p>The course will be held online, so it will be necessary for all participants to have a good enough connection to be able to videoconference smoothly. If the course is done with the material in Java you will need JDK 11 or higher and an IDE installed. We feel most comfortable with IntelliJ but all the examples are built in such a way that they can be done in any IDE.</p>'
       who:
-        title: ¿Para quién está pensado?
-        text: <p>El curso aborda algunos conceptos avanzados de arquitectura software, para un buen aprovechamiento del mismo recomendamos que los asistentes tengan conocimientos de orientación a objetos y al menos experiencia básico escribiendo pruebas automáticas.</p>
+        title: Who is it intended for?
+        text: <p>The course addresses some advanced concepts about software architecture. In order to make the most of it, we recommend that participants have some knowledge of object-orientation and at least basic experience writing automated tests.</p>
       where:
-        title: In-house y en abierto
-        text: <p>El curso se puede realizar in-house para un equipo de desarrollo o empresa concreta que quiera contratarlo. También realizaremos ediciones en abierto, si quieres consultar el calendario de próximos cursos en abierto o contactar con nosotros para un curso in-house lo puedes hacer a través del formulario al final de esa página.</p>
+        title: In-house and open dates
+        text: <p>The course can be done in-house for a development team or a specific company that wants to contract it. We will also run open dates, if you wish to consult the calendar of upcoming open courses or contact us for an in-house course you can do so through the form at the bottom of this page.</p>
     intellij:
       title: Codesai. IntelliJ Guru
       name: IntelliJ Guru
-      text: <p>El objetivo de este curso es que saques el máximo provecho a las herramientas de desarrollo de JetBrains, partiendo de IntelliJ como entorno de aprendizaje. A través de ejemplos y actividades, iremos descubriendo muchas de las funcionalidades que nos ofrece.</p>
+      text: <p>The aim of this course is for you to get the most out of JetBrains development tools, starting with IntelliJ as a learning environment. Through examples and activities, we will discover the many functionalities it offers.</p>
       call_to_action:
-        title: ¡OK! Me interesa realizar el curso de IntelliJ Guru
-        text: <p>Si deseas iniciar el proceso de inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
-        where: Remoto
         link: /en/trainings/intellij-guru/#call-to-action
+        title: ¡OK! I am interested in taking the IntelliJ Guru Course
+        text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would be interested in receiving updates about the courses and upcoming open dates
+        where: Remote
       content:
-        title: Contenidos
+        title: Contents
         agenda: '<div class="topics">
-                    <div class="group"><span>1.</span> Introducción y filosofía al refactoring automático</div>
+                    <div class="group"><span>1.</span> Introduction and philosophy of automated refactoring</div>
                     <div class="subgroup"><span>&bull;</span> Shortcuts (atajos)</div>
                     <div class="subgroup"><span>&bull;</span> Live templates</div>
-                    <div class="subgroup"><span>&bull;</span> Navegar por el código</div>
-                    <div class="subgroup"><span>&bull;</span> Catálogo de refactorings</div>
-                    <div class="subgroup"><span>&bull;</span> Asistentes de entrenamiento</div>
-                    <div class="group"><span>2. </span> Refactorings automáticos</div>
-                    <div class="subgroup"><span>&bull;</span> Refactorings clásicos</div>
-                    <div class="subgroup"><span>&bull;</span> Refactoring a patrones</div>
-                    <div class="subgroup"><span>&bull;</span> Análisis de código</div>
+                    <div class="subgroup"><span>&bull;</span> Browsing the code</div>
+                    <div class="subgroup"><span>&bull;</span> Refactoring catalogue</div>
+                    <div class="subgroup"><span>&bull;</span> Training assistants</div>
+                    <div class="group"><span>2. </span> Automated Refactorings</div>
+                    <div class="subgroup"><span>&bull;</span> Classic Refactoring</div>
+                    <div class="subgroup"><span>&bull;</span> Pattern Refactoring</div>
+                    <div class="subgroup"><span>&bull;</span> Code Analysis</div>
                     <div class="group"><span>3. </span> Testing</div>
                     <div class="subgroup"><span>&bull;</span> Scratch files</div>
                     <div class="subgroup"><span>&bull;</span> Http requests</div>
                     <div class="subgroup"><span>&bull;</span> Debugging</div>
-                    <div class="subgroup"><span>&bull;</span> Integración con frameworks de testing</div>
+                    <div class="subgroup"><span>&bull;</span> Integration with testing frameworks</div>
                     <div class="subgroup"><span>&bull;</span> Plugins</div>
                     <div class="subgroup"><span>&bull;</span> Env files</div>
-                    <div class="subgroup"><span>&bull;</span> Integración con Docker</div>
-                    <div class="group"><span>4. </span> Integración con herramientas de build</div>
+                    <div class="subgroup"><span>&bull;</span> Docker Integration</div>
+                    <div class="group"><span>4. </span> Integration with build tools</div>
                     <div class="subgroup"><span>&bull;</span> Maven</div>
                     <div class="subgroup"><span>&bull;</span> Gradle</div>
-                    <div class="group"><span>5. </span> Control de versiones</div>
-                    <div class="subgroup"><span>&bull;</span> Histórico local</div>
+                    <div class="group"><span>5. </span> Version Control</div>
+                    <div class="subgroup"><span>&bull;</span> Local History</div>
                     <div class="subgroup"><span>&bull;</span> Hooks</div>
-                    <div class="subgroup"><span>&bull;</span> Resolución de conflictos</div>
-                    <div class="group"><span>6. </span> Pairing remoto</div>
-                    <div class="group"><span>7. </span> Integración con Spring</div>
+                    <div class="subgroup"><span>&bull;</span> Conflict Resolution</div>
+                    <div class="group"><span>6. </span> Remote Pairing</div>
+                    <div class="group"><span>7. </span> Spring Integration</div>
                 </div>'
       who:
-        title: ¿Para quién está pensado?
-        text: '<p>El curso está pensado para cualquier equipo que quiera exprimir al máximo cualquier herramienta de desarrollo de JetBrains.</p>
-               <p>En el curso usaremos principalmente IntelliJ IDEA, pero muchas de las funcionalidades que veremos están disponibles en los otros IDEs de JetBrains (WebStorm, PhpStorm, RubyMine, Rider, etc).</p>'
+        title: Who is it intended for?
+        text: '<p>The course is designed for any team that wants to get the most out of any JetBrains development tool.</p>
+               <p>This course will mainly use IntelliJ IDEA, but many of the features we will be looking at are available in the other JetBrains IDEs (WebStorm, PhpStorm, RubyMine, Rider, etc).</p>'
       where:
-        title: Modalidades
-        text: '<p>El curso se imparte in-house (cerrado para la empresa que lo contrata) o en abierto en fechas señaladas.</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
-               <p class="unicode">Durante el año iremos anunciando fechas de ediciones en abierto a las que podrás apuntarte en el formulario de abajo.</p>'
+        title: In-house and open dates
+        text: '<p>The course is held in-house (closed to the hiring company) or open to the public on specific dates.</p>
+               <p class="unicode">Please note that in-house courses take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>
+               <p class="unicode">Throughout the year we will be announcing open dates, which you can sign up for using the form below.</p>'
 
     code_smells_refactoring:
-      title: Codesai. Curso de Code Smells & Refactoring
+      title: Codesai. Code Smells & Refactoring
       name: Code smells & Refactoring
-      text: '<p>El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.</p>
-             <p>A través de ejemplos y katas, aprenderemos sobre code smells, técnicas de refactoring y  principios de diseño orientado a objetos. Asimismo, veremos el papel fundamental del refactoring en el desarrollo de software, y reflexionaremos sobre la deuda técnica, los ciclos de refactoring y la economía del refactoring (cómo hacerlo de manera responsable).</p>'
+      text: '<p>The aim of this course is to introduce students to the different code smells and to start developing their ability to recognise them. We will also work on some techniques to safely and incrementally improve existing code design.</p>
+             <p>Through examples and katas, we will learn about code smells, refactoring techniques and object-oriented design principles. We will also look at the fundamental role of refactoring in software development and reflect on technical debt, refactoring cycles and the economics of refactoring (how to do it responsibly).</p>'
       call_to_action:
-        title: ¡OK! Me interesa realizar el curso de Code smells & Refactoring
-        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
         link: /en/trainings/refactoring/#call-to-action
+        title: ¡OK! I am interested in taking the Code Smells & Refactoring Course
+        text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
-        title: Contenidos
+        title: Contents
         day_1:
-          title: Primer día
+          title: Day One
           agenda: '<div class="topics">
-                      <div class="group"><span>1.</span> Introducción</div>
-                      <div class="group"><span>2. </span> Code smells y refactors relacionados</div>
-                      <div class="subgroup"><span>&bull;</span> Code smells en clases</div>
-                      <div class="subgroup"><span>&bull;</span> Code smells entre clases</div>
+                      <div class="group"><span>1.</span> Introduction</div>
+                      <div class="group"><span>2. </span> Related Code smells & Refactors</div>
+                      <div class="subgroup"><span>&bull;</span> Code smells in classes</div>
+                      <div class="subgroup"><span>&bull;</span> Code smells between classes</div>
                   </div>'
         day_2:
-          title: Segundo día
+          title: Day Two
           agenda: '<div class="topics">
-                    <div class="group"><span>3. </span> Diseño lo suficientemente bueno</div>
-                    <div class="group"><span>4. </span>Refactors principales y patrones de refactoring</div>
+                    <div class="group"><span>3. </span> Good enough design</div>
+                    <div class="group"><span>4. </span>Main refactors and refactoring patterns</div>
                  </div>'
         day_3:
-          title: Tercer día
+          title: Day Three
           agenda: '<div class="topics">
-                    <div class="group"><span>5. </span>Arquitectura hexagonal</div>
-                    <div class="group"><span>6. </span>Flujos de trabajo y economía del refactor</div>
+                    <div class="group"><span>5. </span>Hexagonal architecture</div>
+                    <div class="group"><span>6. </span>Workflows and refactor economy</div>
                  </div>'
       languages:
-        title: Lenguajes
-        text: <p>Generalmente, usamos Java porque es el lenguaje en el que la mayor parte de la gente se defiende, pero en el curso se pueden usar también otros lenguajes, eso no es problema. Si Java / IntelliJ no es para ti un problema, será la opción por defecto.</p>
+        title: Languages
+        text: <p>Generally, we use Java because it is the language in which most people are proficient, but other languages can also be used in the course, that's not a problem. If Java / IntelliJ is not a problem for you, it will be the default choice.</p>
       requirements:
-        title: Requisitos
-        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
-               <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
-               <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+        title: Requirements
+        text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed.</p>
+              <p>We will be doing pair programming, so it would be a good idea to create a new user for the course, in order to be able to switch between machines without worrying about your account privacy.</p>
+              <p>If you can''t bring your own laptop that''s no problem, we only need one laptop per pair. Nevertheless, please let us know in advance to make sure we have the required minimum number of laptops.</p>'
       who:
-        title: ¿Para quién está pensado?
-        text: <p>Fundamentalmente para programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas.</p>
+        title: Who is it intended for?
+        text: <p>Primarily for programmers but also for testers who want to learn more about code quality and automated testing.</p>
       where:
-        title: In-house y en abierto
-        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        title: In-house and open dates
+        text: '<p>The course can be held in-house (closed for the hiring company) or openly. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
+               <p class="unicode">Please note that in-house courses take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
     user_stories:
-      title: Curso de Historias de usuario
-      name: Historias de usuario
-      text: '<p>El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario,
-             identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.</p>
-             <p>A través de ejemplos y actividades, aprenderemos a entender el concepto de historias de usuario. Asimismo, veremos algunos smells y técnicas para enfrentarnos a su complejidad.</p>'
+      title: Codesai. User Stories
+      name: User Stories
+      text: '<p>The aim of this course is for students to learn what the core parts of user stories are, identify attributes that make them most effective and have an array of techniques for breaking them down.</p>
+             <p>Through examples and activities, we will learn to understand the concept of user stories. We will also see some smells and techniques to deal with its complexity.</p>'
       call_to_action:
-        title: ¡OK! Me interesa realizar el curso de Historias de usuario
-        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
-        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
         link: /en/trainings/user-stories/#call-to-action
+        title: ¡OK! I am interested in taking the User Stories Course
+        text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
-        title: Contenido
+        title: Contents
         agenda: '<div class="topics">
-                        <div class="group"><span>1.</span> Introducción</div>
-                        <div class="group"><span>2. </span> Buenas historias de usuario</div>
+                        <div class="group"><span>1.</span> Introduction</div>
+                        <div class="group"><span>2. </span> Good User Stories</div>
                         <div class="subgroup"><span>&bull;</span> INVEST</div>
                         <div class="subgroup"><span>&bull;</span> Smells</div>
-                        <div class="group"><span>3. </span> Heurísticas para partir historias de usuario</div>
-                        <div class="subgroup"><span>&bull;</span> Heurísticas de alto nivel</div>
-                        <div class="subgroup"><span>&bull;</span> Heurísticas por atributos de calidad</div>
-                        <div class="subgroup"><span>&bull;</span> Heurísticas por experiencia de usuario</div>
-                        <div class="subgroup"><span>&bull;</span> Heurísticas por comportamiento</div>
+                        <div class="group"><span>3. </span> Heuristics for splitting user stories</div>
+                        <div class="subgroup"><span>&bull;</span> High-level heuristics</div>
+                        <div class="subgroup"><span>&bull;</span> Quality attribute heuristics</div>
+                        <div class="subgroup"><span>&bull;</span> User experience heuristics</div>
+                        <div class="subgroup"><span>&bull;</span> Behavioural heuristics</div>
                     </div>'
       who:
-        title: ¿Para quién está pensado?
-        text: '<p>El curso está pensado para cualquier equipo que tenga que enfrentarse a desarrollar en un entorno de entrega de valor continua</p>
-               <p>A diferencia de muchos cursos de esta temática, no está pensando únicamente para product owners. El curso ofrece valor para todos los perfiles (técnicos, negocio...), ya que las habilidades y técnicas que se adquieren aplican a varios niveles</p>'
+        title: Who is it intended for?
+        text: '<p>The course is designed for any team facing development in a continuously value-delivering environment.</p>
+               <p>Unlike many courses on this subject, it is not only designed for product owners. The course offers value for all profiles (technical, business...), as the skills and techniques that are acquired apply to different levels.</p>'
       consulting:
-        title: Te ayudamos en tu dominio
-        text: <p>Despues de hacer el curso podrás aplicar a tu propio contexto lo que has aprendido mediante sesiones especiales en las que trabajaremos con ejemplos a los que te enfrentas a diario (precio y duración de las sesiones a consultar).</p>
+        title: Customized Support
+        text: <p>After the course you will be able to apply what you have learned in your own context by means of special sessions in which we will work with examples that you face every day (price and duration of the sessions on demand).</p>
       where:
         title: In-house
-        text: '<p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        text: '<p>The course will be held in-house (closed for the hiring company).</p>
+               <p class="unicode">Please note that in-house courses take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
   publications:
     title: Codesai. Blog
     posts: Posts

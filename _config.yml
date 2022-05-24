@@ -42,7 +42,6 @@ exclude_from_localizations: ["javascript", "css", "sass", "img", "fonts", "js", 
 
 plugins:
   - jekyll-multiple-languages-plugin
-  - jekyll-compress-images
 
 compress_images:
   images_path: "assets/**/*.{gif,png,jpg,jpeg,svg}"
