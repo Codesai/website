@@ -1,5 +1,6 @@
 exclude:
   - "/vendor/"
+  - "/_drafts/"
   - "README.md"
   - "LICENSE.md"
   - "*.gemspec"
@@ -18,7 +19,7 @@ title: Codesai
 url: https://www.codesai.com
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
-permalink: :year/:month/:title
+permalink: /posts/:year/:month/:title
 
 # Build settings
 markdown: kramdown
@@ -36,32 +37,11 @@ descriptions:
 
 environment: production
 
-clients:
-    - name: Lifull Connect
-      url: https://www.lifullconnect.com/
-      logo: ../img/logos/lifull-connect.svg
-      description: clients/lifull-connect.html
-    - name: Buyviu
-      url: https://buyviu.com/
-      logo: ../img/logos/buyviu.png
-      description: clients/buyviu.html
-    - name: GreenPowerMonitor
-      url: http://www.greenpowermonitor.com/
-      logo: ../img/logos/gpm.png
-      description: clients/gpm.html
-    - name: Grupo ASV
-      url: http://www.grupoasv.com/es/
-      logo: ../img/logos/grupo_asv.png
-      description: clients/grupo_asv.html
-    - name: Grupo Domingo Alonso
-      url: https://www.aidacanarias.com/
-      logo: ../img/logos/domingo_alonso.png
-      description: clients/domingo_alonso.html
-    - name: Mutua Tinerfeña
-      url: https://mutuatfe.es/
-      logo: ../img/logos/mutua.png
-      description: clients/mutua.html
-    - name: TheMotion
-      url: https://www.themotion.com/
-      logo: ../img/logos/the_motion.png
-      description: clients/the_motion.html
+languages: ["es", "en"] # First language is default
+exclude_from_localizations: ["javascript", "css", "sass", "img", "fonts", "js", "scripts"]
+
+plugins:
+  - jekyll-multiple-languages-plugin
+
+compress_images:
+  images_path: "assets/**/*.{gif,png,jpg,jpeg,svg}"

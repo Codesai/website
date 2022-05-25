@@ -1,56 +1,10 @@
 ---
-title: Curso de TDD
+title: pages.courses.tdd.title
 permalink: /curso-de-tdd/
+permalink_en: /trainings/tdd/
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
-
-    <meta property="og:site_name" content="Codesai">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
-    <link rel='stylesheet' href='/css/ionicons.min.css' />
-    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
-
-    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
-    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
-    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
-
-    <script>
-        function saveCookie() {
-            Cookie('codesai').save();
-            $('.cookie-message').hide();
-        }
-
-        $(document).ready(function() {
-            if (Cookie('codesai').exists()) {
-                return;
-            }
-            $('.cookie-message').show();
-        });
-    </script>
-
-    {% if site.environment == 'production' %}
-        {% include analytics.html %}
-    {% endif %}
-
-</head>
+{% include head.html %}
 
 <body>
 
@@ -61,90 +15,67 @@ permalink: /curso-de-tdd/
 
             <div id="course-information" class="information">
                 <div class="insights">
-                    <div class="course-title">Test Driven Development (TDD)</div>
-                    <div class="course-description">
-                        <p>
-                            TDD es una técnica que, aplicada correctamente, nos permite desarrollar código con un buen diseño, cumpliendo estrictamente las necesidades de negocio.
-                        </p>
-                        <p>
-                            En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los conocimientos de manera práctica en Pair Programming con el resto de asistentes, siempre bajo la guía de nuestros mentores.
-                        </p>
-                    </div>
+                    <div class="course-title">{% translate pages.courses.tdd.title %}</div>
+                    <div class="course-description">{% translate pages.courses.tdd.text %}</div>
 
                     <div class="summary mobile">
+                        {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                        {% capture link %}{{ site.translations[site.lang].pages.courses.tdd.call_to_action.link }}{% endcapture %}
                         {%
                             include course-summary.html
                             price='450'
-                            special_discount='Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología'
-                            contact_link='/curso-de-tdd/#call-to-action'
+                            days='2'
+                            hours='16'
+                            special_discount=discount
+                            contact_link=link
                         %}
                     </div>
 
                     <section class="contents">
-                        <div class="title"><span>// </span>Contenidos</div>
+                        <div class="title"><span>// </span>{% translate pages.courses.tdd.agenda.title %}</div>
                         <div class="description">
                             <div class="daily-agenda">
-                                <div class="day">Primer día</div>
-                                <div class="topics">
-                                    <div class="group"><span>1.</span> Introducción a TDD</div>
-                                    <div class="subgroup"><span>&bull;</span> ¿Por qué TDD?</div>
-                                    <div class="subgroup"><span>&bull;</span> Ciclo de TDD</div>
-
-                                    <div class="group"><span>2. </span>Refactoring & Clean Code</div>
-                                    <div class="subgroup"><span>&bull;</span> Refactoring</div>
-                                    <div class="subgroup"><span>&bull;</span> Code Smells</div>
-                                    <div class="subgroup"><span>&bull;</span> Código habitable</div>
-                                    <div class="subgroup"><span>&bull;</span> Principios de diseño</div>
-                                </div>
+                                <div class="day">{% translate pages.courses.tdd.agenda.day_1.title %}</div>
+                                {% translate pages.courses.tdd.agenda.day_1.content %}
                             </div>
                             <hr>
                             <div class="daily-agenda">
-                                <div class="day">Segundo día</div>
-                                <div class="topics">
-                                    <div class="group"><span>3. </span>Patrones, sostenibilidad y variaciones del ciclo básico</div>
-
-                                    <div class="group"><span>4. </span>Test doubles</div>
-                                    <div class="subgroup"><span>&bull;</span> Interaction-based testing</div>
-                                    <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
-
-                                    <div class="group"><span>5. </span>Outside-in TDD</div>
-                                    <div class="subgroup"><span>&bull;</span> Ventajas sobre inside-out</div>
-                                    <div class="subgroup"><span>&bull;</span> Classicist vs Mockist</div>
-                                    <div class="subgroup"><span>&bull;</span> Mal uso de los test doubles y consejos para evitarlo</div>
-                                </div>
+                                <div class="day">{% translate pages.courses.tdd.agenda.day_2.title %}</div>
+                                {% translate pages.courses.tdd.agenda.day_2.content %}
                             </div>
                         </div>
                     </section>
 
                     <section class="languages">
-                        <div class="title"><span>// </span>Lenguajes</div>
-                        <p>Generalmente, usamos Java porque es el lenguaje en el que la mayor parte de la gente se defiende, pero en el curso se pueden usar también otros lenguajes, eso no es problema. Si Java / IntelliJ no es para ti un problema, será la opción por defecto.</p>
+                        <div class="title"><span>// </span>{% translate pages.courses.tdd.languages.title %}</div>
+                        {% translate pages.courses.tdd.languages.text %}
                     </section>
 
                     <section class="requirements">
-                        <div class="title"><span>// </span>Requisitos</div>
-                        <p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
-                        <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
-                        <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>
+                        <div class="title"><span>// </span>{% translate pages.courses.tdd.requirements.title %}</div>
+                        {% translate pages.courses.tdd.requirements.text %}
                     </section>
 
                     <section class="who">
-                        <div class="title"><span>// </span>¿Para quién está pensado?</div>
-                        <p>Este es un curso para personas que sepan programar. Fundamentalmente programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas. Lo que hace falta es venir con ganas y la mente abierta. Si nunca has probado TDD antes, te sorprenderá.</p>
+                        <div class="title"><span>// </span>{% translate pages.courses.tdd.target.title %}</div>
+                        <p>{% translate pages.courses.tdd.target.text %}</p>
                     </section>
 
                     <section class="where">
-                        <div class="title"><span>// </span>In-house y en abierto</div>
-                        <p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
-                        <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
+                        <div class="title"><span>// </span>{% translate pages.courses.tdd.where.title %}</div>
+                        {% translate pages.courses.tdd.where.text %}
                     </section>
                 </div>
                 <div class="summary desktop">
+                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                    {% capture link %}{{ site.translations[site.lang].pages.courses.tdd.call_to_action.link }}{% endcapture %}
                     {%
                         include course-summary.html
                         price='450'
-                        special_discount='Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología'
-                        contact_link='/curso-de-tdd/#call-to-action'
+                        days='2'
+                        hours='16'
+                        special_discount=discount
+                        contact_link=link
                     %}
                 </div>
             </div>
@@ -162,12 +93,14 @@ permalink: /curso-de-tdd/
         <div class="testimonials">
 <!--            <div class="title"><span>// </span>Lo que dicen de nuestro curso</div>-->
         </div>
-
+        {% capture title %}{{ site.translations[site.lang].pages.courses.tdd.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.courses.tdd.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.tdd.call_to_action.placeholder }}{% endcapture %}
         {% include components/call-to-action.html
-            title='¡OK! Me interesa realizar el curso de Test Driven Development (TDD)'
-            text='<p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
+            title=title
+            text=text
             defaultMessage='Sent from the TDD Course page, no message specified'
-            messagePlaceHolder='Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto'
+            messagePlaceHolder=placeholder
             origin='Curso TDD'
         %}
     </div>

@@ -6,17 +6,17 @@
         </div>
         <div class="contact">
             <div class="field">
-                <label for="email">* Email</label>
+                <label for="email">* {% translate components.call_to_action.mail %}</label>
                 <input id="email" name="entry.579934409" type="text" required />
             </div>
 
             <div class="field">
-                <label for="name">Nombre completo</label>
+                <label for="name">{% translate components.call_to_action.name %}</label>
                 <input id="name" name="entry.1588628238" type="text" required />
             </div>
 
             <div class="field">
-                <label for="subject">¿Qué te gustaría contarnos?</label>
+                <label for="subject">{% translate components.call_to_action.message %}</label>
                 <textarea id="subject"
                           name="entry.2072593880"
                           rows="4"
@@ -24,7 +24,7 @@
             </div>
 
             <div id="submit-contact-form" class="codesai-button" class="codesai-button">
-                <div class="content">Enviar mensaje</div>
+                <div class="content">{% translate components.call_to_action.send %}</div>
                 <img class="arrow" src="/assets/icons/arrow.svg" alt="">
             </div>
         </div>

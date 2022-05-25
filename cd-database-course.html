@@ -1,56 +1,10 @@
 ---
-title: Curso de Continuous Delivery con bases de datos
+title: pages.courses.cd-databases.title
 permalink: /cursos/cd-databases/
+permalink_en: /trainings/cd-databases/
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
-
-    <meta property="og:site_name" content="Codesai">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
-    <link rel='stylesheet' href='/css/ionicons.min.css' />
-    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
-
-    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
-    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
-    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
-
-    <script>
-        function saveCookie() {
-            Cookie('codesai').save();
-            $('.cookie-message').hide();
-        }
-
-        $(document).ready(function() {
-            if (Cookie('codesai').exists()) {
-                return;
-            }
-            $('.cookie-message').show();
-        });
-    </script>
-
-    {% if site.environment == 'production' %}
-        {% include analytics.html %}
-    {% endif %}
-
-</head>
+{% include head.html %}
 
 <body>
 
@@ -61,96 +15,79 @@ permalink: /cursos/cd-databases/
 
             <div id="course-information" class="information">
                 <div class="insights">
-                    <div class="course-title">Continuous Delivery con bases de datos</div>
+                    <div class="course-title">{% translate pages.courses.cd-databases.title %}</div>
                     <div class="course-description">
-                        <p>
-                            El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.
-                        </p>
-                        <p>
-                            A través de ejemplos y katas, aprenderemos sobre técnicas de refactoring y sobre cómo evolucionar la base de datos. Asimismo, veremos algunos smells y herramientas para enfrentarnos a entornos complicados.
-                        </p>
+                        {% translate pages.courses.cd-databases.text %}
                     </div>
 
                     <div class="summary mobile">
+                        {% capture link %}{{ site.translations[site.lang].pages.courses.cd-databases.call_to_action.link }}{% endcapture %}
                         {%
                             include course-summary.html
                             price='600'
-                            contact_link='/cursos/cd-databases/#call-to-action'
+                            days='2'
+                            hours='16'
+                            contact_link=link
                         %}
                     </div>
 
                     <section class="contents">
-                        <div class="title"><span>// </span>Contenidos</div>
+                        <div class="title"><span>// </span>{% translate pages.courses.cd-databases.content.title %}</div>
                         <div class="description">
                             <div class="daily-agenda">
-                                <div class="day">Primer día</div>
-                                <div class="topics">
-                                    <div class="group"><span>1.</span> Desafíos y principios</div>
-                                    <div class="group"><span>2. </span> Enfoques state-based y migration-based</div>
-                                    <div class="group"><span>3. </span> Profundizando en el enfoque migration-based</div>
-                                    <div class="subgroup"><span>&bull;</span> Tools (SQL & DSLs)</div>
-                                    <div class="subgroup"><span>&bull;</span> Aplicación de migraciones</div>
-                                    <div class="subgroup"><span>&bull;</span> Drifts</div>
-                                    <div class="subgroup"><span>&bull;</span> Conflictos</div>
-                                    <div class="subgroup"><span>&bull;</span> Manejando muchas migraciones</div>
-                                    <div class="subgroup"><span>&bull;</span> Rollback vs Forward</div>
-                                </div>
+                                <div class="day">{% translate pages.courses.cd-databases.content.day_1.title %}</div>
+                                {% translate pages.courses.cd-databases.content.day_1.agenda %}
                             </div>
                             <hr>
                             <div class="daily-agenda">
-                                <div class="day">Segundo día</div>
-                                <div class="topics">
-                                    <div class="group"><span>4. </span> Smells en base de datos</div>
-                                    <div class="group"><span>5. </span> Concepto y flujo del refactoring</div>
-                                    <div class="group"><span>6. </span> Refactors</div>
-                                    <div class="group"><span>7. </span> Testing en base de datos</div>
-                                    <div class="group"><span>8. </span> TDD en base de datos</div>
-                                </div>
+                                <div class="day">{% translate pages.courses.cd-databases.content.day_2.title %}</div>
+                                {% translate pages.courses.cd-databases.content.day_2.agenda %}
                             </div>
                         </div>
                     </section>
 
                     <section class="languages">
-                        <div class="title"><span>// </span>Lenguajes</div>
-                        <p>En los ejercicios utilizaremos el lenguaje SQL y cualquier editor con el que te sientas cómodo, pero veremos algunos ejemplos de DSLs en PHP y Java</p>
-                        <p>En cuanto al motor de base de datos (Oracle, SQLServer...), la mayoría de ejercicios son independientes pero algunos aspectos pueden depender del mismo. Ponte en contacto con nosotros e intentaremos ver cómo adaptarlo a lo que utilizas a diario.</p>
+                        <div class="title"><span>// </span>{% translate pages.courses.cd-databases.languages.title %}</div>
+                        {% translate pages.courses.cd-databases.languages.text %}
                     </section>
 
                     <section class="requirements">
-                        <div class="title"><span>// </span>Requisitos</div>
-                        <p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git. Respecto al motor de base de datos se podría valorar usar un servidor compartido por cuestiones de rendimiento</p>
-                        <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de un portátil a otro sin preocuparse por la privacidad de la cuenta.</p>
-                        <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>
+                        <div class="title"><span>// </span>{% translate pages.courses.cd-databases.requirements.title %}</div>
+                        {% translate pages.courses.cd-databases.requirements.text %}
                     </section>
 
                     <section class="who">
-                        <div class="title"><span>// </span>¿Para quién está pensado?</div>
-                        <p>Fundamentalmente para programadores o DBAs que quieran conocer más sobre cómo evolucionar la base de datos y disponer de batería de pruebas automáticas. Y especialmente útil para entornos complejos (múltiples consumidores, lógica en db, etc)</p>
+                        <div class="title"><span>// </span>{% translate pages.courses.cd-databases.who.title %}</div>
+                        {% translate pages.courses.cd-databases.who.text %}
                     </section>
 
                     <section class="where">
-                        <div class="title"><span>// </span>In-house</div>
-                        <p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
-                        <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
+                        <div class="title"><span>// </span>{% translate pages.courses.cd-databases.where.title %}</div>
+                        {% translate pages.courses.cd-databases.where.title %}
                     </section>
                 </div>
                 <div class="summary desktop">
+                    {% capture link %}{{ site.translations[site.lang].components.cd-databases.call_to_action.link }}{% endcapture %}
                     {%
                         include course-summary.html
                         price='600'
-                        contact_link='/cursos/cd-databases/#call-to-action'
+                        days='2'
+                        hours='16'
+                        contact_link=link
                     %}
                 </div>
             </div>
         </div>
 
         <div class="photos"></div>
-
+        {% capture title %}{{ site.translations[site.lang].pages.courses.cd-databases.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.courses.cd-databases.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.cd-databases.call_to_action.placeholder }}{% endcapture %}
         {% include components/call-to-action.html
-            title='¡OK! Me interesa realizar el curso de Continuos Delivery con bases de datos'
-            text='<p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
+            title=title
+            text=text
             defaultMessage='Sent from the Refactoring Course page, no message specified'
-            messagePlaceHolder='Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto'
+            messagePlaceHolder=placeholder
             origin='Curso CD Database'
         %}
     </div>

@@ -1,1 +1,7 @@
 environment: development
+
+languages: ["es", "en"] # First language is default
+
+plugins:
+  - jekyll-multiple-languages-plugin
+  - jekyll-compress-images

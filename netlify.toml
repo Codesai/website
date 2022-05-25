@@ -1,0 +1,53 @@
+[[redirects]]
+  from = "/2014/:month/:slug"
+  to = "/posts/2014/:month/:slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2015/:month/:slug"
+  to = "/posts/2015/:month/:slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2016/:month/:slug"
+  to = "/posts/2016/:month/:slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2017/:month/:slug"
+  to = "/posts/2017/:month/:slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2018/:month/:slug"
+  to = "/posts/2018/:month/:slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/:month/:slug"
+  to = "/posts/2019/:month/:slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/:month/:slug"
+  to = "/posts/2020/:month/:slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2021/:month/:slug"
+  to = "/posts/2021/:month/:slug"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2022/:month/:slug"
+  to = "/posts/2022/:month/:slug"
+  status = 301
+  force = true

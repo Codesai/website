@@ -1,66 +1,18 @@
 ---
-title: Codesai
+title: pages.training.title
 permalink: /cursos/
+permalink_en: /trainings/
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+{% include head.html %}
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.">
-
-    <meta property="og:site_name" content="Codesai">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="XP, desarrollo de software, formación, asesoramiento y apoyo.">
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:image" content="{% if page.small_image %}{{ site.url | append: '/assets/' | append: page.small_image }}{% else %}{{ site.url | append: '/img/rich_preview_logo.png' }}{% endif %}">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800&display=block">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lekton:400,400i,700&display=block">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika&display=block">
-    <link rel='stylesheet' href='/css/ionicons.min.css' />
-    <link rel='stylesheet' href='{{ site.baseurl_root }}/sass/main.css' />
-
-    <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
-    <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
-    <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
-
-    <script>
-        function saveCookie() {
-            Cookie('codesai').save();
-            $('.cookie-message').hide();
-        }
-
-        $(document).ready(function() {
-            if (Cookie('codesai').exists()) {
-                return;
-            }
-            $('.cookie-message').show();
-        });
-    </script>
-
-    {% if site.environment == 'production' %}
-    {% include analytics.html %}
-    {% endif %}
-</head>
 <body>
 {% include header.html %}
 <main class="training">
     <section class="introduction">
         <div class="text">
-            <h1>Te enseñamos a desarrollar mejor código</h1>
-            <p>
-                Todos nuestros cursos son <strong>in-house</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.
-            </p>
-            <p>
-                <strong>Además, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</strong>
-            </p>
+            <h1>{% translate pages.training.header %}</h1>
+            {% translate pages.training.text %}
         </div>
         <div class="image">
             <!-- TODO: Replace with image from prototype -->
@@ -68,48 +20,84 @@ permalink: /cursos/
         </div>
     </section>
     <section class="courses">
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.tdd.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.tdd.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.tdd.link }}{% endcapture %}
         {%
             include components/course.html
-            name='Test Driven Development (TDD)'
-            description='La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.'
-            link='/curso-de-tdd/'
+            name=name
+            description=description
+            link=link
             logo='/assets/courses/logos/tdd.svg'
             starting_price='450'
+            days='2'
+            hours='16'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.link }}{% endcapture %}
         {%
             include components/course.html
-            name='Code smells & Refactoring'
-            description='El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.'
-            link='/cursos/refactoring/'
+            name=name
+            description=description
+            link=link
             logo='/assets/courses/logos/refactoring.svg'
-            starting_price='450'
+            starting_price='550'
+            days='2.5'
+            hours='20'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.ddd.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.ddd.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.ddd.link }}{% endcapture %}
         {%
             include components/course.html
-            name='DDD driven by test'
-            description='El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.'
-            link='/cursos/ddd/'
+            name=name
+            description=description
+            link=link
             logo='/assets/courses/logos/ddd.svg'
             starting_price='600'
+            days='2'
+            hours='16'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.user_stories.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.user_stories.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.user_stories.link }}{% endcapture %}
         {%
             include components/course.html
-            name='Continuous Delivery con bases de datos'
-            description='El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.'
-            link='/cursos/cd-databases/'
+            name=name
+            description=description
+            link=link
+            logo='/assets/courses/logos/ddd.svg'
+            starting_price='290'
+            days='1'
+            hours='8'
+        %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.cd_databases.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.cd_databases.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.cd_databases.link }}{% endcapture %}
+        {%
+            include components/course.html
+            name=name
+            description=description
+            link=link
             logo='/assets/courses/logos/refactoring.svg'
             starting_price='600'
+            days='2'
+            hours='16'
         %}
         <div class="closing-hexagon">
             <span></span>
         </div>
     </section>
+    {% capture title %}{{ site.translations[site.lang].pages.training.contact.title }}{% endcapture %}
+    {% capture text %}{{ site.translations[site.lang].pages.training.contact.text }}{% endcapture %}
+    {% capture placeholder %}{{ site.translations[site.lang].pages.training.contact.placeholder }}{% endcapture %}
     {%
         include components/call-to-action.html
-        title='¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!'
-        text='<p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>'
+        title=title
+        text=text
         defaultMessage='Sent from the Training page, no message specified'
-        messagePlaceHolder=''
+        messagePlaceHolder=placeholder
         origin='Listado de cursos'
     %}
 </main>

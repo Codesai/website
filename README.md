@@ -6,10 +6,10 @@ Jekyll based website for Codesai.
 
 1. Clone the repository
 2. Navigate to the repository folder in a terminal
-3. Run `docker-compose up`
+3. Run `make start`
 4. You may access the local website at `localhost:4000`
 5. Start coding and jekyll will automatically build after you save changes
-6. If you modify `.yml` files, you need to either restart the docker container (`Ctrl+C, docker-compose up` again) or start another terminal and type `docker exec -it {name} bash` to get a terminal inside the container. Once there, type `jekyll build` so it will build the site taking the changes to the `.yml` files. This is because the docker container is executing `jekyll serve` which doesn't get the `.yml` changes
+6. If you modify `.yml` files, you need to either restart the docker container or start another terminal and type `docker exec -it {name} bash` to get a terminal inside the container. Once there, type `jekyll build` so it will build the site taking the changes to the `.yml` files. This is because the docker container is executing `jekyll serve` which doesn't get the `.yml` changes
 
 **Remember:** If you experience other problems with jekyll automatic builds you can always start another terminal and run `docker exec -it {name} bash`. You may now use `jekyll build` and other jekyll commands on demand.
 To check the name of your docker container you can run `docker ps`, it should be something like {name_of_jekyll_folder}_web_1.
@@ -19,19 +19,6 @@ Althought ***not recommended*** you can [setup your own environment](https://bit
 
 ## Troubleshooting
 
-On Ubuntu, even in the last version, docker-compose up doesn't work when installed via apt-get. 
-You have to install the latest version using `curl` as explained in the official docs (https://docs.docker.com/compose/install/).
-Then you have to use `sudo` to boot docker:
-
-    sudo docker-compose up
-
-UPDATE 20/10/2017
-
-(Antonio. Ubuntu 17.04) I have to fix some configuration files. There are in this branch fix/config_error_in_ubuntu_17.04
-
-UPDATE 19/05/2019: Antonio
-
-Ubuntu 18.04 LTS, works nice, and does not need `sudo`.
 
 ## IMPORTANT
 

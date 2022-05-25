@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "4000:4000"
+    command: jekyll server --host 0.0.0.0 --watch --drafts --config _config.yml,_local_config.yml
+    volumes:
+      - ./:/app

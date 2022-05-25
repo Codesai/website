@@ -1,0 +1,86 @@
+---
+title: pages.courses.user_stories.title
+permalink: /cursos/user-stories/
+permalink_en: /trainings/user-stories/
+---
+{% include head.html %}
+<body>
+
+    {% include header.html %}
+
+    <div class="course-page">
+        <div class="course">
+
+            <div id="course-information" class="information">
+                <div class="insights">
+                    <div class="course-title">{% translate pages.courses.user_stories.name %}</div>
+                    <div class="course-description">
+                        {% translate pages.courses.user_stories.text %}
+                    </div>
+                    {% capture link %}{{ site.translations[site.lang].pages.courses.user_stories.call_to_action.link }}{% endcapture %}
+                    <div class="summary mobile">
+                        {%
+                            include course-summary.html
+                            price='290'
+                            days='1'
+                            hours='8'
+                            contact_link=link
+                        %}
+                    </div>
+
+                    <section class="contents">
+                        <div class="title"><span>// </span>{% translate pages.courses.user_stories.content.title %}</div>
+                        <div class="description">
+                            <div class="daily-agenda">
+                                {% translate pages.courses.user_stories.content.agenda %}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="who">
+                        <div class="title"><span>// </span>{% translate pages.courses.user_stories.who.title %}</div>
+                        {% translate pages.courses.user_stories.who.text %}
+                    </section>
+
+                    <section class="consulting">
+                        <div class="title"><span>// </span>{% translate pages.courses.user_stories.consulting.title %}</div>
+                        {% translate pages.courses.user_stories.consulting.text %}
+                    </section>
+
+                    <section class="where">
+                        <div class="title"><span>// </span>{% translate pages.courses.user_stories.where.title %}</div>
+                        {% translate pages.courses.user_stories.where.text %}
+                    </section>
+
+                </div>
+                <div class="summary desktop">
+                    {% capture link %}{{ site.translations[site.lang].pages.courses.user_stories.call_to_action.link }}{% endcapture %}
+                    {%
+                        include course-summary.html
+                        price='290'
+                        days='1'
+                        hours='8'
+                        contact_link=link
+                    %}
+                </div>
+            </div>
+        </div>
+
+        <div class="photos"></div>
+        {% capture title %}{{ site.translations[site.lang].pages.courses.user_stories.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.courses.user_stories.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.user_stories.call_to_action.placeholder }}{% endcapture %}
+        {% include components/call-to-action.html
+            title=title
+            text=text
+            defaultMessage='Sent from the Refactoring Course page, no message specified'
+            messagePlaceHolder=placeholder
+            origin='Curso User Stories'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

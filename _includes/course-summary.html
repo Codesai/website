@@ -1,12 +1,12 @@
 <div class="course-summary">
     <h3>
         <img src="/assets/icons/teaching.svg" alt="teaching logo">
-        Información
+        {% translate components.course_summary.title %}
     </h3>
     <div class="padded-area">
         {% if include.open_edition_dates %}
         <div class="open-course">
-            <h2 class="announcement">Próximas fechas en abierto</h2>
+            <h2 class="announcement">{% translate components.course_summary.open_dates.title %}</h2>
             <p class="dates">{{ include.open_edition_dates }}</p>
             <p class="place">{{ include.open_edition_place }}</p>
             <p class="detail">{% if include.open_edition_message %} {{ include.open_edition_message }}{% endif %}</p>
@@ -21,8 +21,9 @@
                 </svg>
             </div>
             <div class="info">
-                <div class="highlight">2 días intensivos</div>
-                <div class="detail">Jornada completa</div>
+                <div class="highlight">{{ include.hours }} {% translate components.course_summary.hours %}</div>
+                {% capture default_modality_text %}{{ site.translations[site.lang].components.course_summary.default_modality_text }}{% endcapture %}
+                <div class="detail">{{ include.place | default: default_modality_text }}</div>
             </div>
         </div>
 
@@ -35,9 +36,9 @@
                 </svg>
             </div>
             <div class="info">
-                <div class="highlight">{{ include.price }}€ / <span>persona</span></div>
+                <div class="highlight">{{ include.price }}€ / <span>{% translate components.course_summary.participant %}</span></div>
                 <div class="detail">
-                    <div>(I.V.A no incluido)</div>
+                    <div>{% translate components.course_summary.iva_excluded %}</div>
                     {% if include.special_discount %}
                         <div class="special-discount">{{ include.special_discount }}</div>
                     {% endif %}
@@ -46,7 +47,8 @@
         </div>
 
         <a href="{{ include.contact_link }}">
-            {% include components/codesai-button.html content='¡Me interesa!' %}
+            {% capture button %}{{ site.translations[site.lang].components.course_summary.button }}{% endcapture %}
+            {% include components/codesai-button.html content=button %}
         </a>
     </div>
 </div>

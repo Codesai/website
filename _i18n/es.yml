@@ -1,0 +1,862 @@
+metas:
+  language: es
+  description: Somos un equipo versado en Extreme Programming, ofrecemos desarrollo de software, formación, asesoramiento y apoyo en proyectos.
+  short_description: XP, desarrollo de software, formación, asesoramiento y apoyo.
+  locale: es_ES
+
+cookie_banner:
+  message: <p>El sitio web https://www.codesai.com/ utiliza cookies propias y de terceros para recopilar información que ayuda a optimizar su visita a sus páginas web. No se utilizarán las cookies para recoger información de carácter personal. Usted puede permitir su uso o rechazarlo, también puede cambiar su configuración siempre que lo desee. Encontrará más información en nuestra <a href="/cookie-policy">Política de Cookies</a>.</p>
+  button: Aceptar
+
+pages:
+  home:
+    name: Codesai. Inicio
+    title: Desarrollo de software y formación
+    slogan1: Aceleramos la entrega de valor
+    slogan2: Cuidando la calidad interna y externa
+    slogan3: Formando parte de tu equipo, haciéndolo crecer
+    about:
+      title: Parte de tu equipo
+      first_paragraph: En Codesai creemos firmemente que los mejores resultados se obtienen colaborando de manera muy cercana con los equipos internos de cada compañía. Por eso, nos gusta <strong>formar parte de ellos, enseñándoles de primera mano a mejorar sus procesos y desarrollar mejor código</strong>. Compartimos sus logros, frustraciones, dudas... sin olvidarnos de crear un buen ambiente de trabajo y sacar lo mejor de cada uno.
+      second_paragraph: Procuramos tener perfiles muy polivalentes, lo que nos permite apoyarte en múltiples vertientes del desarrollo de tu producto. Desde el equipo técnico, pero codo con codo con negocio.
+    clients:
+      title: Empresas que han confiado en nosotros
+    services:
+      title: Nuestros servicios
+      software_development:
+        title: Desarrollo de software
+        description: Podemos ser tu equipo o formar parte del mismo, promoviendo las buenas prácticas y la comunicación.
+        bullet1: Prácticas XP, Agile
+        bullet2: Código habitable
+        bullet3: Cercanía con negocio
+        bullet4: Probado y sostenible
+        call_to_action: Ver proyectos
+      courses:
+        title: Formación y cursos
+        description: Ofertamos varios cursos en los que obtener conocimientos clave para adquirir un mejor ritmo y entorno de desarrollo.
+        bullet1: Eminentemente prácticos
+        bullet2: Transversales a tu negocio
+        bullet3: DDD, TDD, Refactoring...
+        bullet4: Detallado y con ejemplos
+        call_to_action: Ver cursos
+      consultancy:
+        title: Asesoramiento y apoyo
+        description: Si requieres de una ayuda puntual, podemos evaluar tu situación y ofrecerte posibles soluciones.
+        bullet1: Consultoría específica
+        bullet2: Observamos y sugerimos
+        bullet3: Desbloqueamos problemas
+        bullet4: Prevenimos que surjan
+        call_to_action: Casos de éxito
+    tdd:
+      title: Expertos en formación Test Driven Development (TDD)
+      first_paragraph: TDD es para nosotros nuestra forma de trabajo habitual, por eso cuando impartimos una formación de TDD lo hacemos desde el convencimiento de que esta técnica aporta grandes beneficios y puede elevar como ninguna otra el nivel técnico de un equipo de desarrollo. En Codesai nos sentimos orgullosos de ser referentes tanto en la aplicación como en la formación en Test Driven Development, contando con algunos de los profesionales más reconocidos en el sector y la comunidad en la aplicación de esta técnica.
+      second_paragraph: Somos conscientes de que aplicar TDD de manera efectiva es muy complejo, y cómo muchos equipos tiran la toalla al probarlo durante un tiempo. En nuestra experiencia, contar con un equipo de profesionales expertos puede reducir la curva de adaptación y marcar la diferencia que permita al equipo extraer el valor que esta técnica puede aportar.
+      call_to_action: Más información
+    team:
+      title: Quiénes somos
+      alfredo: Más de 20 años programando. Durante los últimos años ha liderado equipos con métodos ágiles como Extreme Programming y prácticas como DDD (Domain Driven Design). Miembro veterano y conocido de la comunidad Java Hispano.
+      dani: Aplicar las metodologías agiles en el día a día le permiten realizar un mejor trabajo y redescubrir su pasión por el desarrollo de software. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria y co-organizador de Socrates Canaries 2016.
+      manu_tordesillas: Ingeniero en Informática y Electrónica con 6 años de experiencia en el desarrollo de Software. Considera esenciales el aprendizaje y la mejora continua para conseguir dejar una marca positiva en la sociedad y la industria.
+      fran: Se preocupa por hacer las cosas bien y mejorar continuamente. Defensor de los métodos ágiles por ser una manera de construir software excelente. Aunque su trayectoria es técnica, le interesan otras áreas del producto final (negocio, UX, operaciones, etc).
+      antonio: Encontró su sitio natural en equipos interesados en la mejora continua, y en hacer un código bonito. Desarrolla sobre todo en Javascript y Groovy. Busca la integración de todos los perfiles, especialmente los de diseño en el desarrollo del producto.
+      miguel: Apasionado del desarrollo y de la formación continua para lograr mejores soluciones. Co-fundador de la comunidad Software Craftsmanship de Gran Canaria. Co-organizador del congreso internacional SoCraTes 2016 (Software Craftsmanship and Testing) en España.
+      manu_rivero: Empezó de nuevo hace pocos años como desarrollador web. Co-fundador de la comunidad Software Craftsmanship de Barcelona, involucrado en la comunidad Clojure Developers Barcelona y co-fundador de la comunidad Aprendices.
+      ruben: Aprendiendo y desarrollando desde 2014, le encanta seguir las prácticas de XP y colaborar con negocio para entregar valor lo antes posible. Intenta jubilarse habiendo borrado más código del que ha escrito. Co-organizador de Socrates Canaries 2019.
+    collaborators: Colaboran con nosotros
+    blog:
+      title: Compartiendo conocimiento
+      paragraph: Conferencia Agile Spain, DevFest, Tarugoconf... En Codesai nos encanta participar en eventos y compartir puntos de vista con otros profesionales (tanto, que incluso nos hemos atrevido a organizar alguno). Y además de estar involucrados en algunas comunidades, también <strong>publicamos contenido que esperamos que pueda ayudar y aportar a nuestro sector.</strong>
+      call_to_action: Ver más contenido
+    contact:
+      title: ¡Contáctanos!
+      text: <p>¿Tienes dudas? Si quieres saber más sobre nuestra forma de trabajar y en lo que podemos aportar, no dudes en escribirnos a contact@codesai.com o rellenando el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+      placeholder: Me gustaría obtener más información, saber qué podríais aportarme y cómo colaborar.
+  clients:
+    title: Codesai. Nuestros clientes
+    profile:
+      title: La empresa
+      our_work: Nuestra aportación
+      technologies:
+        title: Tecnologías empleadas
+        languages: Lenguajes de programación
+        tools: Librerías/frameworks
+        databases: Persistencia
+        orchestration: Orquestación de servicios
+        monitoring: Monitorización de servicios
+    our_clients:
+      lifull:
+        name: Lifull Connect
+        about: Lifull Connect es uno de los mayores agregadores a nivel mundial en los sectores de empleo, coches y moda, y el mayor en el sector inmobiliario.
+        our_work: <p>Estamos ayudando a varios equipos de Lifull Connect a cambiar su cultura y mejorar su eficiencia, tanto trabajando con código legado como en proyectos nuevos,mediante un acompañamiento intensivo, un programa de práctica deliberada y formaciones específicas (TDD, code smells, refactoring, trabajo con código legado, ...).</p><p>Llevamos más de un año ayudando a varios equipos de Lifull, y ahora estamos empezando a trabajar con un par de equipos más.</p><p>Nuestra relación con Lifull Connect está siendo una simbiosis muy enriquecedora.</p>
+        stack: <p><strong>Lenguajes de programación:</strong> PHP, Java, Kotlin, Scala, JavaScript.</p><p><strong>Librerías/frameworks:</strong> Symfony, reffects, Play.</p><p><strong>Persistencia:</strong> MySQL, Solr, S3, Spark, Redis.</p>
+      buyviu:
+        name: Buyviu
+        about: Buyviu es un marketplace que publica productos de diferentes redes de afiliación y redirige tráfico a sus afiliados a cambio de comisiones por las ventas de productos. Actualmente se encuentra en cuatro países con más de 3 millones de productos en cada país y la plataforma se encuentra preparada para su expansión a nuevos países. El valor añadido de BuyViu es la capacidad de generar automáticamente vídeos de presentación para productos con sus marcas y categorías, lo que mejora la capacidad de captación de tráfico frente a otros marketplaces existentes.
+        our_work: 3 miembros de Codesai se unieron a este proyecto para asumir tareas propias del CTO, como seleccionar las tecnologías y arquitecturas adecuadas, incorporar nuevo talento y gestionar la comuniación entre el departamento técnico y los stakeholders. Gracias al trabajo diario con el equipo propio de la empresa (una de nuestras bases) conseguimos crear una cultura de trabajo que fomentara prácticas como el pair programming, TDD o integración contínua que produjo una mejora de los resultados obtenidos.
+        stack: <p><strong>Lenguajes de programación:</strong> Python, Javascript, Kotlin.</p><p><strong>Librerías/frameworks:</strong> Django, Flask, Nodejs, React, Spring Boot.</p><p><strong>Persistencia:</strong> PostgreSQL (Amazon RDS), Elasticsearch (Amazon ES), S3, Redis.</p><p><strong>Orquestación de servicios:</strong> Docker, ECS, Cloudformation, Ansible.</p><p><strong>Monitorización de servicios:</strong> Prometheus, Kibana, Grafana, CloudWatch.</p>
+      green_power:
+        name: Green Power Monitor
+        about: Más de 10 años de experiencia ofreciendo soluciones a medida para plantas de energías renovables. Empresa líder independiente en el sector que gestiona, controla y monitoriza cerca de 2.700 instalaciones de este tipo alrededor del mundo, facilitando herramientas que permiten optimizar al máximo todo su rendimiento.
+        our_work: Dentro del equipo de front-end, ayudamos a desarrollar una SPA que constituía un auténtico desafío debido a la gran cantidad de datos a visualizar y a la necesidad de crear una experiencia de usuario sólida (además de una buena estética visual). Como parte del equipo GPM Plus, la labor de Codesai se centró en la actualización de su software de gestión y monitorización de grandes portfolios de energías renovables, manteniendo un equilibrio entre la refactorización del código legado (en C# y con una antigüedad de casi 10 años) y la creación de nuevas funcionalidades.
+        stack: <p><strong>Lenguajes de programación:</strong> Python, Javascript, Kotlin.</p><p><strong>Librerías/frameworks:</strong> Django, Flask, Nodejs, React, Spring Boot.</p><p><strong>Persistencia:</strong> PostgreSQL (Amazon RDS), Elasticsearch (Amazon ES), S3, Redis.</p><p><strong>Orquestación de servicios:</strong> Docker, ECS, Cloudformation, Ansible.</p><p><strong>Monitorización de servicios:</strong> Prometheus, Kibana, Grafana, CloudWatch.</p>
+      asv:
+        name: Grupo ASV
+        about: Conjunto de empresas de servicios de amplia trayectoria vinculada principalmente a los negocios de transporte sanitario, seguros y servicios funerarios, con presencia en varias provincias de España.
+        our_work: Dos de nuestros profesionales, especializados en backend y frontend, estuvieron integrados en un equipo de 14 personas a tiempo completo usando Scrum para mejorar el sistema de gestión de ambulancias de la empresa. Nuestro conocimiento tecnológico, así como la experiencia en el desarrollo de productos con metodologías y prácticas de XP, formaron parte de las buenas prácticas técnicas requeridas. Eso, junto con la buena alineación dentro del equipo, permitió alcanzar las altas exigencias de calidad que precisaba el proyecto.
+        stack: <p>ClojureScript, Om, re-om C#</p>
+      domingo_alonso:
+        name: Domingo Alongo Group
+        about: Su filial, Aplicaciones Informáticas Domingo Alonso (AIDA), es la encargada del desarrollo y mantenimiento de software para gestionar la importación, reparación y venta de vehículos. El programa se utiliza a nivel internacional tanto por las empresas del grupo como por otras del sector de la automoción.
+        our_work: Nuestro mayor reto fue ayudar a AIDA a cambiar su cultura. Durante más de dos años estuvimos acompañando a su equipo, consiguiendo una mejora tanto en sus procesos (adoptando metodologías ágiles) como en el análisis de producto. Nuestra labor de mentorización se extendió también a la interiorización de prácticas técnicas de XP como TDD, pair programing, integración/deploy continuo o refactoring, y en principios de diseño orientado a objetos como DDD o arquitectura hexagonal, a la vez que generábamos nuevas funcionalidades. Toda esta transformación ágil acabó produciendo resultados tan positivos como el crecimiento profesional de los miembros de su departamento y, lo que es más importante, la generación de una cultura de mejora contínua.
+        stack: <p>.Net, C#, ECMAScript 6, SQL Server, PowerShell, RabbitMQ, SignalR, WPF, Knockout</p>
+      mutua_tinerfena:
+        name: Mutua Tinerfeña
+        about: Mutua Tinerfeña es una aseguradora con más de 85 años de experiencia en el sector de los seguros. Actualmente es la única aseguradora canaria que opera en el archipiélago. Cuenta con software propio para gestionar los múltiples productos que oferta, además de integraciones con diferentes sistemas en el mercado. El conocimiento que se necesita para operar en este sector es elevado y complejo.
+        our_work: <p>Estamos ayudando a Mutua Tinerfeña a cambiar su cultura mediante un acompañamiento de baja intensidad pero continuo y con formaciones (TDD, historias de usuario, Impact Mapping..). Se ha conseguido mejorar tanto sus procesos, adoptando metodologías ágiles y mejorando el análisis de producto, como sus prácticas técnicas, mentorizando a su equipo en prácticas técnicas de XP como TDD, pair programming, integración/deploy continuo o refactoring.</p><p>La transformación que se está produciendo en Mutua Tinerfeña está teniendo resultados muy positivos. A la vez se está consiguiendo minimizar lo máximo posible el coste y caos que podría generar el cambio de paradigma. Su equipo está creciendo poco a poco profesionalmente, interiorizando las prácticas técnicas y, por encima de todo, generando una cultura de "mejora continua".</p>
+        stack: <p>Java, PLSQL, Scala, Kafka, JSF, Oracle Forms</p>
+      the_motion:
+        name: The Motion
+        about: Start-up revolucionaria dentro de la industria del video-advertising, de plataforma abierta que intenta ayudar a sus clientes a crear video-ads únicos a partir de cualquier dato de producto, para hacer crecer sus negocios de forma rápida y sencilla.
+        our_work: Ayudamos a su equipo técnico (relativamente pequeño, entre 7-10 personas) a través de sesiones de pair programming a poner en práctica TDD y a mejorar sus conocimientos sobre diseño orientado a objetos. El resultado fue bastante positivo. Quedaron bastante satisfechos, resolviendo muchas dudas sobre cómo aplicar TDD en su día a día y sobre testing en general.
+        stack: <p>Python</p>
+    other_clients:
+      header: "Hemos ayudado también a mejorar el código de todas estas empresas:"
+    contact:
+      title: ¡Descubre todo lo que podemos hacer por tu empresa!
+      text: <p>¿Tienes dudas? ¿Quieres saber más sobre nuestra forma de trabajar y en todo lo que podemos aportar a tu equipo? Cuéntanoslo en contact@codesai.com o rellena el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+      placeholder: Me interesaría recibir información sobre posibles colaboraciones con mi empresa
+  training:
+    title: Codesai. Formaciones
+    header: Te enseñamos a desarrollar mejor código
+    text: <p>Todos nuestros cursos son <strong>in-house</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.</p><p><strong>Además, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</strong></p>
+    courses:
+      tdd:
+        name: Test Driven Development (TDD)
+        description: La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.
+        link: /curso-de-tdd/
+      code_smells_refactoring:
+        name: Code smells & Refactoring
+        description: El objetivo de este curso es conocer los diferentes code smells y empezar a desarrollar la capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar el diseño de código ya existente de forma segura e incremental.
+        link: /cursos/refactoring/
+      ddd:
+        name: DDD driven by test
+        description: El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.
+        link: /cursos/ddd/
+      user_stories:
+        name: Historias de usuario
+        description: El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario, identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.
+        link: /cursos/user-stories/
+      cd_databases:
+        name: Continuous Delivery con bases de datos
+        description: El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.
+        link: /cursos/cd-databases/
+    contact:
+      title: ¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!
+      text: <p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+      placeholder: ¿Te interesa alguna de nuestras formaciones? Inscríbite para futuros cursos abiertos o si te interesa que demos alguna formación en tu empresa.
+  courses:
+    tdd:
+      name: Codesai. Curso de TDD
+      title: Test Driven Development (TDD)
+      text: '<p>TDD es una técnica que, aplicada correctamente, nos permite desarrollar código con un buen diseño, cumpliendo estrictamente las necesidades de negocio.</p>
+             <p>En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los conocimientos de manera práctica en Pair Programming con el resto de asistentes, siempre bajo la guía de nuestros mentores.</p>'
+      agenda:
+        title: Contenido
+        day_1:
+          title: Primer día
+          content: '<div class="topics">
+                      <div class="group"><span>1.</span> Introducción a TDD</div>
+                      <div class="subgroup"><span>&bull;</span> ¿Por qué TDD?</div>
+                      <div class="subgroup"><span>&bull;</span> Ciclo de TDD</div>
+
+                      <div class="group"><span>2. </span>Refactoring & Clean Code</div>
+                      <div class="subgroup"><span>&bull;</span> Refactoring</div>
+                      <div class="subgroup"><span>&bull;</span> Code Smells</div>
+                      <div class="subgroup"><span>&bull;</span> Código habitable</div>
+                      <div class="subgroup"><span>&bull;</span> Principios de diseño</div>
+                  </div>'
+        day_2:
+          title: Segundo día
+          content: '<div class="topics">
+          <div class="group"><span>3. </span>Patrones, sostenibilidad y variaciones del ciclo básico</div>
+
+          <div class="group"><span>4. </span>Test doubles</div>
+          <div class="subgroup"><span>&bull;</span> Interaction-based testing</div>
+          <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
+
+          <div class="group"><span>5. </span>Outside-in TDD</div>
+          <div class="subgroup"><span>&bull;</span> Ventajas sobre inside-out</div>
+          <div class="subgroup"><span>&bull;</span> Classicist vs Mockist</div>
+          <div class="subgroup"><span>&bull;</span> Mal uso de los test doubles y consejos para evitarlo</div>
+      </div>'
+      languages:
+        title: Lenguajes
+        text: <p>Los ejemplos y katas están en Java, JavaScript, C#, Python y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>
+      requirements:
+        title: Requisitos
+        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
+              <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
+              <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+      target:
+        title: ¿Para quién está pensado?
+        text: '<p>Este es un curso para personas que sepan programar. Fundamentalmente programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas. Lo que hace falta es venir con ganas y la mente abierta. Si nunca has probado TDD antes, te sorprenderá.</p>'
+      where:
+        title: Para empresas o en abierto
+        text: '<p>Podemos impartir este curso cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
+               <p class="unicode">Ten en cuenta que los cursos para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+      call_to_action:
+        link: /curso-de-tdd/#call-to-action
+        title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+    cd-databases:
+      title: Codesai. Curso de Continuous Delivery con bases de datos
+      name: Continuous Delivery con bases de datos
+      text: '<p>El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.</p>
+             <p>A través de ejemplos y katas, aprenderemos sobre técnicas de refactoring y sobre cómo evolucionar la base de datos. Asimismo, veremos algunos smells y herramientas para enfrentarnos a entornos complicados.</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de Continuos Delivery con bases de datos
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/cd-databases/#call-to-action
+      content:
+        title: Contenidos
+        day_1:
+          title: Primer día
+          agenda: '<div class="topics">
+                      <div class="group"><span>1.</span> Desafíos y principios</div>
+                      <div class="group"><span>2. </span> Enfoques state-based y migration-based</div>
+                      <div class="group"><span>3. </span> Profundizando en el enfoque migration-based</div>
+                      <div class="subgroup"><span>&bull;</span> Tools (SQL & DSLs)</div>
+                      <div class="subgroup"><span>&bull;</span> Aplicación de migraciones</div>
+                      <div class="subgroup"><span>&bull;</span> Drifts</div>
+                      <div class="subgroup"><span>&bull;</span> Conflictos</div>
+                      <div class="subgroup"><span>&bull;</span> Manejando muchas migraciones</div>
+                      <div class="subgroup"><span>&bull;</span> Rollback vs Forward</div>
+                  </div>'
+        day_2:
+          title: Segundo día
+          agenda: '<div class="topics">
+                        <div class="group"><span>4. </span> Smells en base de datos</div>
+                        <div class="group"><span>5. </span> Concepto y flujo del refactoring</div>
+                        <div class="group"><span>6. </span> Refactors</div>
+                        <div class="group"><span>7. </span> Testing en base de datos</div>
+                        <div class="group"><span>8. </span> TDD en base de datos</div>
+                    </div>'
+      languages:
+        title: Lenguajes
+        text: '<p>En los ejercicios utilizaremos el lenguaje SQL y cualquier editor con el que te sientas cómodo, pero veremos algunos ejemplos de DSLs en PHP y Java</p>
+              <p>En cuanto al motor de base de datos (Oracle, SQLServer...), la mayoría de ejercicios son independientes pero algunos aspectos pueden depender del mismo. Ponte en contacto con nosotros e intentaremos ver cómo adaptarlo a lo que utilizas a diario.</p>'
+      requirements:
+        title: Requisitos
+        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git. Respecto al motor de base de datos se podría valorar usar un servidor compartido por cuestiones de rendimiento</p>
+               <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de un portátil a otro sin preocuparse por la privacidad de la cuenta.</p>
+               <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+      who:
+        title: ¿Para quién está pensado?
+        text: '<p>Fundamentalmente para programadores o DBAs que quieran conocer más sobre cómo evolucionar la base de datos y disponer de batería de pruebas automáticas. Y especialmente útil para entornos complejos (múltiples consumidores, lógica en db, etc)</p>'
+      where:
+        title: In-house
+        text: '<p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+    ddd:
+      title: Codesai. Curso DDD Driven by test
+      name: Domain Driven Design Driven by Tests
+      text: '<p>El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.</p>
+             <p>Explicaremos cómo a través de herramientas como Context Mapping y Event Storming podemos crear un lenguaje común en la organización que nos ayude construir soluciones software durables y mantenibles.</p>
+             <p>Explicaremos cómo trasladar estos conceptos al código y la arquitectura a través de ejemplos concretos haciendo uso de los patrones tácticos de DDD como agregados, repositorios o value objects. Veremos también mecanismos de comunicación entre diferentes Bounded contexts y realizaremos una introducción a event sourcing y CQRS.</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso DDD driven by test
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/ddd/#call-to-action
+      content:
+        title: Contenidos
+        day_1:
+          title: Primer día
+          agenda: '<div class="topics">
+                    <div class="group"><span>1.</span> Introducción a DDD</div>
+                    <div class="group"><span>2. </span>Event storming</div>
+                    <div class="subgroup">Explicaremos la dinamica y realizaremos un ejercicio practico</div>
+                    <div class="group"><span>3.</span> Patrones tácticos</div>
+                    <div class="subgroup">Partiendo del Event Storming anterior explicaremos cómo trasladar estos conceptos al código mediante una sesión de live coding y un ejercicio propuesto
+                 </div>'
+        day_2:
+          title: Segundo día
+          agenda: '<div class="topics">
+                    <div class="group"><span>4. </span>Repaso y ampliación de los patrones tácticos</div>
+                    <div class="group"><span>5. </span>Estrategia y context mapping</div>
+                    <div class="group"><span>6. </span>Ejercicio práctico de comunicación entre Bounded contexts</div>
+                    <div class="group"><span>7. </span>Introducción a event sourcing y CQRS</div>
+                 </div>'
+      tools:
+        title: Tecnología y material necesario
+        text: '<p>El código y los ejemplos del curso están realizados en java. Se podrían adaptar estos ejemplos y ejercicios a cualquier otro lenguaje orientado a objetos si fuera necesario.</p>
+               <p>El curso se impartirá online, por tanto será necesario que todos los asistentes dispongan de una conexión lo suficientemente buena para mantener videoconferencias de manera fluida. Si el curso se realiza con el material en java será necesario contar con un JDK 11 o superior y algún entorno de desarrollo, nosotros nos sentimos más cómodos con IntelliJ pero todos los ejemplos están construidos de forma que se puedan desarrollar en cualquier IDE.</p>'
+      who:
+        title: ¿Para quién está pensado?
+        text: <p>El curso aborda algunos conceptos avanzados de arquitectura software, para un buen aprovechamiento del mismo recomendamos que los asistentes tengan conocimientos de orientación a objetos y al menos experiencia básico escribiendo pruebas automáticas.</p>
+      where:
+        title: In-house y en abierto
+        text: <p>El curso se puede realizar in-house para un equipo de desarrollo o empresa concreta que quiera contratarlo. También realizaremos ediciones en abierto, si quieres consultar el calendario de próximos cursos en abierto o contactar con nosotros para un curso in-house lo puedes hacer a través del formulario al final de esa página.</p>
+    intellij:
+      title: Codesai. IntelliJ Guru
+      name: IntelliJ Guru
+      text: <p>El objetivo de este curso es que saques el máximo provecho a las herramientas de desarrollo de JetBrains, partiendo de IntelliJ como entorno de aprendizaje. A través de ejemplos y actividades, iremos descubriendo muchas de las funcionalidades que nos ofrece.</p>
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de IntelliJ Guru
+        text: <p>Si deseas iniciar el proceso de inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        where: Remoto
+        link: /cursos/intellij-guru/#call-to-action
+      content:
+        title: Contenidos
+        agenda: '<div class="topics">
+                    <div class="group"><span>1.</span> Introducción y filosofía al refactoring automático</div>
+                    <div class="subgroup"><span>&bull;</span> Shortcuts (atajos)</div>
+                    <div class="subgroup"><span>&bull;</span> Live templates</div>
+                    <div class="subgroup"><span>&bull;</span> Navegar por el código</div>
+                    <div class="subgroup"><span>&bull;</span> Catálogo de refactorings</div>
+                    <div class="subgroup"><span>&bull;</span> Asistentes de entrenamiento</div>
+                    <div class="group"><span>2. </span> Refactorings automáticos</div>
+                    <div class="subgroup"><span>&bull;</span> Refactorings clásicos</div>
+                    <div class="subgroup"><span>&bull;</span> Refactoring a patrones</div>
+                    <div class="subgroup"><span>&bull;</span> Análisis de código</div>
+                    <div class="group"><span>3. </span> Testing</div>
+                    <div class="subgroup"><span>&bull;</span> Scratch files</div>
+                    <div class="subgroup"><span>&bull;</span> Http requests</div>
+                    <div class="subgroup"><span>&bull;</span> Debugging</div>
+                    <div class="subgroup"><span>&bull;</span> Integración con frameworks de testing</div>
+                    <div class="subgroup"><span>&bull;</span> Plugins</div>
+                    <div class="subgroup"><span>&bull;</span> Env files</div>
+                    <div class="subgroup"><span>&bull;</span> Integración con Docker</div>
+                    <div class="group"><span>4. </span> Integración con herramientas de build</div>
+                    <div class="subgroup"><span>&bull;</span> Maven</div>
+                    <div class="subgroup"><span>&bull;</span> Gradle</div>
+                    <div class="group"><span>5. </span> Control de versiones</div>
+                    <div class="subgroup"><span>&bull;</span> Histórico local</div>
+                    <div class="subgroup"><span>&bull;</span> Hooks</div>
+                    <div class="subgroup"><span>&bull;</span> Resolución de conflictos</div>
+                    <div class="group"><span>6. </span> Pairing remoto</div>
+                    <div class="group"><span>7. </span> Integración con Spring</div>
+                </div>'
+      who:
+        title: ¿Para quién está pensado?
+        text: '<p>El curso está pensado para cualquier equipo que quiera exprimir al máximo cualquier herramienta de desarrollo de JetBrains.</p>
+               <p>En el curso usaremos principalmente IntelliJ IDEA, pero muchas de las funcionalidades que veremos están disponibles en los otros IDEs de JetBrains (WebStorm, PhpStorm, RubyMine, Rider, etc).</p>'
+      where:
+        title: Modalidades
+        text: '<p>El curso se imparte in-house (cerrado para la empresa que lo contrata) o en abierto en fechas señaladas.</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
+               <p class="unicode">Durante el año iremos anunciando fechas de ediciones en abierto a las que podrás apuntarte en el formulario de abajo.</p>'
+
+    code_smells_refactoring:
+      title: Codesai. Curso de Code Smells & Refactoring
+      name: Code smells & Refactoring
+      text: '<p>El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar el diseño de código ya existente de forma segura e incremental.</p>
+             <p>A través de ejemplos y katas, aprenderemos sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Asimismo, veremos el papel fundamental del refactoring en el
+desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente ciclos de refactoring y su economía (cómo hacerlo de manera responsable).</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de Code smells & Refactoring
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/refactoring/#call-to-action
+      content:
+        title: Contenidos
+        day_1:
+          title: Bloque 1 (4h)
+          agenda: '<div class="topics">
+                      <div class="group"><span>1.</span> Introducción</div>
+                      <div class="group"><span>2. </span> Code smells y refactors relacionados</div>
+                      <div class="subgroup"><span>&bull;</span> Code smells en clases</div>
+                      <div class="subgroup"><span>&bull;</span> Code smells entre clases</div>
+                  </div>'
+        day_2:
+          title: Bloque 2 (8h)
+          agenda: '<div class="topics">
+                    <div class="group"><span>3. </span>Diseño lo suficientemente bueno</div>
+                    <div class="group"><span>4. </span>Core Refactorings y patrones de refactoring</div>
+                 </div>'
+        day_3:
+          title: Bloque 3 (8h)
+          agenda: '<div class="topics">
+                    <div class="group"><span>5. </span>Arquitectura hexagonal</div>
+                    <div class="group"><span>6. </span>Flujos de trabajo y economía del refactoring</div>
+                 </div>'
+      languages:
+        title: Lenguajes
+        text: <p>Los ejemplos y katas están en Java y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>
+      requirements:
+        title: Requisitos
+        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
+               <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
+               <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+      who:
+        title: ¿Para quién está pensado?
+        text: <p>Fundamentalmente para programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas.</p>
+      where:
+        title: In-house y en abierto
+        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+    user_stories:
+      title: Curso de Historias de usuario
+      name: Historias de usuario
+      text: '<p>El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario,
+             identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.</p>
+             <p>A través de ejemplos y actividades, aprenderemos a entender el concepto de historias de usuario. Asimismo, veremos algunos smells y técnicas para enfrentarnos a su complejidad.</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de Historias de usuario
+        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/user-stories/#call-to-action
+      content:
+          title: Contenido
+          agenda: '<div class="topics">
+                        <div class="group"><span>1.</span> Introducción</div>
+                        <div class="group"><span>2. </span> Buenas historias de usuario</div>
+                        <div class="subgroup"><span>&bull;</span> INVEST</div>
+                        <div class="subgroup"><span>&bull;</span> Smells</div>
+                        <div class="group"><span>3. </span> Heurísticas para partir historias de usuario</div>
+                        <div class="subgroup"><span>&bull;</span> Heurísticas de alto nivel</div>
+                        <div class="subgroup"><span>&bull;</span> Heurísticas por atributos de calidad</div>
+                        <div class="subgroup"><span>&bull;</span> Heurísticas por experiencia de usuario</div>
+                        <div class="subgroup"><span>&bull;</span> Heurísticas por comportamiento</div>
+                    </div>'
+      who:
+        title: ¿Para quién está pensado?
+        text: '<p>El curso está pensado para cualquier equipo que tenga que enfrentarse a desarrollar en un entorno de entrega de valor continua</p>
+               <p>A diferencia de muchos cursos de esta temática, no está pensando únicamente para product owners. El curso ofrece valor para todos los perfiles (técnicos, negocio...), ya que las habilidades y técnicas que se adquieren aplican a varios niveles</p>'
+      consulting:
+        title: Te ayudamos en tu dominio
+        text: <p>Despues de hacer el curso podrás aplicar a tu propio contexto lo que has aprendido mediante sesiones especiales en las que trabajaremos con ejemplos a los que te enfrentas a diario (precio y duración de las sesiones a consultar).</p>
+      where:
+        title: In-house
+        text: '<p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+  publications:
+    title: Codesai. Blog
+    posts: Posts
+    videos: Videos
+  categories:
+    title: Categorías
+  not_found:
+    title: '404'
+    text: ¡Vaya! Parece que no hemos encontrado nada aquí :(
+  legal_advertisement:
+    name: Codesai. Aviso Legal
+    title: '<h1>Aviso legal</h1>'
+    text: '<p>CODESAI DEV S.COOP, con CIF/NIF no: F74446410 y dirección en: C/ Purita de la Riva 4, 2B, 33002 - Oviedo (Asturias), no puede asumir ninguna responsabilidad derivada del uso incorrecto, inapropiado o ilícito de la información aparecida en las páginas web de: <a href="https://www.codesai.com/">https://www.codesai.com/</a></p><p>Que CODESAI DEV S.COOP consta inscrita en el Registro Mercantil de Sociedades Cooperativas, Tomo LX, Folio 5963, Asiento 1a. Número de inscripción de la Entidad 2833-SMT.</p><p>Con los límites establecidos en la ley, CODESAI DEV S.COOP no asume ninguna responsabilidad derivada de la falta de veracidad, integridad, actualización y precisión de los datos o informaciones que contienen sus páginas web.</p> <p>Los contenidos e información no vinculan a CODESAI DEV S.COOP ni constituyen opiniones, consejos o asesoramiento legal de ningún tipo pues se trata meramente de un servicio ofrecido con carácter informativo y divulgativo.</p> <p>Las páginas de Internet de CODESAI DEV S.COOP pueden contener enlaces (links) a otras páginas de terceras partes que CODESAI DEV S.COOP no puede controlar. Por lo tanto, CODESAI DEV S.COOP no puede asumir responsabilidades por el contenido que pueda aparecer en páginas de terceros.</p> <p>Los textos, imágenes, sonidos, animaciones, software y el resto de contenidos incluidos en este website son propiedad exclusiva de CODESAI DEV S.COOP o sus licenciantes. Cualquier acto de transmisión, distribución, cesión, reproducción, almacenamiento o comunicación pública total o parcial, deberá contar con el consentimiento expreso de CODESAI DEV S.COOP.</p> <p>Asimismo, para acceder a algunos de los servicios que CODESAI DEV S.COOP ofrece a través del sitio web, deberá proporcionar algunos datos de carácter personal. En cumplimiento de lo establecido en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos le informamos que, mediante la cumplimentación de los presentes formularios, sus datos personales quedarán incorporados y serán tratados en los ficheros de CODESAI DEV S.COOP con el fin de poderle prestar y ofrecer nuestros servicios así como para informarle de las mejoras del sitio Web.</p> <p> Le informamos también de que tendrá la posibilidad en todo momento de ejercer los derechos de acceso, rectificación, cancelación, oposición, limitación y portabilidad de sus datos de carácter personal, de manera gratuita mediante email a: contact@codesai.com o en la dirección: C/ Purita de la Riva 4, 2B, 33008 - Oviedo (Asturias).</p>'
+  cookie_policy:
+    title: Codesai. Política de Cookies
+    text: '<h2>Política de cookies</h2>
+      <p>CODESAI DEV S.COOP informa acerca del uso de las cookies en su página web: www.codesai.com</p>
+      <h2>¿Qué son las cookies?</h2>
+      <p>Las cookies son archivos que se pueden descargar en su equipo a través de las páginas web. Son herramientas que
+          tienen un papel esencial para la prestación de numerosos servicios de la sociedad de la información. Entre
+          otros, permiten a una página web almacenar y recuperar información sobre los hábitos de navegación de un usuario
+          o de su equipo y, dependiendo de la información obtenida, se pueden utilizar para reconocer al usuario y mejorar
+          el servicio ofrecido.</p>
+      <h2>Tipos de cookies</h2>
+      <p>Según quien sea la entidad que gestione el dominio desde donde se envían las cookies y trate los datos que se
+          obtengan se pueden distinguir dos tipos:</p>
+      <ul>
+          <li>Cookies propias: Aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio gestionado
+              por el propio editor y desde el que se presta el servicio solicitado por el usuario.
+          </li>
+          <li>Cookies de terceros: Aquéllas que se envían al equipo terminal del usuario desde un equipo o dominio que no
+              es gestionado por el editor, sino por otra entidad que trata los datos obtenidos través de las cookies.
+          </li>
+      </ul>
+      <p>En el caso de que las cookies sean instaladas desde un equipo o dominio gestionado por el propio editor pero la
+          información que se recoja mediante éstas sea gestionada por un tercero, no pueden ser consideradas como cookies
+          propias.</p>
+      <p>Existe también una segunda clasificación según el plazo de tiempo que permanecen almacenadas en el navegador del
+          cliente, pudiendo tratarse de:</p>
+      <ul>
+          <li>Cookies de sesión: Diseñadas para recabar y almacenar datos mientras el usuario accede a una página web. Se
+              suelen emplear para almacenar información que solo interesa conservar para la prestación del servicio
+              solicitado por el usuario en una sola ocasión (p.e. una lista de productos adquiridos).
+          </li>
+          <li>Cookies persistentes: Los datos siguen almacenados en el terminal y pueden ser accedidos y tratados durante
+              un periodo definido por el responsable de la cookie, y que puede ir de unos minutos a varios años.
+          </li>
+      </ul>
+      <p>Por último, existe otra clasificación con seis tipos de cookies según la finalidad para la que se traten los
+          datos obtenidos:</p>
+      <ul>
+          <li>Cookies técnicas: Aquellas que permiten al usuario la navegación a través de una página web, plataforma o
+              aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo,
+              controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso
+              restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido,
+              realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante
+              la navegación, almacenar contenidos para la difusión de vídeos o sonido o compartir contenidos a través de
+              redes sociales.
+          </li>
+          <li>Cookies de personalización: Permiten al usuario acceder al servicio con algunas características de carácter
+              general predefinidas en función de una serie de criterios en el terminal del usuario como por ejemplo serian
+              el idioma, el tipo de navegador a través del cual accede al servicio, la configuración regional desde donde
+              accede al servicio, etc.
+          </li>
+          <li>Cookies de análisis: Permiten al responsable de las mismas, el seguimiento y análisis del comportamiento de
+              los usuarios de los sitios web a los que están vinculadas. La información recogida mediante este tipo de
+              cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma y para la
+              elaboración de perfiles de navegación de los usuarios de dichos sitios, aplicaciones y plataformas, con el
+              fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio.
+          </li>
+          <li>Cookies publicitarias: Permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios.
+          </li>
+          <li>Cookies de publicidad comportamental: Almacenan información del comportamiento de los usuarios obtenida a
+              través de la observación continuada de sus hábitos de navegación, lo que permite desarrollar un perfil
+              específico para mostrar publicidad en función del mismo.
+          </li>
+          <li>Cookies de redes sociales externas: Se utilizan para que los visitantes puedan interactuar con el contenido
+              de diferentes plataformas sociales (facebook, youtube, twitter, linkedIn, etc..) y que se generen únicamente
+              para los usuarios de dichas redes sociales. Las condiciones de utilización de estas cookies y la información
+              recopilada se regula por la política de privacidad de la plataforma social correspondiente.
+          </li>
+      </ul>
+      <h2>Desactivación y eliminación de cookies</h2>
+      <p>Tienes la opción de permitir, bloquear o eliminar las cookies instaladas en tu equipo mediante la configuración
+          de las opciones del navegador instalado en su equipo. Al desactivar cookies, algunos de los servicios
+          disponibles podrían dejar de estar operativos. La forma de deshabilitar las cookies es diferente para cada
+          navegador, pero normalmente puede hacerse desde el menú Herramientas u Opciones. También puede consultarse el
+          menú de Ayuda del navegador dónde puedes encontrar instrucciones. El usuario podrá en cualquier momento elegir
+          qué cookies quiere que funcionen en este sitio web.</p>
+      <p>Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las
+          opciones del navegador instalado en su ordenador:</p>
+      <ul>
+          <li>Microsoft Internet Explorer o Microsoft Edge:
+              http://windows.microsoft.com/es-es/windows-vista/Block-or-allow-cookies
+          </li>
+          <li>Mozilla Firefox: http://support.mozilla.org/es/kb/impedir-que-los-sitios-web-guarden-sus-preferencia</li>
+          <li>Chrome: https://support.google.com/accounts/answer/61416?hl=es</li>
+          <li>Safari: http://safari.helpmax.net/es/privacidad-y-seguridad/como-gestionar-las-cookies/</li>
+          <li>Opera: http://help.opera.com/Linux/10.60/es-ES/cookies.html</li>
+      </ul>
+      <p>Además, también puede gestionar el almacén de cookies en su navegador a través de herramientas como las
+          siguientes:</p>
+      <ul>
+          <li>Ghostery: www.ghostery.com</li>
+          <li>Your Online Choices: www.youronlinechoices.com/es/</li>
+      </ul>
+      <p>Cookies utilizadas en www.codesai.com</p>
+      <p>A continuación se identifican las cookies que están siendo utilizadas en este portal así como su tipología y función:</p>
+      <ul>_ga
+        <li>Duración: 2 años</li>
+        <li>Descripción: Sirve para distinguir a los usuarios. Generada por Google Analytics. Google almacena la
+            informacion recogida por las cookies en servidores ubicados en Estados Unidos, cumpliendo con la
+            legislación Europea en cuanto a protección de datos personales y se compromete a no compartirla con
+            terceros, excepto cuando la ley le obligue a ello o sea necesario para el funcionamiento del
+            sistema. Google no asocia su direccion IP con ninguna otra informacion que tenga. Si desea obtener
+            mas informacion acerca de las cookies usadas por Google Analytics, por favor acceda a esta
+            direccion:
+            https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw=1
+        </li>
+        <li>Tipo: Tercero</li>
+        <li>Finalidad: Analítica</li>
+      </ul>
+      <br>
+      <ul>_gat
+          <li>Duración: 1 minuto</li>
+          <li>Descripción: Utilizada para mostrar nuestra publicidad en otras páginas de la red de Google.
+              Generada por Google Analytics. Google almacena la informacion recogida por las cookies en servidores
+              ubicados en Estados Unidos, cumpliendo con la legislación Europea en cuanto a protección de datos
+              personales y se compromete a no compartirla con terceros, excepto cuando la ley le obligue a ello o
+              sea necesario para el funcionamiento del sistema. Google no asocia su direccion IP con ninguna otra
+              informacion que tenga. Si desea obtener mas informacion acerca de las cookies usadas por Google
+              Analytics, por favor acceda a esta direccion:
+              https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw=1
+          </li>
+          <li>Tipo: Tercero</li>
+          <li>Finalidad: Publicidad comportamental</li>
+      </ul>
+      <br>
+      <ul>_gid
+          <li>Duración: 24 horas</li>
+          <li>Descripción: Generada por Google Analytics. Google almacena la informacion recogida por las cookies
+              en servidores ubicados en Estados Unidos, cumpliendo con la legislación Europea en cuanto a
+              protección de datos personales y se compromete a no compartirla con terceros, excepto cuando la ley
+              le obligue a ello o sea necesario para el funcionamiento del sistema. Google no asocia su direccion
+              IP con ninguna otra informacion que tenga. Si desea obtener mas informacion acerca de las cookies
+              usadas por Google Analytics, por favor acceda a esta direccion:
+              https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw
+          </li>
+          <li>Tipo: Tercero</li>
+          <li>Finalidad: Publicidad comportamental</li>
+      </ul>
+      <p>www.codesai.com muestra información sobre su Política de cookies en la parte inferior o superior de cualquier
+          página del portal con cada inicio de sesión.</p>
+      <p>Ante esta información es posible llevar a cabo las siguientes acciones:</p>
+      <ul>
+          <li>Aceptar cookies: No se volverá a visualizar este aviso al acceder a cualquier página del portal durante la
+              presente sesión.
+          </li>
+          <li>Modificar/personalizar su configuración: Podrá obtener más información sobre qué son las cookies, conocer la
+              Política de cookies de: www.codesai.com y modificar la configuración de su navegador.
+          </li>
+      </ul>'
+  privacy_policy:
+    title: Codesai. Política de Privacidad
+    text: '<h1>POLÍTICA DE PRIVACIDAD</h1>
+
+    <h2>Protección de datos de carácter personal según el RGPD</h2>
+
+    <p>CODESAI DEV S.COOP, en aplicación de la normativa vigente en materia de protección de datos de carácter
+        personal,
+        informa que los datos personales que se recogen a través de los formularios del Sitio web: <a
+                href="https://www.codesai.com/">https://www.codesai.com/</a>,
+        se incluyen en los ficheros automatizados específicos de usuarios de los servicios de CODESAI DEV S.COOP</p>
+    <p>La recogida y tratamiento automatizado de los datos de carácter personal tiene como finalidad el
+        mantenimiento de la
+        relación comercial y el desempeño de tareas de información, formación, asesoramiento y otras actividades
+        propias de
+        CODESAI DEV S.COOP</p>
+    <p>Estos datos únicamente serán cedidos a aquellas entidades que sean necesarias con el único objetivo de dar
+        cumplimiento a la finalidad anteriormente expuesta.</p>
+    <p>CODESAI DEV S.COOP adopta las medidas necesarias para garantizar la seguridad, integridad y confidencialidad
+        de
+        los datos conforme a lo dispuesto en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27
+        de
+        abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos
+        personales y a
+        la libre circulación de los mismos.</p>
+    <p>El usuario podrá en cualquier momento ejercitar los derechos de acceso, oposición, rectificación,
+        cancelación, limitación
+        y portabilidad reconocidos en el citado Reglamento (UE). El ejercicio de estos derechos puede realizarlo el
+        propio
+        usuario a través de email a: contact@codesai.com o en la dirección: C/ Purita de la Riva 4, 2B, C.P. 33008 -
+        Oviedo
+        (Asturias).</p>
+    <p>El usuario manifiesta que todos los datos facilitados por él son ciertos y correctos, y se compromete a
+        mantenerlos
+        actualizados, comunicando los cambios a CODESAI DEV S.COOP</p>
+    <h2>Finalidad del tratamiento de los datos personales:</h2>
+    <h3>¿Con qué finalidad trataremos tus datos personales?</h3>
+    <p>En CODESAI DEV S.COOP, trataremos tus datos personales
+        recabados
+        a
+        través
+        del
+        Sitio
+        Web:
+        <a href="https://www.codesai.com/">https://www.codesai.com/</a>, con las siguientes finalidades:</p>
+    <ul>
+        <li>1. En caso de contratación de los bienes y servicios ofertados a través de <a
+                href="https://www.codesai.com/">https://www.codesai.com/</a>, para
+            mantener la relación contractual, así como la gestión, administración, información, prestación y mejora
+            del servicio.
+        </li>
+        <li>2. Envío de información solicitada a través de los formularios dispuestos en <a
+                href="https://www.codesai.com/">https://www.codesai.com/</a>.
+        </li>
+        <li>3. Remitir boletines (newsletters), así como comunicaciones comerciales de promociones y/o publicidad
+            de <a href="https://www.codesai.com/">https://www.codesai.com/</a> y del sector.
+        </li>
+    </ul>
+    <p>Te recordamos que puedes oponerte al envío de comunicaciones comerciales por cualquier vía y en cualquier
+        momento, remitiendo un correo electrónico a la dirección anteriormente indicada.</p>
+    <p>Los campos de dichos registros son de cumplimentación obligatoria, siendo imposible realizar las finalidades
+        expresadas si no se aportan esos datos.</p>
+    <h3>¿Por cuánto tiempo se conservan los datos personales recabados?</h3>
+    <p>Los datos personales proporcionados se conservarán mientras se mantenga la relación comercial o no solicites
+        su
+        supresión y durante el plazo por el cuál pudieran derivarse responsabilidades legales por los servicios
+        prestados.</p>
+    <h2>Legitimación:</h2>
+    <p>El tratamiento de tus datos se realiza con las siguientes bases jurídicas que legitiman el mismo:</p>
+    <ul>
+        <li>1. La solicitud de información y/o la contratación de los servicios de CODESAI DEV S.COOP, cuyos
+            términos y condiciones se pondrán a tu disposición en todo caso, de forma previa a una eventual
+            contratación.
+        </li>
+        <li>2. El consentimiento libre, específico, informado e inequívoco, en tanto que te informamos poniendo a tu
+            disposición la presente política de privacidad, que tras la lectura de la misma, en caso de estar
+            conforme, puedes aceptar mediante una declaración o una clara acción afirmativa, como el marcado
+            de una casilla dispuesta al efecto.
+        </li>
+    </ul>
+    <p>En caso de que no nos facilites tus datos o lo hagas de forma errónea o incompleta, no podremos atender tu
+        solicitud,
+        resultando del todo imposible proporcionarte la información solicitada o llevar a cabo la contratación de
+        los servicios.</p>
+    <h2>Destinatarios:</h2>
+    <p>Los datos no se comunicarán a ningún tercero ajeno a CODESAI DEV S.COOP, salvo obligación legal.</p>
+
+    <h2>Datos recopilados por usuarios de los servicios</h2>
+    <p>En los casos en que el usuario incluya ficheros con datos de carácter personal en los servidores de
+        alojamiento
+        compartido, CODESAI DEV S.COOP no se hace responsable del incumplimiento por parte del usuario del RGPD.</p>
+    <h2>Retención de datos en conformidad a la LSSI</h2>
+    <p>CODESAI DEV S.COOP informa de que, como prestador de servicio de alojamiento de datos y en virtud de lo
+        establecido en la Ley 34/2002 de 11 de julio de Servicios de la Sociedad de la Información y de Comercio
+        Electrónico
+        (LSSI), retiene por un periodo máximo de 12 meses la información imprescindible para identificar el origen
+        de los datos
+        alojados y el momento en que se inició la prestación del servicio. La retención de estos datos no afecta al
+        secreto de las
+        comunicaciones y sólo podrán ser utilizados en el marco de una investigación criminal o para la salvaguardia
+        de la
+        seguridad pública, poniéndose a disposición de los jueces y/o tribunales o del Ministerio que así los
+        requiera.</p>
+    <p>La comunicación de datos a las Fuerzas y Cuerpos del Estado se hará en virtud a lo dispuesto en la normativa
+        sobre
+        protección de datos personales.</p>
+    <h2>Derechos propiedad intelectual https://www.codesai.com/</h2>
+    <p>CODESAI DEV S.COOP es titular de todos los derechos de autor, propiedad intelectual, industrial, "know how" y
+        cuantos otros derechos guardan relación con los contenidos del sitio web <a href="https://www.codesai.com/">https://www.codesai.com/</a>
+        y los servicios
+        ofertados en el mismo, así como de los programas necesarios para su implementación y la información
+        relacionada.</p>
+    <p>No se permite la reproducción, publicación y/o uso no estrictamente privado de los contenidos, totales o
+        parciales, del
+        sitio web <a href="https://www.codesai.com/">https://www.codesai.com/</a> sin el consentimiento previo y por
+        escrito.</p>
+    <h2>Propiedad intelectual del software</h2>
+    <p>El usuario debe respetar los programas de terceros puestos a su disposición por CODESAI DEV S.COOP, aún
+        siendo
+        gratuitos y/o de disposición pública.</p>
+    <p>CODESAI DEV S.COOP dispone de los derechos de explotación y propiedad intelectual necesarios del
+        software.</p>
+    <p>El usuario no adquiere derecho alguno o licencia por el servicio contratado, sobre el software necesario para
+        la
+        prestación del servicio, ni tampoco sobre la información técnica de seguimiento del servicio, excepción
+        hecha de los
+        derechos y licencias necesarios para el cumplimiento de los servicios contratados y únicamente durante la
+        duración de
+        los mismos.</p>
+    <p>Para toda actuación que exceda del cumplimiento del contrato, el usuario necesitará autorización por escrito
+        por parte
+        de CODESAI DEV S.COOP, quedando prohibido al usuario acceder, modificar, visualizar la configuración,
+        estructura y
+        ficheros de los servidores propiedad de CODESAI DEV S.COOP, asumiendo la responsabilidad civil y penal
+        derivada
+        de cualquier incidencia que se pudiera producir en los servidores y sistemas de seguridad como consecuencia
+        directa
+        de una actuación negligente o maliciosa por su parte.</p>
+    <h2>Propiedad intelectual de los contenidos alojados</h2>
+    <p>Se prohíbe el uso contrario a la legislación sobre propiedad intelectual de los servicios prestados por
+        CODESAI DEV
+        S.COOP y, en particular de:</p>
+    <ul>
+        <li>• La utilización que resulte contraria a las leyes españolas o que infrinja los derechos de terceros.
+        </li>
+        <li>• La publicación o la transmisión de cualquier contenido que, a juicio de CODESAI DEV S.COOP, resulte
+            violento, obsceno, abusivo, ilegal, racial, xenófobo o difamatorio.
+        </li>
+        <li>•
+            Los cracks, números de serie de programas o cualquier otro contenido que vulnere derechos de la
+            propiedad intelectual de terceros.
+        </li>
+        <li>•
+            La recogida y/o utilización de datos personales de otros usuarios sin su consentimiento expreso o
+            contraviniendo lo dispuesto en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de
+            27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento
+            de
+            datos personales y a la libre circulación de los mismos.
+        </li>
+        <li>•
+            La utilización del servidor de correo del dominio y de las direcciones de correo electrónico para el
+            envío
+            de correo masivo no deseado.
+        </li>
+    </ul>
+    <p>El usuario tiene toda la responsabilidad sobre el contenido de su web, la información transmitida y
+        almacenada, los
+        enlaces de hipertexto, las reivindicaciones de terceros y las acciones legales en referencia a propiedad
+        intelectual,
+        derechos de terceros y protección de menores.</p>
+
+    <p>El usuario es responsable respecto a las leyes y reglamentos en vigor y las reglas que tienen que ver con el
+        funcionamiento del servicio online, comercio electrónico, derechos de autor, mantenimiento del orden
+        público, así como
+        principios universales de uso de Internet.</p>
+    <p>El usuario indemnizará a CODESAI DEV S.COOP por los gastos que generara la imputación de CODESAI DEV
+        S.COOP en alguna causa cuya responsabilidad fuera atribuible al usuario, incluidos honorarios y gastos de
+        defensa
+        jurídica, incluso en el caso de una decisión judicial no definitiva.</p>
+    <h2>Protección de la información alojada</h2>
+    <p>CODESAI DEV S.COOP realiza copias de seguridad de los contenidos alojados en sus servidores, sin embargo no
+        se
+        responsabiliza de la pérdida o el borrado accidental de los datos por parte de los usuarios. De igual
+        manera, no
+        garantiza la reposición total de los datos borrados por los usuarios, ya que los citados datos podrían haber
+        sido
+        suprimidos y/o modificados durante el periodo del tiempo transcurrido desde la última copia de
+        seguridad.</p>
+    <p>Los servicios ofertados, excepto los servicios específicos de backup, no incluyen la reposición de los
+        contenidos
+        conservados en las copias de seguridad realizadas por CODESAI DEV S.COOP, cuando esta pérdida sea imputable
+        al
+        usuario; en este caso, se determinará una tarifa acorde a la complejidad y volumen de la recuperación,
+        siempre previa
+        aceptación del usuario.</p>
+    <p>La reposición de datos borrados sólo está incluida en el precio del servicio cuando la pérdida del contenido
+        sea debida
+        a causas atribuibles a CODESAI DEV S.COOP.</p>
+    <h2>Comunicaciones comerciales</h2>
+    <p>En aplicación de la LSSI. CODESAI DEV S.COOP no enviará comunicaciones publicitarias o promocionales por
+        correo
+        electrónico u otro medio de comunicación electrónica equivalente que previamente no hubieran sido
+        solicitadas o
+        expresamente autorizadas por los destinatarios de las mismas.</p>
+    <p>En el caso de usuarios con los que exista una relación contractual previa, CODESAI DEV S.COOP sí está
+        autorizado al
+        envío de comunicaciones comerciales referentes a productos o servicios de CODESAI DEV S.COOP que sean
+        similares a los que inicialmente fueron objeto de contratación con el cliente.</p>
+    <p>En todo caso, el usuario, tras acreditar su identidad, podrá solicitar que no se le haga llegar más
+        información comercial
+        a través de los canales de Atención al Cliente.</p>'
+
+
+components:
+  call_to_action:
+    mail: Email
+    name: Nombre completo
+    message: ¿Qué te gustaría contarnos?
+    send: Enviar mensaje
+  course:
+    information: Información
+    hours: horas
+    modality: Presencial o remoto.
+    price_ratio: €/persona
+    iva_excluded: I.V.A. no incluido.
+    button: Ver más información
+  course_summary:
+    title: Información
+    open_dates:
+      title: Próximas fechas en abierto
+    special_discount: Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología
+    hours: horas
+    default_modality_text: Presencial o remoto
+    participant: persona
+    iva_excluded: (I.V.A no incluido)
+    button: ¡Me interesa!
+
+header:
+  links:
+    team: Equipo
+    clients: Clientes
+    courses: Formación
+    blog: Publicaciones
+    contact: Contacto
+footer:
+  links:
+    legal_advertisement: Aviso Legal
+    cookie_policy: Política de Cookies
+    privacy_policy: Política de Privacidad
+urls:
+  home: /
+  team: /#team
+  clients: /clients/
+  courses: /cursos/
+  tdd: /curso-de-tdd/
+  ddd: /cursos/ddd/
+  refactoring: /cursos/refactoring/
+  user_stories: /cursos/user-stories/
+  cd_databases: /cursos/cd-databases/
+  intellij_guru: /cursos/intellij-guru/
+  blog: /publications/
+  contact: /#call-to-action
+  legal_advertisement: /legal-advertisement/
+  cookie_policy: /cookie-policy/
+  privacy_policy: /privacy-policy/

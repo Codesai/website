@@ -1,0 +1,88 @@
+---
+title: pages.courses.intellij.title
+permalink: /cursos/intellij-guru/
+permalink_en: /trainings/intellij-guru/
+---
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="course-page">
+        <div class="course">
+
+            <div id="course-information" class="information">
+                <div class="insights">
+                    <div class="course-title">{% translate pages.courses.intellij.title %}</div>
+                    <div class="course-description">
+                        {% translate pages.courses.intellij.text %}
+                    </div>
+
+                    <div class="summary mobile">
+                        {% capture link %}{{ site.translations[site.lang].pages.courses.intellij.call_to_action.link }}{% endcapture %}
+                        {% capture where %}{{ site.translations[site.lang].pages.courses.intellij.call_to_action.where }}{% endcapture %}
+                        {%
+                            include course-summary.html
+                            price='290'
+                            hours='8'
+                            place=where
+                            contact_link=link
+                        %}
+                        <img class="jb-training-logo" src="/img/partners/jetbrains-training-partner.svg" alt="JetBrains">
+                    </div>
+
+                    <section class="contents">
+                        <div class="title"><span>// </span>{% translate pages.courses.intellij.content.title %}</div>
+                        <div class="description">
+                            <div class="daily-agenda">
+                                {% translate pages.courses.intellij.content.agenda %}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="who">
+                        <div class="title"><span>// </span>{% translate pages.courses.intellij.who.title %}</div>
+                        {% translate pages.courses.intellij.who.text %}
+                    </section>
+
+                    <section class="where">
+                        <div class="title"><span>// </span>{% translate pages.courses.intellij.where.title %}</div>
+                        {% translate pages.courses.intellij.where.text %}
+                    </section>
+
+                </div>
+                <div class="summary desktop">
+                    {% capture link %}{{ site.translations[site.lang].pages.courses.intellij.call_to_action.link }}{% endcapture %}
+                    {% capture where %}{{ site.translations[site.lang].pages.courses.intellij.call_to_action.where }}{% endcapture %}
+                    {%
+                        include course-summary.html
+                        price='290'
+                        hours='8'
+                        place=where
+                        contact_link=link
+                    %}
+                    <img class="jb-training-logo" src="/img/partners/jetbrains-training-partner.svg" alt="JetBrains">
+                </div>
+            </div>
+        </div>
+
+        <div class="photos"></div>
+        {% capture title %}{{ site.translations[site.lang].pages.courses.intellij.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.courses.intellij.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.intellij.call_to_action.placeholder }}{% endcapture %}
+        {% include components/call-to-action.html
+            title=title
+            text=text
+            defaultMessage='Sent from the IntelliJ Guru page, no message specified'
+            messagePlaceHolder=placeholder
+            origin='Curso IntelliJ Guru'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

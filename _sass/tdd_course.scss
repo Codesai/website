@@ -120,6 +120,8 @@
       }
 
       .summary {
+        display: flex;
+        flex-direction: column;
         flex-shrink: 0;
         width: 297px;
         margin-left: 2rem;
@@ -136,6 +138,12 @@
           img {
             vertical-align: bottom;
           }
+        }
+
+        .jb-training-logo {
+          margin-top: 24px;
+          width: 192px;
+          align-self: center;
         }
 
         &.mobile {
