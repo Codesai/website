@@ -17,10 +17,10 @@
     </div>
 
     <div id="cookie-banner" class="cookie-banner">
-        <div class="message">Usamos cookies para analizar el tráfico en nuestra página web. Para más información por favor consulta nuestra <a href="{% translate urls.cookie_policy %}">política de cookies</a>.</div>
+        <div class="message">{% translate header.cookie_banner.message %} <a href="{% translate urls.cookie_policy %}">{% translate header.cookie_banner.policy %}</a>.</div>
         <div class="actions">
-            <button class="accept">Aceptar</button>
-            <button class="reject">Rechazar</button>
+            <button class="accept">{% translate header.cookie_banner.accept %}</button>
+            <button class="reject">{% translate header.cookie_banner.reject %}</button>
         </div>
     </div>
 </header>

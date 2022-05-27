@@ -837,6 +837,11 @@ header:
     courses: Training
     blog: Blog
     contact: Contact
+  cookie_banner:
+    message: We are using cookies to analyze the traffic in our website. For further information, please refer to our
+    policy: cookie policy
+    accept: Accept
+    reject: Reject
 footer:
   links:
     legal_advertisement: Legal Notice

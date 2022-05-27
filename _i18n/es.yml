@@ -839,6 +839,11 @@ header:
     courses: Formación
     blog: Publicaciones
     contact: Contacto
+  cookie_banner:
+    message: Usamos cookies para analizar el tráfico en nuestra página web. Para más información por favor consulta nuestra
+    policy: política de cookies
+    accept: Aceptar
+    reject: Rechazar
 footer:
   links:
     legal_advertisement: Aviso Legal
