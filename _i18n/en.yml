@@ -813,6 +813,11 @@ components:
     message: What can we do to help?
     privacy_agreement: 'I agree with the <a href="/en/legal-advertisement/">legal notice</a> and the <a href="/en/privacy-policy/">privacy policy</a>'
     send: Send Message
+    alerts:
+      no_email: Please specify your email in the form
+      no_privacy_agreement: For us to be able to reach back we need you to agree with our legal notice and privacy policy in the form
+      received: We have received your message and will reach back to you soon, thanks!
+      error: "There was a problem upon sending your message, you can write to us directly at contact@codesai.com\\n\\nDetails:\\n"
   course:
     information: Information
     hours: hours

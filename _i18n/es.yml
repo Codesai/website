@@ -815,6 +815,11 @@ components:
     message: ¿Qué te gustaría contarnos?
     privacy_agreement: 'Estoy conforme con el <a href="/legal-advertisement/">aviso legal</a> y la <a href="/privacy-policy/">política de privacidad</a>'
     send: Enviar mensaje
+    alerts:
+      no_email: Por favor especifica tu correo electrónico en el formulario
+      no_privacy_agreement: Para poder contactar contigo necesitamos que aceptes el aviso legal y la política de privacidad en el formulario
+      received: Hemos recibido tu mensaje y responderemos en breve, gracias!
+      error: "Ha habido un problema al enviar tu mensaje, puedes escribirnos directamente a contact@codesai.com\\n\\nDetails:\\n"
   course:
     information: Información
     hours: horas
