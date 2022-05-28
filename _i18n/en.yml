@@ -811,6 +811,7 @@ components:
     mail: E-mail
     name: Full Name
     message: What can we do to help?
+    privacy_agreement: 'I agree with the <a href="/en/legal-advertisement/">legal notice</a> and the <a href="/en/privacy-policy/">privacy policy</a>'
     send: Send Message
   course:
     information: Information

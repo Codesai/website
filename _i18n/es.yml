@@ -813,6 +813,7 @@ components:
     mail: Email
     name: Nombre completo
     message: ¿Qué te gustaría contarnos?
+    privacy_agreement: 'Estoy conforme con el <a href="/legal-advertisement/">aviso legal</a> y la <a href="/privacy-policy/">política de privacidad</a>'
     send: Enviar mensaje
   course:
     information: Información

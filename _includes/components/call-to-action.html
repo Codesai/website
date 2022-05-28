@@ -23,6 +23,16 @@
                           placeholder="{{ include.messagePlaceHolder }}"></textarea>
             </div>
 
+            <div class="field" style="display: none">
+                <label class="checkbox">
+                    <input type="checkbox" id="privacy-agreement" checked="checked">
+                    <div class="box">
+                        <i class="ion-checkmark"></i>
+                    </div>
+                    <div>{% translate components.call_to_action.privacy_agreement %}</div>
+                </label>
+            </div>
+
             <div id="submit-contact-form" class="codesai-button" class="codesai-button">
                 <div class="content">{% translate components.call_to_action.send %}</div>
                 <img class="arrow" src="/assets/icons/arrow.svg" alt="">
