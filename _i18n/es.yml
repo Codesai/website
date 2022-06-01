@@ -210,8 +210,8 @@ pages:
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
     cd-databases:
-      title: Codesai. Curso de Continuous Delivery con bases de datos
-      name: Continuous Delivery con bases de datos
+      name: Codesai. Curso de Continuous Delivery con bases de datos
+      title: Continuous Delivery con bases de datos
       text: '<p>El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.</p>
              <p>A través de ejemplos y katas, aprenderemos sobre técnicas de refactoring y sobre cómo evolucionar la base de datos. Asimismo, veremos algunos smells y herramientas para enfrentarnos a entornos complicados.</p>'
       call_to_action:

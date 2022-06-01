@@ -210,8 +210,8 @@ pages:
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
     cd-databases:
-      title: Codesai. Continuous Delivery with Databases
-      name: Continuous Delivery with Databases
+      name: Codesai. Continuous Delivery with Databases
+      title: Continuous Delivery with Databases
       text: '<p>The objective of this course is for students to learn how to evolve a database continuously and securely. In addition, we will cover different testing techniques, particularly useful in environments with databases that accumulate a lot of logic.</p>
              <p>Through examples and katas, we will learn about refactoring techniques and how to evolve the database. Also, we will cover some smells and tools to deal with complex environments.</p>'
       call_to_action:
