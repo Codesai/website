@@ -68,62 +68,82 @@ Since, in the current example, the *property-based tests* were so straightforwar
 
 <h2>Discussion.</h2>
 
-If we examine the resulting tests it might seem that the property-based tests have made the example-based tests redundant. Should we delete the example-based tests and keep only the property-based ones?
+If we examine the resulting tests we may think that the property-based tests have made the example-based tests redundant. Should we delete the example-based tests and keep only the property-based ones?
 
 To answer this question, let’s think about each type of test from different points of view.
 
-Este es mi esquema: <- cómo lo expreso???? Buff, qué difícil… :(
+#### Understandability.
 
-Tests Basados en Ejemplos
-Ventajas
-Mejor granularidad en caso de error
-Expresividad, WET
-Desventajas
-La relación entre funciones queda implícita: Los tests paramétricos tal y como los hemos escrito también recogen esta relación pero de forma menos explícita. Si no los hubiéramos escrito así la relación no se apreciaría en absoluto.
-Dependientes de la implementación del algoritmo Cypher
-Estáticos -> Reducido sólo a los ejemplos arbitrarios y concretos usados
+Despite being parameterized, it’s relatively easy to see which inputs and expected outputs are used by the *example-based tests* because they are literal values provided by the `generateCipheringUuidExamples` method. Besides, this kind of testing was more familiar to the team members.
+
+In contrast, the UUID used by the property-based tests to check the property is randomly generated and the team was not familiar with property-based testing.
 
 
-Tests Basados en Propiedades
-Ventajas
-Relación entre funciones queda explícita: También es interesante que el test PBT resalta aún más explícitamente la relación entre las funciones de encryption and decryption de ser inversas.
-Independiente de la implementación -> Role tests. Otra cosa es interesante es la propiedad que hemos escrito es un invariante que caracterizan a toda la familia de algoritmos de cipher. Con lo que podría utilizarse para escribir un role test para ellos <-(nota con link al post de role tests) .
-Dinámicos -> Capacidad de exploración 
-Desventajas
-Peor granularidad en caso de error
-Peor expresividad (por problemas de familiaridad, y datos de test menos explícitos)
 
+#### Granularity.
+
+Since we are using a property that uses the *“There and back again”* pattern, if there were an error, we wouldn’t know whether the problem was in the encryption or the decryption function, not even after the *shrinking process*<a href="#nota?"><sup>[??]</sup></a>. We’d only know the initial UUID that made the property fail.
+
+This might not be so when using other property patterns. For instance, when using a property based on the [“The test oracle”][https://fsharpforfunandprofit.com/posts/property-based-testing-2/#the-test-oracle] pattern, we’d know the input and the actual and expected outputs in case of an error.
+
+In contrast, using example-based testing it would be very easy to identify the location of the problem.
+
+#### Thoroughness and exploration.
+
+The example-based tests use concrete inputs and check whether the produced output matches what we expect. The testing is reduced just to the arbitrary examples we were able to come up with. Estáticos -> Reducido sólo a los ejemplos arbitrarios y concretos usados
+
+PBT: Dinámicos -> Capacidad de exploración 
+
+
+#### Implementation independence.
+
+The example-based tests depend on the implementation of the cypher algorithm, whereas  the property-based tests can be used for any implementation of the cypher algorithm because the `decrypt_is_the_inverse_of_encrypt` property is an **invariant** of any cipher algorithm implementation. This makes the property-based tests ideal to write a *role test*<a href="#nota?"><sup>[???]</sup></a> that any valid cipher implementation should pass.
+
+#### Relationship between encryption and decryption functions.
+
+Quizás en una nota ->Estas funciones son altamente cohesivas y presentarían un CoA bastante fuerte si estuviesen en módulos separados. 
+
+EBT -> La relación entre funciones queda implícita: Los tests paramétricos tal y como los hemos escrito también recogen esta relación pero de forma menos explícita. Si no los hubiéramos escrito así la relación no se apreciaría en absoluto.
+
+PBT -> Relación entre funciones queda explícita: También es interesante que el test PBT resalta aún más explícitamente la relación entre las funciones de encryption and decryption de ser inversas.
 
 
 Dado el contexto decidimos dejar los tests basados en ejemplos como documentación, y como punto de crecimiento para recoger/añadir test de ejemplos que ejerciten edge cases encontrados por los PBT. 
 Decidimos conservar los tests paramétricos por facilidad de comprensión. Ves los literales directamente blazbla
 
 
-Quizás en una nota ->Estas funciones son altamente cohesivas y presentarían un CoA bastante fuerte si estuviesen en módulos separados. 
-
 
 <h2>Summary.</h2>
-We’ve shown a simple example of how we applied [JUnit 5 parameterized tests](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests)<a href="#nota?"><sup>[?]</sup></a> to test the encryption and decryption functions of a cypher algorithm for UUIDs.
+We’ve shown a simple example of how we applied [JUnit 5 parameterized tests](https://junit.org/junit5/docs/current/user-guide/#writing-tests-parameterized-tests)<a href="#nota?"><sup>[?]</sup></a> to test the encryption and decryption functions of a cipher algorithm for UUIDs.
 
 Then we showed a simple example of how we can use property-based testing to explore our solution and find edge cases. We also talked about how discovering properties can be the most difficult part of property-based testing, and how there are patterns that can be used to help us to discover them.
 
-We hope this post will motivate you to start exploring property-based testing. We have written several [posts about property-based testing in our blog](https://codesai.com/publications/categories/#Property-based%20testing) in the past. 
+Finally, we discussed the resulting example-based and property-based tests from different points of view.
+
+We hope this post will motivate you to start exploring property-based testing. If you want to learn more, follow the references we provide and start playing. Also have a look at the other [posts exploring property-based testing in our blog](https://codesai.com/publications/categories/#Property-based%20testing) we have written in the past.
 
 <h2>Notes.</h2>
 
 <a name="nota1"></a> [1] Have a look at this other [post](http://garajeando.blogspot.com/2015/07/applying-property-based-testing-on-my.html) in which I describe how *property-based tests* were able to find edge cases that I had not contemplated in a code with 100% test coverage that had been written using TDD. 
 
-<a name="nota2"></a> [2]  [Scott Wlaschin](https://scottwlaschin.com/)’s article, [Choosing properties for property-based testing](https://fsharpforfunandprofit.com/posts/property-based-testing-2/), is a great post in which he manages to explain the patterns that have helped him the most, to discover the properties that are applicable to a given problem. Besides the  “There and back again” pattern, I’ve applied the [“Different paths, same destination”][https://fsharpforfunandprofit.com/posts/property-based-testing-2/#different-paths-same-destination] on several occasions. Some time ago, I wrote a [post explaining how I used it to apply property-based testing to an implementation of a binary search tree](http://garajeando.blogspot.com/2015/07/applying-property-based-testing-on-my.html). 
+<a name="nota2"></a> [2]  [Scott Wlaschin](https://scottwlaschin.com/)’s article, [Choosing properties for property-based testing](https://fsharpforfunandprofit.com/posts/property-based-testing-2/), is a great post in which he manages to explain the patterns that have helped him the most, to discover the properties that are applicable to a given problem. Besides the “There and back again” pattern, I’ve applied the [“The test oracle”][https://fsharpforfunandprofit.com/posts/property-based-testing-2/#the-test-oracle] on several occasions. Some time ago, I wrote a [post explaining how I used it to apply property-based testing to an implementation of a binary search tree](http://garajeando.blogspot.com/2015/07/applying-property-based-testing-on-my.html). 
 Another interesting article about the same topic is [Property-based Testing Patterns](https://blog.ssanj.net/posts/2016-06-26-property-based-testing-patterns.html), [Sanjiv Sahayam](https://blog.ssanj.net/).
 
 <a name="nota?"></a> [?] The experience of writing parameterized tests using JUnit 5 is so much better than it used to be with JUnit 4!
 
+<a name="nota?"></a> [??] “Shrinking is the mechanism by which a property-based testing framework can be told how to simplify failure cases enough to let it figure out exactly what the minimal reproducible case is.” from [chapter 8](https://propertesting.com/book_shrinking.html) of [Fred Hebert](https://ferd.ca/)’s [PropEr Testing online book](https://propertesting.com/toc.html)
+
+<a href="#nota?"><sup>[???]</sup></a> Have a look at [our recent post about role tests](https://codesai.com/posts/2022/04/role-tests).
+
+
 <h2>References.</h2>
 
 - [Property-Based Testing Basics](https://ferd.ca/property-based-testing-basics.html), [Fred Hebert](https://ferd.ca/)
+- [PropEr Testing online book](https://propertesting.com/toc.html), [Fred Hebert](https://ferd.ca/) 
 - [Choosing properties for property-based testing](https://fsharpforfunandprofit.com/posts/property-based-testing-2/), [Scott Wlaschin](https://scottwlaschin.com/)
 - [Property-based Testing Patterns](https://blog.ssanj.net/posts/2016-06-26-property-based-testing-patterns.html), [Sanjiv Sahayam](https://blog.ssanj.net/)
 - [Cipher algorithm](https://en.wikipedia.org/wiki/Cipher)
+
 
 Foto from [blabla](blabla) in [Pexels](https://www.pexels.com).
 
@@ -132,9 +152,6 @@ Foto from [blabla](blabla) in [Pexels](https://www.pexels.com).
 
 
 
-
-
-Leer https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing y https://increment.com/testing/in-praise-of-property-based-testing/ para ver el vocabulario que usan:
 
 
 De https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing 
