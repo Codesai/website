@@ -11,7 +11,7 @@ categories:
   - Testing
 author: Manuel Rivero
 twitter: trikitrok
-small_image:  
+small_image: small_pbt_simple.jpg
 written_in: english
 cross_post_url:
 —
@@ -40,7 +40,7 @@ You might wonder why we wanted to explore edge cases. Weren’t the *parameteriz
 
 Even though, the *parameterized tests* that we wrote for both functions were producing a high [test coverage](https://en.wikipedia.org/wiki/Code_coverage), coverage only “covers” code that is already there. We were not sure if there could be any edge cases, that is, inputs for which the encryption and decryption functions might not behave correctly. We’ve found edge cases in the past even in code with 100% unit test coverage.
 
-[Finding edge cases is hard work](https://www.applause.com/blog/how-to-find-test-edge-cases) which sometimes might require [exploratory testing](https://en.wikipedia.org/wiki/Exploratory_testing) by specialists. It would be great to automatically explore some behaviour to find possible edge cases so we don’t have to find them ourselves or blabla in QA specialists. In some cases, we can leverage *property-based testing* to do that for us<a href="#nota1"><sup>[1]</sup></a>. 
+[Finding edge cases is hard work](https://www.applause.com/blog/how-to-find-test-edge-cases) which sometimes might require [exploratory testing](https://en.wikipedia.org/wiki/Exploratory_testing) by specialists. It would be great to automatically explore some behaviour to find possible edge cases so we don’t have to find them ourselves or some QA specialists. In some cases, we can leverage *property-based testing* to do that for us<a href="#nota1"><sup>[1]</sup></a>. 
 
 One of the most difficult parts of using *property-based testing* is finding out what properties we should use. Fortunately, there are several *approaches or patterns for discovering adequate properties* to apply *property-based testing* to a given problem. [Scott Wlaschin](https://scottwlaschin.com/) wrote a great article in which he explains several of those patterns<a href="#nota2"><sup>[2]</sup></a>. 
 
@@ -88,29 +88,29 @@ This might not be so when using other property patterns. For instance, when usin
 
 In contrast, using example-based testing it would be very easy to identify the location of the problem.
 
-#### Thoroughness and exploration.
+#### Confidence, thoroughness and exploration.
 
-The example-based tests use concrete inputs and check whether the produced output matches what we expect. The testing is reduced just to the arbitrary examples we were able to come up with. Estáticos -> Reducido sólo a los ejemplos arbitrarios y concretos usados
+The example-based tests specify behaviour using concrete examples in which we set up concrete scenarios, and then check whether the effects produced by the behaviour match what we expect. In the case of the cipher, we pass an input to the functions and assert that their output is what we expect. The testing is reduced just to the arbitrary examples we were able to come up with, but there’s a “gap between what we claim to be testing and what we’re actually testing”<a href="#nota?"><sup>[????]</sup></a>: why those arbitrary examples? Does the cipher behave correctly for any possible example? 
 
-PBT: Dinámicos -> Capacidad de exploración 
-
+Property-based testing “approach the question of correctness from a different angle: under what preconditions and constraints (for example, the range of input parameters) should the functionality under test lead to particular postconditions (results of a computation), and which invariants should never be violated in the course?”<a href="#nota?"><sup>[?????]</sup></a>. With property-based testing we are not limited to the arbitrary examples we were able to come up with as in example-based testing. Instead, property-based testing gives us thoroughness and the ability to explore because it’ll try to find examples that falsify a property every time the test runs. I think this ability to explore makes them more dynamic.
 
 #### Implementation independence.
 
 The example-based tests depend on the implementation of the cypher algorithm, whereas  the property-based tests can be used for any implementation of the cypher algorithm because the `decrypt_is_the_inverse_of_encrypt` property is an **invariant** of any cipher algorithm implementation. This makes the property-based tests ideal to write a *role test*<a href="#nota?"><sup>[???]</sup></a> that any valid cipher implementation should pass.
 
-#### Relationship between encryption and decryption functions.
+#### Explicitness of invariants.
 
-Quizás en una nota ->Estas funciones son altamente cohesivas y presentarían un CoA bastante fuerte si estuviesen en módulos separados. 
+In the case of the cipher there’s a storing relationship between the encryption and decryption functions: they are inverses of each other.
 
-EBT -> La relación entre funciones queda implícita: Los tests paramétricos tal y como los hemos escrito también recogen esta relación pero de forma menos explícita. Si no los hubiéramos escrito así la relación no se apreciaría en absoluto.
+This relationship might go completely untested using example-based testing if we use unrelated examples to test each of the functions. This means there could be changes to any of the functions that may violate the property while passing the independent separated tests of each function.
 
-PBT -> Relación entre funciones queda explícita: También es interesante que el test PBT resalta aún más explícitamente la relación entre las funciones de encryption and decryption de ser inversas.
+In the parameterized example-based tests we wrote, we implicitly tested this property by using the same set of examples for both functions just changing the roles of input and expected output for each test, but this is limited to the set of examples.
+
+With property-based testing we are explicitly testing the relation between the two functions and exploring the space of inputs to try to find one that falsifies the property of being inverses of each other.
 
 
 Dado el contexto decidimos dejar los tests basados en ejemplos como documentación, y como punto de crecimiento para recoger/añadir test de ejemplos que ejerciten edge cases encontrados por los PBT. 
 Decidimos conservar los tests paramétricos por facilidad de comprensión. Ves los literales directamente blazbla
-
 
 
 <h2>Summary.</h2>
@@ -134,7 +134,10 @@ Another interesting article about the same topic is [Property-based Testing Patt
 <a name="nota?"></a> [??] “Shrinking is the mechanism by which a property-based testing framework can be told how to simplify failure cases enough to let it figure out exactly what the minimal reproducible case is.” from [chapter 8](https://propertesting.com/book_shrinking.html) of [Fred Hebert](https://ferd.ca/)’s [PropEr Testing online book](https://propertesting.com/toc.html)
 
 <a href="#nota?"><sup>[???]</sup></a> Have a look at [our recent post about role tests](https://codesai.com/posts/2022/04/role-tests).
+<a href="#nota?"><sup>[????]</sup></a> From [David MacIver](https://twitter.com/DRMacIver)’s [In praise of property-based testing](https://increment.com/testing/in-praise-of-property-based-testing/) post. According to David MacIver “the problem with example-based tests is that they end up making far stronger claims than they are actually able to demonstrate”.
 
+<a href="#nota?"><sup>[?????]</sup></a> From [Johannes Link](https://johanneslink.net/english.html)’s [Know for Sure with Property-Based Testing
+](https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing) post. 
 
 <h2>References.</h2>
 
@@ -143,57 +146,8 @@ Another interesting article about the same topic is [Property-based Testing Patt
 - [Choosing properties for property-based testing](https://fsharpforfunandprofit.com/posts/property-based-testing-2/), [Scott Wlaschin](https://scottwlaschin.com/)
 - [Property-based Testing Patterns](https://blog.ssanj.net/posts/2016-06-26-property-based-testing-patterns.html), [Sanjiv Sahayam](https://blog.ssanj.net/)
 - [Cipher algorithm](https://en.wikipedia.org/wiki/Cipher)
+- [In praise of property-based testing](https://increment.com/testing/in-praise-of-property-based-testing/), [David MacIver](https://twitter.com/DRMacIver)
+- [Know for Sure with Property-Based Testing
+](https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing), [Johannes Link](https://johanneslink.net/english.html)
 
-
-Foto from [blabla](blabla) in [Pexels](https://www.pexels.com).
-
-
-
-
-
-
-
-
-De https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing 
-
-“This kind of test is often called example-based because it uses a concrete input example and checks whether the produced output matches expectations for a specific situation [...] There is one thought, though, that has always been nagging in the back of my mind: How can I be confident that Aggregator also works for five measurements? Should I test with 5,000 elements, with none, or with negative numbers? On a bad day, there is no end to the amount of doubt I have about my code—and about the code of my fellow developers.”
-
-“You can, however, approach the question of correctness from a different angle: Under what preconditions and constraints (for example, the range of input parameters) should the functionality under test lead to particular postconditions (results of a computation), and which invariants should never be violated in the course?”
-
-“By using a PBT library, you gained test depth without needing to think up additional examples. You must, however, be aware of what property-based testing does not do: It cannot prove that a property is correct. All it does is try to find examples that falsify a property.”
-
-“One problem that comes with random generation is that the relationship between a randomly chosen falsifying example and the problem underlying the failing property is often buried under a lot of noise.”
-
-“jqwik kept on trying to find a simpler example that would also fail. This searching phase is called shrinking because it starts with the original sample and tries to make it smaller and smaller.”
-
-“Shrinking is an important topic in PBT because it makes the analysis of many failed properties much easier. It also reduces the amount of indeterminism in PBT. Implementing good shrinking, however, is a complicated task. From a theoretical perspective, you face a search problem with a potentially very large search space. Because deep search is time-consuming, many heuristics are applied to make shrinking both effective and fast.”
-
-“Applying these patterns to your code requires practice. The patterns can, however, be a good starting point for overcoming test writer’s block. The more often you think about properties of your own code, the more opportunities you will recognize to derive property-based tests from your example-based tests. Sometimes they can serve as a complement; sometimes they can even replace the old tests.”
-
-De https://increment.com/testing/in-praise-of-property-based-testing/
-
-“Example-based tests hinge on a single scenario. Property-based tests get to the root of software behaviour across multiple parameters.”
-
-“Traditional, or example-based, testing specifies the behaviour of your software by writing examples of it—each test sets up a single concrete scenario and asserts how the software should behave in that scenario. Property-based tests take these concrete scenarios and generalise them by focusing on which features of the scenario are essential and which are allowed to vary. This results in cleaner tests that better specify the software’s behaviour—and that better uncover bugs missed by traditional testing.”
-
-“The problem with example-based tests is that they end up making far stronger claims than they are actually able to demonstrate. Property-based tests improve on that by expressing exactly the circumstances in which our tests should be expected to pass. Example-based tests use a concrete scenario to suggest a general claim about the system’s behavior, while property-based tests directly focus on that general claim. Property-based testing libraries, meanwhile, provide the tools to test claims.”
-
-“This is the fundamental problem of example-based testing: We often treat our tests as specifications, but in reality they are stories. Worse, they’re often shaggy-dog stories, full of a mess of random details, and we get no clue as to which parts of the test actually matter and which parts are just a distraction.”
-
-“It’s common for people to use fixtures and factory libraries in order to reduce the tedium of setting up their data over and over again. This causes the tests to depend (in subtle and unintentional ways) on the details of the fixture data, and to become increasingly brittle as a result. Property-based testing avoids that brittleness by insisting the details that shouldn’t matter are allowed to vary, making it impossible for tests to depend on them. The result is a significantly cleaner and more robust test suite, which makes fewer implicit assumptions about fixture data.”
-
-“It goes further than this! By forcing us to precisely describe the behavior of our software, property-based testing in turn forces us to make explicit not just the assumptions that we made when writing the tests, but also the assumptions that we made when writing the software. Often we will discover that those assumptions are wrong.”
-
-“Shrinking, in particular, is one of the big benefits of using property-based testing libraries over fixture libraries with random generation. Debugging randomly generated values puts us back in the situation of having to ask what details matter. And randomly generated values are often worse than if a human had written them, because they are large and messy— which makes it hard to pick out what matters.”
-
-“This is the first type of assumption that property-based testing helps uncover: assumptions about what sorts of inputs will call up certain functions. Property-based tests require us to be explicit about the valid range, which helps us find out what it actually is, rather than just testing the happy path.”
-
-“Another common source of wrong assumptions is when parts of the software are written by different people—either because we’re using third-party libraries or just because there are multiple people on the team. When assumptions are implicit, it can be hard to notice when different people make different ones.”
-
-“We now get to where most property-based testing articles start: the sorts of tests that only really make sense to write when they’re property-based. Because property-based testing makes it easy to write tests that run over a wide range of parameters, it prompts us to think about what program claims we can make that are always true. These are the “properties” in “property-based testing.””
-
-To recap, adopting property-based testing will:
-Bridge the gap between what we claim to be testing and what we’re actually testing.
-Reveal the assumptions that we made during testing and development, and check if they are violated.
-Expose subtle inconsistencies in our code that would be hard to detect with example-based testing.
-
+Photo from [Pixabay](https://pixabay.com/) in [Pexels](https://www.pexels.com).
