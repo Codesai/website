@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Simple example of property-based testing'
-date: 2022-05-17 12:30:00.000000000 +01:00
+date: 2022-06-20 12:30:00.000000000 +01:00
 type: post
 published: true
 status: publish
