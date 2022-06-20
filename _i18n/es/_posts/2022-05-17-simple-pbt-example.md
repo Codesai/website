@@ -79,7 +79,7 @@ In contrast, the UUID used by the property-based tests to check the property is 
 
 Since we are using a property that uses the *“There and back again”* pattern, if there were an error, we wouldn’t know whether the problem was in the encryption or the decryption function, not even after the *shrinking process*<a href="#nota4"><sup>[4]</sup></a>. We’d only know the initial UUID that made the property fail.
 
-This might not be so when using other property patterns. For instance, when using a property based on the [“The test oracle”][https://fsharpforfunandprofit.com/posts/property-based-testing-2/#the-test-oracle] pattern, we’d know the input and the actual and expected outputs in case of an error.
+This might not be so when using other property patterns. For instance, when using a property based on the [“The test oracle”](https://fsharpforfunandprofit.com/posts/property-based-testing-2/#the-test-oracle) pattern, we’d know the input and the actual and expected outputs in case of an error.
 
 In contrast, using example-based testing it would be very easy to identify the location of the problem.
 
