@@ -140,13 +140,13 @@ Another interesting article about the same topic is [Property-based Testing Patt
 
 <h2>References.</h2>
 
-- [Property-Based Testing Basics](https://ferd.ca/property-based-testing-basics.html), [Fred Hebert](https://ferd.ca/)
+- [Property-based Testing Basics](https://ferd.ca/property-based-testing-basics.html), [Fred Hebert](https://ferd.ca/)
 - [PropEr Testing online book](https://propertesting.com/toc.html), [Fred Hebert](https://ferd.ca/) 
 - [Choosing properties for property-based testing](https://fsharpforfunandprofit.com/posts/property-based-testing-2/), [Scott Wlaschin](https://scottwlaschin.com/)
 - [Property-based Testing Patterns](https://blog.ssanj.net/posts/2016-06-26-property-based-testing-patterns.html), [Sanjiv Sahayam](https://blog.ssanj.net/)
 - [Cipher algorithm](https://en.wikipedia.org/wiki/Cipher)
 - [In praise of property-based testing](https://increment.com/testing/in-praise-of-property-based-testing/), [David MacIver](https://twitter.com/DRMacIver)
-- [Know for Sure with Property-Based Testing
+- [Know for Sure with property-based Testing
 ](https://blogs.oracle.com/javamagazine/post/know-for-sure-with-property-based-testing), [Johannes Link](https://johanneslink.net/english.html)
 
 Photo from [Pixabay](https://pixabay.com/) in [Pexels](https://www.pexels.com).
