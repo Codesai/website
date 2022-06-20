@@ -151,6 +151,10 @@ We show a recent example we found working for a client that illustrates how test
 
 We refactored the production code to separate concerns by going more OO applying the decorator design pattern. The result was more cohesive production classes that led to more focused tests, and removed the design problems we had detected in the original design. 
 
+<h2>Acknowledgements.</h2>
+
+I’d like to thank my Codesai colleagues for reading the initial drafts and giving me feedback.
+
 <h2>Notes.</h2>
 
 <a name="nota1"></a> [1] We showed another example of this relationship between poor testability and design problems in a previous post: [An example of listening to the tests to improve a design](https://codesai.com/posts/2019/06/listening-to-tests-to-go-more-oo).

@@ -120,6 +120,10 @@ Finally, we discussed the resulting example-based and property-based tests from 
 
 We hope this post will motivate you to start exploring property-based testing as well. If you want to learn more, follow the references we provide and start playing. Also have a look at the other [posts exploring property-based testing in our blog](https://codesai.com/publications/categories/#Property-based%20testing) we have written in the past.
 
+<h2>Acknowledgements.</h2>
+
+I’d like to thank my Codesai colleagues for reading the initial drafts and giving me feedback.
+
 <h2>Notes.</h2>
 
 <a name="nota1"></a> [1] The experience of writing parameterized tests using JUnit 5 is so much better than it used to be with JUnit 4!

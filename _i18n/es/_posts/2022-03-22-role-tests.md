@@ -71,6 +71,10 @@ You could still add any other test that only has to do with a given implementati
 
 This solution is very readable and reduces a lot of duplication in the tests. However, the idea of *role tests* is not only important from the point of view of avoiding duplication in test code. In dynamic languages, such as Ruby, they also serve as a mean to *highlight and document the role of duck types* that might otherwise go unnoticed because there is no interface construct.
 
+<h2>Acknowledgements.</h2>
+
+I’d like to thank my Codesai colleagues for reading the initial drafts and giving me feedback.
+
 <h2>Notes.</h2>
 
 <a name="nota1"></a> [1] Read more about objects communicating by sending and receiving messages in [Alan Kay's Definition Of Object Oriented](https://wiki.c2.com/?AlanKaysDefinitionOfObjectOriented)
