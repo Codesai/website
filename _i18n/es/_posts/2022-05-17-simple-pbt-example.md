@@ -75,8 +75,6 @@ Despite being parameterized, it’s relatively easy to see which inputs and expe
 
 In contrast, the UUID used by the property-based tests to check the property is randomly generated and the team was not familiar with property-based testing.
 
-
-
 #### Granularity.
 
 Since we are using a property that uses the *“There and back again”* pattern, if there were an error, we wouldn’t know whether the problem was in the encryption or the decryption function, not even after the *shrinking process*<a href="#nota4"><sup>[4]</sup></a>. We’d only know the initial UUID that made the property fail.
@@ -120,7 +118,7 @@ Then we showed a simple example of how we can use property-based testing to expl
 
 Finally, we discussed the resulting example-based and property-based tests from different points of view.
 
-We hope this post will motivate you to start exploring property-based testing. If you want to learn more, follow the references we provide and start playing. Also have a look at the other [posts exploring property-based testing in our blog](https://codesai.com/publications/categories/#Property-based%20testing) we have written in the past.
+We hope this post will motivate you to start exploring property-based testing as well. If you want to learn more, follow the references we provide and start playing. Also have a look at the other [posts exploring property-based testing in our blog](https://codesai.com/publications/categories/#Property-based%20testing) we have written in the past.
 
 <h2>Notes.</h2>
 
