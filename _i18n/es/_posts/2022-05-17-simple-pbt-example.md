@@ -63,8 +63,6 @@ Using *jqwik* functions we wrote a generator of UUIDs (have a look at the [docum
 
 By default *jqwik* checks the property with 1000 new randomly generated UUIDs every time this test runs. This allows us to gradually explore the set of possible examples in order to find edge cases that we have not considered.
 
-Since, in the current example, the *property-based tests* were so straightforward to write, I decided to use them, even though running the parameterized tests were already producing a high test coverage.  <- no estoy seguro de dónde encaja esto ????
-
 <h2>Discussion.</h2>
 
 If we examine the resulting tests we may think that the property-based tests have made the example-based tests redundant. Should we delete the example-based tests and keep only the property-based ones?
