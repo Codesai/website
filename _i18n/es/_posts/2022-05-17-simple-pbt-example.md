@@ -51,7 +51,7 @@ As we said before, in our case *the decryption and encryption functions were inv
 
 <img src="/assets/roundtrip_pbt.jpg"
 alt="There and back again diagram."
-style="display: block; margin-left: auto; margin-right: auto; width: 50%;" />
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 
 
