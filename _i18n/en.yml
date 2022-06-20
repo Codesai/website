@@ -136,7 +136,7 @@ pages:
         link: /en/trainings/tdd
       code_smells_refactoring:
         name: Code smells & Refactoring
-        description: The objective of this course is to introduce students to the different code smells and begin developing their ability to recognize them. We will also work on some techniques to safely and increasingly improve the existing code design.
+        description: The objective of this course is to introduce students to the concept of code smells and start developing their ability to recognize them. We will also practice some techniques to incrementally improve already existing code designs in a safe manner.
         link: /en/trainings/refactoring
       ddd:
         name: DDD driven by test
@@ -191,7 +191,7 @@ pages:
       </div>'
       languages:
         title: Languages
-        text: Java is generally chosen because it is the language in which most people are proficient, but other languages can also be used in the course, no problem at all. If Java / IntelliJ is not a problem for you, this will be the default choice.
+        text:  At the moment the examples and katas are ready for Java, JavaScript, C#, Python and PHP, but if you wish to use another language please let us know.
       requirements:
         title: Requirements
         text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed.</p>
@@ -210,8 +210,8 @@ pages:
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
     cd-databases:
-      title: Codesai. Continuous Delivery with Databases
-      name: Continuous Delivery with Databases
+      name: Codesai. Continuous Delivery with Databases
+      title: Continuous Delivery with Databases
       text: '<p>The objective of this course is for students to learn how to evolve a database continuously and securely. In addition, we will cover different testing techniques, particularly useful in environments with databases that accumulate a lot of logic.</p>
              <p>Through examples and katas, we will learn about refactoring techniques and how to evolve the database. Also, we will cover some smells and tools to deal with complex environments.</p>'
       call_to_action:
@@ -353,7 +353,7 @@ pages:
     code_smells_refactoring:
       title: Codesai. Code Smells & Refactoring
       name: Code smells & Refactoring
-      text: '<p>The aim of this course is to introduce students to the different code smells and to start developing their ability to recognise them. We will also work on some techniques to safely and incrementally improve existing code design.</p>
+      text: '<p>The objective of this course is to introduce students to the concept of code smells and start developing their ability to recognize them. We will also practice some techniques to incrementally improve already existing code designs in a safe manner.</p>
              <p>Through examples and katas, we will learn about code smells, refactoring techniques and object-oriented design principles. We will also look at the fundamental role of refactoring in software development and reflect on technical debt, refactoring cycles and the economics of refactoring (how to do it responsibly).</p>'
       call_to_action:
         link: /en/trainings/refactoring/#call-to-action
@@ -363,28 +363,28 @@ pages:
       content:
         title: Contents
         day_1:
-          title: Day One
+          title: Module One (4h)
           agenda: '<div class="topics">
                       <div class="group"><span>1.</span> Introduction</div>
-                      <div class="group"><span>2. </span> Related Code smells & Refactors</div>
+                      <div class="group"><span>2. </span> Code smells & Related Refactorings</div>
                       <div class="subgroup"><span>&bull;</span> Code smells in classes</div>
                       <div class="subgroup"><span>&bull;</span> Code smells between classes</div>
                   </div>'
         day_2:
-          title: Day Two
+          title: Module Two (8h)
           agenda: '<div class="topics">
-                    <div class="group"><span>3. </span> Good enough design</div>
-                    <div class="group"><span>4. </span>Main refactors and refactoring patterns</div>
+                    <div class="group"><span>3. </span>Good enough design</div>
+                    <div class="group"><span>4. </span>Core Refactorings and refactoring patterns</div>
                  </div>'
         day_3:
-          title: Day Three
+          title: Module Three (8h)
           agenda: '<div class="topics">
                     <div class="group"><span>5. </span>Hexagonal architecture</div>
-                    <div class="group"><span>6. </span>Workflows and refactor economy</div>
+                    <div class="group"><span>6. </span>Workflows and economy of refactoring</div>
                  </div>'
       languages:
         title: Languages
-        text: <p>Generally, we use Java because it is the language in which most people are proficient, but other languages can also be used in the course, that's not a problem. If Java / IntelliJ is not a problem for you, it will be the default choice.</p>
+        text: <p>At the moment the examples and katas are ready for Java and PHP, but if you wish to use another language please let us know.</p>
       requirements:
         title: Requirements
         text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed.</p>
@@ -394,11 +394,11 @@ pages:
         title: Who is it intended for?
         text: <p>Primarily for programmers but also for testers who want to learn more about code quality and automated testing.</p>
       where:
-        title: In-house and open dates
-        text: '<p>The course can be held in-house (closed for the hiring company) or openly. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
-               <p class="unicode">Please note that in-house courses take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
+        title: For companies or open to the community
+        text: '<p>The course can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
+               <p class="unicode">Please note that courses for companies take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
     user_stories:
-      title: Codesai. User Stories
+      title: User Stories
       name: User Stories
       text: '<p>The aim of this course is for students to learn what the core parts of user stories are, identify attributes that make them most effective and have an array of techniques for breaking them down.</p>
              <p>Through examples and activities, we will learn to understand the concept of user stories. We will also see some smells and techniques to deal with its complexity.</p>'
@@ -811,7 +811,13 @@ components:
     mail: E-mail
     name: Full Name
     message: What can we do to help?
+    privacy_agreement: 'I agree with the <a href="/en/legal-advertisement/">legal notice</a> and the <a href="/en/privacy-policy/">privacy policy</a>'
     send: Send Message
+    alerts:
+      no_email: Please specify your email in the form
+      no_privacy_agreement: For us to be able to reach back we need you to agree with our legal notice and privacy policy in the form
+      received: We have received your message and will reach back to you soon, thanks!
+      error: "There was a problem upon sending your message, you can write to us directly at contact@codesai.com\\n\\nDetails:\\n"
   course:
     information: Information
     hours: hours
@@ -837,6 +843,11 @@ header:
     courses: Training
     blog: Blog
     contact: Contact
+  cookie_banner:
+    message: We are using cookies to analyze the traffic in our website. For further information, please refer to our
+    policy: cookie policy
+    accept: Accept
+    reject: Reject
 footer:
   links:
     legal_advertisement: Legal Notice

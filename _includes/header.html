@@ -15,6 +15,14 @@
     <div id="mobile-menu-trigger" class="mobile-menu-icon">
         <img src="/assets/icons/mobile-menu-icon.svg" alt="mobile menu icon">
     </div>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="message">{% translate header.cookie_banner.message %} <a href="{% translate urls.cookie_policy %}">{% translate header.cookie_banner.policy %}</a>.</div>
+        <div class="actions">
+            <button class="accept">{% translate header.cookie_banner.accept %}</button>
+            <button class="reject">{% translate header.cookie_banner.reject %}</button>
+        </div>
+    </div>
 </header>
 
 <div id="mobile-menu" class="mobile-links">
@@ -35,4 +43,27 @@
             }
         });
     }
+
+    (function setupCookiePolicyBanner() {
+        const cookieBanner = document.getElementById("cookie-banner");
+        const acceptButton = document.getElementById("cookie-banner").querySelector(".accept");
+        const rejectButton = document.getElementById("cookie-banner").querySelector(".reject");
+
+        if (cookieBanner && acceptButton && rejectButton) {
+            const cookiePolicyOption = Cookie("codesai_cookie_policy");
+            if (cookiePolicyOption.exists() && cookiePolicyOption.isAValidCookiePolicyOption()) return;
+
+            acceptButton.addEventListener("click", _ => {
+                cookiePolicyOption.saveCookiesAccepted();
+                cookieBanner.classList.remove("displayed");
+                GoogleAnalytics().setup();
+            });
+            rejectButton.addEventListener("click", _ => {
+                cookiePolicyOption.saveCookiesRejected();
+                cookieBanner.classList.remove("displayed");
+            })
+
+            cookieBanner.classList.add("displayed");
+        }
+    })();
 </script>

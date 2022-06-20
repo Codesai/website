@@ -23,6 +23,16 @@
                           placeholder="{{ include.messagePlaceHolder }}"></textarea>
             </div>
 
+            <div class="field">
+                <label class="checkbox">
+                    <input type="checkbox" id="privacy-agreement" checked="checked">
+                    <div class="box">
+                        <i class="ion-checkmark"></i>
+                    </div>
+                    <div>{% translate components.call_to_action.privacy_agreement %}</div>
+                </label>
+            </div>
+
             <div id="submit-contact-form" class="codesai-button" class="codesai-button">
                 <div class="content">{% translate components.call_to_action.send %}</div>
                 <img class="arrow" src="/assets/icons/arrow.svg" alt="">
@@ -48,10 +58,16 @@
         const email = document.getElementById('email').value;
         const name = document.getElementById('name').value || 'noname';
         const subject = document.getElementById('subject').value || '{{ include.defaultMessage }}';
+        const privacyAgreement = document.getElementById('privacy-agreement').checked;
         const origin = '{{ include.origin }}';
 
         if (!email) {
-            alert("Por favor especifica tu correo electrónico en el formulario");
+            alert("{% translate components.call_to_action.alerts.no_email %}");
+            return;
+        }
+
+        if (!privacyAgreement) {
+            alert("{% translate components.call_to_action.alerts.no_privacy_agreement %}");
             return;
         }
 
@@ -59,10 +75,10 @@
             method: 'POST',
             mode: 'no-cors'
         }).then(_ => {
-            alert("Hemos recibido tu mensaje, gracias!")
+            alert("{% translate components.call_to_action.alerts.received %}")
         })
         .catch(errorMessage => {
-            alert("Ha habido un problema al enviar tu mensaje, puedes escribirnos directamente a contact@codesai.com\n\nDetails:\n" + errorMessage)
+            alert("{% translate components.call_to_action.alerts.error %}" + errorMessage)
         });
     }
 </script>

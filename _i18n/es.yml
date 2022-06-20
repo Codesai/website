@@ -136,7 +136,7 @@ pages:
         link: /curso-de-tdd/
       code_smells_refactoring:
         name: Code smells & Refactoring
-        description: El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.
+        description: El objetivo de este curso es conocer los diferentes code smells y empezar a desarrollar la capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar el diseño de código ya existente de forma segura e incremental.
         link: /cursos/refactoring/
       ddd:
         name: DDD driven by test
@@ -191,7 +191,7 @@ pages:
       </div>'
       languages:
         title: Lenguajes
-        text: Generalmente, usamos Java porque es el lenguaje en el que la mayor parte de la gente se defiende, pero en el curso se pueden usar también otros lenguajes, eso no es problema. Si Java / IntelliJ no es para ti un problema, será la opción por defecto.
+        text: <p>Los ejemplos y katas están en Java, JavaScript, C#, Python y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>
       requirements:
         title: Requisitos
         text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
@@ -201,17 +201,17 @@ pages:
         title: ¿Para quién está pensado?
         text: '<p>Este es un curso para personas que sepan programar. Fundamentalmente programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas. Lo que hace falta es venir con ganas y la mente abierta. Si nunca has probado TDD antes, te sorprenderá.</p>'
       where:
-        title: In-house y en abierto
-        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        title: Para empresas o en abierto
+        text: '<p>Podemos impartir este curso cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
+               <p class="unicode">Ten en cuenta que los cursos para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
       call_to_action:
         link: /curso-de-tdd/#call-to-action
         title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
     cd-databases:
-      title: Codesai. Curso de Continuous Delivery con bases de datos
-      name: Continuous Delivery con bases de datos
+      name: Codesai. Curso de Continuous Delivery con bases de datos
+      title: Continuous Delivery con bases de datos
       text: '<p>El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.</p>
              <p>A través de ejemplos y katas, aprenderemos sobre técnicas de refactoring y sobre cómo evolucionar la base de datos. Asimismo, veremos algunos smells y herramientas para enfrentarnos a entornos complicados.</p>'
       call_to_action:
@@ -353,8 +353,9 @@ pages:
     code_smells_refactoring:
       title: Codesai. Curso de Code Smells & Refactoring
       name: Code smells & Refactoring
-      text: '<p>El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar de forma segura e incremental el diseño de código existente.</p>
-             <p>A través de ejemplos y katas, aprenderemos sobre code smells, técnicas de refactoring y  principios de diseño orientado a objetos. Asimismo, veremos el papel fundamental del refactoring en el desarrollo de software, y reflexionaremos sobre la deuda técnica, los ciclos de refactoring y la economía del refactoring (cómo hacerlo de manera responsable).</p>'
+      text: '<p>El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar el diseño de código ya existente de forma segura e incremental.</p>
+             <p>A través de ejemplos y katas, aprenderemos sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Asimismo, veremos el papel fundamental del refactoring en el
+desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente ciclos de refactoring y su economía (cómo hacerlo de manera responsable).</p>'
       call_to_action:
         title: ¡OK! Me interesa realizar el curso de Code smells & Refactoring
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
@@ -363,7 +364,7 @@ pages:
       content:
         title: Contenidos
         day_1:
-          title: Primer día
+          title: Bloque 1 (4h)
           agenda: '<div class="topics">
                       <div class="group"><span>1.</span> Introducción</div>
                       <div class="group"><span>2. </span> Code smells y refactors relacionados</div>
@@ -371,20 +372,20 @@ pages:
                       <div class="subgroup"><span>&bull;</span> Code smells entre clases</div>
                   </div>'
         day_2:
-          title: Segundo día
+          title: Bloque 2 (8h)
           agenda: '<div class="topics">
-                    <div class="group"><span>3. </span> Diseño lo suficientemente bueno</div>
-                    <div class="group"><span>4. </span>Refactors principales y patrones de refactoring</div>
+                    <div class="group"><span>3. </span>Diseño lo suficientemente bueno</div>
+                    <div class="group"><span>4. </span>Core Refactorings y patrones de refactoring</div>
                  </div>'
         day_3:
-          title: Tercer día
+          title: Bloque 3 (8h)
           agenda: '<div class="topics">
                     <div class="group"><span>5. </span>Arquitectura hexagonal</div>
-                    <div class="group"><span>6. </span>Flujos de trabajo y economía del refactor</div>
+                    <div class="group"><span>6. </span>Flujos de trabajo y economía del refactoring</div>
                  </div>'
       languages:
         title: Lenguajes
-        text: <p>Generalmente, usamos Java porque es el lenguaje en el que la mayor parte de la gente se defiende, pero en el curso se pueden usar también otros lenguajes, eso no es problema. Si Java / IntelliJ no es para ti un problema, será la opción por defecto.</p>
+        text: <p>Los ejemplos y katas están en Java y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>
       requirements:
         title: Requisitos
         text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
@@ -812,7 +813,13 @@ components:
     mail: Email
     name: Nombre completo
     message: ¿Qué te gustaría contarnos?
+    privacy_agreement: 'Estoy conforme con el <a href="/legal-advertisement/">aviso legal</a> y la <a href="/privacy-policy/">política de privacidad</a>'
     send: Enviar mensaje
+    alerts:
+      no_email: Por favor especifica tu correo electrónico en el formulario
+      no_privacy_agreement: Para poder contactar contigo necesitamos que aceptes el aviso legal y la política de privacidad en el formulario
+      received: Hemos recibido tu mensaje y responderemos en breve, gracias!
+      error: "Ha habido un problema al enviar tu mensaje, puedes escribirnos directamente a contact@codesai.com\\n\\nDetails:\\n"
   course:
     information: Información
     hours: horas
@@ -838,6 +845,11 @@ header:
     courses: Formación
     blog: Publicaciones
     contact: Contacto
+  cookie_banner:
+    message: Usamos cookies para analizar el tráfico en nuestra página web. Para más información por favor consulta nuestra
+    policy: política de cookies
+    accept: Aceptar
+    reject: Rechazar
 footer:
   links:
     legal_advertisement: Aviso Legal
