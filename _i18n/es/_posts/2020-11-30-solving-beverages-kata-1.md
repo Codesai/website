@@ -120,7 +120,7 @@ We have shown an example of preparatory refactoring to make easier the addition 
 
 In a future post we will show how to encapsulate the creation of the different compositions of decorators and components using builders and/or factories to hide that complexity from client code, and show how we can limit again the allowed combinations that are part of the menu.
 
-<h2>Aknowledgements.</h2>
+<h2>Acknowledgements.</h2>
 
 I’d like to thank the WTM study group, and especially [Inma Navas](https://twitter.com/InmaCNavas) for solving this kata with me.
 
