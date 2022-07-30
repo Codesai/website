@@ -210,8 +210,8 @@ pages:
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
     cd-databases:
-      title: Codesai. Curso de Continuous Delivery con bases de datos
-      name: Continuous Delivery con bases de datos
+      name: Codesai. Curso de Continuous Delivery con bases de datos
+      title: Continuous Delivery con bases de datos
       text: '<p>El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.</p>
              <p>A través de ejemplos y katas, aprenderemos sobre técnicas de refactoring y sobre cómo evolucionar la base de datos. Asimismo, veremos algunos smells y herramientas para enfrentarnos a entornos complicados.</p>'
       call_to_action:
@@ -813,7 +813,13 @@ components:
     mail: Email
     name: Nombre completo
     message: ¿Qué te gustaría contarnos?
+    privacy_agreement: 'Estoy conforme con el <a href="/legal-advertisement/">aviso legal</a> y la <a href="/privacy-policy/">política de privacidad</a>'
     send: Enviar mensaje
+    alerts:
+      no_email: Por favor especifica tu correo electrónico en el formulario
+      no_privacy_agreement: Para poder contactar contigo necesitamos que aceptes el aviso legal y la política de privacidad en el formulario
+      received: Hemos recibido tu mensaje y responderemos en breve, gracias!
+      error: "Ha habido un problema al enviar tu mensaje, puedes escribirnos directamente a contact@codesai.com\\n\\nDetails:\\n"
   course:
     information: Información
     hours: horas
@@ -839,6 +845,11 @@ header:
     courses: Formación
     blog: Publicaciones
     contact: Contacto
+  cookie_banner:
+    message: Usamos cookies para analizar el tráfico en nuestra página web. Para más información por favor consulta nuestra
+    policy: política de cookies
+    accept: Aceptar
+    reject: Rechazar
 footer:
   links:
     legal_advertisement: Aviso Legal

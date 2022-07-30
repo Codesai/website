@@ -26,22 +26,12 @@
     <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
     <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
     <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
-
-    <script>
-        function saveCookie() {
-            Cookie('codesai').save();
-            $('.cookie-message').hide();
-        }
-
-        $(document).ready(function() {
-            if (Cookie('codesai').exists()) {
-                return;
-            }
-            $('.cookie-message').show();
-        });
-    </script>
+    <script src='{{ site.baseurl_root }}/js/GoogleAnalytics.js'></script>
 
     {% if site.environment == 'production' %}
-    {% include analytics.html %}
+    <script>
+        window.environment = "production";
+        GoogleAnalytics().setup();
+    </script>
     {% endif %}
 </head>

@@ -92,7 +92,7 @@ Notice how, in the creation methods, we feed the base beverage into `BeverageMac
 <h2>Conclusions. </h2>
 In this last post of the series dedicated to the [Beverages Prices Refactoring kata](/2019/04/beverages_prices_kata), we’ve explored different ways to avoid *creation sprawl*, reduce coupling with client code and reduce implicit creational domain knowledge in client code. In doing so, we have learned about and applied several creational patterns (*factory pattern*, and *builder design pattern*), and some related refactorings. We have also used some design principles (such as *coupling*, *open-closed principle* or *interface segregation principle*), and code smells (such as *combinatorial explosion* or *creation sprawl*) to judge different solutions and guide our refactorings.
 
-<h2>Aknowledgements.</h2>
+<h2>Acknowledgements.</h2>
 
 I’d like to thank the WTM study group, and especially [Inma Navas](https://twitter.com/InmaCNavas) for solving this kata with me. Thanks also to my Codesai colleagues and to [Inma Navas](https://twitter.com/InmaCNavas) for reading the initial drafts and giving me feedback and to [Amelia Hallsworth](https://www.pexels.com/@amelia-hallsworth) for the picture.
 
