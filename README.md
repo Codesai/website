@@ -6,7 +6,7 @@ Jekyll based website for Codesai.
 
 1. Clone the repository
 2. Navigate to the repository folder in a terminal
-3. Run `make start`
+3. Run `sudo make start`
 4. You may access the local website at `localhost:4000`
 5. Start coding and jekyll will automatically build after you save changes
 6. If you modify `.yml` files, you need to either restart the docker container or start another terminal and type `docker exec -it {name} bash` to get a terminal inside the container. Once there, type `jekyll build` so it will build the site taking the changes to the `.yml` files. This is because the docker container is executing `jekyll serve` which doesn't get the `.yml` changes
