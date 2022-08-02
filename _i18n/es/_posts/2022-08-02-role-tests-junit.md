@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example of role tests in Java with Junit
-date: 2022-07-30 06:30:00.000000000 +01:00
+date: 2022-08-02 06:30:00.000000000 +01:00
 type: post
 published: true
 status: publish
