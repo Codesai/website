@@ -37,7 +37,7 @@ As you can see both tests contain the same test cases: `a_transaction_can_be_sav
 We can make this fact more explicit by using *role tests*. In this case, [Junit](https://junit.org/junit5/) does not have something equivalent or similar to the [RSpec’s *shared examples* functionality](https://relishapp.com/rspec/rspec-core/v/3-10/docs/example-groups/shared-examples) we used in our [previous example in Ruby](https://codesai.com/posts/2022/04/role-tests). Nonetheless, we can apply the [Template Method pattern](https://en.wikipedia.org/wiki/Template_method_pattern) to write the *role test*, so that we remove the duplication, and more importantly make the contract we are implementing more explicit.
 
 To do that we created an abstract class, `TransactionsRepositoryRoleTest`. This class contains the tests cases that document the role and protect its contract (`a_transaction_can_be_saved` and `transactions_can_be_retrieved`) and defines *hooks* for the operations that will vary in the different implementations of this integration test
- (`prepareData`, `readAllTransactions` and `createRepository`): 
+(`prepareData`, `readAllTransactions` and `createRepository`):
 
 <script src="https://gist.github.com/trikitrok/0cb1d891fb778e3b73c9765952cb2a58.js"></script>
 
