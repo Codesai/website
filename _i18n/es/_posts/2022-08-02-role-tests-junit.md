@@ -22,7 +22,7 @@ cross_post_url:
  
 I’d like to continue with the topic of role tests that we wrote about in a [previous post](https://codesai.com/posts/2022/04/role-tests), by showing an example of how it can be applied in Java to reduce duplication in your tests.
 
-This example comes from a deliberate practice session I did recently with some people from Women Tech Makers Barcelona with whom I’m doing Codesai’s Practice Program twice a month.
+This example comes from a deliberate practice session I did recently with some people from Women Tech Makers Barcelona with whom I’m doing [Codesai’s Practice Program in Java](https://github.com/Codesai/practice_program) twice a month.
 
 Making additional changes to the code that resulted from solving the [Bank Kata](https://kata-log.rocks/banking-kata) we wrote the following tests to develop two different implementations of the `TransactionsRepository` port: the `InMemoryTransactionsRepository` and the `FileTransactionsRepository`.
 
