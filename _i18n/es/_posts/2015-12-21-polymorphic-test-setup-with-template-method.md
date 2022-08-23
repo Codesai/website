@@ -11,6 +11,8 @@ categories:
   - Refactoring
   - Design Patterns
   - Testing
+  - Contract testing
+  - Role testing
 cross_post_url: http://www.carlosble.com/2015/12/polymorphic-test-setup-with-template-method/
 author: Carlos Blé
 twitter: carlosble
