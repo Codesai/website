@@ -9,6 +9,7 @@ categories:
 - Learning
 - Contract testing
 - Role testing
+- Testing
 - Object-Oriented Design
 - Polymorphic testing
 - Integration tests
@@ -17,7 +18,7 @@ author: Manuel Rivero
 twitter: trikitrok
 small_image: small_role_tests_jest.png
 written_in: english
-cross_post_url: 
+cross_post_url: https://garajeando.blogspot.com/2022/08/example-of-role-tests-in-javascript.html
 ---
 
 In this post we’ll show our last example applying the concept of role tests, this time in JavaScript using [Jest](https://jestjs.io/). Have a look at our [previous posts on this topic](https://codesai.com/publications/categories/#Role%20testing).

@@ -13,7 +13,7 @@ author: Manuel Rivero
 twitter: trikitrok
 small_image: small_pbt_simple.jpg
 written_in: english
-cross_post_url:
+cross_post_url: https://garajeando.blogspot.com/2022/08/simple-example-of-property-based-testing.html
 ---
 
 <h2>Introduction.</h2>

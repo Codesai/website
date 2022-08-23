@@ -12,6 +12,7 @@ categories:
   - Role testing
   - Object-Oriented Design  
   - Polymorphic testing
+  - Testing
   - Test Doubles
 author: Manuel Rivero
 twitter: trikitrok

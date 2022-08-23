@@ -12,12 +12,13 @@ categories:
 - Object-Oriented Design
 - Polymorphic testing
 - Integration tests
+- Testing
 - Design Patterns
 author: Manuel Rivero
 twitter: trikitrok
 small_image: small_role_tests_junit.png
 written_in: english
-cross_post_url: 
+cross_post_url: https://garajeando.blogspot.com/2022/08/example-of-role-tests-in-java-with-junit.html
 ---
  
 I’d like to continue with the topic of role tests that we wrote about in a [previous post](https://codesai.com/posts/2022/04/role-tests), by showing an example of how it can be applied in Java to reduce duplication in your tests.

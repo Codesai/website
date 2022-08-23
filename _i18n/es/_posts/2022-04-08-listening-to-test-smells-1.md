@@ -17,7 +17,7 @@ author: Manuel Rivero
 twitter: trikitrok
 small_image:  small_listening_to_tests.jpg
 written_in: english
-cross_post_url:
+cross_post_url: https://garajeando.blogspot.com/2022/08/listening-to-test-smells-detecting-lack.html
 ---
 
 <h2>Introduction.</h2>
@@ -193,7 +193,7 @@ I’d like to thank my Codesai colleagues for reading the initial drafts and giv
 - [Guice](https://github.com/google/guice)
 - [Guice Scopes](https://github.com/google/guice/wiki/Scopes)
 
-Foto from [cottonbro](https://www.pexels.com/es-es/@cottonbro/) in [Pexels](https://www.pexels.com).
+Photo from [cottonbro](https://www.pexels.com/es-es/@cottonbro/) in [Pexels](https://www.pexels.com).
 
 
 
