@@ -6,6 +6,6 @@ services:
       context: .
     ports:
       - "4000:4000"
-    command: jekyll server --host 0.0.0.0 --watch --drafts --config _config.yml,_local_config.yml
+    command: jekyll server --host 0.0.0.0 --watch --drafts --trace --config _config.yml,_local_config.yml
     volumes:
       - ./:/app
