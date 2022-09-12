@@ -72,7 +72,7 @@ A continuación creamos una nueva batería de tests contra `PageIndexer` que con
 </figure>
 
 
-Teniendo estos tests contra `PageIndexer` pudimos empezar a mover a `IndexationCalculator` la lógica de indexation que se había filtrado en  `CanonicalCalculator` y viceversa. Para ello movimos las reglas moviendo primero los casos de tests y luego el código correspondiente, usando Move Function. Al terminar de segregar las responsabilidades, eliminamos los tests que probaban las responsabilidades por separado.
+Teniendo estos tests contra `PageIndexer` pudimos empezar a mover a `IndexationCalculator` la lógica de indexation que se había filtrado en  `CanonicalCalculator` y viceversa. Para ello movimos las reglas moviendo primero los casos de tests y luego el código correspondiente, usando [Move Function](https://refactoring.com/catalog/moveFunction.html). Al terminar de segregar las responsabilidades, eliminamos los tests que probaban las responsabilidades por separado.
 
 <figure style="margin:auto; width: 100%">
 <img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice3.png" alt="test contra cada clase" />
@@ -80,7 +80,7 @@ Teniendo estos tests contra `PageIndexer` pudimos empezar a mover a `IndexationC
 
 
 ## Conclusión
-Hemos presentado un caso de Shotgun Surgery a partir de un caso real y hemos contado como se hizo refactoring para segregar las responsabilidades.
+Hemos presentado un caso de [Shotgun Surgery](https://dzone.com/articles/code-smell-shot-surgery) a partir de un caso real y hemos contado como se hizo refactoring para segregar las responsabilidades.
 
 En un contexto sin las particularidades comentadas, los pasos para resolver el problema habrían dado menos trabajo. Pero el orden de ejecución, la complejidad y el alto valor de negocio en este contexto, hicieron que tuviéramos que trabajar más y no seguir la manera canónica descrita en la mayoría de literatura.
 
