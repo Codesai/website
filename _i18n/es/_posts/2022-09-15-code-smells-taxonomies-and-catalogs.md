@@ -12,9 +12,8 @@ categories:
 author: Manuel Rivero
 twitter: trikitrok
 small_image: small_code_smells.png
-written_in: spanish
 cross_post_url: 
-—
+---
 
 ## Introducción: refactoring y code smells.
 
@@ -25,17 +24,22 @@ Los code smells son descripciones de señales o síntomas que nos avisan de posi
 
 El refactoring produce mejores resultados y es más barato si se hace con regularidad. Entre más tiempo permanezca sin refactorizar un código problemático, más se agravará su efecto y constreñirá  el futuro desarrollo del código, contribuyendo directamente a la deuda técnica. Esta situación hará el código cada vez más difícil de mantener, lo que tendrá un impacto económico muy negativo, pudiendo incluso llegar, en el peor de los casos, a ser tan complicada que ya no se pueda seguir manteniendo el código. 
 
-
+<figure>
 <img src="/assets/code_smells_feature_cost_vs_time.png"
 alt="Coste de introducir una feature en función del tiempo"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Coste de introducir una feature en función del tiempo.</strong></figcaption>
+</figure>
 
 Otra consecuencia, a veces, no tan visible de la mala calidad del código es su efecto en los desarrolladores. Menos refactor, lleva a código menos mantenible, que nos lleva a tardar más tiempo en implementar nuevas funcionalidades, lo cuál nos mete más presión de tiempo, lo que nos lleva a testear menos, lo que nos lleva a refactorizar menos… Es un círculo vicioso que puede tener un efecto muy desmoralizador.
 
 
+<figure>
 <img src="/assets/code_smells_vicious_cycle.png"
 alt="Círculo vicioso sin refactor"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Círculo vicioso sin refactor.</strong></figcaption>
+</figure>
 
 Por tanto, entender y saber identificar los code smells nos da mucho poder porque seremos capaces de detectar problemas de diseño cuando aún son pequeños y están muy localizados en zonas concretas de nuestro código, y eso tendrá un efecto económico y anímico muy positivo. 
 
@@ -111,7 +115,7 @@ Las subcategorías dentro de la categoría de **Smells between Classes** son:
 <img src="/assets/code_smells_wake_map.png"
 alt="Taxonomía de Wake 2003"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<figcaption><strong>Taxonomía de Wake (los nuevos smells aparecen en verde)</strong></figcaption>
+<figcaption><strong>Taxonomía de Wake (los nuevos smells aparecen en verde).</strong></figcaption>
 </figure>
 
 
@@ -129,10 +133,13 @@ En ella los code smells se agrupan según el efecto que tienen en el código (el
 
 En la clasificación original de 2003 ([A Taxonomy and an Initial Empirical Study of Bad Smells in Code](https://www.researchgate.net/publication/4036832_A_Taxonomy_and_an_Initial_Empirical_Study_of_Bad_Smells_in_Code)) había 7 categorías de code smells: *Bloaters*, *Object-Orientation Abusers*, *Change Preventers*, *Dispensables*, *Encapsulators*, *Couplers* y *Others*.
 
-
+<figure>
 <img src="/assets/code_smells_taxonomy_mantyla_2003.png"
 alt="Taxonomía de Mäntylä et al 2003"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Taxonomía de Mäntylä et al 2003.</strong></figcaption>
+</figure>
+
 
 Así es como definen cada una de las categorías (disculpen al traductor…):
 * **Bloaters**: “representan algo en el código que ha crecido tanto que ya no se puede manejar de forma efectiva.“
@@ -154,10 +161,12 @@ La diferencia de esta nueva versión es que elimina las categorías **Encapsulat
 
 Esta última versión de su taxonomía es la que se ha hecho más popular en internet (se puede encontrar en muchas webs, cursos y posts), probablemente debido a la mayor accesibilidad (facilidad de lectura) del resumen del artículo que aparece en la web que resume el artículo: [A Taxonomy for "Bad Code Smells"](https://mmantyla.github.io/BadCodeSmellsTaxonomy).
 
-
+<figure>
 <img src="/assets/code_smells_taxonomy_mantyla_2006.jpg"
 alt="Taxonomía de Mäntylä et al 2006"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Taxonomía de Mäntylä et al 2006.</strong></figcaption>
+</figure>
 
 Lo interesante no es tanto la discusión de en qué categoría debe caer cada smell, sino el empezar a pensar qué un determinado smell puede tener diferentes tipos de efectos en el código y las relaciones entre estos efectos. De hecho, en posteriores clasificaciones desde el punto de vista del efecto de un smell en el código, no consideran ya las categorías como excluyentes, sino que, un mismo smell puede caer en varias categorías, ya que consideran que es más útil no perder la información de que un smell puede producir varios efectos. 
 
@@ -178,76 +187,369 @@ Analizando los criterios de clasificación de las taxonomías propuestas anterio
 
 1. **Obstruction**: Este es el criterio usado por Mäntylä et al para clasificar los smells en su taxonomía y el más popular. Este criterio nos informa sobre el tipo de problema que un code smell causa en el código (lo que hacen difícil o las prácticas o principios que rompen). En la tesis actualizan la taxonomía de Mäntylä, añadiendo tres nuevos grupos: **Data Dealers**, **Functional Abusers** y **Lexical Abusers**. A continuación presentamos un mapa mental que muestra la clasificación de los 56 code smells siguiendo únicamente este criterio.
 
-
+<figure>
 <img src="/assets/code_smells_taxonomy_jerzyk.png"
-alt="Mind map de la taxonomía de Jerzyk usando el criterio de obstrucción"
+alt="Taxonomía de Jerzyk usando sólo el criterio de obstruction"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Taxonomía de Jerzyk usando sólo el criterio de obstruction.</strong></figcaption>
+</figure>
 
 2. **Expanse**: Inspirado por la taxonomía de Wake, este criterio habla de si el code smell puede ser observado en un contexto reducido (dentro de una clase) o si se necesita considerar un contexto más amplio (entre varias clases). Las posibles categorías son **Within Class** y **Between Classes*.
 
 3. **Occurrence**: También inspirado por la taxonomía de Wake, este criterio está relacionado con la localización donde (o el método por el cuál) se puede detectar un code smell. Las posibles categorías son **Names**, **Conditional Logic**, **Message Calls**, **Unnecessary Complexity**, **Responsibility**, **Interfaces**, **Data**, **Duplication** y **Measured Smells**.
 
 A continuación presentamos una tabla con los 56 code smells clasificados por Jerzyk en su tesis usando los tres criterios comentados anteriormente:
- 
-| Code Smell                                    | Obstruction        | Expanse | Occurrence             |
-| --------------------------------------------- | ------------------ | ------- | ---------------------- |
-| Long Method                                   | Bloaters           | Within  | Measured Smells        |
-| Large Class                                   | Bloaters           | Within  | Measured Smells        |
-| Long Parameter List                           | Bloaters           | Within  | Measured Smells        |
-| Primitive Obsession                           | Bloaters           | Between | Data                   |
-| Data Clumps                                   | Bloaters           | Between | Data                   |
-| Null Check                                    | Bloaters           | Between | Conditional Logic      |
-| Oddball Solution                              | Bloaters           | Between | Duplication            |
-| Required Setup/Teardown                       | Bloaters           | Between | Responsibility         |
-| Combinatorial Explosion                       | Bloaters           | Within  | Responsibility         |
-| Parallel Inheritance Hierarchies              | Change Preventers  | Between | Responsibility         |
-| Divergent Change                              | Change Preventers  | Between | Responsibility         |
-| Shotgun Surgery                               | Change Preventers  | Between | Responsibility         |
-| Flag Argument                                 | Change Preventers  | Within  | Conditional Logic      |
-| Callback Hell                                 | Change Preventers  | Within  | Conditional Logic      |
-| Dubious Abstraction                           | Change Preventers  | Within  | Responsibility         |
-| Special Case                                  | Change Preventers  | Within  | Conditional Logic      |
-| Feature Envy                                  | Couplers           | Between | Responsibility         |
-| Type Embedded In Name                         | Couplers           | Within  | Names                  |
-| Indecent Exposure                             | Couplers           | Within  | Data                   |
-| Fate over Action                              | Couplers           | Between | Responsibility         |
-| Afraid to Fail                                | Couplers           | Within  | Responsibility         |
-| Binary Operator in Name                       | Couplers           | Within  | Names                  |
-| Tramp Data                                    | Data Dealers       | Between | Data                   |
-| Hidden Dependencies                           | Data Dealers       | Between | Data                   |
-| Global Data                                   | Data Dealers       | Between | Data                   |
-| Message Chain                                 | Data Dealers       | Between | Message Calls          |
-| Middle Man                                    | Data Dealers       | Between | Message Calls          |
-| Insider Trading                               | Data Dealers       | Between | Responsibility         |
-| Lazy Element                                  | Dispensables       | Between | Unnecessary Complexity |
-| Speculative Generality                        | Dispensables       | Within  | Unnecessary Complexity |
-| Dead Code                                     | Dispensables       | Within  | Unnecessary Complexity |
-| Duplicate Code                                | Dispensables       | Within  | Duplication            |
-| "What" Comments                               | Dispensables       | Within  | Unnecessary Complexity |
-| Mutable Data                                  | Functional Abusers | Between | Data                   |
-| Imperative Loops                              | Functional Abusers | Within  | Unnecessary Complexity |
-| Side Effects                                  | Functional Abusers | Within  | Responsibility         |
-| Uncommunicative Name                          | Lexical Abusers    | Within  | Names                  |
-| Magic Number                                  | Lexical Abusers    | Within  | Names                  |
-| Inconsistent Names                            | Lexical Abusers    | Within  | Names                  |
-| Boolean Blindness                             | Lexical Abusers    | Within  | Names                  |
-| Fallacious Comment                            | Lexical Abusers    | Within  | Names                  |
-| Fallacious Method Name                        | Lexical Abusers    | Within  | Names                  |
-| Complicated Boolean Expressions               | Obfuscators        | Within  | Conditional Logic      |
-| Obscured Intent                               | Obfuscators        | Between | Unnecessary Complexity |
-| Vertical Separation                           | Obfuscators        | Within  | Measured Smells        |
-| Complicated Regex Expression                  | Obfuscators        | Within  | Names                  |
-| Inconsistent Style                            | Obfuscators        | Between | Unnecessary Complexity |
-| Status Variable                               | Obfuscators        | Within  | Unnecessary Complexity |
-| Clever Code                                   | Obfuscators        | Within  | Unnecessary Complexity |
-| Temporary Fields                              | O-O Abusers        | Within  | Data                   |
-| Conditional Complexity                        | O-O Abusers        | Within  | Conditional Logic      |
-| Refused Bequest                               | O-O Abusers        | Between | Interfaces             |
-| Alternative Classes with Different Interfaces | O-O Abusers        | Between | Duplication            |
-| Inappropriate Static                          | O-O Abusers        | Between | Interfaces             |
-| Base Class Depends on Subclass                | O-O Abusers        | Between | Interfaces             |
-| Incomplete Library Class                      | Other              | Between | Interfaces             |
 
+<table>
+<thead>
+<tr>
+<th >Code Smell</th>
+<th >Obstruction</th>
+<th >Expanse</th>
+<th >Occurrence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td >Long Method</td>
+<td >Bloaters</td>
+<td >Within</td>
+<td >Measured Smells</td>
+</tr>
+<tr>
+<td >Large Class</td>
+<td >Bloaters</td>
+<td >Within</td>
+<td >Measured Smells</td>
+</tr>
+<tr>
+<td >Long Parameter List</td>
+<td >Bloaters</td>
+<td >Within</td>
+<td >Measured Smells</td>
+</tr>
+<tr>
+<td >Primitive Obsession</td>
+<td >Bloaters</td>
+<td >Between</td>
+<td >Data</td>
+</tr>
+<tr>
+<td >Data Clumps</td>
+<td >Bloaters</td>
+<td >Between</td>
+<td >Data</td>
+</tr>
+<tr>
+<td >Null Check</td>
+<td >Bloaters</td>
+<td >Between</td>
+<td >Conditional Logic</td>
+</tr>
+<tr>
+<td >Oddball Solution</td>
+<td >Bloaters</td>
+<td >Between</td>
+<td >Duplication</td>
+</tr>
+<tr>
+<td >Required Setup/Teardown</td>
+<td >Bloaters</td>
+<td >Between</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Combinatorial Explosion</td>
+<td >Bloaters</td>
+<td >Within</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Parallel Inheritance Hierarchies</td>
+<td >Change Preventers</td>
+<td >Between</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Divergent Change</td>
+<td >Change Preventers</td>
+<td >Between</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Shotgun Surgery</td>
+<td >Change Preventers</td>
+<td >Between</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Flag Argument</td>
+<td >Change Preventers</td>
+<td >Within</td>
+<td >Conditional Logic</td>
+</tr>
+<tr>
+<td >Callback Hell</td>
+<td >Change Preventers</td>
+<td >Within</td>
+<td >Conditional Logic</td>
+</tr>
+<tr>
+<td >Dubious Abstraction</td>
+<td >Change Preventers</td>
+<td >Within</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Special Case</td>
+<td >Change Preventers</td>
+<td >Within</td>
+<td >Conditional Logic</td>
+</tr>
+<tr>
+<td >Feature Envy</td>
+<td >Couplers</td>
+<td >Between</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Type Embedded In Name</td>
+<td >Couplers</td>
+<td >Within</td>
+<td >Names</td>
+</tr>
+<tr>
+<td >Indecent Exposure</td>
+<td >Couplers</td>
+<td >Within</td>
+<td >Data</td>
+</tr>
+<tr>
+<td >Fate over Action</td>
+<td >Couplers</td>
+<td >Between</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Afraid to Fail</td>
+<td >Couplers</td>
+<td >Within</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Binary Operator in Name</td>
+<td >Couplers</td>
+<td >Within</td>
+<td >Names</td>
+</tr>
+<tr>
+<td >Tramp Data</td>
+<td >Data Dealers</td>
+<td >Between</td>
+<td >Data</td>
+</tr>
+<tr>
+<td >Hidden Dependencies</td>
+<td >Data Dealers</td>
+<td >Between</td>
+<td >Data</td>
+</tr>
+<tr>
+<td >Global Data</td>
+<td >Data Dealers</td>
+<td >Between</td>
+<td >Data</td>
+</tr>
+<tr>
+<td >Message Chain</td>
+<td >Data Dealers</td>
+<td >Between</td>
+<td >Message Calls</td>
+</tr>
+<tr>
+<td >Middle Man</td>
+<td >Data Dealers</td>
+<td >Between</td>
+<td >Message Calls</td>
+</tr>
+<tr>
+<td >Insider Trading</td>
+<td >Data Dealers</td>
+<td >Between</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Lazy Element</td>
+<td >Dispensables</td>
+<td >Between</td>
+<td >Unnecessary Complexity</td>
+</tr>
+<tr>
+<td >Speculative Generality</td>
+<td >Dispensables</td>
+<td >Within</td>
+<td >Unnecessary Complexity</td>
+</tr>
+<tr>
+<td >Dead Code</td>
+<td >Dispensables</td>
+<td >Within</td>
+<td >Unnecessary Complexity</td>
+</tr>
+<tr>
+<td >Duplicate Code</td>
+<td >Dispensables</td>
+<td >Within</td>
+<td >Duplication</td>
+</tr>
+<tr>
+<td >“What” Comments</td>
+<td >Dispensables</td>
+<td >Within</td>
+<td >Unnecessary Complexity</td>
+</tr>
+<tr>
+<td >Mutable Data</td>
+<td >Functional Abusers</td>
+<td >Between</td>
+<td >Data</td>
+</tr>
+<tr>
+<td >Imperative Loops</td>
+<td >Functional Abusers</td>
+<td >Within</td>
+<td >Unnecessary Complexity</td>
+</tr>
+<tr>
+<td >Side Effects</td>
+<td >Functional Abusers</td>
+<td >Within</td>
+<td >Responsibility</td>
+</tr>
+<tr>
+<td >Uncommunicative Name</td>
+<td >Lexical Abusers</td>
+<td >Within</td>
+<td >Names</td>
+</tr>
+<tr>
+<td >Magic Number</td>
+<td >Lexical Abusers</td>
+<td >Within</td>
+<td >Names</td>
+</tr>
+<tr>
+<td >Inconsistent Names</td>
+<td >Lexical Abusers</td>
+<td >Within</td>
+<td >Names</td>
+</tr>
+<tr>
+<td >Boolean Blindness</td>
+<td >Lexical Abusers</td>
+<td >Within</td>
+<td >Names</td>
+</tr>
+<tr>
+<td >Fallacious Comment</td>
+<td >Lexical Abusers</td>
+<td >Within</td>
+<td >Names</td>
+</tr>
+<tr>
+<td >Fallacious Method Name</td>
+<td >Lexical Abusers</td>
+<td >Within</td>
+<td >Names</td>
+</tr>
+<tr>
+<td >Complicated Boolean Expressions</td>
+<td >Obfuscators</td>
+<td >Within</td>
+<td >Conditional Logic</td>
+</tr>
+<tr>
+<td >Obscured Intent</td>
+<td >Obfuscators</td>
+<td >Between</td>
+<td >Unnecessary Complexity</td>
+</tr>
+<tr>
+<td >Vertical Separation</td>
+<td >Obfuscators</td>
+<td >Within</td>
+<td >Measured Smells</td>
+</tr>
+<tr>
+<td >Complicated Regex Expression</td>
+<td >Obfuscators</td>
+<td >Within</td>
+<td >Names</td>
+</tr>
+<tr>
+<td >Inconsistent Style</td>
+<td >Obfuscators</td>
+<td >Between</td>
+<td >Unnecessary Complexity</td>
+</tr>
+<tr>
+<td >Status Variable</td>
+<td >Obfuscators</td>
+<td >Within</td>
+<td >Unnecessary Complexity</td>
+</tr>
+<tr>
+<td >Clever Code</td>
+<td >Obfuscators</td>
+<td >Within</td>
+<td >Unnecessary Complexity</td>
+</tr>
+<tr>
+<td >Temporary Fields</td>
+<td >O-O Abusers</td>
+<td >Within</td>
+<td >Data</td>
+</tr>
+<tr>
+<td >Conditional Complexity</td>
+<td >O-O Abusers</td>
+<td >Within</td>
+<td >Conditional Logic</td>
+</tr>
+<tr>
+<td >Refused Bequest</td>
+<td >O-O Abusers</td>
+<td >Between</td>
+<td >Interfaces</td>
+</tr>
+<tr>
+<td >Alternative Classes with Different Interfaces</td>
+<td >O-O Abusers</td>
+<td >Between</td>
+<td >Duplication</td>
+</tr>
+<tr>
+<td >Inappropriate Static</td>
+<td >O-O Abusers</td>
+<td >Between</td>
+<td >Interfaces</td>
+</tr>
+<tr>
+<td >Base Class Depends on Subclass</td>
+<td >O-O Abusers</td>
+<td >Between</td>
+<td >Interfaces</td>
+</tr>
+<tr>
+<td >Incomplete Library Class</td>
+<td >Other</td>
+<td >Between</td>
+<td >Interfaces</td>
+</tr>
+</tbody>
+</table>
+
+<br>
 
 Algunos de los nombres en la tabla son diferentes de los que suelen aparecer en la literatura. Los cambios de nombre fueron debidos a la introducción de nombre más actualizados, como es el caso, por ejemplo, de *Lazy Element* o *Insider Trading* que antes se llamaban *Lazy Class* e *Inappropriate Intimacy*, respectivamente.
 
@@ -258,27 +560,37 @@ Una cosa super útil y práctica para desarrolladores que aporta el trabajo de J
 
 En el catálogo se pueden buscar los smells por diferentes criterios de clasificación.
 
-
+<figure>
 <img src="/assets/code_smells_catalog_usage_example.png"
 alt="Ejemplo de búsqueda en el catálogo online de code smells de Jerzyk"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Ejemplo de búsqueda en el catálogo online de code smells de Jerzyk.</strong></figcaption>
+</figure>
 
 Por ejemplo, esta captura de pantalla muestra el resultado de buscar code smells que sean *OO Abusers* y que afecten a *Interfaces*: *Refused Bequest*, *Base Class depends on Subclass* e *Inappropriate Static*.
 
-
+<figure>
 <img src="/assets/code_smells_in_jerzyk_catalog_example.png"
 alt="Code smell en el catálogo online de Jerzyk"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Code smell en el catálogo online de Jerzyk.</strong></figcaption>
+</figure>
 
 Para cada smell el catálogo presentan las siguientes secciones: **Smell** (discusión del smell), **Causation** (posibles causas del code smell), **Problems** (problemas que el smell puede causar o principios de diseño que viola), **Example** (ejemplos de código mínimo que ilustran los posibles síntomas de un code smell y muestran una posible solución), **Refactoring** (posibles refactorings) y **Sources** (artículos o libros en los que se ha hablado de este code smell). También incluye un recuadro en el que aparece información sobre posibles **aliases** del code smell, la **categoría** a la que pertenece según los criterios de **obstruction**, **occurrence** y **expanse**, los **smells relacionados** y su relación con ellos, y el **origen histórico** del code smell. 
 
 ## Conclusiones.
 
-Blabla blabla
+Desde que se acuñó el concepto de code smell en 1999 han aparecido muchos nuevos smells. Las presentaciones planas en forma de catálogo son difíciles de recordar, y no ayudan a resaltar las relaciones que existen entre diferentes code smells.
+
+Hemos presentado varias taxonomías de code smells que nos pueden ayudar a ver los code smells desde diferentes puntos de vista y relacionarlos unos con otros según diferentes criterios: los problemas que producen en el código, dónde se detectan o el contexto que es necesario tener en cuenta para detectarlos. 
+
+Estos agrupamientos significativos de code smells nos ayudarán a entenderlos y a recordarlos mejor que las listas planas de los catálogos.
+
+Por último queremos destacar el [reciente trabajo de Marcel Jerzyk](https://github.com/Luzkan/smells/blob/main/docs/thesis.pdf) que no sólo ha propuesto nuevos smells y ha creado una nueva taxonomía multicriterio, sino que además ha puesto a nuestra disposición un [catálogo online de code smells](https://luzkan.github.io/smells/) en forma de repositorio open-source y sitio web accesible y buscable, que creemos que puede resultar muy útil y práctico tanto para investigadores como para desarrolladores. Los animo a echarle un vistazo.
 
 <h2>Agradecimientos.</h2>
 
-Me gustaría darle las gracias a mis colegas [Fran Reyes](https://twitter.com/fran_reyes),  [Antonio de La Torre](https://twitter.com/adelatorrefoss) y [Alfredo Casado](https://twitter.com/AlfredoCasado/) por leer los borradores finales de este post y darme feedback. También quería agradecer a [nikita](https://www.pexels.com/es-es/@nikita-3374022/)  por la foto.
+Me gustaría darle las gracias a mis colegas [Fran Reyes](https://twitter.com/fran_reyes),  [Antonio de La Torre](https://twitter.com/adelatorrefoss) y [Alfredo Casado](https://twitter.com/AlfredoCasado/) por darme feedback sobre los borradores finales de este post. También quería agradecer a [nikita](https://www.pexels.com/es-es/@nikita-3374022/) por la foto de la clasificación de especímenes de mariposa.
 
 <h2>Referencias.</h2>
 
@@ -300,6 +612,3 @@ Me gustaría darle las gracias a mis colegas [Fran Reyes](https://twitter.com/fr
 Metrics](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.100.2813&rep=rep1&type=pdf), R. Marticorena et al, 2006
 
 Foto de [nikita in Pexels](https://www.pexels.com/es-es/@nikita-3374022/)
-
-
-
