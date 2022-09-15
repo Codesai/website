@@ -600,6 +600,7 @@ Me gustaría darle las gracias a mis colegas [Fran Reyes](https://twitter.com/fr
 * [Refactoring Workbook](https://xp123.com/articles/refactoring-workbook/),  William C. Wake
 * [Refactoring to Patterns](https://www.goodreads.com/book/show/85041.Refactoring_to_Patterns), Joshua Kerievsky
 * [Five Lines of Code: How and when to refactor](https://www.goodreads.com/book/show/55892270-five-lines-of-code), Christian Clausen
+* [The Programmer's Brain](https://www.goodreads.com/cs/book/show/57196550-the-programmer-s-brain), Felienne Hermans
 
 #### Artículos.
 * [A Taxonomy and an Initial Empirical Study of Bad Smells in Code](https://www.researchgate.net/publication/4036832_A_Taxonomy_and_an_Initial_Empirical_Study_of_Bad_Smells_in_Code), Mantyla et al, 2003.
