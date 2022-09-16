@@ -28,7 +28,7 @@ El refactoring produce mejores resultados y es más barato si se hace con regula
 <img src="/assets/code_smells_feature_cost_vs_time.png"
 alt="Coste de introducir una feature en función del tiempo"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<figcaption><strong>Coste de introducir una feature en función del tiempo.</strong></figcaption>
+<figcaption><strong>Coste de introducir una feature en función del tiempo (imagen de The Three Values of Software de J. B. Rainsberger).</strong></figcaption>
 </figure>
 
 Otra consecuencia, a veces, no tan visible de la mala calidad del código es su efecto en los desarrolladores. Menos refactor, lleva a código menos mantenible, que nos lleva a tardar más tiempo en implementar nuevas funcionalidades, lo cuál nos mete más presión de tiempo, lo que nos lleva a testear menos, lo que nos lleva a refactorizar menos… Es un círculo vicioso que puede tener un efecto muy desmoralizador.
