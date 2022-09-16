@@ -157,7 +157,7 @@ En el artículo, Mäntylä et al discuten los motivos por los que incluyeron cad
 
 En 2006 Mäntylä et al sacaron otro artículo ([Subjective evaluation of software evolvability using code smells: An empirical study](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=rQHJ67UAAAAJ&citation_for_view=rQHJ67UAAAAJ:IjCSPb-OGe4C)) en el que revisaron su clasificación original de 2003. 
 
-La diferencia de esta nueva versión es que elimina las categorías **Encapsulators** (moviendo los smells *Message Chains* y *Middle Man* a la categoría **Couplers**) y **Others* (*Comments* e *Incomplete Library Class* desaparecen de la taxonomía), y mueve el code smell *Parallel Inheritance Hierarchies* de la categoría de **Object-Orientation Abusers** a la categoría de **Change Preventers**. 
+La diferencia de esta nueva versión es que elimina las categorías **Encapsulators** (moviendo los smells *Message Chains* y *Middle Man* a la categoría **Couplers**) y **Others** (*Comments* e *Incomplete Library Class* desaparecen de la taxonomía), y mueve el code smell *Parallel Inheritance Hierarchies* de la categoría de **Object-Orientation Abusers** a la categoría de **Change Preventers**. 
 
 Esta última versión de su taxonomía es la que se ha hecho más popular en internet (se puede encontrar en muchas webs, cursos y posts), probablemente debido a la mayor accesibilidad (facilidad de lectura) del resumen del artículo que aparece en la web que resume el artículo: [A Taxonomy for "Bad Code Smells"](https://mmantyla.github.io/BadCodeSmellsTaxonomy).
 
