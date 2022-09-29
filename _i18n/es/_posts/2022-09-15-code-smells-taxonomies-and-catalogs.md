@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "De taxonomías y catálogos de code smells (y un nuevo catálogo revisado para 2022)"
+title: "De taxonomías y catálogos de code smells"
 date: 2022-09-15 6:00:00.000000000 +01:00
 type: post
 published: true
