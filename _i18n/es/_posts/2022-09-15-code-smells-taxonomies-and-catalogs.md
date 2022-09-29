@@ -241,7 +241,6 @@ A continuación presentamos una tabla con los 56 code smells clasificados por Je
 
 
 {: .zebraTable }
-
 | Code Smell                                    | Obstruction        | Expanse | Occurrence             |
 | --------------------------------------------- | ------------------ | ------- | ---------------------- |
 | Long Method                                   | Bloaters           | Within  | Measured Smells        |
