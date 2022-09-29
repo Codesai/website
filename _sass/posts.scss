@@ -93,25 +93,25 @@
     text-align: center;
   }
   
-  table {
+  table.zebraTable {
       border-collapse: collapse;
       border-spacing: 0;
       border: 1px solid #ddd;
-  }
-  
-  td {
-    border: 1px solid #ddd;
-    text-align: center; 
-    padding: 5px;
-  }
-  
-  th {
-     border: 1px solid #ddd;
-     background-color: #FFFFFF;
-  }
- 
-  tr:nth-child(odd) {
-    background-color: #f9f9f9;
+      
+      td {
+        border: 1px solid #ddd;
+        text-align: center; 
+        padding: 5px;
+      }
+      
+      th {
+         border: 1px solid #ddd;
+         background-color: #FFFFFF;
+      }
+     
+      tr:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
   }
 
   .post-info {

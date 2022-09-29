@@ -239,64 +239,354 @@ A continuación presentamos una tabla con los 56 code smells clasificados por Je
 
 <a name="jerzyk_code_smells"></a>
 
-| Code Smell                                    | Obstruction        | Expanse | Occurrence             |
-| --------------------------------------------- | ------------------ | ------- | ---------------------- |
-| Long Method                                   | Bloaters           | Within  | Measured Smells        |
-| Large Class                                   | Bloaters           | Within  | Measured Smells        |
-| Long Parameter List                           | Bloaters           | Within  | Measured Smells        |
-| Primitive Obsession                           | Bloaters           | Between | Data                   |
-| Data Clumps                                   | Bloaters           | Between | Data                   |
-| Null Check                                    | Bloaters           | Between | Conditional Logic      |
-| Oddball Solution                              | Bloaters           | Between | Duplication            |
-| Required Setup/Teardown                       | Bloaters           | Between | Responsibility         |
-| Combinatorial Explosion                       | Bloaters           | Within  | Responsibility         |
-| Parallel Inheritance Hierarchies              | Change Preventers  | Between | Responsibility         |
-| Divergent Change                              | Change Preventers  | Between | Responsibility         |
-| Shotgun Surgery                               | Change Preventers  | Between | Responsibility         |
-| Flag Argument                                 | Change Preventers  | Within  | Conditional Logic      |
-| Callback Hell                                 | Change Preventers  | Within  | Conditional Logic      |
-| Dubious Abstraction                           | Change Preventers  | Within  | Responsibility         |
-| Special Case                                  | Change Preventers  | Within  | Conditional Logic      |
-| Feature Envy                                  | Couplers           | Between | Responsibility         |
-| Type Embedded In Name                         | Couplers           | Within  | Names                  |
-| Indecent Exposure                             | Couplers           | Within  | Data                   |
-| Fate over Action                              | Couplers           | Between | Responsibility         |
-| Afraid to Fail                                | Couplers           | Within  | Responsibility         |
-| Binary Operator in Name                       | Couplers           | Within  | Names                  |
-| Tramp Data                                    | Data Dealers       | Between | Data                   |
-| Hidden Dependencies                           | Data Dealers       | Between | Data                   |
-| Global Data                                   | Data Dealers       | Between | Data                   |
-| Message Chain                                 | Data Dealers       | Between | Message Calls          |
-| Middle Man                                    | Data Dealers       | Between | Message Calls          |
-| Insider Trading                               | Data Dealers       | Between | Responsibility         |
-| Lazy Element                                  | Dispensables       | Between | Unnecessary Complexity |
-| Speculative Generality                        | Dispensables       | Within  | Unnecessary Complexity |
-| Dead Code                                     | Dispensables       | Within  | Unnecessary Complexity |
-| Duplicate Code                                | Dispensables       | Within  | Duplication            |
-| "What" Comments                               | Dispensables       | Within  | Unnecessary Complexity |
-| Mutable Data                                  | Functional Abusers | Between | Data                   |
-| Imperative Loops                              | Functional Abusers | Within  | Unnecessary Complexity |
-| Side Effects                                  | Functional Abusers | Within  | Responsibility         |
-| Uncommunicative Name                          | Lexical Abusers    | Within  | Names                  |
-| Magic Number                                  | Lexical Abusers    | Within  | Names                  |
-| Inconsistent Names                            | Lexical Abusers    | Within  | Names                  |
-| Boolean Blindness                             | Lexical Abusers    | Within  | Names                  |
-| Fallacious Comment                            | Lexical Abusers    | Within  | Names                  |
-| Fallacious Method Name                        | Lexical Abusers    | Within  | Names                  |
-| Complicated Boolean Expressions               | Obfuscators        | Within  | Conditional Logic      |
-| Obscured Intent                               | Obfuscators        | Between | Unnecessary Complexity |
-| Vertical Separation                           | Obfuscators        | Within  | Measured Smells        |
-| Complicated Regex Expression                  | Obfuscators        | Within  | Names                  |
-| Inconsistent Style                            | Obfuscators        | Between | Unnecessary Complexity |
-| Status Variable                               | Obfuscators        | Within  | Unnecessary Complexity |
-| Clever Code                                   | Obfuscators        | Within  | Unnecessary Complexity |
-| Temporary Fields                              | O-O Abusers        | Within  | Data                   |
-| Conditional Complexity                        | O-O Abusers        | Within  | Conditional Logic      |
-| Refused Bequest                               | O-O Abusers        | Between | Interfaces             |
-| Alternative Classes with Different Interfaces | O-O Abusers        | Between | Duplication            |
-| Inappropriate Static                          | O-O Abusers        | Between | Interfaces             |
-| Base Class Depends on Subclass                | O-O Abusers        | Between | Interfaces             |
-| Incomplete Library Class                      | Other              | Between | Interfaces             |
+<table class="zebraTable">
+<thead>
+<tr>
+<th>Code Smell</th>
+<th>Obstruction</th>
+<th>Expanse</th>
+<th>Occurrence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Long Method</td>
+<td>Bloaters</td>
+<td>Within</td>
+<td>Measured Smells</td>
+</tr>
+<tr>
+<td>Large Class</td>
+<td>Bloaters</td>
+<td>Within</td>
+<td>Measured Smells</td>
+</tr>
+<tr>
+<td>Long Parameter List</td>
+<td>Bloaters</td>
+<td>Within</td>
+<td>Measured Smells</td>
+</tr>
+<tr>
+<td>Primitive Obsession</td>
+<td>Bloaters</td>
+<td>Between</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Data Clumps</td>
+<td>Bloaters</td>
+<td>Between</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Null Check</td>
+<td>Bloaters</td>
+<td>Between</td>
+<td>Conditional Logic</td>
+</tr>
+<tr>
+<td>Oddball Solution</td>
+<td>Bloaters</td>
+<td>Between</td>
+<td>Duplication</td>
+</tr>
+<tr>
+<td>Required Setup/Teardown</td>
+<td>Bloaters</td>
+<td>Between</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Combinatorial Explosion</td>
+<td>Bloaters</td>
+<td>Within</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Parallel Inheritance Hierarchies</td>
+<td>Change Preventers</td>
+<td>Between</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Divergent Change</td>
+<td>Change Preventers</td>
+<td>Between</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Shotgun Surgery</td>
+<td>Change Preventers</td>
+<td>Between</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Flag Argument</td>
+<td>Change Preventers</td>
+<td>Within</td>
+<td>Conditional Logic</td>
+</tr>
+<tr>
+<td>Callback Hell</td>
+<td>Change Preventers</td>
+<td>Within</td>
+<td>Conditional Logic</td>
+</tr>
+<tr>
+<td>Dubious Abstraction</td>
+<td>Change Preventers</td>
+<td>Within</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Special Case</td>
+<td>Change Preventers</td>
+<td>Within</td>
+<td>Conditional Logic</td>
+</tr>
+<tr>
+<td>Feature Envy</td>
+<td>Couplers</td>
+<td>Between</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Type Embedded In Name</td>
+<td>Couplers</td>
+<td>Within</td>
+<td>Names</td>
+</tr>
+<tr>
+<td>Indecent Exposure</td>
+<td>Couplers</td>
+<td>Within</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Fate over Action</td>
+<td>Couplers</td>
+<td>Between</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Afraid to Fail</td>
+<td>Couplers</td>
+<td>Within</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Binary Operator in Name</td>
+<td>Couplers</td>
+<td>Within</td>
+<td>Names</td>
+</tr>
+<tr>
+<td>Tramp Data</td>
+<td>Data Dealers</td>
+<td>Between</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Hidden Dependencies</td>
+<td>Data Dealers</td>
+<td>Between</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Global Data</td>
+<td>Data Dealers</td>
+<td>Between</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Message Chain</td>
+<td>Data Dealers</td>
+<td>Between</td>
+<td>Message Calls</td>
+</tr>
+<tr>
+<td>Middle Man</td>
+<td>Data Dealers</td>
+<td>Between</td>
+<td>Message Calls</td>
+</tr>
+<tr>
+<td>Insider Trading</td>
+<td>Data Dealers</td>
+<td>Between</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Lazy Element</td>
+<td>Dispensables</td>
+<td>Between</td>
+<td>Unnecessary Complexity</td>
+</tr>
+<tr>
+<td>Speculative Generality</td>
+<td>Dispensables</td>
+<td>Within</td>
+<td>Unnecessary Complexity</td>
+</tr>
+<tr>
+<td>Dead Code</td>
+<td>Dispensables</td>
+<td>Within</td>
+<td>Unnecessary Complexity</td>
+</tr>
+<tr>
+<td>Duplicate Code</td>
+<td>Dispensables</td>
+<td>Within</td>
+<td>Duplication</td>
+</tr>
+<tr>
+<td>&quot;What&quot; Comments</td>
+<td>Dispensables</td>
+<td>Within</td>
+<td>Unnecessary Complexity</td>
+</tr>
+<tr>
+<td>Mutable Data</td>
+<td>Functional Abusers</td>
+<td>Between</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Imperative Loops</td>
+<td>Functional Abusers</td>
+<td>Within</td>
+<td>Unnecessary Complexity</td>
+</tr>
+<tr>
+<td>Side Effects</td>
+<td>Functional Abusers</td>
+<td>Within</td>
+<td>Responsibility</td>
+</tr>
+<tr>
+<td>Uncommunicative Name</td>
+<td>Lexical Abusers</td>
+<td>Within</td>
+<td>Names</td>
+</tr>
+<tr>
+<td>Magic Number</td>
+<td>Lexical Abusers</td>
+<td>Within</td>
+<td>Names</td>
+</tr>
+<tr>
+<td>Inconsistent Names</td>
+<td>Lexical Abusers</td>
+<td>Within</td>
+<td>Names</td>
+</tr>
+<tr>
+<td>Boolean Blindness</td>
+<td>Lexical Abusers</td>
+<td>Within</td>
+<td>Names</td>
+</tr>
+<tr>
+<td>Fallacious Comment</td>
+<td>Lexical Abusers</td>
+<td>Within</td>
+<td>Names</td>
+</tr>
+<tr>
+<td>Fallacious Method Name</td>
+<td>Lexical Abusers</td>
+<td>Within</td>
+<td>Names</td>
+</tr>
+<tr>
+<td>Complicated Boolean Expressions</td>
+<td>Obfuscators</td>
+<td>Within</td>
+<td>Conditional Logic</td>
+</tr>
+<tr>
+<td>Obscured Intent</td>
+<td>Obfuscators</td>
+<td>Between</td>
+<td>Unnecessary Complexity</td>
+</tr>
+<tr>
+<td>Vertical Separation</td>
+<td>Obfuscators</td>
+<td>Within</td>
+<td>Measured Smells</td>
+</tr>
+<tr>
+<td>Complicated Regex Expression</td>
+<td>Obfuscators</td>
+<td>Within</td>
+<td>Names</td>
+</tr>
+<tr>
+<td>Inconsistent Style</td>
+<td>Obfuscators</td>
+<td>Between</td>
+<td>Unnecessary Complexity</td>
+</tr>
+<tr>
+<td>Status Variable</td>
+<td>Obfuscators</td>
+<td>Within</td>
+<td>Unnecessary Complexity</td>
+</tr>
+<tr>
+<td>Clever Code</td>
+<td>Obfuscators</td>
+<td>Within</td>
+<td>Unnecessary Complexity</td>
+</tr>
+<tr>
+<td>Temporary Fields</td>
+<td>O-O Abusers</td>
+<td>Within</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Conditional Complexity</td>
+<td>O-O Abusers</td>
+<td>Within</td>
+<td>Conditional Logic</td>
+</tr>
+<tr>
+<td>Refused Bequest</td>
+<td>O-O Abusers</td>
+<td>Between</td>
+<td>Interfaces</td>
+</tr>
+<tr>
+<td>Alternative Classes with Different Interfaces</td>
+<td>O-O Abusers</td>
+<td>Between</td>
+<td>Duplication</td>
+</tr>
+<tr>
+<td>Inappropriate Static</td>
+<td>O-O Abusers</td>
+<td>Between</td>
+<td>Interfaces</td>
+</tr>
+<tr>
+<td>Base Class Depends on Subclass</td>
+<td>O-O Abusers</td>
+<td>Between</td>
+<td>Interfaces</td>
+</tr>
+<tr>
+<td>Incomplete Library Class</td>
+<td>Other</td>
+<td>Between</td>
+<td>Interfaces</td>
+</tr>
+</tbody>
+</table>
 
 <br>
 
