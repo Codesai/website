@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "Split or condition in if refactoring"
 date: 2022-10-08 06:00:00.000000000 +01:00
@@ -14,7 +13,6 @@ twitter: trikitrok
 small_image: small_beekeeping_bestiary.jpeg
 written_in: english
 cross_post_url: 
-
 ---
 
 We’d like to document a refactoring that we usually teach to teams we work with: the **Split or condition in if refactoring**.
