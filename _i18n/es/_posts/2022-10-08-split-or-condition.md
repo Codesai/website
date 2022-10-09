@@ -51,7 +51,7 @@ If your IDE does not have this refactoring automated you can use the following m
        Duplicate the if. This step might be different depending on if there was initially an else or not. 
        <ul>
            <li>If there was an else, you’d need to add the duplicated code in an else if block.</li>
-           <li>If there was an else, you can just duplicate the whole if beside the original one. </li>
+           <li>If there was no else, you can just duplicate the whole if besides the original one. </li>
        </ul>
        Note that this step may change the behaviour. The tests may not pass until you do the next step.
        </li>
