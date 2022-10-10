@@ -98,5 +98,9 @@ The inverse of this refactoring pattern is the **Combine ifs** refactoring patte
 We have described the **Split or condition in if** refactoring, and provided safe mechanics to perform it when it's not automated by your IDE. We hope this refactoring technique might be useful to you.
 
 
+<h2>Acknowledgements.</h2>
+
+I’d like to thank [Fran Reyes](https://twitter.com/fran_reyes) and [Rubén Díaz](https://twitter.com/rubendm23) for giving me feedback on the final draft of this post.
+
 
 
