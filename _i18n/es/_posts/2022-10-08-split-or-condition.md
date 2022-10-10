@@ -93,7 +93,7 @@ In the following video, we show how after applying this refactoring we can easil
 The inverse of this refactoring pattern is the **Combine ifs** refactoring pattern described by [Christian Clausen](https://twitter.com/thedrlambda) in his book [Five Lines of Code, How and when to refactor](https://www.manning.com/books/five-lines-of-code)
 
 
-<h3>Conclusion.</h3>
+<h2>Conclusion.</h2>
 
 We have described the **Split or condition in if** refactoring, and provided safe mechanics to perform it when it's not automated by your IDE. We hope this refactoring technique might be useful to you.
 
