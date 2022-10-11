@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Split or condition in if refactoring"
+title: '"Split or condition in if" refactoring'
 date: 2022-10-08 06:00:00.000000000 +01:00
 type: post
 published: true
