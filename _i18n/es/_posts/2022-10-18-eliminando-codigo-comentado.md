@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Eliminando código comentado automáticamente
+title: Eliminando código comentado
 date: 2022-10-18 10:00:00.000000000 +01:00
 type: post
 published: true
