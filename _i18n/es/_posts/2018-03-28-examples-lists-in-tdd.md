@@ -142,7 +142,10 @@ Once we have the **one command** examples, let's continue using the **"0, 1, man
 
 We can think of many different examples:  
 
-`(7, 4, "E"), "rb" -> (7, 5, "S")` `(7, 4, "E"), "fr" -> (8, 4, "S")` `(7, 4, "E"), "ffl" -> (9, 4, "N")` …
+`(7, 4, "E"), "rb" -> (7, 5, "S")` 
+`(7, 4, "E"), "fr" -> (8, 4, "S")` 
+`(7, 4, "E"), "ffl" -> (9, 4, "N")` 
+…
 
 The thing is that any of them might be thought as a composition of several commands:  
 
