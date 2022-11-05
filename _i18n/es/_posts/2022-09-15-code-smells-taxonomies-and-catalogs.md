@@ -22,7 +22,7 @@ cross_post_url:
     <li><a href="#martin_fowler_catalog">Martin Fowler, Code Smells y Catálogos.</a></li>
     <li><a href="#taxonomies">Taxonomías</a></li>
     <ol>
-        <li><a href="#wake_taxonomy">Taxonomías de Wake 2004</a></li>
+        <li><a href="#wake_taxonomy">Taxonomías de Wake 2003</a></li>
         <li><a href="#mantyla_taxonomy_2003">Taxonomía de Mäntylä et al 2003</a></li>
         <li><a href="#mantyla_taxonomy_2006">Taxonomía de Mäntylä et al 2006</a></li>
         <li><a href="#jerzyk_taxonomy_2022">Taxonomía de Jerzyk et al 2022</a></li>
@@ -115,7 +115,7 @@ Ha habido diferentes intentos de clasificar los code smells agrupándolos según
 
 <a name="wake_taxonomy"></a>
 
-### Wake 2004. 
+### Wake 2003. 
 
 [Wake](https://xp123.com/articles/) en su libro [Refactoring Workbook](https://xp123.com/articles/refactoring-workbook/) de 2003 describe 9 nuevos code smells que no aparecían en el catálogo original de Fowler: *Dead Code*, *Null Check*, *Special Case*, *Magic Number*, *Combinatorial Explosion*, *Complicated Boolean Expression*, y tres relacionados con malos nombres: *Type Embedded in Name*, *Uncommunicative Names* e *Inconsistent Names*.
 
