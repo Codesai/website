@@ -68,9 +68,7 @@ Understanding and being able to identify code smells gives us the opportunity of
 
 The problem is that code smells are not usually  very well understood. This problem is understandable because code smells descriptions are sometimes abstract, diffuse and open to interpretation. Some code smells seem obvious, others not so much, and some might mask other smells.
 
-Besides, we should remember that smells are only symptoms of possible design problems, not guarantees of the existence of problems. To make it more difficult, 
-
-Además, recordemos que los code smells son sólo síntomas de posibles problemas, y no garantías de problemas. To further complicate matters, in addition to possible false positives, there are degrees to the problem that each smell represents, trade-offs between different smells and contraindications in their refactorings (sometimes "the cure is worse than the disease").
+Besides, we should remember that smells are only symptoms of possible design problems, not guarantees of the existence of problems. To further complicate matters, in addition to possible false positives, there are degrees to the problem that each smell represents, trade-offs between different smells and contraindications in their refactorings (sometimes "the cure is worse than the disease").
 
 Therefore, recognizing design problems through code smells is a subtle skill that requires experience and judgement. Acquiring this skill, which sometimes may feel like a kind of spider-sense, can take some time.
 
@@ -83,15 +81,15 @@ In our experience teaching and coaching teams, not being able to identify code s
 In 1999 Fowler and Beck published a code smells catalogue in a chapter of the book,
 [Refactoring: Improving the Design of Existing Code](https://www.goodreads.com/book/show/44936.Refactoring). This catalogue contains the descriptions of 22 code smells.
 
-In 2018 Fowler published a [second edition of his book](https://www.goodreads.com/book/show/35135772-refactoring)). In this new edition there are a number of changes with respect to the first, mainly in the code smells catalogue of smells and the refactorings catalogue (detailed in [Changes for the 2nd Edition of Refactoring](https://martinfowler.com/articles/refactoring-2nd-changes.html)].
+In 2018 Fowler published a [second edition of his book](https://www.goodreads.com/book/show/35135772-refactoring). In this new edition there are a number of changes with respect to the first, mainly in the code smells catalogue of smells and the refactorings catalogue (detailed in [Changes for the 2nd Edition of Refactoring](https://martinfowler.com/articles/refactoring-2nd-changes.html)).
 
 If we focus on the smells, which is the goal of this post, the changes are as follows:
 
 - Four new code smells are introduced: *Mysterious Name*, *Global Data*, *Mutable Data* and *Loops*. 
 - Two code smells are removed: *Parallel Inheritance Hierarchies* and *Incomplete Library Class*. 
-- And four code smells are renamed: *Lazy Class* becomes *Lazy Element*, *Long Method* becomes *Long Function*, *Inappropriate Intimacy* becomes *Insider Trading*, and *Switch Statement* becomes *Repeated Switches *.
+- And four code smells are renamed: *Lazy Class* becomes *Lazy Element*, *Long Method* becomes *Long Function*, *Inappropriate Intimacy* becomes *Insider Trading*, and *Switch Statement* becomes *Repeated Switches*.
 
-There are a total of 24 code smells left. Even though they usually have catchy and memorable names, it’s difficult to remember such a long list.
+There are 24 code smells in total. Even though they usually have catchy and memorable names, it’s difficult to remember such a long list.
 
 How could we better understand code smells? How could we remember them more easily?
 
@@ -115,13 +113,13 @@ There have been different attempts to classify code smells according to differen
 
 ### Wake 2003.
 
-[Wake](https://xp123.com/articles/) in his book [Refactoring Workbook](https://xp123.com/articles/refactoring-workbook/) describes 9 new code smells that did not appear in Fowler's original catalogue: *Dead Code*, *Null Check*, *Special Case*, *Magic Number*, *Combinatorial Explosion*, *Complicated Boolean Expression*, and three related to bad names: *Type Embedded in Name*, *Uncommunicative Names* and *Inconsistent Names*.
+[Wake](https://xp123.com/articles/) in his book, [Refactoring Workbook](https://xp123.com/articles/refactoring-workbook/), describes 9 new code smells that did not appear in Fowler's original catalogue: *Dead Code*, *Null Check*, *Special Case*, *Magic Number*, *Combinatorial Explosion*, *Complicated Boolean Expression*, and three related to bad names: *Type Embedded in Name*, *Uncommunicative Names* and *Inconsistent Names*.
 
 Wake explicitly classifies code smells by first dividing them into two broad categories, *Smells within Classes* and *Smells Between Classes*, depending, respectively, on whether the code smell can be observed from within a class or whether a broader context needs to be considered (various classes). Each of these categories is divided into subcategories that group code smells based on where they can be detected. This classification criterion, later called *“occurrence"* by Jerzyk, answers the question: "where does this code smell appear?".
 
 Following this *“occurrence"* criterion Wake finds 10 subcategories.
 
-Within the category of *Smells within Classes* would be the following subcategories:
+Within the category of *Smells within Classes* we find the following subcategories:
 
 * **Measured Smells**: code smells that can be easily identified with simple length metrics.
 * **Names**: code smells that create semantic confusion and affect our ability to create mental models that help us understand, remember, and reason about code.
@@ -132,7 +130,7 @@ Within the category of *Smells within Classes* would be the following subcategor
 The subcategories within the **Smells between Classes** category are:
 
 * **Data**: code smells in which we find either pseudo objects (data structures without behaviour), or we find that some missing abstraction is missing.
-* *Inheritance**: code smells related to misuse of inheritance.
+* **Inheritance**: code smells related to misuse of inheritance.
 * **Responsibility**: code smells related to a bad assignment of responsibilities.
 * **Accommodating Change**: code smells that manifest when we encounter a lot of friction when introducing changes. They are usually caused by combinations of other code smells.
 * **Library Classes**: code smells related to the use of third-party libraries.
@@ -150,12 +148,12 @@ The book also contains many practical exercises and very useful tables (symptoms
 
 We highly recommend reading this book to delve into the discipline of refactoring and better understand when and why to apply the refactorings that appear in Fowler’s catalogue.
 
-Although we also refer to to the rest of the taxonomies that we talk about in this post, the content about code smells in our course [Code Smells & Refactoring](https://codesai.com/cursos/refactoring/) is based on Wake’s taxonomy seasoned with a bit of our own experience.
+Although we also refer to to the rest of the taxonomies that we talk about in this post, the content about code smells in our course [Code Smells & Refactoring](https://codesai.com/cursos/refactoring/) is mainly based on Wake’s taxonomy seasoned with a bit of our own experience.
 <a name="mantyla_taxonomy_2003"></a>
 
 ### Mäntylä et al 2003.
 
-In this taxonomy, the code smells are grouped according to the effect they have on the code (the type of problem, what they make difficult or the practices or principles that they break). This classification criteria is called "*obstruction*" by Jerzyk 2022.
+In this taxonomy, code smells are grouped according to the effect they have on code (the type of problem, what they make difficult or the practices or principles that they break). This classification criteria is called "*obstruction*" by Jerzyk 2022.
 
 The original classification from 2003 ([A Taxonomy and an Initial Empirical Study of Bad Smells in Code](https://www.researchgate.net/publication/4036832_A_Taxonomy_and_an_Initial_Empirical_Study_of_Bad_Smells_in_Code)) is comprised of 7 code smells categories: *Bloaters*, *Object -Orientation Abusers*, *Change Preventers*, *Dispensables*, *Encapsulators*, *Couplers* and *Others*.
 
@@ -168,22 +166,22 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 This is how they define each of the categories:
 
-* **Bloaters**: represent something in the code that has grown so large that it can no longer be handled effectively.
+* **Bloaters**: this category of smells represents something in the code that has grown so large that it can no longer be handled effectively.
 
-* **Object-Orientation Abusers**: this category of smells relates to cases where the solution does not fully exploit the possibilities of object-oriented design.
+* **Object-Orientation Abusers**: this category of smells relates to cases where the solution does not fully exploit the potential of object-oriented design.
 
-* **Change Preventers**: this category refers to code structures that make it very difficult to change the software.
+* **Change Preventers**: this category refers to code structures that make it very difficult to change the code.
 
 * **Dispensable**: these smells represent something unnecessary that should be removed from the code.
 
-* **Encapsulators**: has to do with communication mechanisms or data encapsulation.
+* **Encapsulators**: this category has to do with communication mechanisms or data encapsulation.
 
-**Couplers**: these smells represent cases of tight coupling, which goes against object-oriented design principles
+* **Couplers**: these smells represent cases of tight coupling, which goes against object-oriented design principles
 
 * **Others**: this category contains the remaining code smells (*Comments* and 
 *Incomplete Library Class*) that did not fit into any of the previous categories.
 
-In their paper, Mäntylä et al discuss the reasons why each smell is in a given category and not another, although they admit that some of them could be classified in more than one category.
+In their paper, Mäntylä et al discuss the reasons why each code smell is in a given category and not another, although they admit that some of them could be classified in more than one category.
 
 <a name="mantyla_taxonomy_2006"></a>
 
@@ -191,9 +189,9 @@ In their paper, Mäntylä et al discuss the reasons why each smell is in a given
 
 In 2006 Mäntylä et al published another paper ([Subjective evaluation of software evolvability using code smells: An empirical study](https://scholar.google.es/citations?view_op=view_citation&hl=es&user=rQHJ67UAAAAJ&citation_for_view=rQHJ67UAAAAJ:IjCSPb-OGe4C)) in which they revised their original classification from 2003.
 
-In this new version is they eliminated the **Encapsulators** (moving the *Message Chains* and *Middle Man* smells to the **Couplers** category) and **Others** (*Comments* and * Incomplete Library Class* disappear from the taxonomy) categories, and moved the *Parallel Inheritance Hierarchies* code smell from the **Object-Orientation Abusers** category to the **Change Preventers** category.
+In this new version, they eliminated the **Encapsulators** (moving the *Message Chains* and *Middle Man* smells to the **Couplers** category) and **Others** (*Comments* and *Incomplete Library Class* disappear from the taxonomy) categories, and moved the *Parallel Inheritance Hierarchies* code smell from the **Object-Orientation Abusers** category to the **Change Preventers** category.
 
-This latest version of their taxonomy is the one that has become most popular on the internet (it can be found on many websites, courses and posts), probably due to the greater accessibility (readability) of the summary of the paper that appears on the web: [A Taxonomy for "Bad Code Smells"](https://mmantyla.github.io/BadCodeSmellsTaxonomy).
+This version of their taxonomy is the one that has become most popular on the internet (it can be found on many websites, courses and posts), probably due to the greater accessibility (readability) of the summary of the paper that appears on the web: [A Taxonomy for "Bad Code Smells"](https://mmantyla.github.io/BadCodeSmellsTaxonomy).
 
 <figure>
 <img src="/assets/code_smells_taxonomy_mantyla_2006.jpg"
@@ -202,7 +200,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Mäntylä et al taxonomy 2006.</strong></figcaption>
 </figure>
 
-What is interesting is not so much the discussion of which category each smell should fall into, but rather to start thinking that a given smell can have different types of effects on the code and the relationships between these effects. In fact, subsequent classifications from the point of view of the effect of a smell on the code consider it more useful not to lose the information that a smell can produce several effects. This leads to no longer considering categories as exclusive, which makes it possible that the same smell can fall into several categories.
+What is interesting is not so much the discussion of which category each smell should fall into, but rather to start thinking that a given smell can have different types of effects on the code and the relationships between these effects. In fact, subsequent classifications from the point of view of the effect of a smell on the code ("*obstruction*") consider it more useful not to lose the information that a code smell can produce several effects. This leads to no longer considering categories as exclusive, which makes it possible that the same smell can fall into several categories.
 
 <a name="jerzyk_taxonomy_2022"></a>
 
@@ -234,9 +232,9 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Jerzyk taxonomy according to only the obstruction criterion.</strong></figcaption>
 </figure>
 
-2. **Expanse**: inspired by Wake’s taxonomy, this criterion talks about whether the code smell can be observed in a reduced context (within a class) or if a broader context (between several classes) needs to be considered. Possible categories are **Within Class** and **Between Classes*.
+2. **Expanse**: inspired by Wake’s taxonomy, this criterion talks about whether the code smell can be observed in a reduced context (within a class) or if a broader context (between several classes) needs to be considered. Possible categories are **Within Class** and **Between Classes**.
 
-3. **Occurrence**: Also inspired by Wake’s taxonomy, this criterion is related to the location where (or the method by which) a code smell can be detected. Possible categories are **Names**, **Conditional Logic**, **Message Calls**, **Unnecessary Complexity**, **Responsibility**, **Interfaces**, **Data**, * *Duplication** and **Measured Smells**.
+3. **Occurrence**: Also inspired by Wake’s taxonomy, this criterion is related to the location where (or the method by which) a code smell can be detected. Possible categories are **Names**, **Conditional Logic**, **Message Calls**, **Unnecessary Complexity**, **Responsibility**, **Interfaces**, **Data**, **Duplication** and **Measured Smells**.
 
 The following table shows the 56 code smells in Jerzyk’s thesis classified according to the three criteria discussed above:
 
@@ -304,7 +302,7 @@ The following table shows the 56 code smells in Jerzyk’s thesis classified acc
 
 <br>
 
-Some of the names in the table are different from those that usually appear in the literature. The changes in names were due to the introduction of more updated names, as is the case for, for instance, *Lazy Element* or *Insider Trading* which were previously called *Lazy Class* and *Inappropriate Intimacy*, respectively.
+Some of the names in the table are different from those that usually appear in the literature. The changes in naming were due to the introduction of more updated names, as is the case for, for instance, *Lazy Element* or *Insider Trading*  which were previously called *Lazy Class* and *Inappropriate Intimacy*, respectively.
 
 Several smells are new: 
 
@@ -316,7 +314,7 @@ Several smells are new:
 
 <a name="jerzyk_code_smell_online_catalog"></a>
 
-One super useful and practical thing for developers in Jerzyk's work is an [online code smells catalogue](https://luzkan.github.io/smells/) that, when published, included the 56 code smells in the thesis. This catalogue is both an open-source repository and an accessible and searchable website. Currently, on the date of publication of this post, the catalogue already contains 86 code smells.
+One super useful and practical thing for developers in Jerzyk's work is an [online code smells catalogue](https://luzkan.github.io/smells/) that, when published, included the 56 code smells in the thesis. This catalogue is both an open-source repository and an accessible and searchable website. On the date of publication of this post, the catalogue already contains 86 code smells.
 
 In the catalogue code smells can be filtered by different classification criteria.
 
@@ -327,7 +325,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Example of filtering code smells in Jerzyk’s online catalogue.</strong></figcaption>
 </figure>
 
-For example, the screenshot above shows the result of filtering code smells that are *OO Abusers* and affect *Interfaces*: the result includes the *Refused Bequest*, *Base Class depends on Subclass*, and *Inappropriate Static* code smells.
+For example, the screenshot above shows the result of filtering code smells that are *OO Abusers* and affect *Interfaces* which includes the *Refused Bequest*, *Base Class depends on Subclass*, and *Inappropriate Static* code smells.
 
 
 <figure>
@@ -337,7 +335,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Code smell in Jerzyk’s online catalogue.</strong></figcaption>
 </figure>
 
-For each code smell, the catalogue presents the following sections: **Smell** (discussion of the smell), **Causation** (possible causes of the code smell), **Problems** (problems that the smell can cause or design principles violates), **Example** (examples of minimal code that illustrate the possible symptoms of a code smell and show a possible solution), **Refactoring** (possible refactorings) and **Sources** (articles or books that have described this code smell). It also includes a box containing information about possible **aliases** of the code smell, the **category** to which it belongs according to the criteria of **obstruction**, **occurrence** and **expanse* *, the **related smells** and their relationship to them, and the **historical origin** of the code smell.
+For each code smell, the catalogue presents the following sections: **Smell** (discussion of the smell), **Causation** (possible causes of the code smell), **Problems** (problems that the smell can cause or design principles violates), **Example** (examples of minimal code that illustrate the possible symptoms of a code smell and show a possible solution), **Refactoring** (possible refactorings) and **Sources** (articles or books that have described this code smell). It also includes a box containing information about possible **aliases** of the code smell, the **category** to which it belongs according to the criteria of **obstruction**, **occurrence** and **expanse**, the **related smells** and its relationship to them, and the **historical origin** of the code smell.
 
 <a name="conclusions"></a>
 
@@ -355,14 +353,15 @@ Finally we’d like to highlight the [recent work by Marcel Jerzyk](https://gith
 
 <h2>Acknowledgements.</h2>
 
-I would like to thank my colleagues [Fran Reyes](https://twitter.com/fran_reyes), [Antonio de La Torre](https://twitter.com/adelatorrefoss), [Miguel Viera](https:/ /twitter.com/mangelviera/) and [Alfredo Casado](https://twitter.com/AlfredoCasado/) for reading the final drafts of this post and giving me feedback. I’d also like to thank [nikita](https://www.pexels.com/es-es/@nikita-3374022/) for her photo.
+I would like to thank my colleagues [Fran Reyes](https://twitter.com/fran_reyes), [Antonio de La Torre](https://twitter.com/adelatorrefoss), [Miguel Viera](https:/ /twitter.com/mangelviera/) and [Alfredo Casado](https://twitter.com/AlfredoCasado/) for reading the final drafts of this post and giving me feedback.
+
+I’d also like to thank [nikita](https://www.pexels.com/es-es/@nikita-3374022/) for her photo.
 
 <a name="references"></a>
 
 <h2>References.</h2>
 
 #### Books.
-
 * [Refactoring: Improving the Design of Existing Code 1st edition 1999](https://www.goodreads.com/book/show/44936.Refactoring), Martin Fowler et al.
 * [Refactoring: Improving the Design of Existing Code 2nd edition 2018](https://www.goodreads.com/book/show/35135772-refactoring), Martin Fowler et al.
 * [Refactoring Workbook](https://xp123.com/articles/refactoring-workbook/), William C. Wake
@@ -371,7 +370,6 @@ I would like to thank my colleagues [Fran Reyes](https://twitter.com/fran_reyes)
 * [The Programmer's Brain](https://www.goodreads.com/cs/book/show/57196550-the-programmer-s-brain), Felienne Hermans
 
 #### Papers.
-
 * [A Taxonomy and an Initial Empirical Study of Bad Smells in Code](https://www.researchgate.net/publication/4036832_A_Taxonomy_and_an_Initial_Empirical_Study_of_Bad_Smells_in_Code), Mantyla et al, 2003.
 * [Subjective evaluation of software evolvability using code smells: An empirical study](https://www.researchgate.net/publication/220277873_Subjective_evaluation_of_software_evolvability_using_code_smells_An_empirical_study), Mantyla et al, 2006.
 * [A Taxonomy for "Bad Code Smells"
@@ -381,4 +379,5 @@ I would like to thank my colleagues [Fran Reyes](https://twitter.com/fran_reyes)
 * [Extending a Taxonomy of Bad Code Smells with
 Metrics](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.100.2813&rep=rep1&type=pdf), R. Marticorena et al, 2006
 
+<br>
 Photo by [nikita in Pexels](https://www.pexels.com/es-es/@nikita-3374022/).
