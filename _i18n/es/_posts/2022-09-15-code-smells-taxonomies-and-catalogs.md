@@ -84,13 +84,14 @@ En 1999 Fowler y Beck publicaron un catálogo de code smells en un capítulo del
 [Refactoring: Improving the Design of Existing Code](https://www.goodreads.com/book/show/44936.Refactoring). Este catálogo contiene las descripciones de 22 code smells. 
 
 
-En 2018 Fowler publicó una [segunda edición de su libro](https://www.goodreads.com/book/show/35135772-refactoring)). En esta nueva edición hay una serie de cambios con respecto a la primera, principalmente en el catálogo de smells y el catálogo de refactorings (que detalla en [Changes for the 2nd Edition of Refactoring](https://martinfowler.com/articles/refactoring-2nd-changes.html)). 
+En 2018 Fowler publicó una [segunda edición de su libro](https://www.goodreads.com/book/show/35135772-refactoring). En esta nueva edición hay una serie de cambios con respecto a la primera, principalmente en el catálogo de smells y el catálogo de refactorings (que detalla en [Changes for the 2nd Edition of Refactoring](https://martinfowler.com/articles/refactoring-2nd-changes.html)). 
 
 Si nos centramos en los smells, lo que nos interesa en este post, los cambios son los siguientes: 
 
-Se introducen cuatro code smells nuevos: *Mysterious Name*, *Global Data*, *Mutable Data* y *Loops*.
-Elimina dos smells: *Parallel Inheritance Hierarchies* y *Incomplete Library Class*.
-Renombra cuatro smells: *Lazy Class* pasa a ser *Lazy Element*, *Long Method* pasa a ser *Long Function*, *Inappropriate Intimacy* pasa a ser *Insider Trading* y *Switch Statement* pasa a ser *Repeated Switches*.
+- Introduce cuatro code smells nuevos: *Mysterious Name*, *Global Data*, *Mutable Data* y *Loops*.
+- Elimina dos smells: *Parallel Inheritance Hierarchies* y *Incomplete Library Class*.
+- Renombra cuatro smells: *Lazy Class* pasa a ser *Lazy Element*, *Long Method* pasa a ser *Long Function*, *Inappropriate Intimacy* pasa a ser *Insider Trading* y *Switch Statement* pasa a ser *Repeated Switches*.
+
 
 Quedan un total de 24 code smells, que aunque suelen tener nombres llamativos y memorables, son difíciles de recordar. 
 
@@ -134,7 +135,7 @@ Dentro de la categoría de *Smells within Classes* estarían las siguientes subc
 Las subcategorías dentro de la categoría de **Smells between Classes** son:
 
 * **Data**: code smells en los que encontramos, o bien pseudo objetos (estructuras de datos sin comportamiento), o bien encontramos que falta alguna abstracción.
-* *Inheritance**: code smells relacionados con un mal uso de la herencia.
+* **Inheritance**: code smells relacionados con un mal uso de la herencia.
 * **Responsibility**: code smells relacionados con una mala asignación de responsabilidades.
 * **Accommodating Change**: code smells que se manifiestan cuando nos encontramos con mucha fricción al introducir cambios. Suelen estar provocados por combinaciones de otros code smells.
 * **Library Classes**: code smells relacionados con el uso de librerías de terceros.
@@ -178,7 +179,7 @@ Así es como definen cada una de las categorías (disculpen al traductor…):
 * **Change Preventers**: "esta categoría hace referencia a estructuras de código que dificultan considerablemente cambiar el software." 
 * **Dispensables**: “estos smells representan algo innecesario que debería ser eliminado del código." 
 * **Encapsulators**: "tiene que ver con mecanismos de comunicación o encapsulación de datos." 
-**Couplers**: “estos smells representan casos de acoplamiento alto, lo cual va en contra de los principios de diseño orientado a objetos"
+* **Couplers**: “estos smells representan casos de acoplamiento alto, lo cual va en contra de los principios de diseño orientado a objetos"
 * **Others**: “esta categoría contiene los code smells restantes (*Comments* e *Incomplete Library Class*) que no encajaban en ninguna de las categorías anteriores." 
 
 
@@ -231,7 +232,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Taxonomía de Jerzyk usando sólo el criterio de obstruction.</strong></figcaption>
 </figure>
 
-2. **Expanse**: Inspirado por la taxonomía de Wake, este criterio habla de si el code smell puede ser observado en un contexto reducido (dentro de una clase) o si se necesita considerar un contexto más amplio (entre varias clases). Las posibles categorías son **Within Class** y **Between Classes*.
+2. **Expanse**: Inspirado por la taxonomía de Wake, este criterio habla de si el code smell puede ser observado en un contexto reducido (dentro de una clase) o si se necesita considerar un contexto más amplio (entre varias clases). Las posibles categorías son **Within Class** y **Between Classes**.
 
 3. **Occurrence**: También inspirado por la taxonomía de Wake, este criterio está relacionado con la localización donde (o el método por el cuál) se puede detectar un code smell. Las posibles categorías son **Names**, **Conditional Logic**, **Message Calls**, **Unnecessary Complexity**, **Responsibility**, **Interfaces**, **Data**, **Duplication** y **Measured Smells**.
 
