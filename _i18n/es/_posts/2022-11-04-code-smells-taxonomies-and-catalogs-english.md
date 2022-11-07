@@ -22,14 +22,14 @@ This post is an English translation of the original post: [De taxonomías y cat�
 <ol>
 <li><a href="#introduction">Introduction: code smells and refactoring.</a></li>
 <li><a href="#martin_fowler_catalog">Martin Fowler: code smells and catalogues.</a></li>
-<li><a href="#taxonomies">Taxonomies</a></li>
+<li><a href="#taxonomies">Taxonomies.</a></li>
 <ol>
-<li><a href="#wake_taxonomy">Wake’s taxonomy 2003</a></li>
-<li><a href="#mantyla_taxonomy_2003">Mäntylä et al taxonomy 2003</a></li>
-<li><a href="#mantyla_taxonomy_2006">Mäntylä et al  taxonomy  2006</a></li>
-<li><a href="#jerzyk_taxonomy_2022">Jerzyk et al  taxonomy 2022</a></li>
+<li><a href="#wake_taxonomy">Wake’s taxonomy 2003.</a></li>
+<li><a href="#mantyla_taxonomy_2003">Mäntylä et al taxonomy 2003.</a></li>
+<li><a href="#mantyla_taxonomy_2006">Mäntylä et al  taxonomy 2006.</a></li>
+<li><a href="#jerzyk_taxonomy_2022">Jerzyk et al  taxonomy 2022.</a></li>
 <ol>
-<li><a href="#jerzyk_code_smells">Jerzyk’s extended code smells catalogue</a></li>
+<li><a href="#jerzyk_code_smells">Jerzyk’s extended code smells catalogue.</a></li>
 <li><a href="#jerzyk_code_smell_online_catalog">Online catalogue.</a></li>
 </ol>
 </ol>
