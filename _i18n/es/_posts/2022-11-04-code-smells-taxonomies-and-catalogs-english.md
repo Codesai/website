@@ -11,6 +11,7 @@ categories:
 - Code Smells
 author: Manuel Rivero
 twitter: trikitrok
+written_in: english
 small_image: small_code_smells.png
 cross_post_url: 
 ---
