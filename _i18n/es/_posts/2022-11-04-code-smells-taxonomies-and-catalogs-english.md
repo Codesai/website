@@ -30,7 +30,7 @@ This post is an English translation of the original post: [De taxonomías y cat�
 <li><a href="#jerzyk_taxonomy_2022">Jerzyk et al  taxonomy 2022</a></li>
 <ol>
 <li><a href="#jerzyk_code_smells">Jerzyk’s extended code smells catalogue</a></li>
-<li><a href="#jerzyk_code_smell_online_catalog">Online catalogues.</a></li>
+<li><a href="#jerzyk_code_smell_online_catalog">Online catalogue.</a></li>
 </ol>
 </ol>
 <li><a href="#conclusions">Conclusions.</a></li>
