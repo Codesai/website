@@ -9,6 +9,7 @@ categories:
 - Learning
 - Refactoring
 - Code Smells
+- Object-Oriented Design
 author: Manuel Rivero
 twitter: trikitrok
 written_in: english

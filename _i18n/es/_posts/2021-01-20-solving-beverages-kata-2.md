@@ -9,6 +9,7 @@ categories:
   - Refactoring
   - Design Patterns
   - SOLID
+  - Object-Oriented Design
 small_image: small-solving-beverage-kata.jpg
 author: Manuel Rivero
 twitter: trikitrok
