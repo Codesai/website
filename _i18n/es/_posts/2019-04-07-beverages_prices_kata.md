@@ -8,6 +8,7 @@ categories:
   - Learning
   - Community
   - Comunidad
+  - Object-Oriented Design
 small_image: beverages_prices_small.jpeg
 author: Manuel Rivero
 twitter: trikitrok
@@ -17,7 +18,7 @@ cross_post_url: https://garajeando.blogspot.com/2019/04/the-beverages-prices-ref
 
 I created the [Beverages Prices Refactoring kata](https://github.com/trikitrok/beverages_pricing_refactoring_kata) for the [Deliberate Practice Program](https://github.com/Codesai/practice_program) I'm running at [Lifull Connect](https://www.lifullconnect.com/) offices in Barcelona (previously [Trovit](https://www.trovit.es/index.php)). Its goal is to practice refactoring away from a bad usage of inheritance.
 
-The code computes the price of the different beverages that are sold in a coffe house. There are some supplements that can be added to those beverages. Each supplement increases the price a bit. Not all combinations of drinks and supplements are possible.
+The code computes the price of the different beverages that are sold in a coffee house. There are some supplements that can be added to those beverages. Each supplement increases the price a bit. Not all combinations of drinks and supplements are possible.
 
 Just having a quick look at the tests of the initial code would give you an idea of the kind of problems it might have:
 
