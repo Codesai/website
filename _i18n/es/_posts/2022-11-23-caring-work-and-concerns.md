@@ -60,7 +60,6 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Concerns mechanism.</strong></figcaption>
 </figure>
 
-
 This mechanism gives the team a way to raise concerns about the current team consensus so they can be discussed. This helps to make the actual team’s consensus about the system explicit.
 
 We find the <b>concerns mechanism</b> very interesting because it:
@@ -78,6 +77,7 @@ Our goal was not only to improve the developers’ experience by creating an env
 
 The concerns mechanism can be a great coaching tool. Since the technical coaches were outnumbered by the team members<a href="#nota7"><sup>[7]</sup></a>, the concerns mechanism also provided us a space to solve team members’ doubts and raise our own concerns about design decisions. As such, the concerns mechanism provided us a tool for a posteriori coaching that complemented other coaching activities, such as, the ensemble and pair programming sessions we had with the team. In this context, the discussion of concerns, especially at the beginning of our work with the different teams, made more emphasis on learning than on reaching consensus. Later the emphasis changed as the team was more mature. The idea is that once we leave, the team can keep on using the concerns mechanism to reach consensus and detect caring work.
 
+
 <figure>
 <img src="/assets/ConcernsAre.png"
 alt="Concerns tool summary."
@@ -88,6 +88,8 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 ### Concerns collection and prioritisation.
 
 During an iteration, the team raised concerns by describing them in a card that was added to a separate board dedicated to this purpose. Below you can see the concerns board of one the teams:
+
+
 
 <figure>
 <img src="/assets/trello_concerns_proppit.png"
@@ -102,11 +104,38 @@ To prioritise a concern, after a brief explanation of the concern followed by so
 
 ### Concerns discussion and outcomes.
 
-Concerns meeting blabla
+Once a week we held a one-hour meeting to discuss the concerns with higher priority. For each concern card, the team members that had raised it, explained further the concern’s description, and answered any doubts that the rest of the team may have about the concern. Sometimes, other team members provided information about similar problems they had observed in other parts of the system.
 
-blabla
+After understanding the concern better, we discussed it for a while to try to determine its possible causes and effects, then, we proposed and discussed possible ways of solving or at least mitigating the concern. 
 
-Why didn’t we use retrospectives instead?
+Depending on the specific concern, its discussion resulted in different outcomes for the team (often several of them at the same time):
+
+* Learning about new concepts (code smells, antipatterns, design principles, patterns, techniques, tools, etc). Sometimes, the coaches helped the team, and other times the team members taught each other.
+
+* Reflecting on the current consensus of the team, thus, making it more explicit and transmitting it to everyone. ADRs
+
+* Evolving the current consensus of the team by getting to new agreements or revising old ones. ADRs
+
+* Detecting caring work to be done that we described as <b>caring tasks</b>. The caring tasks were recorded in a different board. They might be very varied depending on the nature of concerns that originated them. Some consisted of research in the form of <b>experiments</b><a href="#nota10"><sup>[10]</sup></a>, others resulted in internal training, and others were efficiency improvements of any kind (paying technical debt in code, infrastructure or architecture, writing documentation, improving the ubiquitous language, etc). Anything that we needed to keep our system healthy.
+
+<figure>
+<img src="/assets/ConcernsOutcomes.png"
+alt="Concerns discussion outcomes."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Concerns discussion outcomes.</strong></figcaption>
+</figure>
+
+In the following figure we show an example of the modification of a previously existing agreement after discussing a concern. 
+
+
+<figure>
+<img src="/assets/concern_con_revision_de_agreement.png"
+alt="Example of reaching a new consensus after discussing a concern."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Example of reaching a new consensus after discussing a concern.</strong></figcaption>
+</figure>
+
+## Why didn’t we use retrospectives instead?
 
 Retrospectives are also a blabla kaizen process blabla, why not use them, then?
 
@@ -124,17 +153,14 @@ concerns about any inefficiency or waste that the team (including us) observed i
 
 From the concerns we obtain blabla:
 
-<figure>
-<img src="/assets/ConcernsOutcomes.png"
-alt="Concerns discussion outcomes."
-style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<figcaption><strong>Concerns discussion outcomes.</strong></figcaption>
-</figure>
+
+
 
 
 lalala
 
 In the following figure we show an example of the modification of a previously existing agreement after discussing a concern. 
+
 
 
 <figure>
@@ -158,7 +184,6 @@ Caring tasks example 3 figure.
 ## Conclusions
 
 In this post we have explained how we applied the idea of caring work blabla.
-
 
 We used the idea of caring work and the concerns mechanism in several teams of Lifull for more than a year. In this post we mostly talk about our experience with Lifull’s Barcelona B2B team. In other teams we introduced local variations to adapt the ideas and mechanisms to the realities of the teams and their coaches.
 
@@ -207,6 +232,8 @@ Thanks to Lifull's B2B team, for all the effort and great work they did to make 
 <a name="nota8"></a> [8] We decided to use only three levels of priority following the early three categories of [triage in medicine](https://en.wikipedia.org/wiki/Triage#History). Some teams decided to use prioritisation models with more categories, but it resulted in a lot of confusion at the time of prioritising… We think it’s better to keep it simple and use only the three categories mentioned: high, medium and low.
 
 <a name="nota9"></a> [9] We like the poker planning dynamics because it is a quick and simple diverge-and-converge collaboration method that helps reduce [information cascades](https://en.wikipedia.org/wiki/Information_cascade) in the team due to power differential and anchoring.
+
+<a name="nota10"></a> [10] Experiments consisted of research about alternative solutions or tools to address a concern that we might use. We called them experiments to explicitly distinguish them from [spikes](https://en.wikipedia.org/wiki/Spike_(software_development)), so that we avoid the usage of caring work time for spikes which should be used only to reduce uncertainty in features.
 
 ## References
 
