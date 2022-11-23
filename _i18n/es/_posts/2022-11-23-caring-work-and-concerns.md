@@ -53,7 +53,13 @@ Consensus-driven development is based on the premise that developing software is
 
 The <b>concerns mechanism</b> we used follows the process indicated in the next figure:
 
-Concerns mechanism figure.
+<figure>
+<img src="/assets/concerns_mechanism_cycle.png"
+alt="Concerns mechanism."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Concerns mechanism.</strong></figcaption>
+</figure>
+
 
 This mechanism gives the team a way to raise concerns about the current team consensus so they can be discussed. This helps to make the actual team’s consensus about the system explicit.
 
@@ -72,15 +78,23 @@ Our goal was not only to improve the developers’ experience by creating an env
 
 The concerns mechanism can be a great coaching tool. Since the technical coaches were outnumbered by the team members<a href="#nota7"><sup>[7]</sup></a>, the concerns mechanism also provided us a space to solve team members’ doubts and raise our own concerns about design decisions. As such, the concerns mechanism provided us a tool for a posteriori coaching that complemented other coaching activities, such as, the ensemble and pair programming sessions we had with the team. In this context, the discussion of concerns, especially at the beginning of our work with the different teams, made more emphasis on learning than on reaching consensus. Later the emphasis changed as the team was more mature. The idea is that once we leave, the team can keep on using the concerns mechanism to reach consensus and detect caring work.
 
-
-Concerns tool summary figure
+<figure>
+<img src="/assets/ConcernsAre.png"
+alt="Concerns tool summary."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Concerns tool summary.</strong></figcaption>
+</figure>
 
 ### Concerns collection and prioritisation.
 
 During an iteration, the team raised concerns by describing them in a card that was added to a separate board dedicated to this purpose. Below you can see the concerns board of one the teams:
 
-
-Concerns board figure
+<figure>
+<img src="/assets/trello_concerns_proppit.png"
+alt="Concerns board."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Concerns board.</strong></figcaption>
+</figure>
 
 At the end of the iteration, we had a fifteen-to-thirty-minutes meeting in which we prioritised the new concerns on the **Pending to prioritize** column. We used three possible levels of priority: high, medium or low<a href="#nota8"><sup>[8]</sup></a>. 
 
@@ -110,9 +124,12 @@ concerns about any inefficiency or waste that the team (including us) observed i
 
 From the concerns we obtain blabla:
 
-
-Concerns outcomes summary figure
-
+<figure>
+<img src="/assets/ConcernsOutcomes.png"
+alt="Concerns discussion outcomes."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Concerns discussion outcomes.</strong></figcaption>
+</figure>
 
 
 lalala
@@ -120,7 +137,12 @@ lalala
 In the following figure we show an example of the modification of a previously existing agreement after discussing a concern. 
 
 
-Reaching a new consensus example figure.
+<figure>
+<img src="/assets/concern_con_revision_de_agreement.png"
+alt="Example of reaching a new consensus after discussing a concern."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Example of reaching a new consensus after discussing a concern.</strong></figcaption>
+</figure>
 
 ## Caring tasks.
 
@@ -134,6 +156,9 @@ Caring tasks example 3 figure.
 
 
 ## Conclusions
+
+In this post we have explained how we applied the idea of caring work blabla.
+
 
 We used the idea of caring work and the concerns mechanism in several teams of Lifull for more than a year. In this post we mostly talk about our experience with Lifull’s Barcelona B2B team. In other teams we introduced local variations to adapt the ideas and mechanisms to the realities of the teams and their coaches.
 
