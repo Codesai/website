@@ -15,6 +15,7 @@ author: Manuel Rivero
 written_in: english
 cross_post_url:
 ---
+
 ## Introduction
 
 In our previous [post about caring work](https://codesai.com/2020/06/caring) we described how the caring work<a href="#nota1"><sup>[1]</sup></a> narrative was very useful for us in the coaching work we did with several teams during all of 2019 and a big part of 2020.
@@ -71,7 +72,7 @@ We find the <b>concerns mechanism</b> very interesting because it:
 
 The concerns raised by the team members while working on the system gave us a way to detect waste in the whole software value stream from development to delivery. We had found a way to sense the dynamics of the system.
 
-The concerns mechanism is a kaizen process enriched with information from the people actually involved in the actual work. It helps to apply several [Lean Software Development](https://en.wikipedia.org/wiki/Lean_software_development) principles, such as, [Eliminate waste](https://en.wikipedia.org/wiki/Lean_software_development#Eliminate_waste), [Amplify Learning](https://en.wikipedia.org/wiki/Lean_software_development#Amplify_learning) and  [Empower the team](https://en.wikipedia.org/wiki/Lean_software_development#Empower_the_team).
+The concerns mechanism is a [kaizen](https://en.wikipedia.org/wiki/Kaizen) process enriched with information from the people actually involved in the actual work. It helps to apply several [Lean Software Development](https://en.wikipedia.org/wiki/Lean_software_development) principles, such as, [Eliminate waste](https://en.wikipedia.org/wiki/Lean_software_development#Eliminate_waste), [Amplify Learning](https://en.wikipedia.org/wiki/Lean_software_development#Amplify_learning) and  [Empower the team](https://en.wikipedia.org/wiki/Lean_software_development#Empower_the_team).
 
 Our goal was not only to improve the developers’ experience by creating an environment, practices, architecture and infrastructure in which the team members could learn and work better and with less stress<a href="#nota6"><sup>[6]</sup></a>, we also wanted to develop the team’s technical skills. 
 
@@ -108,15 +109,20 @@ Once a week we held a one-hour meeting to discuss the concerns with higher prior
 
 After understanding the concern better, we discussed it for a while to try to determine its possible causes and effects, then, we proposed and discussed possible ways of solving or at least mitigating the concern. 
 
+Try to reach consensus and good enough/pragmatic ways to address each concern. Sometimes this means escalating the concern, but we try to focus on our locus of control (agency & autonomy).
+
+
+
 Depending on the specific concern, its discussion resulted in different outcomes for the team (often several of them at the same time):
 
-* Learning about new concepts (code smells, antipatterns, design principles, patterns, techniques, tools, etc). Sometimes, the coaches helped the team, and other times the team members taught each other.
+a. <b>Learning about new concepts</b> (code smells, antipatterns, design principles, patterns, techniques, tools, etc). Sometimes, the coaches helped the team, and other times the team members taught each other.
 
-* Reflecting on the current consensus of the team, thus, making it more explicit and transmitting it to everyone. ADRs
+b. <b>Reflecting on the current consensus of the team</b>, thus, making it more explicit and transmitting it to everyone.
 
-* Evolving the current consensus of the team by getting to new agreements or revising old ones. ADRs
+c. <b>Evolving the current consensus of the team</b> by getting to new agreements or revising old ones.
 
-* Detecting caring work to be done that we described as <b>caring tasks</b>. The caring tasks were recorded in a different board. They might be very varied depending on the nature of concerns that originated them. Some consisted of research in the form of <b>experiments</b><a href="#nota10"><sup>[10]</sup></a>, others resulted in internal training, and others were efficiency improvements of any kind (paying technical debt in code, infrastructure or architecture, writing documentation, improving the ubiquitous language, etc). Anything that we needed to keep our system healthy.
+d. <b>Detecting caring work to be done</b>. The detected caring work was recorded and described in <b>caring tasks</b> that we collected in a different board. They might be very varied depending on the nature of concerns that originated them. Some consisted of research in the form of <b>experiments</b><a href="#nota10"><sup>[10]</sup></a>, others resulted in internal training, and others were efficiency improvements of any kind (paying technical debt in code, infrastructure or architecture, writing documentation, improving the ubiquitous language, etc). Anything that we needed to keep our system healthy.
+
 
 <figure>
 <img src="/assets/ConcernsOutcomes.png"
@@ -128,40 +134,6 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 In the following figure we show an example of the modification of a previously existing agreement after discussing a concern. 
 
 
-<figure>
-<img src="/assets/concern_con_revision_de_agreement.png"
-alt="Example of reaching a new consensus after discussing a concern."
-style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<figcaption><strong>Example of reaching a new consensus after discussing a concern.</strong></figcaption>
-</figure>
-
-## Why didn’t we use retrospectives instead?
-
-Retrospectives are also a blabla kaizen process blabla, why not use them, then?
-
-El equipo necesitaba un espacio de reflexión sobre su práctica para poder mejorar. 
-, we needed a way to do that mainly focused on technical caring work.
-
-In this particular case we didn't want to use the retrospective because we wanted to protect the autonomy of the technical team to decide what caring work to work on. We decided that we needed this strong boundary because we detected a strong power imbalance between the product and tech teams.  <- nota Later this strong boundary was exported to other teams but this doesn't mean that it's necessary in every context. Depending on the culture dynamics the retrospective might be enough. 
-
-concerns about any inefficiency or waste that the team (including us) observed in the whole software value stream from development to delivery.
-
-** Añadir aquí también que queríamos que el foco de esta reflexión fuese el trabajo de cuidado las tareas de cuidado, y que estas estaban a cargo del equipo técnico
-
-** Hablar de DevOps de nuevo.
-
-
-From the concerns we obtain blabla:
-
-
-
-
-
-lalala
-
-In the following figure we show an example of the modification of a previously existing agreement after discussing a concern. 
-
-
 
 <figure>
 <img src="/assets/concern_con_revision_de_agreement.png"
@@ -170,16 +142,36 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Example of reaching a new consensus after discussing a concern.</strong></figcaption>
 </figure>
 
-## Caring tasks.
+Notice how we recorded the new agreement as a comment in the Trello card. We think that it might be more useful to document these agreements that make the consensus explicit in <b>Consensus Records, (CRs)</b> that might follow a format similar to the Architectural Decision Records, (ADRs).
+
+The following figure shows a caring task produced after discussing a concern about an action that had accumulated too many collaborators, and recorded how the team had decided that they could reduce the number of collaborations and remove some duplication:
 
 
-Caring tasks example 1 figure.
 
-Caring tasks example 2 figure.
+<figure>
+<img src="/assets/caring_task_example_1.png"
+alt="Example of a caring task originated by the discussion of a concern."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Example of a caring task originated by the discussion of a concern.</strong></figcaption>
+</figure>
+
+## Why did we decide to use a dedicated concerns meeting instead of retrospectives?
+
+Retrospectives are also a meeting that provides a space to reflect and learn, in order to improve the efficiency of a team. Why not use them, then?
+
+As we said before, the engineering team should decide what caring work to work on. They are the ones that work with the system and know where the friction and inefficiencies are happening. This would follow the lean principle of [Empowering the team](https://en.wikipedia.org/wiki/Lean_software_development#Empower_the_team). The DevOps movement also defends that engineering should spend the time devoted to caring work as they see fit<a href="#nota11"><sup>[11]</sup></a>.
+
+In this particular client, we had detected a strong power imbalance between the product and tech teams, so we decided that we needed a strong boundary in order to protect the autonomy of the engineering team to decide what caring work to work on. Having a separate concerns meeting gave them a safe space for that.
 
 
-Caring tasks example 3 figure.
+We believe that, even in the case of having healthy dynamics between product and engineering, there’s still a matter of scope and audience. Concerns are mainly focused on technical work, so for most of the discussions there would be no point in having non technical people in the meeting as this would waste their time. <- nota Later this strong boundary was exported to other teams but this doesn't mean that it's necessary in every context. Depending on the culture dynamics the retrospective might be enough. 
 
+Even though we tried that the discussion of the concerns and the proposed corrective actions focused on the engineering team’s locus of control (in order to improve its agency and autonomy), some concerns might go beyond what was in the team’s hands to fix, or required knowledge that the members of the team didn’t have yet. In those cases, we either invited whoever could provide the needed information to the concerns meeting, or took the specific concern to the retrospective. 
+
+
+We’d like to state that by no means the concerns meeting should substitute retrospectives. As we have discussed, they have different (though sometimes a bit overlapping) goals. We think that they are both useful and should be complementary.
+
+Some concerns caused by how the teams were organised in the organisation had to be escalated. Those kinds of problems caused by Conway’s Law are very hard to fix, and their symptoms can at best be mitigated. Taking those problems to the retrospective might be a first step to gather more information before escalating them.
 
 ## Conclusions
 
@@ -203,19 +195,36 @@ Thanks to Lifull's B2B team, for all the effort and great work they did to make 
 
 <a name="nota1"></a> [1] Idea from economic studies from a gender perspective where caring work is defined as “those occupations that provide services that help people develop their capabilities, or the ability to pursue the aspects of their lives that they value” and “necessary occupations and care to sustain life and human survival”.
 
-<a name="nota2"></a> [2] This decisions were aligned with the recommendations of the DevOps movement, as you can see in the following quotes:
+<a name="nota2"></a> [2] We didn’t know it when we took these decisions but they were aligned with the recommendations of the DevOps movement, as you can see in the following quotes:
 
 
 “We will actively manage this technical debt by ensuring that we invest at least 20% of all Development and Operations cycles on refactoring, investing in automation work and architecture and non-functional requirements (NFRs, sometimes referred to as the “ilities”), such as maintainability, manageability, scalability, reliability, testability, deployability, and security.”
-— [The DevOps Handbook : How to Create World-Class Agility, Reliability, and Security in Technology Organizations](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
+— [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
 
-<a name="nota3"></a> [3] The first team we worked with devoted 20% of their time to caring work and 80% to productive work. Other teams that later worked with us distributed the work in different proportions. Note that 20% is the minimum recommended to keep a healthy system:
+
+
+<figure>
+<img src="/assets/devops_handbook_ch_061.png"
+alt="Invest 20% of cycles on those that create positive user-invisible value (The DevOps Handbook)”
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>"Invest 20% of cycles on those that create positive user-invisible value” from The DevOps Handbook.</strong></figcaption>
+</figure>
+
+<a name="nota3"></a> [3] The first team we worked with devoted 20% of their time to caring work and 80% to productive work. Other teams that later worked with us distributed the work in different proportions. 
+
+Note that 20% is the minimum recommended to keep a healthy system:
+
+The DevOps Handbook authors quote Marty Cagan’s book [Inspired: How To Create Products Customers Love](https://www.goodreads.com/book/show/35249663-inspired). 
+
+According to Cagan, “Product management takes 20% of the team’s capacity right off the top and gives this to engineering to spend as they see fit.”
 
 “Cagan notes that when organizations do not pay their “20% tax,” technical debt will increase to the point where an organization inevitably spends all of its cycles paying down technical debt.”
-— [The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
+— [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
 
 “By dedicating 20% of our cycles so that Dev and Ops can create lasting countermeasures  to the problems we encounter in our daily work, we ensure that technical debt doesn't impede our ability to quickly and safely develop and operate our services in production.”
-— [The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
+— [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
+
+According to Cagan again, “if you’re in really bad shape today, you might need to make this 30% or even more of the resources. However, I get nervous when I find teams that think they can get away with much less than 20%”, which aligns with what we had to propose in other teams we coached in Lifull.
 
 <a name="nota4"></a> [4] At first, we thought we had widened Xavi's definition of concern. In his talk, he focused mostly on concerns in code as a way to avoid blocking code reviews. Instead, we decided to raise concerns about any inefficiency or waste that we observed in the whole software value stream from development to delivery. Later in a personal conversation with [Ricardo Borillo](https://twitter.com/borillo?lang=en), who was researching how concerns are used in the wild, we discovered that they (Xavi and Ricardo) are using concerns in the same way we are, but Xavi did not manage to transmit this in his talk because of excessively focusing on code reviews.
 
@@ -234,6 +243,10 @@ Thanks to Lifull's B2B team, for all the effort and great work they did to make 
 <a name="nota9"></a> [9] We like the poker planning dynamics because it is a quick and simple diverge-and-converge collaboration method that helps reduce [information cascades](https://en.wikipedia.org/wiki/Information_cascade) in the team due to power differential and anchoring.
 
 <a name="nota10"></a> [10] Experiments consisted of research about alternative solutions or tools to address a concern that we might use. We called them experiments to explicitly distinguish them from [spikes](https://en.wikipedia.org/wiki/Spike_(software_development)), so that we avoid the usage of caring work time for spikes which should be used only to reduce uncertainty in features.
+
+<a name="nota11"></a> [11] They don’t use the term caring work, but they mean the same, “not working on features”. 
+
+The DevOps Handbook quotes Marty Cagan arguing about the kind of work that the team might do in that 20%:, “Product management takes 20% of the team’s capacity right off the top and <b>gives this to engineering to spend as they see fit</b>. They <b>might use it to rewrite, re-architect, or refactor problematic parts of the code base</b>… <b>whatever they believe is necessary to avoid ever having to come to the team and say, ‘we need to stop and rewrite</b> [all our code].”
 
 ## References
 
@@ -269,5 +282,4 @@ Thanks to Lifull's B2B team, for all the effort and great work they did to make 
 - [Caring Task con Manuel Rivero, Parte 2](https://www.thebigbranchtheory.dev/post/caring-task-deuda-tecnica-manuel-rivero-parte-2/), [The Big Branch Theory Podcast](https://www.thebigbranchtheory.dev/)
 
 - [Entrevista de Agile Alliance a Antonio de la Torre: El valor de las tareas de cuidado en nuestro entorno](https://www.youtube.com/watch?v=Sk3JfHF6BWU)
-
 
