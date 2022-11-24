@@ -152,7 +152,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Example of a caring task originated by the discussion of a concern.</strong></figcaption>
 </figure>
 
-## Why did we decide to use a dedicated concerns meeting instead of retrospectives?
+## Why did we decide to discuss concerns in a dedicated meeting instead of using the retrospective?
 
 Retrospectives are also a meeting that provides a space to reflect and learn, in order to improve the efficiency of a team. Why not use them, then?
 
