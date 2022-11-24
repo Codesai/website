@@ -15,7 +15,6 @@ author: Manuel Rivero
 written_in: english
 cross_post_url:
 ---
-
 ## Introduction
 
 In our previous [post about caring work](https://codesai.com/2020/06/caring) we described how the caring work<a href="#nota1"><sup>[1]</sup></a> narrative was very useful for us in the coaching work we did with several teams during all of 2019 and a big part of 2020.
@@ -109,11 +108,9 @@ Once a week we held a one-hour meeting to discuss the concerns with higher prior
 
 After understanding the concern better, we discussed it for a while to try to determine its possible causes and effects, then, we proposed and discussed possible ways of solving or at least mitigating the concern. 
 
-Try to reach consensus and good enough/pragmatic ways to address each concern. Sometimes this means escalating the concern, but we try to focus on our locus of control (agency & autonomy).
+Try to reach consensus and good enough/pragmatic ways to address each concern. Sometimes this means escalating the concern, but we try to focus on our locus of control (agency & autonomy). <- fusionarlo de alguna manera con el párrafo anterior
 
-
-
-Depending on the specific concern, its discussion resulted in different outcomes for the team (often several of them at the same time):
+Depending on the specific concern, the team obtained different outcomes from its discussion (often several of them at the same time):
 
 a. <b>Learning about new concepts</b> (code smells, antipatterns, design principles, patterns, techniques, tools, etc). Sometimes, the coaches helped the team, and other times the team members taught each other.
 
