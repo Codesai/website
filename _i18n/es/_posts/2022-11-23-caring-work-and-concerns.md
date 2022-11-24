@@ -168,7 +168,7 @@ Even though we tried that the discussion of the concerns and the proposed correc
 
 We’d like to state that by no means the concerns meeting should substitute retrospectives. As we have discussed, they have different (though sometimes a bit overlapping) goals. We think that they are both useful and should be complementary.
 
-Some concerns caused by how the teams were organised in the organisation had to be escalated. Those kinds of problems caused by Conway’s Law are very hard to fix, and their symptoms can at best be mitigated. Taking those problems to the retrospective might be a first step to gather more information before escalating them.
+Some concerns caused by how the teams were organised in the organisation had to be escalated. Those kinds of problems caused by [Conway’s Law](https://en.wikipedia.org/wiki/Conway%27s_law) are very hard to fix, and their symptoms can at best be mitigated. Taking those problems to the retrospective might be a first step to gather more information before escalating them.
 
 ## Conclusions
 
