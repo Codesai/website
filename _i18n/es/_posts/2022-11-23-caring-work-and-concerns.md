@@ -6,6 +6,7 @@ type: post
 categories:
   - Caring Work
   - Culture
+  - Concerns Mechanism
   - Coaching
   - Software Development
   - Technical Debt
@@ -15,13 +16,14 @@ author: Manuel Rivero
 written_in: english
 cross_post_url:
 ---
+
 ## Introduction
 
 In our previous [post about caring work](https://codesai.com/2020/06/caring) we described how the caring work<a href="#nota1"><sup>[1]</sup></a> narrative was very useful for us in the coaching work we did with several teams during all of 2019 and a big part of 2020.
 
 We redefined the very concept of value so that producing features for the client as quickly as possible (productive work) was not the only type of work considered valuable. There’s also value in work concerned with keeping the health of the ecosystem composed of the code, the team and the client (caring work), so that it can continue evolving, being habitable for the team and producing more value for its users. So, aside from productive work, we also needed to devote energy and time to caring work.
 
-## How did we apply this caring work narrative?
+## How did we apply the concept of caring work?
 
 The way to apply caring work in a team highly depends on the team’s context. Do not take this as “a recipe for applying caring work” or “the way to apply caring work”.
 
@@ -36,7 +38,7 @@ We took two main decisions<a href="#nota2"><sup>[2]</sup></a>:
 
 ## How did we identify caring work?
 
-Aside from the idea of caring work we had identified other change levers to try to modify the team’s dynamics. With the intention of shaking the system, we initially applied several changes to how the team worked that acted on most of the change levers. It was a huge shake that we did in the hope that it would unlock the system from its previous dynamics. 
+Aside from the idea of caring work we had identified other change levers<a href="#nota4"><sup>[4]</sup></a> to try to modify the team’s dynamics. With the intention of shaking the system, we initially applied several changes to how the team worked that acted on most of the change levers. It was a huge shake that we did in the hope that it would unlock the system from its previous dynamics. 
 
 Then we had to observe what new dynamics started to form and apply corrections. But, how could we sense the dynamics of the system in order to adapt to it? 
 
@@ -47,9 +49,9 @@ In a complex system, cause and effect can only be deduced in retrospect (if they
 
 We decided to use a <b>concerns mechanism</b> to detect system health problems and try to solve them as we went. 
 
-A concern might be anything someone working on the system doesn't understand, doesn’t agree with or thinks that might be problematic. The concept of a concern<a href="#nota4"><sup>[4]</sup></a> was described by <a href="https://twitter.com/XaV1uzz">Xavi Gost</a> in his talk <a href="https://www.youtube.com/watch?v=pp8j1ggCaoM"> Consensus-driven development (CDD)</a><a href="#nota5"><sup>[5]</sup></a>. 
+A concern might be anything someone working on the system doesn't understand, doesn’t agree with, thinks that might be problematic, or thinks that might be changed to improve the system’s sustainability. The concept of a concern<a href="#nota5"><sup>[5]</sup></a> was described by <a href="https://twitter.com/XaV1uzz">Xavi Gost</a> in his talk <a href="https://www.youtube.com/watch?v=pp8j1ggCaoM"> Consensus-driven development (CDD)</a><a href="#nota6"><sup>[6]</sup></a>. 
 
-Consensus-driven development is based on the premise that developing software is a team endeavor, and on seeing the current system as an implicit representation of the real team’s consensus about what they are currently developing. This consensus will evolve to adapt to contextual changes. Not acknowledging this tacit consensus may cause problems in the team dynamics.
+Consensus-driven development is based on the premise that developing software is a team endeavour, and on seeing the current system as an implicit representation of the real team’s consensus about what they are currently developing. This consensus will evolve to adapt to contextual changes. Not acknowledging this tacit consensus may cause problems in the team dynamics.
 
 The <b>concerns mechanism</b> we used follows the process indicated in the next figure:
 
@@ -73,9 +75,11 @@ The concerns raised by the team members while working on the system gave us a wa
 
 The concerns mechanism is a [kaizen](https://en.wikipedia.org/wiki/Kaizen) process enriched with information from the people actually involved in the actual work. It helps to apply several [Lean Software Development](https://en.wikipedia.org/wiki/Lean_software_development) principles, such as, [Eliminate waste](https://en.wikipedia.org/wiki/Lean_software_development#Eliminate_waste), [Amplify Learning](https://en.wikipedia.org/wiki/Lean_software_development#Amplify_learning) and  [Empower the team](https://en.wikipedia.org/wiki/Lean_software_development#Empower_the_team).
 
-Our goal was not only to improve the developers’ experience by creating an environment, practices, architecture and infrastructure in which the team members could learn and work better and with less stress<a href="#nota6"><sup>[6]</sup></a>, we also wanted to develop the team’s technical skills. 
+Our goal was not only to improve the developers’ experience by creating an environment, practices, architecture and infrastructure in which the team members could learn and work better and with less stress<a href="#nota7"><sup>[7]</sup></a>, we also wanted to develop the team’s technical skills. 
 
-The concerns mechanism can be a great coaching tool. Since the technical coaches were outnumbered by the team members<a href="#nota7"><sup>[7]</sup></a>, the concerns mechanism also provided us a space to solve team members’ doubts and raise our own concerns about design decisions. As such, the concerns mechanism provided us a tool for a posteriori coaching that complemented other coaching activities, such as, the ensemble and pair programming sessions we had with the team. In this context, the discussion of concerns, especially at the beginning of our work with the different teams, made more emphasis on learning than on reaching consensus. Later the emphasis changed as the team was more mature. The idea is that once we leave, the team can keep on using the concerns mechanism to reach consensus and detect caring work.
+The concerns mechanism can also be a great coaching tool. Since the technical coaches were outnumbered by the team members<a href="#nota8"><sup>[8]</sup></a>, the concerns mechanism also provided us a space to solve team members’ doubts and raise our own concerns about design decisions. This made the concerns mechanism an additional opportunity to coach the team after the fact, which complemented other live coaching activities, such as, the ensemble and pair programming sessions we had with the team. 
+
+In this context, the discussion of concerns, especially at the beginning of our work with the different teams, made more emphasis on learning than on reaching consensus. Later the emphasis changed as the team was more mature. The idea is that once we leave, the team can keep on using the concerns mechanism to reach consensus and detect caring work.
 
 
 <figure>
@@ -98,9 +102,9 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Concerns board.</strong></figcaption>
 </figure>
 
-At the end of the iteration, we had a fifteen-to-thirty-minutes meeting in which we prioritised the new concerns on the **Pending to prioritize** column. We used three possible levels of priority: high, medium or low<a href="#nota8"><sup>[8]</sup></a>. 
+At the end of the iteration, we had a fifteen-to-thirty-minutes meeting in which we prioritised the new concerns on the **Pending to prioritize** column. We used three possible levels of priority: high, medium or low<a href="#nota9"><sup>[9]</sup></a>. 
 
-To prioritise a concern, after a brief explanation of the concern followed by some questions to clarify possible doubts, the team members responded in parallel to the question of “how important do you think discussing this particular concern is?”. To reach to a consensus about the priority, we used a variant of the planning poker dynamics<a href="#nota9"><sup>[9]</sup></a> with only three cards with values 1, 2 and 3, which corresponded to low, medium and high priorities, respectively. We used [PlanITPoker](https://www.planitpoker.com/) but any similar tool will do.
+To prioritise a concern, after a brief explanation of the concern followed by some questions to clarify possible doubts, the team members responded in parallel to the question of “how important do you think discussing this particular concern is?”. To reach to a consensus about the priority, we used a variant of the planning poker dynamics<a href="#nota10"><sup>[10]</sup></a> with only three cards with values 1, 2 and 3, which corresponded to low, medium and high priorities, respectively. We used [PlanITPoker](https://www.planitpoker.com/) but any similar tool will do.
 
 ### Concerns discussion and outcomes.
 
@@ -108,7 +112,7 @@ Once a week we held a one-hour meeting to discuss the concerns with higher prior
 
 After understanding the concern better, we discussed it for a while to try to determine its possible causes and effects, then, we proposed and discussed possible ways of solving or at least mitigating the concern. 
 
-Try to reach consensus and good enough/pragmatic ways to address each concern. Sometimes this means escalating the concern, but we try to focus on our locus of control (agency & autonomy). <- fusionarlo de alguna manera con el párrafo anterior
+Try to reach consensus and good enough/pragmatic ways to address each concern. Sometimes this means escalating the concern, but we try to focus on our [locus of control](https://en.wikipedia.org/wiki/Locus_of_control) (agency & autonomy). <- fusionarlo de alguna manera con el párrafo anterior
 
 Depending on the specific concern, the team obtained different outcomes from its discussion (often several of them at the same time):
 
@@ -118,7 +122,7 @@ b. <b>Reflecting on the current consensus of the team</b>, thus, making it more 
 
 c. <b>Evolving the current consensus of the team</b> by getting to new agreements or revising old ones.
 
-d. <b>Detecting caring work to be done</b>. The detected caring work was recorded and described in <b>caring tasks</b> that we collected in a different board. They might be very varied depending on the nature of concerns that originated them. Some consisted of research in the form of <b>experiments</b><a href="#nota10"><sup>[10]</sup></a>, others resulted in internal training, and others were efficiency improvements of any kind (paying technical debt in code, infrastructure or architecture, writing documentation, improving the ubiquitous language, etc). Anything that we needed to keep our system healthy.
+d. <b>Detecting caring work to be done</b>. The detected caring work was recorded and described in <b>caring tasks</b> that we collected in a different board. They might be very varied depending on the nature of concerns that originated them. Some consisted of research in the form of <b>experiments</b><a href="#nota11"><sup>[11]</sup></a>, others resulted in internal training, and others were efficiency improvements of any kind (paying technical debt in code, infrastructure or architecture, writing documentation, improving the ubiquitous language, etc). Anything that we needed to keep our system healthy.
 
 
 <figure>
@@ -139,7 +143,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Example of reaching a new consensus after discussing a concern.</strong></figcaption>
 </figure>
 
-Notice how we recorded the new agreement as a comment in the Trello card. We think that it might be more useful to document these agreements that make the consensus explicit in <b>Consensus Records, (CRs)</b> that might follow a format similar to the Architectural Decision Records, (ADRs).
+Notice how we recorded the new agreement as a comment in the Trello card. We think that it might be more useful to document these agreements that make the consensus explicit in <b>Consensus Records, (CRs)</b> that might follow a format similar to the [Architectural Decision Records, (ADRs)](https://adr.github.io/).
 
 The following figure shows a caring task produced after discussing a concern about an action that had accumulated too many collaborators, and recorded how the team had decided that they could reduce the number of collaborations and remove some duplication:
 
@@ -154,39 +158,39 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 ## Why did we decide to discuss concerns in a dedicated meeting instead of using the retrospective?
 
-Retrospectives are also a meeting that provides a space to reflect and learn, in order to improve the efficiency of a team. Why not use them, then?
+Retrospectives are also a meeting that provides a space to reflect and learn, in order to improve the efficiency of a team. They ideally include all the people that might help finding better ways of delivering value (product, tech, ux...). Why not use them, then?
 
-As we said before, the engineering team should decide what caring work to work on. They are the ones that work with the system and know where the friction and inefficiencies are happening. This would follow the lean principle of [Empowering the team](https://en.wikipedia.org/wiki/Lean_software_development#Empower_the_team). The DevOps movement also defends that engineering should spend the time devoted to caring work as they see fit<a href="#nota11"><sup>[11]</sup></a>.
+As we said before, the engineering team should decide what caring work to work on. They are the ones that work with the system and know where the friction and inefficiencies are happening. This would follow the lean principle of [Empowering the team](https://en.wikipedia.org/wiki/Lean_software_development#Empower_the_team). The DevOps movement also defends that engineering should spend the time devoted to caring work as they see fit<a href="#nota12"><sup>[12]</sup></a>.
 
-In this particular client, we had detected a strong power imbalance between the product and tech teams, so we decided that we needed a strong boundary in order to protect the autonomy of the engineering team to decide what caring work to work on. Having a separate concerns meeting gave them a safe space for that.
+The cultural dynamics that surrounded the B2B team when we started working with them, was characterised by a strong power imbalance between the product and tech teams which left little autonomy and agency to the engineers. In order to create a safe space that fostered the autonomy of the engineering team to decide what caring work to work on, we decided to set a strong boundary by having a separate concerns meeting in which only the members of the engineering team could participate.
 
 
-We believe that, even in the case of having healthy dynamics between product and engineering, there’s still a matter of scope and audience. Concerns are mainly focused on technical work, so for most of the discussions there would be no point in having non technical people in the meeting as this would waste their time. <- nota Later this strong boundary was exported to other teams but this doesn't mean that it's necessary in every context. Depending on the culture dynamics the retrospective might be enough. 
+We believe that, even in the case of having healthy dynamics between product and engineering, there’s still a matter of scope and audience. Concerns are mainly focused on technical work, so for most of the discussions there would be no point in having non technical people in the meeting as this would waste their time<a href="#nota13"><sup>[13]</sup></a>.
 
 Even though we tried that the discussion of the concerns and the proposed corrective actions focused on the engineering team’s locus of control (in order to improve its agency and autonomy), some concerns might go beyond what was in the team’s hands to fix, or required knowledge that the members of the team didn’t have yet. In those cases, we either invited whoever could provide the needed information to the concerns meeting, or took the specific concern to the retrospective. 
 
 
 We’d like to state that by no means the concerns meeting should substitute retrospectives. As we have discussed, they have different (though sometimes a bit overlapping) goals. We think that they are both useful and should be complementary.
 
-Some concerns caused by how the teams were organised in the organisation had to be escalated. Those kinds of problems caused by [Conway’s Law](https://en.wikipedia.org/wiki/Conway%27s_law) are very hard to fix, and their symptoms can at best be mitigated. Taking those problems to the retrospective might be a first step to gather more information before escalating them.
+Some concerns caused by how the company organised the teams had to be escalated. Those kinds of problems caused by [Conway’s Law](https://en.wikipedia.org/wiki/Conway%27s_law) are very hard to fix, and their symptoms can at best be mitigated. Taking those problems to the retrospective might be a first step to gather more information before escalating them.
 
 ## Conclusions
 
-In this post we have explained how we applied the idea of caring work blabla.
+In this post we have explained how we applied the concept of caring work in several teams of [Lifull Connect](https://www.lifullconnect.com/) for more than a year<a href="#nota14"><sup>[14]</sup></a>.
 
-We used the idea of caring work and the concerns mechanism in several teams of Lifull for more than a year. In this post we mostly talk about our experience with Lifull’s Barcelona B2B team. In other teams we introduced local variations to adapt the ideas and mechanisms to the realities of the teams and their coaches.
+We, first, show how we created a safe space for caring work by devoting a given percentage of time/effort to it in every iteration, and by giving autonomy and agency to developers to decide which caring work was needed.
 
-blabla
+Then we show how we applied the concerns mechanism to identify caring work and improve consensus about the system and communication in the team. The concerns mechanism also proved to be a great after-the-fact coaching tool that complemented other live coaching tools we were using. 
 
-** We think that concerns are blabla
+We also described how we collected, prioritised and discussed concerns each iteration, and talked about the different outcomes we got from discussing concerns.
 
-** reality in which both productive and caring work are valued and more sustainable software systems are more likely.
-
-blabla
+Finally, we gave our reasons for using a separate meeting to discuss concerns instead of using the retrospective.
 
 ## Acknowledgements
 
-Thanks to Lifull's B2B team, for all the effort and great work they did to make the concerns mechanism work for them. Finally, thanks to my Codesai colleagues, [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Rubén Díaz](https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), for giving me feedback about this post.
+Thanks to Lifull's Barcelona B2B team, for all the effort and great work they did to make the concerns mechanism work for them. That great work made it much easier for other teams in Lifull to start applying the idea of caring work with the help of other Codesai coaches.
+
+Finally, thanks to my Codesai colleagues, [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Rubén Díaz](https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/), [Dani Ojeda](https://www.linkedin.com/in/danielojedaloisel/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), for giving me feedback about drafts of this post.
 
 ## Notes
 
@@ -223,27 +227,33 @@ According to Cagan, “Product management takes 20% of the team’s capacity rig
 
 According to Cagan again, “if you’re in really bad shape today, you might need to make this 30% or even more of the resources. However, I get nervous when I find teams that think they can get away with much less than 20%”, which aligns with what we had to propose in other teams we coached in Lifull.
 
-<a name="nota4"></a> [4] At first, we thought we had widened Xavi's definition of concern. In his talk, he focused mostly on concerns in code as a way to avoid blocking code reviews. Instead, we decided to raise concerns about any inefficiency or waste that we observed in the whole software value stream from development to delivery. Later in a personal conversation with [Ricardo Borillo](https://twitter.com/borillo?lang=en), who was researching how concerns are used in the wild, we discovered that they (Xavi and Ricardo) are using concerns in the same way we are, but Xavi did not manage to transmit this in his talk because of excessively focusing on code reviews.
+<a name="nota4"></a> [4] Read about those change levers in our previous post about caring work: [The value of caring](https://codesai.com/2020/06/caring), [Manuel Rivero](https://garajeando.blogspot.com/).
 
-<a name="nota5"></a> [5] The talk about Consensus Driven Development is in Spanish. 
+<a name="nota5"></a> [5] At first, we thought we had widened Xavi's definition of concern. In his talk, he focused mostly on concerns in code as a way to avoid blocking code reviews. Instead, we decided to raise concerns about any inefficiency or waste that we observed in the whole software value stream from development to delivery. Later in a personal conversation with [Ricardo Borillo](https://twitter.com/borillo?lang=en), who was researching how concerns are used in the wild, we discovered that they (Xavi and Ricardo) are using concerns in the same way we are, but Xavi did not manage to transmit this in his talk because of excessively focusing on code reviews.
+
+<a name="nota6"></a> [6] The talk about Consensus Driven Development is in Spanish. 
 
 
-<a name="nota6"></a> [6] These ideas are related to [Richard Gabriel](https://en.wikipedia.org/wiki/Richard_P._Gabriel)'s idea of [software habitability](https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf), and [Alexandru Bolboaca](https://www.linkedin.com/in/alexandrubolboaca/)’s ideas in his book [Usable software Design](https://leanpub.com/usablesoftwaredesign). We think, both, are in turn,  based on [Deming](https://en.wikipedia.org/wiki/W._Edwards_Deming)'s idea that a system has a huge influence on a person's performance:  
+<a name="nota7"></a>  [7]  These ideas are related to [Richard Gabriel](https://en.wikipedia.org/wiki/Richard_P._Gabriel)'s idea of [software habitability](https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf), and [Alexandru Bolboaca](https://www.linkedin.com/in/alexandrubolboaca/)’s ideas in his book [Usable software Design](https://leanpub.com/usablesoftwaredesign). We think, both, are in turn,  based on [Deming](https://en.wikipedia.org/wiki/W._Edwards_Deming)'s idea that a system has a huge influence on a person's performance:  
 
 "A Bad System Will Beat a Good Person Every Time." 
 — W. Edwards Deming
 
-<a name="nota7"></a>  [7]  At the beginning only [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and I worked with the team. Even though we later got more critical mass when [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Manuel Tordesillas](https://www.linkedin.com/in/mjtordesillas/) and [Álvaro García](https://twitter.com/alvarobiz) joined the team, by that time the team had already doubled in size, so we still were outnumbered.
+<a name="nota8"></a> [8] At the beginning only [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and I worked with the team. Even though we later got more critical mass when [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Manuel Tordesillas](https://www.linkedin.com/in/mjtordesillas/) and [Álvaro García](https://twitter.com/alvarobiz) joined the team, by that time the team had already doubled in size, so we still were outnumbered.
 
-<a name="nota8"></a> [8] We decided to use only three levels of priority following the early three categories of [triage in medicine](https://en.wikipedia.org/wiki/Triage#History). Some teams decided to use prioritisation models with more categories, but it resulted in a lot of confusion at the time of prioritising… We think it’s better to keep it simple and use only the three categories mentioned: high, medium and low.
+<a name="nota9"></a> [9] We decided to use only three levels of priority following the early three categories of [triage in medicine](https://en.wikipedia.org/wiki/Triage#History). Some teams decided to use prioritisation models with more categories, but it resulted in a lot of confusion at the time of prioritising… We think it’s better to keep it simple and use only the three categories mentioned: high, medium and low.
 
-<a name="nota9"></a> [9] We like the poker planning dynamics because it is a quick and simple diverge-and-converge collaboration method that helps reduce [information cascades](https://en.wikipedia.org/wiki/Information_cascade) in the team due to power differential and anchoring.
+<a name="nota10"></a> [10] We like the poker planning dynamics because it is a quick and simple diverge-and-converge collaboration method that helps reduce [information cascades](https://en.wikipedia.org/wiki/Information_cascade) in the team due to power differential and anchoring.
 
-<a name="nota10"></a> [10] Experiments consisted of research about alternative solutions or tools to address a concern that we might use. We called them experiments to explicitly distinguish them from [spikes](https://en.wikipedia.org/wiki/Spike_(software_development)), so that we avoid the usage of caring work time for spikes which should be used only to reduce uncertainty in features.
+<a name="nota11"></a> [11] Experiments consisted of research about alternative solutions or tools to address a concern that we might use. We called them experiments to explicitly distinguish them from [spikes](https://en.wikipedia.org/wiki/Spike_(software_development)), so that we avoid the usage of caring work time for spikes which should be used only to reduce uncertainty in features.
 
-<a name="nota11"></a> [11] They don’t use the term caring work, but they mean the same, “not working on features”. 
+<a name="nota12"></a> [12] They don’t use the term caring work, but they mean the same, “not working on features”. 
 
 The DevOps Handbook quotes Marty Cagan arguing about the kind of work that the team might do in that 20%:, “Product management takes 20% of the team’s capacity right off the top and <b>gives this to engineering to spend as they see fit</b>. They <b>might use it to rewrite, re-architect, or refactor problematic parts of the code base</b>… <b>whatever they believe is necessary to avoid ever having to come to the team and say, ‘we need to stop and rewrite</b> [all our code].”
+
+<a name="nota13"></a> [13]  Later this strong boundary was exported to other teams due to similar power dynamics, but this doesn't mean that this might be necessary in every context. Depending on the culture dynamics and people involved the retrospective might be enough. 
+
+<a name="nota14"></a> [14] In this post we mostly talk about our experience with Lifull’s Barcelona B2B team which was the first team we worked with inside Lifull. In other teams we introduced small local variations to adapt the ideas and mechanisms to the context of the teams, and to their coaches.
 
 ## References
 
