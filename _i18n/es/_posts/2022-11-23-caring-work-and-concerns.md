@@ -79,7 +79,7 @@ Our goal was not only to improve the developers’ experience by creating an env
 
 The concerns mechanism can also be a great coaching tool. Since the technical coaches were outnumbered by the team members<a href="#nota8"><sup>[8]</sup></a>, the concerns mechanism also provided us a space to solve team members’ doubts and raise our own concerns about design decisions. This made the concerns mechanism an additional opportunity to coach the team after the fact, which complemented other live coaching activities, such as, the ensemble and pair programming sessions we had with the team. 
 
-In this context, the discussion of concerns, especially at the beginning of our work with the different teams, made more emphasis on learning than on reaching consensus. Later the emphasis changed as the team was more mature. The idea is that once we leave, the team can keep on using the concerns mechanism to reach consensus and detect caring work.
+In this context, the discussion of concerns, especially at the beginning of our work with the different teams, made more emphasis on learning than on reaching consensus. Later the emphasis changed as the team was more mature. The idea was that once we leave, the team could keep on using the concerns mechanism to reach consensus and detect caring work.
 
 
 <figure>
