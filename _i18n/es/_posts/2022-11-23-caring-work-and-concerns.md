@@ -11,7 +11,7 @@ categories:
   - Software Development
   - Technical Debt
   - Metaphors
-small_image:
+small_image: small_concerns_mechanism.jpg
 author: Manuel Rivero
 written_in: english
 cross_post_url:
@@ -193,7 +193,10 @@ Finally, we gave our reasons for using a separate meeting to discuss concerns in
 
 Thanks to [Lifull Connect](https://www.lifullconnect.com/)'s Barcelona B2B team, for all the effort and great work they did to make the concerns mechanism work for them. That great work made it much easier for other teams in [Lifull Connect](https://www.lifullconnect.com/) to start applying the idea of caring work with the help of other Codesai coaches.
 
-Finally, thanks to my Codesai colleagues, [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Rubén Díaz](https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/), [Dani Ojeda](https://www.linkedin.com/in/danielojedaloisel/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), for giving me feedback about drafts of this post.
+Also thanks to my Codesai colleagues, [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Rubén Díaz](https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/), [Dani Ojeda](https://www.linkedin.com/in/danielojedaloisel/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), for giving me feedback about drafts of this post.
+
+Finally I’d also like to thank [Karolina Grabowska](https://www.pexels.com/es-es/@karolina-grabowska/) for her photo.
+
 
 ## Notes
 
@@ -295,3 +298,6 @@ The DevOps Handbook quotes Marty Cagan arguing about the kind of work that the t
 
 - [Entrevista de Agile Alliance a Antonio de la Torre: El valor de las tareas de cuidado en nuestro entorno](https://www.youtube.com/watch?v=Sk3JfHF6BWU)
 
+
+<br>
+Photo by [Karolina Grabowska in Pexels](https://www.pexels.com/es-es/@karolina-grabowska/).
