@@ -17,7 +17,7 @@ written_in: english
 cross_post_url:
 ---
 
-## Introduction
+## Caring work.
 
 In our previous [post about caring work](https://codesai.com/2020/06/caring) we described how the caring work<a href="#nota1"><sup>[1]</sup></a> narrative was very useful for us in the coaching work we did with several teams during all of 2019 and a big part of 2020.
 
@@ -26,6 +26,9 @@ We redefined the very concept of value so that producing features for the client
 ## How did we apply the concept of caring work?
 
 The way to apply caring work in a team highly depends on the team’s context. Do not take this as “a recipe for applying caring work” or “the way to apply caring work”.
+
+
+Añadir la idea de esta nota a esta altura -> [14] In this post we mostly talk about our experience with Lifull’s Barcelona B2B team which was the first team we worked with inside Lifull. In other teams we introduced small local variations to adapt the ideas and mechanisms to the context of the teams, and to their coaches.
 
 We took two main decisions<a href="#nota2"><sup>[2]</sup></a>:
 
@@ -110,9 +113,7 @@ To prioritise a concern, after a brief explanation of the concern followed by so
 
 Once a week we held a one-hour meeting to discuss the concerns with higher priority. For each concern card, the team members that had raised it, explained further the concern’s description, and answered any doubts that the rest of the team may have about the concern. Sometimes, other team members provided information about similar problems they had observed in other parts of the system.
 
-After understanding the concern better, we discussed it for a while to try to determine its possible causes and effects, then, we proposed and discussed possible ways of solving or at least mitigating the concern. 
-
-Try to reach consensus and good enough/pragmatic ways to address each concern. Sometimes this means escalating the concern, but we try to focus on our [locus of control](https://en.wikipedia.org/wiki/Locus_of_control) (agency & autonomy). <- fusionarlo de alguna manera con el párrafo anterior
+After understanding the concern better, we discussed it for a while to try to determine its possible causes and effects, then, we proposed and discussed possible ways of solving or at least mitigating the concern. In these discussions, we tried to reach consensus and good enough/pragmatic ways to address each concern. In order to foster the team's sense of agency and autonomy, we focused on what it could control and change at any given moment. However, sometimes, this was not enough and we had to escalate the concerns to higher levels, with the intention of somehow modifying organisational constraints or policies that were affecting the team. 
 
 Depending on the specific concern, the team obtained different outcomes from its discussion (often several of them at the same time):
 
@@ -162,29 +163,31 @@ Retrospectives are also a meeting that provides a space to reflect and learn, in
 
 As we said before, the engineering team should decide what caring work to work on. They are the ones that work with the system and know where the friction and inefficiencies are happening. This would follow the lean principle of [Empowering the team](https://en.wikipedia.org/wiki/Lean_software_development#Empower_the_team). The DevOps movement also defends that engineering should spend the time devoted to caring work as they see fit<a href="#nota12"><sup>[12]</sup></a>.
 
-The cultural dynamics that surrounded the B2B team when we started working with them, was characterised by a strong power imbalance between the product and tech teams which left little autonomy and agency to the engineers. In order to create a safe space that fostered the autonomy of the engineering team to decide what caring work to work on, we decided to set a strong boundary by having a separate concerns meeting in which only the members of the engineering team could participate.
+The cultural dynamics that surrounded the B2B team when we started working with them, was characterised by a strong power imbalance between the product and tech teams which left little autonomy and agency to the engineers. In order to create a safe space that fostered the autonomy of the engineering team to decide which caring work to do next, we decided to set a strong boundary by having a separate concerns meeting in which only the members of the engineering team could participate.
 
 
 We believe that, even in the case of having healthy dynamics between product and engineering, there’s still a matter of scope and audience. Concerns are mainly focused on technical work, so for most of the discussions there would be no point in having non technical people in the meeting as this would waste their time<a href="#nota13"><sup>[13]</sup></a>.
 
-Even though we tried that the discussion of the concerns and the proposed corrective actions focused on the engineering team’s locus of control (in order to improve its agency and autonomy), some concerns might go beyond what was in the team’s hands to fix, or required knowledge that the members of the team didn’t have yet. In those cases, we either invited whoever could provide the needed information to the concerns meeting, or took the specific concern to the retrospective. 
+As we mentioned before, even though we tried that the discussion of the concerns and the proposed corrective actions focused on what the engineering team could control and change at any given moment, some concerns might go beyond that, or required knowledge that the members of the team didn’t have yet. In those cases, we either invited whoever could provide the needed information to the concerns meeting, or took the specific concern to the retrospective. 
 
 
 We’d like to state that by no means the concerns meeting should substitute retrospectives. As we have discussed, they have different (though sometimes a bit overlapping) goals. We think that they are both useful and should be complementary.
 
 Some concerns caused by how the company organised the teams had to be escalated. Those kinds of problems caused by [Conway’s Law](https://en.wikipedia.org/wiki/Conway%27s_law) are very hard to fix, and their symptoms can at best be mitigated. Taking those problems to the retrospective might be a first step to gather more information before escalating them.
 
-## Conclusions
+## Summary·
 
 In this post we have explained how we applied the concept of caring work in several teams of [Lifull Connect](https://www.lifullconnect.com/) for more than a year<a href="#nota14"><sup>[14]</sup></a>.
 
-We, first, show how we created a safe space for caring work by devoting a given percentage of time/effort to it in every iteration, and by giving autonomy and agency to developers to decide which caring work was needed.
+We, first, showed how we created a safe space for caring work by devoting a given percentage of time/effort to it in every iteration, and by giving autonomy and agency to developers to decide which caring work was needed.
 
-Then we show how we applied the concerns mechanism to identify caring work and improve consensus about the system and communication in the team. The concerns mechanism also proved to be a great after-the-fact coaching tool that complemented other live coaching tools we were using. 
+Then we showed how we applied the concerns mechanism to identify caring work and improve consensus about the system and communication in the team. The concerns mechanism also proved to be a great after-the-fact coaching tool that complemented other live coaching tools we were using. 
 
 We also described how we collected, prioritised and discussed concerns each iteration, and talked about the different outcomes we got from discussing concerns.
 
 Finally, we gave our reasons for using a separate meeting to discuss concerns instead of using the retrospective.
+
+Añadir caveat aquí o al principio del párrafo.
 
 ## Acknowledgements
 
@@ -225,7 +228,7 @@ According to Cagan, “Product management takes 20% of the team’s capacity rig
 “By dedicating 20% of our cycles so that Dev and Ops can create lasting countermeasures  to the problems we encounter in our daily work, we ensure that technical debt doesn't impede our ability to quickly and safely develop and operate our services in production.”
 — [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
 
-According to Cagan again, “if you’re in really bad shape today, you might need to make this 30% or even more of the resources. However, I get nervous when I find teams that think they can get away with much less than 20%”, which aligns with what we had to propose in other teams we coached in Lifull.
+According to Cagan again, “if you’re in really bad shape today, you might need to make this 30% or even more of the resources. However, I get nervous when I find teams that think they can get away with much less than 20%”. This aligns with what we had to propose in some other teams we coached in Lifull.
 
 <a name="nota4"></a> [4] Read about those change levers in our previous post about caring work: [The value of caring](https://codesai.com/2020/06/caring), [Manuel Rivero](https://garajeando.blogspot.com/).
 
@@ -239,9 +242,9 @@ According to Cagan again, “if you’re in really bad shape today, you might ne
 "A Bad System Will Beat a Good Person Every Time." 
 — W. Edwards Deming
 
-<a name="nota8"></a> [8] At the beginning only [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and I worked with the team. Even though we later got more critical mass when [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Manuel Tordesillas](https://www.linkedin.com/in/mjtordesillas/) and [Álvaro García](https://twitter.com/alvarobiz) joined the team, by that time the team had already doubled in size, so we still were outnumbered.
+<a name="nota8"></a> [8] At the beginning only [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and I worked with the Lifull’s Barcelona B2B team. Even though we later got more critical mass when [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Manuel Tordesillas](https://www.linkedin.com/in/mjtordesillas/) and [Álvaro García](https://twitter.com/alvarobiz) joined the team, by that time the B2B team had already doubled in size, so we still were outnumbered.
 
-<a name="nota9"></a> [9] We decided to use only three levels of priority following the early three categories of [triage in medicine](https://en.wikipedia.org/wiki/Triage#History). Some teams decided to use prioritisation models with more categories, but it resulted in a lot of confusion at the time of prioritising… We think it’s better to keep it simple and use only the three categories mentioned: high, medium and low.
+<a name="nota9"></a> [9] We decided to use only three levels of priority following the early three categories of [triage in medicine](https://en.wikipedia.org/wiki/Triage#History). Some teams decided to use prioritisation models with more categories, but it resulted in a lot of confusion at the time of prioritising. We think it’s better to keep it simple and use only the three categories mentioned: high, medium and low.
 
 <a name="nota10"></a> [10] We like the poker planning dynamics because it is a quick and simple diverge-and-converge collaboration method that helps reduce [information cascades](https://en.wikipedia.org/wiki/Information_cascade) in the team due to power differential and anchoring.
 
@@ -251,9 +254,7 @@ According to Cagan again, “if you’re in really bad shape today, you might ne
 
 The DevOps Handbook quotes Marty Cagan arguing about the kind of work that the team might do in that 20%:, “Product management takes 20% of the team’s capacity right off the top and <b>gives this to engineering to spend as they see fit</b>. They <b>might use it to rewrite, re-architect, or refactor problematic parts of the code base</b>… <b>whatever they believe is necessary to avoid ever having to come to the team and say, ‘we need to stop and rewrite</b> [all our code].”
 
-<a name="nota13"></a> [13]  Later this strong boundary was exported to other teams due to similar power dynamics, but this doesn't mean that this might be necessary in every context. Depending on the culture dynamics and people involved the retrospective might be enough. 
-
-<a name="nota14"></a> [14] In this post we mostly talk about our experience with Lifull’s Barcelona B2B team which was the first team we worked with inside Lifull. In other teams we introduced small local variations to adapt the ideas and mechanisms to the context of the teams, and to their coaches.
+<a name="nota13"></a> [13]  Later this strong boundary was exported to other teams due to similar power dynamics, but this doesn't mean that this might be necessary in every context. Depending on the culture and people involved the retrospective might be enough. 
 
 ## References
 
@@ -269,6 +270,8 @@ The DevOps Handbook quotes Marty Cagan arguing about the kind of work that the t
 [Gene Kim](https://twitter.com/RealGeneKim), [Jez Humble](https://twitter.com/jezhumble), [Patrick Debois](http://www.jedi.be/blog/) and [John Willis](https://www.linkedin.com/in/johnwillisatlanta/)
 
 - [The Cynefin mini book](https://www.infoq.com/minibooks/cynefin-mini-book/), [Greg Brougham](https://twitter.com/sailinggreg)
+
+- [Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations](https://en.wikipedia.org/wiki/Accelerate_(book)), [Nicole Forsgren Velasquez](https://en.wikipedia.org/wiki/Nicole_Forsgren), [Jez Humble](https://www.linkedin.com/in/jez-humble/) and [Gene Kim](https://www.linkedin.com/in/realgenekim/)
 
 ### Articles
 
