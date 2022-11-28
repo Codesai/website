@@ -28,7 +28,7 @@ We redefined the very concept of value so that producing features for the client
 The way to apply caring work in a team highly depends on the team’s context. Do not take this as “a recipe for applying caring work” or “the way to apply caring work”.
 
 
-Añadir la idea de esta nota a esta altura -> [14] In this post we mostly talk about our experience with Lifull’s Barcelona B2B team which was the first team we worked with inside Lifull. In other teams we introduced small local variations to adapt the ideas and mechanisms to the context of the teams, and to their coaches.
+In this post we mostly talk about our experience with [Lifull Connect](https://www.lifullconnect.com/)’s Barcelona B2B team which was the first team we worked with inside [Lifull Connect](https://www.lifullconnect.com/). We later introduced small local variations to adapt the ideas and mechanisms to the context of other [Lifull Connect](https://www.lifullconnect.com/)’s teams, and to their coaches.
 
 We took two main decisions<a href="#nota2"><sup>[2]</sup></a>:
 
@@ -36,17 +36,17 @@ We took two main decisions<a href="#nota2"><sup>[2]</sup></a>:
 
 * Only developers could decide which caring work was needed.
 
-
-
-
 ## How did we identify caring work?
+
+<blockquote>
+"A process cannot be understood by stopping it. Understanding must move with the flow of the process, must join it and flow with it."
+— Frank Herbert
+</blockquote>
 
 Aside from the idea of caring work we had identified other change levers<a href="#nota4"><sup>[4]</sup></a> to try to modify the team’s dynamics. With the intention of shaking the system, we initially applied several changes to how the team worked that acted on most of the change levers. It was a huge shake that we did in the hope that it would unlock the system from its previous dynamics. 
 
 Then we had to observe what new dynamics started to form and apply corrections. But, how could we sense the dynamics of the system in order to adapt to it? 
 
-"A process cannot be understood by stopping it. Understanding must move with the flow of the process, must join it and flow with it."
-— Frank Herbert
 
 In a complex system, cause and effect can only be deduced in retrospect (if they can at all). The system is in constant flux. There are no best practices, only heuristics. We need to probe, sense and respond.
 
@@ -161,23 +161,25 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 Retrospectives are also a meeting that provides a space to reflect and learn, in order to improve the efficiency of a team. They ideally include all the people that might help finding better ways of delivering value (product, tech, ux...). Why not use them, then?
 
-As we said before, the engineering team should decide what caring work to work on. They are the ones that work with the system and know where the friction and inefficiencies are happening. This would follow the lean principle of [Empowering the team](https://en.wikipedia.org/wiki/Lean_software_development#Empower_the_team). The DevOps movement also defends that engineering should spend the time devoted to caring work as they see fit<a href="#nota12"><sup>[12]</sup></a>.
+We’d like to start by stating that by no means the concerns meeting should substitute retrospectives. These meetings have different, though sometimes a bit overlapping, scopes. We think that they are both useful and should be complementary.
 
-The cultural dynamics that surrounded the B2B team when we started working with them, was characterised by a strong power imbalance between the product and tech teams which left little autonomy and agency to the engineers. In order to create a safe space that fostered the autonomy of the engineering team to decide which caring work to do next, we decided to set a strong boundary by having a separate concerns meeting in which only the members of the engineering team could participate.
+Still, there are reasons why we think that concerns should be discussed in a different meeting than the retrospective. 
 
+On one hand, there’s the matter of who can best contribute to the discussion and of not wasting people’s time in unnecessary meetings. As we described earlier, concerns are a way to detect waste in the part of the software value stream comprising development to delivery. This means that most concerns are technical in nature, so for most of the discussions there would be no point in having non technical people in the meeting as this would waste their time.  We think that this is true, regardless of having or not a healthy dynamic between product and engineering.
 
-We believe that, even in the case of having healthy dynamics between product and engineering, there’s still a matter of scope and audience. Concerns are mainly focused on technical work, so for most of the discussions there would be no point in having non technical people in the meeting as this would waste their time<a href="#nota13"><sup>[13]</sup></a>.
+On the other hand, we wanted to protect the team’s autonomy to decide which caring work to do because they are the ones that work with the system and know where the friction and inefficiencies are happening, and have better information to fix them. We think that this makes sense from the point of view of the lean principle of [Empowering the team](https://en.wikipedia.org/wiki/Lean_software_development#Empower_the_team). Besides, the DevOps movement also defends that engineering should spend the time devoted to caring work as they see fit<a href="#nota12"><sup>[12]</sup></a> (which for them amounts to at least 20% of the team’s time).
 
-As we mentioned before, even though we tried that the discussion of the concerns and the proposed corrective actions focused on what the engineering team could control and change at any given moment, some concerns might go beyond that, or required knowledge that the members of the team didn’t have yet. In those cases, we either invited whoever could provide the needed information to the concerns meeting, or took the specific concern to the retrospective. 
+Besides, the cultural dynamic around the B2B team when we started, was characterised by a strong power imbalance between the product and engineering teams which left the latter little autonomy and agency. In order to create a space safe from this vicious dynamic, we decided to discuss the concerns in a separate meeting in which only the members of the engineering team could participate. This strong boundary fostered the autonomy of the engineering team and made caring work possible<a href="#nota13"><sup>[13]</sup></a>.
 
+Having said that, some concerns needed a different approach. 
 
-We’d like to state that by no means the concerns meeting should substitute retrospectives. As we have discussed, they have different (though sometimes a bit overlapping) goals. We think that they are both useful and should be complementary.
+1. Concerns that went beyond what the engineering team could control and change, or that required knowledge that the members of the team didn’t have yet. In those cases, we either invited whoever could provide the needed information to the concerns meeting, or took the specific concern to the retrospective. 
 
-Some concerns caused by how the company organised the teams had to be escalated. Those kinds of problems caused by [Conway’s Law](https://en.wikipedia.org/wiki/Conway%27s_law) are very hard to fix, and their symptoms can at best be mitigated. Taking those problems to the retrospective might be a first step to gather more information before escalating them.
+2. Concerns caused by blocks due to how the company organised the teams. These kinds of problems related to [Conway’s Law](https://en.wikipedia.org/wiki/Conway%27s_law) are very hard to fix, and their symptoms can at best be mitigated within the team. We took those concerns to the retrospective as a first step to gather more information before escalating them.
 
 ## Summary·
 
-In this post we have explained how we applied the concept of caring work in several teams of [Lifull Connect](https://www.lifullconnect.com/) for more than a year<a href="#nota14"><sup>[14]</sup></a>.
+In this post we have explained how we applied the concept of caring work in several teams of [Lifull Connect](https://www.lifullconnect.com/) for more than a year. Remember that the application of this concept depends on the team’s context. Do not take this as “a recipe for applying caring work” or “the way to apply caring work”.
 
 We, first, showed how we created a safe space for caring work by devoting a given percentage of time/effort to it in every iteration, and by giving autonomy and agency to developers to decide which caring work was needed.
 
@@ -187,11 +189,9 @@ We also described how we collected, prioritised and discussed concerns each iter
 
 Finally, we gave our reasons for using a separate meeting to discuss concerns instead of using the retrospective.
 
-Añadir caveat aquí o al principio del párrafo.
-
 ## Acknowledgements
 
-Thanks to Lifull's Barcelona B2B team, for all the effort and great work they did to make the concerns mechanism work for them. That great work made it much easier for other teams in Lifull to start applying the idea of caring work with the help of other Codesai coaches.
+Thanks to [Lifull Connect](https://www.lifullconnect.com/)'s Barcelona B2B team, for all the effort and great work they did to make the concerns mechanism work for them. That great work made it much easier for other teams in [Lifull Connect](https://www.lifullconnect.com/) to start applying the idea of caring work with the help of other Codesai coaches.
 
 Finally, thanks to my Codesai colleagues, [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Rubén Díaz](https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/), [Dani Ojeda](https://www.linkedin.com/in/danielojedaloisel/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), for giving me feedback about drafts of this post.
 
@@ -228,21 +228,23 @@ According to Cagan, “Product management takes 20% of the team’s capacity rig
 “By dedicating 20% of our cycles so that Dev and Ops can create lasting countermeasures  to the problems we encounter in our daily work, we ensure that technical debt doesn't impede our ability to quickly and safely develop and operate our services in production.”
 — [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
 
-According to Cagan again, “if you’re in really bad shape today, you might need to make this 30% or even more of the resources. However, I get nervous when I find teams that think they can get away with much less than 20%”. This aligns with what we had to propose in some other teams we coached in Lifull.
+According to Cagan again, “if you’re in really bad shape today, you might need to make this 30% or even more of the resources. However, I get nervous when I find teams that think they can get away with much less than 20%”. This aligns with what we had to propose in some other teams we coached in [Lifull Connect](https://www.lifullconnect.com/).
 
 <a name="nota4"></a> [4] Read about those change levers in our previous post about caring work: [The value of caring](https://codesai.com/2020/06/caring), [Manuel Rivero](https://garajeando.blogspot.com/).
 
-<a name="nota5"></a> [5] At first, we thought we had widened Xavi's definition of concern. In his talk, he focused mostly on concerns in code as a way to avoid blocking code reviews. Instead, we decided to raise concerns about any inefficiency or waste that we observed in the whole software value stream from development to delivery. Later in a personal conversation with [Ricardo Borillo](https://twitter.com/borillo?lang=en), who was researching how concerns are used in the wild, we discovered that they (Xavi and Ricardo) are using concerns in the same way we are, but Xavi did not manage to transmit this in his talk because of excessively focusing on code reviews.
+<a name="nota5"></a> [5] At first, we thought we had widened Xavi's definition of concern. In his talk, he focused mostly on concerns in code as a way to avoid blocking code reviews. Instead, we decided to raise concerns about any inefficiency or waste that we observed in the part of the software value stream comprising development to delivery. Later in a personal conversation with [Ricardo Borillo](https://twitter.com/borillo?lang=en), who was researching how concerns are used in the wild, we discovered that they (Xavi and Ricardo) are using concerns in the same way we are, but Xavi did not manage to transmit this in his talk because of excessively focusing on code reviews.
 
 <a name="nota6"></a> [6] The talk about Consensus Driven Development is in Spanish. 
 
 
 <a name="nota7"></a>  [7]  These ideas are related to [Richard Gabriel](https://en.wikipedia.org/wiki/Richard_P._Gabriel)'s idea of [software habitability](https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf), and [Alexandru Bolboaca](https://www.linkedin.com/in/alexandrubolboaca/)’s ideas in his book [Usable software Design](https://leanpub.com/usablesoftwaredesign). We think, both, are in turn,  based on [Deming](https://en.wikipedia.org/wiki/W._Edwards_Deming)'s idea that a system has a huge influence on a person's performance:  
 
+<blockquote>
 "A Bad System Will Beat a Good Person Every Time." 
 — W. Edwards Deming
+</blockquote>
 
-<a name="nota8"></a> [8] At the beginning only [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and I worked with the Lifull’s Barcelona B2B team. Even though we later got more critical mass when [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Manuel Tordesillas](https://www.linkedin.com/in/mjtordesillas/) and [Álvaro García](https://twitter.com/alvarobiz) joined the team, by that time the B2B team had already doubled in size, so we still were outnumbered.
+<a name="nota8"></a> [8] At the beginning only [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and I worked with [Lifull Connect](https://www.lifullconnect.com/)'s Barcelona B2B team. Even though we later got more critical mass when [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Manuel Tordesillas](https://www.linkedin.com/in/mjtordesillas/) and [Álvaro García](https://twitter.com/alvarobiz) joined the team, by that time the B2B team had already doubled in size, so we still were outnumbered.
 
 <a name="nota9"></a> [9] We decided to use only three levels of priority following the early three categories of [triage in medicine](https://en.wikipedia.org/wiki/Triage#History). Some teams decided to use prioritisation models with more categories, but it resulted in a lot of confusion at the time of prioritising. We think it’s better to keep it simple and use only the three categories mentioned: high, medium and low.
 
