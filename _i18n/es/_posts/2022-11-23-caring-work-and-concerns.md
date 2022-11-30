@@ -43,14 +43,11 @@ We took two main decisions<a href="#nota2"><sup>[2]</sup></a>:
 — Frank Herbert
 </blockquote>
 
-Aside from the idea of caring work we had identified other change levers<a href="#nota4"><sup>[4]</sup></a> to try to modify the team’s dynamics. With the intention of shaking the system, we initially applied several changes to how the team worked that acted on most of the change levers. It was a huge shake that we did in the hope that it would unlock the system from its previous dynamics. 
-
-Then we had to observe what new dynamics started to form and apply corrections. But, how could we sense the dynamics of the system in order to adapt to it? 
-
-
-In a complex system, cause and effect can only be deduced in retrospect (if they can at all). The system is in constant flux. There are no best practices, only heuristics. We need to probe, sense and respond.
+A complex system is in constant flux, and any action may change the system in unpredictable ways. So after applying any change<a href="#nota4"><sup>[4]</sup></a> we have to observe the new dynamics that start to form and apply suitable corrections. But, how could we sense the dynamics of the system in order to adapt to it? 
 
 We decided to use a <b>concerns mechanism</b> to detect system health problems and try to solve them as we went. 
+
+### The concerns mechanism.
 
 A concern might be anything someone working on the system doesn't understand, doesn’t agree with, thinks that might be problematic, or thinks that might be changed to improve the system’s sustainability. The concept of a concern<a href="#nota5"><sup>[5]</sup></a> was described by <a href="https://twitter.com/XaV1uzz">Xavi Gost</a> in his talk <a href="https://www.youtube.com/watch?v=pp8j1ggCaoM"> Consensus-driven development (CDD)</a><a href="#nota6"><sup>[6]</sup></a>. 
 
@@ -92,14 +89,14 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Concerns tool summary.</strong></figcaption>
 </figure>
 
-### Concerns collection and prioritisation.
+#### Concerns collection and prioritisation.
 
 During an iteration, the team raised concerns by describing them in a card that was added to a separate board dedicated to this purpose. Below you can see the concerns board of one the teams:
 
 
 
 <figure>
-<img src="/assets/trello_concerns_proppit.png"
+<img src="/assets/trello_concerns_censurado.png"
 alt="Concerns board."
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Concerns board.</strong></figcaption>
@@ -109,7 +106,7 @@ At the end of the iteration, we had a fifteen-to-thirty-minutes meeting in which
 
 To prioritise a concern, after a brief explanation of the concern followed by some questions to clarify possible doubts, the team members responded in parallel to the question of “how important do you think discussing this particular concern is?”. To reach to a consensus about the priority, we used a variant of the planning poker dynamics<a href="#nota10"><sup>[10]</sup></a> with only three cards with values 1, 2 and 3, which corresponded to low, medium and high priorities, respectively. We used [PlanITPoker](https://www.planitpoker.com/) but any similar tool will do.
 
-### Concerns discussion and outcomes.
+#### Concerns discussion and outcomes.
 
 Once a week we held a one-hour meeting to discuss the concerns with higher priority. For each concern card, the team members that had raised it, explained further the concern’s description, and answered any doubts that the rest of the team may have about the concern. Sometimes, other team members provided information about similar problems they had observed in other parts of the system.
 
@@ -157,7 +154,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Example of a caring task originated by the discussion of a concern.</strong></figcaption>
 </figure>
 
-## Why did we decide to discuss concerns in a dedicated meeting instead of using the retrospective?
+### Why did we decide to discuss concerns in a dedicated meeting instead of using the retrospective?
 
 Retrospectives are also a meeting that provides a space to reflect and learn, in order to improve the efficiency of a team. They ideally include all the people that might help finding better ways of delivering value (product, tech, ux...). Why not use them, then?
 
@@ -233,7 +230,7 @@ According to Cagan, “Product management takes 20% of the team’s capacity rig
 
 According to Cagan again, “if you’re in really bad shape today, you might need to make this 30% or even more of the resources. However, I get nervous when I find teams that think they can get away with much less than 20%”. This aligns with what we had to propose in some other teams we coached in [Lifull Connect](https://www.lifullconnect.com/).
 
-<a name="nota4"></a> [4] Read about those change levers in our previous post about caring work: [The value of caring](https://codesai.com/2020/06/caring), [Manuel Rivero](https://garajeando.blogspot.com/).
+<a name="nota4"></a> [4] With the intention of unlocking the system from its initial dynamics, we started by applying several changes to how the team worked. These initial changes were related to the change levers we had identified in the team’s dynamics. Read about them in our previous post about caring work: [The value of caring](https://codesai.com/2020/06/caring), [Manuel Rivero](https://garajeando.blogspot.com/).
 
 <a name="nota5"></a> [5] At first, we thought we had widened Xavi's definition of concern. In his talk, he focused mostly on concerns in code as a way to avoid blocking code reviews. Instead, we decided to raise concerns about any inefficiency or waste that we observed in the part of the software value stream comprising development to delivery. Later in a personal conversation with [Ricardo Borillo](https://twitter.com/borillo?lang=en), who was researching how concerns are used in the wild, we discovered that they (Xavi and Ricardo) are using concerns in the same way we are, but Xavi did not manage to transmit this in his talk because of excessively focusing on code reviews.
 
