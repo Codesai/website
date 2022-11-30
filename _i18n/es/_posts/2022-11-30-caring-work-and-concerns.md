@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Caring Work and where to find it: concerns mechanism"
-date: 2022-11-23 06:00:00.000000000 +01:00
+date: 2022-11-30 06:00:00.000000000 +01:00
 type: post
 categories:
   - Caring Work
