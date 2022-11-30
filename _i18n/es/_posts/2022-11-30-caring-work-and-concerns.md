@@ -90,7 +90,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 #### Concerns collection and prioritisation.
 
-During an iteration, the team raised concerns by describing them in a card that was added to a separate board dedicated to this purpose. Below you can see the concerns board of one the teams:
+During an iteration, the team raised concerns by describing each of them in cards that were added to a separate board dedicated to this purpose. Below you can see the concerns board of one the teams:
 
 
 
@@ -103,7 +103,9 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 At the end of the iteration, we had a fifteen-to-thirty-minutes meeting in which we prioritised the new concerns on the **Pending to prioritize** column. We used three possible levels of priority: high, medium or low<a href="#nota9"><sup>[9]</sup></a>. 
 
-To prioritise a concern, after a brief explanation of the concern followed by some questions to clarify possible doubts, the team members responded in parallel to the question of “how important do you think discussing this particular concern is?”. A variant of the planning poker dynamics with only three cards with values 1, 2 and 3, which corresponded to low, medium and high priorities, respectively<a href="#nota10"><sup>[10]</sup></a> helped us reach consensus about the priority. We used  [PlanITPoker](https://www.planitpoker.com/) but any similar tool will do.
+To prioritise a concern, after a brief explanation of the concern followed by some questions to clarify possible doubts, the team members responded in parallel to the question of “how important do you think discussing this particular concern is?”. 
+
+A variant of the planning poker dynamics with only three cards with values 1, 2 or 3, which corresponded to low, medium and high priority, respectively<a href="#nota10"><sup>[10]</sup></a> helped us reach consensus about the priority. We used [PlanITPoker](https://www.planitpoker.com/) but any similar tool will do.
 
 #### Concerns discussion and outcomes.
 
@@ -140,10 +142,9 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Example of reaching a new consensus after discussing a concern.</strong></figcaption>
 </figure>
 
-Notice how we recorded the new agreement as a comment in the Trello card. We think that it might be more useful to document these agreements that make the consensus explicit in <b>Consensus Records, (CRs)</b> that might follow a format similar to the [Architectural Decision Records, (ADRs)](https://adr.github.io/).
+Notice how we recorded the new agreement as a comment in the [Trello](https://trello.com) card. We think that it might be more useful to document these agreements that make the consensus explicit in <b>Consensus Records, (CRs)</b> that might follow a format similar to the [Architectural Decision Records, (ADRs)](https://adr.github.io/).
 
 The following figure shows a caring task produced after discussing a concern about an action that had accumulated too many collaborators, and recorded how the team had decided that they could reduce the number of collaborations and remove some duplication:
-
 
 
 <figure>
@@ -204,17 +205,16 @@ Finally I’d also like to thank [Karolina Grabowska](https://www.pexels.com/es-
 — [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
 
 
-
 <figure>
-<img src="/assets/devops_handbook_ch_061.png"
-alt="Invest 20% of cycles on those that create positive user-invisible value (The DevOps Handbook)”
+<img src="/assets/devops_handbook_ch_061.png" 
+alt="Invest 20% of cycles on those that create positive user-invisible value from The DevOps Handbook."
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>"Invest 20% of cycles on those that create positive user-invisible value” from The DevOps Handbook.</strong></figcaption>
 </figure>
 
-<a name="nota3"></a> [3] The first team we worked with devoted 20% of their time to caring work and 80% to productive work. Other teams that later worked with us distributed the work in different proportions. The minimum portion dedicated to caring work was 20%.
+<a name="nota3"></a> [3] The first team we worked with devoted 20% of their time to caring work and 80% to productive work. Other teams that later worked with us distributed the work in different proportions (never less than 20% to caring work).
 
-Note that 20% is the minimum recommended to keep a healthy system:
+Note that 20% is the minimum recommended in [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook) to keep a healthy system:
 
 The DevOps Handbook authors quote Marty Cagan’s book [Inspired: How To Create Products Customers Love](https://www.goodreads.com/book/show/35249663-inspired). 
 
