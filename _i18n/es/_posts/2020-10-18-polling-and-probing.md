@@ -4,10 +4,11 @@ title: "Sleeping is not the best option"
 date: 2020-10-17 06:00:00.000000000 +01:00
 type: post
 categories:
-  - Testing
+  - Async Testing
   - PHP
   - Connascence 
   - Refactoring
+  - Integration Testing
 small_image: sleepy_cat.jpg
 author: Manuel Rivero
 twitter: trikitrok
