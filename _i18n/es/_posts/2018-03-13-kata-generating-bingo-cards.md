@@ -10,7 +10,7 @@ categories:
   - Learning
   - Clojure/ClojureScript
   - Test Driven Development
-  - Property-based testing
+  - Property-based Testing
   - Katas
 author: Manuel Rivero
 twitter: trikitrok

@@ -5,7 +5,7 @@ date: 2019-07-29 06:00:00.000000000 +01:00
 type: post
 categories:
   - Testing
-  - Property-based testing
+  - Property-based Testing
   - Katas
   - Clojure/ClojureScript
 small_image: baby-child-hand-1776137.jpg

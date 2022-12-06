@@ -7,7 +7,7 @@ published: true
 status: publish
 categories:
   - Learning
-  - Property-based testing
+  - Property-based Testing
   - Testing
 author: Manuel Rivero
 twitter: trikitrok
