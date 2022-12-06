@@ -9,7 +9,7 @@ categories:
 - Design 
 - Code Smells 
 - Testing
-- Solid 
+- SOLID 
 author: Fran Reyes & Manuel Rivero
 twitter: codesaidev 
 small_image: shotgun-surgery.jpg
