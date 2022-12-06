@@ -8,10 +8,10 @@ status: publish
 categories:
   - Learning
   - Test Driven Development
-  - Contract testing
-  - Role testing
+  - Contract Testing
+  - Role Testing
   - Object-Oriented Design  
-  - Polymorphic testing
+  - Polymorphic Testing
   - Testing
   - Test Doubles
 author: Manuel Rivero
