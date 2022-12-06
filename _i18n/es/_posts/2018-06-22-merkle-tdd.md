@@ -9,7 +9,7 @@ categories:
   - Codesai
   - News
   - TDD
-  - Formación
+  - Training
 author: Miguel Viera, Alfredo Casado & Manuel Rivero
 twitter: codesaidev
 small_image: merkle_tdd_training_1_2018_small.jpg

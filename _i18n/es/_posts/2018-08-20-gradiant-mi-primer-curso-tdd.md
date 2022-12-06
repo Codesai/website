@@ -8,7 +8,7 @@ status: publish
 categories:
   - Codesai
   - TDD
-  - Formación
+  - Training
   - News
 author: Toño de la Torre
 twitter: adelatorrefoss

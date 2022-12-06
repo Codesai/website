@@ -8,7 +8,7 @@ type: post
 published: true
 status: publish
 categories:
-  - Formación
+  - Training
   - TDD
   - News
 tags: []

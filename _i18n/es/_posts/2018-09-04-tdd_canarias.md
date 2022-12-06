@@ -9,7 +9,7 @@ categories:
   - Codesai
   - News
   - TDD
-  - Formación
+  - Training
 small_image: small_potatoes-vegetables.jpeg
 author: Manuel Rivero
 twitter: trikitrok
