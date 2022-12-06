@@ -7,13 +7,11 @@ published: true
 status: publish
 categories:
   - Learning
-  - Property-based testing
+  - Property-based Testing
   - Test Driven Development
   - Clojure/ClojureScript
   - Katas
-  - Learning
   - Community
-  - Comunidad
 
 author: Manuel Rivero
 twitter: trikitrok

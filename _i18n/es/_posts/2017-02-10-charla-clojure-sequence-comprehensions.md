@@ -3,7 +3,6 @@ title: Charla sobre sequence comprehensions en Clojure
 layout: post
 date: 2017-02-10T00:08:00+00:00
 categories:
-  - Comunidad
   - Community
   - Learning
   - Clojure/ClojureScript

@@ -7,7 +7,6 @@ categories:
   - Katas
   - Learning
   - Community
-  - Comunidad
   - Object-Oriented Design
 small_image: beverages_prices_small.jpeg
 author: Manuel Rivero

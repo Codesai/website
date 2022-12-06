@@ -6,8 +6,7 @@ type: post
 categories:
   - Clojure/ClojureScript
   - Community
-  - Comunidad
-  - Eventos
+  - Functional Programming
   - Events
 small_image: clojurebridge.png
 author: Manuel Rivero

@@ -8,9 +8,7 @@ status: publish
 categories:
   - Codesai
   - News
-  - Comunidad
   - Community
-  - Eventos
   - Events
   - Functional Programming
 author: Miguel Viera

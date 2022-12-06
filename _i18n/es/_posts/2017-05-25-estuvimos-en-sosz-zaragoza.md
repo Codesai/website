@@ -6,9 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-  - Comunidad
   - Community
-  - Eventos
   - Events
   - Startups
   - News
