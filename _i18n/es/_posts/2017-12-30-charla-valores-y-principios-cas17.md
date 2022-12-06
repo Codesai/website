@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-  - Eventos
+  - Events
   - Events
   - Charlas
   - News

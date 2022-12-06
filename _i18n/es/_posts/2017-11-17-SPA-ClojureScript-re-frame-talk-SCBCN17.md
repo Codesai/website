@@ -9,7 +9,7 @@ categories:
   - Codesai
   - News
   - Software Craft
-  - Eventos
+  - Events
   - Events
   - Clojure/ClojureScript
   - re-frame

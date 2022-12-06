@@ -7,7 +7,7 @@ published: true
 status: publish
 categories:
   - Codesai
-  - Eventos
+  - Events
   - News
 tags: []
 meta:
