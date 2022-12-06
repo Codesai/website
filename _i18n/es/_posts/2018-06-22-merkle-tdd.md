@@ -8,7 +8,7 @@ status: publish
 categories:
   - Codesai
   - News
-  - Test Driven Development
+  - TDD
   - Formación
 author: Miguel Viera, Alfredo Casado & Manuel Rivero
 twitter: codesaidev

@@ -7,7 +7,7 @@ published: true
 status: publish
 categories:
   - Learning
-  - Test Driven Development
+  - TDD
 author: Manuel Rivero
 twitter: trikitrok
 small_image: small_explore_flag.jpg

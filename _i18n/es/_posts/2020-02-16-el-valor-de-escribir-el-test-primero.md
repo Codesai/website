@@ -5,7 +5,7 @@ type: post
 date: 2020-02-16 15:00:00.000000000 +01:00
 categories:
   - Testing
-  - Test Driven Development
+  - TDD
   - Object-Oriented Design
   - Design Patterns
   - Refactoring
@@ -30,8 +30,8 @@ A medida que lo practicamos y adquirimos fluidez, vamos descubriendo el gran val
 
 He querido desarrollar una charla para hacer hincapié en varios argumentos sobre el por qué de escribir el test primero, en lugar de hacerlo de forma automática puesto que simplemente se trata del primer paso a seguir en el ciclo. También quise ilustrar algunos de esos argumentos con ejemplos de live coding para que se pudiera (espero) apreciar cómo el ser consciente de éstos afecta al flujo de desarrollo. Y sobretodo, intentar que se recuerde el siguiente mensaje:
 
-- Test Driven Development = Diseñar
-- Escribir el test primero = Pensar
+* TDD = Diseñar
+* Escribir el test primero = Pensar
 
 Tuve la oportunidad de presentarla en esta pasada CAS 2019, y ahora se puede ver en el enlace a continuación.
 

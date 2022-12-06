@@ -7,7 +7,7 @@ published: true
 status: publish
 categories:
   - Formación
-  - Test Driven Development
+  - TDD
   - News
 tags: []
 author: Miguel Viera

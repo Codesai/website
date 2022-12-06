@@ -9,7 +9,7 @@ categories:
   - Functional Programming
   - Learning
   - Clojure/ClojureScript
-  - Test Driven Development
+  - TDD
   - Property-based Testing
   - Katas
 author: Manuel Rivero

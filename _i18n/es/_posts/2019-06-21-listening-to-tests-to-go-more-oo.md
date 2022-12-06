@@ -6,7 +6,7 @@ type: post
 categories:
   - Testing
   - PHP
-  - Test Driven Development
+  - TDD
   - Object-Oriented Design
   - Design Patterns
   - Refactoring

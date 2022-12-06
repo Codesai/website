@@ -10,7 +10,7 @@ categories:
   - Redux
   - JavaScript
   - Testing
-  - Test Driven Development
+  - TDD
 tags: []
 author: Carlos Blé
 twitter: carlosble

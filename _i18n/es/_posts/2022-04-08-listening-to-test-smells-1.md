@@ -7,7 +7,7 @@ published: true
 status: publish
 categories:
   - Learning
-  - Test Driven Development
+  - TDD
   - Testing
   - Test Smells
   - Object-Oriented Design

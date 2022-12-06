@@ -7,7 +7,7 @@ published: true
 status: publish
 categories:
   - Books
-  - Test Driven Development
+  - TDD
   - Learning
   - Object-Oriented Design
 tags: []

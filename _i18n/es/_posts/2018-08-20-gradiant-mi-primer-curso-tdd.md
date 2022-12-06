@@ -7,7 +7,7 @@ published: true
 status: publish
 categories:
   - Codesai
-  - Test Driven Development
+  - TDD
   - Formación
   - News
 author: Toño de la Torre

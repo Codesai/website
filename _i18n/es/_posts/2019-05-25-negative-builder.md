@@ -7,7 +7,7 @@ categories:
   - Builders
   - Testing
   - PHP
-  - Test Driven Development
+  - TDD
   - Design Patterns
   - Refactoring
 small_image: accurate-boy-build-298825.jpg

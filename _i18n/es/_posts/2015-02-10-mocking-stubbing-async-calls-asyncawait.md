@@ -8,7 +8,7 @@ type: post
 published: true
 status: publish
 categories:
-  - Test Driven Development
+  - TDD
   - Testing 
   - C#
   - .Net

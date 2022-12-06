@@ -8,7 +8,7 @@ status: publish
 categories:
   - Codesai
   - News
-  - Test Driven Development
+  - TDD
   - Formación
 small_image: small_potatoes-vegetables.jpeg
 author: Manuel Rivero

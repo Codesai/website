@@ -8,7 +8,7 @@ status: publish
 categories:
   - Learning
   - Property-based Testing
-  - Test Driven Development
+  - TDD
   - Clojure/ClojureScript
   - Katas
   - Community
