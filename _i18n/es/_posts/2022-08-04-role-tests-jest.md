@@ -7,12 +7,12 @@ published: true
 status: publish
 categories:
 - Learning
-- Contract testing
-- Role testing
+- Contract Testing
+- Role Testing
 - Testing
 - Object-Oriented Design
-- Polymorphic testing
-- Integration tests
+- Polymorphic Testing
+- Integration Testing
 - Design Patterns
 author: Manuel Rivero
 twitter: trikitrok
