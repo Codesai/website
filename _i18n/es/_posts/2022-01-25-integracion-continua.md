@@ -5,7 +5,7 @@ date: 2022-01-25 00:00:00.000000000 +00:00
 type: post
 categories:
 - Good Practices
-- XP
+- XP & Agile
 - Continuous Integration
 - TBD
 - Trunk Based Development

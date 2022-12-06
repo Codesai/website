@@ -9,7 +9,7 @@ categories:
 - Continuous Integration
 - Continuous Delivery
 - Good Practices
-- XP
+- XP & Agile
 - TBD
 small_image: svn-meme.jpg
 author: Alfredo Casado
