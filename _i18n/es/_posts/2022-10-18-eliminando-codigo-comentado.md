@@ -7,7 +7,7 @@ published: true
 status: publish
 categories:
 - Design 
-- Code smells 
+- Code Smells 
 author: Fran Reyes & Manuel Rivero
 twitter: codesaidev 
 small_image: code-comments.jpg

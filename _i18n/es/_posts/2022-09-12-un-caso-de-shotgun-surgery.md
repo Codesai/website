@@ -7,7 +7,7 @@ published: true
 status: publish
 categories:
 - Design 
-- Code smells 
+- Code Smells 
 - Testing
 - Solid 
 author: Fran Reyes & Manuel Rivero
