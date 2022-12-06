@@ -4,8 +4,8 @@ title: "Entrevistas para la Agile Alliance"
 date: 2021-02-10 00:00:00.000000000 +00:00
 type: post
 categories:
-- Agile
-- Caring
+- XP & Agile
+- Caring Work
 - Entrevistas
 - DDD
 - Juan Banda

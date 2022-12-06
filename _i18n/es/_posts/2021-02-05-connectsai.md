@@ -7,7 +7,7 @@ categories:
 - Events
 - Testing
 - DDD
-- Agile
+- XP & Agile
 small_image: posts/remote-event.jpeg
 author: Codesai
 twitter: codesaidev

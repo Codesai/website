@@ -5,9 +5,9 @@ date: 2019-05-23 08:00:00.000000000 +02:00
 type: post
 categories:
   - Charlas
-  - Agile
+  - XP & Agile
   - Conferences
-  - Personal  
+  - Personal
 author: Toño de la Torre
 twitter: adelatorrefoss
 small_image: small-post-una-vida-cas-2018-talk-245.jpeg
