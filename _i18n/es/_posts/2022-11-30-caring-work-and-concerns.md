@@ -275,7 +275,7 @@ The DevOps Handbook quotes Marty Cagan arguing about the kind of work that the t
 
 ### Articles
 
-[The value of caring](https://codesai.com/2020/06/caring), [Manuel Rivero](https://garajeando.blogspot.com/)
+- [The value of caring](https://codesai.com/2020/06/caring), [Manuel Rivero](https://garajeando.blogspot.com/)
 
 ### Talks
 
