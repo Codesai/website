@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Split or condition in if refactoring in TypeScript"
-date: 2022-12-28 06:00:00.000000000 +01:00
+date: 2022-12-29 06:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -11,7 +11,7 @@ categories:
 - TypeScript
 author: Manuel Rivero
 twitter: trikitrok
-small_image: 
+small_image: small_split_or_ts.jpg
 written_in: english
 cross_post_url:
 ---
@@ -65,3 +65,17 @@ We hope this revision of the **Split or condition in if** refactoring would be u
 
 I’d like to thank [Fran Reyes](https://twitter.com/fran_reyes) for recording the **Split or condition in if** refactoring video in this post, and for giving me feedback on the contents of this post.
 
+I’d also like to thank [Yuliya kota](https://www.pexels.com/@yuliya-kota-2099022/) for her photo.
+
+## References
+
+### Articles
+
+- ["Split or condition in if" refactoring](https://codesai.com/posts/2022/10/split-or-condition), [Manuel Rivero](https://garajeando.blogspot.com/)
+
+- [TypeScript errors and how to fix them](https://typescript.tv/errors/)
+
+- [TypeScript 3.7 Release Notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html)
+
+<br>
+Photo by [Yuliya kota](https://www.pexels.com/@yuliya-kota-2099022/).
