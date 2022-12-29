@@ -46,6 +46,8 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 If your IDE does not have this refactoring automated, you can use the following mechanics to safely split the **or** condition in the if:
 
+<a name="mechanics"></a> 
+
 <ol>
     <li>
        Duplicate the if. <br>
