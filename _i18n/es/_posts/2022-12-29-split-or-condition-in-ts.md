@@ -69,7 +69,7 @@ We hope this revision of the **Split or condition in if** refactoring would be u
 
 I’d like to thank [Fran Reyes](https://twitter.com/fran_reyes) for recording the **Split or condition in if** refactoring video in this post, and for giving me feedback on the contents of this post.
 
-I’d also like to thank [Yuliya kota](https://www.pexels.com/@yuliya-kota-2099022/) for her photo.
+I’d also like to thank [Yuliya Kota](https://www.pexels.com/@yuliya-kota-2099022/) for her photo.
 
 ## References
 
@@ -82,4 +82,4 @@ I’d also like to thank [Yuliya kota](https://www.pexels.com/@yuliya-kota-20990
 - [TypeScript 3.7 Release Notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html)
 
 <br>
-Photo by [Yuliya kota](https://www.pexels.com/@yuliya-kota-2099022/).
+Photo by [Yuliya Kota](https://www.pexels.com/@yuliya-kota-2099022/).
