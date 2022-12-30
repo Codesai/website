@@ -41,9 +41,9 @@ We only need to slightly modify the original **Split or condition in if** refact
 
 <ol>
            <li> Add  the <code class="language-plaintext highlighter-rouge"> @ts-nocheck</code> rule to the top of TypeScript files to disable semantic checks.</li>
-  <li>
-    Apply <a href="https://codesai.com/posts/2022/10/split-or-condition/#mechanics">the original <b>Split or condition in if<b> refactoring</a>.
-  </li>
+          <li>
+          Apply <a href="https://codesai.com/posts/2022/10/split-or-condition/#mechanics">the original <b>Split or condition in if</b> refactoring</a>.
+          </li>
            <li>
            Remove obsolete if statements in small steps while being able to get feedback from the tests at any time. 
 </li>
