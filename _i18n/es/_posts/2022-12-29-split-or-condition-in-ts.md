@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Split or condition in if refactoring in TypeScript"
+title: '"Split or condition in if" refactoring in TypeScript'
 date: 2022-12-30 06:00:00.000000000 +01:00
 type: post
 published: true
@@ -40,17 +40,21 @@ Using TypeScript’s `@ts-nocheck` rule will help us getting a shorter feedback 
 We only need to slightly modify the original **Split or condition in if** refactoring mechanics:
 
 <ol>
-           <li> Add  the <code class="language-plaintext highlighter-rouge"> @ts-nocheck</code> rule to the top of TypeScript files to disable semantic checks.</li>
-          <li>
-          Apply <a href="https://codesai.com/posts/2022/10/split-or-condition/#mechanics">the original <b>Split or condition in if</b> refactoring</a>.
-          </li>
-           <li>
-           Remove obsolete if statements in small steps while being able to get feedback from the tests at any time. 
-</li>
-           <li> Remove the  <code class="language-plaintext highlighter-rouge"> @ts-nocheck</code> rule to enable semantic checks again.</li>
+    <li> 
+      Add  the <code class="language-plaintext highlighter-rouge"> @ts-nocheck</code> rule to the top of TypeScript files to disable semantic checks.</li>
+    <li>
+      Apply <a href="https://codesai.com/posts/2022/10/split-or-condition/#mechanics">the original <b>Split or condition in if</b> refactoring
+            </a>.
+    </li>
+    <li>
+      Remove obsolete if statements in small steps while being able to get feedback from the tests at any time. 
+    </li>
+    <li> 
+      Remove the  <code class="language-plaintext highlighter-rouge"> @ts-nocheck</code> rule to enable semantic checks again.
+    </li>
 </ol>
 
-In the following video, we show an example of using `@ts-nocheck` allows us to be able to keep refactoring the code in small steps after applying the **Split or condition in if** refactoring.
+In the following video, we show an example of how using `@ts-nocheck` allows us to be able to keep refactoring the code in small steps after applying the **Split or condition in if** refactoring.
 
 {% include published-video.html video-id="0DWCSGSAGW8" %}
 
