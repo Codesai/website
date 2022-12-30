@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Split or condition in if refactoring in TypeScript"
-date: 2022-12-29 06:00:00.000000000 +01:00
+date: 2022-12-30 06:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -20,7 +20,7 @@ In a [previous post](https://codesai.com/posts/2022/10/split-or-condition) we do
 
 After applying the **Split or condition in if** refactoring, the resulting code will contain duplication, and there may be obsolete if statements containing either unreachable code or code that is always executed, that we will clean. 
 
-If the resulting code contains any if statement whose boolean condition always evaluates to false, i.e. contains unreachable code, the TypeScript compiler will emit a [TS2367 error](https://typescript.tv/errors/#TS2367), even though the code is functionally correct. We show an example of this problem in the following figure.
+If the resulting code contains any if statement whose boolean condition always evaluates to false, the TypeScript compiler will emit a [TS2367 error](https://typescript.tv/errors/#TS2367), even though the code is functionally correct. We show an example of this problem in the following figure.
 
 <figure>
 <img src="/assets/typescript-compilation-error-when-split-or.png"
@@ -29,13 +29,13 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Compiler error when a boolean expression always evaluates to false.</strong></figcaption>
 </figure>
 
-In these cases, the code would not compile again, and as a consequence, we won’t be able to rerun the tests, until we remove all the boolean conditions that always evaluate to false or indicate the compiler to ignore them using `@ts-ignore` or `@ts-expect-error`. This might be ok if there’s only a few *TS2367 errors*, if not, cleaning those expressions will take too much time editing the code without having any feedback from the tests.
+In these cases, the code would not compile again, and as a consequence, the test won’t pass until we remove all the boolean conditions that always evaluate to false or indicate the compiler to ignore them using `@ts-ignore` or `@ts-expect-error`. This might be ok if there are only a few *TS2367 errors*. If not, cleaning those expressions will take too much time editing without having any feedback from the tests.
 
 <h3>Revised mechanics for TypeScript.</h3>
 
 [From TypeScript 3.7 onward](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#-ts-nocheck-in-typescript-files), we can add the `@ts-nocheck` rule to the top of TypeScript files to disable semantic checks (before that version, `@ts-nocheck` only worked for JavaScript files).
 
-Using TypeScript’s `@ts-nocheck` rule will help us getting a shorter feedback cycle again, when cleaning unreachable code resulting from applying the **Split or condition in if** refactoring. 
+Using TypeScript’s `@ts-nocheck` rule will help us getting a shorter feedback cycle again, when cleaning redundant code resulting from applying the **Split or condition in if** refactoring that contains *TS2367 errors*. 
 
 We only need to slightly modify the original **Split or condition in if** refactoring mechanics:
 
@@ -53,7 +53,6 @@ We only need to slightly modify the original **Split or condition in if** refact
 In the following video, we show an example of using `@ts-nocheck` allows us to be able to keep refactoring the code in small steps after applying the **Split or condition in if** refactoring.
 
 {% include published-video.html video-id="0DWCSGSAGW8" %}
-
 
 <h3>Conclusion.</h3>
 
