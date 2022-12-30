@@ -60,7 +60,8 @@ In the following video, we show an example of how using `@ts-nocheck` allows us 
 
 <h3>Conclusion.</h3>
 
-We have described the problem that the code resulting from applying the **Split or condition in if** refactoring may produce in TypeScript, and have provided a way to fix it.  Following this revised mechanics, you will be able to keep refactoring in small steps to remove unreachable code left after applying the **Split or condition in if** refactoring. 
+
+We described a problem that TypeScript developers will find when the code resulting after applying the **Split or condition in if** refactoring contains any boolean condition that always evaluates to false which will produce *TS2367 errors*, and we provided a way to fix it. Following revised **Split or condition in if** refactoring mechanics that we proposed, you will be able to keep refactoring in small steps to remove unreachable code left after applying the **Split or condition in if** refactoring even when there are *TS2367 errors*. 
 
 We hope this revision of the **Split or condition in if** refactoring would be useful for TypeScript developers.
 
