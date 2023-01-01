@@ -7,7 +7,7 @@
         <div class="contact">
             <div class="field">
                 <label for="email">* {% translate components.call_to_action.mail %}</label>
-                <input id="email" name="entry.579934409" type="text" required />
+                <input type="email" id="email" name="entry.579934409" required />
             </div>
 
             <div class="field">
@@ -55,13 +55,13 @@
     }
 
     function submitContactForm() {
-        const email = document.getElementById('email').value;
+        const email = document.getElementById('email').value.trim();
         const name = document.getElementById('name').value || 'noname';
         const subject = document.getElementById('subject').value || '{{ include.defaultMessage }}';
         const privacyAgreement = document.getElementById('privacy-agreement').checked;
         const origin = '{{ include.origin }}';
 
-        if (!email) {
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             alert("{% translate components.call_to_action.alerts.no_email %}");
             return;
         }
