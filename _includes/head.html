@@ -26,16 +26,16 @@
     <script src='{{ site.baseurl_root }}/js/vendor/jquery-3.4.1.slim.min.js'></script>
     <script src='{{ site.baseurl_root }}/js/js-cookie.js'></script>
     <script src='{{ site.baseurl_root }}/js/Cookie.js'></script>
-
-    {% if site.environment == 'production' %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5HTPFFFN4L"></script>
-    <script>
-        window.environment = "production";
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '{{ site.ga_tracking_id }}');
-    </script>
-    {% endif %}
 </head>
+
+{% if site.environment == 'production' %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HTPFFFN4L"></script>
+<script>
+    window.environment = "production";
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.ga_tracking_id }}');
+</script>
+{% endif %}
