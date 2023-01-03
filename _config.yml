@@ -25,7 +25,7 @@ permalink: /posts/:year/:month/:title
 markdown: kramdown
 
 # Google analytics
-ga_tracking_id: "UA-78350023-1"
+ga_tracking_id: "G-5HTPFFFN4L"
 
 # Category descriptions (for archive pages)
 descriptions:
