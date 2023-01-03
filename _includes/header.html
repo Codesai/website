@@ -68,7 +68,6 @@
             acceptButton.addEventListener("click", _ => {
                 cookiePolicyOption.saveCookiesAccepted();
                 cookieBanner.classList.remove("displayed");
-                GoogleAnalytics().setup();
             });
             rejectButton.addEventListener("click", _ => {
                 cookiePolicyOption.saveCookiesRejected();
