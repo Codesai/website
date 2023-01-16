@@ -9,6 +9,18 @@ permalink: /clients/
 {% include header.html %}
 <main class="clients-page">
     <section class="big-clients">
+        {% capture name %}{{ site.translations[site.lang].pages.clients.our_clients.mango.name }}{% endcapture %}
+        {% capture about %}{{ site.translations[site.lang].pages.clients.our_clients.mango.about }}{% endcapture %}
+        {% capture our_work %}{{ site.translations[site.lang].pages.clients.our_clients.mango.our_work }}{% endcapture %}
+        {% capture stack %}{{ site.translations[site.lang].pages.clients.our_clients.mango.stack }}{% endcapture %}
+        {%
+            include components/client.html
+            name=name
+            logo='/assets/clients/mango.svg'
+            about=about
+            work=our_work
+            stack=stack
+        %}
         {% capture name %}{{ site.translations[site.lang].pages.clients.our_clients.lifull.name }}{% endcapture %}
         {% capture about %}{{ site.translations[site.lang].pages.clients.our_clients.lifull.about }}{% endcapture %}
         {% capture our_work %}{{ site.translations[site.lang].pages.clients.our_clients.lifull.our_work }}{% endcapture %}

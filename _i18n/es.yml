@@ -87,7 +87,7 @@ pages:
       lifull:
         name: Lifull Connect
         about: Lifull Connect es uno de los mayores agregadores a nivel mundial en los sectores de empleo, coches y moda, y el mayor en el sector inmobiliario.
-        our_work: <p>Estamos ayudando a varios equipos de Lifull Connect a cambiar su cultura y mejorar su eficiencia, tanto trabajando con código legado como en proyectos nuevos,mediante un acompañamiento intensivo, un programa de práctica deliberada y formaciones específicas (TDD, code smells, refactoring, trabajo con código legado, ...).</p><p>Llevamos más de un año ayudando a varios equipos de Lifull, y ahora estamos empezando a trabajar con un par de equipos más.</p><p>Nuestra relación con Lifull Connect está siendo una simbiosis muy enriquecedora.</p>
+        our_work: <p>Estamos ayudando a varios equipos de Lifull Connect a cambiar su cultura y mejorar su eficiencia, tanto trabajando con código legado como en proyectos nuevos,mediante un acompañamiento intensivo, un programa de práctica deliberada y formaciones específicas (TDD, code smells, refactoring, trabajo con código legado, ...).</p><p>Llevamos alrededor de 3 años en la colaboración Lifull</p><p>Nuestra relación con Lifull Connect está siendo una simbiosis muy enriquecedora.</p>
         stack: <p><strong>Lenguajes de programación:</strong> PHP, Java, Kotlin, Scala, JavaScript.</p><p><strong>Librerías/frameworks:</strong> Symfony, reffects, Play.</p><p><strong>Persistencia:</strong> MySQL, Solr, S3, Spark, Redis.</p>
       buyviu:
         name: Buyviu
@@ -119,6 +119,11 @@ pages:
         about: Start-up revolucionaria dentro de la industria del video-advertising, de plataforma abierta que intenta ayudar a sus clientes a crear video-ads únicos a partir de cualquier dato de producto, para hacer crecer sus negocios de forma rápida y sencilla.
         our_work: Ayudamos a su equipo técnico (relativamente pequeño, entre 7-10 personas) a través de sesiones de pair programming a poner en práctica TDD y a mejorar sus conocimientos sobre diseño orientado a objetos. El resultado fue bastante positivo. Quedaron bastante satisfechos, resolviendo muchas dudas sobre cómo aplicar TDD en su día a día y sobre testing en general.
         stack: <p>Python</p>
+      mango:
+        name: Mango
+        about: Punto Fa, S.L., operando como Mango, es una empresa multinacional española dedicada al diseño, la fabricación y la comercialización de prendas de vestir y complementos para mujer, niño y hombre. La firma, nacida en Barcelona, en la Comunidad autónoma de Cataluña, cuenta con más de 15 000 empleados.
+        our_work: Nos Integramos dentro de distintos equipos de mango para realizar una doble tarea, por un lado en el delivery de nuevas funcionalidades de la aplicación, y por otro lado tratando de ayudar a los equipos con la aplicación de buenas prácticas en las que contamos con amplia experiencia como TDD, Trunk Base Development o técnicas de refactoring incremental.
+        stack: <p><strong>Lenguajes de programación:</strong> Java, Kotlin, Javascript.</p><p><strong>Librerias/Frameworks:</strong> Quarkus, Spring, React.</p><p><strong>Infraestructura:</strong> Docker, AWS, Kubernetes</p><p><strong>Persistencia:</strong> Oracle, Mongo, DynamoDB</p>
     other_clients:
       header: "Hemos ayudado también a mejorar el código de todas estas empresas:"
     contact:
