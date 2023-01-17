@@ -121,8 +121,8 @@ pages:
         stack: <p>Python</p>
       mango:
         name: Mango
-        about: Punto Fa, S.L., operando como Mango, es una empresa multinacional española dedicada al diseño, la fabricación y la comercialización de prendas de vestir y complementos para mujer, niño y hombre. La firma, nacida en Barcelona, en la Comunidad autónoma de Cataluña, cuenta con más de 15 000 empleados.
-        our_work: Nos Integramos dentro de distintos equipos de mango para realizar una doble tarea, por un lado en el delivery de nuevas funcionalidades de la aplicación, y por otro lado tratando de ayudar a los equipos con la aplicación de buenas prácticas en las que contamos con amplia experiencia como TDD, Trunk Base Development o técnicas de refactoring incremental.
+        about: Punto Fa, S.L., más conocida como Mango, es una empresa multinacional española dedicada al diseño, la fabricación y la comercialización de prendas de vestir y complementos para mujer, niño y hombre. La firma, nacida en Barcelona, cuenta con más de 15 000 empleados.
+        our_work: Nos Integramos dentro de distintos equipos de Mango para realizar una doble tarea, por un lado en el delivery de nuevas funcionalidades de la aplicación, y por otro lado tratando de ayudar a los equipos con la aplicación de buenas prácticas en las que contamos con amplia experiencia como TDD, Trunk Base Development o técnicas de refactoring incremental.
         stack: <p><strong>Lenguajes de programación:</strong> Java, Kotlin, Javascript.</p><p><strong>Librerias/Frameworks:</strong> Quarkus, Spring, React.</p><p><strong>Infraestructura:</strong> Docker, AWS, Kubernetes</p><p><strong>Persistencia:</strong> Oracle, Mongo, DynamoDB</p>
     other_clients:
       header: "Hemos ayudado también a mejorar el código de todas estas empresas:"
