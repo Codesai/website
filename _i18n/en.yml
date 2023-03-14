@@ -379,17 +379,27 @@ pages:
           title: Module Two (8h)
           agenda: '<div class="topics">
                     <div class="group"><span>3. </span>Good enough design</div>
+                    <div class="subgroup"><span>&bull;</span> Design Principles and Heuristics</div>
+                    <div class="subgroup"><span>&bull;</span> How they relate with code smells</div>  
                     <div class="group"><span>4. </span>Core Refactorings and refactoring patterns</div>
+                    <div class="subgroup"><span>&bull;</span> 6 Core Refactorings</div>
+                    <div class="subgroup"><span>&bull;</span> Honourable Retreat</div>                    
+                    <div class="subgroup"><span>&bull;</span> Narrowed Change</div>
+                    <div class="subgroup"><span>&bull;</span> Parallel Change</div>                    
+                    <div class="subgroup"><span>&bull;</span> Tips to go on learning about refactoring</div>    
                  </div>'
         day_3:
           title: Module Three (8h)
           agenda: '<div class="topics">
                     <div class="group"><span>5. </span>Hexagonal architecture</div>
+                    <div class="subgroup"><span>&bull;</span> Fundamentals</div>
+                    <div class="subgroup"><span>&bull;</span> Testing strategy</div>  
+                    <div class="subgroup"><span>&bull;</span> Refactoring to hexagonal architecture</div> 
                     <div class="group"><span>6. </span>Workflows and economy of refactoring</div>
                  </div>'
       languages:
         title: Languages
-        text: <p>At the moment the examples and katas are ready for Java and PHP, but if you wish to use another language please let us know.</p>
+        text: <p>At the moment the examples and katas are ready for Java, JavaScript, TypeScript and PHP, but if you wish to use another language please let us know.</p>
       requirements:
         title: Requirements
         text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed.</p>
