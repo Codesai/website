@@ -1,0 +1,100 @@
+---
+title: pages.courses.changing_legacy.title
+permalink: /cursos/changing-legacy/
+permalink_en: /trainings/changing-legacy/
+---
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="course-page">
+        <div class="course">
+
+            <div id="course-information" class="information">
+                <div class="insights">
+                    <div class="course-title">{% translate pages.courses.changing_legacy.name %}</div>
+                    <div class="course-description">
+                        {% translate pages.courses.changing_legacy.text %}
+                    </div>
+
+                    <div class="summary mobile">
+                        {% capture link %}{{ site.translations[site.lang].pages.courses.changing_legacy.call_to_action.link }}{% endcapture %}
+                        {%
+                            include course-summary.html
+                            price='550'
+                            days='2.5'
+                            hours='20'
+                            contact_link=link
+                        %}
+                    </div>
+
+                    <section class="contents">
+                        <div class="title"><span>// </span>{% translate pages.courses.changing_legacy.content.title %}</div>
+                        <div class="description">
+                            <div class="daily-agenda">
+                                {% translate pages.courses.changing_legacy.content.agenda %}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="languages">
+                        <div class="title"><span>// </span>{% translate pages.courses.changing_legacy.languages.title %}</div>
+                        {% translate pages.courses.changing_legacy.languages.text %}
+                    </section>
+
+                    <section class="requirements">
+                        <div class="title"><span>// </span>{% translate pages.courses.changing_legacy.requirements.title %}</div>
+                        {% translate pages.courses.changing_legacy.requirements.text %}
+                    </section>
+
+                    <section class="who">
+                        <div class="title"><span>// </span>{% translate pages.courses.changing_legacy.who.title %}</div>
+                        {% translate pages.courses.changing_legacy.who.text %}
+                    </section>
+
+                    <section class="where">
+                        <div class="title"><span>// </span>{% translate pages.courses.changing_legacy.where.title %}</div>
+                        {% translate pages.courses.changing_legacy.where.text %}
+                    </section>
+                </div>
+                <div class="summary desktop">
+                    {% capture link %}{{ site.translations[site.lang].pages.courses.changing_legacy.call_to_action.link }}{% endcapture %}
+                    {%
+                        include course-summary.html
+                        price='550'
+                        days='2.5'
+                        hours='20'
+                        contact_link=link
+                    %}
+                </div>
+            </div>
+        </div>
+
+        <div class="photos">
+            <div class="photo">
+                <img src="/assets/courses/tdd_course_0.png" alt="">
+            </div>
+            <div class="photo">
+                <img src="/assets/courses/tdd_course_1.png" alt="">
+            </div>
+        </div>
+        {% capture title %}{{ site.translations[site.lang].pages.courses.changing_legacy.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.courses.changing_legacy.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.changing_legacy.call_to_action.placeholder }}{% endcapture %}
+        {% include components/call-to-action.html
+            title=title
+            text=text
+            defaultMessage='Sent from the Changing Legacy page, no message specified'
+            messagePlaceHolder=placeholder
+            origin='Curso Cambiando Legacy'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
