@@ -168,7 +168,7 @@ pages:
       agenda:
         title: Contenido
         day_1:
-          title: Primer día
+          title: Primer bloque
           content: '<div class="topics">
                       <div class="group"><span>1.</span> Introducción a TDD</div>
                       <div class="subgroup"><span>&bull;</span> ¿Por qué TDD?</div>
@@ -181,7 +181,7 @@ pages:
                       <div class="subgroup"><span>&bull;</span> Principios de diseño</div>
                   </div>'
         day_2:
-          title: Segundo día
+          title: Segundo bloque
           content: '<div class="topics">
           <div class="group"><span>3. </span>Patrones, sostenibilidad y variaciones del ciclo básico</div>
 
