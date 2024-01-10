@@ -7,7 +7,6 @@ published: true
 status: publish
 categories:
   - Codesai
-  - Team
   - News
 author: Codesai
 twitter: codesaidev
