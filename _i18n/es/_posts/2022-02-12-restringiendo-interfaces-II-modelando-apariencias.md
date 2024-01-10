@@ -5,7 +5,7 @@ date: 2022-02-19 00:00:00.000000000 +00:00
 type: post
 categories:
 - Refactoring
-- Design
+- Interface Design
 - Design Patterns
 - Kotlin
 - DDD
