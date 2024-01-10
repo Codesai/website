@@ -8,7 +8,6 @@ categories:
 - Caring Work
 - Entrevistas
 - DDD
-- Juan Banda
 - Agile Alliance
 small_image: posts/entrevistas-agile-alliance.jpg
 author: Codesai
