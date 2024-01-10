@@ -8,7 +8,6 @@ status: publish
 categories:
   - Codesai
   - Flejesai
-  - Organization
 author: Toño de la Torre
 twitter: adelatorrefoss
 small_image: flejesai2017-2-autumn.jpg
