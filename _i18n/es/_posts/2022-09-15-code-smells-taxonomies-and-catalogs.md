@@ -311,7 +311,7 @@ Otros son conceptos ya existentes en la literatura pero que no se habían consid
 
 <a name="jerzyk_code_smell_online_catalog"></a>
 
-Una cosa super útil y práctica para desarrolladores que aporta el trabajo de Jerzyk es la creación de un [catálogo online de code smells](https://luzkan.github.io/smells/) que incluía cuando se publicó los 56 code smells que aparecen en la tabla. Este catálogo es tanto un repositorio open-source como un sitio web accesible y buscable. Actualmente, en la fecha de publicación de este post, el catálogo contiene ya 86 code smells.
+Una cosa super útil y práctica para desarrolladores que aporta el trabajo de Jerzyk es la creación de un [catálogo online de code smells](https://luzkan.github.io/smells/) que incluía cuando se publicó los 56 code smells que aparecen en la tabla. Este catálogo es un sitio web accesible y buscable. En la fecha de publicación de este post, el catálogo contiene 56 code smells.
 
 En el catálogo se pueden buscar los smells por diferentes criterios de clasificación.
 

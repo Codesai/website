@@ -316,7 +316,7 @@ Several smells are new:
 
 <a name="jerzyk_code_smell_online_catalog"></a>
 
-One super useful and practical thing for developers in Jerzyk's work is an [online code smells catalogue](https://luzkan.github.io/smells/) that, when published, included the 56 code smells in the thesis. This catalogue is both an open-source repository and an accessible and searchable website. On the date of publication of this post, the catalogue already contains 86 code smells.
+One super useful and practical thing for developers in Jerzyk's work is an [online code smells catalogue](https://luzkan.github.io/smells/) that, when published, included the 56 code smells in the thesis. This catalogue is an accessible and searchable website. On the date of publication of this post, the catalogue contains 56 code smells.
 
 In the catalogue code smells can be filtered by different classification criteria.
 
