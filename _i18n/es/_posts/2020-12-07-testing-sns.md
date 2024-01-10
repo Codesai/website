@@ -8,6 +8,7 @@ categories:
 - SNS
 - AWS
 - PHP
+- Docker
 small_image: aws-sns.svg
 author: Rubén Díaz
 twitter: rubendm23
