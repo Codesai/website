@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y pngcrush optipng pngquant advancecomp j
 
 RUN npm install -g svgo
 
-RUN gem install bundler
+RUN gem install bundler -v 2.4.22
 
 WORKDIR /app
 
