@@ -91,11 +91,11 @@ After seeing all this, I told the pair that the real problem was the lack of coh
 To strengthen cohesion we need to separate concerns. Let’s see the problem from the point of view of the client of the `RealTimeGalleryAdsRepository` class, (this point of view is generally very useful because the test is also a client of the tested class) and think about what it would want from the `RealTimeGalleryAdsRepository`. It would be something like *“obtain the gallery ads for me”*, that would be the responsibility of the `RealTimeGalleryAdsRepository`, and that’s what the `GalleryAdsRepository` represents.
 
 
-Notice that to satisfy that responsibility we do not need to use a cache, only get some ads from the AdsRepository and map them (the original functionality also included some enrichments using data from other sources but we remove them from the example for the sake of simplicity). Caching is an optimization that we might do or not, it’s a refinement or embellishment to how we satisfy the responsibility but it’s not necessary to satisfy it. In this case, caching changes the *“how”* but not the *“what”*.
+Notice that to satisfy that responsibility we do not need to use a cache, only get some ads from the `AdsRepository` and map them (the original functionality also included some enrichments using data from other sources but we remove them from the example for the sake of simplicity). Caching is an optimization that we might do or not, it’s a refinement of how we satisfy the responsibility but it’s not necessary to satisfy it, so, we might say that caching changes the *“how”* but not the *“what”*.
 
-This matches very well with the [Decorator design pattern](https://en.wikipedia.org/wiki/Decorator_pattern) because this pattern *“comes into play when there are a variety of optional functions that can precede or follow another function that is always executed”*<a href="#nota9"><sup>[9]</sup></a>. Using it would allow us to attach additional behaviour (caching) to the basic required behaviour that satisfied the role that the client needs (*“obtain the gallery ads for me”*). This way instead of having a flag parameter (like `useCache` in the original code) to control whether we cache or not, we might add caching by composing objects that implement the `GalleryAdsRepository`. One of them, `RealTimeGalleryAdsRepository`, would be in charge of getting ads from the AdsRepository and mapping them to gallery ads; and the other one, `CachedGalleryAdsRepository`, would cache the gallery ads. 
+This matches very well with the [Proxy design pattern](https://en.wikipedia.org/wiki/Proxy_pattern) <a href="#nota9"><sup>[9]</sup></a> because it allows us to attach additional behaviour (caching) to the basic behaviour that satisfied the role that the client needs (*“obtain the gallery ads for me”*). This way instead of having a flag parameter (like `useCache` in the original code) to control whether we cache or not, we might add caching by composing two objects that implement the `GalleryAdsRepository` interface. One of them is the object with the basic behaviour, `RealTimeGalleryAdsRepository`, that would be in charge of getting ads from the `AdsRepository` and mapping them to gallery ads, and the other one, `CachedGalleryAdsRepository`, would cache the gallery ads. The object with the basic behaviour might not be called if the proxy decides it does not need to do so.
 
-So we moved the responsibility of caching the ads to the `CachedGalleryAdsRepository` class which decorated the `RealTimeGalleryAdsRepository` class.
+So we moved the responsibility of caching the ads to the `CachedGalleryAdsRepository` class which wraps the `RealTimeGalleryAdsRepository` class.
 
 This is the code of the `CachedGalleryAdsRepository` class:
 <script src="https://gist.github.com/trikitrok/965181644c5aa7e7b51ae0944634611c.js"></script>
@@ -119,7 +119,7 @@ And what about  `RealTimeGalleryAdsRepository`?
 If we have a look at its new code, we can notice that its only concern is how to obtain the list of gallery ads and mapping them from the result of its collaborator `AdsRepository`, and it does not know anything about caching values. So the new design is more cohesive than the original one.
 Notice how we removed both the `resetCache` method that was before polluting its interface only for testing purposes, and the flag argument, `useCache`, in the constructor.
 
-We also reduced its number of collaborators because there’s no need for a `Clock` anymore. That collaborator was needed for a different concern that is now taken care of in the decorator `CachedGalleryAdsRepository`.
+We also reduced its number of collaborators because there’s no need for a `Clock` anymore. The `Clock` collaborator was needed for a different concern that is now taken care of by the proxy: `CachedGalleryAdsRepository`.
 
 These design improvements are reflected in its new tests. They are now more focused, and can only fail if the obtention of the gallery ads breaks. Having only one reason to fail comes from testing a more cohesive unit with only one reason to change.  Notice how these tests coincide with the subset of tests concerned with testing the same behaviour in the original tests of `RealTimeGalleryAdsRepository`:
 
@@ -149,7 +149,7 @@ Notice the factory method that returns a unique instance of the `GalleryAdsRepos
 
 We show a recent example we found working for a client that illustrates how testability problems may usually point, if we listen to them, to the detection of underlying design problems. In this case the problems in the test were pointing to a lack of cohesion in the production code that was being tested. The original class had too many responsibilities.
 
-We refactored the production code to separate concerns by going more OO applying the decorator design pattern. The result was more cohesive production classes that led to more focused tests, and removed the design problems we had detected in the original design. 
+We refactored the production code to separate concerns by going more OO applying the proxy design pattern. The result was more cohesive production classes that led to more focused tests, and removed the design problems we had detected in the original design. 
 
 <h2>Acknowledgements.</h2>
 
@@ -173,7 +173,7 @@ I’d like to thank my Codesai colleagues for reading the initial drafts and giv
 
 <a name="nota8"></a> [8] A [flag Argument](https://martinfowler.com/bliki/FlagArgument.html) is a kind of argument that is telling a function or a class to behave in a different way depending on its value. This might be a signal of poor cohesion in the function or class.
 
-<a name="nota9"></a> [9] Have a look at the discussion in the chapter devoted to the Decorator design pattern in the great book [Design Patterns Explained: A New Perspective on Object-Oriented Design](https://www.goodreads.com/book/show/85021.Design_Patterns_Explained).
+<a name="nota9"></a> [9] A proxy is a wrapper of an object that implements the same interface and controls access to it. A proxy may restrict what a client does by controlling access to some functionality, or it may restrict what a client knows by performing actions that are invisible and unknown to the client. Some examples of using proxies are caching when operations on the real object are resource intensive, or checking preconditions before operations on the real object are invoked. See [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.goodreads.com/book/show/85009.Design_Patterns).
 
  <a name="nota10"></a> [10] [Miško Hevery](http://misko.hevery.com/about/) talks about the singleton pattern with lowercase ‘s’ in its talk [Global State and Singletons
 ](https://testing.googleblog.com/2008/11/clean-code-talks-global-state-and.html) at  10:20: *“Singleton with capital ’S’. Refers to the design pattern where the Singleton has a private constructor and has a global instance variable. Lowercase ’s’ singleton means I only have a single instance of something because I only called the new operator once.”*
