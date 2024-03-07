@@ -49,7 +49,7 @@ the value of the `selectedDrink` field was not being set on the constructor of t
 the `selectDrink` was called. Moreover, the value of the `selectedDrink` field is used to control the flow of the 
 processing of an `Order` because an `Order` can’t be placed until a drink has been selected (if the user tried to make 
 a drink before selecting it, the user was notified that it was not possible and a drink should be selected first). 
-Besides not all drinks can be extra hot. There was no clear way to remove this Temporary Field.
+Besides, not all drinks can be extra hot. There was no clear way to remove this Temporary Field.
 
 A Temporary Field code smell is usually telling us that there might be a missing abstraction, but knowing which one is 
 not so easy. In this case, there were two separate stages in the processing, one before selecting a drink and another 
@@ -74,7 +74,7 @@ https://gist.github.com/trikitrok/9f99768dddea04db0b664d5a77eccea7
 Notice how we had to add the `isOrderReady` predicate to ask `OrderProcessing` if an order is ready to be placed. 
 This predicate was required to alleviate the missing abstractions representing the two phases of the order processing 
 we mentioned before. `makeDrink` was also using other two methods of `OrderProcessing`: the `isThereEnoughMoney` predicate
-to ask it if there’s enough money to pay for the order, and the `createOrder` method of `OrderProcessing` to create an `Order` object. 
+to ask if there’s enough money to pay for the order, and the `createOrder` method of `OrderProcessing` to create an `Order` object. 
 So, there was a [Feature Envy code smell](https://luzkan.github.io/smells/feature-envy) because the `makeDrink` method manipulated more features of the 
 `OrderProcessing` class than from its own. 
 
@@ -97,7 +97,7 @@ and the two predicates that we mentioned before, `isOrderReady` and `isThereEnou
 
 A possible option that could have been considered was to continue insisting on the idea of a builder and return different 
 types depending on the moment in which `createOrder` was being called. Those types would have represented 
-either a valid order, or and invalid order due to different reasons (not selected drink or not enough money). 
+either a valid order, or an invalid order due to different reasons (not selected drink or not enough money). 
 There are different ways to implement this option, but all of them except using some kind of polymorphism on the 
 returning type would complicate the client of `OrderProcessing`, `CoffeeMachine`, with checks on the returned type 
 that would result in a [Special Case code smell](https://luzkan.github.io/smells/special-case) and thus a violation of the [Liskov Substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle). 
@@ -200,7 +200,7 @@ are hidden from its `OrderProcessing` clients.
 We showed how detecting some code smells and trying to remove them led us to a more cohesive and less coupled design.
 
 The initial code presented several code smells. We started by trying to remove the temporary field code smell but we didn’t 
-find an easy way to remove it. The real obstacle to remove it was caused by other code smells: Feature envy and Solution Sprawl.
+find an easy way to remove it. The real obstacle to removing it was caused by other code smells: Feature envy and Solution Sprawl.
 
 Once we removed those smells moving to a more “Tell, don't ask” style we had the whole responsibility of processing 
 the order in one place and an interface that might be valid for all the different phases of the processing. Then it was 
