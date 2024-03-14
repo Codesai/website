@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Using code smells to refactor to more OO code'
-date: 2024-03-07 06:00:00.000000000 +01:00
+date: 2024-03-14 06:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -12,7 +12,7 @@ categories:
 - Design Patterns
 author: Manuel Rivero
 twitter: trikitrok
-small_image: 
+small_image: temporary_field_small.jpg
 written_in: english
 cross_post_url:
 ---
@@ -24,7 +24,7 @@ the [CoffeeMachine kata](https://simcap.github.io/coffeemachine/)<a href="#nota2
 functionality documented by the tests:
 
 <figure>
-<img src="/assets/temporary_field_post_tests_for_initial_code.png"
+<img src="/assets/temporary_field_post_tests_for_initial_code1.png"
 alt="Tests describing the behaviour of the coffee machine."
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Tests describing the behaviour of the coffee machine.</strong></figcaption>
@@ -32,11 +32,9 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 which was implemented by the following code in the `CoffeeMachine` class: 
 <script src="https://gist.github.com/trikitrok/02c7e1780a974601b06731397cca3123.js"></script>
-https://gist.github.com/trikitrok/02c7e1780a974601b06731397cca3123
 
 and the `OrderProcessing` class: 
 <script src="https://gist.github.com/trikitrok/d31441eb7805f23b4402ce2daa3af6ec.js"></script>
-https://gist.github.com/trikitrok/d31441eb7805f23b4402ce2daa3af6ec
 
 Most of the logic to create the `Order` that is later passed to the `DrinkMakerDriver` has been moved to the 
 `OrderProcessing` class. This class originally started as an `OrderBuilder` (see [Builder design pattern](https://en.wikipedia.org/wiki/Builder_pattern)) with the 
@@ -69,7 +67,6 @@ In the code part of the order processing logic was leaking into the `makeDrink` 
 of the `CoffeeMachine` class instead of being instead of being wholly contained in the `OrderProcessing` class:
 
 <script src="https://gist.github.com/trikitrok/9f99768dddea04db0b664d5a77eccea7.js"></script>
-https://gist.github.com/trikitrok/9f99768dddea04db0b664d5a77eccea7
 
 Notice how we had to add the `isOrderReady` predicate to ask `OrderProcessing` if an order is ready to be placed. 
 This predicate was required to alleviate the missing abstractions representing the two phases of the order processing 
@@ -117,13 +114,10 @@ Notice how to do that we had to pass the `DrinkMakerDriver` collaborator as a pa
 This is the code of the`CoffeeMachine` class after this refactoring:
 
 <script src="https://gist.github.com/trikitrok/276acb221f78ba22bcf222ca63a4d442.js"></script>
-https://gist.github.com/trikitrok/276acb221f78ba22bcf222ca63a4d442
 
 and this is the code of the `OrderProcessing` class:
 
 <script src="https://gist.github.com/trikitrok/576eeda9ea1e459361f2340ac2e10c40.js"></script>
-https://gist.github.com/trikitrok/576eeda9ea1e459361f2340ac2e10c40
-
 
 We think that the resulting code after this refactoring has several benefits:
 
@@ -158,10 +152,8 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 This is the code of the two new classes:
 
 <script src="https://gist.github.com/trikitrok/c9471f1e488c613fd68080de3ffe4eaf.js"></script>
-https://gist.github.com/trikitrok/c9471f1e488c613fd68080de3ffe4eaf
 
 <script src="https://gist.github.com/trikitrok/d72f685c7bbc91e3c49915614993fe1f.js"></script>
-https://gist.github.com/trikitrok/d72f685c7bbc91e3c49915614993fe1f
 
 Notice how: 
 
@@ -188,12 +180,9 @@ the setters shared by the two variants of `OrderProcessing`. Notice how we made 
 [Inappropriate Intimacy code smell](https://wiki.c2.com/?InappropriateIntimacy)<a href="#nota5"><sup>[5]</sup></a>:
 
 <script src="https://gist.github.com/trikitrok/2777b9d23918804fe1e30f8429219d7e.js"></script>
-https://gist.github.com/trikitrok/2777b9d23918804fe1e30f8429219d7e
-
 
 All three classes are contained in the same module and only `OrderProcessing` is exported, so that its different states 
 are hidden from its `OrderProcessing` clients.
-
 
 ##  Conclusions.
 
@@ -207,13 +196,24 @@ the order in one place and an interface that might be valid for all the differen
 easy to move to the state design pattern.
 
 The final code is more cohesive than the original one and explicitly represents the different phases of the order processing.
+
+## Acknowledgements
+
+I'd like to thank to my Codesai colleagues, [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and 
+[Alfredo Casado](https://www.linkedin.com/in/alfredo-casado/) for giving me feedback about several drafts of this post.
+
+Also thanks to [Audiense](https://es.audiense.com/)'s developers for all their work they put in the deliberate practice 
+sessions. I learn a lot with you.
+
+Finally I’d also like to thank [Masud Allahverdizade](https://www.pexels.com/es-es/@masudriguez/) for his photo.
  
 ## Notes
 
 <a name="nota1"></a> [1] We are giving this service to several companies.
 
-<a name="nota2"></a> [2] During our deliberate practice program we use a modified version of the kata in which we introduce 
-other iterations with interesting changes that force some preparatory refactorings or help to apply other concepts.
+<a name="nota2"></a> [2] During our deliberate practice program we use a modified version of the kata in which 
+we introduce other iterations which introduce interesting changes that force some preparatory refactorings 
+or help to apply other concepts.
 
 <a name="nota3"></a> [3] Solution Sprawl is a code smell described by [Joshua Kerievsky](https://www.linkedin.com/in/joshuakerievsky/) in his 
 [Refactoring To Patterns book](https://www.industriallogic.com/refactoring-to-patterns/): 
@@ -229,8 +229,11 @@ all the data to a place, does all the calculations, and then delivers the result
 "Tell don't ask" style and the Feature Envy code smell, getting to the interesting rule of thumb that 
 *“things that change together should be together”*.
 
-<a name="nota5"></a> [5] Inappropriate Intimacy is more general than accessing private members. It is about one class depending 
+<a name="nota5"></a> [5] The Inappropriate Intimacy code smell is more general than accessing private members. It is about one class depending 
 on the implementation details of another. Some examples of Inappropriate Intimacy are, for example, knowing that two public 
 methods need to be called in a certain order because of some private implementation detail, 
 or accessing a property to make sure that an object that loads lazily is initialised. 
 See [Jason Gorman’s video about this code smell](https://www.youtube.com/watch?v=xa6aS9ObJTg).
+
+<br>
+Photo by [Masud Allahverdizade](https://www.pexels.com/es-es/@masudriguez/).
