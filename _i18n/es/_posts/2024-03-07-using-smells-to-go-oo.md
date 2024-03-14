@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Using code smells to refactor to more OO code'
+title: 'Using code smells to refactor to more OO code (an example with temporary field, solution sprawl and feature envy)'
 date: 2024-03-14 06:00:00.000000000 +01:00
 type: post
 published: true
