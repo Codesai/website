@@ -20,10 +20,10 @@ cross_post_url:
 We created this short legacy code kata to practice dependency breaking, testing and refactoring techniques. 
 It's called the Crazy Portfolio kata.
 
-It is part of a legacy code course, that we are launching next month. 
+It is part of a legacy code course that we are launching next month. 
 We're currently working on this kata on the deliberate practice sessions we are doing with [Audiense](https://es.audiense.com/)'s developers. 
 
-The kata has many things to make legacy code lovers happy: side effects, nasty nested conditionals, no documentations,
+The kata has many things to make legacy-code lovers happy: side effects, nasty nested conditionals, no documentation,
 lots of duplication, dead code and interesting boundary conditions.
 
 This is the TypeScript's code to whet your appetite:
@@ -34,6 +34,7 @@ The Crazy Portfolio Legacy kata can be used to practice techniques, such as, dep
 structural testing, approval testing, mutation testing and, of course, refactoring.
 
 You can find the whole code in this repository: [Crazy Portfolio kata](https://github.com/trikitrok/crazy-portfolio-kata/tree/main).
+Soon, we'll add versions for other languages. Pull requests are more than welcome.
 
 I hope you enjoy solving it.
 
