@@ -22,7 +22,7 @@ They are listed in chapter 25.
 We are using the following classification of dependency-breaking techniques:
 
 <figure>
-<img src="/assets/categorized-dependency-breaking-techniques-with-legend.png"
+<img src="/assets/categorized-dependency-breaking-techniques-with-legend-bigger.png"
 alt="Classification of dependency-breaking techniques"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Classification of dependency-breaking techniques.</strong></figcaption>
