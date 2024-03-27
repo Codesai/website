@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Classifying dependency-breaking tehchiques
+title: Classifying dependency-breaking techniques
 date: 2024-03-27 08:00:00.000000000 +01:00
 type: post
 categories:
   - Learning
-  - Community
   - Legacy Code
   - Dependency-Breaking Techniques
 small_image: small_breaking_dependencies_classification.jpg
