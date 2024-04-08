@@ -21,12 +21,14 @@ permalink_en: /trainings/refactoring/
                     </div>
 
                     <div class="summary mobile">
+                        {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                         {% capture link %}{{ site.translations[site.lang].pages.courses.code_smells_refactoring.call_to_action.link }}{% endcapture %}
                         {%
                             include course-summary.html
-                            price='550'
+                            price='590'
                             days='2.5'
                             hours='20'
+                            special_discount=discount
                             contact_link=link
                         %}
                     </div>
@@ -72,12 +74,14 @@ permalink_en: /trainings/refactoring/
                     </section>
                 </div>
                 <div class="summary desktop">
+                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                     {% capture link %}{{ site.translations[site.lang].pages.courses.code_smells_refactoring.call_to_action.link }}{% endcapture %}
                     {%
                         include course-summary.html
-                        price='550'
+                        price='590'
                         days='2.5'
                         hours='20'
+                        special_discount=discount
                         contact_link=link
                     %}
                 </div>

@@ -17,6 +17,7 @@ permalink_en: /trainings/user-stories/
                     <div class="course-description">
                         {% translate pages.courses.user_stories.text %}
                     </div>
+                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                     {% capture link %}{{ site.translations[site.lang].pages.courses.user_stories.call_to_action.link }}{% endcapture %}
                     <div class="summary mobile">
                         {%
@@ -24,6 +25,7 @@ permalink_en: /trainings/user-stories/
                             price='290'
                             days='1'
                             hours='8'
+                            special_discount=discount
                             contact_link=link
                         %}
                     </div>
@@ -54,12 +56,14 @@ permalink_en: /trainings/user-stories/
 
                 </div>
                 <div class="summary desktop">
+                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                     {% capture link %}{{ site.translations[site.lang].pages.courses.user_stories.call_to_action.link }}{% endcapture %}
                     {%
                         include course-summary.html
                         price='290'
                         days='1'
                         hours='8'
+                        special_discount=discount
                         contact_link=link
                     %}
                 </div>

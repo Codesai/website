@@ -133,7 +133,7 @@ pages:
   training:
     title: Codesai. Formaciones
     header: Te enseñamos a desarrollar mejor código
-    text: <p>Todos nuestros cursos son <strong>in-house</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.</p><p><strong>Además, en los abiertos, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</strong></p>
+    text: <p>Todos nuestros cursos son <strong>in-house</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.</p><p><strong>Cursos bonificables por FUNDAE.</strong></p><p>Además, en los abiertos, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</p>
     courses:
       tdd:
         name: Test Driven Development (TDD)
@@ -823,7 +823,7 @@ components:
     title: Información
     open_dates:
       title: Próximas fechas en abierto
-    special_discount: Para las ediciones en abierto <span>50% de descuento</span> para colectivos poco representados en la tecnología
+    special_discount: <span>Bonificable por FUNDAE</span>
     hours: horas
     default_modality_text: Presencial o remoto
     participant: persona

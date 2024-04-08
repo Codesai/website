@@ -21,12 +21,14 @@ permalink_en: /trainings/ddd/
                      </div>
 
                     <div class="summary mobile">
+                        {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                         {% capture link %}{{ site.translations[site.lang].pages.courses.ddd.call_to_action.link }}{% endcapture %}
                         {%
                             include course-summary.html
                             price='600'
                             days='2'
                             hours='16'
+                            special_discount=discount
                             contact_link=link
                         %}
                     </div>
@@ -63,12 +65,14 @@ permalink_en: /trainings/ddd/
                     </section>
                 </div>
                 <div class="summary desktop">
+                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                     {% capture link %}{{ site.translations[site.lang].pages.courses.ddd.call_to_action.link }}{% endcapture %}
                     {%
                         include course-summary.html
                         price='600'
                         days='2'
                         hours='16'
+                        special_discount=discount
                         contact_link=link
                     %}
                 </div>
