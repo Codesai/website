@@ -50,8 +50,9 @@ Los asistentes estuvieron muy colaborativos aportando diferentes puntos de vista
 </a>
 </figure>
 
-En la tercera y última titulada “Cómo las prácticas técnicas nos ayudan a eliminar waste” exploramos cómo diferentes prácticas técnicas nos ayudan a evitar los siete tipos de waste descritos  en Implementing Lean Software Development. 
-Este ejercicio es una parte de una introducción a Lean que hemos dado en la primera edición del Programa de Mentoring Intensivo en Prácticas Técnicas que estamos haciendo con AIDA. Para guiar y explicar algunos aspectos partí de estas <a href="https://drive.google.com/file/d/1gw0xgrM_P5TK_ySHY3gJeygttMwMV9Pl/view?usp=sharing" target="_blank">slides</a>.
+En la tercera y última titulada “Cómo las prácticas técnicas nos ayudan a eliminar waste” exploramos cómo diferentes prácticas técnicas nos ayudan a evitar los siete tipos de waste descritos  en [Implementing Lean Software Development](https://www.goodreads.com/book/show/349417.Implementing_Lean_Software_Development). 
+Este ejercicio es una parte de una introducción a Lean que hemos dado en la primera edición del Programa de Mentoring Intensivo en Prácticas Técnicas que estamos haciendo con [AIDA](https://www.aidacanarias.com/). 
+Para guiar y explicar algunos aspectos partí de estas <a href="https://drive.google.com/file/d/1gw0xgrM_P5TK_ySHY3gJeygttMwMV9Pl/view?usp=sharing" target="_blank">slides</a>.
 
 Finalmente me gustaría agradecer a todos los asistentes al AOS Tenerife su participación y especialmente a la organización por todo su esfuerzo y generosidad.
 
