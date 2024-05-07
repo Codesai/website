@@ -13,7 +13,7 @@ categories:
 - XP & Agile
 author: Fran Reyes
 twitter: fran_reyes
-small_image: code-comments.jpg
+small_image: aos-tf-2024-logotipo.png 
 ---
 El 4 y 5 de mayo algunos de mis compañeros y yo estuvimos en Agile Open Space que tuvo su edición en Tenerife. 
 La experiencia del evento fue fantástica ya que la organización puso todo su empeño para que fuera todo un éxito. 
