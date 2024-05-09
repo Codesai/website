@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Move seam to delegate
+title: Move seam to delegate refactoring
 date: 2024-05-09 06:30:00.000000000 +01:00
 type: post
 published: true
