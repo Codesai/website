@@ -10,7 +10,7 @@ categories:
 - Refactoring
 author: Manuel Rivero
 twitter: trikitrok
-small_image: 
+small_image: small-move-seam.png
 written_in: english
 cross_post_url: 
 ---
@@ -25,15 +25,18 @@ Sometimes we want to move some code to a delegate but that code contains a prote
 method we’re overriding in our tests in order to sense or 
 separate<a href="#nota1"><sup>[1]</sup></a>. That method is an object [seam](https://martinfowler.com/bliki/LegacySeam.html).
 
-
+<figure>
+<img src="/assets/move-seam-to-delegate-initial.png"
+alt="The tests (the violet eye) are coupled to the seam."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>The tests (the violet eye) are coupled to the seam.</strong></figcaption>
+</figure>
 
 Our current tests are anchoring that method because if we move it, all the tests will fail.
 
 Let’s see an example.
 
 Have a look at the `BirthdayGreetingsService` class:
-
-https://gist.github.com/trikitrok/ffe46975c7634260c2ba440f2115a72a
 
 <script src="https://gist.github.com/trikitrok/ffe46975c7634260c2ba440f2115a72a.js"></script>
 
@@ -42,8 +45,6 @@ We’d like to move the logic that sends greetings by email to a different class
 The problem is that we can’t move the protected `sendMessage` method because, if we do it all the tests would fail. 
 
 This method was introduced by applying the *Extract & Override Call*<a href="#nota2"><sup>[2]</sup></a> dependency-breaking technique in order to test `BirthdayGreetingsService`, and it’s being overridden in our tests. 
-
-https://gist.github.com/trikitrok/7508d8d52e28c6c4c4709310b99c7b0b
 
 <script src="https://gist.github.com/trikitrok/7508d8d52e28c6c4c4709310b99c7b0b.js"></script>
 
@@ -68,19 +69,13 @@ Let’s see how the code of our example looks at the end of the *expand phase*:
 
 a. This is the code of the delegate we created, `EmailGreetingsSender`, where we copied the `sendMessage` method:
 
-https://gist.github.com/trikitrok/1dc4633f48d2f2d30d18df76f525f504
-
 <script src="https://gist.github.com/trikitrok/1dc4633f48d2f2d30d18df76f525f504.js"></script>
 
 b. This is the change we did in `BirthdayGreetingsService`, by introducing an `EmailGreetingsSender` field, initialising it in the constructor and applying *Parameterize Constructor* in this case using the *Introduce Parameter* refactoring which was  automated by the IDE we were using<a href="#nota6"><sup>[6]</sup></a>:
 
-https://gist.github.com/trikitrok/adea14ba10f916896aed19a76a2ecbf8
-
 <script src="https://gist.github.com/trikitrok/adea14ba10f916896aed19a76a2ecbf8.js"></script>
 
 c. Finally this is the change in the `setUp` method of the tests of `BirthdayGreetingsService`. Notice how we are applying *Subclass & Override* to `EmailGreetingsSender`’s `sendMessage` method, and how both seams do exactly the same:
-
-https://gist.github.com/trikitrok/be51ae585800cc572b8eb49d71dc8bf6
 
 <script src="https://gist.github.com/trikitrok/be51ae585800cc572b8eb49d71dc8bf6.js"></script>
 
@@ -106,8 +101,6 @@ Finally, we also remove the dead code in production: the overridden protected me
 
 In our example, we first delete the anonymous class that was overriding `BirthdayGreetingsService` for testing purposes, which it’s not needed anymore. 
 
-https://gist.github.com/trikitrok/267319464ed4485982b9eeee78419f0c
-
 <script src="https://gist.github.com/trikitrok/267319464ed4485982b9eeee78419f0c.js"></script>
 
 And then, delete the protected `sendMessage` method in `BirthdayGreetingsService`.
@@ -115,11 +108,15 @@ And then, delete the protected `sendMessage` method in `BirthdayGreetingsService
 After applying this parallel change to the tests, the seam is now located in the delegate, and
 we can freely move the code that uses the seam.
  
+<figure>
+<img src="/assets/move-seam-to-delegate-final.png"
+alt="Now the tests (the violet eye) are coupled to the seam in the delegate and we can freely move there the logic that sends greetings by email."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Now the tests (the violet eye) are coupled to the seam in the delegate and we can freely move there the logic that sends greetings by email.</strong></figcaption>
+</figure>
 
 ### Conclusion.
 We have described the *Move seam to delegate* refactoring mechanics. We hope this refactoring technique might be useful to you when working with seams in legacy code.
-
-
 
 ### Acknowledgements
 
