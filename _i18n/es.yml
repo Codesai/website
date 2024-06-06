@@ -460,7 +460,8 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       name: Historias de usuario
       text: '<p>El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario,
              identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.</p>
-             <p>A través de ejemplos y actividades, aprenderemos a entender el concepto de historias de usuario. Asimismo, veremos algunos smells y técnicas para enfrentarnos a su complejidad.</p>'
+             <p>A través de ejemplos y actividades, aprenderemos a entender el concepto de historias de usuario. Asimismo, veremos algunos smells y técnicas para enfrentarnos a su complejidad.</p>
+             <p>El curso incluye una serie de ejercicios y un taller práctico de 4 horas</p>'
       call_to_action:
         title: ¡OK! Me interesa realizar el curso de Historias de usuario
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
@@ -475,9 +476,12 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                         <div class="subgroup"><span>&bull;</span> Smells</div>
                         <div class="group"><span>3. </span> Heurísticas para partir historias de usuario</div>
                         <div class="subgroup"><span>&bull;</span> Heurísticas de alto nivel</div>
-                        <div class="subgroup"><span>&bull;</span> Heurísticas por atributos de calidad</div>
                         <div class="subgroup"><span>&bull;</span> Heurísticas por experiencia de usuario</div>
                         <div class="subgroup"><span>&bull;</span> Heurísticas por comportamiento</div>
+                        <div class="group"><span>4. </span> Atributos de calidad</div>
+                        <div class="subgroup"><span>&bull;</span> Definición e impacto</div>
+                        <div class="subgroup"><span>&bull;</span> Heurísticas para partir historias de usuario</div>
+                        <div class="group"><span>5. </span> Taller de historias de usuario (4 horas)</div>
                     </div>'
       who:
         title: ¿Para quién está pensado?

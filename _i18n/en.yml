@@ -416,7 +416,8 @@ pages:
       title: User Stories
       name: User Stories
       text: '<p>The aim of this course is for students to learn what the core parts of user stories are, identify attributes that make them most effective and have an array of techniques for breaking them down.</p>
-             <p>Through examples and activities, we will learn to understand the concept of user stories. We will also see some smells and techniques to deal with its complexity.</p>'
+             <p>Through examples and activities, we will learn to understand the concept of user stories. We will also see some smells and techniques to deal with its complexity.</p>
+             <p>Includes a series of exercises and a 4-hour practical workshop.</p>'
       call_to_action:
         link: /en/trainings/user-stories/#call-to-action
         title: ¡OK! I am interested in taking the User Stories Course
@@ -431,9 +432,12 @@ pages:
                         <div class="subgroup"><span>&bull;</span> Smells</div>
                         <div class="group"><span>3. </span> Heuristics for splitting user stories</div>
                         <div class="subgroup"><span>&bull;</span> High-level heuristics</div>
-                        <div class="subgroup"><span>&bull;</span> Quality attribute heuristics</div>
                         <div class="subgroup"><span>&bull;</span> User experience heuristics</div>
                         <div class="subgroup"><span>&bull;</span> Behavioural heuristics</div>
+                        <div class="group"><span>4. </span> Quality attributes</div>
+                        <div class="subgroup"><span>&bull;</span> Definition and impact</div>
+                        <div class="subgroup"><span>&bull;</span> Quality attribute heuristics</div>
+                        <div class="group"><span>5. </span> Workshop (4 hours)</div>
                     </div>'
       who:
         title: Who is it intended for?
