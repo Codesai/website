@@ -163,9 +163,9 @@ I’d like to thank my Codesai colleagues for reading the initial drafts and giv
 
 <a name="nota3"></a> [3] This is the complete paragraph from chapter 20, **Listening to the tests**, of the [GOOS book](https://www.goodreads.com/en/book/show/4268826-growing-object-oriented-software-guided-by-tests): *“Sometimes we find it difficult to write a test for some functionality we want to add to our code. In our experience, this usually means that our design can be improved — perhaps the class is too tightly coupled to its environment or does not have clear responsibilities. When this happens, we first check whether it’s an opportunity to improve our code, before working around the design by making the test more complicated or using more sophisticated tools. We’ve found that the qualities that make an object easy to test also make our code responsive to change.”*
 
-<a name="nota4"></a> [4]  This quote is from their post [Synaesthesia: Listening to Test Smells](http://www.mockobjects.com/2007/03/synaesthesia-listening-to-test-smells.html).
+<a name="nota4"></a> [4]  This quote is from their post [Synaesthesia: Listening to Test Smells](https://web.archive.org/web/20210415164603/http://www.mockobjects.com/2007/03/synaesthesia-listening-to-test-smells.html).
 
-<a name="nota5"></a> [5]  Have a look at this interesting [series of posts about listening to the tests]( [Steve Freeman](https://twitter.com/sf105?lang=en)) by [Steve Freeman](https://twitter.com/sf105?lang=en). It’s a raw version of the content that you’ll find in chapter 20, **Listening to the tests**, of their book.
+<a name="nota5"></a> [5]  Have a look at this interesting [series of posts about listening to the tests](https://web.archive.org/web/20210426022938/http://www.mockobjects.com/search/label/listening%20to%20the%20tests) by [Steve Freeman](https://twitter.com/sf105?lang=en). It’s a raw version of the content that you’ll find in chapter 20, **Listening to the tests**, of their book.
 
 <a name="nota6"></a> [6] We have simplified the client's code to remove some distracting details and try to highlight its key problems.
 
