@@ -46,6 +46,19 @@ permalink_en: /trainings/
             days='2.5'
             hours='20'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.changing_legacy.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.changing_legacy.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.changing_legacy.link }}{% endcapture %}
+        {%
+            include components/course.html
+            name=name
+            description=description
+            link=link
+            logo='/assets/courses/logos/refactoring.svg'
+            starting_price='590'
+            days='2.5'
+            hours='20'
+        %}
         {% capture name %}{{ site.translations[site.lang].pages.training.courses.ddd.name }}{% endcapture %}
         {% capture description %}{{ site.translations[site.lang].pages.training.courses.ddd.description }}{% endcapture %}
         {% capture link %}{{ site.translations[site.lang].pages.training.courses.ddd.link }}{% endcapture %}

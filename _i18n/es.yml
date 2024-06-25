@@ -141,8 +141,12 @@ pages:
         link: /curso-de-tdd/
       code_smells_refactoring:
         name: Code smells & Refactoring
-        description: El objetivo de este curso es conocer los diferentes code smells y empezar a desarrollar la capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar el diseño de código ya existente de forma segura e incremental.
+        description: El objetivo de este curso aprender sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Aprenderemos a reconocer los diferentes code smells y técnicas de refactoring para mejorar el diseño de código ya existente de forma segura e incremental.
         link: /cursos/refactoring/
+      changing_legacy:
+        name: Changing Legacy Code
+        description: En este curso aprenderemos cómo cambiar y mejorar código legacy de una manera segura y efectiva. Aprenderemos diferentes técnicas para introducir tests en código legacy, refactorizarlo y/o reescribirlo de forma gradual y sostenible. También aprenderemos sobre gestión y priorización de deuda técnica. 
+        link: /cursos/changing-legacy/
       ddd:
         name: DDD driven by test
         description: El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.
@@ -358,7 +362,7 @@ pages:
     code_smells_refactoring:
       title: Codesai. Curso de Code Smells & Refactoring
       name: Code smells & Refactoring
-      text: '<p>El objetivo de este curso es que los alumnos conozcan los diferentes code smells y empiecen a desarrollar su capacidad de reconocerlos. Además trabajaremos algunas técnicas para mejorar el diseño de código ya existente de forma segura e incremental.</p>
+      text: '<p>El objetivo de este curso es aprender sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Aprenderemos a reconocer los diferentes code smells y técnicas de refactoring para mejorar el diseño de código ya existente de forma segura e incremental.</p>
              <p>A través de ejemplos y katas, aprenderemos sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Asimismo, veremos el papel fundamental del refactoring en el
 desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente ciclos de refactoring y su economía (cómo hacerlo de manera responsable).</p>'
       call_to_action:
@@ -403,12 +407,10 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
         text: <p>Los ejemplos y katas están en Java, TypeScript, JavaScript y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>
       requirements:
         title: Requisitos
-        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
-               <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
-               <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+        text: '<p>Te enviaremos un email con todo lo que necesitas tener instalado para hacer este curso.</p>'
       who:
         title: ¿Para quién está pensado?
-        text: <p>Fundamentalmente para programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas.</p>
+        text: <p>Fundamentalmente para programadores que trabajan en el paradigma orientado a objetos.</p>
       where:
         title: In-house y en abierto
         text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
@@ -422,35 +424,53 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
 con sesiones prácticas en forma de kata en las que aplicaremos las técnicas más importantes.</p>'
       call_to_action:
         title: ¡OK! Me interesa realizar el curso de Cambiando Legacy
-        text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        text: <p>Si deseas iniciar el proceso de inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
         link: /cursos/changing-legacy/#call-to-action
       content:
         title: Contenidos
         agenda: '<div class="topics">
-                    <div class="group"><span>1.</span> Legacy Code</div>
-                    <div class="subgroup"><span>&bull;</span> Problemáticas y desafíos</div>
-                    <div class="subgroup"><span>&bull;</span> Deuda técnica e implicaciones económicas</div>
-                    <div class="group"><span>2.</span> Evolucionando legacy: técnicas</div>
-                    <div class="subgroup"><span>&bull;</span> Testing de legacy</div>
-                    <div class="subgroup"><span>&bull;</span> Refactoring gradual y reescrituras parciales</div>
-                    <div class="subgroup"><span>&bull;</span> TDD en legacy</div>
+                    <div class="group"><span>1.</span> Código Legacy.</div>
+                    <div class="subgroup"><span>1.1.</span> Problemáticas y desafíos.</div>
+                    <div class="subgroup"><span>1.2.</span> Implicaciones económicas.</div>
+                    <div class="group"><span>2.</span> Evolucionando código legacy: técnicas.</div>
+                    <div class="subgroup"><span>2.1.</span> Cover & Modify.</div>
+                    <div class="subgroup"><span>2.2.</span> Técnicas de rotura de dependencias.</div>
+                    <div class="subgroup"><span>2.3.</span> Tests de caracterización.</div>
+                    <div class="subgroup"><span>--- 2.3.1.</span> Caracterizando código legacy.</div>
+                    <div class="subgroup"><span>--- 2.3.2.</span> Structural Testing.</div>
+                    <div class="subgroup"><span>--- 2.3.3.</span> Mutation Testing.</div>
+                    <div class="subgroup"><span>--- 2.3.4.</span> Criterios de cobertura (opcional).</div>
+                    <div class="subgroup"><span>2.4.</span> Otras maneras de caracterizar código legacy.</div>
+                    <div class="subgroup"><span>--- 2.4.1.</span> Golden Master + Sampling.</div>
+                    <div class="subgroup"><span>--- 2.4.2.</span> Approval Testing.</div>
+                    <div class="subgroup"><span>2.5.</span> Haciendo cambios.</div>
+                    <div class="subgroup"><span>--- 2.5.1.</span> TDD y refactorings planeados.</div>
+                    <div class="subgroup"><span>--- 2.5.2.</span> Splinter Pattern y otras técnicas especiales de refactoring.</div>
+                    <div class="subgroup"><span>--- 2.5.3.</span> De costuras basadas en herencia a inyección de independencias (opcional).</div>
+                    <div class="subgroup"><span>2.6.</span> Encontrando puntos de testeo e identificando puntos de cambios.</div>
+                    <div class="subgroup"><span>2.7.</span> Atajos: sprouting & wrapping.</div>
+                    <div class="subgroup"><span>2.8.</span> Reescrituras incrementales.</div>
+                    <div class="subgroup"><span>--- 2.8.1.</span> ¿Por qué reescrituras incrementales?.</div>
+                    <div class="subgroup"><span>--- 2.8.2.</span> Branch By Abstraction.</div>
+                    <div class="subgroup"><span>--- 2.8.3.</span> Strangler Fig Application.</div>
+                    <div class="subgroup"><span>--- 2.8.4.</span> Testeando en producción con experimentos (opcional).</div>
                     <div class="group"><span>3.</span> Evolucionando legacy: estrategias</div>
-                    <div class="subgroup"><span>&bull;</span> Deuda técnica</div>
-                    <div class="subgroup"><span>&bull;</span> Prioridades, triaje</div>
-                    <div class="subgroup"><span>&bull;</span> Algunos patrones estratégicos</div>
+                    <div class="subgroup"><span>3.1.</span> Deuda técnica, implicaciones económicas y gestión.</div>
+                    <div class="subgroup"><span>3.2.</span> Priorización y triaje de deuda técnica.</div>
+                    <div class="subgroup"><span>--- 3.2.1.</span> Análisis de hotspots.</div>
+                    <div class="subgroup"><span>--- 3.2.2.</span> Product Hurricane Maps.</div>
+                    <div class="subgroup"><span>3.3.</span> Algunos patrones estratégicos.</div>
                 </div>'
       languages:
         title: Lenguajes
-        text: <p>Los ejemplos y katas están en C#, pero si necesitas otro lenguaje contacta con nosotros.</p>
+        text: <p>Los ejemplos y katas están en C#, pero si te interesa otro lenguaje contacta con nosotros.</p>
       requirements:
         title: Requisitos
-        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
-               <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
-               <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+        text: '<p>Te enviaremos un email con todo lo que necesitas tener instalado para hacer este curso.</p>'
       who:
         title: ¿Para quién está pensado?
-        text: <p>Fundamentalmente para programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas.</p>
+        text: <p>Fundamentalmente para programadores que trabajan en el paradigma orientado a objetos.</p>
       where:
         title: In-house y en abierto
         text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
