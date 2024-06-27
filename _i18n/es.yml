@@ -373,7 +373,7 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
       content:
         title: Contenidos
         day_1:
-          title: Bloque 1 (4h)
+          title: Bloque 1
           agenda: '<div class="topics">
                       <div class="group"><span>1.</span> Introducción</div>
                       <div class="group"><span>2. </span> Code smells y refactorings relacionados</div>
@@ -381,7 +381,7 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
                       <div class="subgroup"><span>&bull;</span> Code smells entre clases</div>
                   </div>'
         day_2:
-          title: Bloque 2 (8h)
+          title: Bloque 2
           agenda: '<div class="topics">
                     <div class="group"><span>3. </span>Diseño lo suficientemente bueno</div>
                     <div class="subgroup"><span>&bull;</span> Principios y heurísticas de diseño</div>
@@ -394,7 +394,7 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
                     <div class="subgroup"><span>&bull;</span> Como seguir profundizando en refactoring</div>                    
                  </div>'
         day_3:
-          title: Bloque 3 (8h)
+          title: Bloque 3
           agenda: '<div class="topics">
                     <div class="group"><span>5. </span>Arquitectura hexagonal</div>
                     <div class="subgroup"><span>&bull;</span> Fundamentos</div>
