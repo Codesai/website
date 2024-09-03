@@ -174,20 +174,19 @@ pages:
                       <div class="subgroup"><span>&bull;</span> Why use TDD?</div>
                       <div class="subgroup"><span>&bull;</span> TDD Cycle</div>
 
-                      <div class="group"><span>2. </span>Refactoring & Clean Code</div>
-                      <div class="subgroup"><span>&bull;</span> Refactoring</div>
-                      <div class="subgroup"><span>&bull;</span> Code Smells</div>
-                      <div class="subgroup"><span>&bull;</span> Habitable Code</div>
-                      <div class="subgroup"><span>&bull;</span> Design Principles</div>
+                      <div class="group"><span>2. </span>Examples selction & heuristics</div>
+                      <div class="subgroup"><span>&bull;</span> Examples list, partitions y boundary conditions</div>
+                      <div class="subgroup"><span>&bull;</span> Descomposing behaviors</div>
+                      <div class="subgroup"><span>&bull;</span> Test order selection & TDD heuristics</div>
                   </div>'
         day_2:
           title: Day Two
           content: '<div class="topics">
-          <div class="group"><span>3. </span>Patterns, sustainability and basic cycle variations</div>
-
-          <div class="group"><span>4. </span>Test doubles</div>
+          <div class="group"><span>3. </span>Test doubles</div>
           <div class="subgroup"><span>&bull;</span> Interaction-based testing</div>
           <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
+          
+          <div class="group"><span>4. </span>Patterns, sustainability and basic cycle variations</div>
 
           <div class="group"><span>5. </span>Outside-in TDD</div>
           <div class="subgroup"><span>&bull;</span> Advantages over inside-out</div>
@@ -199,9 +198,7 @@ pages:
         text:  At the moment the examples and katas are ready for Java, JavaScript, C#, Python and PHP, but if you wish to use another language please let us know.
       requirements:
         title: Requirements
-        text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed.</p>
-              <p>We will be doing pair programming, so it would be a good idea to create a new user for the course, in order to be able to switch between machines without worrying about your account privacy.</p>
-              <p>If you can''t bring your own laptop that''s no problem, we only need one laptop per pair. Nevertheless, please let us know in advance to make sure we have the required minimum number of laptops.</p>'
+        text: 'We will send you an email telling you everything you need to install before the course.'
       target:
         title: Who is it intended for?
         text: '<p>This is a course for people who already know how to code. Mostly programmers but also testers who want to learn more about code quality and automatic testing can benefit from it. All you need is to bring an open mind and a desire to learn. If you have never tried TDD before, you might be surprised.</p>'
@@ -254,9 +251,7 @@ pages:
               <p>As for the database engine (Oracle, SQLServer...), most exercises are standalone but certain aspects may depend on it. Contact us to see how we can adapt it to your daily needs.</p>'
       requirements:
         title: Requirements
-        text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed. Regarding the database engine, a shared server should be considered for performance reasons.</p>
-              <p>We will be doing pair programming, so it would be a good idea to create a new user for the course, in order to be able to switch between machines without worrying about your account privacy.</p>
-              <p>If you can''t bring your own laptop that''s no problem, we only need one laptop per pair. Nevertheless, please let us know in advance to make sure we have the required minimum number of laptops.</p>'
+        text: 'We will send you an email telling you everything you need to install before the course.'
       who:
         title: Who is it intended for?
         text: '<p>Mainly for programmers or DBAs who want to know more about how to evolve the database and have an array of automatic tests. It is especially useful for complex environments (multiple consumers, db logic, etc).</p>'
@@ -402,9 +397,7 @@ pages:
         text: <p>At the moment the examples and katas are ready for Java, JavaScript, TypeScript and PHP, but if you wish to use another language please let us know.</p>
       requirements:
         title: Requirements
-        text: '<p>Ideally, each participant should come with his or her laptop and all development tools already installed. You should also have Git installed.</p>
-              <p>We will be doing pair programming, so it would be a good idea to create a new user for the course, in order to be able to switch between machines without worrying about your account privacy.</p>
-              <p>If you can''t bring your own laptop that''s no problem, we only need one laptop per pair. Nevertheless, please let us know in advance to make sure we have the required minimum number of laptops.</p>'
+        text: 'We will send you an email telling you everything you need to install before the course.'
       who:
         title: Who is it intended for?
         text: <p>Primarily for programmers but also for testers who want to learn more about code quality and automated testing.</p>

@@ -178,41 +178,37 @@ pages:
                       <div class="subgroup"><span>&bull;</span> ¿Por qué TDD?</div>
                       <div class="subgroup"><span>&bull;</span> Ciclo de TDD</div>
 
-                      <div class="group"><span>2. </span>Refactoring & Clean Code</div>
-                      <div class="subgroup"><span>&bull;</span> Refactoring</div>
-                      <div class="subgroup"><span>&bull;</span> Code Smells</div>
-                      <div class="subgroup"><span>&bull;</span> Código habitable</div>
-                      <div class="subgroup"><span>&bull;</span> Principios de diseño</div>
+                      <div class="group"><span>2. </span>Selección de ejemplos y heurísticas</div>
+                      <div class="subgroup"><span>&bull;</span> Lista de ejemplos, particiones y condiciones de contorno</div>
+                      <div class="subgroup"><span>&bull;</span> Descomposición de comportamientos</div>
+                      <div class="subgroup"><span>&bull;</span> Orden de los tests y heurísticas</div>
                   </div>'
         day_2:
           title: Segundo bloque
           content: '<div class="topics">
-          <div class="group"><span>3. </span>Patrones, sostenibilidad y variaciones del ciclo básico</div>
-
-          <div class="group"><span>4. </span>Test doubles</div>
-          <div class="subgroup"><span>&bull;</span> Interaction-based testing</div>
+          <div class="group"><span>3. </span>Usando dobles de prueba</div>
           <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
+          
+          <div class="group"><span>4. </span>Patrones, sostenibilidad y variaciones del ciclo básico de TDD</div>
 
           <div class="group"><span>5. </span>Outside-in TDD</div>
           <div class="subgroup"><span>&bull;</span> Ventajas sobre inside-out</div>
           <div class="subgroup"><span>&bull;</span> Classicist vs Mockist</div>
-          <div class="subgroup"><span>&bull;</span> Mal uso de los test doubles y consejos para evitarlo</div>
+          <div class="subgroup"><span>&bull;</span> Mal uso de los dobles de prueba y consejos para evitarlo</div>
       </div>'
       languages:
         title: Lenguajes
         text: <p>Los ejemplos y katas están en Java, JavaScript, C#, Python y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>
       requirements:
         title: Requisitos
-        text: '<p>Lo ideal, es que cada persona venga con su portátil y las herramientas de desarrollo ya instaladas. También debe tener instalado Git.</p>
-              <p>Haremos pair programming, por lo que sería buena idea crear un usuario nuevo para el curso, para poder cambiar de unas máquinas a otras sin preocuparse por la privacidad de la cuenta.</p>
-              <p>Si no puedes traer tu portátil, no hay problema, sólo hace falta uno por pareja. No obstante, avísanos antes con antelación para asegurarnos de que contamos con el número mínimo de portátiles necesarios.</p>'
+        text: '<p>Te enviaremos un email con todo lo que necesitas tener instalado para hacer este curso.</p>'
       target:
         title: ¿Para quién está pensado?
         text: '<p>Este es un curso para personas que sepan programar. Fundamentalmente programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas. Lo que hace falta es venir con ganas y la mente abierta. Si nunca has probado TDD antes, te sorprenderá.</p>'
       where:
         title: Para empresas o en abierto
-        text: '<p>Podemos impartir este curso cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
-               <p class="unicode">Ten en cuenta que los cursos para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        text: '<p>Podemos impartir este curso cerrado para la empresa que lo contrata, o en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, escribenos a contact@codesai.com.</p>
+               <p class="unicode">Ten en cuenta que los cursos para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
       call_to_action:
         link: /curso-de-tdd/#call-to-action
         title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
