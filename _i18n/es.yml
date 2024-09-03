@@ -187,6 +187,7 @@ pages:
           title: Segundo bloque
           content: '<div class="topics">
           <div class="group"><span>3. </span>Usando dobles de prueba</div>
+          <div class="subgroup"><span>&bull;</span> Testing basado en la interacción</div>
           <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
           
           <div class="group"><span>4. </span>Patrones, sostenibilidad y variaciones del ciclo básico de TDD</div>
@@ -207,7 +208,7 @@ pages:
         text: '<p>Este es un curso para personas que sepan programar. Fundamentalmente programadores pero también testers que quieran conocer más sobre calidad de código y pruebas automáticas. Lo que hace falta es venir con ganas y la mente abierta. Si nunca has probado TDD antes, te sorprenderá.</p>'
       where:
         title: Para empresas o en abierto
-        text: '<p>Podemos impartir este curso cerrado para la empresa que lo contrata, o en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, escribenos a contact@codesai.com.</p>
+        text: '<p>Podemos impartir este curso cerrado para la empresa que lo contrata, o en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, escribenos a contact@codesai.com o rellena el formulario de contacto.</p>
                <p class="unicode">Ten en cuenta que los cursos para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
       call_to_action:
         link: /curso-de-tdd/#call-to-action
