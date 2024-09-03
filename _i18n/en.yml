@@ -143,6 +143,10 @@ pages:
         name: Code smells & Refactoring
         description: The objective of this course is to introduce students to the concept of code smells and start developing their ability to recognize them. We will also practice some techniques to incrementally improve already existing code designs in a safe manner.
         link: /en/trainings/refactoring
+      changing_legacy:
+        name: Changing Legacy Code
+        description: The goal of this course is to learn how to evolve and improve legacy code in a safe and effective way. We’ll learn how to break dependencies in order to test legacy code, and how to gradually and sustainably improve its design. We'll also learn about incremental rewrite techniques, and technical debt management and prioritization.
+        link: /en/trainings/changing-legacy/
       ddd:
         name: DDD driven by test
         description: The objective of this course is explaining the different tools offered by Domain Driven Design, both from an organizational point of view using strategic patterns and ubiquitous language, as well as from an architectural point of view using tactical patterns.
@@ -394,17 +398,77 @@ pages:
                  </div>'
       languages:
         title: Languages
-        text: <p>At the moment the examples and katas are ready for Java, JavaScript, TypeScript and PHP, but if you wish to use another language please let us know.</p>
+        text: '<p>At the moment the examples and katas are ready for Java, C#, JavaScript, TypeScript and PHP, but if you wish to use another language please let us know.</p>'
       requirements:
         title: Requirements
         text: 'We will send you an email telling you everything you need to install before the course.'
       who:
         title: Who is it intended for?
-        text: <p>Primarily for programmers but also for testers who want to learn more about code quality and automated testing.</p>
+        text: '<p>Primarily for programmers working with the object-oriented paradigm.</p>'
       where:
         title: For companies or open to the community
         text: '<p>The course can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
-               <p class="unicode">Please note that courses for companies take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
+               <p class="unicode">Please note that courses for companies take place once we have been booked by the client. We will need to know the date at least one month in advance in advance in order to be able to schedule them.</p>'
+
+    changing_legacy:
+      title: Codesai. Changing Legacy Code
+      name: Changing Legacy Code
+      text: '<p>In this training we’ll learn how to evolve and improve legacy code in a safe and effective way.</p>
+                 <p>We’ll learn how to break dependencies in order to test legacy code, and how to gradually and sustainably improve its design.</p>
+                 <p>The training will be comprised of a combination of theory sessions that present different techniques and strategies, and exercises to apply them.</p>'
+      call_to_action:
+        link: /en/trainings/changing-legacy/#call-to-action
+        title: ¡OK! I am interested in taking the Changing Legacy Code Course
+        text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would be interested in receiving updates about the courses and upcoming open dates
+      content:
+        title: Contents
+        agenda: '<div class="topics">
+                        <div class="group"><span>1.</span> Legacy Code.</div>
+                        <div class="subgroup"><span>1.1.</span> Problems and challenges.</div>
+                        <div class="subgroup"><span>1.2.</span> Economic implications.</div>
+                        <div class="group"><span>2.</span> Evolving legacy code: techniques.</div>
+                        <div class="subgroup"><span>2.1.</span> Cover & Modify.</div>
+                        <div class="subgroup"><span>2.2.</span> Dependency-breaking techniques.</div>
+                        <div class="subgroup"><span>2.3.</span> Characterization tests.</div>
+                        <div class="subgroup"><span>--- 2.3.1.</span> Chracterizing legacy code.</div>
+                        <div class="subgroup"><span>--- 2.3.2.</span> Applying structural Testing.</div>
+                        <div class="subgroup"><span>--- 2.3.3.</span> Applying mutation Testing.</div>
+                        <div class="subgroup"><span>--- 2.3.4.</span> Coverage criteria (optional).</div>
+                        <div class="subgroup"><span>2.4.</span> Other ways of characterizing legacy code.</div>
+                        <div class="subgroup"><span>--- 2.4.1.</span> Golden Master + Sampling.</div>
+                        <div class="subgroup"><span>--- 2.4.2.</span> Approval Testing.</div>
+                        <div class="subgroup"><span>2.5.</span> Making changes.</div>
+                        <div class="subgroup"><span>--- 2.5.1.</span> TDD & planned refactorings.</div>
+                        <div class="subgroup"><span>--- 2.5.2.</span> Splinter Pattern & other especial refactoring techniques.</div>
+                        <div class="subgroup"><span>--- 2.5.3.</span> From inheritance-based seams to dependency injection (optional).</div>
+                        <div class="subgroup"><span>2.6.</span> Finding testing points and identifying changing points.</div>
+                        <div class="subgroup"><span>2.7.</span> Shortcuts: sprouting & wrapping.</div>
+                        <div class="subgroup"><span>2.8.</span> Incremental rewrites.</div>
+                        <div class="subgroup"><span>--- 2.8.1.</span> ¿Why incrementale rewrites?.</div>
+                        <div class="subgroup"><span>--- 2.8.2.</span> Branch By Abstraction.</div>
+                        <div class="subgroup"><span>--- 2.8.3.</span> Strangler Fig Application.</div>
+                        <div class="subgroup"><span>--- 2.8.4.</span> Testing in production with experiments (optional).</div>
+                        <div class="group"><span>3.</span> Evolving legacy: strategies</div>
+                        <div class="subgroup"><span>3.1.</span> Technical Debt, economic implications and management.</div>
+                        <div class="subgroup"><span>3.2.</span> Prioritizing and triaging technical debt.</div>
+                        <div class="subgroup"><span>--- 3.2.1.</span> Hotspots analysis.</div>
+                        <div class="subgroup"><span>--- 3.2.2.</span> Product Hurricane Maps.</div>
+                        <div class="subgroup"><span>3.3.</span> Some strategic patterns (optional).</div>
+                    </div>'
+      languages:
+        title: Languages
+        text: <p>At the moment the examples and katas are ready for Java and C#, but if you wish to use another language please let us know.</p>
+      requirements:
+        title: Requirements
+        text: 'We will send you an email telling you everything you need to install before the course.'
+      who:
+        title: Who is it intended for?
+        text: '<p>Primarily for programmers working with the object-oriented paradigm.</p>'
+      where:
+        title: For companies or open to the community
+        text: '<p>The course can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
+              <p class="unicode">Please note that courses for companies take place once we have been booked by the client. We will need to know the date at least one month in advance in order to be able to schedule them.</p>'
     user_stories:
       title: User Stories
       name: User Stories
@@ -810,6 +874,7 @@ urls:
   ddd: /en/trainings/ddd/
   refactoring: /en/trainings/refactoring/
   user_stories: /en/trainings/user-stories/
+  changing_legacy: /en/trainings/changing-legacy/
   cd_databases: /en/trainings/cd-databases/
   intellij_guru: /en/trainings/intellij-guru/
   blog: /en/publications/
