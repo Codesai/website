@@ -199,7 +199,7 @@ pages:
       </div>'
       languages:
         title: Lenguajes
-        text: <p>Los ejemplos y katas están en Java, JavaScript, C#, Python y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>
+        text: <p>Los ejemplos y katas están en Java, JavaScript, C#, TypeScript y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>
       requirements:
         title: Requisitos
         text: '<p>Te enviaremos un email con todo lo que necesitas tener instalado para hacer este curso.</p>'

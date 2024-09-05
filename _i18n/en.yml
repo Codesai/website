@@ -199,7 +199,7 @@ pages:
       </div>'
       languages:
         title: Languages
-        text:  At the moment the examples and katas are ready for Java, JavaScript, C#, Python and PHP, but if you wish to use another language please let us know.
+        text:  At the moment the examples and katas are ready for Java, JavaScript, C#, TypeScript and PHP, but if you wish to use another language please let us know.
       requirements:
         title: Requirements
         text: 'We will send you an email telling you everything you need to install before the course.'
