@@ -172,29 +172,34 @@ pages:
       agenda:
         title: Contents
         day_1:
-          title: Day One
+          title: Part One
           content: '<div class="topics">
                       <div class="group"><span>1.</span> Introduction to TDD</div>
                       <div class="subgroup"><span>&bull;</span> Why use TDD?</div>
                       <div class="subgroup"><span>&bull;</span> TDD Cycle</div>
 
-                      <div class="group"><span>2. </span>Examples selction & heuristics</div>
-                      <div class="subgroup"><span>&bull;</span> Examples list, partitions y boundary conditions</div>
+                      <div class="group"><span>2. </span>Examples selection & heuristics</div>
+                      <div class="subgroup"><span>&bull;</span> Examples list</div>
                       <div class="subgroup"><span>&bull;</span> Descomposing behaviors</div>
+                      <div class="subgroup"><span>&bull;</span> Partitions and redundant examples</div>
+                      <div class="subgroup"><span>&bull;</span> Boundary-value analysis</div> 
+                      <div class="subgroup"><span>&bull;</span> Mutation testing</div> 
                       <div class="subgroup"><span>&bull;</span> Test order selection & TDD heuristics</div>
                   </div>'
         day_2:
-          title: Day Two
+          title: Part Two
           content: '<div class="topics">
-          <div class="group"><span>3. </span>Test doubles</div>
-          <div class="subgroup"><span>&bull;</span> Interaction-based testing</div>
+          <div class="group"><span>3. </span>Using Test Doubles: why, where and how</div>
+          <div class="subgroup"><span>&bull;</span> Why test doubles?</div>
+          <div class="subgroup"><span>&bull;</span> Recognizing awkward dependencies: FIRS</div>
+          <div class="subgroup"><span>&bull;</span> Interaction-based testing and TDD</div>
           <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
           
           <div class="group"><span>4. </span>Patterns, sustainability and basic cycle variations</div>
 
-          <div class="group"><span>5. </span>Outside-in TDD</div>
+          <div class="group"><span>5. </span>Outside-in TDD & Classicist vs Mockist</div>
           <div class="subgroup"><span>&bull;</span> Advantages over inside-out</div>
-          <div class="subgroup"><span>&bull;</span> Classicist vs Mockist</div>
+          <div class="subgroup"><span>&bull;</span> Classicist & Mockist styles: unit definition, flow and implications on design</div>
           <div class="subgroup"><span>&bull;</span> Misuse of test doubles and tips to avoid it</div>
       </div>'
       languages:
