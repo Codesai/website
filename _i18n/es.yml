@@ -144,7 +144,7 @@ pages:
         description: El objetivo de este curso aprender sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Aprenderemos a reconocer los diferentes code smells y técnicas de refactoring para mejorar el diseño de código ya existente de forma segura e incremental.
         link: /cursos/refactoring/
       changing_legacy:
-        name: Changing Legacy Code
+        name: Cambiando Legacy
         description: En este curso aprenderemos cómo cambiar y mejorar código legacy de una manera segura y efectiva. Aprenderemos diferentes técnicas para introducir tests en código legacy, refactorizarlo y/o reescribirlo de forma gradual y sostenible. También aprenderemos sobre gestión y priorización de deuda técnica. 
         link: /cursos/changing-legacy/
       ddd:
