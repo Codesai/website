@@ -432,37 +432,132 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       content:
         title: Contenidos
         agenda: '<div class="topics">
-                    <div class="group"><span>1.</span> Código Legacy.</div>
-                    <div class="subgroup"><span>1.1.</span> Problemáticas y desafíos.</div>
-                    <div class="subgroup"><span>1.2.</span> Implicaciones económicas.</div>
-                    <div class="group"><span>2.</span> Evolucionando código legacy: técnicas.</div>
-                    <div class="subgroup"><span>2.1.</span> Cover & Modify.</div>
-                    <div class="subgroup"><span>2.2.</span> Técnicas de rotura de dependencias.</div>
-                    <div class="subgroup"><span>2.3.</span> Tests de caracterización.</div>
-                    <div class="subgroup"><span>--- 2.3.1.</span> Caracterizando código legacy.</div>
-                    <div class="subgroup"><span>--- 2.3.2.</span> Structural Testing.</div>
-                    <div class="subgroup"><span>--- 2.3.3.</span> Mutation Testing.</div>
-                    <div class="subgroup"><span>--- 2.3.4.</span> Criterios de cobertura (opcional).</div>
-                    <div class="subgroup"><span>2.4.</span> Otras maneras de caracterizar código legacy.</div>
-                    <div class="subgroup"><span>--- 2.4.1.</span> Golden Master + Sampling.</div>
-                    <div class="subgroup"><span>--- 2.4.2.</span> Approval Testing.</div>
-                    <div class="subgroup"><span>2.5.</span> Haciendo cambios.</div>
-                    <div class="subgroup"><span>--- 2.5.1.</span> TDD y refactorings planeados.</div>
-                    <div class="subgroup"><span>--- 2.5.2.</span> Splinter Pattern y otras técnicas especiales de refactoring.</div>
-                    <div class="subgroup"><span>--- 2.5.3.</span> De costuras basadas en herencia a inyección de independencias (opcional).</div>
-                    <div class="subgroup"><span>2.6.</span> Encontrando puntos de testeo e identificando puntos de cambios.</div>
-                    <div class="subgroup"><span>2.7.</span> Atajos: sprouting & wrapping.</div>
-                    <div class="subgroup"><span>2.8.</span> Reescrituras incrementales.</div>
-                    <div class="subgroup"><span>--- 2.8.1.</span> ¿Por qué reescrituras incrementales?.</div>
-                    <div class="subgroup"><span>--- 2.8.2.</span> Branch By Abstraction.</div>
-                    <div class="subgroup"><span>--- 2.8.3.</span> Strangler Fig Application.</div>
-                    <div class="subgroup"><span>--- 2.8.4.</span> Testeando en producción con experimentos (opcional).</div>
-                    <div class="group"><span>3.</span> Evolucionando legacy: estrategias</div>
-                    <div class="subgroup"><span>3.1.</span> Deuda técnica, implicaciones económicas y gestión.</div>
-                    <div class="subgroup"><span>3.2.</span> Priorización y triaje de deuda técnica.</div>
-                    <div class="subgroup"><span>--- 3.2.1.</span> Análisis de hotspots.</div>
-                    <div class="subgroup"><span>--- 3.2.2.</span> Product Hurricane Maps.</div>
-                    <div class="subgroup"><span>3.3.</span> Algunos patrones estratégicos.</div>
+                    <div class="group"><span>1.</span> ¿Qué es el código legado?</div>
+                    <div class="subgroup"><span>1.1.</span> Definiciones.</div>
+                    <div class="subgroup"><span>1.2.</span> Valor en el código legado.</div>
+                    <div class="subgroup"><span>1.3.</span> El código legado como problema de negocio.</div>
+                    <div class="subgroup"><span>1.4.</span> El coste humano del código legado.</div>
+                    <div class="subgroup"><span>1.5.</span> El código legado puede ser beneficioso para nuestra carrera.</div>
+                    
+                    <div class="group"><span>2.</span> Priorización de deuda técnica.</div>
+                    <div class="subgroup"><span>2.1.</span> Deuda técnica.</div>
+                    <div class="subgroup"><span>--- 2.1.1.</span> Metáfora original, definición inclusiva y clasificaciones.</div>
+                    <div class="subgroup"><span>--- 2.1.2.</span> Costes: principal, interés recurrente e interés acumulado.</div>
+                    <div class="subgroup"><span>--- 2.1.3.</span> Línea de vida de la deuda técnica.</div>
+                    <div class="subgroup"><span>2.2.</span> Priorización.</div>
+                    <div class="subgroup"><span>--- 2.2.1.</span> Inspección contínua.</div>    
+                    <div class="subgroup"><span>--- 2.2.2.</span> Contingencia de la deuda técnica.</div>
+                    <div class="subgroup"><span>--- 2.2.3.</span> Análisis de comportamiento de código.</div>    
+                    <div class="subgroup"><span>--- 2.2.4.</span> Análisis de Hotspots.</div>
+                    <div class="subgroup"><span>--- 2.2.5.</span> Product Hurricane Maps.</div>
+                    <div class="subgroup"><span>--- 2.2.6.</span> Análisis de Change Coupling y dependencias implícitas.</div>
+                    <div class="subgroup"><span>--- 2.2.7.</span> Análisis de Sum of Coupling (SoC).</div>
+                    <div class="subgroup"><span>--- 2.2.8.</span> Combinando análisis: Hotspots, Change Coupling y SoC.</div>
+                    
+                    <div class="group"><span>3.</span> Evolucionando código legado: técnicas.</div>
+                    <div class="subgroup"><span>--- 3.1.</span> Metáfora original, definición inclusiva y clasificaciones.</div>
+                    <div class="subgroup"><span>--- 3.1.1.</span> Valor en el código legado: comportamiento.</div>
+                    <div class="subgroup"><span>--- 3.1.2.</span> Tipos de cambios.</div>
+                    <div class="subgroup"><span>--- 3.1.3.</span> Protegiendo el comportamiento.</div>
+                    <div class="subgroup"><span>--- 3.1.4.</span> Cubrir y Modificar.</div>
+                    <div class="subgroup"><span>--- 3.1.5.</span> Problemas de testeabilidad <=> Mal diseño.</div>        
+                    
+                    <div class="group"><span>4.</span> Introducir tests en código no testeable.</div>
+                    <div class="subgroup"><span>4.1.</span> Dependencias problemáticas.</div>
+                    <div class="subgroup"><span>4.2.</span> Técnicas de rotura de dependencias.</div>
+                    <div class="subgroup"><span>--- 4.2.1.</span> Razones.</div>
+                    <div class="subgroup"><span>--- 4.2.2.</span> Modelo de costuras.</div>
+                    <div class="subgroup"><span>--- 4.2.3.</span> Costuras de objetos.</div>
+                    <div class="subgroup"><span>--- 4.2.4.</span> Técnicas básicas.</div>
+                    <div class="subgroup"><span>--- 4.2.5.</span> Técnicas para dependencias estáticas y Singletons.</div>
+                    <div class="subgroup"><span>--- 4.2.6.</span> Atajos.</div>                    
+                    
+                    <div class="group"><span>5.</span> Estrategias de testing en código legado.</div>
+                    <div class="subgroup"><span>5.1.</span> Tipos de tests.</div>
+                    <div class="subgroup"><span>5.2.</span> Ventajas y desventajas de cada tipo de test.</div>
+                    <div class="subgroup"><span>5.3.</span> Distribución de tests: objetivos, trade offs y alternativas.</div>
+                    <div class="subgroup"><span>5.4.</span> ¿Pirámide de testing en código legado?</div>
+                    <div class="subgroup"><span>5.5.</span> Estrategia propuesta.</div>
+                    
+                    <div class="group"><span>6.</span> Tests de caracterización.</div>
+                    <div class="subgroup"><span>6.1.</span> Caracterizando código legado.</div>
+                    <div class="subgroup"><span>6.2.</span> Structural Testing.</div>
+                    <div class="subgroup"><span>--- 6.2.1.</span> Uso de herramientas de cobertura.</div>
+                    <div class="subgroup"><span>--- 6.2.2.</span> Heurísticas y criterios para seleccionar inputs relevantes.</div>
+                    <div class="subgroup"><span>--- 6.2.3.</span> Criterios de cobertura.</div>
+                    <div class="subgroup"><span>--- 6.2.4.</span> Análisis de valores de frontera.</div>
+                    <div class="subgroup"><span>6.3.</span> Mutation Testing: concepto, herramientas y uso práctico.</div>
+                    
+                    <div class="group"><span>7.</span> Encontrando puntos de testeo.</div>
+                    <div class="subgroup"><span>7.1.</span> Análisis de la propagación de los efectos de un cambio.</div>
+                    <div class="subgroup"><span>7.2.</span> Puntos desde los que testear.</div>
+                    <div class="subgroup"><span>--- 7.2.1.</span> Interception points.</div>
+                    <div class="subgroup"><span>--- 7.2.2.</span> Pinch points.</div>
+                    <div class="subgroup"><span>7.3.</span> Distancia desde la que testear y scope de los tests.</div>
+                    
+                    <div class="group"><span>8.</span> Otras maneras de caracterizar código legado.</div>
+                    <div class="subgroup"><span>8.1.</span> Golden Master + Sampling.</div>
+                    <div class="subgroup"><span>8.2.</span> Approval Testing.</div>
+                    <div class="subgroup"><span>--- 8.2.1.</span> Combinatorics & Approval Testing.</div>    
+                        
+                    <div class="group"><span>9.</span> Relación entre falta de cohesión y dificultad de testeo.</div>
+                    <div class="subgroup"><span>9.1.</span> Análisis de diferentes casos.</div>
+                    <div class="subgroup"><span>--- 9.1.1.</span> Código cohesivo.</div>
+                    <div class="subgroup"><span>--- 9.1.2.</span> Falta de cohesión por divergent change (hotspots).</div>
+                    <div class="subgroup"><span>--- 9.1.3.</span> Falta de cohesión por shotgun surgery (change coupling).</div>
+                    
+                    <div class="group"><span>10.</span> Haciendo cambios: TDD en código legado.</div>
+                    
+                    <div class="group"><span>11.</span> Haciendo cambios: Atajos cuando no hay tiempo de cubrir y modificar.</div>
+                    <div class="subgroup"><span>11.1.</span> Sprouting.</div>
+                    <div class="subgroup"><span>11.2.</span> Wrapping.</div>
+                    
+                    <div class="group"><span>12.</span> Reescrituras incrementales.</div>
+                    <div class="subgroup"><span>12.1.</span> ¿Por qué reescrituras incrementales?.</div>
+                    <div class="subgroup"><span>12.2.</span> Branch By Abstraction.</div>
+                    <div class="subgroup"><span>12.3.</span> Strangler Fig Application.</div>
+                    <div class="subgroup"><span>12.4.</span> Testeando reescrituras en producción con experimentos.</div>
+                    
+                    <div class="group"><span>13.</span> Refactorizando código legado.</div>
+                    <div class="subgroup"><span>13.1.</span> Flujos de refactoring.</div>
+                    <div class="subgroup"><span>13.2.</span> Objetivos y estrategias.</div>
+                    <div class="subgroup"><span>13.3.</span> Estrategias de refactoring según subdominios de DDD.</div>
+                    <div class="subgroup"><span>13.4.</span> Refactorings que mejoran la testeabilidad y productividad.</div>
+                    <div class="subgroup"><span>--- 13.4.1.</span> Separar infraestructura de lógica de negocio.</div>
+                    <div class="subgroup"><span>--- 13.4.2.</span> Mejora de la cohesión.</div>
+                    
+                    <div class="group"><span>14.</span> Introduciendo DDD en código legado.</div>
+                    <div class="subgroup"><span>14.1.</span> Motivación.</div>
+                    <div class="subgroup"><span>14.2.</span> Patrones útiles.</div>
+                    <div class="subgroup"><span>--- 14.2.1.</span> Contexto Burbuja.</div>
+                    <div class="subgroup"><span>--- 14.2.2.</span> Burbuja Autónoma.</div>
+                    <div class="subgroup"><span>--- 14.2.3.</span> Exponiendo activos del legado como servicios.</div> 
+                    
+                    <div class="group"><span>15.</span> Técnicas de refactoring para hotspots.</div>
+                    <div class="subgroup"><span>15.1.</span> ¿Cómo se forma un hotspot?.</div>
+                    <div class="subgroup"><span>15.2.</span> Heurísticas para identificar responsabilidades.</div>
+                    <div class="subgroup"><span>15.3.</span> ¿Cómo dividir una hotspot en clases más cohesivas?.</div>
+                    <div class="subgroup"><span>--- 15.3.1.</span> Aproximación en Working Effectively with legacy Code.</div>
+                    <div class="subgroup"><span>--- 15.3.2.</span> Splinter Pattern.</div>
+                    <div class="subgroup"><span>--- 15.3.3.</span> Aproximación en Object-Oriented Reengineering Patterns.</div>    
+                    
+                    <div class="group"><span>16.</span> Orientación a objetos para mejorar código legado.</div>
+                    <div class="subgroup"><span>16.1.</span> Consejos sobre aplicar patrones de diseño para simplificar código legado.</div>
+                    <div class="subgroup"><span>--- 16.1.1.</span> Cross-cutting concerns.</div>
+                    <div class="subgroup"><span>--- 16.1.2.</span> Separar tarea principal de tareas secundarias asociada.</div>
+                    <div class="subgroup"><span>--- 16.1.3.</span> Reglas de negocio bizantinas.</div>
+                    <div class="subgroup"><span>--- 16.1.4.</span> Código condicional.</div>
+                    <div class="subgroup"><span>--- 16.1.5.</span> Sucedáneos procedurales del polimorfismo.</div>        
+                    <div class="subgroup"><span>--- 16.1.6.</span> Interfaces adecuadas para código legado estable.</div>        
+                    <div class="subgroup"><span>16.2.</span> Code smells que perjudican o inhiben la orientación a objetos.</div>
+                    
+                   <div class="group"><span>17.</span> Técnicas de refactoring para costuras basadas en herencia.</div>
+                   <div class="subgroup"><span>17.1.</span> Mover costura basada en herencia a delegado.</div>
+                   <div class="subgroup"><span>17.2.</span> Eliminar costura basada en herencia.</div>
+                  
+                   <div class="group"><span>18.</span> Cierre del curso: cartas de navegación.</div>
+                   <div class="subgroup"><span>18.1.</span> Visión de conjunto: temas explorados y por explorar.</div>
+                   <div class="subgroup"><span>18.2.</span> Cambiando perspectivas sobre el código legado.</div>
                 </div>'
       languages:
         title: Lenguajes
