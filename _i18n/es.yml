@@ -544,7 +544,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                     <div class="group"><span>16.</span> Orientación a objetos para mejorar código legado.</div>
                     <div class="subgroup"><span>16.1.</span> Aplicando patrones de diseño para simplificar código legado.</div>
                     <div class="subgroup"><span>--- 16.1.1.</span> Cross-cutting concerns.</div>
-                    <div class="subgroup"><span>--- 16.1.2.</span> Separar tarea principal de tareas secundarias asociada.</div>
+                    <div class="subgroup"><span>--- 16.1.2.</span> Separar tarea principal de tareas secundarias asociadas.</div>
                     <div class="subgroup"><span>--- 16.1.3.</span> Reglas de negocio bizantinas.</div>
                     <div class="subgroup"><span>--- 16.1.4.</span> Código condicional.</div>
                     <div class="subgroup"><span>--- 16.1.5.</span> Sucedáneos procedurales del polimorfismo.</div>        
