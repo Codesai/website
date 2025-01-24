@@ -553,7 +553,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                     
                    <div class="group"><span>17.</span> Técnicas de refactoring para costuras basadas en herencia.</div>
                    <div class="subgroup"><span>17.1.</span> Mover costura basada en herencia a delegado.</div>
-                   <div class="subgroup"><span>17.2.</span> Eliminar costura basada en herencia.</div>
+                   <div class="subgroup"><span>17.2.</span> Introducir inyección de depedencias.</div>
                   
                    <div class="group"><span>18.</span> Cierre del curso: cartas de navegación.</div>
                    <div class="subgroup"><span>18.1.</span> Visión de conjunto: temas explorados y por explorar.</div>
