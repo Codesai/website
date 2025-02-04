@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A case Shotgun Surgery
+title: A case of Shotgun Surgery
 date: 2025-02-03 06:30:00.000000000 +01:00
 type: post
 published: true
