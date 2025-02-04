@@ -28,8 +28,10 @@ En el contexto del producto, el SEO además de ser una fuente de ingresos import
 A la complejidad esencial de calcular el canonical de una página y decidir si se indexa o no, se añadía la complejidad accidental provocada por un código en el que las reglas del SEO se encontraban dispersas en 2 zonas de la aplicación, `IndexationCalculator` y `CanonicalCalculator`. Por suerte, ambas tenían tests.
 
 
+
 <figure style="margin:auto; width: 100%">
 <img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice1.png" alt="test contra cada clase" />
+<figcaption><strong><em>IndexationCalculator</em> y <em>CanonicalCalculator</em> con sus tests.</strong></figcaption>
 </figure>
 
 
@@ -52,10 +54,12 @@ El problema es que en este caso las reglas se estaban ejecutando en un orden det
 
 
 ## Segregando las Reglas
-En un caso en el que el cálculo del Canonical y el de la indexación fuesen totalmente independientes, mover las reglas solo supondría mover casos de tests entre los tests de las implementaciones y el mover el código correspondiente, usando [Move Function](https://refactoring.com/catalog/moveFunction.html).
+En un caso en el que el cálculo del canonical y el de la indexación no tuvieran que ser ejecutadas en un orden determinado, mover las reglas sólo supondría mover casos de tests entre los tests de las implementaciones y el mover el código correspondiente, usando [Move Function](https://refactoring.com/catalog/moveFunction.html).
+
 
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice2.png" alt="test contra cada clase" />
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice2.png" alt="Mover responsabilidades es fácil cuando no importa el orden de ejecución" />
+<figcaption><strong>Mover reglas es fácil cuando no importa el orden de ejecución.</strong></figcaption>
 </figure>
 
 Pero, como explicamos anteriormente, la dependencia entre ambos cálculos introducida por el orden preestablecido y la complejidad de las reglas, hacía que no fuera fácil razonar si era seguro mover la lógica sin cambiar comportamiento. Además, teniendo en cuenta, como ya se explicó, que el SEO supone una fuente de ingresos considerable para este producto, no podíamos aceptar el nivel de riesgo que suponía refactorizar de la manera que hemos explicado.
@@ -67,8 +71,10 @@ Para reducir el riesgo de modificar el comportamiento, lo que hicimos fue extrae
 
 A continuación creamos una nueva batería de tests contra `PageIndexer` que contenía los casos de tests tanto del `CanonicalCalculator` como de `IndexationCalculator`, y añadimos los tests que faltaban para la interacción entre ambas clases. De esta manera estábamos probando no solo cada unidad por separado sino además la interacción (o integración) de ambas.
 
+
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice3.png" alt="test contra cada clase" />
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice3.png" alt="nuevos tests contra PageIndexer" />
+<figcaption><strong>Nuevos tests contra la nueva abstracción que encapsula el orden de ejecución de las reglas.</strong></figcaption>
 </figure>
 
 
@@ -76,6 +82,7 @@ Teniendo estos tests contra `PageIndexer` pudimos empezar a mover a `IndexationC
 
 <figure style="margin:auto; width: 100%">
 <img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice4.png" alt="test contra cada clase" />
+<figcaption><strong>Ahora podemos mover reglas con confianza y, al final, eliminar los antiguos tests.</strong></figcaption>
 </figure>
 
 
