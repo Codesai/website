@@ -15,6 +15,8 @@ twitter: codesaidev
 small_image: shotgun-surgery.jpg
 ---
 
+This post is an English translation of the original post: [Un caso de Shotgun Surgery](https://codesai.com/posts/2022/09/un-caso-de-shotgun-surgery).
+
 ## The context.
 
 Some time ago we were collaborating with a client whose product relied heavily on [Search engine optimization](https://en.wikipedia.org/wiki/Search_engine_optimization) (SEO). In general, SEO is usually an important area to focus on, but for this client, SEO represented a significant source of income and was therefore critical to their success.
