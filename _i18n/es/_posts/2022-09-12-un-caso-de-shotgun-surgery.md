@@ -55,7 +55,7 @@ El problema es que en este caso las reglas se estaban ejecutando en un orden det
 En un caso en el que el cálculo del Canonical y el de la indexación fuesen totalmente independientes, mover las reglas solo supondría mover casos de tests entre los tests de las implementaciones y el mover el código correspondiente, usando [Move Function](https://refactoring.com/catalog/moveFunction.html).
 
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice4.png" alt="test contra cada clase" />
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice2.png" alt="test contra cada clase" />
 </figure>
 
 Pero, como explicamos anteriormente, la dependencia entre ambos cálculos introducida por el orden preestablecido y la complejidad de las reglas, hacía que no fuera fácil razonar si era seguro mover la lógica sin cambiar comportamiento. Además, teniendo en cuenta, como ya se explicó, que el SEO supone una fuente de ingresos considerable para este producto, no podíamos aceptar el nivel de riesgo que suponía refactorizar de la manera que hemos explicado.
@@ -68,14 +68,14 @@ Para reducir el riesgo de modificar el comportamiento, lo que hicimos fue extrae
 A continuación creamos una nueva batería de tests contra `PageIndexer` que contenía los casos de tests tanto del `CanonicalCalculator` como de `IndexationCalculator`, y añadimos los tests que faltaban para la interacción entre ambas clases. De esta manera estábamos probando no solo cada unidad por separado sino además la interacción (o integración) de ambas.
 
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice2.png" alt="test contra cada clase" />
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice3.png" alt="test contra cada clase" />
 </figure>
 
 
 Teniendo estos tests contra `PageIndexer` pudimos empezar a mover a `IndexationCalculator` la lógica de indexation que se había filtrado en  `CanonicalCalculator` y viceversa. Para ello movimos las reglas moviendo primero los casos de tests y luego el código correspondiente, usando [Move Function](https://refactoring.com/catalog/moveFunction.html). Al terminar de segregar las responsabilidades, eliminamos los tests que probaban las responsabilidades por separado.
 
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice3.png" alt="test contra cada clase" />
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice4.png" alt="test contra cada clase" />
 </figure>
 
 
