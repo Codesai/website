@@ -32,19 +32,13 @@ For that product, SEO was not only a significant source of revenue but also quit
 
 In that legacy system, SEO rules were located in two areas of the application: the `IndexingCalculator` and the `CanonicalCalculator` classes.
 
-<figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice1.png" alt="test contra cada clase" />
-</figure>
-
-
 Clients viewed these two functionalities through the following interfaces shown below:
 
-<script src="https://gist.github.com/franreyes/7f7c684c771e1c2c35ca1210c6f0ffbc.js"></script>
+<script src="https://gist.github.com/trikitrok/722a14c04fb791df2428f922b6d3144b.js"></script>
 
 ## The problem.
 
 At first glance, based on the names of the interfaces, and, it seemed that the responsibilities were neatly separated. There was one place for deciding whether a page should be indexed, `IndexingCalculator`, and another for calculating its canonical URL, `CanonicalCalculator`. Both came with their own suite of tests that verified their respective behavior independently.
-
 
 However, when asked to modify the canonical calculation rules, we were forced to consider and likely modify both the implementation of `IndexingCalculator` and `CanonicalCalculator`. The same happened when we had to modify the indexing rules. The problem was that changes to one component often required changes to the other. 
 
@@ -52,17 +46,23 @@ Although the interfaces were designed to separate responsibilities and their nam
 
 In this specific case, there was a lack of cohesion at the implementation level. Although the axes of change had been correctly identified at the interface level, the responsibilities were scattered across both implementations.
 
+<figure style="margin:auto; width: 100%">
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice1_en.png" alt="A case of shotgun surgery..." />
+<figcaption><strong>A case of shotgun surgery...</strong></figcaption>
+</figure>
+
 To fix this case of [Shotgun Surgery](https://dzone.com/articles/code-smell-shot-surgery) we needed to segregate responsibilities by moving all the indexing logic to `IndexingCalculator`, and all the canonical logic to `CanonicalCalculator` so that we no longer violate the [SRP](https://www.thebigbranchtheory.dev/post/single-responsablity/). 
 
 
 ## Segregating the Rules.
 
 
-If the canonical and indexing logics were completely independent, moving the rules would simply involve moving test cases between the tests of each implementation and moving the corresponding code using [Move Function](https://refactoring.com/catalog/moveFunction.html).
+If the canonical and indexing logics could be executed in any order, moving the rules would simply involve moving test cases between the tests of each implementation and moving the corresponding code using [Move Function](https://refactoring.com/catalog/moveFunction.html).
 
 
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice4.png" alt="test contra cada clase" />
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice2.png" alt="Moving rules would be easy if the order of execution of the canonical logic and the indexing logic did not matter" />
+<figcaption><strong>Moving rules would be easy if the order of execution of the canonical logic and the indexing logic did not matter.</strong></figcaption>
 </figure>
 
 However, in this case, fixing the shotgun surgery was much more difficult because the order in which the SEO rules had to run was neither in `IndexingCalculator` nor in `CanonicalCalculator` but in client code that wasn’t even tested. This meant that there was no way to determine whether moving some logic from one class to the other was preserving the behavior.
@@ -73,12 +73,13 @@ Considering, as already explained, that SEO represented a significant source of 
 To reduce the risk of altering the behavior, our strategy was to introduce a new class called `PageSEO`, whose responsibility was to coordinate the indexing and canonical calculations. `PageSEO` explicitly owned the sequence of operations. By centralizing this orchestration logic, we eliminated the implicit, fragile dependencies embedded in the client code.
 
 
-<script src="https://gist.github.com/franreyes/829829d2d830ce97554f384565e19f43.js"></script>
+<script src="https://gist.github.com/trikitrok/f84b053b7871d0f9e222500171859a41.js"></script>
 
 Next, we created a new suite of tests for `PageSEO`. This new suite not only included the test cases of both `CanonicalCalculator` and `IndexingCalculator`, but also new previously missing test cases that protected the order in which the indexing and canonical rules were applied. In this way, we were testing not only each component individually but also the integration between them. 
 
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice2.png" alt="test contra cada clase" />
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice3.png" alt="New tests for the new abstraction that encapsulates the order in which indexing and canonical logics are executed" />
+<figcaption><strong>New tests for the new abstraction that encapsulates the order in which indexing and canonical logics are executed.</strong></figcaption>
 </figure>
 
 These tests for `PageSEO` gave us enough confidence to start refactoring. 
@@ -89,7 +90,8 @@ Once we finished segregating responsibilities, we removed the redundant tests th
 
 
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice3.png" alt="test contra cada clase" />
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice4.png" alt="Now we can move the rules with confidence. Once the responsibilities are segregated, we delete the initial tests" />
+<figcaption><strong>Now we can move the rules with confidence. Once the responsibilities are segregated, we delete the initial tests.</strong></figcaption>
 </figure>
 
 After applying this refactoring, we achieved the following:
@@ -112,7 +114,7 @@ I hope this explanation was clear and helpful. Feel free to reach out for guidan
 
 ## Notes.
 
-1) LosThe reasons why the responsibilities became mixed might lie in the design of the interfaces, but this issue may be addressed in a future post.
+1) The reasons why the responsibilities became mixed might lie in the design of the interfaces, but this issue may be addressed in a future post.
 
 
 

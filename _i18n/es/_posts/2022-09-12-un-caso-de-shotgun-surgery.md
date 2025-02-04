@@ -27,11 +27,9 @@ En el contexto del producto, el SEO además de ser una fuente de ingresos import
 
 A la complejidad esencial de calcular el canonical de una página y decidir si se indexa o no, se añadía la complejidad accidental provocada por un código en el que las reglas del SEO se encontraban dispersas en 2 zonas de la aplicación, `IndexationCalculator` y `CanonicalCalculator`. Por suerte, ambas tenían tests.
 
-
-
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice1.png" alt="test contra cada clase" />
-<figcaption><strong><em>IndexationCalculator</em> y <em>CanonicalCalculator</em> con sus tests.</strong></figcaption>
+<img src="/assets/posts/2022-09-12-un-caso-de-shotgun-surgery/slice1_es.png" alt="Un caso claro de shotgun surgery..." />
+<figcaption><strong>Un caso claro de shotgun surgery...</strong></figcaption>
 </figure>
 
 
