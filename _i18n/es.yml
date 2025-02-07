@@ -936,17 +936,17 @@ components:
   course:
     information: Información
     hours: horas
-    modality: Presencial o remoto.
+    modality: Remoto (consultar presencial).
     price_ratio: €/persona
     iva_excluded: I.V.A. no incluido.
     button: Ver más información
   course_summary:
     title: Información
     open_dates:
-      title: Próximas fechas en abierto
+      title: Próximos cursos en abierto
     special_discount: <span>Bonificable por FUNDAE</span>
     hours: horas
-    default_modality_text: Presencial o remoto
+    default_modality_text: Remoto (consultar presencial).
     participant: persona
     iva_excluded: (I.V.A no incluido)
     button: ¡Me interesa!
