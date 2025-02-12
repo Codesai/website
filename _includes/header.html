@@ -33,6 +33,18 @@
     <a href="{% translate urls.contact %}"><span>{% translate header.links.contact %}</span></a>
 </div>
 
+<div class="banner-announcement">
+    <p class="desktop-text">
+        Cursos de Code Smells & Refactoring en abierto en PHP, C# y TypeScript (<a href="/cursos/refactoring/#course-summary-desktop">ver fechas</a>)
+    </p>
+    <p class="mobile-text" href="/cursos/refactoring/#call-to-action">
+        Cursos de Code Smells & Refactoring en abierto en PHP, C# y TypeScript (<a href="/cursos/refactoring/#course-summary-mobile">ver fechas</a>)
+    </p>
+    <a href="/cursos/refactoring/#call-to-action" class="desktop-link">
+        {% include components/codesai-button.html content='¡Me interesa!' %}
+    </a>
+</div>
+
 <script>
     const mobileMenuTrigger = document.getElementById("mobile-menu-trigger");
     const mobileMenu = document.getElementById("mobile-menu");

@@ -20,7 +20,7 @@ permalink_en: /trainings/refactoring/
                         {% translate pages.courses.code_smells_refactoring.text %}
                     </div>
 
-                    <div class="summary mobile">
+                    <div id="course-summary-mobile" class="summary mobile">
                         {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                         {% capture link %}{{ site.translations[site.lang].pages.courses.code_smells_refactoring.call_to_action.link }}{% endcapture %}
                         {%
@@ -74,7 +74,7 @@ permalink_en: /trainings/refactoring/
                         {% translate pages.courses.code_smells_refactoring.where.text %}
                     </section>
                 </div>
-                <div class="summary desktop">
+                <div id="course-summary-desktop" class="summary desktop">
                     {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                     {% capture link %}{{ site.translations[site.lang].pages.courses.code_smells_refactoring.call_to_action.link }}{% endcapture %}
                     {%
