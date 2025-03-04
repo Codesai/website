@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The unit is not the class in the London school style of TDD
+title: The class is not the unit in the London school style of TDD
 date: 2025-03-03 06:30:00.000000000 +01:00
 type: post
 published: true
@@ -45,7 +45,7 @@ In the remainder of this post, we will show that *the mockist style of TDD does 
 
 In our discussion below, we will use the book [Growing Object Oriented Software, Guided by Tests](http://www.growing-object-oriented-software.com/) (GOOS) by [Steve Freeman](https://www.linkedin.com/in/stevefreeman) and [Nat Pryce](https://www.linkedin.com/in/natpryce/) as the reference for the mockist style of TDD.
 
-## The unit is not the class in the mockist style of TDD.
+## The class is not the unit in the mockist style of TDD.
 
 #### Exhibit 1: Values & Objects.
 
