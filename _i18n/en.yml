@@ -521,6 +521,15 @@ pages:
   not_found:
     title: '404'
     text: Oops! It looks like we couldn't find what you were looking for :(
+  newsletter:
+    about:
+      title: Subscribe to our newsletter
+      first_paragraph: At Codesai we like to share what we do and we try to create quality content that, we believe, is not found in many places.
+      second_paragraph: Social media algorithms are somewhat capricious and we don't always manage to reach the people who want to be informed about what we do. If you want to stay informed, subscribe to our newsletter.
+    call_to_action:
+      title: Fill out the form to subscribe!
+      description: Enter your name, email and click on the button to subscribe. A confirmation will arrive in your inbox shortly. If you have any problems, do not hesitate to write to us at contact@codesai.com.
+      submit: Subscribe
   legal_advertisement:
     name: Codesai. Legal Notice
     title: '<h1>LEGAL NOTICE</h1>'
@@ -833,8 +842,8 @@ components:
     alerts:
       no_email: Please specify your email in the form
       no_privacy_agreement: For us to be able to reach back we need you to agree with our legal notice and privacy policy in the form
-      received: We have received your message and will reach back to you soon, thanks!
-      error: "There was a problem upon sending your message, you can write to us directly at contact@codesai.com\\n\\nDetails:\\n"
+      received: We have received your request and will reach back to you soon, thanks!
+      error: "There was a problem upon sending your request, you can write to us directly at contact@codesai.com\\n\\nDetails:\\n"
   course:
     information: Information
     hours: hours
@@ -860,6 +869,7 @@ header:
     courses: Training
     blog: Blog
     contact: Contact
+    newsletter: Newsletter 
   cookie_banner:
     message: We are using cookies to analyze the traffic in our website. For further information, please refer to our
     policy: cookie policy
@@ -884,6 +894,7 @@ urls:
   intellij_guru: /en/trainings/intellij-guru/
   blog: /en/publications/
   contact: /en/#call-to-action
+  newsletter: /newsletter
   legal_advertisement: /en/legal-advertisement/
   cookie_policy: /en/cookie-policy/
   privacy_policy: /en/privacy-policy/

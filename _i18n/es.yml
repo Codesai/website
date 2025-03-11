@@ -620,6 +620,15 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
   not_found:
     title: '404'
     text: ¡Vaya! Parece que no hemos encontrado nada aquí :(
+  newsletter:
+    about:
+      title: Suscríbete a nuestra newsletter
+      first_paragraph: En Codesai nos gusta compartir lo que hacemos e intentamos crear contenido de calidad que, creemos, no se encuentra en muchos sitios.
+      second_paragraph: Los algoritmos de las redes sociales son algo caprichosos y no siempre conseguimos llegar a las personas que quieren estar informadas sobre lo que hacemos. Si quieres estar enterado, suscríbete a nuestra newsletter.
+    call_to_action:
+      title: Rellena el formulario para suscribirte!
+      description: Indica tu nombre, email y haz click en el boton para suscribirte. En breve llegará a tu bandeja de entrada una confirmación. Si tienes algún problema, no dudes en escribirnos a contact@codesai.com.
+      submit: Suscribirme
   legal_advertisement:
     name: Codesai. Aviso Legal
     title: '<h1>Aviso legal</h1>'
@@ -931,8 +940,8 @@ components:
     alerts:
       no_email: Por favor especifica tu correo electrónico en el formulario
       no_privacy_agreement: Para poder contactar contigo necesitamos que aceptes el aviso legal y la política de privacidad en el formulario
-      received: Hemos recibido tu mensaje y responderemos en breve, gracias!
-      error: "Ha habido un problema al enviar tu mensaje, puedes escribirnos directamente a contact@codesai.com\\n\\nDetails:\\n"
+      received: Hemos recibido tu petición y responderemos en breve, gracias!
+      error: "Ha habido un problema al enviar tu petición, puedes escribirnos directamente a contact@codesai.com\\n\\nDetails:\\n"
   course:
     information: Información
     hours: horas
@@ -958,6 +967,7 @@ header:
     courses: Formación
     blog: Publicaciones
     contact: Contacto
+    newsletter: Newsletter
   cookie_banner:
     message: Usamos cookies para analizar el tráfico en nuestra página web. Para más información por favor consulta nuestra
     policy: política de cookies
@@ -980,6 +990,7 @@ urls:
   cd_databases: /cursos/cd-databases/
   intellij_guru: /cursos/intellij-guru/
   blog: /publications/
+  newsletter: /newsletter
   contact: /#call-to-action
   legal_advertisement: /legal-advertisement/
   cookie_policy: /cookie-policy/
