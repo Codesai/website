@@ -42,7 +42,7 @@ Let's see it with an example.
 
 [The Crazy Portfolio kata](https://codesai.com/posts/2024/03/crazy-portfolio-kata) is a kata to practise working with legacy code that we recently published. This kata is complicated because the code of the `Portfolio` class, not only has many responsibilities and complex conditional logic, but also, uses dates and time zones, and has side-effects, many boundary conditions between partitions and some implicit invariants<a href="#nota1"><sup>[1]</sup></a>.
 
-In the [code](https://github.com/Codesai/practice_program_ts_audiense/tree/main/09-crazy-portfolio_b) used for this example we had already written characterization tests achieving the maximum possible branch coverage, which is not 100% because there is an unreachable branch in the code, and because the seams we introduced using [Extract and Override Call](https://www.youtube.com/watch?v=i7NfgsM4VqA), which, of course, are not executed in the tests. 
+In the [code](https://github.com/Codesai/practice_program_ts_audiense/tree/main/09-crazy-portfolio_b) used for this example we had already written characterization tests achieving the maximum possible branch coverage, which is not 100% because there is an unreachable branch in the code, and because of the [seams](https://martinfowler.com/bliki/LegacySeam.html) we introduced using [Extract and Override Call](https://www.youtube.com/watch?v=i7NfgsM4VqA), which, of course, are not executed in the tests. 
 
 Depending on the refactoring we plan to do, it might not be enough to have high branch coverage to start refactoring with confidence, so we applied mutation testing using [Stryker](https://github.com/stryker-mutator/stryker-js) and the results were that 36 out of 160 mutants survived.
 
