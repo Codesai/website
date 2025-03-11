@@ -239,6 +239,6 @@ The surviving mutations in lines 32, 46, 77, and 83 point to boundary conditions
 
 <a name="nota4"></a> [4] We advise using a coverage tool to detect uncovered and dead code before running a mutation testing tool, because coverage tools results are easier to analyze than the mutation testing tools' ones.
 
-<a name="nota5"></a> [5] Testing boundary conditions, and, hence, killing mutants related to them becomes much easier if you know about boundaries' on and off points. These knowledge provides you a systematic way if killing this kind of mutants. We teach these concepts in our revamped TDD course material.
+<a name="nota5"></a> [5] Testing boundary conditions, and, hence, killing mutants related to them becomes much easier if you know about boundaries' on and off points. These knowledge provides you a systematic way if killing this kind of mutants. We teach these concepts in our revamped [TDD course](https://codesai.com/curso-de-tdd/) material.
 
 
