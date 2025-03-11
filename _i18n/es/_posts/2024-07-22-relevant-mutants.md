@@ -228,7 +228,7 @@ Finally, I’d also like to thank [Carlos Machado](https://www.pexels.com/es-es/
 
 ### Notes.
 
-<a name="nota1"></a> [1] We use a simplified version of this kata in our [Changing Legacy Code](https://codesai.com/cursos/changing-legacy/) training.
+<a name="nota1"></a> [1] We use a simplified version of this kata in our [Changing Legacy Code training](https://codesai.com/cursos/changing-legacy/).
 
 
 <a name="nota2"></a> [2] We already talked about surviving mutants pointing to redundant code in a previous post: [Mutando para simplificar](https://codesai.com/posts/2022/02/mutation-testing).
@@ -239,6 +239,6 @@ The surviving mutations in lines 32, 46, 77, and 83 point to boundary conditions
 
 <a name="nota4"></a> [4] We advise using a coverage tool to detect uncovered and dead code before running a mutation testing tool, because coverage tools results are easier to analyze than the mutation testing tools' ones.
 
-<a name="nota5"></a> [5] Testing boundary conditions, and, hence, killing mutants related to them becomes much easier if you know about boundaries' on and off points. These knowledge provides you a systematic way if killing this kind of mutants. We teach these concepts in our revamped [TDD course](https://codesai.com/curso-de-tdd/) material.
+<a name="nota5"></a> [5] Testing boundary conditions, and, hence, killing mutants related to them becomes much easier if you know about boundaries' on and off points. These knowledge provides you a systematic way if killing this kind of mutants. We teach these concepts in our revamped [TDD training](https://codesai.com/curso-de-tdd/) material.
 
 
