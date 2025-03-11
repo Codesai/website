@@ -1,0 +1,108 @@
+---
+title: pages.clients.title
+permalink: /newsletter/
+---
+
+{% include head.html %}
+
+<body>
+{% include header.html %}
+
+
+<main class="newsletter">
+    <section class="about">
+        <div class="description">
+            <div class="text">
+                <h2 class="section-title">{% translate pages.newsletter.about.title %}</h2>
+                <p>
+                    {% translate pages.newsletter.about.first_paragraph %}
+                </p>
+                <p>
+                    {% translate pages.newsletter.about.second_paragraph %}
+                </p>
+            </div>
+            <div class="image">
+                <img src="/assets/newsletter/newsletter_picture.png" alt="">
+            </div>
+        </div>
+       
+    </section>
+
+    <section id="call-to-action" class="call-to-action-wrapper">
+        <div class="call-to-action">
+            <div class="message">
+                <div class="highlight">{% translate pages.newsletter.call_to_action.title %}</div>
+                <p>
+                    {% translate pages.newsletter.call_to_action.description %}
+                </p>
+            </div>
+            <div class="contact">
+                <div class="field">
+                    <label for="name">{% translate components.call_to_action.name %}</label>
+                    <input id="name" name="entry.1588628238" type="text" required/>
+                </div>
+
+                <div class="field">
+                    <label for="email">* {% translate components.call_to_action.mail %}</label>
+                    <input type="email" id="email" name="entry.579934409" required/>
+                </div>
+
+                <div class="field">
+                    <label class="checkbox">
+                        <input type="checkbox" id="privacy-agreement" checked="checked">
+                        <div class="box">
+                            <i class="ion-checkmark"></i>
+                        </div>
+                        <div>{% translate components.call_to_action.privacy_agreement %}</div>
+                    </label>
+                </div>
+
+                <div id="submit-newsletter-form" class="codesai-button" class="codesai-button">
+                    <div class="content">{% translate pages.newsletter.call_to_action.submit %}</div>
+                    <img class="arrow" src="/assets/icons/arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const submitNewsletterFormButton = document.getElementById("submit-newsletter-form");
+        if (submitNewsletterFormButton) {
+            submitNewsletterFormButton.addEventListener('keyup', (event) => {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    submitNewsletterFormButton.click();
+                }
+            });
+            submitNewsletterFormButton.addEventListener('click', submitNewsletterForm);
+        }
+
+        function submitNewsletterForm() {
+            const email = document.getElementById('email').value.trim();
+            const name = document.getElementById('name').value || 'noname';
+            const privacyAgreement = document.getElementById('privacy-agreement').checked;
+
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                alert("{% translate components.call_to_action.alerts.no_email %}");
+                return;
+            }
+
+            if (!privacyAgreement) {
+                alert("{% translate components.call_to_action.alerts.no_privacy_agreement %}");
+                return;
+            }
+            fetch(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSfI2evJpZ8DX00f15GpaOhSE5BEkUfNb5NPgwQ_Dktcn88KFQ/formResponse?entry.1181307446=${email}&entry.1441763208=${name}`, {
+                method: 'POST',
+                mode: 'no-cors'
+            }).then(_ => {
+                alert("{% translate components.call_to_action.alerts.received %}")
+            })
+                .catch(errorMessage => {
+                    alert("{% translate components.call_to_action.alerts.error %}" + errorMessage)
+                });
+        }
+    </script>
+</main>
+{% include footer.html %}
+</body>
