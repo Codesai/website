@@ -426,7 +426,7 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
       name: "Técnicas de Testing"
       text: '<p>En este curso aprenderemos diferentes técnicas para testear un código ya escrito.</p>
              <p>Veremos specification testing, structural testing, mutation testing, golden master, characterization testing, técnicas de rotura de dependencias, uso de dobles de pruebas y consejos para conseguir diseños testeables.</p>
-             <p>El curso combinará sesiones de teoría y discusiones en los que se presentarán diferentes conceptos, técnicas, patrones y estrategias,
+             <p>El curso combinará sesiones de teoría y discusiones en las que se presentarán los diferentes conceptos, técnicas, patrones y estrategias,
 con sesiones prácticas en forma de kata en las que aplicaremos las técnicas más importantes.</p>'
       call_to_action:
         title: ¡OK! Me interesa realizar el curso de Técnicas de Testing
@@ -470,7 +470,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       name: Cambiando Legacy
       text: '<p>En este curso aprenderemos como cambiar y mejorar código legacy de una manera segura y efectiva.</p>
              <p>Aprenderemos diferentes técnicas para introducir tests en código legacy, y cómo mejorar su diseño de forma gradual y sostenible.</p>
-             <p>El curso combinará sesiones de teoría y discusiones en los que se presentarán diferentes conceptos, técnicas, patrones y estrategias,
+             <p>El curso combinará sesiones de teoría y discusiones en las que se presentarán los diferentes conceptos, técnicas, patrones y estrategias,
 con sesiones prácticas en forma de kata en las que aplicaremos las técnicas más importantes.</p>'
       call_to_action:
         title: ¡OK! Me interesa realizar el curso de Cambiando Legacy
