@@ -151,6 +151,10 @@ pages:
         name: DDD driven by test
         description: El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.
         link: /cursos/ddd/
+      testing:
+        name: "Técnicas de testing"
+        description: El objetivo de este curso es conocer diferentes técnicas para testear un código ya escrito.
+        link: /cursos/testing-techniques/
       user_stories:
         name: Historias de usuario
         description: El objetivo de este curso es que los alumnos aprendan cuáles son las partes esenciales de las historias de usuario, identifiquen atributos que las hacen más efectivas y dispongan de un arsenal de técnicas para partirlas.
@@ -407,6 +411,50 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
       languages:
         title: Lenguajes
         text: <p>Los ejemplos y katas están en Java, C#, TypeScript, JavaScript y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>
+      requirements:
+        title: Requisitos
+        text: '<p>Te enviaremos un email con todo lo que necesitas tener instalado para hacer este curso.</p>'
+      who:
+        title: ¿Para quién está pensado?
+        text: <p>Fundamentalmente para programadores que trabajan en el paradigma orientado a objetos.</p>
+      where:
+        title: In-house y en abierto
+        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
+               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+    testing:
+      title: "Codesai. Técnicas de Testing"
+      name: "Técnicas de Testing"
+      text: '<p>En este curso aprenderemos diferentes técnicas para testear un código ya escrito.</p>
+             <p>Veremos specification testing, structural testing, mutation testing, golden master, characterization testing, técnicas de rotura de dependencias, uso de dobles de pruebas y consejos para conseguir diseños testeables.</p>
+             <p>El curso combinará sesiones de teoría y discusiones en los que se presentarán diferentes conceptos, técnicas, patrones y estrategias,
+con sesiones prácticas en forma de kata en las que aplicaremos las técnicas más importantes.</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de Técnicas de Testing
+        text: <p>Si deseas iniciar el proceso de inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/testing-techniques/#call-to-action
+      content:
+        title: Contenidos
+        agenda: '<div class="topics">
+                    <div class="group"><span>1.</span> Estrategia de testing.</div>
+                    <div class="group"><span>2.</span> Specification testing.</div>
+                    <div class="group"><span>3.</span> Structural testing.</div>
+                    <div class="group"><span>4.</span> Mutation testing.</div>
+                    <div class="group"><span>5.</span> Usando dobles de pruebas.</div>                 
+                    <div class="group"><span>6.</span> Evolucionando código legado.</div>
+                    <div class="group"><span>7.</span> Introducir tests en código no testeable.</div>
+                    <div class="subgroup"><span>7.1.</span> Introducción a las técnicas de rotura de dependencias.</div>
+                    <div class="group"><span>8.</span> Estrategias de testing en código legado.</div>                    
+                    <div class="group"><span>9.</span> Caracterizando código legado.</div>
+                    <div class="group"><span>10.</span> Otras maneras de caracterizar código legado.</div>               
+                    <div class="group"><span>11.</span> Atajos cuando no hay tiempo de cubrir y modificar.</div>
+                    <div class="subgroup"><span>11.1.</span> Sprouting.</div>
+                    <div class="subgroup"><span>11.2.</span> Wrapping.</div>
+                    <div class="group"><span>12.</span> Diseño testeable.</div>
+                </div>'
+      languages:
+        title: Lenguajes
+        text: <p>Los ejemplos y katas están en Java y C#, pero si te interesa otro lenguaje contacta con nosotros.</p>
       requirements:
         title: Requisitos
         text: '<p>Te enviaremos un email con todo lo que necesitas tener instalado para hacer este curso.</p>'
@@ -984,6 +1032,7 @@ urls:
   clients: /clients/
   courses: /cursos/
   tdd: /curso-de-tdd/
+  testing: /cursos/testing-techniques/
   ddd: /cursos/ddd/
   refactoring: /cursos/refactoring/
   user_stories: /cursos/user-stories/

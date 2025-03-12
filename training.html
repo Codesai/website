@@ -72,6 +72,19 @@ permalink_en: /trainings/
             days='2'
             hours='16'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.testing.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.testing.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.testing.link }}{% endcapture %}
+        {%
+            include components/course.html
+            name=name
+            description=description
+            link=link
+            logo='/assets/courses/logos/ddd.svg'
+            starting_price='590'
+            days='5'
+            hours='20'
+        %}
         {% capture name %}{{ site.translations[site.lang].pages.training.courses.user_stories.name }}{% endcapture %}
         {% capture description %}{{ site.translations[site.lang].pages.training.courses.user_stories.description }}{% endcapture %}
         {% capture link %}{{ site.translations[site.lang].pages.training.courses.user_stories.link }}{% endcapture %}

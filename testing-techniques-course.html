@@ -1,0 +1,104 @@
+---
+title: pages.courses.testing.title
+permalink: /cursos/testing-techniques/
+permalink_en: /trainings/testing-techniques/
+---
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="course-page">
+        <div class="course">
+
+            <div id="course-information" class="information">
+                <div class="insights">
+                    <div class="course-title">{% translate pages.courses.testing.name %}</div>
+                    <div class="course-description">
+                        {% translate pages.courses.testing.text %}
+                    </div>
+
+                    <div class="summary mobile">
+                        {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                        {% capture link %}{{ site.translations[site.lang].pages.courses.testing.call_to_action.link }}{% endcapture %}
+                        {%
+                            include course-summary.html
+                            price='590'
+                            days='2.5'
+                            hours='20'
+                            special_discount=discount
+                            contact_link=link
+                        %}
+                    </div>
+
+                    <section class="contents">
+                        <div class="title"><span>// </span>{% translate pages.courses.testing.content.title %}</div>
+                        <div class="description">
+                            <div class="daily-agenda">
+                                {% translate pages.courses.testing.content.agenda %}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="languages">
+                        <div class="title"><span>// </span>{% translate pages.courses.testing.languages.title %}</div>
+                        {% translate pages.courses.testing.languages.text %}
+                    </section>
+
+                    <section class="requirements">
+                        <div class="title"><span>// </span>{% translate pages.courses.testing.requirements.title %}</div>
+                        {% translate pages.courses.testing.requirements.text %}
+                    </section>
+
+                    <section class="who">
+                        <div class="title"><span>// </span>{% translate pages.courses.testing.who.title %}</div>
+                        {% translate pages.courses.testing.who.text %}
+                    </section>
+
+                    <section class="where">
+                        <div class="title"><span>// </span>{% translate pages.courses.testing.where.title %}</div>
+                        {% translate pages.courses.testing.where.text %}
+                    </section>
+                </div>
+                <div class="summary desktop">
+                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                    {% capture link %}{{ site.translations[site.lang].pages.courses.testing.call_to_action.link }}{% endcapture %}
+                    {%
+                        include course-summary.html
+                        price='590'
+                        days='2.5'
+                        hours='20'
+                        special_discount=discount
+                        contact_link=link
+                    %}
+                </div>
+            </div>
+        </div>
+
+        <div class="photos">
+            <div class="photo">
+                <img src="/assets/courses/tdd_course_0.png" alt="">
+            </div>
+            <div class="photo">
+                <img src="/assets/courses/tdd_course_1.png" alt="">
+            </div>
+        </div>
+        {% capture title %}{{ site.translations[site.lang].pages.courses.testing.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.courses.testing.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.testing.call_to_action.placeholder }}{% endcapture %}
+        {% include components/call-to-action.html
+            title=title
+            text=text
+            defaultMessage='Sent from the Testing Techniques page, no message specified'
+            messagePlaceHolder=placeholder
+            origin='Curso Cambiando Legacy'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
