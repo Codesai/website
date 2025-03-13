@@ -423,13 +423,13 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
                <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
     testing:
       title: "Codesai. Técnicas de Testing para desarrolladores"
-      name: "Técnicas de Testing"
+      name: "Técnicas de Testing para desarrolladores"
       text: '<p>En este curso aprenderemos diferentes técnicas para testear un código ya escrito.</p>
              <p>Veremos specification testing, structural testing, mutation testing, golden master, characterization testing, técnicas de rotura de dependencias, uso de dobles de pruebas y consejos para conseguir diseños testeables.</p>
              <p>El curso combinará sesiones de teoría y discusiones en las que se presentarán los diferentes conceptos, técnicas, patrones y estrategias,
 con sesiones prácticas en forma de kata en las que aplicaremos las técnicas más importantes.</p>'
       call_to_action:
-        title: ¡OK! Me interesa realizar el curso de Técnicas de Testing
+        title: ¡OK! Me interesa realizar el curso de Técnicas de Testing para desarrolladores
         text: <p>Si deseas iniciar el proceso de inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
         link: /cursos/testing-techniques/#call-to-action
