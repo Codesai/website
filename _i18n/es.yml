@@ -152,7 +152,7 @@ pages:
         description: El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.
         link: /cursos/ddd/
       testing:
-        name: "Técnicas de testing"
+        name: "Técnicas de testing para desarrolladores"
         description: El objetivo de este curso es conocer diferentes técnicas para testear un código ya escrito.
         link: /cursos/testing-techniques/
       user_stories:
@@ -422,7 +422,7 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
         text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
                <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
     testing:
-      title: "Codesai. Técnicas de Testing"
+      title: "Codesai. Técnicas de Testing para desarrolladores"
       name: "Técnicas de Testing"
       text: '<p>En este curso aprenderemos diferentes técnicas para testear un código ya escrito.</p>
              <p>Veremos specification testing, structural testing, mutation testing, golden master, characterization testing, técnicas de rotura de dependencias, uso de dobles de pruebas y consejos para conseguir diseños testeables.</p>
