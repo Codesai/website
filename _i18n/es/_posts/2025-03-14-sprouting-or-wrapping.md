@@ -23,7 +23,7 @@ We have noticed that people find it difficult to know when to apply one or the o
 
 This post will only focus on discussing when to apply each technique<a href="#nota2"><sup>[2]</sup></a>.
 
-## Sprouting or wrapping.
+## Sprouting or wrapping?
 
 We choose either *sprouting* or *wrapping* depending on the location where the requested change needs to be applied.
 
