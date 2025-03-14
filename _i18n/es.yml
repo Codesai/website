@@ -669,6 +669,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
     title: '404'
     text: ¡Vaya! Parece que no hemos encontrado nada aquí :(
   newsletter:
+    title: Codesai. Newsletter
     about:
       title: Suscríbete a nuestra newsletter
       first_paragraph: En Codesai nos gusta compartir lo que hacemos e intentamos crear contenido de calidad que, creemos, no se encuentra en muchos sitios.
@@ -677,6 +678,15 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       title: Rellena el formulario para suscribirte!
       description: Indica tu nombre, email y haz click en el boton para suscribirte. En breve llegará a tu bandeja de entrada una confirmación. Si tienes algún problema, no dudes en escribirnos a contact@codesai.com.
       submit: Suscribirme
+  newsletter_subscription_confirmation:
+    title: Confirmación a la newsletter de Codesai
+    about:
+      title: ¡Gracias por suscribirte a nuestra newsletter!
+      first_paragraph: Pronto recibirás nuevo contenido en tu bandeja de entrada.
+      second_paragraph: 'Mientras esperas, puedes ver nuestras <a href="/publications">publicaciones</a>.'
+      third_paragraph: 'Si quieres contratar nuestros servicios, escríbenos directamente a <a href="mailto:contact@codesai.com">contact@codesai.com</a>.'
+      fourth_paragraph: 'Y si te interesa mejorar tus habilidades puedes echarle un vistazo a nuestros <a href="/cursos">cursos</a>.'
+      fifth_paragraph: ¡Nos vemos pronto!
   legal_advertisement:
     name: Codesai. Aviso Legal
     title: '<h1>Aviso legal</h1>'
