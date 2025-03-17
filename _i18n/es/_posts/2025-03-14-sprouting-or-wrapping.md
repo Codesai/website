@@ -19,7 +19,7 @@ In situations in which we really don't have time to **cover & modify**, we can u
 
 There are two such techniques: **wrapping** and **sprouting**. 
 
-We have noticed that people find it difficult to know when to apply one or the other. 
+We have noticed that sometimes people find it difficult to know when to apply one or the other. 
 
 This post will only focus on discussing when to apply each technique<a href="#nota2"><sup>[2]</sup></a>.
 
