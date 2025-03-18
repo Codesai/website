@@ -538,8 +538,13 @@ pages:
       first_paragraph: You'll receive new content in your inbox soon.
       second_paragraph: 'While you wait, you can check out our <a href="/en/publications">publications</a>.'
       third_paragraph: 'If you want to hire our services, write to us directly at <a href="mailto:contact@codesai.com">contact@codesai.com</a>.'
-      fourth_paragraph: 'And if you''re interested in improving your skills, you can check out our <a href="/en/trainings">courses</a>.'
+      fourth_paragraph: 'If you''re interested in improving your skills, you can check out our <a href="/en/trainings">courses</a>.'
       fifth_paragraph: See you soon!
+      share_paragraph: Finally, it would help us if you shared that you subscribed to our newsletter on social media.
+      share_twitter_button_text: Twitter
+      share_twitter_button_link: 'https://twitter.com/intent/tweet?text=I%27m+subscribe+to+the+%40codesaidev+newsletter%21%0A%0AYou+can+do+it+here+too+%F0%9F%91%87%0Ahttps%3A%2F%2Fcodesai.com%2Fnewsletter'
+      share_linkedin_button_text: LinkedIn
+      share_linkedin_button_link: 'https://www.linkedin.com/feed/?shareActive&mini=true&text=I%27m+subscribe+to+the+%40codesaidev+newsletter%21%0A%0AYou+can+do+it+here+too+%F0%9F%91%87%0Ahttps%3A%2F%2Fcodesai.com%2Fnewsletter'
   legal_advertisement:
     name: Codesai. Legal Notice
     title: '<h1>LEGAL NOTICE</h1>'

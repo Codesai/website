@@ -685,8 +685,14 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       first_paragraph: Pronto recibirás nuevo contenido en tu bandeja de entrada.
       second_paragraph: 'Mientras esperas, puedes ver nuestras <a href="/publications">publicaciones</a>.'
       third_paragraph: 'Si quieres contratar nuestros servicios, escríbenos directamente a <a href="mailto:contact@codesai.com">contact@codesai.com</a>.'
-      fourth_paragraph: 'Y si te interesa mejorar tus habilidades puedes echarle un vistazo a nuestros <a href="/cursos">cursos</a>.'
+      fourth_paragraph: 'Si te interesa mejorar tus habilidades, puedes echarle un vistazo a nuestros <a href="/cursos">cursos</a>.'
       fifth_paragraph: ¡Nos vemos pronto!
+      share_paragraph: Por último, nos ayudaria si compartes que te has suscrito a nuestra newsletter en las redes sociales.
+      share_twitter_button_text: Twitter
+      share_twitter_button_link: 'https://twitter.com/intent/tweet?text=%C2%A1Estoy+suscrito+a+la+newsletter+de+%40codesaidev%21%0A%0AT%C3%BA+tambi%C3%A9n+puedes+aqu%C3%AD+%F0%9F%91%87%0Ahttps%3A%2F%2Fcodesai.com%2Fnewsletter'
+      share_linkedin_button_text: LinkedIn
+      share_linkedin_button_link: 'https://www.linkedin.com/feed/?shareActive&mini=true&text=%C2%A1Estoy+suscrito+a+la+newsletter+de+Codesai%21%0A%0AT%C3%BA+tambi%C3%A9n+puedes+aqu%C3%AD+%F0%9F%91%87%0A%0Ahttps%3A%2F%2Fcodesai.com%2Fnewsletter'
+      
   legal_advertisement:
     name: Codesai. Aviso Legal
     title: '<h1>Aviso legal</h1>'
