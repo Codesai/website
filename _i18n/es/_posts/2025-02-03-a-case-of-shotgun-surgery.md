@@ -44,7 +44,7 @@ At first glance, based on the names of the interfaces, and, it seemed that the r
 
 However, when asked to modify the canonical calculation rules, we were forced to consider and likely modify both the implementation of `IndexingCalculator` and `CanonicalCalculator`. The same happened when we had to modify the indexing rules. The problem was that changes to one component often required changes to the other. 
 
-Although the interfaces were designed to separate responsibilities and their names aligned with domain concepts, their implementation was not cohesive. Some indexing logic had leaked into `CanonicalCalculator`, and some canonical logic had leaked into `IndexingCalculator`. The code exhibited a clear case of a code smell known as [Shotgun Surgery](https://dzone.com/articles/code-smell-shot-surgery) which is a violation of the [Single Responsibility Principle](https://www.thebigbranchtheory.dev/post/single-responsablity/) (SRP). This was a source of [accidental complexity](https://wiki.c2.com/?AccidentalComplexity).
+Although the interfaces were designed to separate responsibilities and their names aligned with domain concepts, their implementation was not cohesive. Some indexing logic had leaked into `CanonicalCalculator`, and some canonical logic had leaked into `IndexingCalculator`<a href="#nota1"><sup>[1]</sup></a>. The code exhibited a clear case of a code smell known as [Shotgun Surgery](https://dzone.com/articles/code-smell-shot-surgery) which is a violation of the [Single Responsibility Principle](https://www.thebigbranchtheory.dev/post/single-responsablity/) (SRP). This was a source of [accidental complexity](https://wiki.c2.com/?AccidentalComplexity).
 
 In this specific case, there was a lack of cohesion at the implementation level. Although the axes of change had been correctly identified at the interface level, the responsibilities were scattered across both implementations.
 
@@ -116,7 +116,7 @@ I hope this explanation was clear and helpful. Feel free to reach out for guidan
 
 ## Notes.
 
-1) The reasons why the responsibilities became mixed might lie in the design of the interfaces, but this issue may be addressed in a future post.
+<a name="nota1"></a> [1] The reason why the responsibilities became mixed might lie in the design of the interfaces, but this issue may be addressed in a future post.
 
 
 

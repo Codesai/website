@@ -33,16 +33,16 @@ A la complejidad esencial de calcular el canonical de una página y decidir si s
 </figure>
 
 
-Los clientes veían estas 2 funcionalidades a través de las siguientes interfaces que se ven a continuación:
+Los clientes veían estas 2 funcionalidades a través de las interfaces que se muestran a continuación:
 
 <script src="https://gist.github.com/franreyes/7f7c684c771e1c2c35ca1210c6f0ffbc.js"></script>
 
 ## El problema
-Aparentemente viendo los nombres de las interfaces, `IndexationCalculator` y `CanonicalCalculator`, parece que la responsabilidad de saber si una página se indexa y calcular el canonical están bien segregadas. Sin embargo, cuando se nos pide, por ejemplo, cambiar un aspecto del cálculo del canonical nos vemos obligados a considerar y probablemente cambiar tanto la implementación de `IndexationCalculator` como `CanonicalCalculator`.
+Viendo los nombres de las interfaces, `IndexationCalculator` y `CanonicalCalculator`, parece que la responsabilidad de saber si una página se indexa y calcular el canonical están bien segregadas. Sin embargo, cuando se nos pide, por ejemplo, cambiar un aspecto del cálculo del canonical nos vemos obligados a considerar y probablemente cambiar tanto la implementación de `IndexationCalculator` como `CanonicalCalculator`.
 
 Es decir, el problema es que si nos piden hacer cambios concretos nos vemos obligados a tocar múltiples zonas. El código presenta un caso claro de un code smell conocido como [Shotgun Surgery](https://dzone.com/articles/code-smell-shot-surgery).
 
-El [Shotgun Surgery](https://dzone.com/articles/code-smell-shot-surgery) es una violación del [principio de única responsabilidad](https://www.thebigbranchtheory.dev/post/single-responsablity/). En este caso concreto existe una falta de cohesión a nivel de implementación. Es decir, si bien los ejes de cambio se identificaron correctamente a nivel de interface, las responsabilidades se distribuyeron mal, quedando repartidas entre ambas implementaciones.
+El [Shotgun Surgery](https://dzone.com/articles/code-smell-shot-surgery) es una violación del [principio de única responsabilidad](https://www.thebigbranchtheory.dev/post/single-responsablity/). En este caso concreto existe una falta de cohesión a nivel de implementación. Es decir, si bien los ejes de cambio se identificaron correctamente a nivel de interface, las responsabilidades se distribuyeron mal, quedando repartidas entre ambas implementaciones<a href="#nota1"><sup>[1]</sup></a>.
 
 La solución para resolver el [Shotgun Surgery](https://dzone.com/articles/code-smell-shot-surgery) es segregar las responsabilidades de manera que no violemos el principio de única responsabilidad. Para ellos necesitamos mover
 código hacia el lugar donde debería habitar, pero esto no es tan fácil como usar el refactoring [Move Function](https://refactoring.com/catalog/moveFunction.html).
@@ -92,6 +92,6 @@ En un contexto sin las particularidades comentadas, los pasos para resolver el p
 Si te encuentras en una situación parecida, quizás puedes aplicar algunos de los aspectos de esta solución y reducir el riesgo del cambio.
 
 ## Notas
-1) Los motivos por los que se produjo una mezcla de las responsabilidades pueden estar en el diseño de las interfaces, pero este problema quizás lo tratemos en un futuro post.
+<a name="nota1"></a> [1]  Los motivos por los que se produjo una mezcla de las responsabilidades pueden estar en el diseño de las interfaces, pero este problema quizás lo tratemos en un futuro post.
 
 
