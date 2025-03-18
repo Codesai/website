@@ -27,6 +27,26 @@ permalink: /newsletter-subscription-confirmation/
                     {% translate pages.newsletter_subscription_confirmation.about.fourth_paragraph %}
                 </p>
                 <p>
+                    {% translate pages.newsletter_subscription_confirmation.about.share_paragraph %}
+                </p>
+
+                <p>
+                <div>
+                    <a href="{% translate pages.newsletter_subscription_confirmation.about.share_twitter_button_link%}">
+                        {% capture button_text_twitter
+                        %}{{site.translations[site.lang].pages.newsletter_subscription_confirmation.about.share_twitter_button_text}}{%
+                        endcapture %}
+                        {% include components/codesai-button.html content=button_text_twitter %}
+                    </a>
+                    <a href="{% translate pages.newsletter_subscription_confirmation.about.share_linkedin_button_link%}">
+                        {% capture button_text_linkedin
+                        %}{{site.translations[site.lang].pages.newsletter_subscription_confirmation.about.share_linkedin_button_text}}{%
+                        endcapture %}
+                        {% include components/codesai-button.html content=button_text_linkedin %}
+                    </a>
+                </div>
+                </p>
+                <p>
                     {% translate pages.newsletter_subscription_confirmation.about.fifth_paragraph %}
                 </p>
             </div>
