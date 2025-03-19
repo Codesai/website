@@ -133,7 +133,7 @@ pages:
   training:
     title: Codesai. Formaciones
     header: Te enseñamos a desarrollar mejor código
-    text: <p>Todos nuestros cursos son <strong>in-house</strong> (aunque también ofrecemos algunas fechas en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.</p><p><strong>Cursos bonificables por FUNDAE.</strong></p><p>Además, en los abiertos, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</p>
+    text: <p>Todos nuestros cursos se dan <strong>cerrados para la empresa que lo ha contratado</strong> (aunque también ofrecemos algunas ediciones en abierto). Este tipo de formación te va a permitir corregir errores y sacar el máximo partido al proceso de aprendizaje de una manera que no es posible a través de un libro o un vídeo. Además, podrás aplicarlo sin riesgos en tu día a día. Consúltanos sobre las próximas convocatorias.</p><p><strong>Cursos bonificables por FUNDAE.</strong></p><p>Además, en los abiertos, ofrecemos un 50% de descuento para colectivos poco representados en tecnología.</p>
     courses:
       tdd:
         name: Test Driven Development (TDD)
@@ -271,9 +271,9 @@ pages:
         title: ¿Para quién está pensado?
         text: '<p>Fundamentalmente para programadores o DBAs que quieran conocer más sobre cómo evolucionar la base de datos y disponer de batería de pruebas automáticas. Y especialmente útil para entornos complejos (múltiples consumidores, lógica en db, etc)</p>'
       where:
-        title: In-house
-        text: '<p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        title: Ediciones cerradas para empresas y ediciones en abierto
+        text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
+               <p class="unicode">Ten en cuenta que los cursos cerrados para empresa se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
     ddd:
       title: Codesai. Curso DDD Driven by test
       name: Domain Driven Design Driven by Tests
@@ -312,8 +312,8 @@ pages:
         title: ¿Para quién está pensado?
         text: <p>El curso aborda algunos conceptos avanzados de arquitectura software, para un buen aprovechamiento del mismo recomendamos que los asistentes tengan conocimientos de orientación a objetos y al menos experiencia básico escribiendo pruebas automáticas.</p>
       where:
-        title: In-house y en abierto
-        text: <p>El curso se puede realizar in-house para un equipo de desarrollo o empresa concreta que quiera contratarlo. También realizaremos ediciones en abierto, si quieres consultar el calendario de próximos cursos en abierto o contactar con nosotros para un curso in-house lo puedes hacer a través del formulario al final de esa página.</p>
+        title: Ediciones cerradas para empresas y ediciones en abierto
+        text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>'
     intellij:
       title: Codesai. IntelliJ Guru
       name: IntelliJ Guru
@@ -360,9 +360,9 @@ pages:
         text: '<p>El curso está pensado para cualquier equipo que quiera exprimir al máximo cualquier herramienta de desarrollo de JetBrains.</p>
                <p>En el curso usaremos principalmente IntelliJ IDEA, pero muchas de las funcionalidades que veremos están disponibles en los otros IDEs de JetBrains (WebStorm, PhpStorm, RubyMine, Rider, etc).</p>'
       where:
-        title: Modalidades
-        text: '<p>El curso se imparte in-house (cerrado para la empresa que lo contrata) o en abierto en fechas señaladas.</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>
+        title: Ediciones cerradas para empresas y ediciones en abierto
+        text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
+               <p class="unicode">Ten en cuenta que los cursos cerrados para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>
                <p class="unicode">Durante el año iremos anunciando fechas de ediciones en abierto a las que podrás apuntarte en el formulario de abajo.</p>'
 
     code_smells_refactoring:
@@ -418,9 +418,9 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
         title: ¿Para quién está pensado?
         text: <p>Fundamentalmente para programadores que trabajan en el paradigma orientado a objetos.</p>
       where:
-        title: In-house y en abierto
-        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        title: Ediciones cerradas para empresas y ediciones en abierto
+        text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
+               <p class="unicode">Ten en cuenta que los cursos cerrados para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
     testing:
       title: "Codesai. Técnicas de Testing para desarrolladores"
       name: "Técnicas de Testing para desarrolladores"
@@ -462,9 +462,9 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
         title: ¿Para quién está pensado?
         text: <p>Fundamentalmente para programadores que trabajan en el paradigma orientado a objetos.</p>
       where:
-        title: In-house y en abierto
-        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        title: Ediciones cerradas para empresas y ediciones en abierto
+        text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
+               <p class="unicode">Ten en cuenta que los cursos cerrados para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
     changing_legacy:
       title: Codesai. Curso de Cambiando Legacy
       name: Cambiando Legacy
@@ -617,9 +617,9 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
         title: ¿Para quién está pensado?
         text: <p>Fundamentalmente para programadores que trabajan en el paradigma orientado a objetos.</p>
       where:
-        title: In-house y en abierto
-        text: '<p>El curso se puede impartir in-house, (cerrado para la empresa que lo contrata), o en abierto. Intentamos impartir una edición en abierto cada trimestre. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena este formulario.</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        title: Ediciones cerradas para empresas y ediciones en abierto
+        text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
+               <p class="unicode">Ten en cuenta que los cursos cerrados para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
     user_stories:
       title: Curso de Historias de usuario
       name: Historias de usuario
@@ -656,9 +656,9 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
         title: Te ayudamos en tu dominio
         text: <p>Despues de hacer el curso podrás aplicar a tu propio contexto lo que has aprendido mediante sesiones especiales en las que trabajaremos con ejemplos a los que te enfrentas a diario (precio y duración de las sesiones a consultar).</p>
       where:
-        title: In-house
-        text: '<p>El curso se imparte in-house, (cerrado para la empresa que lo contrata).</p>
-               <p class="unicode">Ten en cuenta que los cursos in-house se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con más de un mes de antelación para poder cuadrar agendas.</p>'
+        title: Ediciones cerradas para empresas y ediciones en abierto
+        text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
+               <p class="unicode">Ten en cuenta que los cursos cerrados para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
   publications:
     title: Codesai. Blog
     posts: Posts
