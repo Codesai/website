@@ -609,7 +609,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                 </div>'
       languages:
         title: Lenguajes
-        text: <p>Los ejemplos y katas están en C#, pero si te interesa otro lenguaje contacta con nosotros.</p>
+        text: <p>Los ejemplos y katas están en C#, Java y TypeScript, pero si te interesa otro lenguaje contacta con nosotros.</p>
       requirements:
         title: Requisitos
         text: '<p>Te enviaremos un email con todo lo que necesitas tener instalado para hacer este curso.</p>'
