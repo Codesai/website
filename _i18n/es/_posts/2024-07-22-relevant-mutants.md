@@ -125,18 +125,18 @@ or at:
 
 <figure>
 <img src="/assets/mutant_changing_division_in_before_or_after_boolean_expression_2.png"
-alt="Another surviving mutation changing / operator to * operator in line 29."
+alt="Another surviving mutation changing * operator to / operator in line 29."
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
-<figcaption><strong>Another surviving mutation changing / operator to * operator in line 29.</strong></figcaption>
+<figcaption><strong>Another surviving mutation changing * operator to / operator in line 29.</strong></figcaption>
 </figure>
 
 There are several more similar mutations on the same line.
 
-These mutations that replace the division operator with the product operator seem very confusing and may, at first, be baffling. Why do they survive?
+These mutations that replace the division operator with the product operator, and viceversa, seem very confusing and may, at first, be baffling. Why do they survive?
 
 To understand it, we need to look closer at the condition and what it means. The only relevant thing to make the condition true or false is the sign of the difference of the two times in milliseconds: `asset.getDate().getTime() - now.getTime()`. The rest of the expression, `(1000 * 60 * 60 * 24)`, is just a positive number that is dividing the previously mentioned difference, but it will not change its sign, and therefore, it will not change the evaluation of the boolean expression `Math.floor(difference / positive_number) < 0` . 
 
-These mutants, that change `/` operators to `*` operators, therefore, are not pointing to weaknesses in our tests. What they are indicating, instead, is production code that we don’t need, and, which we could simplify<a href="#nota2"><sup>[2]</sup></a>, writing the following condition instead: `Math.floor(asset.getDate().getTime() - now.getTime()) < 0`. 
+These mutants, that change `/` operators to `*` operators, and viceversa, therefore, are not pointing to weaknesses in our tests. What they are indicating, instead, is production code that we don’t need, and, which we could simplify<a href="#nota2"><sup>[2]</sup></a>, writing the following condition instead: `Math.floor(asset.getDate().getTime() - now.getTime()) < 0`. 
 
 
 This simplification (that we’d do only once we have stronger tests that eliminate all the relevant mutants) would be enough to eliminate all the related mutants.
@@ -211,7 +211,7 @@ If we examine the test suite, we’ll see that we are testing that an error is t
 
 We’ve shown an example of how not all surviving mutants point to weaknesses in our test suites. Of the original 36 surviving mutants, only 13 of them were relevant to improve our tests suite<a href="#nota3"><sup>[3]</sup></a> (we chose to ignore the one related to the error message). Those 13 mutants are related to boundary conditions that are not being properly exercised by the test suite.
 
-Having to kill 13 mutants instead of 36 is a much less daunting task than killing 36 of them. A nice thing is that most of the discarded, not relevant mutants were easy to identify: the ones related to the existence of dead code<a href="#nota4"><sup>[4]</sup></a> and to the introduction of seams. This is great because, sometimes, surviving mutants might not be so easy to kill<a href="#nota5"><sup>[5]</sup></a>. 
+Having to kill 13 mutants is a much less daunting task than killing 36 of them. A nice thing is that most of the discarded, not relevant mutants were easy to identify: the ones related to the existence of dead code<a href="#nota4"><sup>[4]</sup></a> and to the introduction of seams. This is great because, sometimes, surviving mutants might not be so easy to kill<a href="#nota5"><sup>[5]</sup></a>. 
 
 We also saw another category of surviving mutants that, even though, do not point to improvements in the test suite, are a signal of code that may be unnecessary to achieve the desired behaviour. We may decide to take advantage of these hints in later refactorings once the test suite has improved by killing the relevant mutants. 
 
@@ -235,7 +235,7 @@ Finally, I’d also like to thank [Carlos Machado](https://www.pexels.com/es-es/
 
 <a name="nota3"></a> [3] The 13 relevant surviving mutations are in lines 29 (1), 32 (2), 46 (2), 70 (1), 71 (2), 76 (1), 77 (2) and 83 (2). 
 
-The surviving mutations in lines 32, 46, 77, and 83 point to boundary conditions which are completely ignored by the suitcase (that's why one of the surviving mutations can completely remove the condition), whereas the surviving mutations in lines 29, 70 and 76 point to partially tested boundary conditions.
+The surviving mutations in lines 32, 46, 77, and 83 point to boundary conditions which are completely ignored by the test suite (that's why one of the surviving mutations can completely remove the condition), whereas the surviving mutations in lines 29, 70 and 76 point to partially tested boundary conditions.
 
 <a name="nota4"></a> [4] We advise using a coverage tool to detect uncovered and dead code before running a mutation testing tool, because coverage tools results are easier to analyze than the mutation testing tools' ones.
 
