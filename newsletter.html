@@ -25,7 +25,7 @@ permalink: /newsletter/
                 <img src="/assets/newsletter/newsletter_picture.png" alt="">
             </div>
         </div>
-       
+
     </section>
 
     <section id="call-to-action" class="call-to-action-wrapper">
@@ -72,13 +72,18 @@ permalink: /newsletter/
             submitNewsletterFormButton.addEventListener('keyup', (event) => {
                 if (event.key === "Enter") {
                     event.preventDefault();
-                    submitNewsletterFormButton.click();
+                    submitNewsletterForm(event);
                 }
             });
             submitNewsletterFormButton.addEventListener('click', submitNewsletterForm);
         }
 
-        function submitNewsletterForm() {
+
+        let isSubmitting = false;
+        function submitNewsletterForm(event) {
+            if (isSubmitting) return;
+            event.preventDefault();
+            
             const email = document.getElementById('email').value.trim();
             const name = document.getElementById('name').value || 'noname';
             const privacyAgreement = document.getElementById('privacy-agreement').checked;
@@ -92,15 +97,31 @@ permalink: /newsletter/
                 alert("{% translate components.call_to_action.alerts.no_privacy_agreement %}");
                 return;
             }
+
+            const button = event.currentTarget;
+            isSubmitting = true;
+            disableButton(button);
             fetch(`https://docs.google.com/forms/u/0/d/e/1FAIpQLSfI2evJpZ8DX00f15GpaOhSE5BEkUfNb5NPgwQ_Dktcn88KFQ/formResponse?entry.1181307446=${email}&entry.1441763208=${name}`, {
                 method: 'POST',
                 mode: 'no-cors'
             }).then(_ => {
-                alert("{% translate components.call_to_action.alerts.received %}")
-            })
-                .catch(errorMessage => {
-                    alert("{% translate components.call_to_action.alerts.error %}" + errorMessage)
-                });
+               alert("{% translate components.call_to_action.alerts.received %}")
+            }).catch(errorMessage => {
+                alert("{% translate components.call_to_action.alerts.error %}" + errorMessage)
+            }).finally(() => {
+                enableButton(button);
+                isSubmitting = false;
+            });
+        } 
+        
+        function enableButton(button) {
+            button.style.opacity = '1';
+            button.style.pointerEvents = 'auto';
+        }
+
+        function disableButton(button) {
+            button.style.opacity = '0.5';
+            button.style.pointerEvents = 'none';
         }
     </script>
 </main>
