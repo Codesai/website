@@ -503,12 +503,11 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                     <div class="subgroup"><span>--- 2.2.8.</span> Combinando análisis: Hotspots, Change Coupling y SoC.</div>
                     
                     <div class="group"><span>3.</span> Evolucionando código legado: técnicas.</div>
-                    <div class="subgroup"><span>--- 3.1.</span> Metáfora original, definición inclusiva y clasificaciones.</div>
-                    <div class="subgroup"><span>--- 3.1.1.</span> Valor en el código legado: comportamiento.</div>
-                    <div class="subgroup"><span>--- 3.1.2.</span> Tipos de cambios.</div>
-                    <div class="subgroup"><span>--- 3.1.3.</span> Protegiendo el comportamiento.</div>
-                    <div class="subgroup"><span>--- 3.1.4.</span> Cubrir y Modificar.</div>
-                    <div class="subgroup"><span>--- 3.1.5.</span> Problemas de testeabilidad <=> Mal diseño.</div>        
+                    <div class="subgroup"><span>3.1.</span> Valor en el código legado: comportamiento.</div>
+                    <div class="subgroup"><span>3.2.</span> Tipos de cambios.</div>
+                    <div class="subgroup"><span>3.3.</span> Protegiendo el comportamiento.</div>
+                    <div class="subgroup"><span>3.4.</span> Cubrir y Modificar.</div>
+                    <div class="subgroup"><span>3.5.</span> Problemas de testeabilidad <=> Mal diseño.</div>        
                     
                     <div class="group"><span>4.</span> Introducir tests en código no testeable.</div>
                     <div class="subgroup"><span>4.1.</span> Dependencias problemáticas.</div>
