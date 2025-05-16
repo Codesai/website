@@ -237,7 +237,7 @@ También agradecemos a los desarrolladores de Audiense por haber sido los beta t
 
 Por último, también me gustaría darles las gracias a [Carlos Machado](https://www.pexels.com/es-es/@cgoulao/) por la foto del post.
 
-### Notes.
+### Notas.
 
 <a name="nota1"></a> [1] Estos dos tipos de falso positivo (mutantes irrelevantes) están directamente relacionados con los code smells [Dead Code](https://luzkan.github.io/smells/dead-code) y [Speculative Generality](https://web.archive.org/web/20231129150643/https://www.informit.com/articles/article.aspx?p=2952392&seqNum=15) que [William Wake](https://xp123.com/) clasifica bajo la categoría *Unnecessary Complexity*. Ver nuestro post [De taxonomías y catálogos de code smells](https://codesai.com/posts/2022/09/code-smells-taxonomies-and-catalogs).
 
