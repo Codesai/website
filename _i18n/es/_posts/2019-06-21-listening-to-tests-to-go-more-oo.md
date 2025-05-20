@@ -179,7 +179,7 @@ Many thanks to my <a href="https://codesai.com/">Codesai</a> colleagues <a href=
 </div>
 
 <div class="foot-note">
-  <a name="nota5"></a> [5] Difficulties in testing might be a hint of design problems. Have a look at this interesting <a href="https://web.archive.org/web/20210426022938/http://www.mockobjects.com/search/label/listening%20to%20the%20tests">series of posts about listening to the tests</a> by <a href="Steve Freeman">Steve Freeman</a>.
+  <a name="nota5"></a> [5] Difficulties in testing might be a hint of design problems. Have a look at this interesting <a href="https://web.archive.org/web/20210426022938/http://www.mockobjects.com/search/label/listening%20to%20the%20tests">series of posts about listening to the tests</a> by <a href="https://www.linkedin.com/in/stevefreeman/?originalSubdomain=uk">Steve Freeman</a>.
 </div>
 
 <div class="foot-note">
