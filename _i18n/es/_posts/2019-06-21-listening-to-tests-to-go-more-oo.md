@@ -167,7 +167,7 @@ Many thanks to my <a href="https://codesai.com/">Codesai</a> colleagues <a href=
 </div>
 
 <div class="foot-note">
-  <a name="nota2"></a> [2] See <a href="https://web.archive.org/web/20210801150000/http://www.mockobjects.com/2007/04/test-smell-everything-is-mocked.html">Test Smell: Everything is mocked</a> by <a href="Steve Freeman">Steve Freeman</a> where he talks about things you shouldn't be substituting with tests doubles.
+  <a name="nota2"></a> [2] See <a href="https://web.archive.org/web/20210801150000/http://www.mockobjects.com/2007/04/test-smell-everything-is-mocked.html">Test Smell: Everything is mocked</a> by <a href="https://www.linkedin.com/in/stevefreeman/?originalSubdomain=uk">Steve Freeman</a> where he talks about things you shouldn't be substituting with tests doubles.
 </div>
 
 <div class="foot-note">
@@ -175,7 +175,7 @@ Many thanks to my <a href="https://codesai.com/">Codesai</a> colleagues <a href=
 </div>
 
 <div class="foot-note">
-  <a name="nota4"></a> [4] From <a href="http://www.growing-object-oriented-software.com/">Growing Object-Oriented Software, Guided by Tests</a> > Chapter 6, Object-Oriented Style > Object Peer Stereotypes, page 52. You can also read about these stereotypes in a post by <a href="Steve Freeman">Steve Freeman</a>: <a href="https://web.archive.org/web/20210801140344/http://www.mockobjects.com/2006/10/different-kinds-of-collaborators.html">Object Collaboration Stereotypes</a>.
+  <a name="nota4"></a> [4] From <a href="http://www.growing-object-oriented-software.com/">Growing Object-Oriented Software, Guided by Tests</a> > Chapter 6, Object-Oriented Style > Object Peer Stereotypes, page 52. You can also read about these stereotypes in a post by <a href="https://www.linkedin.com/in/stevefreeman/?originalSubdomain=uk">Steve Freeman</a>: <a href="https://web.archive.org/web/20210801140344/http://www.mockobjects.com/2006/10/different-kinds-of-collaborators.html">Object Collaboration Stereotypes</a>.
 </div>
 
 <div class="foot-note">
