@@ -21,7 +21,7 @@ written_in: english
 cross_post_url: https://garajeando.blogspot.com/2022/08/example-of-role-tests-in-javascript.html
 ---
 
-In this post we’ll show our last example applying the concept of role tests, this time in JavaScript using [Jest](https://jestjs.io/). Have a look at our [previous posts on this topic](https://codesai.com/publications/categories/#Role%20testing).
+In this post we’ll show our last example applying the concept of role tests, this time in JavaScript using [Jest](https://jestjs.io/). Have a look at our [previous posts on this topic](https://codesai.com/publications/categories/#Role%20Testing).
 
 This example comes from a deliberate practice session we did recently with some developers from [Audiense](https://audiense.com/) with whom we’re doing [Codesai’s Practice Program in JavaScript](https://github.com/Codesai/practice_program_js) twice a month.
 
