@@ -92,11 +92,11 @@ I’d like to thank my Codesai colleagues for reading the initial drafts and giv
 
 * [Practical Object-Oriented Design, An Agile Primer Using Ruby](https://www.poodr.com/), [Sandi Metz](https://sandimetz.com/)
 * [Defining Object-Oriented Design](https://www.youtube.com/watch?v=HGT8bKSS6XQ), [Sandi Metz](https://sandimetz.com/)
-* [Less - The Path to Better Design](https://vimeo.com/26330100), [Sandi Metz](https://sandimetz.com/)
+* [Less - The Path to Better Design](https://vimeo.com/53154357), [Sandi Metz](https://sandimetz.com/)
 * [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.goodreads.com/book/show/85009.Design_Patterns), [Erich Gamma](https://en.wikipedia.org/wiki/Erich_Gamma), [Ralph Johnson](http://software-pattern.org/Author/29), [John Vlissides](https://en.wikipedia.org/wiki/John_Vlissides), [Richard Helm](https://wiki.c2.com/?RichardHelm)
 * [Liskov Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
 * [Integrated Tests Are A Scam talk](https://vimeo.com/80533536), [J. B. Rainsberger](http://www.jbrains.ca/)
-* [101 Uses For Polymorphic Testing (Okay... Three)](http://codemanship.co.uk/parlezuml/blog/?postid=1183), [Jason Gorman](http://codemanship.co.uk/parlezuml/blog/)
+* [101 Uses For Polymorphic Testing (Okay... Three)](https://web.archive.org/web/20161231000421/http://codemanship.co.uk/parlezuml/blog/?postid=1183), [Jason Gorman](https://codemanship.wordpress.com/)
 
 
 Photo from [Anna Rye in Pexels](https://www.pexels.com/es-es/@anna-rye-70977670?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
