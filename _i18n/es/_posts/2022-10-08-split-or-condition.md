@@ -120,6 +120,8 @@ I've just discovered that [William Wake](https://xp123.com/about/) had already d
 
 Have a look at his great post: [Refactor: Duplicate and Customize](https://xp123.com/refactor-duplicate-and-customize/).
 
-I was applying this refactor before 2017 (it was recorded in the YouTube video [Expressing symmetry in Mars Rover movement refactoring](https://www.youtube.com/watch?v=lBUmAZuXVmo) from 2017), but didn't document it until five years later. The first time I applied it was in solving the Gilded Rose kata (which is the example that Wake shows to demonstrate the refactor in his post).
+I was applying this refactor before 2017 (it was recorded in the YouTube video [Expressing symmetry in Mars Rover movement refactoring](https://www.youtube.com/watch?v=lBUmAZuXVmo) from 2017), but didn't document it until five years later. 
+
+The first time I applied it was while solving the Gilded Rose kata (which is coincidentally the same example that Wake shows to demonstrate the refactor in his post).
 I was just trying to simplify the same conditional in small steps and this was the way I found best. I'm a big fan of Wake's work, so it's great for me that we independently got to the same refactor.
 
