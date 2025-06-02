@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Isolated test" means something very different to different people!
-date: 2025-06-03 06:30:00.000000000 +01:00
+date: 2025-06-04 06:30:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -46,7 +46,7 @@ Identifying awkward collaborations is, therefore, an important skill for designi
 
 If you read the original definition of isolated from [Agile in a Flash:  F.I.R.S.T.](https://agileinaflash.blogspot.com/2009/02/first.html) you will notice that it is different from what we expressed in the previous section.
 
-We said that for us isolated meant that “the test should produce the same results regardless of the order in which they are executed. This means they do not depend on one another in any way, whether directly or indirectly”.
+We said that for us *isolated* meant that tests should be isolated from each other. In practice, this means that they can't share any mutable state or resource.
 
 In the definition of isolated from [Agile in a Flash:  F.I.R.S.T.](https://agileinaflash.blogspot.com/2009/02/first.html), the flash card states: 
 
@@ -61,7 +61,7 @@ Later, in the explanation, they elaborate on what this means (the emphasis in bo
 
 [Tim Ottinger](https://agileotter.blogspot.com/)’s [FIRST: an idea that ran away from home](https://agileotter.blogspot.com/2021/09/first-idea-that-ran-away-from-home.html) summarizes this as, “Isolated - tests don't rely upon either other in any way, including indirectly. Each test isolates one failure mode only.”<a href="#nota5"><sup>[5]</sup></a>.
 
-For us **isolated** means that a test should be isolated not only from external factors but also from each other. Our definition is less restrictive, we are choosing to consider only one aspect of their definition, that  “tests interfere with no other tests in any way”, and ignoring this other aspect, “tests have a single reason to fail”.
+For us *isolated* means that tests should be isolated from each other. In practice, this means that they can't share any mutable state or resource. Our definition is less restrictive, we are choosing to consider only one aspect of their definition, that  “tests interfere with no other tests in any way”, and ignoring this other aspect, “tests have a single reason to fail”.
 
 We think that what we mean by **isolated** aligns with the definition Kent Beck provides in his book [Test Driven Development: By Example](https://www.oreilly.com/library/view/test-driven-development/0321146530/). In the section *Isolated Test* (page 125) of the chapter *Test-Driven Development Patterns*, he writes:
 
@@ -73,13 +73,7 @@ We think that what we mean by **isolated** aligns with the definition Kent Beck 
 
 Moreover, in his most recent work [Test Desiderata](https://medium.com/@kentbeck_7670/test-desiderata-94150638a4b3) he explains **isolated** as “tests should return the same results regardless of the order in which they are run”.
 
-Ian Cooper, in his talk [TDD, where did it all go wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM) states that: 
-
-> “For Kent Beck, [a unit test] is a test that runs in isolation from other tests.” 
-
-> “[...] NOT to be confused with the classical unit test definition of targeting a module.” 
-
-> ”A lot of issues with TDD is people misunderstanding isolation as class isolation [...]”<a href="#nota6"><sup>[6]</sup></a>.
+<a href="#nota6"><sup>[6]</sup></a>.
 
 Having said that, there is another desirable property for tests in test desiderata which is interesting for this discussion, **specificity**, which Kent Beck explains as “Specific — if a test fails, the cause of the failure should be obvious.”
 
@@ -94,12 +88,12 @@ Even though having a single reason for a test to fail is still highly desirable,
 
 We showed how the FIRS properties can be valuable in both TDD and retrofitting tests in legacy code, guiding developers toward creating more testable and maintainable code.
 
-We explored how the concept of isolated tests differs depending on the author. While Kent Beck's definition emphasizes independence between tests, ensuring they produce consistent results regardless of execution order, the interpretation from Agile in a Flash combines this idea with test **specificity**, which emphasizes that tests should isolate a single failure reason. Both definitions (Beck’s and Ottinger’s one) are valuable, , but Beck’s version aligns more closely with what we mean by **isolated**. 
+We explored how the concept of isolated tests differs depending on the author. While Kent Beck's definition emphasizes independence between tests, ensuring they produce consistent results regardless of execution order, the interpretation from Agile in a Flash combines this idea with test **specificity**, which emphasizes that the cause of a failure test should be obvious (they go further, stating that “tests have a single reason to fail”, which is the highest level of **specificity**). Both definitions (Beck’s and Ottinger’s one) are valuable, but Beck’s version aligns more closely with what we mean by **isolated**.
 
 In our experience, Beck's interpretation of isolated tests has proven especially useful for avoiding the trap of considering the class as the unit and for successfully incorporating test doubles as isolation tools, which is how they are employed in the classic TDD style.
 
 ## Acknowledgements.
-I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Iglesias Gómez](https://www.linkedin.com/in/franiglesias/), [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) and blabla for giving me feedback about several drafts of this post.
+I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Iglesias Gómez](https://www.linkedin.com/in/franiglesias/), [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) and [Antonio De La Torre](https://www.linkedin.com/in/antoniodelatorre/) for giving me feedback about several drafts of this post.
 
 Finally, I’d also like to thank [imgflip](https://imgflip.com/) for their [Inconceivable Iñigo Montoya Meme Generator](https://imgflip.com/memegenerator/294538550/Hi-Res-Inconceivable-Inigo-Montoya).
 
@@ -156,5 +150,13 @@ It also refers to another article published by Pragmatic Programmers as the orig
 
 Finally, it explains the **value of writing tests first** and criticize writing them afterwards.
 
-<a name="nota6"></a> [6] We talked about this problem in our post [The class is not the unit in the London school style of TDD](https://codesai.com/posts/2025/03/mockist-tdd-unit-not-the-class).
+<a name="nota6"></a> [6] Ian Cooper, in his talk [TDD, where did it all go wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM) states that: 
+
+> “For Kent Beck, [a unit test] is a test that runs in isolation from other tests.” 
+
+> “[...] NOT to be confused with the classical unit test definition of targeting a module.” 
+
+> ”A lot of issues with TDD is people misunderstanding isolation as class isolation [...]” 
+
+We talked about this frequent misunderstanding in our post [The class is not the unit in the London school style of TDD](https://codesai.com/posts/2025/03/mockist-tdd-unit-not-the-class).
 
