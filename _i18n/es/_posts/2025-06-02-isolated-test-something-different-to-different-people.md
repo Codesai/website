@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Isolated test" means something very different to different people!
-date: 2025-06-04 06:30:00.000000000 +01:00
+title: "\"Isolated test\" means something very different to different people!"
+date: 2025-06-03 06:30:00.000000000 +01:00
 type: post
 published: true
 status: publish
