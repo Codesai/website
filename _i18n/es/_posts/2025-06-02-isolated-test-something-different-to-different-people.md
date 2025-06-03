@@ -35,7 +35,7 @@ In the distinct contexts of TDD and retrofitting tests in legacy code, the same 
 
 When retrofitting tests in legacy code, violations of **FIRS properties** highlight dependencies that impede testing, referred to as **awkward collaborations**<a href="#nota3"><sup>[3]</sup></a>. These **awkward collaborations** point to the dependencies we need to break using **dependency-breaking techniques**<a href="#nota4"><sup>[4]</sup></a> to enable the introduction of unit tests. 
 
-In the case of integration tests, it is sufficient to focus on violations of the **IRS** properties. Dependencies that violate the **RS** properties require **dependency-breaking techniques** to address them, whereas violations of the **I** property can often be alternatively resolved through other approaches, such as test-specific fixtures or configuration changes.
+In the case of integration tests, it is sufficient to focus on violations of the **I**solated, **R**epeatable and **S**elf-validating properties. Dependencies that violate the **R**epeatable and **S**elf-validating properties require **dependency-breaking techniques** to address them, whereas violations of the **I**solated property can often be alternatively resolved through other approaches, such as test-specific fixtures or configuration changes.
 
 In the context of TDD, violations of the **FIRS properties** are a key heuristic to identify the collaborations that we need to push outside the unit under test. These **awkward collaborations** will be simulated with test doubles in our unit tests.
 
