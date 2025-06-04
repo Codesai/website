@@ -105,15 +105,6 @@ We have described the **Split or condition in if** refactoring, and provided saf
 I’d like to thank [Fran Reyes](https://twitter.com/fran_reyes) and [Rubén Díaz](https://twitter.com/rubendm23) for giving me feedback on the final draft of this post.
 
 
-<h4>Update 2025/05/20:</h4> 
-
-I've just discovered that [William Wake](https://xp123.com/about/) had already documented this refactor in 2020 with the name **Duplicate and Customize**.
-
-Have a look at his great post: [Refactor: Duplicate and Customize](https://xp123.com/refactor-duplicate-and-customize/).
-
-I was applying this refactor before 2017 (it was recorded in the YouTube video [Expressing symmetry in Mars Rover movement refactoring](https://www.youtube.com/watch?v=lBUmAZuXVmo) from 2017), but didn't document it until five years later. The first time I applied it was in solving the Gilded Rose kata (which is the example that Wake shows in his post). 
-I was just trying to simplify the conditional in small steps. I'm a big fan of Wake's work, so it's great for me that we independently got to the same refactor.
-
 <h4>Update 2025/05/20:</h4>
 
 I've just discovered that [William Wake](https://xp123.com/about/) had already documented this refactor in 2020 with the name **Duplicate and Customize**.
