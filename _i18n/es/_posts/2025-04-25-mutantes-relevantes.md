@@ -235,7 +235,7 @@ Me gustaría agradecer a [Fran Reyes](https://www.linkedin.com/in/franreyesperdo
 
 También agradecemos a los desarrolladores de Audiense por haber sido los beta testers de la [kata Crazy Portfolio](https://codesai.com/posts/2024/03/crazy-portfolio-kata) como parte de las **sesiones de práctica deliberada** que llevamos haciendo desde hace unos años. Siempre es un placer trabajar con ustedes.
 
-Por último, también me gustaría darles las gracias a [Carlos Machado](https://www.pexels.com/es-es/@cgoulao/) por la foto del post.
+Por último, también me gustaría darle las gracias a [Carlos Machado](https://www.pexels.com/es-es/@cgoulao/) por la foto del post.
 
 ### Notas.
 
