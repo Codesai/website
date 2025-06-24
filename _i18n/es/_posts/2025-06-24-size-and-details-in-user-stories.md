@@ -216,7 +216,7 @@ Nos gustaría darle las gracias a [Ivan Samkov](https://www.pexels.com/es-es/@iv
 
 <a name="nota6"></a> [6]  El principio del último momento responsable, También es un problema tomar decisiones de manera tardía porque pueden generar pérdida de oportunidades y retrabajo para terceros.
 
-<a name="nota7"></a> [7] Algunos autores usan el concepto de condiciones de satisfacción o rules para hablar de los criterios de aceptación por diferentes motivos. Mike Cohn prefiere utilizar [condiciones de satisfacción](https://www.mountaingoatsoftware.com/blog/clarifying-the-relationship-between-definition-of-done-and-conditions-of-sa) y en [Example Mapping] (https://cucumber.io/blog/bdd/example-mapping-introduction/) se utiliza el concepto de **Rules**.
+<a name="nota7"></a> [7] Algunos autores usan el concepto de condiciones de satisfacción o rules para hablar de los criterios de aceptación por diferentes motivos. Mike Cohn prefiere utilizar [condiciones de satisfacción](https://www.mountaingoatsoftware.com/blog/clarifying-the-relationship-between-definition-of-done-and-conditions-of-sa) y en [Example Mapping](https://cucumber.io/blog/bdd/example-mapping-introduction/) se utiliza el concepto de **Rules**.
 
 <a name="nota8"></a> [8] Card, Conversation, Confirmation son 3 aspectos esenciales enunciados por Ron Jeffries en su [artículo de 2001](https://ronjeffries.com/xprog/articles/expcardconversationconfirmation/)
 
