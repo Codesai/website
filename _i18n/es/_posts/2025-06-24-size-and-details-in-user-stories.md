@@ -107,7 +107,7 @@ Finalmente, en este momento necesitamos detallar mucho más porque queremos elim
 
 Los criterios de aceptación<a href="#nota7"><sup>[7]</sup></a> y los ejemplos sirven para detallar mejor una historia de usuario y aumentar su claridad.
 
-La razón por la que queremos ganar claridad es para asegurar uno de los aspectos más importantes de las historias de usuario, la confirmación<a name="nota8"></a> [8]. Es decir, queremos ser capaces de determinar cuándo una historia de usuario está acabada y funcionando como se esperaba.
+La razón por la que queremos ganar claridad es para asegurar uno de los aspectos más importantes de las historias de usuario, la confirmación<a href="#nota8"><sup>[8]</sup></a>. Es decir, queremos ser capaces de determinar cuándo una historia de usuario está acabada y funcionando como se esperaba.
 
 El uso de ejemplos en las historias de usuario juega un papel muy importante porque clarifican los criterios de aceptación que normalmente están en un nivel de abstracción mayor.
 
@@ -121,7 +121,7 @@ Si agregamos unos cuantos ejemplos podríamos aclarar la complejidad que ese cri
 
 > <div style="background: rgb(251,243,219);color: #434648; padding:5px">Dado que resido en Alemania, tengo 18 y he rellenado correctamente los otros datos del formulario, cuando finalizó el registro, veo un mensaje de agradecimiento por el registro.</div>
 
-Al escribir ejemplos podrían emerger varios escenarios. Por tanto, los ejemplos no sólo clarifican, sino también pueden ayudar a preguntarnos sobre otros escenarios posibles<a href="#nota10"><sup>[10]</sup></a>.
+Al escribir ejemplos podrían emerger varios escenarios. Por tanto, los ejemplos no sólo clarifican, sino también pueden ayudar a preguntarnos sobre otros escenarios posibles<a href="#nota9"><sup>[9]</sup></a>.
 
 Siguiendo con el caso expuesto, podríamos preguntarnos:
 ¿Qué escenario no me permite registrarme si resido en Alemania? ¿Cuántos países tenemos que tener en cuenta?.
@@ -129,7 +129,7 @@ Siguiendo con el caso expuesto, podríamos preguntarnos:
 Es importante además que todas las partes involucradas en las historias de usuario (Producto, Devs, QAs, etc) estén de acuerdo sobre los criterios de aceptación. Esta claridad compartida ayuda a que todos los participantes comprendan mejor la situación y reduce la posibilidad de que se produzcan diferentes interpretaciones sobre lo que cada uno espera de la historia de usuario.
 
 
-### Tamaño adecuado dependiendo del momento<a href="#nota9"><sup>[9]</sup></a>.
+### Tamaño adecuado dependiendo del momento<a href="#nota10"><sup>[10]</sup></a>.
 
 #### Desde su creación, (T<sub>0</sub>), hasta antes del momento (T<sub>r</sub>).
 
@@ -220,8 +220,8 @@ Nos gustaría darle las gracias a [Ivan Samkov](https://www.pexels.com/es-es/@iv
 
 <a name="nota8"></a> [8] Card, Conversation, Confirmation son 3 aspectos esenciales enunciados por Ron Jeffries en su [artículo de 2001](https://ronjeffries.com/xprog/articles/expcardconversationconfirmation/)
 
-<a name="nota9"></a> [9] Si bien existen criterios para juzgar si el tamaño de una historia es adecuado, como por ejemplo [INVEST](https://xp123.com/invest-in-good-stories-and-smart-tasks/), no todos los criterios son aplicables, o si lo son, no con el mismo peso en cada uno de los momentos, t<sub>0</sub>, t<sub>r</sub> y t<sub>d</sub>. Además, si fuera necesario, hay diversas técnicas para dividir historias de usuario, o, en algunos casos, incluso fusionarlas.
+<a name="nota9"></a> [10] Liz Keogh documenta una serie de patrones conversacionales al trabajar con ejemplos que pueden ser muy útiles para explorar los ejemplos en [Conversational patterns in BDD](https://lizkeogh.com/2011/09/22/conversational-patterns-in-bdd/).
+
+<a name="nota10"></a> [9] Si bien existen criterios para juzgar si el tamaño de una historia es adecuado, como por ejemplo [INVEST](https://xp123.com/invest-in-good-stories-and-smart-tasks/), no todos los criterios son aplicables, o si lo son, no con el mismo peso en cada uno de los momentos, t<sub>0</sub>, t<sub>r</sub> y t<sub>d</sub>. Además, si fuera necesario, hay diversas técnicas para dividir historias de usuario, o, en algunos casos, incluso fusionarlas.
 
 <a name="nota11"></a> [11] “Story card hell is when you have 300 story cards and you have to keep track of them all” from [Beyond Story Cards: Agile Requirements Collaboration](https://www.jamesshore.com/v2/presentations/2005/beyond-story-cards).
-
-<a name="nota10"></a> [10] Liz Keogh documenta una serie de patrones conversacionales al trabajar con ejemplos que pueden ser muy útiles para explorar los ejemplos en [Conversational patterns in BDD](https://lizkeogh.com/2011/09/22/conversational-patterns-in-bdd/).
