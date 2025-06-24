@@ -222,6 +222,6 @@ Nos gustaría darle las gracias a [Ivan Samkov](https://www.pexels.com/es-es/@iv
 
 <a name="nota9"></a> [9] Si bien existen criterios para juzgar si el tamaño de una historia es adecuado, como por ejemplo [INVEST](https://xp123.com/invest-in-good-stories-and-smart-tasks/), no todos los criterios son aplicables, o si lo son, no con el mismo peso en cada uno de los momentos, t<sub>0</sub>, t<sub>r</sub> y t<sub>d</sub>. Además, si fuera necesario, hay diversas técnicas para dividir historias de usuario, o, en algunos casos, incluso fusionarlas.
 
-<a name="nota11"></a> [11] “Story card hell is when you have 300 story cards and you have to keep track of them all” from [Beyond Story Cards: Agile Requirements Collaboration](https://www.jamesshore.com/v2/presentations/2005/beyond-story-cards)
+<a name="nota11"></a> [11] “Story card hell is when you have 300 story cards and you have to keep track of them all” from [Beyond Story Cards: Agile Requirements Collaboration](https://www.jamesshore.com/v2/presentations/2005/beyond-story-cards).
 
-<a name="nota10"></a> [10] Liz Keogh documenta una serie de patrones conversacionales al trabajar con ejemplos que pueden ser muy útiles para explorar los ejemplos en [Conversational patterns in BDD](https://lizkeogh.com/2011/09/22/conversational-patterns-in-bdd/)
+<a name="nota10"></a> [10] Liz Keogh documenta una serie de patrones conversacionales al trabajar con ejemplos que pueden ser muy útiles para explorar los ejemplos en [Conversational patterns in BDD](https://lizkeogh.com/2011/09/22/conversational-patterns-in-bdd/).
