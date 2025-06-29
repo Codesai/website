@@ -5,9 +5,9 @@ date: 2025-06-24 01:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
-Categories:
-  - User Stories
-  - Product Development
+categories:
+- User Stories
+- Product Development
 author: Fran Reyes & Manuel Rivero
 twitter: codesaidev
 small_image: board-user-stories.jpg
