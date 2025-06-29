@@ -8,7 +8,7 @@ status: publish
 categories:
 - Events
 - Legacy Code
-- User stories
+- User Stories
 - Lean 
 - XP & Agile
 author: Fran Reyes

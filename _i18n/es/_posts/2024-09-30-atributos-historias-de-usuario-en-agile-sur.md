@@ -6,7 +6,7 @@ type: post
 published: true
 status: publish
 categories:
-- User stories
+- User Stories
 - Architecture 
 - Quality attributes 
 author: Fran Reyes
