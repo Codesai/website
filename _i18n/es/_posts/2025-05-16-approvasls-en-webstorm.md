@@ -58,7 +58,14 @@ Este es el código de nuestro `WebStormReporter`:
 
 <script src="https://gist.github.com/franreyes/dfdb2032924f80d37c5d93f84c2b3c28.js"></script>
 
-[Approvals JS](https://github.com/approvals/Approvals.NodeJS) actualmente puede integrarse  con 2 runners, [Jest](https://jestjs.io/) y [Mocha](https://mochajs.org/). Nosotros nos limitamos a hacer funcionar nuestro `WebStormReporter` con Jest porque es el runner que utilizamos en el curso. Si necesitas utilizar WebStorm con Mocha mira la documentación para ver cómo modificarlo.
+[Approvals JS](https://github.com/approvals/Approvals.NodeJS) actualmente puede integrarse  con dos runners, [Jest](https://jestjs.io/) y [Mocha](https://mochajs.org/). Nosotros nos limitamos a hacer funcionar nuestro `WebStormReporter` con Jest porque es el runner que utilizamos en el curso. Si necesitas utilizar WebStorm con Mocha mira la documentación para ver cómo modificarlo.
+
+<figure>
+<img src="/assets/WebStormReporter.png"
+alt="Ventana de diff de WebStorm abierta por WebStormReporter."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>Ventana de diff de WebStorm abierta por WebStormReporter.</strong></figcaption>
+</figure>
 
 Para usar `WebStormReporter`, basta con llamar en los tests a la función `verifyAsJson`<a href="#nota3"><sup>[3]</sup></a> que exportamos en vez de la función que proporciona Jest.
 
