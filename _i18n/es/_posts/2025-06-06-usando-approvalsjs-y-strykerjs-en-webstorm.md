@@ -78,7 +78,7 @@ Sabiendo esto sobreescribimos el método `isReporterAvailable(): boolean` en `We
 
 <script src="https://gist.github.com/trikitrok/b57a4b25bd7191db94440e752ea08d8b.js"></script>
 
-Para que funcione como queremos sólo nos faltaría setear la variable de entorno de node `MUTATION_TESTING` a true cada vez que ejecutamos [StrykerJS](https://github.com/stryker-mutator/stryker-js/blob/master/README.md). Esto se puede conseguir utilizando la propiedad `"command"` del objeto `"commandRunner"’ en el fichero `stryker.conf.json`, que configura [StrykerJS](https://github.com/stryker-mutator/stryker-js/blob/master/README.md), de la siguiente manera:
+Para que funcione como queremos sólo nos faltaría setear la variable de entorno de node `MUTATION_TESTING` a true cada vez que ejecutamos [StrykerJS](https://github.com/stryker-mutator/stryker-js/blob/master/README.md). Esto se puede conseguir utilizando la propiedad `"command"` del objeto `"commandRunner"` en el fichero `stryker.conf.json`, que configura [StrykerJS](https://github.com/stryker-mutator/stryker-js/blob/master/README.md), de la siguiente manera:
 
 <script src="https://gist.github.com/trikitrok/753f422a3ef80b207788767295f1f42a.js"></script>
 
