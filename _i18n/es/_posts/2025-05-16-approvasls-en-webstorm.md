@@ -32,7 +32,7 @@ aportando una herramienta que nos ayuda con algunos de los pasos más complicado
 <figcaption><strong>Flujo de approval testing (del material del curso Cambiando Legacy).</strong></figcaption>
 </figure>
 
-En una edición reciente del curso que tuvo Typescript como lenguaje conductor, utilizamos la librería [Approvals JS](https://github.com/approvals/Approvals.NodeJS) para demostrar cómo aplicar approval testing. 
+En una edición reciente del curso que tuvo Typescript como lenguaje conductor, utilizamos la librería [Approvals JS](https://github.com/approvals/Approvals.NodeJS) para demostrar cómo aplicar approval testing<a href="#nota1"><sup>[1]</sup></a>. 
 
 [Approvals JS](https://github.com/approvals/Approvals.NodeJS) es la versión para Node de la herramienta [Approvals](https://approvaltests.com/) que está disponible en varios lenguajes, siendo probablemente la de Java la más popular y mantenida. 
 
@@ -42,11 +42,11 @@ Aunque también se puede usar [Visual Studio Code](https://code.visualstudio.com
 
 Cuando existe una diferencia entre el resultado real y el resultado aprobado, [Approvals JS](https://github.com/approvals/Approvals.NodeJS) lanza una diff tool para facilitarnos la detección de las diferencias entre ambos resultados, y así ayudarnos a determinar el origen de dichas diferencias.
 
-[Approvals](https://approvaltests.com/) define una abstracción para esta responsabilidad de facilitar la detección de diferencias entre los resultados real y aprobado: el **Report**<a href="#nota1"><sup>[1]</sup></a>. Dicha abstracción se implementa con adaptadores concretos que utilizan diferentes herramientas de diff.
+[Approvals](https://approvaltests.com/) define una abstracción para esta responsabilidad de facilitar la detección de diferencias entre los resultados real y aprobado: el **Report**<a href="#nota2"><sup>[2]</sup></a>. Dicha abstracción se implementa con adaptadores concretos que utilizan diferentes herramientas de diff.
 
 [Approvals JS](https://github.com/approvals/Approvals.NodeJS) viene configurado con una lista de **Reports** que usa de manera priorizada, es decir, empieza por intentar ejecutar el primer **Report** de la lista, si lo encuentra y todo va bien usa ese, y si no pasa a intentar ejecutar el siguiente de la lista, y así sucesivamente.
 
-En nuestro caso, no nos interesaba utilizar (ni siquiera las teníamos instaladas) ninguna de las herramientas de diff configuradas por defecto, (BeyondCompare, Diffmerge, P4merge, Tortoisemerge, etc.), sino que queríamos usar la propia herramienta de diff de WebStorm para no tener que cambiar de contexto y tener una experiencia de desarrollo más fluida<a href="#nota2"><sup>[2]</sup></a>.
+En nuestro caso, no nos interesaba utilizar (ni siquiera las teníamos instaladas) ninguna de las herramientas de diff configuradas por defecto, (BeyondCompare, Diffmerge, P4merge, Tortoisemerge, etc.), sino que queríamos usar la propia herramienta de diff de WebStorm para no tener que cambiar de contexto y tener una experiencia de desarrollo más fluida<a href="#nota3"><sup>[3]</sup></a>.
 
 El problema es que no existía un **Report** por defecto para trabajar con Webstorm.
 
@@ -67,7 +67,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Ventana de diff de WebStorm abierta por WebStormReporter.</strong></figcaption>
 </figure>
 
-Para usar `WebStormReporter`, basta con llamar en los tests a la función `verifyAsJson`<a href="#nota3"><sup>[3]</sup></a> que exportamos en vez de la función que proporciona Jest.
+Para usar `WebStormReporter`, basta con llamar en los tests a la función `verifyAsJson`<a href="#nota4"><sup>[4]</sup></a> que exportamos en vez de la función que proporciona Jest.
 
 ### Conclusión.
 
@@ -83,10 +83,14 @@ Por último, también nos gustaría darle las gracias a [Markus Spiske](https://
 
 ### Notas.
 
-<a name="nota1"></a> [1] Approvals define toda una serie de [abstracciones fundamentales (Writer, Reporter, Namer..)](https://github.com/approvals/ApprovalTests.Java/blob/master/approvaltests/docs/Features.md#main-concepts-for-approvaltests) que permiten extender su comportamiento y adaptarla en caso de que sea necesario.
+<a name="nota1"></a> [1] Usamos la versión `7.2.3`. Para que no falle la compilación hay que añadir al `tsconfig.json` la opción `ìnclude` indicando que sólo chequee los tipos en ficheros dentro de `src`, porque hay varios ficheros en [Approvals JS](https://github.com/approvals/Approvals.NodeJS) que no pasan el chequeo de tipos.
 
-<a name="nota2"></a> [2] Además estamos acostumbrados a ella porque la usamos regularmente para resolver conflictos en merges o visualizar cambios en la Local History.
+<script src="https://gist.github.com/trikitrok/fc3885b8432a4f733d50c455c8cdd349.js"></script>
 
-<a name="nota3"></a> [3] [JestApprovals](https://github.com/approvals/Approvals.NodeJS/blob/master/lib/Providers/Jest/JestApprovals.ts) tiene otros métodos como `verify` y `verifyAll`. Nosotros utilizamos `verifyAsJson` porque necesitábamos comparar objetos y nos resultaba más cómodo hacerlo usando el formato JSON. Es por esto que sólo nos hemos preocupado de proporcionar una versión de `verifyAsJson` que use nuestro `WebStormReporter`.
+<a name="nota2"></a> [2] Approvals define toda una serie de [abstracciones fundamentales (Writer, Reporter, Namer..)](https://github.com/approvals/ApprovalTests.Java/blob/master/approvaltests/docs/Features.md#main-concepts-for-approvaltests) que permiten extender su comportamiento y adaptarla en caso de que sea necesario.
+
+<a name="nota3"></a> [3] Además estamos acostumbrados a ella porque la usamos regularmente para resolver conflictos en merges o visualizar cambios en la Local History.
+
+<a name="nota4"></a> [4] [JestApprovals](https://github.com/approvals/Approvals.NodeJS/blob/master/lib/Providers/Jest/JestApprovals.ts) tiene otros métodos como `verify` y `verifyAll`. Nosotros utilizamos `verifyAsJson` porque necesitábamos comparar objetos y nos resultaba más cómodo hacerlo usando el formato JSON. Es por esto que sólo nos hemos preocupado de proporcionar una versión de `verifyAsJson` que use nuestro `WebStormReporter`.
 
 
