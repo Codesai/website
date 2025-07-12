@@ -1,0 +1,27 @@
+<svg width="81" height="73" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="disk-cutout-mask" maskUnits="userSpaceOnUse">
+      <!-- Fully transparent background -->
+      <rect width="81" height="73" fill="black"/>
+
+      <!-- Thinner database -->
+      <ellipse cx="30" cy="18" rx="10" ry="6" fill="white"/>
+      <rect x="20" y="18" width="20" height="20" fill="white"/>
+      <ellipse cx="30" cy="38" rx="10" ry="6" fill="white"/>
+
+      <!-- Conveyor belt -->
+      <rect x="16" y="50" width="48" height="4" fill="white"/>
+      <polygon points="64,48 72,52 64,56" fill="white"/>
+
+      <!-- Disk line cutouts (shorter and centered within new width) -->
+      <rect x="24" y="25" width="12" height="1.5" fill="black"/>
+      <rect x="24" y="31" width="12" height="1.5" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- Apply mask to black fill -->
+  <g mask="url(#disk-cutout-mask)">
+    <rect width="81" height="73" fill="black"/>
+  </g>
+</svg>
+
