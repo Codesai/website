@@ -1,0 +1,27 @@
+<svg width="81" height="73" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="cutout" maskUnits="userSpaceOnUse">
+      <rect width="81" height="73" fill="white"/>
+
+      <!-- Cutout lines -->
+      <rect x="18" y="18" width="28" height="4" rx="1" fill="black"/>
+      <rect x="18" y="26" width="20" height="4" rx="1" fill="black"/>
+      <rect x="18" y="34" width="28" height="4" rx="1" fill="black"/>
+      <rect x="18" y="42" width="20" height="4" rx="1" fill="black"/>
+
+      <!-- Checkmarks as transparent paths -->
+      <path d="M51 20l2 2 4-4" stroke="black" stroke-width="2" fill="none"/>
+      <path d="M51 36l2 2 4-4" stroke="black" stroke-width="2" fill="none"/>
+
+      <!-- Magnifying glass circle -->
+      <circle cx="60" cy="50" r="7" fill="black"/>
+      <line x1="65" y1="55" x2="72" y2="62" stroke="black" stroke-width="4" stroke-linecap="round"/>
+    </mask>
+  </defs>
+
+  <!-- Main filled shape with mask applied -->
+  <g mask="url(#cutout)">
+    <rect width="81" height="73" fill="#2C2C2C"/>
+  </g>
+</svg>
+
