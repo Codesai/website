@@ -13,3 +13,4 @@ _site/
 global-groovy.log
 soapui-errors.log
 soapui.log
+_compress_images_cache.yml
