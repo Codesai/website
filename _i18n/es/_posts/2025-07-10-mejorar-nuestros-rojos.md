@@ -86,5 +86,5 @@ Gracias a [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) por revisa
 
 ## Notas.
 
-<a name="nota1"></a> **Programming by Coincidence** es el título de uno de los *topics* que se tratan en el libro [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/) (topic 31 en la primera edición y *topic* 38 en la edición del veinte aniversario). Textualmente, los autores dicen: “We should avoid programming by coincidence—relying on luck and accidental successes— in favor of programming deliberately”.
+<a name="nota1"></a> [1] **Programming by Coincidence** es el título de uno de los *topics* que se tratan en el libro [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/) (topic 31 en la primera edición y *topic* 38 en la edición del veinte aniversario). Textualmente, los autores dicen: “We should avoid programming by coincidence—relying on luck and accidental successes— in favor of programming deliberately”.
 
