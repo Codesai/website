@@ -50,36 +50,42 @@ After uploading the [A Prompt Pattern Catalog to Enhance Prompt Engineering with
 
 > Me: *If you were this PDF how would you create a game to help me learn about you?* [I was informally using the **Persona** and the **Game Play** patterns from the paper]
 
-<script src="https://gist.github.com/trikitrok/e88887269e2339bf2cd92aa371997df2.js"></script>
+
+> ChatGpt:
+> <script src="https://gist.github.com/trikitrok/e88887269e2339bf2cd92aa371997df2.js"></script>
 
 
 > Me: *Guess the Pattern* [I started with the multiple-choice quiz because I think it’s much easier than the other kind of exercises in the game.]
 
-<script src="https://gist.github.com/trikitrok/baed5ae8b960bcf03254a7caa7ce26f0.js"></script>
+> ChatGpt:
+> <script src="https://gist.github.com/trikitrok/baed5ae8b960bcf03254a7caa7ce26f0.js"></script>
 
 
 > Me: *b*
 
-<script src="https://gist.github.com/trikitrok/86f43503ba4c656d485b21b7fd1f9f59.js"></script>
+> ChatGpt:
+> <script src="https://gist.github.com/trikitrok/86f43503ba4c656d485b21b7fd1f9f59.js"></script>
 
 
 ChatGpt gave me feedback about my answer and explained a bit why it was right. Then it asked me a new question.
 
 For the sake of brevity, I’ll skip a big part of my retrieval practice, and jump to a moment where, after having done several multiple-choice quizzes, I changed to a different kind of exercise that I considered a bit more challenging:
 
-<script src="https://gist.github.com/trikitrok/ca03bec68e35f455b5568dd533784b67.js"></script>
+> ChatGpt:
+> <script src="https://gist.github.com/trikitrok/ca03bec68e35f455b5568dd533784b67.js"></script>
 
 
 > Me: *Fix the Prompt (remind me the mechanics of the quest, at the beginning, please)* [I choose the *Fix the Prompt* challenge, I also ask ChatGpt to remind its mechanics because I had forgotten them after a lot of *Guess the Pattern* exercises.]
 
-<script src="https://gist.github.com/trikitrok/253d12a3a553b46fcc34fafaefb9f31c.js"></script>
+> ChatGpt:
+> <script src="https://gist.github.com/trikitrok/253d12a3a553b46fcc34fafaefb9f31c.js"></script>
 
 
 > Me: [After a while, because, at least for me, analyzing and creating is much harder than the pattern matching required in a multiple-choice quiz.]
-
 > <script src="https://gist.github.com/trikitrok/6b504b7f4d9831033a42573418087032.js"></script>
 
-<script src="https://gist.github.com/trikitrok/65427baab79ac0495c9688ca012daa95.js"></script>
+> ChatGpt:
+> <script src="https://gist.github.com/trikitrok/65427baab79ac0495c9688ca012daa95.js"></script>
 
 
 Notice how ChatGpt's feedback was much more detailed in this last exercise. It told me that my prompt worked and that the patterns that I was trying to use were there, and how explicit they were (which is where the prompt could have been better). Then, it suggested an improved version of my prompt which is great feedback for my learning. Finally, it prompted me to keep on playing.
