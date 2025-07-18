@@ -113,7 +113,7 @@ Creo que, nuestro conocimiento sobre el dominio, o, como en este caso, disponer 
 
 Una alternativa, en este caso, hubiera sido generar los ejemplos nosotros mismos a partir de una especificación.
 
-Otra alternativa aún más interesante sería usar una técnicas de desarrollo como TDD, que nos permite generar los tests y el código de producción de forma incremental, y nos puede dar más confianza de que estamos convergiendo en una solución que funciona.
+Otra alternativa aún más interesante sería usar una técnica de desarrollo como TDD, que nos permite generar los tests y el código de producción de forma incremental, y nos puede dar más confianza de que estamos convergiendo en una solución que funciona.
 
 # Conclusión.
 
