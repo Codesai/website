@@ -16,7 +16,7 @@ written_in: spanish
 
 ## Introdución.
 
-Una de las cosas para las que suelo usar la IA con muy buenos resultados, es pasar un test de no paramétrico a paramétrico.
+Una de las cosas para las que suelo usar la IA con muy buenos resultados, es para pasar un test de no paramétrico a paramétrico.
 
 Suelo introducir tests paramétricos en muchos contextos diferentes para quitar duplicación y subir el nivel de abstracción de la descripción del test, de forma que describa más directamente una regla de negocio o un comportamiento.
 
