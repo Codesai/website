@@ -171,5 +171,5 @@ La siguiente tabla muestra en cuáles de nuestras formaciones se explican y prac
 | Approval testing                           |        ✅         |                   ✅                     |   ❌    |
 | Mutation testing                           |        ✅         |                   ✅                     |   ✅    |
 | Specification-based testing                |        ❌         |                   ✅                     |   ✅    |
-| Structural testing                         |        ✅         |                   ✅                     |   ✅    |
+| Structural testing                         |        ✅         |                   ✅                     |   ❌    |
 
