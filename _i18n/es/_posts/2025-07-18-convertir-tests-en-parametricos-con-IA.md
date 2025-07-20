@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Convertiendo tests en paramétricos con la IA (e intentando generar ejemplos)"
+title: "Convertiendo tests no paramétricos en paramétricos con la IA (e intentando generar ejemplos)"
 date: 2025-07-18 06:00:00.000000000 +00:00
 type: post
 published: true
