@@ -13,7 +13,7 @@ twitter: codesaidev
 small_image: code-comments.jpg
 ---
 
-[Dead Code](https://en.wikipedia.org/wiki/Dead_code) es un smell clasificado dentro de la taxonomía de Wake[1] en la categoría de Complejidad Innecesaria. Normalmente, suele aparecer en forma de variables, parámetros, campos, fragmentos de código, funciones o clases que no se ejecutan más.
+[Dead Code](https://en.wikipedia.org/wiki/Dead_code) es un smell clasificado dentro de la taxonomía de Wake<a href="#nota1"><sup>[1]</sup></a> en la categoría de Complejidad Innecesaria. Normalmente, suele aparecer en forma de variables, parámetros, campos, fragmentos de código, funciones o clases que no se ejecutan más.
 
 El problema es que la mayoría de las veces no estamos seguros de si un determinado elemento del código ya no se usa o no. No saber si un código se ejecuta o no, hace que aumente la carga cognitiva (tenemos que tenerlo en cuenta y comprenderlo) a la hora de hacer cambios de funcionalidad o corregir bugs, lo cual aumenta la complejidad del cambio de forma totalmente innecesaria. Para hacer desaparecer esta complejidad bastaría con eliminar el código muerto, pero para ello primero debemos ser capaces de detectarlo.
 
@@ -27,7 +27,8 @@ En este post nos centraremos en un tipo de código muerto que es quizás el más
 Con frecuencia, solemos encontrar el código comentado intercalado con el resto del código. Esto provoca una ruptura del flujo de lectura que nos obliga a hacer un esfuerzo para ignorar el código comentado. Si los bloques de código comentados son grandes, en ocasiones nos vemos obligados a usar el scroll para continuar la lectura.
 
 <figure style="margin:auto; width: 100%">
-<img src="/assets/posts/2022-10-18-eliminando-codigo-comentado/large-comment-block.png" alt="bloque de comentario largo" />
+<img src="/assets/posts/2022-10-18-eliminando-codigo-comentado/large-comment-block.png" alt="Bloque largo de código comentado" />
+<figcaption><strong>Bloque largo de código comentado.</strong></figcaption>
 </figure>
 
 Además del aumento de la carga cognitiva que genera todo código muerto, el código comentado puede generar confusión cuando uno lo tiene en cuenta, ya sea con la intención de usarlo en el futuro, o como ayuda para entender el código actual, debido a que suele quedar rápidamente desfasado.
@@ -57,18 +58,21 @@ Intellij dispone de una herramienta de análisis de código que cuenta con difer
 
 <figure style="margin:auto; width: 100%">
 <img src="/assets/posts/2022-10-18-eliminando-codigo-comentado/run-inspection-menu.png" alt="Ejecución de las inspecciones por nombre en IntelliJ" />
+<figcaption><strong>Ejecución de las inspecciones por nombre en IntelliJ.</strong></figcaption>
 </figure>
 
 La inspección concreta para detectar código comentado es **commented out code**. Se puede seleccionar el scope del análisis, diversos filtros y el número de líneas mínimas de los comentarios a considerar (lo que puede ser útil si, por ejemplo, queremos empezar por grandes bloques de código comentado).
 
 <figure style="margin:auto; width: 100%">
 <img src="/assets/posts/2022-10-18-eliminando-codigo-comentado/run-commented-out.png" alt="Opciones para ejecutar la inspección commented out code" />
+<figcaption><strong>Opciones para ejecutar la inspección 'commented out code'.</strong></figcaption>
 </figure>
 
 A continuación, podemos seleccionar los elementos detectados que queramos y proceder a realizar algunos de los fixes que el IDE nos proponga, en este caso aplicaremos **Delete comment**.
 
 <figure style="margin:auto; width: 100%">
 <img src="/assets/posts/2022-10-18-eliminando-codigo-comentado/delete-comments.png" alt="Fixes propuestos para resolver el commented out code" />
+<figcaption><strong>Fixes propuestos para resolver los caso de 'commented out code'.</strong></figcaption>
 </figure>
 
 Tras realizar estos cambios, ejecuta tus test para ver que no se ha modificado el comportamiento esperado. Dependiendo de tu situación (cobertura de tests, confianza del equipo, etc.) podría ser interesante verificar también que el borrado se ha hecho correctamente leyendo el código resultante. Sin embargo, si hay muchos cambios que verificar esto puede ser muy laborioso. Lo que podrías hacer en ese caso es planificar el borrado en varias fases, dividiéndolo por tipos de fichero, por paquetes, o por otro criterio de división que se adecue a tu situación.
@@ -77,5 +81,5 @@ Tras realizar estos cambios, ejecuta tus test para ver que no se ha modificado e
 Hemos visto que el código comentado es una de las formas en la que se presenta el [Dead Code](https://en.wikipedia.org/wiki/Dead_code) smell, y como este smell aumenta de forma innecesaria la complejidad de nuestro código. Hemos presentado los argumentos más comunes (en nuestra experiencia) para resistirse a eliminar el código comentado, y hemos dado argumentos para rebatirlos. Finalmente, cuando trabajas con una base de código plagado de código comentado, hemos recomendado una alternativa a su eliminación mediante refactorings oportunistas, que consiste en explorar las herramientas que tienes a mano (tu IDE) para ver si disponen de funcionalidades para eliminar código muerto de manera automática. Esto te permitirá eliminar una mayor cantidad de código comentado con un coste asumible.
 
 ## Notas
-[1] Puedes leer sobre esta taxonomía y otras más en nuestro post [De taxonomías y catálogos de code smells](https://codesai.com/posts/2022/09/code-smells-taxonomies-and-catalogs).
+<a name="nota1"></a> [1] Puedes leer sobre esta taxonomía y otras más en nuestro post [De taxonomías y catálogos de code smells](https://codesai.com/posts/2022/09/code-smells-taxonomies-and-catalogs).
 
