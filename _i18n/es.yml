@@ -378,36 +378,40 @@ desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente
         link: /cursos/refactoring/#call-to-action
       content:
         title: Contenidos
-        day_1:
-          title: Bloque 1
-          agenda: '<div class="topics">
-                      <div class="group"><span>1.</span> Introducción</div>
-                      <div class="group"><span>2. </span> Code smells y refactorings relacionados</div>
-                      <div class="subgroup"><span>&bull;</span> Code smells en clases</div>
-                      <div class="subgroup"><span>&bull;</span> Code smells entre clases</div>
-                  </div>'
-        day_2:
-          title: Bloque 2
-          agenda: '<div class="topics">
-                    <div class="group"><span>3. </span>Diseño lo suficientemente bueno</div>
-                    <div class="subgroup"><span>&bull;</span> Principios y heurísticas de diseño</div>
-                    <div class="subgroup"><span>&bull;</span> Relación con los code smells</div>                    
-                    <div class="group"><span>4. </span>Core Refactorings y patrones de refactoring</div>
-                    <div class="subgroup"><span>&bull;</span> 6 Core Refactorings</div>
-                    <div class="subgroup"><span>&bull;</span> Honourable Retreat</div>                    
-                    <div class="subgroup"><span>&bull;</span> Narrowed Change</div>
-                    <div class="subgroup"><span>&bull;</span> Parallel Change</div>                    
-                    <div class="subgroup"><span>&bull;</span> Como seguir profundizando en refactoring</div>                    
-                 </div>'
-        day_3:
-          title: Bloque 3
-          agenda: '<div class="topics">
-                    <div class="group"><span>5. </span>Arquitectura hexagonal</div>
-                    <div class="subgroup"><span>&bull;</span> Fundamentos</div>
-                    <div class="subgroup"><span>&bull;</span> Estrategia de testing</div>  
-                    <div class="subgroup"><span>&bull;</span> Refactoring hacia arquitectura hexagonal</div>  
-                    <div class="group"><span>6. </span>Flujos de trabajo y economía del refactoring</div>
-                 </div>'
+        agenda: '<div class="topics">
+                    <div class="group"><span>1.</span> Introducción.</div>
+                    <div class="subgroup"><span>1.1.</span> Definición.</div>
+                    <div class="subgroup"><span>1.2.</span> ¿Por qué refactorizar?</div>
+                    <div class="subgroup"><span>1.3.</span> La mala calidad interna del código como problema de negocio.</div>
+                    <div class="subgroup"><span>1.4.</span> Efectos de la mala calidad interna del código en las personas.</div>
+                    <div class="subgroup"><span>1.5.</span> ¿Cómo podemos evitar que el código se deteriore?</div>
+                    <div class="subgroup"><span>1.6.</span> Code Smells.</div>
+                    <div class="subgroup"><span>1.7.</span> Taxonomías de Code Smells.</div>                    
+                    
+                    <div class="group"><span>2.</span> Code smells y refactorings relacionados en profundidad.</div>
+                    <div class="subgroup"><span>2.1.</span> Code smells en clases.</div>
+                    <div class="subgroup"><span>2.2.</span> Code smells entre clases.</div>
+                    
+                    <div class="group"><span>3.</span> Patrones de Refactoring.</div>
+                    <div class="subgroup"><span>3.1.</span> Honourable Retreat.</div>
+                    <div class="subgroup"><span>3.2.</span> Narrowed Change.</div>
+                    <div class="subgroup"><span>3.3.</span> Parallel Change.</div>     
+                    
+                    <div class="group"><span>4.</span> Diseño lo suficientemente bueno.</div>
+                    <div class="subgroup"><span>4.1.</span> Principios y heurísticas de diseño orientado a objetos.</div>
+                    <div class="subgroup"><span>4.2.</span> Code smells: violaciones de principios y su prevención.</div>
+                    
+                    <div class="group"><span>5.</span> Arquitectura hexagonal.</div>
+                    <div class="subgroup"><span>5.1.</span> Fundamentos.</div>
+                    <div class="subgroup"><span>5.2.</span> Estrategia de testing.</div>
+                    <div class="subgroup"><span>5.3.</span> Refactoring hacia arquitectura hexagonal.</div>                    
+                    
+                    <div class="group"><span>6.</span> Core Refactorings.</div>
+                    <div class="subgroup"><span>6.1.</span> 6 Core Refactorings.</div>
+                    <div class="subgroup"><span>6.2.</span> Cómo seguir aprendiendo sobre refactoring.</div>
+                    
+                    <div class="group"><span>7.</span> Flujos de trabajo y economía del refactoring.</div>                
+                </div>'
       languages:
         title: Lenguajes
         text: <p>Los ejemplos y katas están en Java, C#, TypeScript, JavaScript y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>

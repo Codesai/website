@@ -370,37 +370,40 @@ pages:
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
-        title: Contents
-        day_1:
-          title: Module One (4h)
-          agenda: '<div class="topics">
-                      <div class="group"><span>1.</span> Introduction</div>
-                      <div class="group"><span>2. </span> Code smells & Related Refactorings</div>
-                      <div class="subgroup"><span>&bull;</span> Code smells in classes</div>
-                      <div class="subgroup"><span>&bull;</span> Code smells between classes</div>
-                  </div>'
-        day_2:
-          title: Module Two (8h)
-          agenda: '<div class="topics">
-                    <div class="group"><span>3. </span>Good enough design</div>
-                    <div class="subgroup"><span>&bull;</span> Design Principles and Heuristics</div>
-                    <div class="subgroup"><span>&bull;</span> How they relate with code smells</div>  
-                    <div class="group"><span>4. </span>Core Refactorings and refactoring patterns</div>
-                    <div class="subgroup"><span>&bull;</span> 6 Core Refactorings</div>
-                    <div class="subgroup"><span>&bull;</span> Honourable Retreat</div>                    
-                    <div class="subgroup"><span>&bull;</span> Narrowed Change</div>
-                    <div class="subgroup"><span>&bull;</span> Parallel Change</div>                    
-                    <div class="subgroup"><span>&bull;</span> Tips to go on learning about refactoring</div>    
-                 </div>'
-        day_3:
-          title: Module Three (8h)
-          agenda: '<div class="topics">
-                    <div class="group"><span>5. </span>Hexagonal architecture</div>
-                    <div class="subgroup"><span>&bull;</span> Fundamentals</div>
-                    <div class="subgroup"><span>&bull;</span> Testing strategy</div>  
-                    <div class="subgroup"><span>&bull;</span> Refactoring to hexagonal architecture</div> 
-                    <div class="group"><span>6. </span>Workflows and economy of refactoring</div>
-                 </div>'
+        agenda: '<div class="topics">
+                    <div class="group"><span>1.</span> Introduction.</div>
+                    <div class="subgroup"><span>1.1.</span> Definition.</div>
+                    <div class="subgroup"><span>1.2.</span> Why refactor?</div>
+                    <div class="subgroup"><span>1.3.</span> Poor internal code quality as a business problem.</div>
+                    <div class="subgroup"><span>1.4.</span> Poor internal code quality & people.</div>
+                    <div class="subgroup"><span>1.5.</span> How can we prevent code from decaying?</div>
+                    <div class="subgroup"><span>1.6.</span> Code Smells.</div>
+                    <div class="subgroup"><span>1.7.</span> Code Smell Taxonomies.</div>                    
+                    
+                    <div class="group"><span>2.</span> Code Smells and related refactorings in depth.</div>
+                    <div class="subgroup"><span>2.1.</span> Code Smells in classes.</div>
+                    <div class="subgroup"><span>2.2.</span> Code Smells between classes.</div>
+                    
+                    <div class="group"><span>3.</span> Refactoring Patterns.</div>
+                    <div class="subgroup"><span>3.1.</span> Honourable Retreat.</div>
+                    <div class="subgroup"><span>3.2.</span> Narrowed Change.</div>
+                    <div class="subgroup"><span>3.3.</span> Parallel Change.</div>     
+                    
+                    <div class="group"><span>4.</span> Good Enough Design.</div>
+                    <div class="subgroup"><span>4.1.</span> Principles and heuristics of object-oriented design.</div>
+                    <div class="subgroup"><span>4.2.</span> Code Smells: principle violations and their prevention.</div>
+                    
+                    <div class="group"><span>5.</span> Hexagonal Architecture.</div>
+                    <div class="subgroup"><span>5.1.</span> Fundamentals.</div>
+                    <div class="subgroup"><span>5.2.</span> Testing strategy.</div>
+                    <div class="subgroup"><span>5.3.</span> Refactoring towards Hexagonal Architecture.</div>                    
+                    
+                    <div class="group"><span>6.</span> Core Refactorings.</div>
+                    <div class="subgroup"><span>6.1.</span> 6 Core Refactorings.</div>
+                    <div class="subgroup"><span>6.2.</span> How to keep learning about refactoring.</div>
+                    
+                    <div class="group"><span>7.</span> Refactoring workflows and economics.</div>                
+                </div>'
       languages:
         title: Languages
         text: '<p>At the moment the examples and katas are ready for Java, C#, JavaScript, TypeScript and PHP, but if you wish to use another language please let us know.</p>'
