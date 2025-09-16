@@ -865,7 +865,7 @@ components:
   course:
     information: Information
     hours: hours
-    modality: On-site or remote.
+    modality: Remote (ask about in-person).
     price_ratio: €/person
     iva_excluded: V.A.T. not included.
     button: More Information
@@ -875,7 +875,7 @@ components:
       title: Upcoming open dates
     special_discount: For open dates <span>50% discount</span> for underrepresented groups in technology
     hours: hours
-    default_modality_text: On-site or remote
+    default_modality_text: Remote (ask about in-person).
     participant: person
     iva_excluded: (V.A.T. not included)
     button: I'm interested!
