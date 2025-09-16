@@ -415,7 +415,7 @@ pages:
         text: '<p>Primarily for programmers working with the object-oriented paradigm.</p>'
       where:
         title: For companies or open to the community
-        text: '<p>The course can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
+        text: '<p>The course can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in the form below.</p>
                <p class="unicode">Please note that courses for companies take place once we have been booked by the client. We will need to know the date at least one month in advance in advance in order to be able to schedule them.</p>'
 
     changing_legacy:
