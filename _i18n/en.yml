@@ -363,7 +363,7 @@ pages:
       title: Codesai. Code Smells & Refactoring
       name: Code smells & Refactoring
       text: '<p>The objective of this course is to introduce students to the concept of code smells and start developing their ability to recognize them. We will also practice some techniques to incrementally improve already existing code designs in a safe manner.</p>
-             <p>Through examples and katas, we will learn about code smells, refactoring techniques and object-oriented design principles. We will also look at the fundamental role of refactoring in software development and reflect on technical debt, refactoring cycles and the economics of refactoring (how to do it responsibly).</p>'
+             <p>Through examples and katas, we will learn about code smells, refactoring techniques and object-oriented design principles. We will also look at the fundamental role of refactoring in software development and reflect on technical debt, refactoring workflows and the economics of refactoring.</p>'
       call_to_action:
         link: /en/trainings/refactoring/#call-to-action
         title: ¡OK! I am interested in taking the Code Smells & Refactoring Course
