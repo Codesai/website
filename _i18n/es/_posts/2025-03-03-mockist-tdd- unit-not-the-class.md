@@ -121,6 +121,10 @@ In our tests we will only use test doubles to simulate the behaviors (roles, res
 
 In our opinion, internals should not be injected from the outside; instead, they should be created within the constructors of the objects they belong to.
 
+The reason to both not using test doubles to simulate internals, and creating them within the constructors of the objects they belong to is to avoid tests "knowing" they exist, thus removing any coupling between them.
+
+This is an important difference about internals and peers: peers have behaviours interesting enough to be "known" and documented by the tests, whereas internals are not even "known" by the tests.
+
 ## What is the unit in the mockist style of TDD then?
 
 
@@ -128,7 +132,7 @@ We hope that, by now, we have managed to show that the class is not the unit in 
 
 Just like the classic style of TDD, the mockist style of TDD also considers behavior as the unit in unit testing<a href="#nota5"><sup>[5]</sup></a>. And, as we have seen, a behaviour might be implemented by 1 or N classes, but that is only an implementation detail.
 
-## Conclusion
+## Conclusion.
 
 The purpose of this post was to dispel a common misconception about the mockist style of TDD that states that the class is the unit in the mockist style of TDD. 
 
@@ -136,10 +140,13 @@ In some cases, this misconception comes from not having read or not having under
 
 In some other cases, we think that, sadly, this idea of the class-is-the-unit is used as part of a [straw men](https://en.wikipedia.org/wiki/Straw_man) intended to criticize the mockist style of TDD by saying that, all the maintainability problems associated with the class being the unit, are produced by using the mockist style of TDD. 
 
-
 In any case, by dispeling this common misconception, we hope to facilitate better discussions about the mockist style of TDD trade-offs and enable its more effective application.
 
-## Acknowledgements
+<h4>Update 2025/09/29:</h4>
+
+Added another distinction between internals and peers: tests know about peers, whereas they ignore that internals exist.
+
+## Acknowledgements.
 
 I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/),
 [Alfredo Casado](https://www.linkedin.com/in/alfredo-casado/), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Iglesias Gómez](https://www.linkedin.com/in/franiglesias/) and [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) for giving me feedback about several drafts of this post.
@@ -172,7 +179,7 @@ Finally, I’d also like to thank [William Warby](https://www.pexels.com/es-es/@
 
 - [Object Collaboration Stereotypes](https://web.archive.org/web/20230607222852/http://www.mockobjects.com/2006/10/different-kinds-of-collaborators.html), [Steve Freeman](https://www.linkedin.com/in/stevefreeman) and [Nat Pryce](https://www.linkedin.com/in/natpryce/).
 
-## Notes
+## Notes.
 
 <a name="nota1"></a> [1] When we test classes in isolation, the resulting tests will have a high structure-sensitiveness as opposed to the ideal of tests being structure-insensitive (see  [Test Desiderata 2/12 Tests Should be Structure-Insensitive](https://www.youtube.com/watch?v=bvRRbWbQwDU))  .
 
