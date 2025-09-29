@@ -132,13 +132,14 @@ no las clases de las que depende. Esto está relacionado con la recomendación �
 
 En nuestra opinión, los objetos internos no deberían inyectarse desde fuera, sino que deberían instanciarse dentro de los constructores de los objetos a los que pertenecen.
 
-La razón tanto de no usar dobles de prueba para simular objetos internos, como para crearlos dentro de los constructores de los objetos a los que pertenecen, es evitar que los tests “sepan” que existen, y que así no estén acoplados con ellos.
+La razón tanto de no usar dobles de prueba para simular objetos internos, como para instanciar los objetos internos en los constructores de los objetos a los que pertenecen, es evitar que los tests “sepan” que existen, y que así no estén acoplados con ellos.
 
 Esta es una diferencia importante entre los objetos internos y los pares: los pares tienen comportamientos lo suficientemente interesantes como para ser “conocidos” y documentados en los tests, mientras que los tests ni siquiera “conocen” la existencia de los objetos internos.
 
 ## ¿Cuál es entonces la unidad en el estilo mockist de TDD?
 
-Esperamos, al menos, haber logrado convencerlos de que la clase no es la unidad en el estilo mockist de TDD. 
+Esperamos, al menos, haber logrado convencerlos de que la clase tampoco es la unidad en el estilo mockist de TDD. 
+
 Entonces, ¿qué se considera como unidad el estilo mockist de TDD?
 
 Al igual que el estilo clásico de TDD, el estilo mockist de TDD considera **el comportamiento como la unidad** en los tests unitarios<a href="#nota6"><sup>[6]</sup></a>. Y, como hemos visto, un comportamiento puede ser implementado por 1 o N clases, pero esto último ya es solamente un detalle de implementación.
@@ -196,13 +197,13 @@ Finalmente, también quisiera agradecer a [William Warby](https://www.pexels.com
 
 <a name="nota4"></a> [4] Esto ocurre en el libro [Unit Testing Principles, Practices, and Patterns](https://www.manning.com/books/unit-testing).
 
-<a name="nota5"></a> [5] Estamos usando como sustantivo el primer significado de **par**:  "igual o semejante totalmente" (ver [par en la RAE](https://www.rae.es/drae2001/par)). Consideramos que es el que más se aproxima a "peer" que significa "a person of a similar age, position, abilities, etc. as others in a group" (ver [peer en Cambridge dictionary](https://dictionary.cambridge.org/dictionary/english/peer)). Otra traducción adecuada de los "pares de un objeto" podría ser "los iguales de un objeto". Mantuvimos "pares" porque se parece más a "peers".
+<a name="nota5"></a> [5] Estamos sustantivando el primer significado del adjetivo "par" que es "igual o semejante totalmente" (ver [par en la RAE](https://www.rae.es/drae2001/par)). 
+
+Consideramos que es el que más se aproxima a "peer" que significa "a person of a similar age, position, abilities, etc. as others in a group" (ver [peer en Cambridge dictionary](https://dictionary.cambridge.org/dictionary/english/peer)). 
+
+Otra traducción adecuada de los "pares de un objeto" podría ser "los iguales de un objeto". Mantuvimos "pares" porque se parece más a "peers".
 
 
-<a name="nota6"></a> [6] Los autores del libro GOOS afirman que debemos “Unit-Test Behavior, Not Methods” (“Probar el comportamiento, no los métodos”) (capítulo 5: *Maintaining the Test-Driven Cycle*).
-
-
-
-
+<a name="nota6"></a> [6] Los autores del libro GOOS afirman que debemos “Unit-Test Behavior, Not Methods” (“Probar unitariamente el comportamiento, no los métodos”) (capítulo 5: *Maintaining the Test-Driven Cycle*).
 
 
