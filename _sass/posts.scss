@@ -67,7 +67,8 @@
 
   ul {
     list-style: initial;
-    padding-left: 20px;
+    padding: revert;
+    margin: revert;
   }
 
   blockquote {
