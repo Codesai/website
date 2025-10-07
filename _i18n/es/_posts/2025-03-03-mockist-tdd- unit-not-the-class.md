@@ -181,7 +181,7 @@ Finally, I’d also like to thank [William Warby](https://www.pexels.com/es-es/@
 
 ## Notes.
 
-<a name="nota1"></a> [1] When we test classes in isolation, the resulting tests will have a high structure-sensitiveness as opposed to the ideal of tests being structure-insensitive (see  [Test Desiderata 2/12 Tests Should be Structure-Insensitive](https://www.youtube.com/watch?v=bvRRbWbQwDU))  .
+<a name="nota1"></a> [1] When we test classes in isolation, the resulting tests will have a high structure-sensitiveness as opposed to the ideal of tests being structure-insensitive (see  [Test Desiderata 2/12 Tests Should be Structure-Insensitive](https://www.youtube.com/watch?v=bvRRbWbQwDU)).
 
 <a name="nota2"></a> [2] If we apply a [parallel change](https://martinfowler.com/bliki/ParallelChange.html) the test will not break at any moment during the refactoring, but this is more costly than doing a refactoring when the tests are not affected.
 
