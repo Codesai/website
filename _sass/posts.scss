@@ -67,8 +67,13 @@
 
   ul {
     list-style: initial;
-    padding: revert;
-    margin: revert;
+    padding-inline-start: 40px;
+    margin: 0 0 1.25rem 0;
+  }
+  
+  ol {
+    padding-inline-start: 40px;
+    margin: 0 0 1.25rem 0;
   }
 
   blockquote {
