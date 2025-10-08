@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Nuestro flujo de decisión para refinar Historias de Usuario poco antes de empezar a desarrollarla'
-date: 2025-10-17 01:00:00.000000000 +01:00
+date: 2025-10-08 01:00:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -97,19 +97,19 @@ Pongamos un ejemplo de historias de usuario solapadas y veamos cómo se podría 
 
 Imaginemos que tenemos las siguientes historias.
 
-> <div style="background: rgb(251,243,219);color: #434648; padding:5px"> Mostrar los trabajadores de la empresa y enviarle un mensaje.</div>
+> <div style="background: rgb(251,243,219);color: #434648; padding:5px">Mostrar los trabajadores de la empresa y mostrar las ofertas laborales de la empresa.</div> 
 
-> <div style="background: rgb(251,243,219);color: #434648; padding:5px">Mostrar los trabajadores de la empresa y mostrar sus ofertas laborales.</div> 
+> <div style="background: rgb(251,243,219);color: #434648; padding:5px">Mostrar los trabajadores de la empresa y poder enviar un mensaje a la empresa.</div>
 
-Ambas historias incluyen la funcionalidad de "enviar mensajes". Tal como están escritas estas historias se podrían hacer en cualquier orden por lo que estamos ante un problema puramente de solape. 
+Ambas historias incluyen la funcionalidad de "Mostrar los trabajadores de la empresa". Tal como están escritas estas historias se podrían hacer en cualquier orden por lo que estamos ante un problema puramente de solape. 
 
 Una manera sencilla de resolverlo, sería separar la funcionalidad que es común<a href="#nota6"><sup>[6]</sup></a>, quedando de la siguiente manera:
 
 > <div style="background: rgb(251,243,219);color: #434648; padding:5px">Mostrar los trabajadores de la empresa.</div> 
 
-> <div style="background: rgb(251,243,219);color: #434648; padding:5px">Enviar un mensaje a la empresa.</div>
-
 > <div style="background: rgb(251,243,219);color: #434648; padding:5px">Mostrar las ofertas laborales de la empresa.</div>
+
+> <div style="background: rgb(251,243,219);color: #434648; padding:5px">Enviar un mensaje a la empresa.</div>
 
 ##### Dependencia de Orden.
 
@@ -259,16 +259,20 @@ Nos gustaría hacer notar que en un [post anterior](https://codesai.com/posts/20
 
 <a name="nota6"></a> [6] En algunas ocasiones, al intentar solucionar una dependencia por solape aparecerá una dependencia de orden.
 
-<a name="nota7"></a> [7] Nuestra intuición de porque genera menos problema la dependencia de orden que la dependencia por solape es porque muchas veces la propia naturaleza del problema lleva implícita un orden asumido por los participantes y/u organizado por producto.
+<a name="nota7"></a> [7] Algunos motivos por los que creemos que la dependencia de orden genera menos problemas que la dependencia por solape, son:  
+
+* La propia naturaleza del problema lleva implícita un orden.
+
+* Los participantes han asumido un orden, a veces debido a que han tenido experiencias en contextos similares.
 
 Por ejemplo, las siguientes historias:
 
-> <div style="background: rgb(251,243,219);color: #434648; padding:5px">Se envía un mensaje.</div>
+> <div style="background: rgb(251,243,219);color: #434648; padding:5px">Envíar un mensaje.</div>
 
-> <div style="background: rgb(251,243,219);color: #434648; padding:5px">Se reenvía un mensaje.</div>
+> <div style="background: rgb(251,243,219);color: #434648; padding:5px">Reenvíar un mensaje.</div>
 
 
-Tienen una dependencia de orden, pero hay altas probabilidades de establecer un orden que nos llevará a trabajar de manera secuencial. Los problemas ocurren cuando las probabilidades de establecer un orden claro son bajas.
+Tienen una dependencia de orden, pero por la naturaleza del problema es altamente probable que primero hagamos "Envíar un mensaje" antes que "Reenvíar un mensaje". Los problemas ocurren cuando no es claro qué orden establecer.
 
 <a name="nota8"></a> [8] Martin Fowler habla del concepto de [Decreed Stories](https://martinfowler.com/bliki/DecreedStories.html) para aquellas historias en las que no hay conversación. En contraposición está el concepto de [Conversational Stories](https://martinfowler.com/bliki/ConversationalStories.html) en la que la conversación es el núcleo de las historias y que recoge el criterio de Negotiable de [INVEST](https://xp123.com/invest-in-good-stories-and-smart-tasks/).
 
