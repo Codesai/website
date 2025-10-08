@@ -261,9 +261,9 @@ Nos gustaría hacer notar que en un [post anterior](https://codesai.com/posts/20
 
 <a name="nota7"></a> [7] Algunos motivos por los que creemos que la dependencia de orden genera menos problemas que la dependencia por solape, son:  
 
-* La propia naturaleza del problema lleva implícita un orden.
+* Cuando la propia naturaleza del problema lleva implícita un orden.
 
-* Los participantes han asumido un orden, a veces debido a que han tenido experiencias en contextos similares.
+* Cuando los participantes han asumido un orden, a veces debido a que han tenido experiencias en contextos similares.
 
 Por ejemplo, las siguientes historias:
 
