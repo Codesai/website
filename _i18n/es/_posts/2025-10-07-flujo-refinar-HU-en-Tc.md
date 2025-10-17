@@ -180,7 +180,7 @@ Para poder estimar una historia primero tenemos que ser capaces de entenderla.
 
 **Lo verdaderamente útil de estimar una historia es identificar y examinar la incertidumbre que encierra**, no asignarle una cifra al esfuerzo (tiempo) necesario para desarrollarla.
 
-Eliminar la incertidumbre nos ayudará a desarrollar una historia de forma más fluida, y al mismo tiempo, esto hará que su estimación será más precisa.
+Reducir la incertidumbre nos ayudará a desarrollar una historia de forma más fluida, y al mismo tiempo, esto hará que su estimación será más precisa.
 
 **El origen de la incertidumbre puede venir del espacio del problema o del espacio de la solución**. Por ejemplo, la incertidumbre causada por el desconocimiento del dominio vendría del espacio del problema, mientras que la incertidumbre causada por tener poca experiencia en alguna tecnología que necesitamos usar vendría del espacio de la solución.
 
