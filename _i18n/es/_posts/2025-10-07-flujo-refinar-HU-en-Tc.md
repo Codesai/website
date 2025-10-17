@@ -32,9 +32,11 @@ En el siguiente diagrama mostramos el flujo de decisión que seguimos en T<sub>c
 
 
 <figure>
+<a href="https://github.com/Codesai/website/blob/main/assets/posts/flujo-refinar-HU-en-Tc/flow-before-develop-feature.png">
 <img src="/assets/posts/flujo-refinar-HU-en-Tc/flow-before-develop-feature.png"
 alt="Flujo de decisión para refinar historias poco antes de comenzar su desarrollo"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+</a>
 <figcaption><strong>Flujo de decisión para refinar historias poco antes de comenzar su desarrollo</strong></figcaption>
 </figure>
 
@@ -59,9 +61,11 @@ Para facilitar la evaluación de los criterios INVEST, hemos relacionado cada un
 
 
 <figure>
+<a href="https://github.com/Codesai/website/blob/main/assets/posts/flujo-refinar-HU-en-Tc/flow-before-develop-feature-refined-in-deep.png">
 <img src="/assets/posts/flujo-refinar-HU-en-Tc/flow-before-develop-feature-refined-in-deep.png"
 alt="Preguntas clave y refinamientos por criterio"
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+</a>
 <figcaption><strong>Preguntas clave y refinamientos por criterio</strong></figcaption>
 </figure>
 
