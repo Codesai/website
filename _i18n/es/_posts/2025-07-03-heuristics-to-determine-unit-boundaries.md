@@ -173,6 +173,18 @@ Finally, we see how the **adjustments** and **notifications** peer stereotypes, 
 
 In future posts, we’ll discuss other techniques for detecting peers that are based on detecting test smells, leveraging domain knowledge, or design patterns.
 
+## The TDD, test doubles and object-oriented design series.
+
+This post is part of a series about TDD, test doubles and object-oriented design:
+
+1. [The class is not the unit in the London school style of TDD](https://codesai.com/posts/2025/03/mockist-tdd-unit-not-the-class).
+
+2. ["Isolated" test means something very different to different people!](https://codesai.com/posts/2025/06/isolated-test-something-different-to-different-people).
+
+3. **Heuristics to determine unit boundaries: object peer stereotypes, detecting effects and FIRS-ness**.
+
+4. [Breaking out to improve cohesion (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion).
+
 ## Acknowledgements.
 
 I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), [Emmanuel Valverde](https://www.linkedin.com/in/emmanuel-valverde-ramos/),

@@ -108,6 +108,18 @@ We explored how the concept of **isolated** tests differs depending on the autho
 
 We think that, both Beck’s and Ottinger’s definitions of **isolated** are valuable. However, Beck’s version aligns more closely with what we mean by **isolated** in the context of identifying **awkward collaborations**. For us, Beck's definition has proven especially useful while identifying **awkward collaborations**, to avoid the **trap of considering the class as the unit**, and to **teach** how to use **test doubles** as isolation tools.
 
+## The TDD, test doubles and object-oriented design series.
+
+This post is part of a series about TDD, test doubles and object-oriented design:
+
+1. [The class is not the unit in the London school style of TDD](https://codesai.com/posts/2025/03/mockist-tdd-unit-not-the-class).
+
+2. **"Isolated" test means something very different to different people!**.
+
+3. [Heuristics to determine unit boundaries: object peer stereotypes, detecting effects and FIRS-ness](https://codesai.com/posts/2025/07/heuristics-to-determine-unit-boundaries).
+
+4. [Breaking out to improve cohesion (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion).
+
 ## Acknowledgements.
 I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), 
 [Fran Iglesias Gómez](https://www.linkedin.com/in/franiglesias/), [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) and [Antonio De La Torre](https://www.linkedin.com/in/antoniodelatorre/) 

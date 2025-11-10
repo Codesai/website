@@ -146,6 +146,18 @@ In any case, by dispeling this common misconception, we hope to facilitate bette
 
 Added another distinction between internals and peers: tests know about peers, whereas they ignore that internals exist.
 
+## The TDD, test doubles and object-oriented design series.
+
+This post is part of a series about TDD, test doubles and object-oriented design:
+
+1. **The class is not the unit in the London school style of TDD**.
+
+2. ["Isolated" test means something very different to different people!](https://codesai.com/posts/2025/06/isolated-test-something-different-to-different-people).
+
+3. [Heuristics to determine unit boundaries: object peer stereotypes, detecting effects and FIRS-ness](https://codesai.com/posts/2025/07/heuristics-to-determine-unit-boundaries).
+
+4. [Breaking out to improve cohesion (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion).
+
 ## Acknowledgements.
 
 I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/),
