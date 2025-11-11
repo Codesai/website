@@ -104,7 +104,7 @@ After a **breaking out**, only the original object is visible to the tests and t
 
 Some of those object types will remain as internals, whereas others may be “promoted” to peers. We explain the reasons that make us decide to promote an internal object to be a peer in our next post about **breaking out**.
 
-## 3. 4. What about the tests?
+## 3. 4. What about the tests? <a name="what_about_the_tests"></a>
 
 After removing the cohesion problems from the production code, **what should we do with the tests?** They are still testing the behaviours of the original object and its collaborating objects and values through the interface of the original object. This means they are unfocused and likely large.
 
