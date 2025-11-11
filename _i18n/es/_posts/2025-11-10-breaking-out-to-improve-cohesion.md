@@ -11,7 +11,7 @@ categories:
 - Test Doubles
 - Object-Oriented Design
 author: Manuel Rivero
-written_in: spanish
+written_in: english
 small_image: posts/breaking-out/small-breaking-out-1.png
 ---
 
@@ -152,7 +152,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Original tests properties.</strong></figcaption>
 </figure>
 
-In our next post we’ll use this analysis of test properties to identify the trade-offs involved in deciding whether we should refactor the tests now or later?
+In our next post we’ll use this analysis of test properties to identify the trade-offs involved in deciding whether we should refactor the tests now or later.
 
 ## 4. Conclusions.
 
