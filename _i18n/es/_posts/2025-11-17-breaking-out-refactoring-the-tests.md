@@ -40,6 +40,7 @@ At the end of the [previous post](https://codesai.com/posts/2025/11/breaking-out
 # 2. Refactoring the tests now or later?
 
 ## 2. 1. Context. 
+
 The following figure summarizes the [analysis of some test properties of the original tests we did in our previous post](http://127.0.0.1:4000/posts/2025/11/breaking-out-to-improve-cohesion#what_about_the_tests):
 
 
@@ -290,6 +291,7 @@ This post is part of a series about TDD, test doubles and object-oriented design
 I'd like to thank [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) for giving me feedback about several drafts of this post.
 
 Finally, I’d also like to thank [Ali Soheil](https://www.pexels.com/es-es/@ali-soheil-2154370577/) for the photo.
+
 ## 6. References.
 
 -  [Growing Object Oriented Software, Guided by Tests](http://www.growing-object-oriented-software.com/), [Steve Freeman](https://www.linkedin.com/in/stevefreeman) and [Nat Pryce](https://www.linkedin.com/in/natpryce/).
@@ -302,15 +304,18 @@ Finally, I’d also like to thank [Ali Soheil](https://www.pexels.com/es-es/@ali
 
 - [Mock Roles Not Object States talk](https://www.infoq.com/presentations/Mock-Objects-Nat-Pryce-Steve-Freeman/), [Steve Freeman](https://www.linkedin.com/in/stevefreeman) and [Nat Pryce](https://www.linkedin.com/in/natpryce/).
 
--  [Test Desiderata 2/12 Tests Should be Structure-Insensitive](https://www.youtube.com/watch?v=bvRRbWbQwDU), [Kent Beck](https://kentbeck.com/).
+- [Test Desiderata 2/12 Tests Should be Structure-Insensitive](https://www.youtube.com/watch?v=bvRRbWbQwDU), [Kent Beck](https://kentbeck.com/).
 
 - [Object Collaboration Stereotypes](https://web.archive.org/web/20230607222852/http://www.mockobjects.com/2006/10/different-kinds-of-collaborators.html), [Steve Freeman](https://www.linkedin.com/in/stevefreeman) and [Nat Pryce](https://www.linkedin.com/in/natpryce/).
 
-- [The class is not the unit in the London school style of TDD](https://codesai.com/posts/2025/03/mockist-tdd-unit-not-the-class), Manuel Rivero
+- [The class is not the unit in the London school style of TDD](https://codesai.com/posts/2025/03/mockist-tdd-unit-not-the-class), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
 
--  ["Isolated" test means something very different to different people!](https://codesai.com/posts/2025/06/isolated-test-something-different-to-different-people), Manuel Rivero
+-  ["Isolated" test means something very different to different people!](https://codesai.com/posts/2025/06/isolated-test-something-different-to-different-people), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
 
-- [Heuristics to determine unit boundaries: object peer stereotypes, detecting effects and FIRS-ness](https://codesai.com/posts/2025/07/heuristics-to-determine-unit-boundaries), Manuel Rivero 
+- [Heuristics to determine unit boundaries: object peer stereotypes, detecting effects and FIRS-ness](https://codesai.com/posts/2025/07/heuristics-to-determine-unit-boundaries), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/) 
+
+- [Breaking out to improve cohesion (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/)
+
 ## 7. Notes.
 
 <a name="nota1"></a> [1] An extreme case of poor structure-insensitivity happens when we fall in the dangerous **class-as-unit trap**. Never go there, it’s a scenario full of pain.
@@ -337,13 +342,13 @@ This interview [Thinking in Bets for Engineers](https://www.youtube.com/watch?v=
 
 <a name="nota5"></a> [5] We’d like to note some things about this:
 
-* In statically typed languages.
+**\- In statically typed languages**.
 
 We need to extract an interface because we have two implementations: one in the test context and another one in the production context. We shouldn’t simulate a concrete class with test doubles, even if the tool we use allows it. Simulating a concrete class leaves the relationship between the objects implicit. Read [Test Smell: Mocking concrete classes](https://web.archive.org/web/20090418014252/http://mockobjects.com/2007/04/test-smell-mocking-concrete-classes.html) for more details.
 
 The meaning of “extracting an interface” depends on whether the language has an interface construct or not: for instance, we would extract an interface in Java or C#, but extract a class whose methods are all pure virtual functions in C++ (at least in the version I used to use).
 
-* In dynamically typed languages. 
+**\- In dynamically typed languages**. 
 
 
 We don’t need to extract an interface to invert the dependency.
