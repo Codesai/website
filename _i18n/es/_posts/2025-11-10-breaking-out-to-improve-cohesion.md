@@ -114,7 +114,7 @@ Not necessarily. We should only do it if it’s worth the effort. We may decide 
 
 Before deciding, we should take a closer look at the current tests. Let’s examine any testability problems we may find in them and see how they relate to the desirable test properties Kent Beck describes in his [test desiderata](https://testdesiderata.com/). 
 
-We will specifically examine the following properties: [readability](https://www.youtube.com/watch?v=bDaFPACTjj8), [writability](https://www.youtube.com/watch?v=CAttTEUE9HM), [specificity](https://www.youtube.com/watch?v=8lTfrCtPPNE), [composability](https://www.youtube.com/watch?v=Wf3WXYaMt8E) and [structure-insensitiveness](https://www.youtube.com/watch?v=bvRRbWbQwDU)<a href="#nota13"><sup>[13]</sup></a>.
+We will specifically examine the following properties: [readability](https://www.youtube.com/watch?v=bDaFPACTjj8), [writability](https://www.youtube.com/watch?v=CAttTEUE9HM), [specificity](https://www.youtube.com/watch?v=8lTfrCtPPNE), [composability](https://www.youtube.com/watch?v=Wf3WXYaMt8E) and [structure-insensitivity](https://www.youtube.com/watch?v=bvRRbWbQwDU)<a href="#nota13"><sup>[13]</sup></a>.
 
 ### 3. 4. 1. Disadvantages.
 
@@ -140,9 +140,9 @@ If we face difficulties in composing behaviours, it means that the original test
 
 ### 3. 4. 2. One advantage.
 
-- <strong> High structure-insensitiveness</strong>.
+- <strong> High structure-insensitivity</strong>.
 
-Not all it’s bad about the original tests because not knowing anything about the internal details of the original object gives them a **high structure-insensitiveness** which is advantageous to reduce refactoring costs.
+Not all it’s bad about the original tests because not knowing anything about the internal details of the original object gives them a **high structure-insensitivity** which is advantageous to reduce refactoring costs.
 
 
 <figure>
@@ -160,7 +160,7 @@ In this post, we explained in depth the **breaking out** technique from *Growing
 
 **Breaking out** is useful to fix the cohesion problems that may arise because of **delaying design decisions until we learn more about the domain**. This approach may prove useful when facing volatile and poorly understood domains. A **breaking out** becomes the way to pay that conscious technical debt. We also described how to recognize the need to apply it, using code smells and, in more severe cases, testability problems as indicators of poor cohesion.
 
-Applying a **breaking out** splits the initial object into smaller collaborating internal objects and values. The new objects created through this refactoring are treated as *internals* rather than *peers* since they remain invisible to the tests and other system parts. After this refactoring, the original tests still have poor readability, writability, specificity, and composability. Despite these disadvantages, such tests have high structure-insensitiveness, meaning they are resilient to refactorings affecting the interfaces of the new types.
+Applying a **breaking out** splits the initial object into smaller collaborating internal objects and values. The new objects created through this refactoring are treated as *internals* rather than *peers* since they remain invisible to the tests and other system parts. After this refactoring, the original tests still have poor readability, writability, specificity, and composability. Despite these disadvantages, such tests have high structure-insensitivity, meaning they are resilient to refactorings affecting the interfaces of the new types.
 
 Our next post will focus on **when and how to refactor the original tests**. It will be through that refactoring that new *peers* may appear in our design.
 
@@ -252,7 +252,7 @@ These techniques won’t be necessary if we don’t defer the **breaking out** t
 <a name="nota12"></a> [12] We may get that splitting of responsibilities applying refactorings, such as, [Extract Class](https://refactoring.guru/extract-class), [Replace Conditional Logic With Strategy](https://www.industriallogic.com/refactoring-to-patterns/catalog/conditionalWithStrategy.html), etc.
 
 
-<a name="nota13"></a> [13] There are many other desirable test properties in Beck’s [test desiderata](https://testdesiderata.com/), but we considered that [readability](https://www.youtube.com/watch?v=bDaFPACTjj8), [writability](https://www.youtube.com/watch?v=CAttTEUE9HM), [specificity](https://www.youtube.com/watch?v=8lTfrCtPPNE), [composability](https://www.youtube.com/watch?v=Wf3WXYaMt8E) and [structure-insensitiveness](https://www.youtube.com/watch?v=bvRRbWbQwDU) were the most relevant to discuss the trade-offs involved in a **breaking out**.
+<a name="nota13"></a> [13] There are many other desirable test properties in Beck’s [test desiderata](https://testdesiderata.com/), but we considered that [readability](https://www.youtube.com/watch?v=bDaFPACTjj8), [writability](https://www.youtube.com/watch?v=CAttTEUE9HM), [specificity](https://www.youtube.com/watch?v=8lTfrCtPPNE), [composability](https://www.youtube.com/watch?v=Wf3WXYaMt8E) and [structure-insensitivity](https://www.youtube.com/watch?v=bvRRbWbQwDU) were the most relevant to discuss the trade-offs involved in a **breaking out**.
 
 <a name="nota14"></a> [14] We think that [composability](https://www.youtube.com/watch?v=Wf3WXYaMt8E) is one of the test properties that have more impact on our ability to do TDD in short feedback loops (small behaviour increments). Sometimes the only way to be able to apply behavioural composition is to introduce a separation of concerns in the production code.
 
