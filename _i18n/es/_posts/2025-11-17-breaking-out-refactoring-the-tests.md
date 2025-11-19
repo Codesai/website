@@ -25,9 +25,20 @@ We also described how to use code smells and, in more severe cases, testability 
 
 Finally, we highlighted two facts about the code after applying a **breaking out**:
 
-- The new objects created through this refactoring are treated as *internals* rather than *peers*.
+<ol>
+<li>The new objects created through this refactoring are treated as
+  <em>internals</em> rather than <em>peers</em>.</li>
 
-- The tests still have poor [readability](https://www.youtube.com/watch?v=bDaFPACTjj8), [writability](https://www.youtube.com/watch?v=CAttTEUE9HM), [specificity](https://www.youtube.com/watch?v=8lTfrCtPPNE) and [composability](https://www.youtube.com/watch?v=Wf3WXYaMt8E), but high [structure-insensitivity](https://www.youtube.com/watch?v=bvRRbWbQwDU).
+<li>The tests still have poor
+  <a href="https://www.youtube.com/watch?v=bDaFPACTjj8">readability</a>,
+  <a href="https://www.youtube.com/watch?v=CAttTEUE9HM">writability</a>,
+  <a href="https://www.youtube.com/watch?v=8lTfrCtPPNE">specificity</a>
+  and
+  <a href="https://www.youtube.com/watch?v=Wf3WXYaMt8E">composability</a>,
+  but high
+  <a href="https://www.youtube.com/watch?v=bvRRbWbQwDU">structure-insensitivity</a>.</li>
+</ol>
+
 
 At the end of the [previous post](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion), there were to open questions that we’ll try to answer in this post:
 
@@ -177,6 +188,8 @@ If we take this option, what we can do to simplify the original composite object
 
 Let’s see how doing this improves different testability problems.
 
+####  3. 2. 1. 2. Consequences.
+
 **Writability and readability problems**. 
 
 The size of the composite object’s tests is reduced, which makes them less unfocused 🚀. In a way, the pain caused by poor **writability** and **readability** is still there, but we don’t feel it so much because there are fewer test cases through the interface of the composite object.
@@ -194,9 +207,9 @@ Choosing not to promote any internal to be a peer when simplifying the composite
 Finally, we’d like to add two observations:
 
 <ol>
-<li>Choosing not to promote any internal to be a peer when simplifying the composite object’s tests does not lower any further the <strong>structure-insensitivity</strong>. The <strong>loss of structure-insensitivity</strong> was already caused by independently testing problematic internals through their interfaces.
+<li>Choosing not to promote any internal to be a peer when simplifying the composite object’s tests does not lower any further the <em>structure-insensitivity</em>. The <em>loss of structure-insensitivity</em> was already caused by independently testing problematic internals through their interfaces.
 </li>
-<li>If <strong>specificity</strong> and/or <strong>composability</strong> problems are very painful, we may be better off promoting the internals causing the pain to be peers. However, if those problems aren’t so painful and we are still worried about <strong>structure-insensitivity</strong>, not doing it might be tolerable, because, as we’ll see in the next session, promoting them introduces a little more coupling.
+<li>If <em>specificity</em> and/or <em>composability</em> problems are very painful, we may be better off promoting the internals causing the pain to be peers. However, if those problems aren’t so painful and we are still worried about <em>structure-insensitivity</em>, not doing it might be tolerable, because, as we’ll see in the next session, promoting them introduces a little more coupling.
 </li>
 </ol>
 
@@ -320,7 +333,7 @@ Finally, I’d also like to thank [Ali Soheil](https://www.pexels.com/es-es/@ali
 
 <a name="nota1"></a> [1] An extreme case of poor structure-insensitivity happens when we fall in the dangerous **class-as-unit trap**. Never go there, it’s a scenario full of pain.
 
-If you are using the London school style of TDD, or mockist TDD read [The class is not the unit in the London school style of TDD](https://codesai.com/posts/2025/03/mockist-tdd-unit-not-the-class).
+Read [The class is not the unit in the London school style of TDD](https://codesai.com/posts/2025/03/mockist-tdd-unit-not-the-class), if you are using the London school style of TDD (or mockist TDD).
 
 <a name="nota2"></a> [2] Design decisions are always a bet against the future evolution of a system.
 
@@ -330,9 +343,9 @@ So, we should assess a decision thinking if it had good odds to be successful gi
 
 You can read more about improving decision making in an uncertain world in [Anne Duke](https://en.wikipedia.org/wiki/Annie_Duke)’s wonderful [Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts](https://www.goodreads.com/book/show/35957157-thinking-in-bets) book. 
 
-This interview [Thinking in Bets for Engineers](https://www.youtube.com/watch?v=p8HAJh52DaE) is very interesting as well.
+This interview, [Thinking in Bets for Engineers](https://www.youtube.com/watch?v=p8HAJh52DaE), is very interesting as well.
 
-<a name="nota3"></a> [3]  We think that thinking about testability benefits to decide whether to independently test new types introduced through refactoring or not is useful in the context of a **breaking out**. There could be other valid reasons to write those new tests. You can read the following two posts to go deeper into this topic:
+<a name="nota3"></a> [3]  We consider that thinking about testability benefits to decide whether to independently test new types introduced through refactoring or not is useful in the context of a **breaking out**. There could be other valid reasons to write those new tests. You can read the following two posts to go deeper into this topic:
 
 - [Additional Testing After Refactoring](https://tidyfirst.substack.com/p/additional-testing-after-refactoring), Kent Beck
 - [Revise Tests While Refactoring? It Depends](https://xp123.com/revise-tests-while-refactoring-it-depends/), Bill Wake
@@ -362,7 +375,9 @@ In both cases we should work to avoid the peer’s API from leaking any implemen
 If the behaviour of the object is very simple (cyclomatic complexity = 1), we may get by with a broad integration test.
 
 <a name="nota8"></a> [8] It appears in the section [Classical and Mockist Testing](https://martinfowler.com/articles/mocksArentStubs.html#ClassicalAndMockistTesting
-) of his post [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html): “[...] always use a mock for any object with interesting behavior”.
+) of his post [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html): 
+
+> “[...] always use a mock for any object with interesting behavior”.
 
 <a name="nota9"></a> [9] We plan to treat this topic in a future post.
 
