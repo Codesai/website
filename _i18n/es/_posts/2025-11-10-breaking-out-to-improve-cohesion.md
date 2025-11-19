@@ -177,6 +177,8 @@ This post is part of a series about TDD, test doubles and object-oriented design
 
 4. **Breaking out to improve cohesion (peer detection techniques)**.
 
+5. [Refactoring the tests after a "Breaking Out" (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-refactoring-the-tests).
+
 ## Acknowledgements.
 
 I'd like to thank [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) for giving me feedback about several drafts of this post.

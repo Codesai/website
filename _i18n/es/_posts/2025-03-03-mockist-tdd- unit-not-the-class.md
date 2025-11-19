@@ -158,6 +158,8 @@ This post is part of a series about TDD, test doubles and object-oriented design
 
 4. [Breaking out to improve cohesion (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion).
 
+5. [Refactoring the tests after a "Breaking Out" (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-refactoring-the-tests).
+
 ## Acknowledgements.
 
 I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/),
@@ -187,7 +189,7 @@ Finally, I’d also like to thank [William Warby](https://www.pexels.com/es-es/@
 
 - [Injectables vs. Newables](https://qafoo.com/blog/111_injectables_newables.html), [Tobias Schlitt](https://www.linkedin.com/in/tobiasschlitt/).
 
--  [Test Desiderata 2/12 Tests Should be Structure-Insensitive](https://www.youtube.com/watch?v=bvRRbWbQwDU), [Kent Beck](https://kentbeck.com/).
+- [Test Desiderata 2/12 Tests Should be Structure-Insensitive](https://www.youtube.com/watch?v=bvRRbWbQwDU), [Kent Beck](https://kentbeck.com/).
 
 - [Object Collaboration Stereotypes](https://web.archive.org/web/20230607222852/http://www.mockobjects.com/2006/10/different-kinds-of-collaborators.html), [Steve Freeman](https://www.linkedin.com/in/stevefreeman) and [Nat Pryce](https://www.linkedin.com/in/natpryce/).
 
