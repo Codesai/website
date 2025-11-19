@@ -52,7 +52,7 @@ At the end of the [previous post](https://codesai.com/posts/2025/11/breaking-out
 
 ## 2. 1. Context. 
 
-The following figure summarizes the [analysis of some test properties of the original tests we did in our previous post](http://127.0.0.1:4000/posts/2025/11/breaking-out-to-improve-cohesion#what_about_the_tests):
+The following figure summarizes the [analysis of some test properties of the original tests we did in our previous post](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion#what_about_the_tests):
 
 
 <figure>
