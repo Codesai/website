@@ -157,6 +157,7 @@ We have shown how independently testing the new types produced by a **breaking o
 
 This trade-off is the reason why we should independently test only the “problematic” types, i.e., the ones that produce painful testability problems. This is a sensible limitation. If we tested independently any internal or value that is not problematic, we’d be trading structure-insensitivity for nothing. This mistake would create unnecessary coupling between our tests and the structure of our code, and we’d be much worse off. The only reason we test any of them independently is **to ease testability problems** that are becoming too painful<a href="#nota3"><sup>[3]</sup></a>.
 
+
 # 3. Refactoring the tests.
 
 As we said, this is done in two steps:
@@ -301,7 +302,7 @@ This post is part of a series about TDD, test doubles and object-oriented design
 
 ## 5. Acknowledgements.
 
-I'd like to thank [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) for giving me feedback about several drafts of this post.
+I'd like to thank [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) and [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/) for giving me feedback about several drafts of this post.
 
 Finally, I’d also like to thank [Ali Soheil](https://www.pexels.com/es-es/@ali-soheil-2154370577/) for the photo.
 
