@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using parallel change example: simplifying some test builders"
+title: "Parallel change example: simplifying some test builders"
 date: 2025-11-30 06:30:00.000000000 +01:00
 type: post
 published: true
