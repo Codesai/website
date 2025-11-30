@@ -302,7 +302,6 @@ This post is part of a series about TDD, test doubles and object-oriented design
 
 ## 5. Acknowledgements.
 
-I'd like to thank [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) and [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/) for giving me feedback about several drafts of this post.
 
 Finally, I’d also like to thank [Ali Soheil](https://www.pexels.com/es-es/@ali-soheil-2154370577/) for the photo.
 
