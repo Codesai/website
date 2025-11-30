@@ -141,7 +141,7 @@ If this problem starts being especially painful, we may need to start testing in
 
 **Poor composability**. 
 
-This problem may even make it impossible to defer independently testing a new type that is causing it. As we said before when talking about [behavioural composition](https://tidyfirst.substack.com/p/tdds-missing-skill-behavioural-composition), we won’t be able to test-drive complex behaviours without breaking them into smaller behaviours. In such cases, we would have no other choice but to start test-driving independently the “problematic” internal or value in order to reduce the size of the increments of behaviour we are tackling. We’ll see that this may or may not involve using test doubles.
+This problem may even make it impossible to defer independently testing a new type that is causing it. As we said before when talking about [behavioural composition](https://tidyfirst.substack.com/p/tdds-missing-skill-behavioral-composition), we won’t be able to test-drive complex behaviours without breaking them into smaller behaviours. In such cases, we would have no other choice but to start test-driving independently the “problematic” internal or value in order to reduce the size of the increments of behaviour we are tackling. We’ll see that this may or may not involve using test doubles.
 
 ### 2. 2. 4. Conclusions.
 

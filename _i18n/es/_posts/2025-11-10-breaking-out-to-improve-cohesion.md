@@ -134,7 +134,7 @@ When we compose two behaviours, and each behaviour can vary in multiple ways (e.
 
 Composability is useful for avoiding this phenomenon. By composing different dimensions of variability that result from separating concerns, we can test each dimension separately and then have only a few tests that verify their combination. This allows the number of test cases to grow additively instead of multiplicatively, while still providing confidence that the tests are sufficient.
 
-To test-drive complex behaviour, keeping a short feedback loop, we need to be able to break it into smaller increments of behaviour (different dimensions of variability). This ability is known as [behavioural composition](https://tidyfirst.substack.com/p/tdds-missing-skill-behavioural-composition). Test-driving a complex behaviour through the composite object’s interface might make it difficult to apply behavioural composition, thereby impairing our ability to apply TDD<a href="#nota14"><sup>[14]</sup></a>.
+To test-drive complex behaviour, keeping a short feedback loop, we need to be able to break it into smaller increments of behaviour (different dimensions of variability). This ability is known as [behavioural composition](https://tidyfirst.substack.com/p/tdds-missing-skill-behavioral-composition). Test-driving a complex behaviour through the composite object’s interface might make it difficult to apply behavioural composition, thereby impairing our ability to apply TDD<a href="#nota14"><sup>[14]</sup></a>.
 
 If we face difficulties in composing behaviours, it means that the original tests have **low composability**.
 
