@@ -41,7 +41,7 @@ In the context of TDD, violations of the **FIRS properties** are a key heuristic
 
 Notice that, when doing TDD, identifying **awkward collaborations** is more challenging because we must infer them from the requirements. In contrast, in legacy code, we can identify them more easily since they are visible in the code and manifest through the testability problems they cause.
 
-Identifying **awkward collaborations** is, therefore, an important skill for designing testable code. In this sense, **FIRS properties** serve as a valuable guideline for defining the boundaries of a unit, helping ensure testable code.
+Identifying **awkward collaborations** is, therefore, an important skill for designing testable code. In this sense, **FIRS properties** serve as a valuable guideline for defining the boundaries of a unit, helping us develop testable code.
 
 ## It seems "isolated test" means something very different to different people!
 
