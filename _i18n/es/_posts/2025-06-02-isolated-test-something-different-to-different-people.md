@@ -35,7 +35,7 @@ In the distinct contexts of TDD and retrofitting tests in legacy code, the same 
 
 When retrofitting tests in legacy code, violations of **FIRS properties** highlight dependencies that impede testing, referred to as **awkward collaborations**<a href="#nota3"><sup>[3]</sup></a>. These **awkward collaborations** point to the dependencies we need to break using **dependency-breaking techniques**<a href="#nota4"><sup>[4]</sup></a> to enable the introduction of unit tests. 
 
-In the case of integration tests, it is sufficient to focus on violations of the **I**solated, **R**epeatable and **S**elf-validating properties. Dependencies that violate the **R**epeatable and **S**elf-validating properties require **dependency-breaking techniques** to address them, whereas violations of the **I**solated property can often be alternatively resolved through other approaches, such as test-specific fixtures or configuration changes.
+In the case of integration tests, it is sufficient to focus on violations of the **I**solated, **R**epeatable and **S**elf-validating properties. Dependencies that violate the **R**epeatable and **S**elf-validating properties require **dependency-breaking techniques** to address them, whereas violations of the **I**solated property can often be alternatively resolved through other approaches, such as test-specific [fixtures](http://xunitpatterns.com/test%20fixture%20-%20xUnit.html) or configuration changes.
 
 In the context of TDD, violations of the **FIRS properties** are a key heuristic to identify the collaborations that we need to push outside the unit under test. These **awkward collaborations** will be simulated with test doubles in our unit tests.
 
@@ -88,7 +88,7 @@ Having said that, there is another desirable property for tests in [Test Desider
 
 > “Specific: if a test fails, the cause of the failure should be obvious.”
 
-We think that, the other aspect of **isolated** In Ottinger's definition, having a single reason to fail, corresponds to the highest possible level of specificity. It seems that what they mean by **isolated** is intertwining two of the desirable properties of tests from Beck’s [Test Desiderata](https://medium.com/@kentbeck_7670/test-desiderata-94150638a4b3): 
+We think that, the second aspect of **isolated** in Ottinger's definition, **having a single reason to fail**, corresponds to the highest possible level of Beck's specificity. It seems that what Ottinger means by **isolated** includes two of the desirable properties of tests described by Beck’s [Test Desiderata](https://medium.com/@kentbeck_7670/test-desiderata-94150638a4b3): 
 
 1. the property of returning the same results regardless of the order in which they are run (being **isolated**).
 
