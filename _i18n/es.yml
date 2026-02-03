@@ -478,7 +478,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                     <div class="subgroup"><span>7.1.</span> Dilema del código legado.</div>
                     <div class="subgroup"><span>7.2.</span> Técnicas de rotura de dependencias.</div>
                     <div class="subgroup"><span>--- 7.2.1.</span> Básicas.</div>
-                    <div class="subgroup"><span>--- 7.2.2.</span> Static y Globales.</div>
+                    <div class="subgroup"><span>--- 7.2.2.</span> Estáticos y Globales.</div>
                     <div class="subgroup"><span>--- 7.2.3.</span> Atajos.</div>                    
                     <div class="group"><span>8.</span> Caracterizando código legado.</div>
                     <div class="subgroup"><span>8.1.</span> Guiado por structural testing.</div>
