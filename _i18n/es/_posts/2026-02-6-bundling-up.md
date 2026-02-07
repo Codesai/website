@@ -51,7 +51,6 @@ In short, the **“Composite Simpler Than the Sum of Its Parts” rule of thumb 
 This rule is useful for evaluating the outcome of a refactoring that was intended to eliminate complexity by introducing a new abstraction.
 
 The **bundling up** technique can be used to detect both object and value types.
-
 ### 2. 1. Detecting value types.
 
 For value types, **bundling up** consist in detecting and eliminating existing [data clumps](https://www.informit.com/articles/article.aspx?p=2952392&seqNum=10) through refactoring<a href="#nota5"><sup>[5]</sup></a>.
@@ -64,7 +63,7 @@ Anytime we observe a cluster of related collaborator objects that work together 
 
 This composite object will hide the complexity of the cluster of related objects in an abstraction that will allow us to program at a higher level. This will not only improve cohesion, but also will reduce coupling since the consumers will only couple to the interface of the new composite object.
 
-The new abstraction will improve clarity because it delimits the scope of of the cluster of related objects more clearly, and, its having to name it will help us understand the domain better.
+The new abstraction will improve clarity because it delimits the scope of the cluster of related objects more clearly, and its having to name it will help us understand the domain better.
 
 #### 2. 2. 1. How do we apply a **bundling up**?
 
@@ -76,15 +75,12 @@ We introduce a new composite object that bundles up some object’s peers throug
 
 
 After this refactoring, the new composite object is an **internal** of the object from which it was extracted, and, as such, introducing it does not affect the tests.
-
 #### 2. 2. 2. Signals that a **bundling up** is necessary.
-
 a. Detecting code smells in production code.
 
 We may detect that the object using the cluster of related collaborating objects code suffers from the [divergent change code smell](https://www.informit.com/articles/article.aspx?p=2952392&seqNum=7) which points to a cohesion problem, the class has too many responsibilities.
 
 In chapter 20, of his [Working effectively with legacy code](https://www.oreilly.com/library/view/working-effectively-with/0131177052/) book, Michael Feather explains several heuristics to identify responsibilities in a class. Some of them might prove useful to identify clusters of fields and private methods that are being used together to fulfill a responsibility that is not the main responsibility of the class<a href="#nota7"><sup>[7]</sup></a>. If most of the fields in the cluster are peers, we have found a candidate cluster for applying a **bundling up**. Notice that those clusters might be hidden by [long methods](https://web.archive.org/web/20220516190447/https://www.informit.com/articles/article.aspx?p=102271&seqNum=3), so we may need to decompose those first.
-
 b. Detecting testability problems.
 
 These testability problems will appear in the tests of the object for which the cluster of related collaborating objects act as peers. We'll notice that the set up of the test gets too complicated, or that there are too many moving parts to get the object under test into a relevant state. The [GOOS book](linklink) authors include an example, “Bloated Constructor”**, in the chapter XX devoted to test smells that may point to design problems<a href="#nota8"><sup>[8]</sup></a>.
@@ -105,6 +101,7 @@ Then we refactored the tests, to simplify them:
 
 2. We used test doubles to simulate the behaviour of the composite in the tests of the code from which it was extracted.
 
+
 In the case of a **bundling up**, promoting the **internal** composite object to be a **peer** won't reduce the <a href="https://www.youtube.com/watch?v=bvRRbWbQwDU">structure-insensitivity</a> of the tests, as was the case for a **breaking out**. This happens because a **bundling up** reduces the overall coupling.
 
 Imagine that we have an object that has 5 peers, 3 of which form a cluster that work together to fulfill some responsibility for the object. If we **bundle up** the cluster in a new composite object and make it a peer, the object will now have 3 peers (2 original peers that were not part of the cluster + the new composite object) instead of the original 5. This means that when there are testability problems making the new composite object a peer makes sense because it increases the <a href="https://www.youtube.com/watch?v=bvRRbWbQwDU">structure-insensitivity</a> of the tests<a href="#nota9"><sup>[9]</sup></a>. 	 	 	
@@ -123,7 +120,7 @@ Some time ago, we were developing an application that processed clicks on ads in
 
 Early in the development of the application we had a design like the one shown the following diagram:
 
-Ejemplo inicial <- quizás se entienda mejor en UML??, una leyenda podría ir bien.
+
 
 <figure>
 <img src="/assets/posts/bundling-up/clickProcessor_before_before_bundling.png"
@@ -146,13 +143,13 @@ We also observed that most of the churn in `ClickProcessor` was coming from iter
 
 There were three peers that were working together to retrieve the campaign to which an ad was assigned: `CampaignsMapping`, `CampaignsRepository` and `EuroExchangeService`, so we decided to apply a **bundle up** to this cluster to shield us from the churn in the campaign retrieval logic, reduce coupling and improve the maintainability of the tests.
 
-So we extracted a new composite object, `CampaignRetriever` which packaged `CampaignsMapping`, `CampaignsRepository` and `EuroExchangeService`, and the campaign retrieval logic. 
+So we extracted a new composite object, `CampaignRetrieval` which packaged `CampaignsMapping`, `CampaignsRepository` and `EuroExchangeService`, and the campaign retrieval logic. 
 
 ### After introducing the new composite type.
 
-The new composite type, `CampaignRetriever`, was an **internal** of `ClickProcessor`. The resulting design is shown in the following diagram:
+The new composite type, `CampaignRetrieval`, was an **internal** of `ClickProcessor`. The resulting design is shown in the following diagram:
 
-Después del primer refactoring <- quizás se entienda mejor en UML??, una leyenda podría ir bien.
+
 
 <figure>
 <img src="/assets/posts/bundling-up/clickProcessor_before_bundling.png"
@@ -161,20 +158,18 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Design after introducing the new composite object.</strong></figcaption>
 </figure>
 
-
 `ClickProcessor` had 5 collaborators, of which 3 were peers, `SourcesMapGenerator`, `DomainLogger` and `ClickRecording`; and 2 were internals:
 
 * `MessageComposer` which in turn had 2 peers `Clock` and `UniqueIdGenerator`; and
 
-* `CampaignRetriever` which in turn had 3 peers also `CampaignsMapping`, `CampaignsRepository` and `EuroExchangeService`.
+* `CampaignRetrieval` which in turn had 3 peers also `CampaignsMapping`, `CampaignsRepository` and `EuroExchangeService`.
 
 This refactoring reduced the overall coupling because `ClickProcessor` went from having 7 collaborators to having 5. As we explained, the coupling reduction is equal to the number of peers bundled in the new composite object minus one, in this case, 3 – 1 = 2.
 
-Since, `CampaignRetriever` was still an internal of ClickProcessor, the tests didn't change after this refactoring.
+Since, `CampaignRetrieval` was still an internal of ClickProcessor, the tests didn't change after this refactoring.
 
-Finally, we promoted `CampaignRetriever` to be a **peer** and simplified the tests (the details of this refactoring in section <a href="#refactoring_tests"><sup>2. 2. 3. Refactoring the tests</sup></a>). The resulting design is shown in the following diagram:
+Finally, we promoted `CampaignRetrieval` to be a **peer** and simplified the tests (the details of this refactoring in section <a href="#refactoring_tests"><sup>2. 2. 3. Refactoring the tests</sup></a>). The resulting design is shown in the following diagram:
 
-Después de promover el composite a peer <- quizás se entienda mejor en UML??, una leyenda podría ir bien.
 
 <figure>
 <img src="/assets/posts/bundling-up/clickProcessor_after_bundling.png"
@@ -183,8 +178,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Design after promoting to peer the new composite object.</strong></figcaption>
 </figure>
 
-
-After this final refactoring, the `ClickProcessor` class still had 5 collaborators, but now 4 of them were peers, `SourcesMapGenerator`, `DomainLogger`, `ClickRecording` and `CampaignRetriever`; and only 1 was an internal, `MessageComposer` which in turn had 2 peers `Clock` and `UniqueIdGenerator`.
+After this final refactoring, the `ClickProcessor` class still had 5 collaborators, but now 4 of them were peers, `SourcesMapGenerator`, `DomainLogger`, `ClickRecording` and `CampaignRetrieval`; and only 1 was an internal, `MessageComposer` which in turn had 2 peers `Clock` and `UniqueIdGenerator`.
 
 The tests of `ClickProcessor` got much simpler because they were coupled to 6 peers instead of the 8 ones before the refactoring, and therefore used 6 test doubles. The reduction in coupling we observed in `ClickProcessor` in the previous step got transmitted to its tests.
 	 	 	 	
@@ -196,34 +190,50 @@ The tests of the campaign retrieval logic were also more focused and with less m
 
 Reducing the number of peers in 2 may not seem much, but shielding the tests from the churn in the campaign retrieval logic made a big difference for us.
 
-Eventually the campaign retrieval grew in complexity until it became a subsystem in its own right<a href="#nota10"><sup>[10]</sup></a>. Having applied a **bundling up** to that initial cluster of 3 objects proved to be a very successful bet.
+Eventually the logic to retrieve a campaign grew in complexity until it became a subsystem in its own right<a href="#nota10"><sup>[10]</sup></a>. Having applied a **bundling up** to that initial cluster of 3 objects proved to be a very successful bet.
 
 Besides the bet of applying a **full bundling up** eventually proved very successful, because the complexity of the campaign retrieval grew a lot. When I left the application the implementation of `CampaignRetrieval` had 5 peers and several internals, becoming a subsystem in its own right.
 
-Una especie de resumen rápido de cómo cambia el diseño de un paso a otro, Cómo lo podría representar????
 
-* Before the bundling-up process we had:
-> ClickProcessor:  1 internal (2 peers) + 6 peers.
-> ClickProcessorTest:  used 8 test doubles.
 
-* When we introduced the new composite type:
-> ClickProcessor: 1 internal (2 peers) + 1 internal (3 peers) + 3 peers.
-> ClickProcessorTest: used 8 test doubles.
 
-* After finishing the bundling-up process
-> ClickProcessor: 1 internal (with 2 peers) + 4 peers.
-> ClickProcessorTest: used 6 test doubles.
 
-Rehacer la siguiente imagen:
+<figure>
+<img src="/assets/posts/bundling-up/campaign_retrieval_subsystem.png"
+alt="CampaignRetrieval subsystem."
+style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
+<figcaption><strong>CampaignRetrieval subsystem.</strong></figcaption>
+</figure>
+
+This table summarizes the reduction in complexity on this stage of the process.
+
+| Stage                              	| ClickProcessor                                                             	| ClickProcessorTest | Complexity             	|
+|:----------------------------------------:|:--------------------------------------------------------------------------------:|:--------------------:|:----------------------------:|
+| Before bundling-up                 	| 1 internal (2 peers) + 6 peers, 8 peers in total                           	| 8 test doubles 	| Many peers, high coupling to tests |
+| After introducing composite type   	| 1 internal (2 peers) + 1 internal (3 peers) + 3 peers, 8 peers in total    	| 8 test doubles 	| Better cohesion, same coupling to tests |
+| After finishing bundling-up process	| 1 internal (with 2 peers) + 4 peers, 8 peers in total                      	| 6 test doubles 	| Same cohesion, reduced coupling to tests: improved testability |
+
+<figcaption><strong>Stages showing a reduction in complexity.</strong></figcaption>
 
 
 ## 4. Conclusions.
 
-Blablablabllablla blallvfblalla blelbel nvkjdagkljbgeñwb
+The **bundling up** technique is a refactoring that manages and reduces complexity by grouping related collaborators into a single composite object. It is an application of the **“Composite Simpler Than the Sum of Its Parts”** rule of thumb. Rather than merely aggregating objects, **bundling up**’s goal is to create a higher-level abstraction that makes the design easier to understand and use.
 
-Our next post will focus on blabla
+This technique can be applied both to value and object types. In the case of values, bundling up involves detecting and eliminating [data clumps](https://www.informit.com/articles/article.aspx?p=2952392&seqNum=10) by introducing meaningful abstractions that represent them explicitly. For objects, it consists of identifying clusters of collaborators that work together to fulfill a specific responsibility and packaging them inside a new composite object. By doing so, implicit concepts become explicit abstractions with clear boundaries and responsibilities.
+
+Applying **bundling up** brings several important design benefits. It improves [cohesion](https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html) by isolating a distinct responsibility in its own abstraction, and it reduces coupling because clients interact with a single composite object instead of multiple individual objects. It also improves clarity and understanding of the domain, since naming the new abstraction helps reveal the underlying concept it represents. At the same time, it strengthens [information hiding](https://wiki.c2.com/?InformationHiding) by shielding consumers from internal interactions and future changes within the packaged cluster of objects.
+
+In the case of object types, there are signals that indicate when **bundling up** may be necessary. In production code, code smells such as [divergent change](https://www.informit.com/articles/article.aspx?p=2952392&seqNum=7), [long methods](https://web.archive.org/web/20220516190447/https://www.informit.com/articles/article.aspx?p=102271&seqNum=3), or [large classes](https://web.archive.org/web/20220524180212/https://www.informit.com/articles/article.aspx?p=102271&seqNum=4) often point to hidden clusters of related behavior. In tests, the need for **bundling up** becomes apparent when setup logic grows complicated, when many test doubles are required, or when tests become fragile because they are tightly coupled to too many collaborators. These testability problems are strong indicators that an implicit abstraction should be made explicit.
+
+The refactoring process typically involves creating a new composite object, injecting the relevant **peers** into it, and moving the related behavior into this new abstraction. Initially, the composite can remain an **internal** of the original object, leaving existing tests unchanged. If testability problems persist, the composite can then be promoted to an explicit **peer**, which usually simplifies tests by reducing the number of awkward collaborators they must simulate. Unlike **breaking out**, **bundling up** generally increases the <a href="https://www.youtube.com/watch?v=bvRRbWbQwDU">structure-insensitivity</a> of tests because it decreases coupling.
+
+In summary, **bundling up** is an effective way to uncover meaningful abstractions, reduce complexity, and improve maintainability in both code and tests. Even small reductions in coupling can have a significant impact when they shield consumers from volatile areas of the system. As shown, in the example, over time, a well-chosen composite may naturally evolve into a subsystem of its own, confirming the value of the technique as a long-term investment to create a more sustainable design.
+
+Our next post in this series will focus on the **budding off** technique.
 	 	 	 	
 Thanks for coming to the end of this post. We hope that what we explain here will be useful to you.
+
 ## The TDD, test doubles and object-oriented design series.
 
 This post is part of a series about TDD, test doubles and object-oriented design:
@@ -244,7 +254,7 @@ This post is part of a series about TDD, test doubles and object-oriented design
 
 I'd like to thank blabla for giving me feedback about several drafts of this post.
 
-Finally, I’d also like to thank [cottonbro studio](https://www.pexels.com/es-es/@cottonbro/) for the photo.
+Finally, I’d also like to thank [Cottonbro Studio](https://www.pexels.com/es-es/@cottonbro/) for the photo.
 
 ## References.
 
