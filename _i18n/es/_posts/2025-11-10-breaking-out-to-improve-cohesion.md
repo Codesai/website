@@ -179,6 +179,8 @@ This post is part of a series about TDD, test doubles and object-oriented design
 
 5. [Refactoring the tests after a "Breaking Out" (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-refactoring-the-tests).
 
+6. [Bundling up to reduce coupling and complexity (peer detection techniques)](https://codesai.com/posts/2026/02/bundling-up).
+
 ## Acknowledgements.
 
 I'd like to thank [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) and [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/) for giving me feedback about several drafts of this post.

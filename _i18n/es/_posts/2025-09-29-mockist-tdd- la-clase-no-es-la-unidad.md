@@ -154,6 +154,21 @@ En otros casos, creemos que, lamentablemente, esta idea de que la clase es la un
 
 Esperamos, que haber desmentido esta idea errónea, pueda facilitar discusiones más racionales sobre los trade-offs del estilo mockist de TDD y también permitir que se aplique de forma más efectiva.
 
+## La serie sobre TDD, dobles de prueba y diseño orientado a objetos.
+
+1. **La clase no es la unidad en el estilo de TDD de Londres**.
+
+2. [¡"Isolated" test significa algo muy diferente para distintas personas!](https://codesai.com/posts/2026/01/isolated-test-algo-diferente-para-personas-diferentes).
+
+3. [Heuristics to determine unit boundaries: object peer stereotypes, detecting effects and FIRS-ness](https://codesai.com/posts/2025/07/heuristics-to-determine-unit-boundaries),  (aún por traducir).
+
+4. [Breaking out to improve cohesion (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion),  (aún por traducir).
+
+5. [Refactoring the tests after a "Breaking Out" (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-refactoring-the-tests),  (aún por traducir).
+
+6. [Bundling up to reduce coupling and complexity (peer detection techniques)](https://codesai.com/posts/2026/02/bundling-up),  (aún por traducir).
+
+
 ## Agradecimientos.
 
 Quisiera agradecer a [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/),

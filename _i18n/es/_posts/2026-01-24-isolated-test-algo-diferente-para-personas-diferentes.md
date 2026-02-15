@@ -122,6 +122,8 @@ Este post forma parte de una serie sobre TDD, test doubles y diseño orientado a
 
 5. [Refactoring the tests after a "Breaking Out" (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-refactoring-the-tests),  (aún por traducir).
 
+6. [Bundling up to reduce coupling and complexity (peer detection techniques)](https://codesai.com/posts/2026/02/bundling-up),  (aún por traducir).
+
 ## Agradecimientos.
 
 Me gustaría agradecer a [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/),
