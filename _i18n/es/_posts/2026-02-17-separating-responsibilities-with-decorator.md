@@ -18,7 +18,7 @@ small_image: small_decorator.jpg
 
 ## Introduction.
 
-We’d like to show an example of how composing responsibilities reduced the coupling between tests and production code, and enabled simplifications, both in tests and production code, which led to more maintainable tests.
+We’d like to show an example of how composing responsibilities reduced the coupling between tests and production code and enabled simplifications, both in tests and production code, which led to more maintainable tests.
 
 ## The original code.
 
@@ -26,7 +26,7 @@ This is the original code of the `AcmeCompanyApi` class.
 
 <script src="https://gist.github.com/trikitrok/7754271af5a71eac74d80c08c5119dfa.js"></script>
 
-`AcmeCompanyApi` had the responsibility of opening a claim in Acme insurance company. To do that it was coordinating interactions with three endpoints that were required to open a claim. `AcmeCompanyApi` was also in charge of handling all the possible exceptions that those interactions can throw.
+`AcmeCompanyApi` had the responsibility of opening a claim in Acme insurance company. To do that, it was coordinating interactions with three endpoints that were required to open a claim. `AcmeCompanyApi` was also in charge of handling all the possible exceptions that those interactions can throw.
 
 We had a broad integration test written using [Wiremock](https://wiremock.org/) for the happy path of `AcmeCompanyApi` that was [virtualizing](https://en.wikipedia.org/wiki/Service_virtualization) the three endpoints. We also had focused integration tests for each endpoint also using [Wiremock](https://wiremock.org/) to check that all possible errors were mapped to domain exceptions.
 
@@ -50,7 +50,7 @@ We traced the origin of the problem to `AcmeCompanyApi` having too many responsi
 
 We decided to separate those two responsibilities by introducing a [decorator](https://en.wikipedia.org/wiki/Decorator_pattern) of the `CompanyApi` that would be in charge of handling the errors, so that we could compose it with a new version of `AcmeCompanyApi` that would only have the responsibility of opening a claim. 
 
-We used AI-assistance to introduce this decorator, and it went quite well. We’ll explain the process in a future post. This post focuses only on how separating responsibilities reduced coupling between tests and production code, and thus, improved the tests maintainability. 
+We used AI assistance to introduce this decorator, and it went quite well. We’ll explain the process in a future post. This post focuses only on how separating responsibilities reduced coupling between tests and production code, and thus, improved the tests maintainability. 
 
 ## The code after introducing the decorator.
 
@@ -68,7 +68,7 @@ The simplified tests of the error handling logic are now only coupled to the `Co
 
 <script src="https://gist.github.com/trikitrok/69ff5e9cd657941e441160c41b4cc588.js"></script>
 
-The tests were also simplified with AI-assistance.
+The tests were also simplified with AI assistance.
 
 Since the tests were not coupled to these interfaces anymore, we **materialized**<a href="#nota1"><sup>[1]</sup></a> those three peers of `AcmeCompanyApi`. This is the resulting code of `AcmeCompanyApi` using internals instead of peers: 
 
@@ -84,7 +84,7 @@ and deleted the unused interfaces.
 
 Separating responsibilities led to both production code and tests that are easier to evolve and maintain. However, the price we pay for these benefits is the introduced indirection, which requires us to be deliberate and disciplined when composing the object graph to ensure the desired behaviour. How should we know if we composed the object graph right?  To avoid this decrease in [predictability](https://www.youtube.com/watch?v=7o5qxxx7SmI) we might need to complement the existing unit tests with one of those cumbersome broad integration tests to ensure that the composed behaviour is there.
 
-## Summary
+## Summary.
 
 In this post we have shown how a design driven by testability concerns can unintentionally increase coupling between tests and production code. The original `AcmeCompanyApi` was responsible both for coordinating multiple external endpoints and for handling and mapping all possible errors. By mixing these responsibilities, we were forced to introduce testing-only interfaces, and the resulting tests became highly sensitive to structural changes, even when behavior remained the same.
 
@@ -95,7 +95,7 @@ As a result, the tests for error handling became simpler and more robust. They h
 Both production code and tests became easier to evolve and maintain because separating responsibilities made each component’s responsibility explicit and reduced coupling between them. However, these benefits come at the price of having to pay careful attention when composing the object graph, because an incorrect composition can lead to unexpected behaviour. To preserve <a href="https://www.youtube.com/watch?v=7o5qxxx7SmI">predictability</a>, we should complement unit tests with a small number of broad integration tests that explicitly validate the composed behaviour.
 
 
-In a future post, we’ll show how AI assisted both the introduction of a decorator to separate responsibilities and the subsequent simplifications made possible by the new design.
+In a future post, we’ll show how AI helped in both the introduction of a decorator to separate responsibilities and the later simplifications made possible by the new design.
 
 ## Acknowledgements.
 
