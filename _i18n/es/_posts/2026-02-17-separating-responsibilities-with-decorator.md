@@ -31,7 +31,6 @@ This is the original code of the `AcmeCompanyApi` class.
 We had a broad integration test written using [Wiremock](https://wiremock.org/) for the happy path of `AcmeCompanyApi` that was [virtualizing](https://en.wikipedia.org/wiki/Service_virtualization) the three endpoints. We also had focused integration tests for each endpoint also using [Wiremock](https://wiremock.org/) to check that all possible errors were mapped to domain exceptions.
 
 Since test-driving the error handling in `AcmeCompanyApi` with integration tests felt too cumbersome, we decided to introduce three interfaces (`ForGettingCauses`, `ForOpeningClaim` and `AuthTokenRetriever`) to simulate problems in the interactions with the endpoints. 
-
 Notice that these interfaces were introduced only to make testing the error handling logic easier and that they had only one implementation (`AcmeCausesEndpoint`, `AcmeClaimOpeningEndpoint` and `AcmeAuthTokenRetriever`, respectively).
 
 These are the initial tests of `AcmeCompanyApi` error handling logic:
@@ -83,7 +82,7 @@ Finally, we completely removed the usage of the unnecessary interfaces from `Acm
 
 and deleted the unused interfaces.
 
-Separating responsibilities led to both production code and tests that are easier to evolve and maintain. However, the price we pay for these benefits is the introduced indirection, which requires us to be deliberate and disciplined when composing the object graph to ensure the desired behaviour.
+Separating responsibilities led to both production code and tests that are easier to evolve and maintain. However, the price we pay for these benefits is the introduced indirection, which requires us to be deliberate and disciplined when composing the object graph to ensure the desired behaviour. How should we know if we composed the object graph right?  To avoid this decrease in [predictability](https://www.youtube.com/watch?v=7o5qxxx7SmI) we might need to complement the existing unit tests with one of those cumbersome broad integration tests to ensure that the composed behaviour is there.
 
 ## Summary
 
@@ -93,7 +92,7 @@ By identifying that opening a claim and handling errors were distinct responsibi
 
 As a result, the tests for error handling became simpler and more robust. They had a much better <a href="https://www.youtube.com/watch?v=bvRRbWbQwDU">structure-insensitivity</a> because they are now coupled only to the `CompanyApi` interface, the entry point to the role of *opening a claim in a company*. This decoupling made it possible to materialize the three former peers of `AcmeCompanyApi` and remove the unnecessary interfaces altogether. At the same time, by using test doubles to simulate that the `CompanyApi` raises exceptions, we could still avoid cumbersome broad integration tests.
 
-Both production code and tests became easier to evolve and maintain as a direct consequence of this clearer separation of responsibilities and reduced coupling. However, these benefits come with the need to correctly compose the object graph to obtain the desired behaviour. When using decorators, teams need clear guidelines and shared understanding of their purpose so that the added indirection remains intentional and controlled, rather than becoming a new source of accidental complexity.
+Both production code and tests became easier to evolve and maintain because separating responsibilities made each component’s responsibility explicit and reduced coupling between them. However, these benefits come at the price of having to pay careful attention when composing the object graph, because an incorrect composition can lead to unexpected behaviour. To preserve <a href="https://www.youtube.com/watch?v=7o5qxxx7SmI">predictability</a>, we should complement unit tests with a small number of broad integration tests that explicitly validate the composed behaviour.
 
 
 In a future post, we’ll show how AI assisted both the introduction of a decorator to separate responsibilities and the subsequent simplifications made possible by the new design.
@@ -114,5 +113,5 @@ Finally, I’d also like to thank [Cottonbro Studio](https://www.pexels.com/es-e
 
 ## Notes.
 
-<a name="nota1"></a> [1] [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/) and I talked about **materialization** in the post: [Materialization: turning a false peer into an internal](https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer)
+<a name="nota1"></a> [1]  [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/) and I talked about **materialization** in the post: [Materialization: turning a false peer into an internal](https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer)
 
