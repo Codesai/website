@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Composing responsibilities to reduce coupling
-date: 2026-02-17 06:30:00.000000000 +01:00
+title: Composing responsibilities to reduce coupling and improve some test properties.
+date: 2026-02-22 06:30:00.000000000 +01:00
 type: post
 published: true
 status: publish
@@ -30,7 +30,7 @@ This is the original code of the `AcmeCompanyApi` class.
 
 We had a broad integration test written using [Wiremock](https://wiremock.org/) for the happy path of `AcmeCompanyApi` that was [virtualizing](https://en.wikipedia.org/wiki/Service_virtualization) the three endpoints. We also had focused integration tests for each endpoint also using [Wiremock](https://wiremock.org/) to check that all possible errors were mapped to domain exceptions.
 
-Since test-driving the error handling in `AcmeCompanyApi` with integration tests felt too cumbersome, we decided to introduce three interfaces (`ForGettingCauses`, `ForOpeningClaim` and `AuthTokenRetriever`) to simulate problems in the interactions with the endpoints. 
+Since test-driving the error handling in `AcmeCompanyApi` with integration tests felt too cumbersome, we decided to introduce three interfaces (`ForGettingCauses`, `ForOpeningClaim` and `AuthTokenRetriever`) to simulate problems in the interactions with the endpoints.
 Notice that these interfaces were introduced only to make testing the error handling logic easier and that they had only one implementation (`AcmeCausesEndpoint`, `AcmeClaimOpeningEndpoint` and `AcmeAuthTokenRetriever`, respectively).
 
 These are the initial tests of `AcmeCompanyApi` error handling logic:
@@ -43,14 +43,14 @@ How could we improve the <a href="https://www.youtube.com/watch?v=bvRRbWbQwDU">s
 
 ## The problem: poor separation of concerns.
 
-We traced the origin of the problem to `AcmeCompanyApi` having too many responsibilities: 
+We traced the origin of the problem to `AcmeCompanyApi` having too many responsibilities:
 
 1. Opening a claim.
 2. Handling all the possible exceptions that could be raised and mapping them to an `OpeningResult`.
 
-We decided to separate those two responsibilities by introducing a [decorator](https://en.wikipedia.org/wiki/Decorator_pattern) of the `CompanyApi` that would be in charge of handling the errors, so that we could compose it with a new version of `AcmeCompanyApi` that would only have the responsibility of opening a claim. 
+We decided to separate those two responsibilities by introducing a [decorator](https://en.wikipedia.org/wiki/Decorator_pattern) of the `CompanyApi` that would be in charge of handling the errors, so that we could compose it with a new version of `AcmeCompanyApi` that would only have the responsibility of opening a claim.
 
-We used AI assistance to introduce this decorator, and it went quite well. We’ll explain the process in a future post. This post focuses only on how separating responsibilities reduced coupling between tests and production code, and thus, improved the tests maintainability. 
+We used AI assistance to introduce this decorator, and it went quite well. We’ll explain the process in a future post. This post focuses only on how separating responsibilities reduced coupling between tests and production code, and thus, improved the tests maintainability.
 
 ## The code after introducing the decorator.
 
@@ -70,7 +70,7 @@ The simplified tests of the error handling logic are now only coupled to the `Co
 
 The tests were also simplified with AI assistance.
 
-Since the tests were not coupled to these interfaces anymore, we **materialized**<a href="#nota1"><sup>[1]</sup></a> those three peers of `AcmeCompanyApi`. This is the resulting code of `AcmeCompanyApi` using internals instead of peers: 
+Since the tests were not coupled to these interfaces anymore, we **materialized**<a href="#nota1"><sup>[1]</sup></a> those three peers of `AcmeCompanyApi`. This is the resulting code of `AcmeCompanyApi` using internals instead of peers:
 
 <script src="https://gist.github.com/trikitrok/d1a7306ac02ad664e5aa0ca08bb03bfd.js"></script>
 
@@ -92,14 +92,12 @@ By identifying that opening a claim and handling errors were distinct responsibi
 
 As a result, the tests for error handling became simpler and more robust. They had a much better <a href="https://www.youtube.com/watch?v=bvRRbWbQwDU">structure-insensitivity</a> because they are now coupled only to the `CompanyApi` interface, the entry point to the role of *opening a claim in a company*. This decoupling made it possible to materialize the three former peers of `AcmeCompanyApi` and remove the unnecessary interfaces altogether. At the same time, by using test doubles to simulate that the `CompanyApi` raises exceptions, we could still avoid cumbersome broad integration tests.
 
-Both production code and tests became easier to evolve and maintain because separating responsibilities made each component’s responsibility explicit and reduced coupling between them. However, these benefits come at the price of having to pay careful attention when composing the object graph, because an incorrect composition can lead to unexpected behaviour. To preserve <a href="https://www.youtube.com/watch?v=7o5qxxx7SmI">predictability</a>, we should complement unit tests with a small number of broad integration tests that explicitly validate the composed behaviour.
+Both production code and tests became easier to evolve and maintain because separating responsibilities made each component’s responsibility explicit and reduced coupling between them. However, these benefits come at the price of having to pay careful attention when composing the object graph, because an incorrect composition can lead to unexpected behaviour. To preserve <a href="https://www.youtube.com/watch?v=7o5qxxx7SmI">predictability</a>, we should complement unit tests with at least one integration test that explicitly validates the composed behaviour.
 
-
-In a future post, we’ll show how AI helped in both the introduction of a decorator to separate responsibilities and the later simplifications made possible by the new design.
-
+In a future post, we’ll show how AI helped in both the introduction of the decorator to separate responsibilities and the later simplifications made possible by the new design.
 ## Acknowledgements.
 
-I'd like to thank [xxx](linklink) for giving me feedback about several drafts of this post.
+I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and  [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/) for giving me feedback about several drafts of this post.
 
 Finally, I’d also like to thank [Cottonbro Studio](https://www.pexels.com/es-es/@cottonbro/) for the photo.
 
@@ -110,8 +108,6 @@ Finally, I’d also like to thank [Cottonbro Studio](https://www.pexels.com/es-e
 - [Test Desiderata](https://testdesiderata.com/), [Kent Beck](https://kentbeck.com/).
 
 - [Materialization: turning a false peer into an internal](https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/) and  [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
-
 ## Notes.
 
 <a name="nota1"></a> [1]  [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/) and I talked about **materialization** in the post: [Materialization: turning a false peer into an internal](https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer)
-
