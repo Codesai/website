@@ -137,3 +137,5 @@ Finally, I’d also like to thank [Cottonbro Studio](https://www.pexels.com/es-e
 ## Notes.
 
 <a name="nota1"></a> [1]  [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/) and I talked about **materialisation** in the post: [Materialization: turning a false peer into an internal](https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer)
+
+
