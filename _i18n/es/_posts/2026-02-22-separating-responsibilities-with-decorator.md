@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Composing responsibilities to reduce coupling and improve maintainability"
+title: "Composing responsibilities to reduce coupling and improve tests' maintainability"
 date: 2026-02-22 06:30:00.000000000 +01:00
 type: post
 published: true
