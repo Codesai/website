@@ -1,16 +1,14 @@
 ---
 layout: post
-title: "Composing responsibilities to reduce coupling and improve maintainability."
+title: "Composing responsibilities to reduce coupling and improve maintainability"
 date: 2026-02-22 06:30:00.000000000 +01:00
 type: post
 published: true
-status: publish
 categories:
 - Testing
 - TDD
 - Test Doubles
 - Object-Oriented Design
-- Design Patterns
 author: Manuel Rivero
 written_in: english
 small_image: small_decorator.jpg
