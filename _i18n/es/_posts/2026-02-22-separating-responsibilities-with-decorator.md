@@ -9,6 +9,8 @@ categories:
 - TDD
 - Test Doubles
 - Object-Oriented Design
+- Design Patterns
+- Refactoring
 author: Manuel Rivero
 written_in: english
 small_image: small_decorator.jpg
