@@ -79,6 +79,7 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.8.0)
+    webrick (1.9.2)
 
 PLATFORMS
   x86_64-linux
@@ -91,9 +92,10 @@ DEPENDENCIES
   jekyll-compress-images
   jekyll-multiple-languages-plugin
   logger
+  webrick
 
 RUBY VERSION
-   ruby 2.7.8p225
+   ruby 3.1.4p223
 
 BUNDLED WITH
    2.4.22

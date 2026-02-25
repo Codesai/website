@@ -4,6 +4,7 @@ ruby "3.1.4"
 source "https://rubygems.org"
 
 gem "base64"
+gem "webrick"
 gem "bigdecimal"
 gem "logger"
 gem "csv"

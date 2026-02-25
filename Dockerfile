@@ -1,4 +1,4 @@
-FROM ruby:2.7
+FROM ruby:3.1.4
 
 RUN apt-get update && apt-get install -y pngcrush optipng pngquant advancecomp jpegoptim jhead gifsicle nodejs npm
 
