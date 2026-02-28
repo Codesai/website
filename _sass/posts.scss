@@ -167,4 +167,64 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Container for the card */
+  .flashcard {
+    width: 100%;           /* Increased width for better readability */
+    background-color: #ffffff;  /* Clean white background */
+    padding: 40px;              /* More breathing room */
+    margin: 20px auto;
+    border: 1px solid #e0e0e0;  /* Subtle, clean border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Modern, soft shadow */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    border-radius: 8px;         /* Slightly rounded corners for a modern feel */
+  }
+
+  /* The styled <hr> */
+  .flashcard-line {
+    border: none;
+    height: 1px;                /* Thinner, more elegant line */
+    background-color: #d1d1d1;  /* Neutral gray */
+    margin: 20px 0 30px 0;
+  }
+
+  /* Headers */
+  .flashcard h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    font-weight: 700;
+  }
+
+  /* List styling */
+  .flashcard ul {
+    padding-left: 25px;
+    list-style-type: disc;
+  }
+
+  .flashcard li {
+    margin-bottom: 12px;
+  }
+
+  /* Nested list styling for clarity */
+  .flashcard ul ul {
+    margin-top: 10px;
+    list-style-type: circle;
+    padding-left: 20px;
+  }
+
+  /* Links */
+  .flashcard a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  /* Emphasized Text */
+  .flashcard strong {
+    color: #000;
+    padding: 0 2px;
+  }
 }
