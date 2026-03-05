@@ -238,7 +238,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption>Navigating AI assisted refactoring</figcaption>
 </figure>
 
-There are many other missing things that can help like, for instance, dividing the refactoring in smalle tasks to reduce risk and facilitate reviews, etc.
+There are many other missing things that can help like, for instance, dividing the transformations in small steps to reduce risk and facilitate reviews, etc.
 
 I wonder, if the old concept of [Refactoring Thumbnails](https://web.archive.org/web/20090912154715/http://www.refactoring.be/thumbnails/thumbnails.html) 
 might also help us guide AI-assisted refactorings, (I learned about [Refactoring Thumbnails](https://web.archive.org/web/20090912154715/http://www.refactoring.be/thumbnails/thumbnails.html) in the book [Refactoring in Large Software Projects](https://www.wiley.com/en-us/Refactoring+in+Large+Software+Projects%3A+Performing+Complex+Restructurings+Successfully-p-9780470858936) by [Stefan Roock](https://www.linkedin.com/in/stefanroock) and [Martin Lippert](https://github.com/martinlippert)). For instance, this is the thumbnail for [Evolving to the Proxy / Decorator Pattern](https://web.archive.org/web/20090914082645/http://www.refactoring.be/thumbnails/ec-proxy.html):
