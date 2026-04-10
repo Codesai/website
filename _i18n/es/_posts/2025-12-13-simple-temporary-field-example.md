@@ -17,7 +17,7 @@ small_image: small-hourglass.jpg
 
 # Introduction.
 
-[Temporary field](https://www.informit.com/articles/article.aspx?p=2952392&seqNum=16) is a code smell that occurs when a field is set only at certain times and is null or unused at other times, making the object harder to understand and maintain. This may indicate a deeper design issue.
+<a name="temporary_field_definition"></a> [Temporary field](https://www.informit.com/articles/article.aspx?p=2952392&seqNum=16) is a code smell that occurs when a field is set only at certain times and is null or unused at other times, making the object harder to understand and maintain. This may indicate a deeper design issue.
 
 Often the issue is a missing abstraction with a different lifecycle. Introducing a semantically meaningful class that includes the field can then clarify responsibilities and remove the code smell.
 
@@ -60,7 +60,7 @@ The refactored code implements the [Special Case pattern](https://martinfowler.c
 
 In this post, we showed a simple code example containing two cases of the temporary field code smell which were caused by a modelling problem. 
 
-We had a class, `OpeningResult` that was trying to model two concepts at the same time: success and failure in opening a claim. This flawed modelling required conditional code to select the right behaviour in the `Notify` method, and led to a case of the [null check code smell](https://codesai.com/posts/2022/11/code-smells-taxonomies-and-catalogs-english#wake_taxonomy).
+We had a class, `OpeningResult` that was trying to model two concepts at the same time: success and failure in opening a claim. This flawed modelling required conditional code to select the right behaviour in the `Notify` method, and led to a case of the [null check code smell](https://luzkan.github.io/smells/null-check).
 
 We also showed a refactored version which removed both the temporary fields and the null check code smells. We got to that version by applying twice the [Introduce Special Case](https://refactoring.com/catalog/introduceSpecialCase.html) refactoring. The final design has a clearer intent and simpler logic which makes it easier to maintain.
 
@@ -99,7 +99,7 @@ Finally, I’d also like to thank [Samer Daboul](https://www.pexels.com/es-es/@s
 <a name="nota1"></a> [1] You can find a more complex example in one of our past posts: [Using code smells to refactor to more OO code (an example with temporary field, solution sprawl and feature envy)](https://codesai.com/posts/2024/03/using-smells-to-go-oo).
 
 
-<a name="nota2"></a> [2] This method contains an example of the [null check code smell](https://codesai.com/posts/2022/11/code-smells-taxonomies-and-catalogs-english#wake_taxonomy) described by Bill Wake in [Refactoring Workbook](https://xp123.com/refactoring-workbook/).
+<a name="nota2"></a> [2] This method contains an example of the [null check code smell](https://luzkan.github.io/smells/null-check) described by Bill Wake in [Refactoring Workbook](https://xp123.com/refactoring-workbook/).
 
 <a name="nota3"></a> [3] Using an [Option type](https://en.wikipedia.org/wiki/Option_type) would also be ok only if we use it functionally, “mapping” over it. If, instead, we add some conditional code in which we ask the option type whether we faced a failure or a success, this conditional check would be an example of the [special case code smell](https://codesai.com/posts/2022/11/code-smells-taxonomies-and-catalogs-english#wake_taxonomy) described by Bill Wake in [Refactoring Workbook](https://xp123.com/refactoring-workbook/). You can read more about using option types functionally in this great post [Map, don't ask](https://talesfrom.dev/blog/map-dont-ask), or in the section *Use Optionals as Streams* of the chapter *Let your data flow* of the book [Java by Comparison](https://java.by-comparison.com/).
 
