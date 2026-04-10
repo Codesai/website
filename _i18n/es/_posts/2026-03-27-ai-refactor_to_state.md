@@ -133,7 +133,7 @@ In the prompt I forgot to add `name` as a parameter of the constructors of the s
 
 The three other gaps in the prompt were things I considered obvious. They were not a problem using the [copilot cli agent](https://github.com/features/copilot/cli) with the [Claude Sonnet 4.6](https://www.anthropic.com/claude/sonnet) model, but they may have been problematic using a different combination of agent and model<a href="#nota3"><sup>[3]</sup></a>.
 
-My learning is that some things that are obvious to me may not be so for the model, and that If I had any doubts that it can handle some expectation by default, I should at least make that expectation explicit. Additions like *classes should not have any unused fields after the transformation*<a href="#nota4"><sup>[4]</sup></a>. or *give methods the least visibility possible* may have proved useful in this case.
+My learning is that some things that are obvious to me may not be so for the model, and that If I had any doubts that it can handle some expectation by default, I should at least make that expectation explicit. Additions like "*classes should not have any unused fields after the transformation*"<a href="#nota4"><sup>[4]</sup></a>. or "*give methods the least visibility possible*" may have proved useful in this case.
 
 Finally, this is the enhanced summary created by the agent:
 
@@ -158,8 +158,8 @@ These chains of automated refactorings are detailed in the following table:
 {: .zebraTable }
 | Transition | Chain of Automated Refactorings |
 |---------------|---------------|---------------|
-! YetToStart -> OnGoing | [Extract Method](https://www.jetbrains.com/help/idea/extract-method.html) -> [Pull Up Method refactoring](https://www.jetbrains.com/help/idea/pull-members-up.html) |
-! OnGoing -> Finished | [Introduce Variable](https://www.jetbrains.com/help/idea/extract-variable.html) -> [Extract Method](https://www.jetbrains.com/help/idea/extract-method.html) -> [Pull Up Method refactoring](https://www.jetbrains.com/help/idea/pull-members-up.html) |
+| YetToStart -> OnGoing | [Extract Method](https://www.jetbrains.com/help/idea/extract-method.html) -> [Pull Up Method refactoring](https://www.jetbrains.com/help/idea/pull-members-up.html) |
+| OnGoing -> Finished | [Introduce Variable](https://www.jetbrains.com/help/idea/extract-variable.html) -> [Extract Method](https://www.jetbrains.com/help/idea/extract-method.html) -> [Pull Up Method refactoring](https://www.jetbrains.com/help/idea/pull-members-up.html) |
 
 I felt that using an agent for this refactoring would not be more efficient than using the automated refactorings in the IDE, even considering that the [Pull Up Method refactoring](https://refactoring.guru/pull-up-method) does not have a default shortcut associated with it in [IntelliJ Idea](https://www.jetbrains.com/idea/) (which is fine because we don’t use this refactoring so often). 
 
@@ -171,13 +171,13 @@ In order to test my gut feeling, I decided to do the following experiment:
 
 This is the result of the experiment:
 
-* Using automatic refactorings in [IntelliJ Idea](https://www.jetbrains.com/idea/) => 4’.
+* Using automatic refactorings in [IntelliJ Idea](https://www.jetbrains.com/idea/): 4’.
 
-* With the agent (prompt writing + agent execution) => 7’.
+* With the agent (prompt writing + agent execution): 7’.
 
 My intuition was right, it was shorter to refactor it myself using [IntelliJ Idea](https://www.jetbrains.com/idea/).
 
-If you’re curious about the prompt I wrote, here it is:
+If you’re curious about the prompt I used, here it is:
 
 > I want to make all the fields in `CourseState` private.
 > To do that first extract to method the state transition in `OnGoingCourseState`'s `end()` method to a method accepting `startTime` as a parameter and the state transition in `YetToStartCourseState`'s `start()` method,
@@ -208,7 +208,7 @@ Let’s start with the reasoning file:
 
 <script src="https://gist.github.com/trikitrok/96fe85ce5ed789c9660586bdc4c31436.js"></script>
 
-In the reasoning we see how the agent followed the process stated in the prompt. I might have made the prompt more vague and spent less time writing it, and the agent would have still been able to get the code right (I may test this in the future).
+In the reasoning, we can see that the agent followed the process outlined in the prompt. I wonder whether the agent would still be able to produce correct code if the prompt were more vague and required less effort to write (I may test this in the future).
 
 If we have a look at the alternatives the agent considered and rejected, I’m satisfied of its decisions and the reasons why it took them:
 
@@ -220,7 +220,7 @@ I think this option would have  probably been accepted if I had written a more v
 
 **Keep fields `protected final`**: the agent says that this option is “simpler but weaker encapsulation” which is true. What I like is the reason why it rejects it: because rejecting it is “in favour of the user's stated goal”. 
 
-I don’t like its reasoning because the agent chose to do what I said. I like it because, in this simple case, it’s true that there’s not a great advantage in encapsulating the fields, and I think the agent is indirectly stating that, in this case, maybe we are trading simplicity without getting enough benefits from it because the signal of the [inappropriate intimacy](https://wiki.c2.com/?InappropriateIntimacy) code smell is currently very weak.
+I don’t like its reasoning simply because the agent followed my suggestion; instead, I like it because, in this simple case, it’s true that encapsulating the fields offers little advantage. I think the agent is indirectly recognizing that we may be trading simplicity for insufficient benefits, since the signal of the [inappropriate intimacy code smell](https://wiki.c2.com/?InappropriateIntimacy) is currently very weak.
 
 Let’s see now the feedback about my prompt:
 
@@ -232,9 +232,9 @@ I don’t care about the suggestion about unused-import cleanup because that is 
 
 > “Don't ask AI to do deterministic work. Ask AI to write code that does it.”
 
-I think that, when a reliable deterministic tool already exist and is available, we are better off applying an extension of the [Offload Deterministic](https://lexler.github.io/augmented-coding-patterns/patterns/offload-deterministic/):
+I think that, when a reliable deterministic tool already exists and is available, we are better off applying an extension of the [Offload Deterministic](https://lexler.github.io/augmented-coding-patterns/patterns/offload-deterministic/) pattern:
 
-> “Don't ask AI to do deterministic work for which a deterministic tool already exists. Just use the tool if available, if not ask AI to write code that does it.”
+> “Don’t ask AI to do deterministic work for which a deterministic tool already exists. Use the tool if available; otherwise, ask AI to write code that does it.”
 
 Regarding the suggestion about naming, in this case, I was very confident that the agent would get the naming right, given the names of the constructors mentioned in the prompt and that I was stating that the methods were factories. However, in other not so clear-cut cases, I think I would follow its suggestion. In any case, renaming is often safe and easy in most IDEs.
 
@@ -263,7 +263,9 @@ Finally, I’d also like to thank [Maxwell Pels](https://www.pexels.com/es-es/@m
 
 ## References.
 
-- [Offload Deterministic](https://lexler.github.io/augmented-coding-patterns/patterns/offload-deterministic/), [Lada Kesseler](https://www.linkedin.com/in/lada-kesseler/)
+- [Offload Deterministic](https://lexler.github.io/augmented-coding-patterns/patterns/offload-deterministic/), [Lada Kesseler](https://www.linkedin.com/in/lada-kesseler/).
+
+- [My AI Adoption Journey](https://mitchellh.com/writing/my-ai-adoption-journey), [Mitchell Hashimoto](https://mitchellh.com/).
 
 - [Metadocumenting to Improve Our Interactions with Coding Agents: Capturing Reasoning, Summaries, and Prompt Feedback](https://codesai.com/posts/2026/03/metadocumenting-ai-agents-work), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
 
