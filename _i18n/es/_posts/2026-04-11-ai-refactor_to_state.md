@@ -20,8 +20,6 @@ This is a snapshot of an intermediate step of a kata we use to practise [specifi
 
 <script src="https://gist.github.com/trikitrok/e718d90eb2af18e1507e2833e1da245f.js"></script>
 
-https://gist.github.com/trikitrok/e718d90eb2af18e1507e2833e1da245f
-
 The `Course` class presents a case of the [temporary field](https://codesai.com/posts/2025/12/simple-temporary-field-example#temporary_field_definition) code smell, which occurs when a field is set only at certain times and is null or unused at other times, making the object harder to understand and maintain. This is what happens with the `startTime` field which is implicitly set to null until the `start` method gets called. As usual, the temporary field comes with a [null check code smell](https://luzkan.github.io/smells/null-check) which is avoiding a `NullPointerException` in the `computeMinutesBetween` method.
 
 As we’ve seen in previous posts<a href="#nota2"><sup>[2]</sup></a>, a temporary field may indicate a deeper design issue. In this case the `Course` class is representing three different states of a course: 
