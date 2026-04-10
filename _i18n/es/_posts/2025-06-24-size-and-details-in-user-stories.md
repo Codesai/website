@@ -196,11 +196,15 @@ Finalmente, al llegar al momento del desarrollo (T<sub>d</sub>), las historias d
 También vimos una relación importante, que detallar una historia de usuario es lo que permite reducir su tamaño, ya que el detalle aclara el alcance y esto facilita dividirla, si fuera necesario, en historias más pequeñas sin perder claridad.
 En futuros posts seguiremos profundizando en este tema dando heurísticas que pueden ayudarnos a escribir historias de usuario adecuadas para dos de los momentos importantes que hemos comentado en este post: antes de presentar la historia en una una reunión de refinamiento (T<sub>r</sub>), y justo antes de empezar a desarrollarla, (T<sub>d</sub>).
 
+## Serie Historias de Usuario.
+Este post es parte de una serie sobre Historias de usuario:
+
+1. ¿Tamaño y nivel de detalle adecuados para una historia de usuario?.
+2. [Nuestro flujo de decisión para refinar Historias de Usuario poco antes de empezar a desarrollarla](https://codesai.com/posts/2025/10/flujo-refinar-hu-en-tc).
+3. [Detallando historias de usuario para acotarlas y reducir su ambigüedad](https://codesai.com/posts/2026/03/detallando-historias).
+
 ## Agradecimientos.
 Nos gustaría darle las gracias a [Ivan Samkov](https://www.pexels.com/es-es/@ivan-samkov/) por la foto del post.
-
-
-
 
 ## Notas.
 

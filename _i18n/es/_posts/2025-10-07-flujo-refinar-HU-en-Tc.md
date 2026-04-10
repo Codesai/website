@@ -240,6 +240,15 @@ Refinar una historia puede ayudarnos a entregar su valor lo antes posible, reduc
 
 Esperamos que este flujo de decisión, o los conceptos de los que les hemos hablado en este post, les puedan resultar útiles.
 
+
+## Serie Historias de Usuario.
+Este post es parte de una serie sobre Historias de usuario:
+
+1. [¿Tamaño y nivel de detalle adecuados para una historia de usuario?](https://codesai.com/posts/2025/06/size-and-details-in-user-stories).
+2. Nuestro flujo de decisión para refinar Historias de Usuario poco antes de empezar a desarrollarla.
+3. [Detallando historias de usuario para acotarlas y reducir su ambigüedad](https://codesai.com/posts/2026/03/detallando-historias).
+
+
 ## Agradecimientos.
 
 Quisieramos agradecer a [Toño de la Torre](https://www.linkedin.com/in/antoniodelatorre/) y a
