@@ -92,6 +92,16 @@
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   }
 
+  .gist {
+    .blob-code-inner,
+    .blob-num,
+    .pl-s, .pl-k, .pl-c, .pl-e, .pl-en, .pl-v,
+    pre, code {
+      font-family: "JetBrains Mono", Menlo, Monaco, Consolas, monospace !important;
+      font-size: 14px !important;
+    }
+  }
+
   figcaption {
     font-size: 11px;
     width: 100%;
