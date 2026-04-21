@@ -9,10 +9,8 @@ categories:
 - Mutation Testing
 author: Manuel Rivero
 written_in: english
-small_image: 
+small_image: small-mutant-killer-agent.jpg
 ---
-
-
 
 ## Introduction.
 
@@ -51,7 +49,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 There were 5 surviving mutants:
 
-### M1 <a name="mutant_M1"></a>.
+### M1<a name="mutant_M1"></a>.
 
 <figure>
 <img src="/assets/posts/coding-agent-killing-mutants/mutant_1_in_initial_report.png"
@@ -60,7 +58,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Surviving mutant M1.</strong></figcaption>
 </figure>
 
-### M2 <a name="mutant_M2"></a>.
+### M2<a name="mutant_M2"></a>.
 
 <figure>
 <img src="/assets/posts/coding-agent-killing-mutants/mutant_2_in_initial_report.png"
@@ -69,7 +67,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Surviving mutant M2.</strong></figcaption>
 </figure>
 
-### M3 <a name="mutant_M3"></a>.
+### M3<a name="mutant_M3"></a>.
 
 <figure>
 <img src="/assets/posts/coding-agent-killing-mutants/mutant_3_in_initial_report.png"
@@ -79,7 +77,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 </figure>
 
 
-### M4 <a name="mutant_M4"></a>.
+### M4<a name="mutant_M4"></a>.
 
 <figure>
 <img src="/assets/posts/coding-agent-killing-mutants/mutant_4_in_initial_report.png"
@@ -88,7 +86,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Surviving mutant M4.</strong></figcaption>
 </figure>
 
-### M5 <a name="mutant_M5"></a>.
+### M5<a name="mutant_M5"></a>.
 
 <figure>
 <img src="/assets/posts/coding-agent-killing-mutants/mutant_5_in_initial_report.png"
@@ -136,7 +134,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Existing integration test case modified by the agent.</strong></figcaption>
 </figure>
 
-The new version of `'should throw an error when discount is not found'` effectively kills the surviving mutant <a href="#mutant_M2">M2</a>. However this test case is overspecified because it fixes the whole text of the exception message which makes it fragile to changes in the concrete error message. We think this may generate too much noise. Instead, we think, we should only specify the type of the exception and the discount code. At the end, we’ll show a refactored version of this test that removes this overspecification and still kills the mutant.
+The new version of `'should throw an error when discount is not found'` effectively kills the surviving mutant <a href="#mutant_M2">M2</a>. However this test case is overspecified because it fixes the whole text of the exception message which makes it fragile to changes in the concrete error message. We think this may generate too much noise. Instead we should only specify the type of the exception and the discount code. At the end, we’ll show a refactored version of this test that removes this overspecification and still kills the mutant.
 
 These are the new three integration test cases added by the agent:
 
@@ -183,6 +181,7 @@ Using test doubles of types that we don’t own is a recipe for suffering<a href
 
 We should rely on integration tests to ensure our code talks to the database correctly; that is precisely the responsibility the integration tests were already fulfilling for `MariaDBDiscountsRepository`.
 Even in those rare cases where stubbing a method like `query` might be necessary (for example, to trigger an exceptional behavior that is difficult to replicate in a real database) the agent should have at least introduced a thin wrapper around `Connection` to isolate the dependency. Instead, by using a test double for the library directly, the agent ignored a basic guideline and left us with tests that are tied to implementation details rather than outcomes.
+
 Having said this, let’s review the test cases to discuss what the intention of the agent was (which surviving mutant they were targeting) and whether they improve the test suite at all.
 
 There are six test cases:
@@ -209,14 +208,14 @@ Of the remaining three test cases, two are addressing the same surviving mutants
 
 We can delete one of them, and still no mutants survive. 
 
-So only two of the six generated unit test cases are required for killing surviving mutants:
+So only two of the six generated unit test cases were required for killing surviving mutants:
 
 * `'should throw an error with specific message when discount type is unknown'`
 * `'should handle string condition_data correctly'`
 
 Let’s examine them in more detail
 
-#### Non redundant test case `'should throw an error with specific message when discount type is unknown'`
+#### Non redundant test case: `'should throw an error with specific message when discount type is unknown'`
 
 This test case kills the surviving mutants, <a href="#mutant_M3">M3</a> and <a href="#mutant_M4">M4</a>. However, a discount type in the database can’t be unknown because of a restriction in the definition of the `discounts` table:
 
@@ -236,7 +235,7 @@ The data of a condition returned by the `query` method will always be an object.
 
 Again, the agent is using a stub to return something that can’t be in the database, in order to kill a surviving mutant. Like in the previous case, this test case is making the test suite worse (for the same reasons).
 
-#### Conclusion: the generated unit tests are useless.
+#### Conclusion: the generated unit tests were useless.
 
 We’ve seen how the only two test cases that weren’t redundant, were actually making our test suite harder to maintain (by coupling to types we don’t own) and “ossifying” unnecessary implementations.
 
@@ -277,8 +276,6 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 
 <a href="#mutant_M2">M2</a> was signalling a too lenient assertion. The test case in the original test suite was just checking the type of the exception that the repository threw, so the mutation testing tool could remove the exception message without breaking any test.
 
-The agent did a better job with these two mutants because they really were meant to be killed by improving the test suite. Although it still didn’t do it too well (overspecifying in one case and overlapping test cases in another).
-
 <figure>
 <img src="/assets/posts/coding-agent-killing-mutants/mutant_2_in_initial_report.png"
 alt="Surviving mutant M2"
@@ -286,6 +283,7 @@ style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption><strong>Surviving mutant M2.</strong></figcaption>
 </figure>
 
+The agent did a better job with these two mutants because they really were meant to be killed by improving the test suite. Although it still didn’t do it too well (overspecifying in one case and overlapping test cases in another).
 
 On the contrary, <a href="#mutant_M3">M3</a>, <a href="#mutant_M4">M4</a> and <a href="#mutant_M5">M5</a> were not signalling problems in the test suite. They are signalling code that can be removed without changing the behaviour because it’s either **superfluous** or **unreachable**.
 
@@ -360,6 +358,14 @@ The result was exactly what we expected. We reached a 100% mutation score, but t
 When we reviewed the generated tests carefully, we saw that only a small subset addressed real weaknesses in the test suite. Some surviving mutants, known as [relevant mutants](https://codesai.com/posts/2024/07/relevant-mutants), were useful signals pointing to missing boundaries or weak assertions, and improving or adding tests to kill them made sense. But other surviving mutants weren't related to test problems at all. They were symptoms of unreachable or superfluous code: cases where the implementation could be simplified without changing behavior. For those, adding tests didn’t improve confidence; it just entrenched unnecessary complexity. To fix the mess produced by the naive approach, we deleted the unit tests generated by the agent and "killed" these latter mutants by refactoring and simplifying the production code. By removing the superfluous logic, we ended up with a simpler implementation of the repository and a more maintainable test suite.
 
 The point of this exercise is to show that blindly prompting a coding agent to enhance a test suite until all mutants are killed is a mistake. It is an approach that risks wasting a lot of tokens in the process to get a less maintainable test suite. Not all mutants are worth killing with tests, and treating a mutation report as a checklist for an agent encourages overfitting and brittle design. Our experience suggests that we must remain in the loop to discern how to treat each surviving mutant; leaving that judgment entirely to a coding agent is a risky and expensive practice.
+
+## Acknowledgements.
+
+I'd like to thank [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/), and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback about several drafts of this post.
+
+
+Finally, I’d also like to thank [Pavel Danilyuk](https://www.pexels.com/@pavel-danilyuk/) for the photo.
+
 
 ## References.
 
