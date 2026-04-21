@@ -1,3 +1,19 @@
+---
+layout: post
+title: "An Expensive Errand: Chasing 100% Mutation Coverage with an Agent Can Make Your Test Suite Worse"
+date: 2026-04-10 06:30:00.000000000 +01:00
+type: post
+published: true
+categories:
+- AI
+- Mutation Testing
+author: Manuel Rivero
+written_in: english
+small_image: 
+---
+
+
+
 ## Introduction.
 
 In this post, we walk through an experiment with AI-generated code and tests in order to explore the pitfalls of blindly using mutation testing to “improve” AI-generated test suites<a href="#nota1"><sup>[1]</sup></a>.
