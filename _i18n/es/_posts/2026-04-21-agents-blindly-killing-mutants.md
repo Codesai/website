@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "An Expensive Errand: Chasing 100% Mutation Coverage with an Agent Can Make Your Test Suite Worse"
-date: 2026-04-10 06:30:00.000000000 +01:00
+date: 2026-04-21 06:30:00.000000000 +01:00
 type: post
 published: true
 categories:
