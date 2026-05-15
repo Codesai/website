@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Our minimal architecture constrainsts in an agentic world"
+title: "Our Architectural Guardrails for AI-Generated Code"
 date: 2026-04-26 06:30:00.000000000 +01:00
 type: post
 published: true
