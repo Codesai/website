@@ -7,6 +7,7 @@ published: true
 categories:
 - AI
 - Mutation Testing
+- AI Guardrails
 author: Manuel Rivero
 written_in: english
 small_image: small-mutant-killer-agent.jpg
