@@ -37,9 +37,23 @@
   }
 
   h3 {
-    font-size: pxToRem(28);
-    font-weight: 300;
-    margin: 0.5rem 0;
+    font-family: $lekton;
+    font-size: pxToRem(23);
+    font-weight: bold;
+    margin: 16px 0 12px 0;
+  }
+
+  h4 {
+    font-size: pxToRem(20);
+    font-weight: bold;
+    margin: 12px 0 8px 0;
+  }
+
+  h5 {
+    font-size: pxToRem(18);
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px 0 8px 0;
   }
 
   p {
