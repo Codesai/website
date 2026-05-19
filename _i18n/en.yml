@@ -17,7 +17,7 @@ pages:
     slogan3: Becoming a part of your team, making it grow
     about:
       title: Part of your team
-      first_paragraph: At Codesai we firmly believe that the best results are obtained by collaborating closely with the internal teams of each company. That's why we like to <strong>be a part of them, teaching them first-hand how to improve their practices and develop better code</strong>. We share their achievements, frustrations, doubts... without forgetting to create a good working environment and bring out the best in everyone.
+      first_paragraph: At Codesai we firmly believe that the best results are obtained by collaborating closely with the internal teams of each company. That's why we like to <strong>be a part of them, teaching them first-hand how to improve their processes and develop better code</strong>. We share their achievements, frustrations, doubts... without forgetting to create a good working environment and bring out the best in everyone.
       second_paragraph: We try to have very versatile profiles, which allows us to support you in multiple aspects of the development of your product. From the technical team, but side by side with the business.
     clients:
       title: Companies that have trusted us
@@ -33,7 +33,7 @@ pages:
         call_to_action: View projects
       courses:
         title: Training & Courses
-        description: We offer several courses focused on obtaining key knowledge in order to better development pace and environment.
+        description: We offer several courses focused on obtaining key knowledge in order to improve development pace and environment.
         bullet1: Eminently practical
         bullet2: Company-wide
         bullet3: DDD, TDD, Refactoring...
@@ -43,19 +43,19 @@ pages:
         title: Consulting & Support
         description: If specific help is required, we can evaluate your situation and offer possible solutions.
         bullet1: Specific consulting services
-        bullet2: We note and suggest
+        bullet2: Observing and suggesting
         bullet3: Unblocking problems
         bullet4: Preventing further problems
         call_to_action: Success stories
     tdd:
       title: Test Driven Development (TDD) training experts
-      first_paragraph: TDD is part of our daily workflow, so when we provide TDD training we do it with the conviction that this technique greatly benefits and raises the technical level of a development team. At Codesai we are proud to be a reference in both the application and training in Test Driven Development, with some of the most recognized professionals in the industry and the community in the application of this technique.
-      second_paragraph: We are aware that applying TDD effectively is very complex and that many teams throw in the towel after trying it for a while. In our experience, having a team of experienced professionals can reduce the initial difficulty curve and make a difference in helping the team to extract all the value that this technique can provide them with.
+      first_paragraph: TDD is part of our daily workflow, so when we provide TDD training we do it with the conviction that this technique greatly benefits and can raise the technical level of a development team like no other. At Codesai we are proud to be a reference in both the application and training in Test Driven Development, with some of the most recognized professionals in the industry and the community in the application of this technique.
+      second_paragraph: We are aware that applying TDD effectively is very complex and that many teams throw in the towel after trying it for a while. In our experience, having a team of experienced professionals can reduce the initial learning curve and make a difference in helping the team to extract all the value that this technique can provide them with.
       call_to_action: More Info
     team:
       title: About Us
-      alfredo: More than 20 years programming. During the last years he has led teams with Agile methods such as Extreme Programming and practices such as DDD (Domain Driven Design). Veteran and well known member of the Hispanic Java community.
-      dani: Applying Agile methodologies on a daily basis allows him to do a better job and reignite his passion for software development. Co-founder of the Software Craftsmanship community of Gran Canaria and co-organizer of Socrates Canaries 2016.
+      alfredo: More than 20 years programming. During the last years he has led teams with Agile methods such as Extreme Programming and practices such as DDD (Domain Driven Design). Veteran and well known member of the Java Hispano community.
+      dani: Applying Agile methodologies on a daily basis allows him to do a better job and rediscover his passion for software development. Co-founder of the Software Craftsmanship community of Gran Canaria and co-organizer of Socrates Canaries 2016.
       manu_tordesillas: Computer and Electronics Engineer with 6 years of experience in software development. He considers learning and continuous improvement essential to leave a positive mark on society and industry.
       fran: Cares about getting things right and continuous improvement. Advocate of Agile methods as a way to build excellent software. Although his background is technical, he is interested in other areas related to the final product (business, UX, operations, etc).
       antonio: He found organically his place in teams interested in continuous improvement and in building beautiful code. He develops mainly in Javascript and Groovy. He seeks the integration of all profiles, especially design profiles in product development.
@@ -87,7 +87,7 @@ pages:
       lifull:
         name: Lifull Connect
         about: Lifull Connect is one of the largest worldwide aggregators in the employment, automotive and fashion industries, as well as the largest in the real estate sector.
-        our_work: <p>We have been helping several Lifull Connect teams changing their work culture and improving their efficiency, both working with legacy code and on new projects, through intensive coaching, a dedicated practice program and specific trainings (TDD, code smells, refactoring, working with legacy code...).</p><p>For about three years, we have been helping several Lifull teams.</p><p>Our collaboration with Lifull Connect is proving to be a very rewarding relationship.</p>
+        our_work: <p>We have been helping several Lifull Connect teams changing their work culture and improving their efficiency, both working with legacy code and on new projects, through intensive coaching, a deliberate practice program and specific trainings (TDD, code smells, refactoring, working with legacy code...).</p><p>For about three years, we have been helping several Lifull teams.</p><p>Our collaboration with Lifull Connect is proving to be a very rewarding relationship.</p>
         stack: <p><strong>Programming Languages:</strong> PHP, Java, Kotlin, Scala, JavaScript.</p><p><strong>Libraries/Frameworks:</strong> Symfony, reffects, Play.</p><p><strong>Persistence:</strong> MySQL, Solr, S3, Spark, Redis.</p>
       buyviu:
         name: Buyviu
@@ -122,8 +122,8 @@ pages:
       mango:
         name: Mango
         about: Punto Fa, S.L., better known as Mango, is a Spanish multinational company engaged in the design, manufacture and marketing of women's, children's and men's clothing and accessories. The company, based in Barcelona, has more than 15,000 employees
-        our_work: We work with different Mango teams to perform a double task, on the one hand in the delivery of new features of the application, and on the other hand trying to help the teams with the application of best practices in which we have extensive experience such as TDD, Trunk Base Development or incremental refactoring techniques.
-        stack: <p><strong>Programming Languages:</strong> Java, Kotlin, Javascript.</p><p><strong>Libraries/Frameworks:</strong> Quarkus, Spring, React.</p><p><strong>Infraestructure:</strong> Docker, AWS, Kubernetes</p><p><strong>Persistence:</strong> Oracle, Mongo, DynamoDB</p>
+        our_work: We embedded ourselves within different Mango teams to perform a double task, on the one hand in the delivery of new features of the application, and on the other hand trying to help the teams with the application of best practices in which we have extensive experience such as TDD, Trunk Base Development or incremental refactoring techniques.
+        stack: <p><strong>Programming Languages:</strong> Java, Kotlin, Javascript.</p><p><strong>Libraries/Frameworks:</strong> Quarkus, Spring, React.</p><p><strong>Infrastructure:</strong> Docker, AWS, Kubernetes</p><p><strong>Persistence:</strong> Oracle, Mongo, DynamoDB</p>
     other_clients:
       header: "We also helped improve the code of all these companies:"
     contact:
@@ -149,7 +149,7 @@ pages:
         link: /en/trainings/changing-legacy/
       ddd:
         name: DDD driven by test
-        description: The objective of this course is explaining the different tools offered by Domain Driven Design, both from an organizational point of view using strategic patterns and ubiquitous language, as well as from an architectural point of view using tactical patterns.
+        description: The objective of this course is to explain the different tools offered by Domain Driven Design, both from an organizational point of view using strategic patterns and ubiquitous language, as well as from an architectural point of view using tactical patterns.
         link: /en/trainings/ddd
       testing:
         name: "Testing Techniques for Developers"
@@ -184,7 +184,7 @@ pages:
 
                       <div class="group"><span>2. </span>Examples selection & heuristics</div>
                       <div class="subgroup"><span>&bull;</span> Examples list</div>
-                      <div class="subgroup"><span>&bull;</span> Descomposing behaviors</div>
+                      <div class="subgroup"><span>&bull;</span> Decomposing behaviors</div>
                       <div class="subgroup"><span>&bull;</span> Partitions and redundant examples</div>
                       <div class="subgroup"><span>&bull;</span> Boundary-value analysis</div> 
                       <div class="subgroup"><span>&bull;</span> Mutation testing</div> 
@@ -231,7 +231,7 @@ pages:
              <p>Through examples and katas, we will learn about refactoring techniques and how to evolve the database. Also, we will cover some smells and tools to deal with complex environments.</p>'
       call_to_action:
         link: /en/trainings/cd-databases/#call-to-action
-        title: ¡OK! I am interested in taking the Continuous Delivery with Databases Course
+        title: OK! I am interested in taking the Continuous Delivery with Databases Course
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
@@ -275,12 +275,12 @@ pages:
     ddd:
       title: Codesai. DDD Driven by Tests
       name: Domain Driven Design Driven by Tests
-      text: '<p>The aim of this course is explaining the different tools that Domain Driven Design offers us both from an organisational point of view through the strategic patterns and the ubiquitous language as well as from an architectural perspective through the tactical patterns.</p>
+      text: '<p>The aim of this course is to explain the different tools that Domain Driven Design offers us both from an organisational point of view through the strategic patterns and the ubiquitous language and from an architectural perspective through the tactical patterns.</p>
              <p>By using tools such as Context Mapping and Event Storming, we will explain how to create a common language in the organization that helps us to build durable and maintainable software solutions.</p>
              <p>We will explain how to transfer these concepts into code and architecture through concrete examples using DDD tactical patterns such as aggregates, repositories or value objects. Also, we will cover communication mechanisms between different Bounded contexts and make an introduction to event sourcing and CQRS.</p>'
       call_to_action:
         link: /en/trainings/ddd/#call-to-action
-        title: ¡OK! I am interested in taking the DDD Driven by Tests Course
+        title: OK! I am interested in taking the DDD Driven by Tests Course
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
@@ -318,7 +318,7 @@ pages:
       text: <p>The aim of this course is for you to get the most out of JetBrains development tools, starting with IntelliJ as a learning environment. Through examples and activities, we will discover the many functionalities it offers.</p>
       call_to_action:
         link: /en/trainings/intellij-guru/#call-to-action
-        title: ¡OK! I am interested in taking the IntelliJ Guru Course
+        title: OK! I am interested in taking the IntelliJ Guru Course
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
         where: Remote
@@ -326,7 +326,7 @@ pages:
         title: Contents
         agenda: '<div class="topics">
                     <div class="group"><span>1.</span> Introduction and philosophy of automated refactoring</div>
-                    <div class="subgroup"><span>&bull;</span> Shortcuts (atajos)</div>
+                    <div class="subgroup"><span>&bull;</span> Shortcuts</div>
                     <div class="subgroup"><span>&bull;</span> Live templates</div>
                     <div class="subgroup"><span>&bull;</span> Browsing the code</div>
                     <div class="subgroup"><span>&bull;</span> Refactoring catalogue</div>
@@ -370,7 +370,7 @@ pages:
              <p>Through examples and katas, we will learn about code smells, refactoring techniques and object-oriented design principles. We will also look at the fundamental role of refactoring in software development and reflect on technical debt, refactoring workflows and the economics of refactoring.</p>'
       call_to_action:
         link: /en/trainings/refactoring/#call-to-action
-        title: ¡OK! I am interested in taking the Code Smells & Refactoring Course
+        title: OK! I am interested in taking the Code Smells & Refactoring Course
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
@@ -431,7 +431,7 @@ pages:
                  <p>The training will combine theory and discussion sessions presenting the different concepts, techniques, patterns and strategies, with practical sessions in the form of katas in which we will apply the most important techniques.</p>'
       call_to_action:
         link: /en/trainings/changing-legacy/#call-to-action
-        title: ¡OK! I am interested in taking the Changing Legacy Code Course
+        title: OK! I am interested in taking the Changing Legacy Code Course
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
@@ -674,7 +674,7 @@ pages:
              <p>Includes a series of exercises and a 4-hour practical workshop.</p>'
       call_to_action:
         link: /en/trainings/user-stories/#call-to-action
-        title: ¡OK! I am interested in taking the User Stories Course
+        title: OK! I am interested in taking the User Stories Course
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
@@ -698,8 +698,8 @@ pages:
         text: '<p>The course is designed for any team facing development in a continuously value-delivering environment.</p>
                <p>Unlike many courses on this subject, it is not only designed for product owners. The course offers value for all profiles (technical, business...), as the skills and techniques that are acquired apply to different levels.</p>'
       consulting:
-        title: Customized Support
-        text: <p>After the course you will be able to apply what you have learned in your own context by means of special sessions in which we will work with examples that you face every day (price and duration of the sessions on demand).</p>
+        title: We offer you domain-specific support
+        text: <p>After the course you will be able to apply what you have learned in your own context by means of special sessions in which we will work with examples that you face every day (price and duration of the sessions on request).</p>
       where:
         title: In-house editions for companies and open editions
         text: '<p>The course can be delivered in-house for the hiring company, or as an open edition. We try to run an open edition every quarter, but we are not always able to. It often happens that small companies send people to our open editions. If you want us to notify you of upcoming open editions, please fill out the contact form.</p>
@@ -734,9 +734,9 @@ pages:
       fifth_paragraph: See you soon!
       share_paragraph: Finally, it would help us if you shared that you subscribed to our newsletter on social media.
       share_twitter_button_text: Twitter
-      share_twitter_button_link: 'https://twitter.com/intent/tweet?text=I%27m+subscribe+to+the+%40codesaidev+newsletter%21%0A%0AYou+can+do+it+here+too+%F0%9F%91%87%0Ahttps%3A%2F%2Fcodesai.com%2Fnewsletter'
+      share_twitter_button_link: 'https://twitter.com/intent/tweet?text=I%27m+subscribed+to+the+%40codesaidev+newsletter%21%0A%0AYou+can+do+it+here+too+%F0%9F%91%87%0Ahttps%3A%2F%2Fcodesai.com%2Fnewsletter'
       share_linkedin_button_text: LinkedIn
-      share_linkedin_button_link: 'https://www.linkedin.com/feed/?shareActive&mini=true&text=I%27m+subscribe+to+the+%40codesaidev+newsletter%21%0A%0AYou+can+do+it+here+too+%F0%9F%91%87%0Ahttps%3A%2F%2Fcodesai.com%2Fnewsletter'
+      share_linkedin_button_link: 'https://www.linkedin.com/feed/?shareActive&mini=true&text=I%27m+subscribed+to+the+%40codesaidev+newsletter%21%0A%0AYou+can+do+it+here+too+%F0%9F%91%87%0Ahttps%3A%2F%2Fcodesai.com%2Fnewsletter'
   legal_advertisement:
     name: Codesai. Legal Notice
     title: '<h1>LEGAL NOTICE</h1>'
