@@ -690,7 +690,7 @@ pages:
                         <div class="group"><span>4. </span> Quality attributes</div>
                         <div class="subgroup"><span>&bull;</span> Definition and impact</div>
                         <div class="subgroup"><span>&bull;</span> Quality attribute heuristics</div>
-                        <div class="group"><span>5. </span> Workshop (4 hours)</div>
+                        <div class="group"><span>5. </span> User Stories Workshop (4 hours)</div>
                     </div>'
       who:
         title: Who is it intended for?
@@ -700,8 +700,8 @@ pages:
         title: Customized Support
         text: <p>After the course you will be able to apply what you have learned in your own context by means of special sessions in which we will work with examples that you face every day (price and duration of the sessions on demand).</p>
       where:
-        title: In-house
-        text: '<p>The course will be held in-house (closed for the hiring company).</p>
+        title: In-house editions for companies and open editions
+        text: '<p>The course can be delivered in-house for the hiring company, or as an open edition. We try to run an open edition every quarter, but we are not always able to. It often happens that small companies send people to our open editions. If you want us to notify you of upcoming open editions, please fill out the contact form.</p>
                <p class="unicode">Please note that in-house courses take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
   publications:
     title: Codesai. Blog
