@@ -141,7 +141,7 @@ pages:
         link: /en/trainings/tdd
       code_smells_refactoring:
         name: Code smells & Refactoring
-        description: The objective of this course is to introduce students to the concept of code smells and start developing their ability to recognize them. We will also practice some techniques to incrementally improve already existing code designs in a safe manner.
+        description: The goal of this course is to learn about code smells, refactoring techniques and object-oriented design principles. We will learn to recognise different code smells and systematic refactoring techniques to improve the design of existing code in a safe and incremental way.
         link: /en/trainings/refactoring
       changing_legacy:
         name: Changing Legacy Code

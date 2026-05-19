@@ -141,7 +141,7 @@ pages:
         link: /curso-de-tdd/
       code_smells_refactoring:
         name: Code smells & Refactoring
-        description: El objetivo de este curso aprender sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Aprenderemos a reconocer los diferentes code smells y técnicas de refactoring para mejorar el diseño de código ya existente de forma segura e incremental.
+        description: El objetivo de este curso es aprender sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Aprenderemos a reconocer los diferentes code smells y técnicas de refactoring sistemáticas para mejorar el diseño de código ya existente de forma segura e incremental.
         link: /cursos/refactoring/
       changing_legacy:
         name: Cambiando Legacy
