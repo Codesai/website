@@ -43,6 +43,21 @@ header {
         color: $blueish-green;
       }
     }
+
+    a.lang-switcher {
+      margin-left: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 3px;
+
+      span {
+        padding: 0.2rem 0.45rem;
+        letter-spacing: 0.1rem;
+      }
+
+      &:hover {
+        border-color: $blueish-green;
+      }
+    }
   }
 
   .mobile-menu-icon {
@@ -146,6 +161,22 @@ header {
 
     &:hover {
       color: $blueish-green;
+    }
+  }
+
+  a.lang-switcher {
+    align-self: flex-end;
+    margin: 0.25rem 1.5rem 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+
+    span {
+      padding: 0.15rem 0.45rem;
+      letter-spacing: 0.1rem;
+    }
+
+    &:hover {
+      border-color: $blueish-green;
     }
   }
 }
