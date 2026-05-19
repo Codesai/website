@@ -269,7 +269,7 @@ Finally, I’d also like to thank [Maxwell Pels](https://www.pexels.com/es-es/@m
 
 ## Notes.
 
-<a name="nota1"></a> [1] This code is a snapshot of an intermediate step of the [Course Duration kata](https://github.com/Codesai/testing-training-java/tree/main/course-duration) which is part of our training in testing techniques for developers. You can find the contents of the Spanish version in [Técnicas de Testing para desarrolladores](https://codesai.com/cursos/testing-techniques/).
+<a name="nota1"></a> [1] This code is a snapshot of an intermediate step of the [Course Duration kata](https://github.com/Codesai/testing-training-java/tree/main/course-duration) which is part of our training in testing techniques for developers. You can find the contents of the Spanish version in [Técnicas de Testing para desarrolladores](https://codesai.com/en/trainings/testing-techniques/).
 
 <a name="nota2"></a> [2] The posts we refer to are:
 
@@ -296,4 +296,3 @@ In a future experiment, we plan to try the improved version of the prompt with  
 <a name="nota4"></a> [4] As we mentioned in the previous note, [Junie](https://www.jetbrains.com/junie/) using [Gemini 3 Flash](https://deepmind.google/models/gemini/flash/) generated exactly this problem.
 
 <a name="nota5"></a> [5] At least in Java and C#, though not always in dynamic languages.
-

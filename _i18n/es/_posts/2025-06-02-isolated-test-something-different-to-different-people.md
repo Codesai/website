@@ -169,7 +169,7 @@ Finally, I’d also like to thank [imgflip](https://imgflip.com/) for their [Inc
 <a name="nota1"></a> [1] See also [Jay Bazuzi](https://jay.bazuzi.com/)’s post ["pure unit test" vs. 
 "FIRSTness"](https://jbazuzicode.blogspot.com/2016/07/pure-unit-test-vs-firstness.html) to learn more about categorizing tests according to their **FIRSness** (removing the **T**) which can be useful when working with legacy code, or when testing after.
 
-<a name="nota2"></a> [2] We delve into this topic in depth in our [TDD training](https://codesai.com/curso-de-tdd/) and our [Changing Legacy Code training](https://codesai.com/cursos/changing-legacy/).
+<a name="nota2"></a> [2] We delve into this topic in depth in our [TDD training](https://codesai.com/en/trainings/tdd) and our [Changing Legacy Code training](https://codesai.com/en/trainings/changing-legacy/).
 
 <a name="nota3"></a> [3] See [Fowler](https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer))’s article [Mocks Aren't Stubs](https://martinfowler.com/articles/mocksArentStubs.html) to see where the term **awkward collaboration** comes from.
 
@@ -192,4 +192,3 @@ Finally, it explains the **value of writing tests first** and criticize writing 
 We talked about this frequent misunderstanding in our post [The class is not the unit in the London school style of TDD](https://codesai.com/posts/2025/03/mockist-tdd-unit-not-the-class).
 
 <a name="nota7"></a> [7] We may write about this in a future post.
-

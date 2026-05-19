@@ -200,5 +200,4 @@ Finally, I’d also like to thank [cottonbro studio](https://www.pexels.com/@cot
 
 <a name="nota2"></a> [2] Read Nat Pryce’s short post about composing test data builders: [Tricks with Test Data Builders: Combining Builders](http://www.natpryce.com/articles/000726.html).
 
-<a name="nota3"></a> [3] Our training [Code Smells & Refactoring](https://codesai.com/cursos/refactoring/) makes a special emphasis on teaching and practising the [parallel change](https://martinfowler.com/bliki/ParallelChange.html) technique so teams can refactor safely and incrementally without breaking their codebase.
-
+<a name="nota3"></a> [3] Our training [Code Smells & Refactoring](https://codesai.com/en/trainings/refactoring/) makes a special emphasis on teaching and practising the [parallel change](https://martinfowler.com/bliki/ParallelChange.html) technique so teams can refactor safely and incrementally without breaking their codebase.
