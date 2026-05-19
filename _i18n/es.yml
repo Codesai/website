@@ -275,7 +275,7 @@ pages:
         text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
                <p class="unicode">Ten en cuenta que los cursos cerrados para empresa se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
     ddd:
-      title: Codesai. Curso DDD Driven by test
+      title: Codesai. DDD Driven by Tests
       name: Domain Driven Design Driven by Tests
       text: '<p>El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.</p>
              <p>Explicaremos cómo a través de herramientas como Context Mapping y Event Storming podemos crear un lenguaje común en la organización que nos ayude construir soluciones software durables y mantenibles.</p>

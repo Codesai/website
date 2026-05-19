@@ -311,7 +311,7 @@ pages:
         text: <p>The course addresses some advanced concepts about software architecture. In order to make the most of it, we recommend that participants have some knowledge of object-orientation and at least basic experience writing automated tests.</p>
       where:
         title: In-house and open dates
-        text: <p>The course can be done in-house for a development team or a specific company that wants to contract it. We will also run open dates, if you wish to consult the calendar of upcoming open courses or contact us for an in-house course you can do so through the form at the bottom of this page.</p>
+        text: <p>The course can be done in-house for a company that contracts it, or as an open edition. We try to run an open edition every quarter, but we don't always manage to. It often happens that small companies send people to our open courses. If you would like us to notify you about upcoming open editions, please fill out the contact form.</p>
     intellij:
       title: Codesai. IntelliJ Guru
       name: IntelliJ Guru
