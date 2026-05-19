@@ -33,7 +33,7 @@ pages:
         call_to_action: Ver proyectos
       courses:
         title: Formación y cursos
-        description: Ofertamos varios cursos en los que obtener conocimientos clave para adquirir un mejor ritmo y entorno de desarrollo.
+        description: Ofrecemos varios cursos en los que obtener conocimientos clave para adquirir un mejor ritmo y entorno de desarrollo.
         bullet1: Eminentemente prácticos
         bullet2: Transversales a tu negocio
         bullet3: DDD, TDD, Refactoring...
@@ -55,7 +55,7 @@ pages:
     team:
       title: Quiénes somos
       alfredo: Más de 20 años programando. Durante los últimos años ha liderado equipos con métodos ágiles como Extreme Programming y prácticas como DDD (Domain Driven Design). Miembro veterano y conocido de la comunidad Java Hispano.
-      dani: Aplicar las metodologías agiles en el día a día le permiten realizar un mejor trabajo y redescubrir su pasión por el desarrollo de software. Cofundador de la comunidad Software Craftsmanship de Gran Canaria y coorganizador de Socrates Canaries 2016.
+      dani: Aplicar las metodologías ágiles en el día a día le permiten realizar un mejor trabajo y redescubrir su pasión por el desarrollo de software. Cofundador de la comunidad Software Craftsmanship de Gran Canaria y coorganizador de Socrates Canaries 2016.
       manu_tordesillas: Ingeniero en Informática y Electrónica con 6 años de experiencia en el desarrollo de Software. Considera esenciales el aprendizaje y la mejora continua para conseguir dejar una marca positiva en la sociedad y la industria.
       fran: Se preocupa por hacer las cosas bien y mejorar continuamente. Defensor de los métodos ágiles por ser una manera de construir software excelente. Aunque su trayectoria es técnica, le interesan otras áreas del producto final (negocio, UX, operaciones, etc).
       antonio: Encontró su sitio natural en equipos interesados en la mejora continua, y en hacer un código bonito. Desarrolla sobre todo en Javascript y Groovy. Busca la integración de todos los perfiles, especialmente los de diseño en el desarrollo del producto.
@@ -87,12 +87,12 @@ pages:
       lifull:
         name: Lifull Connect
         about: Lifull Connect es uno de los mayores agregadores a nivel mundial en los sectores de empleo, coches y moda, y el mayor en el sector inmobiliario.
-        our_work: <p>Estamos ayudando a varios equipos de Lifull Connect a cambiar su cultura y mejorar su eficiencia, tanto trabajando con código legado como en proyectos nuevos,mediante un acompañamiento intensivo, un programa de práctica deliberada y formaciones específicas (TDD, code smells, refactoring, trabajo con código legado, ...).</p><p>Llevamos alrededor de 3 años en la colaboración Lifull</p><p>Nuestra relación con Lifull Connect está siendo una simbiosis muy enriquecedora.</p>
+        our_work: <p>Estamos ayudando a varios equipos de Lifull Connect a cambiar su cultura y mejorar su eficiencia, tanto trabajando con código legado como en proyectos nuevos,mediante un acompañamiento intensivo, un programa de práctica deliberada y formaciones específicas (TDD, code smells, refactoring, trabajo con código legado, ...).</p><p>Llevamos alrededor de 3 años colaborando con Lifull Connect</p><p>Nuestra relación con Lifull Connect está siendo una simbiosis muy enriquecedora.</p>
         stack: <p><strong>Lenguajes de programación:</strong> PHP, Java, Kotlin, Scala, JavaScript.</p><p><strong>Librerías/frameworks:</strong> Symfony, reffects, Play.</p><p><strong>Persistencia:</strong> MySQL, Solr, S3, Spark, Redis.</p>
       buyviu:
         name: Buyviu
         about: Buyviu es un marketplace que publica productos de diferentes redes de afiliación y redirige tráfico a sus afiliados a cambio de comisiones por las ventas de productos. Actualmente se encuentra en cuatro países con más de 3 millones de productos en cada país y la plataforma se encuentra preparada para su expansión a nuevos países. El valor añadido de BuyViu es la capacidad de generar automáticamente vídeos de presentación para productos con sus marcas y categorías, lo que mejora la capacidad de captación de tráfico frente a otros marketplaces existentes.
-        our_work: 3 miembros de Codesai se unieron a este proyecto para asumir tareas propias del CTO, como seleccionar las tecnologías y arquitecturas adecuadas, incorporar nuevo talento y gestionar la comuniación entre el departamento técnico y los stakeholders. Gracias al trabajo diario con el equipo propio de la empresa (una de nuestras bases) conseguimos crear una cultura de trabajo que fomentara prácticas como el pair programming, TDD o integración contínua que produjo una mejora de los resultados obtenidos.
+        our_work: 3 miembros de Codesai se unieron a este proyecto para asumir tareas propias del CTO, como seleccionar las tecnologías y arquitecturas adecuadas, incorporar nuevo talento y gestionar la comunicación entre el departamento técnico y los stakeholders. Gracias al trabajo diario con el equipo propio de la empresa (una de nuestras bases) conseguimos crear una cultura de trabajo que fomentara prácticas como el pair programming, TDD o integración continua que produjo una mejora de los resultados obtenidos.
         stack: <p><strong>Lenguajes de programación:</strong> Python, Javascript, Kotlin.</p><p><strong>Librerías/frameworks:</strong> Django, Flask, Nodejs, React, Spring Boot.</p><p><strong>Persistencia:</strong> PostgreSQL (Amazon RDS), Elasticsearch (Amazon ES), S3, Redis.</p><p><strong>Orquestación de servicios:</strong> Docker, ECS, Cloudformation, Ansible.</p><p><strong>Monitorización de servicios:</strong> Prometheus, Kibana, Grafana, CloudWatch.</p>
       green_power:
         name: Green Power Monitor
@@ -105,9 +105,9 @@ pages:
         our_work: Dos de nuestros profesionales, especializados en backend y frontend, estuvieron integrados en un equipo de 14 personas a tiempo completo usando Scrum para mejorar el sistema de gestión de ambulancias de la empresa. Nuestro conocimiento tecnológico, así como la experiencia en el desarrollo de productos con metodologías y prácticas de XP, formaron parte de las buenas prácticas técnicas requeridas. Eso, junto con la buena alineación dentro del equipo, permitió alcanzar las altas exigencias de calidad que precisaba el proyecto.
         stack: <p>ClojureScript, Om, re-om C#</p>
       domingo_alonso:
-        name: Domingo Alongo Group
+        name: Domingo Alonso Group
         about: Su filial, Aplicaciones Informáticas Domingo Alonso (AIDA), es la encargada del desarrollo y mantenimiento de software para gestionar la importación, reparación y venta de vehículos. El programa se utiliza a nivel internacional tanto por las empresas del grupo como por otras del sector de la automoción.
-        our_work: Nuestro mayor reto fue ayudar a AIDA a cambiar su cultura. Durante más de dos años estuvimos acompañando a su equipo, consiguiendo una mejora tanto en sus procesos (adoptando metodologías ágiles) como en el análisis de producto. Nuestra labor de mentorización se extendió también a la interiorización de prácticas técnicas de XP como TDD, pair programing, integración/deploy continuo o refactoring, y en principios de diseño orientado a objetos como DDD o arquitectura hexagonal, a la vez que generábamos nuevas funcionalidades. Toda esta transformación ágil acabó produciendo resultados tan positivos como el crecimiento profesional de los miembros de su departamento y, lo que es más importante, la generación de una cultura de mejora contínua.
+        our_work: Nuestro mayor reto fue ayudar a AIDA a cambiar su cultura. Durante más de dos años estuvimos acompañando a su equipo, consiguiendo una mejora tanto en sus procesos (adoptando metodologías ágiles) como en el análisis de producto. Nuestra labor de mentorización se extendió también a la interiorización de prácticas técnicas de XP como TDD, pair programming, integración/deploy continuo o refactoring, y en principios de diseño orientado a objetos como DDD o arquitectura hexagonal, a la vez que generábamos nuevas funcionalidades. Toda esta transformación ágil acabó produciendo resultados tan positivos como el crecimiento profesional de los miembros de su departamento y, lo que es más importante, la generación de una cultura de mejora continua.
         stack: <p>.Net, C#, ECMAScript 6, SQL Server, PowerShell, RabbitMQ, SignalR, WPF, Knockout</p>
       mutua_tinerfena:
         name: Mutua Tinerfeña
@@ -122,7 +122,7 @@ pages:
       mango:
         name: Mango
         about: Punto Fa, S.L., más conocida como Mango, es una empresa multinacional española dedicada al diseño, la fabricación y la comercialización de prendas de vestir y complementos para mujer, niño y hombre. La firma, nacida en Barcelona, cuenta con más de 15 000 empleados.
-        our_work: Nos Integramos dentro de distintos equipos de Mango para realizar una doble tarea, por un lado en el delivery de nuevas funcionalidades de la aplicación, y por otro lado tratando de ayudar a los equipos con la aplicación de buenas prácticas en las que contamos con amplia experiencia como TDD, Trunk Base Development o técnicas de refactoring incremental.
+        our_work: Nos integramos dentro de distintos equipos de Mango para realizar una doble tarea, por un lado en el delivery de nuevas funcionalidades de la aplicación, y por otro lado tratando de ayudar a los equipos con la aplicación de buenas prácticas en las que contamos con amplia experiencia como TDD, Trunk Base Development o técnicas de refactoring incremental.
         stack: <p><strong>Lenguajes de programación:</strong> Java, Kotlin, Javascript.</p><p><strong>Librerias/Frameworks:</strong> Quarkus, Spring, React.</p><p><strong>Infraestructura:</strong> Docker, AWS, Kubernetes</p><p><strong>Persistencia:</strong> Oracle, Mongo, DynamoDB</p>
     other_clients:
       header: "Hemos ayudado también a mejorar el código de todas estas empresas:"
@@ -137,7 +137,7 @@ pages:
     courses:
       tdd:
         name: Test Driven Development (TDD)
-        description: La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayora del tiempo bajo supervisión y guía del experto.
+        description: La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayoría del tiempo bajo supervisión y guía del experto.
         link: /curso-de-tdd/
       code_smells_refactoring:
         name: Code smells & Refactoring
@@ -230,7 +230,7 @@ pages:
       text: '<p>El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.</p>
              <p>A través de ejemplos y katas, aprenderemos sobre técnicas de refactoring y sobre cómo evolucionar la base de datos. Asimismo, veremos algunos smells y herramientas para enfrentarnos a entornos complicados.</p>'
       call_to_action:
-        title: ¡OK! Me interesa realizar el curso de Continuos Delivery con bases de datos
+        title: ¡OK! Me interesa realizar el curso de Continuous Delivery con bases de datos
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
         link: /cursos/cd-databases/#call-to-action
@@ -278,7 +278,7 @@ pages:
       title: Codesai. DDD Driven by Tests
       name: Domain Driven Design Driven by Tests
       text: '<p>El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.</p>
-             <p>Explicaremos cómo a través de herramientas como Context Mapping y Event Storming podemos crear un lenguaje común en la organización que nos ayude construir soluciones software durables y mantenibles.</p>
+             <p>Explicaremos cómo a través de herramientas como Context Mapping y Event Storming podemos crear un lenguaje común en la organización que nos ayude a construir soluciones software durables y mantenibles.</p>
              <p>Explicaremos cómo trasladar estos conceptos al código y la arquitectura a través de ejemplos concretos haciendo uso de los patrones tácticos de DDD como agregados, repositorios o value objects. Veremos también mecanismos de comunicación entre diferentes Bounded contexts y realizaremos una introducción a event sourcing y CQRS.</p>'
       call_to_action:
         title: ¡OK! Me interesa realizar el curso DDD driven by test
@@ -292,7 +292,7 @@ pages:
           agenda: '<div class="topics">
                     <div class="group"><span>1.</span> Introducción a DDD</div>
                     <div class="group"><span>2. </span>Event storming</div>
-                    <div class="subgroup">Explicaremos la dinamica y realizaremos un ejercicio practico</div>
+                    <div class="subgroup">Explicaremos la dinámica y realizaremos un ejercicio práctico</div>
                     <div class="group"><span>3.</span> Patrones tácticos</div>
                     <div class="subgroup">Partiendo del Event Storming anterior explicaremos cómo trasladar estos conceptos al código mediante una sesión de live coding y un ejercicio propuesto
                  </div>'
@@ -306,11 +306,11 @@ pages:
                  </div>'
       tools:
         title: Tecnología y material necesario
-        text: '<p>El código y los ejemplos del curso están realizados en java. Se podrían adaptar estos ejemplos y ejercicios a cualquier otro lenguaje orientado a objetos si fuera necesario.</p>
+        text: '<p>El código y los ejemplos del curso están realizados en Java. Se podrían adaptar estos ejemplos y ejercicios a cualquier otro lenguaje orientado a objetos si fuera necesario.</p>
                <p>El curso se impartirá online, por tanto será necesario que todos los asistentes dispongan de una conexión lo suficientemente buena para mantener videoconferencias de manera fluida. Si el curso se realiza con el material en java será necesario contar con un JDK 11 o superior y algún entorno de desarrollo, nosotros nos sentimos más cómodos con IntelliJ pero todos los ejemplos están construidos de forma que se puedan desarrollar en cualquier IDE.</p>'
       who:
         title: ¿Para quién está pensado?
-        text: <p>El curso aborda algunos conceptos avanzados de arquitectura software, para un buen aprovechamiento del mismo recomendamos que los asistentes tengan conocimientos de orientación a objetos y al menos experiencia básico escribiendo pruebas automáticas.</p>
+        text: <p>El curso aborda algunos conceptos avanzados de arquitectura software, para un buen aprovechamiento del mismo recomendamos que los asistentes tengan conocimientos de orientación a objetos y al menos experiencia básica escribiendo pruebas automáticas.</p>
       where:
         title: Ediciones cerradas para empresas y ediciones en abierto
         text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>'
@@ -370,7 +370,7 @@ pages:
       name: Code smells & Refactoring
       text: '<p>El objetivo de este curso es aprender sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Aprenderemos a reconocer los diferentes code smells y técnicas de refactoring para mejorar el diseño de código ya existente de forma segura e incremental.</p>
              <p>A través de ejemplos y katas, aprenderemos sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Asimismo, veremos el papel fundamental del refactoring en el
-desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferente ciclos de refactoring y su economía (cómo hacerlo de manera responsable).</p>'
+desarrollo de software, y reflexionaremos sobre la deuda técnica, los diferentes ciclos de refactoring y su economía (cómo hacerlo de manera responsable).</p>'
       call_to_action:
         title: ¡OK! Me interesa realizar el curso de Code smells & Refactoring
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
@@ -451,7 +451,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                     <div class="subgroup"><span>2.4.</span> Análisis de valores de frontera.</div>
                     <div class="subgroup"><span>2.5.</span> Escribiendo ejemplos como casos de tests.</div>
                     <div class="group"><span>3.</span> Structural testing.</div>
-                    <div class="subgroup"><span>3.1.</span> Definición y rol en codigo nuevo y código legado.</div>
+                    <div class="subgroup"><span>3.1.</span> Definición y rol en código nuevo y código legado.</div>
                     <div class="subgroup"><span>3.2.</span> Herramientas de cobertura: ¿cómo usarlas?</div>
                     <div class="subgroup"><span>3.3.</span> Criterios de cobertura.</div>
                     <div class="subgroup"><span>3.4.</span> Más allá de la cobertura: fronteras y bucles.</div>
@@ -519,7 +519,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
     changing_legacy:
       title: Codesai. Curso de Cambiando Legacy
       name: Cambiando Legacy
-      text: '<p>En este curso aprenderemos como cambiar y mejorar código legacy de una manera segura y efectiva.</p>
+      text: '<p>En este curso aprenderemos cómo cambiar y mejorar código legacy de una manera segura y efectiva.</p>
              <p>Aprenderemos diferentes técnicas para introducir tests en código legacy, y cómo mejorar su diseño de forma gradual y sostenible.</p>
              <p>El curso combinará sesiones de teoría y discusiones en las que se presentarán los diferentes conceptos, técnicas, patrones y estrategias,
 con sesiones prácticas en forma de kata en las que aplicaremos las técnicas más importantes.</p>'
@@ -544,7 +544,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                     <div class="subgroup"><span>--- 2.1.2.</span> Costes: principal, interés recurrente e interés acumulado.</div>
                     <div class="subgroup"><span>--- 2.1.3.</span> Línea de vida de la deuda técnica.</div>
                     <div class="subgroup"><span>2.2.</span> Priorización.</div>
-                    <div class="subgroup"><span>--- 2.2.1.</span> Inspección contínua.</div>    
+                    <div class="subgroup"><span>--- 2.2.1.</span> Inspección continua.</div>    
                     <div class="subgroup"><span>--- 2.2.2.</span> Contingencia de la deuda técnica.</div>
                     <div class="subgroup"><span>--- 2.2.3.</span> Análisis de comportamiento de código.</div>    
                     <div class="subgroup"><span>--- 2.2.4.</span> Análisis de Hotspots.</div>
@@ -651,7 +651,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                     
                    <div class="group"><span>17.</span> Técnicas de refactoring para costuras basadas en herencia.</div>
                    <div class="subgroup"><span>17.1.</span> Mover costura basada en herencia a delegado.</div>
-                   <div class="subgroup"><span>17.2.</span> Introducir inyección de depedencias.</div>
+                   <div class="subgroup"><span>17.2.</span> Introducir inyección de dependencias.</div>
                   
                    <div class="group"><span>18.</span> Cierre del curso: cartas de navegación.</div>
                    <div class="subgroup"><span>18.1.</span> Visión de conjunto: temas explorados y por explorar.</div>
@@ -704,7 +704,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
                <p>A diferencia de muchos cursos de esta temática, no está pensando únicamente para product owners. El curso ofrece valor para todos los perfiles (técnicos, negocio...), ya que las habilidades y técnicas que se adquieren aplican a varios niveles</p>'
       consulting:
         title: Te ayudamos en tu dominio
-        text: <p>Despues de hacer el curso podrás aplicar a tu propio contexto lo que has aprendido mediante sesiones especiales en las que trabajaremos con ejemplos a los que te enfrentas a diario (precio y duración de las sesiones a consultar).</p>
+        text: <p>Después de hacer el curso podrás aplicar a tu propio contexto lo que has aprendido mediante sesiones especiales en las que trabajaremos con ejemplos a los que te enfrentas a diario (precio y duración de las sesiones a consultar).</p>
       where:
         title: Ediciones cerradas para empresas y ediciones en abierto
         text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
@@ -725,8 +725,8 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       first_paragraph: En Codesai nos gusta compartir lo que hacemos e intentamos crear contenido de calidad que, creemos, no se encuentra en muchos sitios.
       second_paragraph: Los algoritmos de las redes sociales son algo caprichosos y no siempre conseguimos llegar a las personas que quieren estar informadas sobre lo que hacemos. Si quieres estar enterado, suscríbete a nuestra newsletter.
     call_to_action:
-      title: Rellena el formulario para suscribirte!
-      description: Indica tu nombre, email y haz click en el boton para suscribirte. En breve llegará a tu bandeja de entrada una confirmación. Si tienes algún problema, no dudes en escribirnos a contact@codesai.com.
+      title: ¡Rellena el formulario para suscribirte!
+      description: Indica tu nombre, email y haz click en el botón para suscribirte. En breve llegará a tu bandeja de entrada una confirmación. Si tienes algún problema, no dudes en escribirnos a contact@codesai.com.
       submit: Suscribirme
   newsletter_subscription_confirmation:
     title: Confirmación a la newsletter de Codesai
@@ -737,7 +737,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       third_paragraph: 'Si quieres contratar nuestros servicios, escríbenos directamente a <a href="mailto:contact@codesai.com">contact@codesai.com</a>.'
       fourth_paragraph: 'Si te interesa mejorar tus habilidades, puedes echarle un vistazo a nuestros <a href="/cursos">cursos</a>.'
       fifth_paragraph: ¡Nos vemos pronto!
-      share_paragraph: Por último, nos ayudaria si compartes que te has suscrito a nuestra newsletter en las redes sociales.
+      share_paragraph: Por último, nos ayudaría si compartes que te has suscrito a nuestra newsletter en las redes sociales.
       share_twitter_button_text: Twitter
       share_twitter_button_link: 'https://twitter.com/intent/tweet?text=%C2%A1Estoy+suscrito+a+la+newsletter+de+%40codesaidev%21%0A%0AT%C3%BA+tambi%C3%A9n+puedes+aqu%C3%AD+%F0%9F%91%87%0Ahttps%3A%2F%2Fcodesai.com%2Fnewsletter'
       share_linkedin_button_text: LinkedIn
@@ -746,7 +746,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
   legal_advertisement:
     name: Codesai. Aviso Legal
     title: '<h1>Aviso legal</h1>'
-    text: '<p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSICE), el propietario de la web , le informa de lo siguiente:</p>
+    text: '<p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSICE), el propietario de la web, le informa de lo siguiente:</p>
           <ul>
             <li>Denominación social: CODESAI DEV S.COOP</li>
             <li>NIF: F74446410</li>
@@ -805,7 +805,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
               redes sociales.
           </li>
           <li>Cookies de personalización: Permiten al usuario acceder al servicio con algunas características de carácter
-              general predefinidas en función de una serie de criterios en el terminal del usuario como por ejemplo serian
+              general predefinidas en función de una serie de criterios en el terminal del usuario como por ejemplo serían
               el idioma, el tipo de navegador a través del cual accede al servicio, la configuración regional desde donde
               accede al servicio, etc.
           </li>
@@ -856,12 +856,12 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       <ul>_ga
         <li>Duración: 2 años</li>
         <li>Descripción: Sirve para distinguir a los usuarios. Generada por Google Analytics. Google almacena la
-            informacion recogida por las cookies en servidores ubicados en Estados Unidos, cumpliendo con la
+            información recogida por las cookies en servidores ubicados en Estados Unidos, cumpliendo con la
             legislación Europea en cuanto a protección de datos personales y se compromete a no compartirla con
             terceros, excepto cuando la ley le obligue a ello o sea necesario para el funcionamiento del
-            sistema. Google no asocia su direccion IP con ninguna otra informacion que tenga. Si desea obtener
-            mas informacion acerca de las cookies usadas por Google Analytics, por favor acceda a esta
-            direccion:
+            sistema. Google no asocia su dirección IP con ninguna otra información que tenga. Si desea obtener
+            más información acerca de las cookies usadas por Google Analytics, por favor acceda a esta
+            dirección:
             https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw=1
         </li>
         <li>Tipo: Tercero</li>
@@ -871,12 +871,12 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       <ul>_gat
           <li>Duración: 1 minuto</li>
           <li>Descripción: Utilizada para mostrar nuestra publicidad en otras páginas de la red de Google.
-              Generada por Google Analytics. Google almacena la informacion recogida por las cookies en servidores
+              Generada por Google Analytics. Google almacena la información recogida por las cookies en servidores
               ubicados en Estados Unidos, cumpliendo con la legislación Europea en cuanto a protección de datos
               personales y se compromete a no compartirla con terceros, excepto cuando la ley le obligue a ello o
-              sea necesario para el funcionamiento del sistema. Google no asocia su direccion IP con ninguna otra
-              informacion que tenga. Si desea obtener mas informacion acerca de las cookies usadas por Google
-              Analytics, por favor acceda a esta direccion:
+              sea necesario para el funcionamiento del sistema. Google no asocia su dirección IP con ninguna otra
+              información que tenga. Si desea obtener más información acerca de las cookies usadas por Google
+              Analytics, por favor acceda a esta dirección:
               https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw=1
           </li>
           <li>Tipo: Tercero</li>
@@ -885,12 +885,12 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       <br>
       <ul>_gid
           <li>Duración: 24 horas</li>
-          <li>Descripción: Generada por Google Analytics. Google almacena la informacion recogida por las cookies
+          <li>Descripción: Generada por Google Analytics. Google almacena la información recogida por las cookies
               en servidores ubicados en Estados Unidos, cumpliendo con la legislación Europea en cuanto a
               protección de datos personales y se compromete a no compartirla con terceros, excepto cuando la ley
-              le obligue a ello o sea necesario para el funcionamiento del sistema. Google no asocia su direccion
-              IP con ninguna otra informacion que tenga. Si desea obtener mas informacion acerca de las cookies
-              usadas por Google Analytics, por favor acceda a esta direccion:
+              le obligue a ello o sea necesario para el funcionamiento del sistema. Google no asocia su dirección
+              IP con ninguna otra información que tenga. Si desea obtener más información acerca de las cookies
+              usadas por Google Analytics, por favor acceda a esta dirección:
               https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es&amp;csw
           </li>
           <li>Tipo: Tercero</li>
@@ -923,7 +923,7 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
   <p>CODESAI DEV S.COOP adopta las medidas necesarias para garantizar la seguridad, integridad y confidencialidad de los datos conforme 
   a lo dispuesto en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, 
   relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la 
-  libre circulación de los mismos, y derogando la antigua LOPD, la nueva Ley Orgánica 3/2018, de 5 diciembre, de Protección de Datos y 
+  libre circulación de los mismos, y derogando la antigua LOPD, la nueva Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos y 
   Garantía de los Derechos Digitales (LOPDGDD).</p>
 
   <p>El usuario podrá en cualquier momento ejercitar los derechos de acceso, oposición, rectificación, cancelación, limitación y portabilidad 
