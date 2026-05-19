@@ -133,7 +133,7 @@ pages:
   training:
     title: Codesai. Training
     header: Teaching you how to develop better code
-    text: <p>All our courses take place <strong>in-house</strong> (although we also offer some open dates). This kind of training will help correct mistakes and fully optimize the learning process in a way which is not possible through books or videos. Moreover, you will be able to apply it safely in your daily life. Ask us about upcoming calls.</p><p><strong>In addition, we offer a 50% discount for underrepresented groups in technology.</strong></p>
+    text: <p>All our courses take place <strong>in-house</strong> (although we also offer some open dates). This kind of training will help correct mistakes and fully optimize the learning process in a way which is not possible through books or videos. Moreover, you will be able to apply it safely in your daily life. Ask us about upcoming calls.</p><p><strong>In open editions, we also offer a 50% discount for underrepresented groups in technology.</strong></p>
     courses:
       tdd:
         name: Test Driven Development (TDD)
@@ -208,20 +208,20 @@ pages:
       </div>'
       languages:
         title: Languages
-        text:  At the moment the examples and katas are ready for Java, JavaScript, C#, TypeScript and PHP, but if you wish to use another language please let us know.
+        text: <p>The examples and katas are in Java, JavaScript, C#, TypeScript and PHP, but if you need another language please contact us.</p>
       requirements:
         title: Requirements
-        text: 'We will send you an email telling you everything you need to install before the course.'
+        text: '<p>We will send you an email telling you everything you need to install before the course.</p>'
       target:
         title: Who is it intended for?
         text: '<p>This is a course for people who already know how to code. Mostly programmers but also testers who want to learn more about code quality and automatic testing can benefit from it. All you need is to bring an open mind and a desire to learn. If you have never tried TDD before, you might be surprised.</p>'
       where:
         title: In-house and open dates
-        text: '<p>The course can be conducted in-house (closed to the company that contracts it) or openly. We try to offer one open edition every term. It is common for small companies to send people to our open courses. If you would like to be notified of upcoming open dates, please fill out the form.</p>
+        text: '<p>The course can be conducted in-house (closed to the company that contracts it) or openly. We try to offer one open edition every term. It is common for small companies to send people to our open courses. If you would like to be notified of upcoming open dates, please write to us at contact@codesai.com or fill out the contact form.</p>
                <p class="unicode">Please note that in-house courses are held once the client hires us. We will need to know the date one month in advance in order to be able to schedule them.</p>'
       call_to_action:
         link: /en/trainings/tdd#call-to-action
-        title: ¡OK! I am interested in taking the Test Driven Development (TDD) Course
+        title: OK! I am interested in taking the Test Driven Development (TDD) Course
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
     cd-databases:
