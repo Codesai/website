@@ -421,9 +421,9 @@ pages:
     changing_legacy:
       title: Codesai. Changing Legacy Code
       name: Changing Legacy Code
-      text: '<p>In this training we’ll learn how to evolve and improve legacy code in a safe and effective way.</p>
-                 <p>We’ll learn how to break dependencies in order to test legacy code, and how to gradually and sustainably improve its design.</p>
-                 <p>The training will be comprised of a combination of theory sessions that present different techniques and strategies, and exercises to apply them.</p>'
+      text: '<p>In this training we will learn how to change and improve legacy code in a safe and effective way.</p>
+                 <p>We will learn different techniques to introduce tests in legacy code, and how to gradually and sustainably improve its design.</p>
+                 <p>The training will combine theory and discussion sessions presenting the different concepts, techniques, patterns and strategies, with practical sessions in the form of katas in which we will apply the most important techniques.</p>'
       call_to_action:
         link: /en/trainings/changing-legacy/#call-to-action
         title: ¡OK! I am interested in taking the Changing Legacy Code Course
@@ -432,41 +432,135 @@ pages:
       content:
         title: Contents
         agenda: '<div class="topics">
-                        <div class="group"><span>1.</span> Legacy Code.</div>
-                        <div class="subgroup"><span>1.1.</span> Problems and challenges.</div>
-                        <div class="subgroup"><span>1.2.</span> Economic implications.</div>
-                        <div class="group"><span>2.</span> Evolving legacy code: techniques.</div>
-                        <div class="subgroup"><span>2.1.</span> Cover & Modify.</div>
-                        <div class="subgroup"><span>2.2.</span> Dependency-breaking techniques.</div>
-                        <div class="subgroup"><span>2.3.</span> Characterization tests.</div>
-                        <div class="subgroup"><span>--- 2.3.1.</span> Chracterizing legacy code.</div>
-                        <div class="subgroup"><span>--- 2.3.2.</span> Applying structural Testing.</div>
-                        <div class="subgroup"><span>--- 2.3.3.</span> Applying mutation Testing.</div>
-                        <div class="subgroup"><span>--- 2.3.4.</span> Coverage criteria (optional).</div>
-                        <div class="subgroup"><span>2.4.</span> Other ways of characterizing legacy code.</div>
-                        <div class="subgroup"><span>--- 2.4.1.</span> Golden Master + Sampling.</div>
-                        <div class="subgroup"><span>--- 2.4.2.</span> Approval Testing.</div>
-                        <div class="subgroup"><span>2.5.</span> Making changes.</div>
-                        <div class="subgroup"><span>--- 2.5.1.</span> TDD & planned refactorings.</div>
-                        <div class="subgroup"><span>--- 2.5.2.</span> Splinter Pattern & other especial refactoring techniques.</div>
-                        <div class="subgroup"><span>--- 2.5.3.</span> From inheritance-based seams to dependency injection (optional).</div>
-                        <div class="subgroup"><span>2.6.</span> Finding testing points and identifying changing points.</div>
-                        <div class="subgroup"><span>2.7.</span> Shortcuts: sprouting & wrapping.</div>
-                        <div class="subgroup"><span>2.8.</span> Incremental rewrites.</div>
-                        <div class="subgroup"><span>--- 2.8.1.</span> ¿Why incrementale rewrites?.</div>
-                        <div class="subgroup"><span>--- 2.8.2.</span> Branch By Abstraction.</div>
-                        <div class="subgroup"><span>--- 2.8.3.</span> Strangler Fig Application.</div>
-                        <div class="subgroup"><span>--- 2.8.4.</span> Testing in production with experiments (optional).</div>
-                        <div class="group"><span>3.</span> Evolving legacy: strategies</div>
-                        <div class="subgroup"><span>3.1.</span> Technical Debt, economic implications and management.</div>
-                        <div class="subgroup"><span>3.2.</span> Prioritizing and triaging technical debt.</div>
-                        <div class="subgroup"><span>--- 3.2.1.</span> Hotspots analysis.</div>
-                        <div class="subgroup"><span>--- 3.2.2.</span> Product Hurricane Maps.</div>
-                        <div class="subgroup"><span>3.3.</span> Some strategic patterns (optional).</div>
-                    </div>'
+                    <div class="group"><span>1.</span> What is legacy code?</div>
+                    <div class="subgroup"><span>1.1.</span> Definitions.</div>
+                    <div class="subgroup"><span>1.2.</span> Value in legacy code.</div>
+                    <div class="subgroup"><span>1.3.</span> Legacy code as a business problem.</div>
+                    <div class="subgroup"><span>1.4.</span> The human cost of legacy code.</div>
+                    <div class="subgroup"><span>1.5.</span> Legacy code can be beneficial for our career.</div>
+                    
+                    <div class="group"><span>2.</span> Technical debt prioritization.</div>
+                    <div class="subgroup"><span>2.1.</span> Technical debt.</div>
+                    <div class="subgroup"><span>--- 2.1.1.</span> Original metaphor, inclusive definition and classifications.</div>
+                    <div class="subgroup"><span>--- 2.1.2.</span> Costs: principal, recurring interest and accrued interest.</div>
+                    <div class="subgroup"><span>--- 2.1.3.</span> Technical debt lifeline.</div>
+                    <div class="subgroup"><span>2.2.</span> Prioritization.</div>
+                    <div class="subgroup"><span>--- 2.2.1.</span> Continuous inspection.</div>
+                    <div class="subgroup"><span>--- 2.2.2.</span> Technical debt contingency.</div>
+                    <div class="subgroup"><span>--- 2.2.3.</span> Code behavioral analysis.</div>
+                    <div class="subgroup"><span>--- 2.2.4.</span> Hotspots analysis.</div>
+                    <div class="subgroup"><span>--- 2.2.5.</span> Product Hurricane Maps.</div>
+                    <div class="subgroup"><span>--- 2.2.6.</span> Change Coupling and implicit dependencies analysis.</div>
+                    <div class="subgroup"><span>--- 2.2.7.</span> Sum of Coupling (SoC) analysis.</div>
+                    <div class="subgroup"><span>--- 2.2.8.</span> Combining analyses: Hotspots, Change Coupling and SoC.</div>
+                    
+                    <div class="group"><span>3.</span> Evolving legacy code: techniques.</div>
+                    <div class="subgroup"><span>3.1.</span> Value in legacy code: behaviour.</div>
+                    <div class="subgroup"><span>3.2.</span> Types of changes.</div>
+                    <div class="subgroup"><span>3.3.</span> Protecting behaviour.</div>
+                    <div class="subgroup"><span>3.4.</span> Cover & Modify.</div>
+                    <div class="subgroup"><span>3.5.</span> Testability problems <=> Poor design.</div>
+                    
+                    <div class="group"><span>4.</span> Introducing tests in untestable code.</div>
+                    <div class="subgroup"><span>4.1.</span> Problematic dependencies.</div>
+                    <div class="subgroup"><span>4.2.</span> Dependency-breaking techniques.</div>
+                    <div class="subgroup"><span>--- 4.2.1.</span> Reasons.</div>
+                    <div class="subgroup"><span>--- 4.2.2.</span> Seam model.</div>
+                    <div class="subgroup"><span>--- 4.2.3.</span> Object seams.</div>
+                    <div class="subgroup"><span>--- 4.2.4.</span> Basic techniques.</div>
+                    <div class="subgroup"><span>--- 4.2.5.</span> Techniques for static dependencies and Singletons.</div>
+                    <div class="subgroup"><span>--- 4.2.6.</span> Shortcuts.</div>
+                    
+                    <div class="group"><span>5.</span> Testing strategies in legacy code.</div>
+                    <div class="subgroup"><span>5.1.</span> Types of tests.</div>
+                    <div class="subgroup"><span>5.2.</span> Advantages and disadvantages of each type of test.</div>
+                    <div class="subgroup"><span>5.3.</span> Test distribution: goals, trade-offs and alternatives.</div>
+                    <div class="subgroup"><span>5.4.</span> Testing pyramid in legacy code?</div>
+                    <div class="subgroup"><span>5.5.</span> Proposed strategy.</div>
+                    
+                    <div class="group"><span>6.</span> Characterization tests.</div>
+                    <div class="subgroup"><span>6.1.</span> Characterizing legacy code.</div>
+                    <div class="subgroup"><span>6.2.</span> Structural Testing.</div>
+                    <div class="subgroup"><span>--- 6.2.1.</span> Using coverage tools.</div>
+                    <div class="subgroup"><span>--- 6.2.2.</span> Heuristics and criteria for selecting relevant inputs.</div>
+                    <div class="subgroup"><span>--- 6.2.3.</span> Coverage criteria.</div>
+                    <div class="subgroup"><span>--- 6.2.4.</span> Boundary value analysis.</div>
+                    <div class="subgroup"><span>6.3.</span> Mutation Testing: concept, tools and practical use.</div>
+                    
+                    <div class="group"><span>7.</span> Finding testing points.</div>
+                    <div class="subgroup"><span>7.1.</span> Analysing the propagation of the effects of a change.</div>
+                    <div class="subgroup"><span>7.2.</span> Points from which to test.</div>
+                    <div class="subgroup"><span>--- 7.2.1.</span> Interception points.</div>
+                    <div class="subgroup"><span>--- 7.2.2.</span> Pinch points.</div>
+                    <div class="subgroup"><span>7.3.</span> Distance from which to test and test scope.</div>
+                    
+                    <div class="group"><span>8.</span> Other ways of characterizing legacy code.</div>
+                    <div class="subgroup"><span>8.1.</span> Golden Master + Sampling.</div>
+                    <div class="subgroup"><span>8.2.</span> Approval Testing.</div>
+                    <div class="subgroup"><span>--- 8.2.1.</span> Combinatorics & Approval Testing.</div>
+                    
+                    <div class="group"><span>9.</span> Relationship between lack of cohesion and testability.</div>
+                    <div class="subgroup"><span>9.1.</span> Analysis of different cases.</div>
+                    <div class="subgroup"><span>--- 9.1.1.</span> Cohesive code.</div>
+                    <div class="subgroup"><span>--- 9.1.2.</span> Lack of cohesion due to divergent change (hotspots).</div>
+                    <div class="subgroup"><span>--- 9.1.3.</span> Lack of cohesion due to shotgun surgery (change coupling).</div>
+                    
+                    <div class="group"><span>10.</span> Making changes: TDD in legacy code.</div>
+                    
+                    <div class="group"><span>11.</span> Making changes: shortcuts when there is no time to cover and modify.</div>
+                    <div class="subgroup"><span>11.1.</span> Sprouting.</div>
+                    <div class="subgroup"><span>11.2.</span> Wrapping.</div>
+                    
+                    <div class="group"><span>12.</span> Incremental rewrites.</div>
+                    <div class="subgroup"><span>12.1.</span> Why incremental rewrites?</div>
+                    <div class="subgroup"><span>12.2.</span> Branch By Abstraction.</div>
+                    <div class="subgroup"><span>12.3.</span> Strangler Fig Application.</div>
+                    <div class="subgroup"><span>12.4.</span> Testing rewrites in production with experiments.</div>
+                    
+                    <div class="group"><span>13.</span> Refactoring legacy code.</div>
+                    <div class="subgroup"><span>13.1.</span> Refactoring flows.</div>
+                    <div class="subgroup"><span>13.2.</span> Goals and strategies.</div>
+                    <div class="subgroup"><span>13.3.</span> Refactoring strategies according to DDD subdomains.</div>
+                    <div class="subgroup"><span>13.4.</span> Refactorings that improve testability and productivity.</div>
+                    <div class="subgroup"><span>--- 13.4.1.</span> Separating infrastructure from business logic.</div>
+                    <div class="subgroup"><span>--- 13.4.2.</span> Improving cohesion.</div>
+                    
+                    <div class="group"><span>14.</span> Introducing DDD in legacy code.</div>
+                    <div class="subgroup"><span>14.1.</span> Motivation.</div>
+                    <div class="subgroup"><span>14.2.</span> Useful patterns.</div>
+                    <div class="subgroup"><span>--- 14.2.1.</span> Bubble Context.</div>
+                    <div class="subgroup"><span>--- 14.2.2.</span> Autonomous Bubble.</div>
+                    <div class="subgroup"><span>--- 14.2.3.</span> Exposing legacy assets as services.</div>
+                    
+                    <div class="group"><span>15.</span> Refactoring techniques for hotspots.</div>
+                    <div class="subgroup"><span>15.1.</span> How does a hotspot form?</div>
+                    <div class="subgroup"><span>15.2.</span> Heuristics for identifying responsibilities.</div>
+                    <div class="subgroup"><span>15.3.</span> How to split a hotspot into more cohesive classes?</div>
+                    <div class="subgroup"><span>--- 15.3.1.</span> Approach in Working Effectively with Legacy Code.</div>
+                    <div class="subgroup"><span>--- 15.3.2.</span> Splinter Pattern.</div>
+                    <div class="subgroup"><span>--- 15.3.3.</span> Approach in Object-Oriented Reengineering Patterns.</div>
+                    
+                    <div class="group"><span>16.</span> Object orientation to improve legacy code.</div>
+                    <div class="subgroup"><span>16.1.</span> Applying design patterns to simplify legacy code.</div>
+                    <div class="subgroup"><span>--- 16.1.1.</span> Cross-cutting concerns.</div>
+                    <div class="subgroup"><span>--- 16.1.2.</span> Separating the main task from associated secondary tasks.</div>
+                    <div class="subgroup"><span>--- 16.1.3.</span> Byzantine business rules.</div>
+                    <div class="subgroup"><span>--- 16.1.4.</span> Conditional code.</div>
+                    <div class="subgroup"><span>--- 16.1.5.</span> Procedural substitutes for polymorphism.</div>
+                    <div class="subgroup"><span>--- 16.1.6.</span> Suitable interfaces for stable legacy code.</div>
+                    <div class="subgroup"><span>16.2.</span> Code smells that harm or inhibit object orientation.</div>
+                    
+                   <div class="group"><span>17.</span> Refactoring techniques for inheritance-based seams.</div>
+                   <div class="subgroup"><span>17.1.</span> Moving an inheritance-based seam to a delegate.</div>
+                   <div class="subgroup"><span>17.2.</span> Introducing dependency injection.</div>
+                  
+                   <div class="group"><span>18.</span> Course closure: navigation maps.</div>
+                   <div class="subgroup"><span>18.1.</span> Overview: topics explored and yet to explore.</div>
+                   <div class="subgroup"><span>18.2.</span> Changing perspectives on legacy code.</div>
+                </div>'
       languages:
         title: Languages
-        text: <p>At the moment the examples and katas are ready for Java and C#, but if you wish to use another language please let us know.</p>
+        text: <p>The examples and katas are in C#, Java and TypeScript, but if you are interested in another language please contact us.</p>
       requirements:
         title: Requirements
         text: 'We will send you an email telling you everything you need to install before the course.'
