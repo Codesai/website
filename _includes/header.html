@@ -35,6 +35,7 @@
     <a href="{% translate urls.newsletter %}"><span>✨{% translate header.links.newsletter %}</span></a>
 </div>
 
+{% if site.lang == 'es' %}
 <div class="banner-announcement">
     <p class="desktop-text">
         Curso abierto TDD 8, 9, 10, 15 y 16 de junio de 10.00 a 14.00 peninsular en remoto
@@ -46,6 +47,7 @@
         {% include components/codesai-button.html content='¡Me interesa!' %}
     </a>
 </div>
+{% endif %}
 
 <script>
     const mobileMenuTrigger = document.getElementById("mobile-menu-trigger");
