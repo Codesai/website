@@ -172,7 +172,7 @@ pages:
       name: Codesai. TDD Course
       title: Test Driven Development (TDD)
       text: '<p>TDD is a technique which, when correctly applied, allows us to develop well-designed code that strictly complies with business needs.</p>
-             <p>In this course, after every lesson during which we will delve into the foundations of TDD, we will apply the knowledge in a practical way Pair Programming with the rest of the participants, under the guidance of our mentors.</p>'
+             <p>In this course, after every lesson during which we will delve into the foundations of TDD, you will apply the new knowledge in a practical way by doing ensemble programming with other participants, always under the guidance of the trainers.</p>'
       agenda:
         title: Contents
         day_1:

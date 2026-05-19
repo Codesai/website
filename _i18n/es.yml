@@ -172,7 +172,7 @@ pages:
       name: Codesai. Curso de TDD
       title: Test Driven Development (TDD)
       text: '<p>TDD es una técnica que, aplicada correctamente, nos permite desarrollar código con un buen diseño, cumpliendo estrictamente las necesidades de negocio.</p>
-             <p>En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los conocimientos de manera práctica en Pair Programming con el resto de asistentes, siempre bajo la guía de nuestros mentores.</p>'
+             <p>En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los nuevos conocimientos de manera práctica haciendo ensemble programming con otros asistentes, siempre bajo la guía de los formadores.</p>'
       agenda:
         title: Contenido
         day_1:
