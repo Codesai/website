@@ -151,6 +151,10 @@ pages:
         name: DDD driven by test
         description: The objective of this course is explaining the different tools offered by Domain Driven Design, both from an organizational point of view using strategic patterns and ubiquitous language, as well as from an architectural point of view using tactical patterns.
         link: /en/trainings/ddd
+      testing:
+        name: "Testing Techniques for Developers"
+        description: The objective of this course is to learn different techniques for testing already-written code.
+        link: /en/trainings/testing-techniques/
       user_stories:
         name: User Stories
         description: The objective of this course is for students to learn the essential parts of user stories, identify attributes that make them most effective and have an array of techniques for breaking them down.
@@ -567,6 +571,96 @@ pages:
       who:
         title: Who is it intended for?
         text: '<p>Primarily for programmers working with the object-oriented paradigm.</p>'
+      where:
+        title: For companies or open to the community
+        text: '<p>The course can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
+              <p class="unicode">Please note that courses for companies take place once we have been booked by the client. We will need to know the date at least one month in advance in order to be able to schedule them.</p>'
+    testing:
+      title: "Codesai. Testing Techniques for Developers"
+      name: "Testing Techniques for Developers"
+      text: '<p>In this training we will learn different techniques for testing already-written code.</p>
+             <p>We will cover specification testing, structural testing, mutation testing, golden master, characterization testing, dependency-breaking techniques, the use of test doubles, and advice on achieving testable designs.</p>
+             <p>The training will combine theory and discussion sessions presenting the different concepts, techniques, patterns and strategies, with practical sessions in the form of katas in which we will apply the most important techniques.</p>'
+      call_to_action:
+        title: OK! I am interested in taking the Testing Techniques for Developers course
+        text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would be interested in receiving updates about the courses and upcoming open dates
+        link: /en/trainings/testing-techniques/#call-to-action
+      content:
+        title: Contents
+        agenda: '<div class="topics">
+                   <div class="group"><span>1.</span> Introduction and testing strategy.</div>
+                   <div class="subgroup"><span>1.1.</span> Why test?</div>
+                   <div class="subgroup"><span>1.2.</span> Approaches to testing.</div>
+                   <div class="subgroup"><span>1.3.</span> Testing strategy.</div>
+                   <div class="group"><span>2.</span> Specification testing.</div>
+                   <div class="subgroup"><span>2.1.</span> Understanding the problem.</div>
+                   <div class="subgroup"><span>2.2.</span> Identifying behaviours.</div>
+                   <div class="subgroup"><span>2.3.</span> Equivalence classes or partitions.</div>
+                   <div class="subgroup"><span>2.4.</span> Boundary value analysis.</div>
+                   <div class="subgroup"><span>2.5.</span> Writing examples as test cases.</div>
+                   <div class="group"><span>3.</span> Structural testing.</div>
+                   <div class="subgroup"><span>3.1.</span> Definition and role in new and legacy code.</div>
+                   <div class="subgroup"><span>3.2.</span> Coverage tools: how to use them?</div>
+                   <div class="subgroup"><span>3.3.</span> Coverage criteria.</div>
+                   <div class="subgroup"><span>3.4.</span> Beyond coverage: boundaries and loops.</div>
+                   <div class="group"><span>4.</span> Mutation testing.</div>
+                   <div class="subgroup"><span>4.1.</span> Concept.</div>
+                   <div class="subgroup"><span>4.2.</span> Tools.</div>
+                   <div class="subgroup"><span>4.3.</span> How to apply mutation testing?</div>
+                   <div class="subgroup"><span>4.4.</span> Relevant mutants and how to distinguish them.</div>
+                   <div class="subgroup"><span>4.5.</span> Considerations, problems and recommendations.</div>
+                   <div class="group"><span>5.</span> Using test doubles: how, when and why?</div>
+                   <div class="subgroup"><span>5.1.</span> Motivation.</div>
+                   <div class="subgroup"><span>5.2.</span> Detecting awkward collaborations.</div>
+                   <div class="subgroup"><span>5.3.</span> Testable design by controlling awkward collaborations.</div>
+                   <div class="subgroup"><span>5.4.</span> Types of test doubles.</div>
+                   <div class="subgroup"><span>5.5.</span> How to test with test doubles?</div>
+                   <div class="group"><span>6.</span> Testing legacy code.</div>
+                   <div class="subgroup"><span>6.1.</span> What is legacy code?</div>
+                   <div class="subgroup"><span>6.2.</span> Why is it hard to evolve legacy code?</div>
+                   <div class="subgroup"><span>6.3.</span> Evolving legacy code with confidence.</div>
+                   <div class="subgroup"><span>6.4.</span> The realities of legacy code.</div>
+                   <div class="subgroup"><span>6.5.</span> Changing legacy code: terraforming little by little.</div>
+                   <div class="subgroup"><span>6.6.</span> Testing strategies in legacy code.</div>
+                   <div class="group"><span>7.</span> Dependency-breaking techniques in untestable code.</div>
+                   <div class="subgroup"><span>7.1.</span> The legacy code dilemma.</div>
+                   <div class="subgroup"><span>7.2.</span> Dependency-breaking techniques.</div>
+                   <div class="subgroup"><span>--- 7.2.1.</span> Basic techniques.</div>
+                   <div class="subgroup"><span>--- 7.2.2.</span> Statics and globals.</div>
+                   <div class="subgroup"><span>--- 7.2.3.</span> Shortcuts.</div>
+                   <div class="group"><span>8.</span> Characterizing legacy code.</div>
+                   <div class="subgroup"><span>8.1.</span> Guided by structural testing.</div>
+                   <div class="subgroup"><span>8.2.</span> Improving our characterization with mutation testing.</div>
+                   <div class="group"><span>9.</span> Other ways of characterizing legacy code.</div>
+                   <div class="subgroup"><span>9.1.</span> Golden Master + Sampling.</div>
+                   <div class="subgroup"><span>9.2.</span> Approval Testing.</div>
+                   <div class="subgroup"><span>9.3.</span> Combinatorics Approval Testing.</div>
+                   <div class="group"><span>10.</span> Finding where to test from.</div>
+                   <div class="subgroup"><span>10.1.</span> Propagation of the effects of a change.</div>
+                   <div class="subgroup"><span>10.2.</span> Interception points.</div>
+                   <div class="subgroup"><span>10.3.</span> Pinch points.</div>
+                   <div class="subgroup"><span>10.4.</span> Test scope.</div>
+                   <div class="group"><span>11.</span> Cohesion and testability.</div>
+                   <div class="subgroup"><span>11.1.</span> Effects of the Divergent Change code smell.</div>
+                   <div class="subgroup"><span>11.2.</span> Effects of the Shotgun Surgery code smell.</div>
+                   <div class="group"><span>12.</span> Testable design.</div>
+                   <div class="subgroup"><span>12.1.</span> Controlling awkward collaborations.</div>
+                   <div class="subgroup"><span>12.2.</span> Hexagonal Architecture.</div>
+                   <div class="subgroup"><span>12.3.</span> Static methods, globals and singletons.</div>
+                   <div class="subgroup"><span>12.4.</span> Constructors.</div>
+                   <div class="subgroup"><span>12.5.</span> Complex conditionals.</div>
+                   <div class="subgroup"><span>12.6.</span> Cohesion and coupling.</div>
+               </div>'
+      languages:
+        title: Languages
+        text: <p>The examples and katas are in Java and C#, but if you are interested in another language please contact us.</p>
+      requirements:
+        title: Requirements
+        text: '<p>We will send you an email telling you everything you need to install before the course.</p>'
+      who:
+        title: Who is it intended for?
+        text: <p>Primarily for programmers working with the object-oriented paradigm.</p>
       where:
         title: For companies or open to the community
         text: '<p>The course can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
@@ -998,6 +1092,7 @@ urls:
   clients: /en/clients/
   courses: /en/trainings/
   tdd: /en/trainings/tdd
+  testing: /en/trainings/testing-techniques/
   ddd: /en/trainings/ddd/
   refactoring: /en/trainings/refactoring/
   user_stories: /en/trainings/user-stories/
