@@ -366,7 +366,7 @@ pages:
     code_smells_refactoring:
       title: Codesai. Code Smells & Refactoring
       name: Code smells & Refactoring
-      text: '<p>The objective of this course is to introduce students to the concept of code smells and start developing their ability to recognize them. We will also practice some techniques to incrementally improve already existing code designs in a safe manner.</p>
+      text: '<p>The objective of this course is to learn about code smells, refactoring techniques and object-oriented design principles. We will learn to recognise the different code smells and refactoring techniques to improve the design of already existing code in a safe and incremental manner.</p>
              <p>Through examples and katas, we will learn about code smells, refactoring techniques and object-oriented design principles. We will also look at the fundamental role of refactoring in software development and reflect on technical debt, refactoring workflows and the economics of refactoring.</p>'
       call_to_action:
         link: /en/trainings/refactoring/#call-to-action
@@ -374,6 +374,7 @@ pages:
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
       content:
+        title: Contents
         agenda: '<div class="topics">
                     <div class="group"><span>1.</span> Introduction.</div>
                     <div class="subgroup"><span>1.1.</span> Definition.</div>
@@ -410,7 +411,7 @@ pages:
                 </div>'
       languages:
         title: Languages
-        text: '<p>At the moment the examples and katas are ready for Java, C#, JavaScript, TypeScript and PHP, but if you wish to use another language please let us know.</p>'
+        text: '<p>The examples and katas are in Java, C#, TypeScript, JavaScript and PHP, but if you need another language please contact us.</p>'
       requirements:
         title: Requirements
         text: 'We will send you an email telling you everything you need to install before the course.'
@@ -420,7 +421,7 @@ pages:
       where:
         title: For companies or open to the community
         text: '<p>The course can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in the form below.</p>
-               <p class="unicode">Please note that courses for companies take place once we have been booked by the client. We will need to know the date at least one month in advance in advance in order to be able to schedule them.</p>'
+               <p class="unicode">Please note that courses for companies take place once we have been booked by the client. We will need to know the date at least one month in advance in order to be able to schedule them.</p>'
 
     changing_legacy:
       title: Codesai. Changing Legacy Code
