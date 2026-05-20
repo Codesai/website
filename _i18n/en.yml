@@ -139,6 +139,12 @@ pages:
         name: Test Driven Development (TDD)
         description: The development technique that delivers quality code and excellent automatic test suites when done correctly. It is primarily a hands-on course, in which you will apply TDD by Pair Programming the majority of the time under the supervision and guidance of an expert.
         link: /en/trainings/tdd
+      deliberate_practice:
+        name: Deliberate Practice Programme
+        description: Improve your testing, TDD, refactoring, working effectively with legacy code and object-oriented design skills through katas. Sessions are designed to keep fundamental engineering skills strong, avoiding skill atrophy induced by AI, and introduce new technical practices on a continuous basis.
+        link: /en/trainings/deliberate-practice/
+        price_text: Contact us for pricing
+        modality: Remote.
       code_smells_refactoring:
         name: Code smells & Refactoring
         description: The goal of this course is to learn about code smells, refactoring techniques and object-oriented design principles. We will learn to recognise different code smells and systematic refactoring techniques to improve the design of existing code in a safe and incremental way.
@@ -224,6 +230,39 @@ pages:
         title: OK! I am interested in taking the Test Driven Development (TDD) Course
         text: <p>If you wish to apply or if you still have any questions about this course, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the courses and upcoming open dates
+    deliberate_practice:
+      name: Deliberate Practice Programme
+      title: Codesai. Deliberate Practice Programme
+      text: '<p>The goal of the Deliberate Practice Programme is to improve participants'' skills in testing, TDD, refactoring, working effectively with legacy code and object-oriented design through katas.</p>
+             <p>It allows participants to deepen and better assimilate the concepts and technical practices introduced in our training courses.</p>'
+      goals:
+        title: Session goals
+        text: '<p>Our deliberate practice sessions are designed with two goals in mind:</p>
+               <ul>
+                 <li>Keep fundamental engineering skills strong, avoiding skill atrophy induced by AI.</li>
+                 <li>Introduce new technical practices and ideas to the team on a continuous basis.</li>
+               </ul>'
+      program:
+        title: What the programme includes
+        text: '<p>The programme consists of:</p>
+               <ol>
+                 <li>Remote 2-hour deliberate practice sessions facilitated by Codesai members, in which participants solve katas through group programming (pairs or groups).</li>
+                 <li>A dedicated Slack channel used to coordinate sessions, share materials, readings or videos, and answer questions related to the sessions.</li>
+               </ol>'
+      approach:
+        title: Design approach
+        text: '<p>In the deliberate practice sessions, we try to transmit a style of OO design based on the ports and adapters pattern combined with Responsibility-driven design, Domain-Driven Design principles, other OOP principles, and when they apply, some classical OOP design patterns.</p>'
+      who:
+        title: Who is it intended for?
+        text: <p>For programmers who want to deepen and consolidate the concepts and technical practices introduced in our testing, TDD, refactoring and object-oriented design training courses.</p>
+      where:
+        title: Format
+        text: <p>Sessions are remote only, 2 hours long, and facilitated by Codesai members.</p>
+      call_to_action:
+        title: OK! I am interested in the Deliberate Practice Programme
+        text: <p>If you would like more information or want to sign up for the programme, please write to us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would like to know more about the Deliberate Practice Programme
+        link: /en/trainings/deliberate-practice/#call-to-action
     cd-databases:
       name: Codesai. Continuous Delivery with Databases
       title: Continuous Delivery with Databases

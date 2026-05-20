@@ -139,6 +139,12 @@ pages:
         name: Test Driven Development (TDD)
         description: La técnica de desarrollo que produce código de calidad y excelentes baterías de pruebas automáticas cuando se hace correctamente. Es un curso esencialmente práctico, en el que aplicarás TDD haciendo Pair Programming la mayoría del tiempo bajo supervisión y guía del experto.
         link: /curso-de-tdd/
+      deliberate_practice:
+        name: Programa de Práctica Deliberada
+        description: Mejora tus habilidades en testing, TDD, refactoring, trabajo efectivo con código legacy y diseño orientado a objetos mediante katas. Las sesiones están diseñadas para fortalecer habilidades fundamentales de ingeniería, evitando así su atrofia con el uso de la IA, e introducir nuevas prácticas técnicas de forma continua.
+        link: /cursos/practica-deliberada/
+        price_text: Consultar precio
+        modality: Remoto.
       code_smells_refactoring:
         name: Code smells & Refactoring
         description: El objetivo de este curso es aprender sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Aprenderemos a reconocer los diferentes code smells y técnicas de refactoring sistemáticas para mejorar el diseño de código ya existente de forma segura e incremental.
@@ -224,6 +230,39 @@ pages:
         title: ¡OK! Me interesa realizar el curso de Test Driven Development (TDD)
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+    deliberate_practice:
+      name: Programa de Práctica Deliberada
+      title: Programa de Práctica Deliberada
+      text: '<p>El objetivo del Programa de Práctica Deliberada es mejorar las habilidades en testing, TDD, refactoring, trabajo efectivo con código legacy y diseño orientado a objetos de los participantes, mediante katas.</p>
+             <p>Permite profundizar y asimilar mejor los conceptos y prácticas técnicas que se introducen en nuestras formaciones.</p>'
+      goals:
+        title: Objetivos de las sesiones
+        text: '<p>Las sesiones de práctica deliberada están diseñadas con dos objetivos en mente:</p>
+               <ul>
+                 <li>Mantener fuertes las habilidades fundamentales de ingeniería, evitando su atrofia debido al uso de la IA.</li>
+                 <li>Introducir nuevas prácticas técnicas e ideas al equipo de forma continua.</li>
+               </ul>'
+      program:
+        title: En qué consiste el programa
+        text: '<p>El programa consiste en:</p>
+               <ol>
+                 <li>Sesiones remotas de práctica deliberada de 2 horas facilitadas por miembros de Codesai, en las que los participantes resolverán katas programando en grupos.</li>
+                 <li>Un canal de Slack dedicado que usaremos para coordinar las sesiones, colgar materiales, lecturas o vídeos y contestar dudas relacionadas con las sesiones.</li>
+               </ol>'
+      approach:
+        title: Enfoque de diseño
+        text: '<p>En las sesiones de práctica deliberada intentamos transmitir un estilo de diseño orientado a objetos basado en el patrón ports and adapters combinado con Responsibility-driven design, principios de Domain-Driven Design, otros principios OOP y, cuando aplica, algunos patrones de diseño OOP clásicos.</p>'
+      who:
+        title: ¿Para quién está pensado?
+        text: <p>Para programadores que quieran profundizar y afianzar los conceptos y prácticas técnicas que se introducen en nuestras formaciones de testing, TDD, refactoring y diseño orientado a objetos.</p>
+      where:
+        title: Formato
+        text: <p>Las sesiones son únicamente remotas, de 2 horas de duración y están facilitadas por miembros de Codesai.</p>
+      call_to_action:
+        title: ¡OK! Me interesa el Programa de Práctica Deliberada
+        text: <p>Si deseas obtener más información o apuntarte al programa, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría saber más sobre el Programa de Práctica Deliberada
+        link: /cursos/practica-deliberada/#call-to-action
     cd-databases:
       name: Codesai. Curso de Continuous Delivery con bases de datos
       title: Continuous Delivery con bases de datos

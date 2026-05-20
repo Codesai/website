@@ -33,6 +33,20 @@ permalink_en: /trainings/
             days='2'
             hours='20'
         %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.link }}{% endcapture %}
+        {% capture price_text %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.price_text }}{% endcapture %}
+        {% capture modality_text %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.modality }}{% endcapture %}
+        {%
+            include components/course.html
+            name=name
+            description=description
+            link=link
+            logo='/assets/courses/logos/deliberate-practice.svg'
+            starting_price_text=price_text
+            modality_text=modality_text
+        %}
         {% capture name %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.name }}{% endcapture %}
         {% capture description %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.description }}{% endcapture %}
         {% capture link %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.link }}{% endcapture %}

@@ -1,0 +1,73 @@
+---
+title: pages.courses.deliberate_practice.title
+permalink: /cursos/practica-deliberada/
+permalink_en: /trainings/deliberate-practice/
+---
+{% include head.html %}
+<body>
+
+    {% include header.html %}
+
+    <div class="course-page">
+        <div class="course">
+
+            <div id="course-information" class="information">
+                <div class="insights">
+                    <div class="course-title">{% translate pages.courses.deliberate_practice.name %}</div>
+                    <div class="course-description">
+                        {% translate pages.courses.deliberate_practice.text %}
+                    </div>
+
+                    <section class="goals">
+                        <div class="title"><span>// </span>{% translate pages.courses.deliberate_practice.goals.title %}</div>
+                        <div class="description">
+                            {% translate pages.courses.deliberate_practice.goals.text %}
+                        </div>
+                    </section>
+
+                    <section class="contents">
+                        <div class="title"><span>// </span>{% translate pages.courses.deliberate_practice.program.title %}</div>
+                        <div class="description">
+                            {% translate pages.courses.deliberate_practice.program.text %}
+                        </div>
+                    </section>
+
+                    <section class="approach">
+                        <div class="title"><span>// </span>{% translate pages.courses.deliberate_practice.approach.title %}</div>
+                        <div class="description">
+                            {% translate pages.courses.deliberate_practice.approach.text %}
+                        </div>
+                    </section>
+
+                    <section class="who">
+                        <div class="title"><span>// </span>{% translate pages.courses.deliberate_practice.who.title %}</div>
+                        {% translate pages.courses.deliberate_practice.who.text %}
+                    </section>
+
+                    <section class="where">
+                        <div class="title"><span>// </span>{% translate pages.courses.deliberate_practice.where.title %}</div>
+                        {% translate pages.courses.deliberate_practice.where.text %}
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="photos"></div>
+
+        {% capture title %}{{ site.translations[site.lang].pages.courses.deliberate_practice.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.courses.deliberate_practice.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.deliberate_practice.call_to_action.placeholder }}{% endcapture %}
+        {% include components/call-to-action.html
+            title=title
+            text=text
+            defaultMessage='Sent from the Deliberate Practice page, no message specified'
+            messagePlaceHolder=placeholder
+            origin='Programa de Práctica Deliberada'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
