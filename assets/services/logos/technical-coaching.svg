@@ -1,20 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
   <title id="title">Technical Coaching</title>
   <desc id="desc">Logo for the technical coaching service.</desc>
-  <defs>
-    <linearGradient id="g" x1="20" y1="20" x2="140" y2="140" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0f5f74"/>
-      <stop offset="1" stop-color="#0b3140"/>
-    </linearGradient>
-    <linearGradient id="a" x1="40" y1="40" x2="120" y2="120" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#edf9ff"/>
-      <stop offset="1" stop-color="#b7e6f7"/>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="144" height="144" rx="28" fill="url(#g)"/>
-  <circle cx="58" cy="66" r="16" fill="url(#a)"/>
-  <circle cx="102" cy="66" r="16" fill="url(#a)"/>
-  <path d="M45 110c4-16 16-24 25-24s21 8 25 24" fill="none" stroke="url(#a)" stroke-width="8" stroke-linecap="round"/>
-  <path d="M44 52l20 14m52-14l-20 14" fill="none" stroke="#7fd3ea" stroke-width="6" stroke-linecap="round"/>
-  <path d="M79 44l8 16 18 3-13 12 3 18-16-8-16 8 3-18-13-12 18-3z" fill="#7fd3ea"/>
+  <circle cx="44" cy="56" r="15" fill="#2C2C2C"/>
+  <path d="M26 104c3-17 11-24 18-24s15 7 18 24" fill="none" stroke="#2C2C2C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M66 78 L84 78" stroke="#2C2C2C" stroke-width="5" stroke-linecap="round"/>
+  <path d="M80 73 L85 78 L80 83" fill="none" stroke="#2C2C2C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="88" y="90" width="12" height="20" rx="3" fill="#2C2C2C"/>
+  <rect x="104" y="74" width="12" height="36" rx="3" fill="#2C2C2C"/>
+  <rect x="120" y="56" width="12" height="54" rx="3" fill="#2C2C2C"/>
+  <path d="M92 88 L110 72 L128 54" stroke="#2C2C2C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M122 54 L128 54 L128 60" fill="none" stroke="#2C2C2C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
