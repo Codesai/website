@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Consultancy</title>
+  <desc id="desc">Logo for the consultancy service.</desc>
+  <defs>
+    <linearGradient id="g" x1="22" y1="18" x2="138" y2="142" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5b1f59"/>
+      <stop offset="1" stop-color="#2f1230"/>
+    </linearGradient>
+    <linearGradient id="a" x1="42" y1="42" x2="118" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff0fb"/>
+      <stop offset="1" stop-color="#f2b5e6"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="144" height="144" rx="28" fill="url(#g)"/>
+  <path d="M50 62c0-16 13-28 30-28s30 12 30 28-13 28-30 28H68l-14 12v-12c-2-5-4-10-4-18Z" fill="url(#a)"/>
+  <circle cx="80" cy="62" r="5" fill="#5b1f59"/>
+  <path d="M80 48c7 0 12 4 12 10 0 5-3 8-8 11-3 2-4 4-4 8" fill="none" stroke="#5b1f59" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="80" cy="86" r="4" fill="#5b1f59"/>
+  <path d="M45 108h70" stroke="#f2b5e6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M61 44l6 15 16 2-12 10 4 16-14-8-14 8 4-16-12-10 16-2z" fill="#f2b5e6"/>
+</svg>

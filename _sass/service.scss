@@ -1,0 +1,95 @@
+.service-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  width: 100%;
+
+  @media screen and (max-width: $max-width-breakpoint) {
+    margin-top: 2rem;
+  }
+
+  .service {
+    max-width: $max-page-width;
+
+    .information {
+      display: flex;
+      padding: 0 1rem;
+      gap: 2rem;
+
+      @media screen and (max-width: $max-width-breakpoint) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image {
+        span {
+          width: 180px;
+          height: 180px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 28px;
+          overflow: hidden;
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+          background: #fff;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          span {
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+
+      .insights {
+        @media screen and (max-width: $max-width-breakpoint) {
+          max-width: 560px;
+        }
+
+        .service-title {
+          font-family: $lekton;
+          margin-bottom: 1rem;
+          font-size: 3rem;
+          font-weight: bolder;
+          line-height: 1.2;
+
+          @media screen and (max-width: $max-width-breakpoint) {
+            font-size: 2.75rem;
+          }
+        }
+
+        .service-description {
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+        }
+
+        .price {
+          display: inline-flex;
+          align-items: center;
+          font-family: $assistant;
+          background-color: #EDF7F5;
+          padding: 1rem 1.5rem;
+          border-radius: 0 16px 16px 16px;
+
+          .price-label {
+            font-weight: bold;
+            margin-right: 0.5rem;
+          }
+
+          .price-value {
+            font-size: 1.25rem;
+            color: $blueish-green;
+          }
+        }
+      }
+    }
+  }
+}

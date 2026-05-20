@@ -1,0 +1,51 @@
+---
+title: pages.consultancy_service.title
+permalink: /servicios/consultancy/
+permalink_en: /services/consultancy/
+---
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="service-page">
+        <div class="service">
+
+            <div id="service-information" class="information">
+                <div class="image">
+                    <span>
+                        <img src="/assets/services/logos/consultancy-service.svg" alt="{% translate pages.consultancy_service.name %} logo">
+                    </span>
+                </div>
+                <div class="insights">
+                    <div class="service-title">{% translate pages.consultancy_service.name %}</div>
+                    <div class="service-description">{% translate pages.consultancy_service.text %}</div>
+
+                    <div class="price">
+                        <span class="price-label">Precio:</span>
+                        <span class="price-value">{% translate pages.consultancy_service.price %}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        {% capture title %}{{ site.translations[site.lang].pages.consultancy_service.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.consultancy_service.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.consultancy_service.call_to_action.placeholder }}{% endcapture %}
+        {% include components/call-to-action.html
+            title=title
+            text=text
+            defaultMessage='Sent from the Consultancy page, no message specified'
+            messagePlaceHolder=placeholder
+            origin='Servicio de Consultoría'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
