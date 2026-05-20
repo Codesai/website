@@ -144,7 +144,7 @@ pages:
         description: Improve your testing, TDD, refactoring, working effectively with legacy code and object-oriented design skills through katas. Sessions are designed to keep fundamental engineering skills strong, avoiding skill atrophy induced by AI, and introduce new technical practices on a continuous basis.
         link: /en/trainings/deliberate-practice/
         price_text: Contact us for pricing
-        modality: Remote.
+        modality: "Remote. At least 4 sessions."
       code_smells_refactoring:
         name: Code smells & Refactoring
         description: The goal of this course is to learn about code smells, refactoring techniques and object-oriented design principles. We will learn to recognise different code smells and systematic refactoring techniques to improve the design of existing code in a safe and incremental way.
