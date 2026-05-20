@@ -144,7 +144,7 @@ pages:
         description: Mejora tus habilidades en testing, TDD, refactoring, trabajo efectivo con código legacy y diseño orientado a objetos mediante katas. Las sesiones están diseñadas para fortalecer habilidades fundamentales de ingeniería, evitando así su atrofia con el uso de la IA, e introducir nuevas prácticas técnicas de forma continua.
         link: /cursos/practica-deliberada/
         price_text: Consultar precio
-        modality: Remoto.
+        modality: "Remoto. Al menos 4 sesiones."
       code_smells_refactoring:
         name: Code smells & Refactoring
         description: El objetivo de este curso es aprender sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Aprenderemos a reconocer los diferentes code smells y técnicas de refactoring sistemáticas para mejorar el diseño de código ya existente de forma segura e incremental.
@@ -1085,8 +1085,8 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
 
   services_page:
     title: Codesai. Servicios
-    header: Servicios que ofrecemos
-    text: '<p>En Codesai colaboramos con equipos de una forma cercana y continua. Ofrecemos diferentes modalidades de trabajo para adaptarnos a lo que tu equipo necesita en cada momento: desde acompañamiento técnico intensivo hasta consultoría puntual.</p>'
+    header: Nuestros servicios
+    text: '<p>En Codesai colaboramos con equipos de una forma cercana y continua.</p><p>Ofrecemos diferentes modalidades de trabajo para adaptarnos a lo que tu equipo necesita en cada momento:</p><p>desde acompañamiento técnico intensivo hasta consultoría puntual.</p>'
     services:
       technical_coaching:
         name: Coaching técnico

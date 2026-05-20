@@ -175,8 +175,8 @@ pages:
       placeholder: Are you interested in any of our trainings? Sign up for future open courses or if you are interested in having us provide training for your company.
   services_page:
     title: Codesai. Services
-    header: Services we offer
-    text: '<p>At Codesai we collaborate closely and continuously with teams. We offer different engagement models to adapt to what your team needs: from intensive technical coaching to on-demand consultancy.</p>'
+    header: Our services
+    text: '<p>At Codesai we collaborate closely and continuously with teams.</p><p>We offer different engagement models to adapt to what your team needs at any given moment:</p><p>from intensive technical coaching to on-demand consultancy.</p>'
     services:
       technical_coaching:
         name: Technical coaching

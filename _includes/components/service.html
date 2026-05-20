@@ -7,16 +7,6 @@
     <div class="description">
         <h2>{{ include.name }}</h2>
         <p>{{ include.description }}</p>
-        <div class="info">
-            {% if include.price %}
-            <div class="pricing">
-                <img src="/assets/icons/euro-green.svg" alt="Euro">
-                <div class="text">
-                    <p><strong>{{ include.price }}</strong></p>
-                </div>
-            </div>
-            {% endif %}
-        </div>
         <a href="{{ include.link }}">
             {% capture button %}{{ site.translations[site.lang].components.service.button }}{% endcapture %}
             {% include components/codesai-button.html content=button %}
