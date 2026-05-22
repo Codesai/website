@@ -1,0 +1,51 @@
+---
+title: pages.team_augmentation.title
+permalink: /servicios/team-augmentation/
+permalink_en: /services/team-augmentation/
+---
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="service-page">
+        <div class="service">
+
+            <div id="service-information" class="information">
+                <div class="image">
+                    <span>
+                        <img src="/assets/services/logos/team-augmentation-service.svg" alt="{% translate pages.team_augmentation.name %} logo">
+                    </span>
+                </div>
+                <div class="insights">
+                    <div class="service-title">{% translate pages.team_augmentation.name %}</div>
+                    <div class="service-description">{% translate pages.team_augmentation.text %}</div>
+
+                    <div class="price">
+                        <span class="price-label">Precio:</span>
+                        <span class="price-value">{% translate pages.team_augmentation.price %}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        {% capture title %}{{ site.translations[site.lang].pages.team_augmentation.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.team_augmentation.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.team_augmentation.call_to_action.placeholder }}{% endcapture %}
+        {% include components/call-to-action.html
+            title=title
+            text=text
+            defaultMessage='Sent from the Team Augmentation page, no message specified'
+            messagePlaceHolder=placeholder
+            origin='Servicio de Aumento de Equipo'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

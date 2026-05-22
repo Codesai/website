@@ -1,0 +1,73 @@
+---
+title: pages.services_page.title
+permalink: /servicios/
+permalink_en: /services/
+---
+
+{% include head.html %}
+
+<body>
+{% include header.html %}
+<main class="services">
+    <section class="introduction">
+        <div class="text">
+            <h1>{% translate pages.services_page.header %}</h1>
+            {% translate pages.services_page.text %}
+        </div>
+        <div class="image">
+            <img src="/assets/home/mid_picture.png" alt="">
+        </div>
+    </section>
+    <section class="services-list">
+        {% capture name %}{{ site.translations[site.lang].pages.services_page.services.technical_coaching.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.services_page.services.technical_coaching.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.services_page.services.technical_coaching.link }}{% endcapture %}
+        {%
+            include components/service.html
+            name=name
+            description=description
+            link=link
+            logo='/assets/services/logos/technical-coaching.svg'
+            price='Consultar'
+        %}
+        {% capture name %}{{ site.translations[site.lang].pages.services_page.services.team_augmentation.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.services_page.services.team_augmentation.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.services_page.services.team_augmentation.link }}{% endcapture %}
+        {%
+            include components/service.html
+            name=name
+            description=description
+            link=link
+            logo='/assets/services/logos/team-augmentation-service.svg'
+            price='Consultar'
+        %}
+        {% capture name %}{{ site.translations[site.lang].pages.services_page.services.consultancy.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.services_page.services.consultancy.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.services_page.services.consultancy.link }}{% endcapture %}
+        {%
+            include components/service.html
+            name=name
+            description=description
+            link=link
+            logo='/assets/services/logos/consultancy-service.svg'
+            price='Consultar'
+        %}
+        <div class="closing-hexagon">
+            <span></span>
+        </div>
+    </section>
+    {% capture title %}{{ site.translations[site.lang].pages.services_page.contact.title }}{% endcapture %}
+    {% capture text %}{{ site.translations[site.lang].pages.services_page.contact.text }}{% endcapture %}
+    {% capture placeholder %}{{ site.translations[site.lang].pages.services_page.contact.placeholder }}{% endcapture %}
+    {%
+        include components/call-to-action.html
+        title=title
+        text=text
+        defaultMessage='Sent from the Services page, no message specified'
+        messagePlaceHolder=placeholder
+        origin='Listado de servicios'
+    %}
+</main>
+{% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,51 @@
+---
+title: pages.technical_coaching.title
+permalink: /servicios/technical-coaching/
+permalink_en: /services/technical-coaching/
+---
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <div class="service-page">
+        <div class="service">
+
+            <div id="service-information" class="information">
+                <div class="image">
+                    <span>
+                        <img src="/assets/services/logos/technical-coaching.svg" alt="{% translate pages.technical_coaching.name %} logo">
+                    </span>
+                </div>
+                <div class="insights">
+                    <div class="service-title">{% translate pages.technical_coaching.name %}</div>
+                    <div class="service-description">{% translate pages.technical_coaching.text %}</div>
+
+                    <div class="price">
+                        <span class="price-label">Precio:</span>
+                        <span class="price-value">{% translate pages.technical_coaching.price %}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        {% capture title %}{{ site.translations[site.lang].pages.technical_coaching.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.technical_coaching.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.technical_coaching.call_to_action.placeholder }}{% endcapture %}
+        {% include components/call-to-action.html
+            title=title
+            text=text
+            defaultMessage='Sent from the Technical Coaching page, no message specified'
+            messagePlaceHolder=placeholder
+            origin='Servicio de Coaching Técnico'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

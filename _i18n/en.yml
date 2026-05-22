@@ -14,11 +14,11 @@ pages:
     title: Software development and training
     slogan1: Accelerating value delivery
     slogan2: Taking care of internal and external quality
-    slogan3: Becoming a part of your team, making it grow
+    slogan3: Becoming part of your team and helping it grow
     about:
       title: Part of your team
-      first_paragraph: At Codesai we firmly believe that the best results are obtained by collaborating closely with the internal teams of each company. That's why we like to <strong>be a part of them, teaching them first-hand how to improve their processes and develop better code</strong>. We share their achievements, frustrations, doubts... without forgetting to create a good working environment and bring out the best in everyone.
-      second_paragraph: We try to have very versatile profiles, which allows us to support you in multiple aspects of the development of your product. From the technical team, but side by side with the business.
+      first_paragraph: At Codesai we firmly believe that the best results are obtained by collaborating closely with the internal teams of each company. That's why we like to <strong>be a part of them, teaching them first-hand how to improve their processes and develop better code</strong>. We share their achievements, frustrations, questions... without forgetting to create a good working environment and bring out the best in everyone.
+      second_paragraph: We try to have very versatile team members, which allows us to support you in multiple aspects of the development of your product. Working from the technical side, but side-by-side with the business.
     clients:
       title: Companies that have trusted us
     services:
@@ -49,23 +49,23 @@ pages:
         call_to_action: Success stories
     tdd:
       title: Test Driven Development (TDD) training experts
-      first_paragraph: TDD is part of our daily workflow, so when we provide TDD training we do it with the conviction that this technique greatly benefits and can raise the technical level of a development team like no other. At Codesai we are proud to be a reference in both the application and training in Test Driven Development, with some of the most recognized professionals in the industry and the community in the application of this technique.
-      second_paragraph: We are aware that applying TDD effectively is very complex and that many teams throw in the towel after trying it for a while. In our experience, having a team of experienced professionals can reduce the initial learning curve and make a difference in helping the team to extract all the value that this technique can provide them with.
+      first_paragraph: TDD is part of our daily workflow, so when we provide TDD training we do it with the conviction that this technique greatly benefits and can raise the technical level of a development team like no other. At Codesai we are proud to be a benchmark in both the application and training in Test Driven Development, with some of the most recognized professionals in the industry and the community in the application of this technique.
+      second_paragraph: We are aware that applying TDD effectively is very complex and that many teams throw in the towel after trying it for a while. In our experience, having a team of experienced professionals can reduce the initial learning curve and make a difference in helping the team get the most value this technique has to offer.
       call_to_action: More Info
     team:
       title: About Us
-      alfredo: More than 20 years programming. During the last years he has led teams with Agile methods such as Extreme Programming and practices such as DDD (Domain Driven Design). Veteran and well known member of the Java Hispano community.
+      alfredo: More than 20 years of programming. In recent years he has led teams with Agile methods such as Extreme Programming and practices such as DDD (Domain Driven Design). Veteran and well-known member of the Java Hispano community.
       dani: Applying Agile methodologies on a daily basis allows him to do a better job and rediscover his passion for software development. Co-founder of the Software Craftsmanship community of Gran Canaria and co-organizer of Socrates Canaries 2016.
       manu_tordesillas: Computer and Electronics Engineer with 6 years of experience in software development. He considers learning and continuous improvement essential to leave a positive mark on society and industry.
-      fran: Cares about getting things right and continuous improvement. Advocate of Agile methods as a way to build excellent software. Although his background is technical, he is interested in other areas related to the final product (business, UX, operations, etc).
-      antonio: He found organically his place in teams interested in continuous improvement and in building beautiful code. He develops mainly in Javascript and Groovy. He seeks the integration of all profiles, especially design profiles in product development.
+      fran: Cares about getting things right and continuously improving. Advocate of Agile methods as a way to build excellent software. Although his background is technical, he is interested in other areas related to the final product (business, UX, operations, etc).
+      antonio: He organically found his place in teams interested in continuous improvement and in building beautiful code. He develops mainly in Javascript and Groovy. He seeks the integration of all roles, especially design roles in product development.
       miguel: Passionate about development and continuous training to achieve better solutions. Co-founder of the Software Craftsmanship community of Gran Canaria. Co-organizer of the international congress SoCraTes 2016 (Software Craftsmanship and Testing) in Spain.
       manu_rivero: Software developer and technical coach. Co-founder of the Software Crafters community in Barcelona, part of the Clojure Developers Barcelona community and co-founder of the Apprentices Community.
       ruben: Learning and developing since 2014, he loves following XP practices and collaborating with the business to deliver value as quickly as possible. Intends to retire having deleted more code than he has written. Co-organizer of Socrates Canaries 2019.
     collaborators: Our Collaborators
     blog:
       title: Sharing Knowledge
-      paragraph: Agile Spain Conference, DevFest, Tarugoconf... At Codesai we love to participate in events and share points of view with other professionals (so much so, that we have even dared to organize some). In addition to being involved in some communities, we also <strong>publish content that we hope can help and contribute to our industry.</strong>
+      paragraph: Agile Spain Conference, DevFest, Tarugoconf... At Codesai we love to participate in events and share points of view with other professionals (so much so, that we have even taken the initiative to organize some ourselves). In addition to being involved in some communities, we also <strong>publish content that we hope can help and contribute to our industry.</strong>
       call_to_action: View more content
     contact:
       title: Contact us!
@@ -173,6 +173,60 @@ pages:
       title: Can't find the course you need? Tell us what you are looking for!
       text: <p>At Codesai we are always open to listen to suggestions made by our customers. We would like to offer you a course that fits your needs. You can write to us at <strong>contact@codesai.com</strong> or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
       placeholder: Are you interested in any of our trainings? Sign up for future open courses or if you are interested in having us provide training for your company.
+  services_page:
+    title: Codesai. Services
+    header: Our services
+    text: '<p>At Codesai we collaborate closely and continuously with teams.</p><p>We offer different engagement models to adapt to what your team needs at any given moment:</p><p>from intensive technical coaching to on-demand consultancy.</p>'
+    services:
+      technical_coaching:
+        name: Technical coaching
+        description: Two members of Codesai will join your team several days a week in 4 to 6 hour remote sessions to develop functionality together, do code reviews, answer questions, or explore and discuss solutions.
+        link: /en/services/technical-coaching/
+      team_augmentation:
+        name: Team augmentation
+        description: Two members of Codesai would join your team several days a week in 6 to 8 hour remote sessions to develop functionality.
+        link: /en/services/team-augmentation/
+      consultancy:
+        name: Consultancy
+        description: The objective of these consultancy sessions would be to evaluate the state of your systems, help the team resolve problems and questions, or land new technical practices.
+        link: /en/services/consultancy/
+    contact:
+      title: Interested in any of our services? Tell us what you need!
+      text: <p>At Codesai we are always open to listen to our clients' needs. You can write to us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+      placeholder: I would like to get more information about your services.
+  technical_coaching:
+    title: Codesai. Technical Coaching
+    name: Technical coaching
+    text: '<p>Two members of Codesai will join your team several days a week in 4 to 6 hour remote sessions to develop functionality together, do code reviews, answer questions, or explore and discuss solutions.</p>
+           <p>The emphasis of this service is contributing to the growth and technical development of the team. The coaching would be done through remote pair programming, code reviews or ensemble programming sessions with the team.</p>'
+    price: Contact us
+    call_to_action:
+      title: OK! I'm interested in the Technical Coaching service
+      text: <p>If you would like more information or want to discuss how we can help your team, you can write to us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+      placeholder: I would like to get more information about the Technical Coaching service.
+      link: /en/services/technical-coaching/#call-to-action
+  team_augmentation:
+    title: Codesai. Team Augmentation
+    name: Team augmentation
+    text: '<p>Two members of Codesai would join your team several days a week in 6 to 8 hour remote sessions to develop functionality.</p>
+           <p>The emphasis of this service is functionality delivery. If some pair programming or ensemble programming sessions are also done with team members, it could also contribute somewhat to the team''s growth and development.</p>'
+    price: Contact us
+    call_to_action:
+      title: OK! I'm interested in the Team Augmentation service
+      text: <p>If you would like more information or want to discuss how we can help your team, you can write to us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+      placeholder: I would like to get more information about the Team Augmentation service.
+      link: /en/services/team-augmentation/#call-to-action
+  consultancy_service:
+    title: Codesai. Consultancy
+    name: Consultancy
+    text: '<p>The objective of these consultancy sessions would be to evaluate the state of your systems, help the team resolve problems and questions, or land new technical practices.</p>
+           <p>To do this, punctually or periodically, two members of Codesai would join the team, to do code reviews, answer questions and explore or discuss solutions together. We could also do sessions to explore architecture, practices and/or processes.</p>'
+    price: Contact us
+    call_to_action:
+      title: OK! I'm interested in the Consultancy service
+      text: <p>If you would like more information or want to discuss how we can help your team, you can write to us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+      placeholder: I would like to get more information about the Consultancy service.
+      link: /en/services/consultancy/#call-to-action
   courses:
     tdd:
       name: Codesai. TDD Course
@@ -1107,12 +1161,15 @@ components:
     participant: person
     iva_excluded: (V.A.T. not included)
     button: I'm interested!
+  service:
+    button: More Information
 
 header:
   links:
     team: Team
     clients: Clients
     courses: Training
+    services: Services
     blog: Blog
     contact: Contact
     newsletter: Newsletter 
@@ -1139,6 +1196,10 @@ urls:
   changing_legacy: /en/trainings/changing-legacy/
   cd_databases: /en/trainings/cd-databases/
   intellij_guru: /en/trainings/intellij-guru/
+  services: /en/services/
+  technical_coaching: /en/services/technical-coaching/
+  team_augmentation: /en/services/team-augmentation/
+  consultancy_service: /en/services/consultancy/
   blog: /en/publications/
   contact: /en/#call-to-action
   newsletter: /en/newsletter

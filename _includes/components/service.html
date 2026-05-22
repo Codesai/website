@@ -1,0 +1,15 @@
+<div class="service">
+    <div class="image">
+        <span>
+            <img src="{{ include.logo | default: '/assets/services/logos/placeholder.svg' }}" alt="{{ include.name }} service">
+        </span>
+    </div>
+    <div class="description">
+        <h2>{{ include.name }}</h2>
+        <p>{{ include.description }}</p>
+        <a href="{{ include.link }}">
+            {% capture button %}{{ site.translations[site.lang].components.service.button }}{% endcapture %}
+            {% include components/codesai-button.html content=button %}
+        </a>
+    </div>
+</div>
