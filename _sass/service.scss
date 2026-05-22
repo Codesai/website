@@ -11,6 +11,11 @@
 
   .service {
     max-width: $max-page-width;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: $max-width-breakpoint) {
+      margin-bottom: 2rem;
+    }
 
     .information {
       display: flex;
