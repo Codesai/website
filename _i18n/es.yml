@@ -1086,19 +1086,19 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
   services_page:
     title: Codesai. Servicios
     header: Nuestros servicios
-    text: '<p>En Codesai colaboramos con equipos de una forma cercana y continua.</p><p>Ofrecemos diferentes modalidades de trabajo para adaptarnos a lo que tu equipo necesita en cada momento:</p><p>desde acompañamiento técnico intensivo hasta consultoría puntual.</p>'
+    text: '<p>En Codesai ayudamos a equipos de desarrollo a mejorar sus prácticas técnicas de forma cercana y continua.</p><p>Tenemos amplia experiencia acompañando equipos en la adopción de prácticas XP: TDD, refactoring, diseño emergente o trabajo con código legado, entre otras.</p><p>Ofrecemos diferentes modalidades de trabajo para adaptarnos a lo que tu equipo necesita en cada momento: desde acompañamiento técnico intensivo hasta consultoría puntual.</p>'
     services:
       technical_coaching:
         name: Coaching técnico
-        description: Dos miembros de Codesai se unirán al equipo varios días a la semana en sesiones de 4 a 6 horas de forma remota para desarrollar funcionalidad junto con ellos, hacer reviews de código, resolver dudas o explorar y discutir soluciones juntos.
+        description: Dos miembros de Codesai se unirán a tu equipo varios días a la semana en sesiones remotas de 4 a 6 horas para desarrollar funcionalidad junto a vosotros, hacer code reviews y sesiones de pair programming o ensemble programming, con el objetivo de impulsar el crecimiento técnico del equipo.
         link: /servicios/technical-coaching/
       team_augmentation:
         name: Aumento de equipo
-        description: Dos miembros de Codesai se unirían al equipo varios días a la semana en sesiones de 6 a 8 horas de forma remota para desarrollar funcionalidad.
+        description: Dos miembros de Codesai se unirán a tu equipo varios días a la semana en sesiones remotas de 6 a 8 horas para desarrollar funcionalidad con la calidad técnica que necesita tu proyecto.
         link: /servicios/team-augmentation/
       consultancy:
         name: Consultoría
-        description: El objetivo de estas consultorías sería evaluar el estado de sus sistemas, ayudar al equipo a resolver problemas y dudas, o aterrizar nuevas prácticas técnicas.
+        description: El objetivo de estas consultorías es evaluar el estado de tus sistemas, ayudar al equipo a resolver problemas concretos, o introducir nuevas prácticas técnicas como TDD, refactoring o diseño de software.
         link: /servicios/consultancy/
     contact:
       title: ¿Te interesa alguno de nuestros servicios? ¡Cuéntanos lo que necesitas!
@@ -1107,8 +1107,8 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
   technical_coaching:
     title: Codesai. Coaching Técnico
     name: Coaching técnico
-    text: '<p>Dos miembros de Codesai se unirán al equipo varios días a la semana en sesiones de 4 a 6 horas de forma remota para desarrollar funcionalidad junto con ellos, hacer reviews de código, resolver dudas o explorar y discutir soluciones juntos.</p>
-           <p>El énfasis de este servicio es contribuir al crecimiento y desarrollo técnico del equipo. El coaching se realizaría a través de sesiones remotas de pair programming, code reviews o ensemble programming con el equipo.</p>'
+    text: '<p>Dos miembros de Codesai se unirán a tu equipo varios días a la semana en sesiones remotas de 4 a 6 horas para desarrollar funcionalidad junto a vosotros, hacer code reviews, explorar soluciones y discutirlas juntos.</p>
+           <p>El objetivo principal de este servicio es contribuir al crecimiento y desarrollo técnico del equipo. El coaching se realizará a través de sesiones de pair programming, code reviews y ensemble programming, donde trabajaremos prácticas como TDD, refactoring, diseño emergente o cualquier otra práctica técnica que el equipo quiera mejorar.</p>'
     price: Consultar
     call_to_action:
       title: ¡OK! Me interesa el servicio de Coaching Técnico
@@ -1118,8 +1118,8 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
   team_augmentation:
     title: Codesai. Aumento de Equipo
     name: Aumento de equipo
-    text: '<p>Dos miembros de Codesai se unirían al equipo varios días a la semana en sesiones de 6 a 8 horas de forma remota para desarrollar funcionalidad.</p>
-           <p>El énfasis de este servicio es la entrega de funcionalidad. Si además se hacen algunas sesiones de pair programming o ensemble programming con miembros del equipo también podría contribuir algo al crecimiento y desarrollo del equipo.</p>'
+    text: '<p>Dos miembros de Codesai se unirán a tu equipo varios días a la semana en sesiones remotas de 6 a 8 horas para desarrollar funcionalidad.</p>
+           <p>El énfasis principal de este servicio es la entrega de funcionalidad con la calidad técnica que necesita tu proyecto. Las sesiones de pair programming y ensemble programming con el equipo también contribuyen al crecimiento técnico, ya que aportamos nuestra experiencia en prácticas como TDD, refactoring y diseño emergente.</p>'
     price: Consultar
     call_to_action:
       title: ¡OK! Me interesa el servicio de Aumento de Equipo
@@ -1129,8 +1129,8 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
   consultancy_service:
     title: Codesai. Consultoría
     name: Consultoría
-    text: '<p>El objetivo de estas consultorías sería evaluar el estado de sus sistemas, ayudar al equipo a resolver problemas y dudas, o aterrizar nuevas prácticas técnicas.</p>
-           <p>Para ello, puntualmente o periódicamente, dos miembros de Codesai se unirían al equipo, para hacer reviews de código, resolver dudas y explorar o discutir soluciones juntos. También podríamos hacer sesiones para explorar arquitectura, prácticas y/o procesos.</p>'
+    text: '<p>El objetivo de estas consultorías es evaluar el estado de tus sistemas, ayudar al equipo a resolver problemas concretos, o introducir nuevas prácticas técnicas.</p>
+           <p>Para ello, de forma puntual o periódica, dos miembros de Codesai se unirán al equipo para hacer reviews de código, explorar soluciones y discutirlas juntos. También realizaremos sesiones para explorar arquitectura, prácticas y procesos, siempre con el foco en la mejora sostenible de la calidad técnica.</p>'
     price: Consultar
     call_to_action:
       title: ¡OK! Me interesa el servicio de Consultoría

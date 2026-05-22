@@ -176,19 +176,19 @@ pages:
   services_page:
     title: Codesai. Services
     header: Our services
-    text: '<p>At Codesai we collaborate closely and continuously with teams.</p><p>We offer different engagement models to adapt to what your team needs at any given moment:</p><p>from intensive technical coaching to on-demand consultancy.</p>'
+    text: '<p>At Codesai we help development teams improve their technical practices, working closely and continuously alongside them.</p><p>We have extensive experience guiding teams in the adoption of XP practices: TDD, refactoring, emergent design, working with legacy code, and more.</p><p>We offer different engagement models to adapt to what your team needs at any given moment: from intensive technical coaching to on-demand consultancy.</p>'
     services:
       technical_coaching:
         name: Technical coaching
-        description: Two members of Codesai will join your team several days a week in 4 to 6 hour remote sessions to develop functionality together, do code reviews, answer questions, or explore and discuss solutions.
+        description: Two members of Codesai will join your team several days a week in 4 to 6 hour remote sessions to develop functionality together, conduct code reviews, and run pair programming and ensemble programming sessions — with the goal of accelerating your team's technical growth.
         link: /en/services/technical-coaching/
       team_augmentation:
         name: Team augmentation
-        description: Two members of Codesai would join your team several days a week in 6 to 8 hour remote sessions to develop functionality.
+        description: Two members of Codesai will join your team several days a week in 6 to 8 hour remote sessions to develop functionality with the technical quality your project needs.
         link: /en/services/team-augmentation/
       consultancy:
         name: Consultancy
-        description: The objective of these consultancy sessions would be to evaluate the state of your systems, help the team resolve problems and questions, or land new technical practices.
+        description: The aim of these consultancy sessions is to assess the state of your systems, help your team resolve specific problems, or introduce new technical practices such as TDD, refactoring or software design.
         link: /en/services/consultancy/
     contact:
       title: Interested in any of our services? Tell us what you need!
@@ -197,8 +197,8 @@ pages:
   technical_coaching:
     title: Codesai. Technical Coaching
     name: Technical coaching
-    text: '<p>Two members of Codesai will join your team several days a week in 4 to 6 hour remote sessions to develop functionality together, do code reviews, answer questions, or explore and discuss solutions.</p>
-           <p>The emphasis of this service is contributing to the growth and technical development of the team. The coaching would be done through remote pair programming, code reviews or ensemble programming sessions with the team.</p>'
+    text: '<p>Two members of Codesai will join your team several days a week in 4 to 6 hour remote sessions to develop functionality together, do code reviews, explore solutions and discuss them as a team.</p>
+           <p>The primary focus of this service is contributing to the technical growth and development of your team. Coaching takes place through remote pair programming, code reviews and ensemble programming sessions, where we work on practices such as TDD, refactoring, emergent design, or any other technical practice your team wants to improve.</p>'
     price: Contact us
     call_to_action:
       title: OK! I'm interested in the Technical Coaching service
@@ -208,8 +208,8 @@ pages:
   team_augmentation:
     title: Codesai. Team Augmentation
     name: Team augmentation
-    text: '<p>Two members of Codesai would join your team several days a week in 6 to 8 hour remote sessions to develop functionality.</p>
-           <p>The emphasis of this service is functionality delivery. If some pair programming or ensemble programming sessions are also done with team members, it could also contribute somewhat to the team''s growth and development.</p>'
+    text: '<p>Two members of Codesai will join your team several days a week in 6 to 8 hour remote sessions to develop functionality.</p>
+           <p>The primary focus of this service is delivering functionality with the technical quality your project needs. Pair programming and ensemble programming sessions with the team also contribute to your team''s technical growth, as we bring our expertise in practices such as TDD, refactoring and emergent design.</p>'
     price: Contact us
     call_to_action:
       title: OK! I'm interested in the Team Augmentation service
@@ -219,8 +219,8 @@ pages:
   consultancy_service:
     title: Codesai. Consultancy
     name: Consultancy
-    text: '<p>The objective of these consultancy sessions would be to evaluate the state of your systems, help the team resolve problems and questions, or land new technical practices.</p>
-           <p>To do this, punctually or periodically, two members of Codesai would join the team, to do code reviews, answer questions and explore or discuss solutions together. We could also do sessions to explore architecture, practices and/or processes.</p>'
+    text: '<p>The aim of these consultancy sessions is to assess the state of your systems, help your team resolve specific problems, or introduce new technical practices.</p>
+           <p>To achieve this, on an ad-hoc or recurring basis, two members of Codesai will join your team to do code reviews, explore solutions and discuss them together. We will also run sessions to explore architecture, practices and processes, always focused on sustainable improvement of technical quality.</p>'
     price: Contact us
     call_to_action:
       title: OK! I'm interested in the Consultancy service
