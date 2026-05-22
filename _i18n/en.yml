@@ -14,11 +14,11 @@ pages:
     title: Software development and training
     slogan1: Accelerating value delivery
     slogan2: Taking care of internal and external quality
-    slogan3: Becoming a part of your team, making it grow
+    slogan3: Becoming part of your team and helping it grow
     about:
       title: Part of your team
-      first_paragraph: At Codesai we firmly believe that the best results are obtained by collaborating closely with the internal teams of each company. That's why we like to <strong>be a part of them, teaching them first-hand how to improve their processes and develop better code</strong>. We share their achievements, frustrations, doubts... without forgetting to create a good working environment and bring out the best in everyone.
-      second_paragraph: We try to have very versatile profiles, which allows us to support you in multiple aspects of the development of your product. From the technical team, but side by side with the business.
+      first_paragraph: At Codesai we firmly believe that the best results are obtained by collaborating closely with the internal teams of each company. That's why we like to <strong>be a part of them, teaching them first-hand how to improve their processes and develop better code</strong>. We share their achievements, frustrations, questions... without forgetting to create a good working environment and bring out the best in everyone.
+      second_paragraph: We try to have very versatile team members, which allows us to support you in multiple aspects of the development of your product. Working from the technical side, but side-by-side with the business.
     clients:
       title: Companies that have trusted us
     services:
@@ -49,23 +49,23 @@ pages:
         call_to_action: Success stories
     tdd:
       title: Test Driven Development (TDD) training experts
-      first_paragraph: TDD is part of our daily workflow, so when we provide TDD training we do it with the conviction that this technique greatly benefits and can raise the technical level of a development team like no other. At Codesai we are proud to be a reference in both the application and training in Test Driven Development, with some of the most recognized professionals in the industry and the community in the application of this technique.
-      second_paragraph: We are aware that applying TDD effectively is very complex and that many teams throw in the towel after trying it for a while. In our experience, having a team of experienced professionals can reduce the initial learning curve and make a difference in helping the team to extract all the value that this technique can provide them with.
+      first_paragraph: TDD is part of our daily workflow, so when we provide TDD training we do it with the conviction that this technique greatly benefits and can raise the technical level of a development team like no other. At Codesai we are proud to be a benchmark in both the application and training in Test Driven Development, with some of the most recognized professionals in the industry and the community in the application of this technique.
+      second_paragraph: We are aware that applying TDD effectively is very complex and that many teams throw in the towel after trying it for a while. In our experience, having a team of experienced professionals can reduce the initial learning curve and make a difference in helping the team get the most value this technique has to offer.
       call_to_action: More Info
     team:
       title: About Us
-      alfredo: More than 20 years programming. During the last years he has led teams with Agile methods such as Extreme Programming and practices such as DDD (Domain Driven Design). Veteran and well known member of the Java Hispano community.
+      alfredo: More than 20 years of programming. In recent years he has led teams with Agile methods such as Extreme Programming and practices such as DDD (Domain Driven Design). Veteran and well-known member of the Java Hispano community.
       dani: Applying Agile methodologies on a daily basis allows him to do a better job and rediscover his passion for software development. Co-founder of the Software Craftsmanship community of Gran Canaria and co-organizer of Socrates Canaries 2016.
       manu_tordesillas: Computer and Electronics Engineer with 6 years of experience in software development. He considers learning and continuous improvement essential to leave a positive mark on society and industry.
-      fran: Cares about getting things right and continuous improvement. Advocate of Agile methods as a way to build excellent software. Although his background is technical, he is interested in other areas related to the final product (business, UX, operations, etc).
-      antonio: He found organically his place in teams interested in continuous improvement and in building beautiful code. He develops mainly in Javascript and Groovy. He seeks the integration of all profiles, especially design profiles in product development.
+      fran: Cares about getting things right and continuously improving. Advocate of Agile methods as a way to build excellent software. Although his background is technical, he is interested in other areas related to the final product (business, UX, operations, etc).
+      antonio: He organically found his place in teams interested in continuous improvement and in building beautiful code. He develops mainly in Javascript and Groovy. He seeks the integration of all roles, especially design roles in product development.
       miguel: Passionate about development and continuous training to achieve better solutions. Co-founder of the Software Craftsmanship community of Gran Canaria. Co-organizer of the international congress SoCraTes 2016 (Software Craftsmanship and Testing) in Spain.
       manu_rivero: Software developer and technical coach. Co-founder of the Software Crafters community in Barcelona, part of the Clojure Developers Barcelona community and co-founder of the Apprentices Community.
       ruben: Learning and developing since 2014, he loves following XP practices and collaborating with the business to deliver value as quickly as possible. Intends to retire having deleted more code than he has written. Co-organizer of Socrates Canaries 2019.
     collaborators: Our Collaborators
     blog:
       title: Sharing Knowledge
-      paragraph: Agile Spain Conference, DevFest, Tarugoconf... At Codesai we love to participate in events and share points of view with other professionals (so much so, that we have even dared to organize some). In addition to being involved in some communities, we also <strong>publish content that we hope can help and contribute to our industry.</strong>
+      paragraph: Agile Spain Conference, DevFest, Tarugoconf... At Codesai we love to participate in events and share points of view with other professionals (so much so, that we have even taken the initiative to organize some ourselves). In addition to being involved in some communities, we also <strong>publish content that we hope can help and contribute to our industry.</strong>
       call_to_action: View more content
     contact:
       title: Contact us!
