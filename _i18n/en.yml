@@ -237,27 +237,58 @@ pages:
         title: Contents
         content: '<div class="topics">
                     <div class="group"><span>1.</span> Introduction to TDD</div>
-                    <div class="subgroup"><span>1.1.</span> Why use TDD?</div>
-                    <div class="subgroup"><span>1.2.</span> TDD Cycle</div>
-                    <div class="subgroup"><span>1.3.</span> Examples selection & heuristics</div>
-                    <div class="subgroup"><span>1.4.</span> Examples list</div>
-                    <div class="subgroup"><span>1.5.</span> Decomposing behaviors</div>
-                    <div class="subgroup"><span>1.6.</span> Partitions and redundant examples</div>
-                    <div class="subgroup"><span>1.7.</span> Boundary-value analysis</div>
-                    <div class="subgroup"><span>1.8.</span> Mutation testing</div>
-                    <div class="subgroup"><span>1.9.</span> Test order selection & TDD heuristics</div>
+                    <div class="subgroup"><span>1.1.</span> Why TDD?</div>
+                    <div class="subgroup"><span>1.2.</span> TDD mechanics</div>
+                    <div class="subgroup"><span>--- 1.2.1.</span> Basic TDD cycle</div>
+                    <div class="subgroup"><span>--- 1.2.2.</span> Canon TDD</div>
+                    <div class="subgroup"><span>--- 1.2.3.</span> Examples list, step size and triangulation</div>
+                    <div class="subgroup"><span>1.3.</span> About testing</div>
 
-                    <div class="group"><span>2.</span> Using Test Doubles</div>
-                    <div class="subgroup"><span>2.1.</span> Why test doubles?</div>
-                    <div class="subgroup"><span>2.2.</span> Recognizing awkward dependencies: FIRS</div>
-                    <div class="subgroup"><span>2.3.</span> Interaction-based testing and TDD</div>
-                    <div class="subgroup"><span>2.4.</span> Dummies, fakes, stubs, spies & mocks</div>
+                    <div class="group"><span>2.</span> Writing and refining a list of examples</div>
+                    <div class="subgroup"><span>2.1.</span> How do we generate a list of examples?</div>
+                    <div class="subgroup"><span>2.2.</span> Understanding the problem</div>
+                    <div class="subgroup"><span>2.2.</span> Refining the list of examples</div>
+                    <div class="subgroup"><span>--- 2.2.1.</span> Partitions: redundant examples</div>
+                    <div class="subgroup"><span>--- 2.2.2.</span> Boundary-value analysis: missing examples</div>
+                    <div class="subgroup"><span>2.3.</span> Mutation testing</div>
 
-                    <div class="group"><span>3.</span> Patterns, sustainability and basic cycle variations</div>
-                    <div class="group"><span>4.</span> Outside-in TDD & Classicist vs Mockist</div>
-                    <div class="subgroup"><span>4.1.</span> Advantages over inside-out</div>
-                    <div class="subgroup"><span>4.2.</span> Classicist & Mockist styles: unit definition, flow and implications on design</div>
-                    <div class="subgroup"><span>4.3.</span> Misuse of test doubles and tips to avoid it</div>
+                    <div class="group"><span>3.</span> Test order and heuristics</div>
+                    <div class="subgroup"><span>3.1.</span> Behaviour composition</div>
+                    <div class="subgroup"><span>3.2.</span> Order of examples in TDD</div>
+                    <div class="subgroup"><span>3.3.</span> Useful heuristics</div>
+                    <div class="subgroup"><span>--- 3.3.1.</span> Zero, One, Many</div>
+                    <div class="subgroup"><span>--- 3.3.2.</span> ZOMBIES</div>
+
+                    <div class="group"><span>4.</span> Green Bar patterns</div>
+
+                    <div class="group"><span>5.</span> Using test doubles: why, where and how?</div>
+                    <div class="subgroup"><span>5.1.</span> Value of test doubles</div>
+                    <div class="subgroup"><span>5.2.</span> Recognizing awkward dependencies: FIRS</div>
+                    <div class="subgroup"><span>5.3.</span> How do we design code that respects FIRS?</div>
+                    <div class="subgroup"><span>5.4.</span> Dummies, fakes, stubs, spies and mocks</div>
+                    <div class="subgroup"><span>5.5.</span> Enabling TDD with testable design</div>
+
+                    <div class="group"><span>6.</span> Problems and tips when using test doubles</div>
+                    <div class="subgroup"><span>6.1.</span> Common misconception: the class as the unit</div>
+                    <div class="subgroup"><span>--- 6.1.1.</span> Objects vs Values</div>
+                    <div class="subgroup"><span>--- 6.1.2.</span> Peers vs internals</div>
+                    <div class="subgroup"><span>--- 6.1.3.</span> What is the unit?</div>
+                    <div class="subgroup"><span>6.2.</span> What to double and what not to double?</div>
+                    <div class="subgroup"><span>6.3.</span> Test doubles as feedback tools</div>
+                    <div class="subgroup"><span>6.4.</span> Listening to the tests</div>
+                    <div class="subgroup"><span>6.5.</span> Tips for designing interfaces that are robust to change</div>
+                    <div class="subgroup"><span>6.5.</span> The roots of trauma with mocks</div>
+
+                    <div class="group"><span>7.</span> Sustainable TDD and TDD cycle variations</div>
+                    <div class="subgroup"><span>7.1.</span> Tips for doing TDD sustainably</div>
+                    <div class="subgroup"><span>7.2.</span> Useful TDD cycle variations</div>
+
+                    <div class="group"><span>8.</span> Outside-in TDD & Classicist vs Mockist styles</div>
+                    <div class="subgroup"><span>8.1.</span> Advantages over inside-out</div>
+                    <div class="subgroup"><span>8.2.</span> Classicist & Mockist approaches</div>
+                    <div class="subgroup"><span>--- 8.2.1.</span> Development flow</div>
+                    <div class="subgroup"><span>--- 8.2.2.</span> Design implications</div>
+                    <div class="subgroup"><span>--- 8.2.3.</span> Unit definition</div>
                 </div>'
       languages:
         title: Languages
