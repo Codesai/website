@@ -181,37 +181,30 @@ pages:
              <p>En este curso, tras cada lección en la que profundizaremos en las bases de TDD, aplicarás los nuevos conocimientos de manera práctica haciendo ensemble programming con otros asistentes, siempre bajo la guía de los formadores.</p>'
       agenda:
         title: Contenido
-        day_1:
-          title: Primer bloque
-          content: '<div class="topics">
-                      <div class="group"><span>1.</span> Introducción a TDD</div>
-                      <div class="subgroup"><span>&bull;</span> ¿Por qué TDD?</div>
-                      <div class="subgroup"><span>&bull;</span> Ciclo de TDD</div>
+        content: '<div class="topics">
+                    <div class="group"><span>1.</span> Introducción a TDD</div>
+                    <div class="subgroup"><span>1.1.</span> ¿Por qué TDD?</div>
+                    <div class="subgroup"><span>1.2.</span> Ciclo de TDD</div>
+                    <div class="subgroup"><span>1.3.</span> Selección de ejemplos: conceptos útiles y heurísticas</div>
+                    <div class="subgroup"><span>1.4.</span> Lista de ejemplos</div>
+                    <div class="subgroup"><span>1.5.</span> Descomposición de comportamientos</div>
+                    <div class="subgroup"><span>1.6.</span> Particiones y redundancia de ejemplos</div>
+                    <div class="subgroup"><span>1.7.</span> Análisis de valores de frontera</div>
+                    <div class="subgroup"><span>1.8.</span> Mutation testing</div>
+                    <div class="subgroup"><span>1.9.</span> Orden de los tests y heurísticas</div>
 
-                      <div class="group"><span>2. </span>Selección de ejemplos: conceptos útiles y heurísticas</div>
-                      <div class="subgroup"><span>&bull;</span> Lista de ejemplos</div>
-                      <div class="subgroup"><span>&bull;</span> Descomposición de comportamientos</div>
-                      <div class="subgroup"><span>&bull;</span> Particiones y redundancia de ejemplos</div>
-                      <div class="subgroup"><span>&bull;</span> Análisis de valores de frontera</div> 
-                      <div class="subgroup"><span>&bull;</span> Mutation testing</div>            
-                      <div class="subgroup"><span>&bull;</span> Orden de los tests y heurísticas</div>
-                  </div>'
-        day_2:
-          title: Segundo bloque
-          content: '<div class="topics">
-          <div class="group"><span>3. </span>Usando dobles de prueba: por qué, dónde y cómo</div>
-          <div class="subgroup"><span>&bull;</span> Utilidad de los dobles de prueba</div>
-          <div class="subgroup"><span>&bull;</span> Reconociendo dependencias incómodas: FIRS</div>
-          <div class="subgroup"><span>&bull;</span> Testing basado en la interacción y TDD</div>
-          <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
-          
-          <div class="group"><span>4. </span>Patrones, sostenibilidad y variaciones del ciclo básico de TDD</div>
+                    <div class="group"><span>2.</span> Usando dobles de prueba</div>
+                    <div class="subgroup"><span>2.1.</span> Utilidad de los dobles de prueba</div>
+                    <div class="subgroup"><span>2.2.</span> Reconociendo dependencias incómodas: FIRS</div>
+                    <div class="subgroup"><span>2.3.</span> Testing basado en la interacción y TDD</div>
+                    <div class="subgroup"><span>2.4.</span> Dummies, fakes, stubs, spies & mocks</div>
 
-          <div class="group"><span>5. </span>Outside-in TDD & Classicist vs Mockist</div>
-          <div class="subgroup"><span>&bull;</span> Ventajas sobre inside-out</div>
-          <div class="subgroup"><span>&bull;</span> Enfoques Classicist & Mockist: definición de la unidad, flujo e implicaciones en el diseño</div>
-          <div class="subgroup"><span>&bull;</span> Mal uso de los dobles de prueba y consejos para evitarlo</div>
-      </div>'
+                    <div class="group"><span>3.</span> Patrones, sostenibilidad y variaciones del ciclo básico de TDD</div>
+                    <div class="group"><span>4.</span> Outside-in TDD & Classicist vs Mockist</div>
+                    <div class="subgroup"><span>4.1.</span> Ventajas sobre inside-out</div>
+                    <div class="subgroup"><span>4.2.</span> Enfoques Classicist & Mockist: definición de la unidad, flujo e implicaciones en el diseño</div>
+                    <div class="subgroup"><span>4.3.</span> Mal uso de los dobles de prueba y consejos para evitarlo</div>
+                </div>'
       languages:
         title: Lenguajes
         text: <p>Los ejemplos y katas están en Java, JavaScript, C#, TypeScript y PHP, pero si necesitas otro lenguaje contacta con nosotros.</p>

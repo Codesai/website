@@ -235,37 +235,30 @@ pages:
              <p>In this course, after every lesson during which we will delve into the foundations of TDD, you will apply the new knowledge in a practical way by doing ensemble programming with other participants, always under the guidance of the trainers.</p>'
       agenda:
         title: Contents
-        day_1:
-          title: Part One
-          content: '<div class="topics">
-                      <div class="group"><span>1.</span> Introduction to TDD</div>
-                      <div class="subgroup"><span>&bull;</span> Why use TDD?</div>
-                      <div class="subgroup"><span>&bull;</span> TDD Cycle</div>
+        content: '<div class="topics">
+                    <div class="group"><span>1.</span> Introduction to TDD</div>
+                    <div class="subgroup"><span>1.1.</span> Why use TDD?</div>
+                    <div class="subgroup"><span>1.2.</span> TDD Cycle</div>
+                    <div class="subgroup"><span>1.3.</span> Examples selection & heuristics</div>
+                    <div class="subgroup"><span>1.4.</span> Examples list</div>
+                    <div class="subgroup"><span>1.5.</span> Decomposing behaviors</div>
+                    <div class="subgroup"><span>1.6.</span> Partitions and redundant examples</div>
+                    <div class="subgroup"><span>1.7.</span> Boundary-value analysis</div>
+                    <div class="subgroup"><span>1.8.</span> Mutation testing</div>
+                    <div class="subgroup"><span>1.9.</span> Test order selection & TDD heuristics</div>
 
-                      <div class="group"><span>2. </span>Examples selection & heuristics</div>
-                      <div class="subgroup"><span>&bull;</span> Examples list</div>
-                      <div class="subgroup"><span>&bull;</span> Decomposing behaviors</div>
-                      <div class="subgroup"><span>&bull;</span> Partitions and redundant examples</div>
-                      <div class="subgroup"><span>&bull;</span> Boundary-value analysis</div> 
-                      <div class="subgroup"><span>&bull;</span> Mutation testing</div> 
-                      <div class="subgroup"><span>&bull;</span> Test order selection & TDD heuristics</div>
-                  </div>'
-        day_2:
-          title: Part Two
-          content: '<div class="topics">
-          <div class="group"><span>3. </span>Using Test Doubles: why, where and how</div>
-          <div class="subgroup"><span>&bull;</span> Why test doubles?</div>
-          <div class="subgroup"><span>&bull;</span> Recognizing awkward dependencies: FIRS</div>
-          <div class="subgroup"><span>&bull;</span> Interaction-based testing and TDD</div>
-          <div class="subgroup"><span>&bull;</span> Dummies, fakes, stubs, spies & mocks</div>
-          
-          <div class="group"><span>4. </span>Patterns, sustainability and basic cycle variations</div>
+                    <div class="group"><span>2.</span> Using Test Doubles</div>
+                    <div class="subgroup"><span>2.1.</span> Why test doubles?</div>
+                    <div class="subgroup"><span>2.2.</span> Recognizing awkward dependencies: FIRS</div>
+                    <div class="subgroup"><span>2.3.</span> Interaction-based testing and TDD</div>
+                    <div class="subgroup"><span>2.4.</span> Dummies, fakes, stubs, spies & mocks</div>
 
-          <div class="group"><span>5. </span>Outside-in TDD & Classicist vs Mockist</div>
-          <div class="subgroup"><span>&bull;</span> Advantages over inside-out</div>
-          <div class="subgroup"><span>&bull;</span> Classicist & Mockist styles: unit definition, flow and implications on design</div>
-          <div class="subgroup"><span>&bull;</span> Misuse of test doubles and tips to avoid it</div>
-      </div>'
+                    <div class="group"><span>3.</span> Patterns, sustainability and basic cycle variations</div>
+                    <div class="group"><span>4.</span> Outside-in TDD & Classicist vs Mockist</div>
+                    <div class="subgroup"><span>4.1.</span> Advantages over inside-out</div>
+                    <div class="subgroup"><span>4.2.</span> Classicist & Mockist styles: unit definition, flow and implications on design</div>
+                    <div class="subgroup"><span>4.3.</span> Misuse of test doubles and tips to avoid it</div>
+                </div>'
       languages:
         title: Languages
         text: <p>The examples and katas are in Java, JavaScript, C#, TypeScript and PHP, but if you need another language please contact us.</p>

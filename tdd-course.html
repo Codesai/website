@@ -24,7 +24,6 @@ permalink_en: /trainings/tdd/
                         {%
                             include course-summary.html
                             price='590'
-                            days='2'
                             hours='20'
                             special_discount=discount
                             contact_link=link
@@ -35,13 +34,7 @@ permalink_en: /trainings/tdd/
                         <div class="title"><span>// </span>{% translate pages.courses.tdd.agenda.title %}</div>
                         <div class="description">
                             <div class="daily-agenda">
-                                <div class="day">{% translate pages.courses.tdd.agenda.day_1.title %}</div>
-                                {% translate pages.courses.tdd.agenda.day_1.content %}
-                            </div>
-                            <hr>
-                            <div class="daily-agenda">
-                                <div class="day">{% translate pages.courses.tdd.agenda.day_2.title %}</div>
-                                {% translate pages.courses.tdd.agenda.day_2.content %}
+                                {% translate pages.courses.tdd.agenda.content %}
                             </div>
                         </div>
                     </section>
@@ -72,7 +65,6 @@ permalink_en: /trainings/tdd/
                     {%
                         include course-summary.html
                         price='590'
-                        days='2'
                         hours='20'
                         special_discount=discount
                         contact_link=link
