@@ -1179,7 +1179,7 @@ components:
     title: Information
     open_dates:
       title: Upcoming open dates
-    special_discount: For open dates <span>50% discount</span> for underrepresented groups in technology
+    special_discount: "For open editions: <span>50% discount</span> for underrepresented groups in technology"
     hours: hours
     default_modality_text: Remote (ask about in-person).
     participant: person
