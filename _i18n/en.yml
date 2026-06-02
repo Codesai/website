@@ -280,10 +280,10 @@ pages:
                     <div class="subgroup"><span>6.5.</span> The roots of trauma with mocks</div>
 
                     <div class="group"><span>7.</span> Sustainable TDD and TDD cycle variations</div>
-                    <div class="subgroup"><span>7.1.</span> Tips for doing TDD sustainably</div>
+                    <div class="subgroup"><span>7.1.</span> Tips for sustainable TDD</div>
                     <div class="subgroup"><span>7.2.</span> Useful TDD cycle variations</div>
 
-                    <div class="group"><span>8.</span> Outside-in TDD & Classicist vs Mockist styles</div>
+                    <div class="group"><span>8.</span> Outside-in TDD & TDD styles</div>
                     <div class="subgroup"><span>8.1.</span> Advantages over inside-out</div>
                     <div class="subgroup"><span>8.2.</span> Classicist & Mockist approaches</div>
                     <div class="subgroup"><span>--- 8.2.1.</span> Development flow</div>
