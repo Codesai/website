@@ -1185,7 +1185,8 @@ components:
     title: Información
     open_dates:
       title: Próximos cursos en abierto
-    special_discount: <span>Bonificable por FUNDAE</span>
+    special_discount: "<span>Bonificable por FUNDAE</span>. <br> <br> En ediciones abiertas: <span>50% de descuento</span> para particulares de grupos poco representados en tecnología"
+    special_discount_short: "<span>Bonificable por FUNDAE</span>"
     hours: horas
     default_modality_text: Remoto (consultar presencial).
     participant: persona

@@ -21,7 +21,11 @@ permalink_en: /trainings/changing-legacy/
                     </div>
 
                     <div class="summary mobile">
-                        {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                        {% if site.lang == 'es' %}
+                            {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                        {% else %}
+                            {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                        {% endif %}
                         {% capture link %}{{ site.translations[site.lang].pages.courses.changing_legacy.call_to_action.link }}{% endcapture %}
                         {%
                             include course-summary.html
@@ -63,7 +67,11 @@ permalink_en: /trainings/changing-legacy/
                     </section>
                 </div>
                 <div class="summary desktop">
-                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                    {% if site.lang == 'es' %}
+                        {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                    {% else %}
+                        {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                    {% endif %}
                     {% capture link %}{{ site.translations[site.lang].pages.courses.changing_legacy.call_to_action.link }}{% endcapture %}
                     {%
                         include course-summary.html
