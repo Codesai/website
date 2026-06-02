@@ -229,7 +229,7 @@ pages:
                     <div class="subgroup"><span>7.1.</span> Consejos para hacer TDD de forma sostenible</div>
                     <div class="subgroup"><span>7.2.</span> Variaciones útiles del ciclo de TDD</div>
                     
-                    <div class="group"><span>8.</span> Outside-in TDD & Classicist vs Mockist styles</div>
+                    <div class="group"><span>8.</span> Outside-in TDD & TDD styles</div>
                     <div class="subgroup"><span>8.1.</span> Ventajas sobre inside-out</div>
                     <div class="subgroup"><span>8.2.</span> Enfoques Classicist & Mockist</div>
                     <div class="subgroup"><span>--- 8.2.1.</span> Flujo de desarrollo</div>
