@@ -184,26 +184,57 @@ pages:
         content: '<div class="topics">
                     <div class="group"><span>1.</span> Introducción a TDD</div>
                     <div class="subgroup"><span>1.1.</span> ¿Por qué TDD?</div>
-                    <div class="subgroup"><span>1.2.</span> Ciclo de TDD</div>
-                    <div class="subgroup"><span>1.3.</span> Selección de ejemplos: conceptos útiles y heurísticas</div>
-                    <div class="subgroup"><span>1.4.</span> Lista de ejemplos</div>
-                    <div class="subgroup"><span>1.5.</span> Descomposición de comportamientos</div>
-                    <div class="subgroup"><span>1.6.</span> Particiones y redundancia de ejemplos</div>
-                    <div class="subgroup"><span>1.7.</span> Análisis de valores de frontera</div>
-                    <div class="subgroup"><span>1.8.</span> Mutation testing</div>
-                    <div class="subgroup"><span>1.9.</span> Orden de los tests y heurísticas</div>
+                    <div class="subgroup"><span>1.2.</span> Mecánica de TDD</div>
+                    <div class="subgroup"><span>--- 1.2.1.</span> Ciclo básico de TDD.</div>
+                    <div class="subgroup"><span>--- 1.2.2.</span> Canon TDD.</div>
+                    <div class="subgroup"><span>--- 1.2.3.</span> Lista de ejemplos, tamaño de los pasos y triangulación.</div>
+                    <div class="subgroup"><span>1.3.</span> Sobre testing</div>
+                    
+                    <div class="group"><span>2.</span> Escribir y refinar una lista de ejemplos</div>
+                    <div class="subgroup"><span>2.1.</span> ¿Cómo generar una lista de ejemplos?</div>
+                    <div class="subgroup"><span>2.2.</span> Entendiendo el problema</div>
+                    <div class="subgroup"><span>2.3.</span> Refinando la lista de ejemplos</div>
+                    <div class="subgroup"><span>--- 2.3.1.</span> Particiones: ejemplos redundantes</div>
+                    <div class="subgroup"><span>--- 2.3.2.</span> Análisis de valores de frontera: ejemplos que faltan</div>
+                    <div class="subgroup"><span>2.4.</span> Mutation testing</div>
+                    
+                    <div class="group"><span>3.</span> Orden de los tests y heurísticas</div>
+                    <div class="subgroup"><span>3.1.</span> Descomposición de comportamientos</div>
+                    <div class="subgroup"><span>3.2.</span> Orden de los ejemplos en TDD</div>
+                    <div class="subgroup"><span>3.3.</span> Heurísticas útiles</div>
+                    <div class="subgroup"><span>--- 3.3.1.</span> Zero, One, Many</div>
+                    <div class="subgroup"><span>--- 3.3.2.</span> ZOMBIES</div>
+                    
+                    <div class="group"><span>4.</span> Patrones de Green Bar</div>
 
-                    <div class="group"><span>2.</span> Usando dobles de prueba</div>
-                    <div class="subgroup"><span>2.1.</span> Utilidad de los dobles de prueba</div>
-                    <div class="subgroup"><span>2.2.</span> Reconociendo dependencias incómodas: FIRS</div>
-                    <div class="subgroup"><span>2.3.</span> Testing basado en la interacción y TDD</div>
-                    <div class="subgroup"><span>2.4.</span> Dummies, fakes, stubs, spies & mocks</div>
-
-                    <div class="group"><span>3.</span> Patrones, sostenibilidad y variaciones del ciclo básico de TDD</div>
-                    <div class="group"><span>4.</span> Outside-in TDD & Classicist vs Mockist</div>
-                    <div class="subgroup"><span>4.1.</span> Ventajas sobre inside-out</div>
-                    <div class="subgroup"><span>4.2.</span> Enfoques Classicist & Mockist: definición de la unidad, flujo e implicaciones en el diseño</div>
-                    <div class="subgroup"><span>4.3.</span> Mal uso de los dobles de prueba y consejos para evitarlo</div>
+                    <div class="group"><span>5.</span> Usando dobles de prueba: ¿por qué, dónde y cómo?</div>
+                    <div class="subgroup"><span>5.1.</span> Utilidad de los dobles de prueba</div>
+                    <div class="subgroup"><span>5.2.</span> Reconociendo dependencias incómodas: FIRS</div>
+                    <div class="subgroup"><span>5.3.</span> ¿Cómo diseñar código que respete FIRS?</div>
+                    <div class="subgroup"><span>5.4.</span> Dummies, fakes, stubs, spies y mocks</div>
+                    <div class="subgroup"><span>5.5.</span> Habilitando TDD con diseño testeable</div>
+                    
+                    <div class="group"><span>6.</span> Problemas y consejos usando dobles de prueba</div>
+                    <div class="subgroup"><span>6.1.</span> Falsa creencia típica: la clase como la unidad</div>
+                    <div class="subgroup"><span>--- 6.1.1.</span> Objetos y Valores</div>
+                    <div class="subgroup"><span>--- 6.1.2.</span> Peers e internals</div>
+                    <div class="subgroup"><span>--- 6.1.3.</span> ¿Cuál es la unidad?</div>
+                    <div class="subgroup"><span>6.2.</span> ¿Qué doblar y que no?</div>
+                    <div class="subgroup"><span>6.3.</span> Los dobles de prueba como herramientas de feedback</div>
+                    <div class="subgroup"><span>6.4.</span> Escuchar a los tests</div>
+                    <div class="subgroup"><span>6.5.</span> Consejos para diseñar interfaces robustas al cambio</div>
+                    <div class="subgroup"><span>6.5.</span> Las raíces del trauma con los mocks</div>
+                    
+                    <div class="group"><span>7.</span> TDD sostenible y variaciones del ciclo de TDD</div>
+                    <div class="subgroup"><span>7.1.</span> Consejos para hacer TDD de forma sostenible</div>
+                    <div class="subgroup"><span>7.2.</span> Variaciones útiles del ciclo de TDD</div>
+                    
+                    <div class="group"><span>8.</span> Outside-in TDD & Classicist vs Mockist styles</div>
+                    <div class="subgroup"><span>8.1.</span> Ventajas sobre inside-out</div>
+                    <div class="subgroup"><span>8.2.</span> Enfoques Classicist & Mockist</div>
+                    <div class="subgroup"><span>--- 8.2.1.</span> Flujo de desarrollo</div>
+                    <div class="subgroup"><span>--- 8.2.2.</span> Implicaciones en el diseño</div>
+                    <div class="subgroup"><span>--- 8.2.3.</span> Definición de la unidad</div>
                 </div>'
       languages:
         title: Lenguajes
