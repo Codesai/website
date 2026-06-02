@@ -133,7 +133,7 @@ pages:
   training:
     title: Codesai. Training
     header: Teaching you how to develop better code
-    text: <p>All our courses take place <strong>in-house</strong> (although we also offer some open dates). This kind of training will help correct mistakes and fully optimize the learning process in a way which is not possible through books or videos. Moreover, you will be able to apply it safely in your daily life. Ask us about upcoming calls.</p><p><strong>In open editions, we also offer a 50% discount for underrepresented groups in technology.</strong></p>
+    text: <p>All our trainings are delivered as <strong>private trainings</strong> for a single company (although we also offer some open editions). This kind of training helps you correct mistakes and get the most out of the learning process in a way that books or videos cannot. You can then apply it safely in your day-to-day work. Ask us about upcoming sessions.</p><p><strong>In open editions, we also offer a 50% discount for underrepresented groups in technology.</strong></p>
     courses:
       tdd:
         name: Test Driven Development (TDD)
@@ -172,7 +172,7 @@ pages:
     contact:
       title: Can't find the training you need? Tell us what you are looking for!
       text: <p>At Codesai we are always open to listen to suggestions made by our customers. We would like to offer you a training that fits your needs. You can write to us at <strong>contact@codesai.com</strong> or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
-      placeholder: Are you interested in any of our trainings? Sign up for future open trainings or if you are interested in having us provide training for your company.
+      placeholder: Are you interested in any of our trainings? Sign up for future open editions, or get in touch if you would like us to provide training for your company.
   services_page:
     title: Codesai. Services
     header: Our services
@@ -300,14 +300,14 @@ pages:
         title: Who is it intended for?
         text: '<p>This is a training for people who already know how to code. Mostly programmers but also testers who want to learn more about code quality and automatic testing can benefit from it. All you need is to bring an open mind and a desire to learn. If you have never tried TDD before, you might be surprised.</p>'
       where:
-        title: In-house and open dates
-        text: '<p>The training can be conducted in-house (closed to the company that contracts it) or openly. We try to offer one open edition every term. It is common for small companies to send people to our open courses. If you would like to be notified of upcoming open dates, please write to us at contact@codesai.com or fill out the contact form.</p>
-               <p class="unicode">Please note that in-house trainings are held once the client hires us. We will need to know the date one month in advance in order to be able to schedule them.</p>'
+        title: Private training and open editions
+        text: '<p>The training can be conducted as a private training, exclusively for the company that contracts it, or as an open edition. We try to offer one open edition every term. It is common for small companies to send people to our open editions. If you would like to be notified of upcoming open editions, please write to us at contact@codesai.com or fill out the contact form.</p>
+               <p class="unicode">Please note that private training sessions are held once the client hires us. We will need to know the date one month in advance in order to be able to schedule them.</p>'
       call_to_action:
         link: /en/trainings/tdd#call-to-action
         title: OK! I am interested in taking the Test Driven Development (TDD) Course
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
-        placeholder: I would be interested in receiving updates about the trainings and upcoming open dates
+        placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
     deliberate_practice:
       name: Deliberate Practice Programme
       title: Codesai. Deliberate Practice Programme
@@ -350,7 +350,7 @@ pages:
         link: /en/trainings/cd-databases/#call-to-action
         title: OK! I am interested in taking the Continuous Delivery with Databases Course
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
-        placeholder: I would be interested in receiving updates about the trainings and upcoming open dates
+        placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
       content:
         title: Contents
         day_1:
@@ -386,9 +386,9 @@ pages:
         title: Who is it intended for?
         text: '<p>Mainly for programmers or DBAs who want to know more about how to evolve the database and have an array of automatic tests. It is especially useful for complex environments (multiple consumers, db logic, etc).</p>'
       where:
-        title: In-house
-        text: '<p>The training will be conducted in-house (closed to the company that contracts it).</p>
-               <p class="unicode">Please note that in-house trainings are held once the client hires us. We will need to know the date one month in advance in order to be able to schedule them.</p>'
+        title: Private training
+        text: '<p>The training will be conducted as a private training, closed to the company that contracts it.</p>
+               <p class="unicode">Please note that private training sessions are held once the client hires us. We will need to know the date one month in advance in order to be able to schedule them.</p>'
     ddd:
       title: Codesai. DDD Driven by Tests
       name: Domain Driven Design Driven by Tests
@@ -399,7 +399,7 @@ pages:
         link: /en/trainings/ddd/#call-to-action
         title: OK! I am interested in taking the DDD Driven by Tests Course
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
-        placeholder: I would be interested in receiving updates about trainings and upcoming open dates
+        placeholder: I would be interested in receiving updates about trainings and upcoming open editions
       content:
         title: Contents
         day_1:
@@ -427,8 +427,8 @@ pages:
         title: Who is it intended for?
         text: <p>The training addresses some advanced concepts about software architecture. In order to make the most of it, we recommend that participants have some knowledge of object-orientation and at least basic experience writing automated tests.</p>
       where:
-        title: In-house and open dates
-        text: <p>The training can be done in-house for a company that contracts it, or as an open edition. We try to run an open edition every quarter, but we don't always manage to. It often happens that small companies send people to our open courses. If you would like us to notify you about upcoming open editions, please fill out the contact form.</p>
+        title: Private training and open editions
+        text: <p>The training can be done as a private training for a company, or as an open edition. We try to run an open edition every quarter, but we don't always manage to. It often happens that small companies send people to our open editions. If you would like us to notify you about upcoming open editions, please fill out the contact form.</p>
     intellij:
       title: Codesai. IntelliJ Guru
       name: IntelliJ Guru
@@ -437,7 +437,7 @@ pages:
         link: /en/trainings/intellij-guru/#call-to-action
         title: OK! I am interested in taking the IntelliJ Guru Course
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
-        placeholder: I would be interested in receiving updates about the trainings and upcoming open dates
+        placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
         where: Remote
       content:
         title: Contents
@@ -475,10 +475,10 @@ pages:
         text: '<p>The training is designed for any team that wants to get the most out of any JetBrains development tool.</p>
                <p>This training will mainly use IntelliJ IDEA, but many of the features we will be looking at are available in the other JetBrains IDEs (WebStorm, PhpStorm, RubyMine, Rider, etc).</p>'
       where:
-        title: In-house and open dates
-        text: '<p>The training is held in-house (closed to the hiring company) or open to the public on specific dates.</p>
-               <p class="unicode">Please note that in-house trainings take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>
-               <p class="unicode">Throughout the year we will be announcing open dates, which you can sign up for using the form below.</p>'
+        title: Private training and open editions
+        text: '<p>The training is held as a private training, closed to the hiring company, or open to the public on specific dates.</p>
+               <p class="unicode">Please note that private training sessions take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>
+               <p class="unicode">Throughout the year we will be announcing open editions, which you can sign up for using the form below.</p>'
 
     code_smells_refactoring:
       title: Codesai. Code Smells & Refactoring
@@ -489,7 +489,7 @@ pages:
         link: /en/trainings/refactoring/#call-to-action
         title: OK! I am interested in taking the Code Smells & Refactoring Course
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
-        placeholder: I would be interested in receiving updates about the trainings and upcoming open dates
+        placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
       content:
         title: Contents
         agenda: '<div class="topics">
@@ -537,7 +537,7 @@ pages:
         text: '<p>Primarily for programmers working with the object-oriented paradigm.</p>'
       where:
         title: For companies or open to the community
-        text: '<p>The training can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in the form below.</p>
+        text: '<p>The training can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open editions. If you would like to be notified of upcoming open editions, please fill in the form below.</p>
                <p class="unicode">Please note that trainings for companies take place once we have been booked by the client. We will need to know the date at least one month in advance in order to be able to schedule them.</p>'
 
     changing_legacy:
@@ -550,7 +550,7 @@ pages:
         link: /en/trainings/changing-legacy/#call-to-action
         title: OK! I am interested in taking the Changing Legacy Code Course
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
-        placeholder: I would be interested in receiving updates about the trainings and upcoming open dates
+        placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
       content:
         title: Contents
         agenda: '<div class="topics">
@@ -691,7 +691,7 @@ pages:
         text: '<p>Primarily for programmers working with the object-oriented paradigm.</p>'
       where:
         title: For companies or open to the community
-        text: '<p>The training can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
+        text: '<p>The training can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open editions. If you would like to be notified of upcoming open editions, please fill in this form.</p>
               <p class="unicode">Please note that trainings for companies take place once we have been booked by the client. We will need to know the date at least one month in advance in order to be able to schedule them.</p>'
     testing:
       title: "Codesai. Testing Techniques for Developers"
@@ -702,7 +702,7 @@ pages:
       call_to_action:
         title: OK! I am interested in taking the Testing Techniques for Developers training
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
-        placeholder: I would be interested in receiving updates about the trainings and upcoming open dates
+        placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
         link: /en/trainings/testing-techniques/#call-to-action
       content:
         title: Contents
@@ -781,7 +781,7 @@ pages:
         text: <p>Primarily for programmers working with the object-oriented paradigm.</p>
       where:
         title: For companies or open to the community
-        text: '<p>The training can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open courses. If you would like to be notified of upcoming open editions, please fill in this form.</p>
+        text: '<p>The training can be held for companies (closed for the hiring company) or open to the community. We try to run one open edition every term. Small companies often send people to our open editions. If you would like to be notified of upcoming open editions, please fill in this form.</p>
               <p class="unicode">Please note that trainings for companies take place once we have been booked by the client. We will need to know the date at least one month in advance in order to be able to schedule them.</p>'
     user_stories:
       title: User Stories
@@ -793,7 +793,7 @@ pages:
         link: /en/trainings/user-stories/#call-to-action
         title: OK! I am interested in taking the User Stories Course
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
-        placeholder: I would be interested in receiving updates about the trainings and upcoming open dates
+        placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
       content:
         title: Contents
         agenda: '<div class="topics">
@@ -818,9 +818,9 @@ pages:
         title: We offer you domain-specific support
         text: <p>After the training you will be able to apply what you have learned in your own context by means of special sessions in which we will work with examples that you face every day (price and duration of the sessions on request).</p>
       where:
-        title: In-house editions for companies and open editions
-        text: '<p>The training can be delivered in-house for the hiring company, or as an open edition. We try to run an open edition every quarter, but we are not always able to. It often happens that small companies send people to our open editions. If you want us to notify you of upcoming open editions, please fill out the contact form.</p>
-               <p class="unicode">Please note that in-house trainings take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
+        title: Private training and open editions
+        text: '<p>The training can be delivered as a private training for the hiring company, or as an open edition for individual participants. We try to run an open edition every quarter, but we are not always able to. It often happens that small companies send people to our open editions. If you want us to notify you of upcoming open editions, please fill out the contact form.</p>
+               <p class="unicode">Please note that private training sessions take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
   publications:
     title: Codesai. Blog
     posts: Posts
@@ -1178,7 +1178,7 @@ components:
   course_summary:
     title: Information
     open_dates:
-      title: Upcoming open dates
+      title: Upcoming open editions
     special_discount: "For open editions: <span>50% discount</span> for underrepresented groups in technology"
     hours: hours
     default_modality_text: Remote (ask about in-person).
