@@ -185,9 +185,9 @@ pages:
                     <div class="group"><span>1.</span> Introducción a TDD</div>
                     <div class="subgroup"><span>1.1.</span> ¿Por qué TDD?</div>
                     <div class="subgroup"><span>1.2.</span> Mecánica de TDD</div>
-                    <div class="subgroup"><span>--- 1.2.1.</span> Ciclo básico de TDD.</div>
-                    <div class="subgroup"><span>--- 1.2.2.</span> Canon TDD.</div>
-                    <div class="subgroup"><span>--- 1.2.3.</span> Lista de ejemplos, tamaño de los pasos y triangulación.</div>
+                    <div class="subgroup"><span>--- 1.2.1.</span> Ciclo básico de TDD</div>
+                    <div class="subgroup"><span>--- 1.2.2.</span> TDD canónico</div>
+                    <div class="subgroup"><span>--- 1.2.3.</span> Lista de ejemplos, tamaño de los pasos y triangulación</div>
                     <div class="subgroup"><span>1.3.</span> Sobre testing</div>
                     
                     <div class="group"><span>2.</span> Escribir y refinar una lista de ejemplos</div>
