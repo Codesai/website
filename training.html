@@ -112,19 +112,6 @@ permalink_en: /trainings/
             days='1'
             hours='12'
         %}
-        {% capture name %}{{ site.translations[site.lang].pages.training.courses.cd_databases.name }}{% endcapture %}
-        {% capture description %}{{ site.translations[site.lang].pages.training.courses.cd_databases.description }}{% endcapture %}
-        {% capture link %}{{ site.translations[site.lang].pages.training.courses.cd_databases.link }}{% endcapture %}
-        {%
-            include components/course.html
-            name=name
-            description=description
-            link=link
-            logo='/assets/courses/logos/db-cd.svg'
-            starting_price='600'
-            days='2'
-            hours='16'
-        %}
         <div class="closing-hexagon">
             <span></span>
         </div>
