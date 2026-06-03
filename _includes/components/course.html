@@ -32,8 +32,7 @@
                         {% if include.starting_price_text %}
                         <p><strong>{{ include.starting_price_text }}</strong></p>
                         {% else %}
-                        <p><strong>{{ include.starting_price }} {% translate components.course.price_ratio %}</strong></p>
-                        <p>{% translate components.course.iva_excluded %} ({% translate components.course_summary.special_discount%})</p>
+                        <p><strong>{{ include.starting_price }} {% translate components.course.price_ratio %}</strong> {% translate components.course.iva_excluded %}</p>
                         {% endif %}
                     </div>
                 </div>
