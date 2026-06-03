@@ -62,10 +62,11 @@
 
   .courses {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem 2rem;
-    max-width: $max-page-width;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
+    max-width: 1500px;
     width: 100%;
+    padding: 0 2rem;
     margin: 0 0 3rem;
 
     @media screen and (max-width: $max-width-breakpoint) {
