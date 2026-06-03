@@ -88,11 +88,10 @@
             flex-direction: row;
             font-family: $assistant;
             background-color: #EDF7F5;
-            padding: 1rem 1.5rem;
+            padding: 1rem;
             border-radius: 0 16px 16px 16px;
             @media screen and (max-width: $max-width-breakpoint) {
               flex-direction: column;
-              padding: 1rem;
             }
             .schedule, .pricing {
               display: flex;
@@ -110,9 +109,12 @@
                 flex-direction: column;
                 padding: 0;
                 margin-left: 0.5rem;
-                margin-right: 1.5rem;
+                margin-right: 0.5rem;
                 p {
                   margin: 0;
+                }
+                .modality, .price {
+                  white-space: nowrap;
                 }
               }
             }

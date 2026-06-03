@@ -144,7 +144,7 @@ pages:
         description: Mejora tus habilidades en testing, TDD, refactoring, trabajo efectivo con código legacy y diseño orientado a objetos mediante katas. Las sesiones están diseñadas para fortalecer habilidades fundamentales de ingeniería, evitando así su atrofia con el uso de la IA, e introducir nuevas prácticas técnicas de forma continua.
         link: /cursos/practica-deliberada/
         price_text: Consultar precio
-        modality: "Remoto. Al menos 4 sesiones."
+        modality: "Remoto. Al menos 4&nbsp;sesiones."
       code_smells_refactoring:
         name: Code smells & Refactoring
         description: El objetivo de este curso es aprender sobre code smells, técnicas de refactoring y principios de diseño orientado a objetos. Aprenderemos a reconocer los diferentes code smells y técnicas de refactoring sistemáticas para mejorar el diseño de código ya existente de forma segura e incremental.
@@ -1178,7 +1178,7 @@ components:
     information: Información
     hours: horas
     modality: Remoto (consultar presencial).
-    price_ratio: €/persona
+    price_ratio: "&nbsp;€/persona"
     iva_excluded: I.V.A. no incluido.
     button: Ver más información
   course_summary:
