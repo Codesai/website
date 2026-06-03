@@ -6,6 +6,7 @@
   .introduction {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 4rem 0;
     max-width: $max-page-width;
     width: 100%;
