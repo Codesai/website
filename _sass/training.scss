@@ -127,12 +127,15 @@
           > div {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
             font-family: $assistant;
             background-color: #EDF7F5;
             padding: 1rem;
             border-radius: 0 16px 16px 16px;
             @media screen and (max-width: $max-width-breakpoint) {
               flex-direction: column;
+              gap: 0;
             }
             .schedule, .pricing {
               display: flex;
@@ -153,9 +156,6 @@
                 margin-right: 0.5rem;
                 p {
                   margin: 0;
-                }
-                .modality, .price {
-                  white-space: nowrap;
                 }
               }
             }
