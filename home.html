@@ -148,28 +148,6 @@ permalink: /
     </div>
   </section>
 
-  <section class="courses">
-    <h2 class="section-title mobile">{% translate pages.home.tdd.title %}</h2>
-    <div class="image">
-      <img src="/assets/home/mid_picture.png" alt="">
-    </div>
-    <div class="description">
-      <h2 class="section-title desktop">{% translate pages.home.tdd.title %}</h2>
-      <p>
-        {% translate pages.home.tdd.first_paragraph %}
-      </p>
-      <p>
-        {% translate pages.home.tdd.second_paragraph %}
-      </p>
-      <div class="button">
-        <a href="{% translate urls.tdd %}">
-          {% capture button_text %} {{site.translations[site.lang].pages.home.tdd.call_to_action}}{% endcapture %}
-          {% include components/codesai-button.html content=button_text %}
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="team" id="team">
     <h2 class="section-title">{% translate pages.home.team.title %}</h2>
 
