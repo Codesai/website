@@ -12,6 +12,10 @@
     @media screen and (max-width: $max-width-breakpoint) {
       flex-direction: column-reverse;
     }
+    
+   .image img {
+     height: 80%; 
+   } 
 
     h1 {
       font-family: $lekton;
