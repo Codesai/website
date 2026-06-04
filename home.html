@@ -148,28 +148,6 @@ permalink: /
     </div>
   </section>
 
-  <section class="courses">
-    <h2 class="section-title mobile">{% translate pages.home.tdd.title %}</h2>
-    <div class="image">
-      <img src="/assets/home/mid_picture.png" alt="">
-    </div>
-    <div class="description">
-      <h2 class="section-title desktop">{% translate pages.home.tdd.title %}</h2>
-      <p>
-        {% translate pages.home.tdd.first_paragraph %}
-      </p>
-      <p>
-        {% translate pages.home.tdd.second_paragraph %}
-      </p>
-      <div class="button">
-        <a href="{% translate urls.tdd %}">
-          {% capture button_text %} {{site.translations[site.lang].pages.home.tdd.call_to_action}}{% endcapture %}
-          {% include components/codesai-button.html content=button_text %}
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="team" id="team">
     <h2 class="section-title">{% translate pages.home.team.title %}</h2>
 
@@ -217,6 +195,7 @@ permalink: /
       bio=manu_rivero
       twitter_handle='trikitrok'
       linkedin_profile='https://www.linkedin.com/in/manuel-rivero-54411271/'
+      bluesky_profile='https://bsky.app/profile/trikitrok.bsky.social'
       github_user='trikitrok'
       %}
       {% capture ruben %}{{site.translations[site.lang].pages.home.team.ruben}}{% endcapture %}
@@ -231,31 +210,6 @@ permalink: /
     </div>
   </section>
 
-  <section class="collaborators">
-    <h2 class="section-title">Partners</h2>
-
-    <div class="collaborator-cards">
-      <img src="/img/partners/jb_beam.svg" alt="JetBrains">
-    </div>
-  </section>
-
-  <section class="collaborators">
-    <h2 class="section-title">{% translate pages.home.collaborators %}</h2>
-
-    <div class="collaborator-cards">
-      <div class="collaborator-card">
-        <img src="/assets/partners/alvaro.jpeg" alt="Álvaro García">
-        <div class="name">Álvaro García</div>
-        <div class="role">Principal Software Engineer</div>
-      </div>
-      <div class="collaborator-card">
-        <img src="https://gravatar.com/avatar/6f6a60115023a94084d76b506e7df43e?s=200" alt="Maica Trinidad">
-        <div class="name">Maica Trinidad</div>
-        <div class="role">Agile Coach</div>
-      </div>
-    </div>
-  </section>
-
   <section class="blog">
     <h2 class="section-title">{% translate pages.home.blog.title %}</h2>
     <p>
@@ -265,7 +219,7 @@ permalink: /
     <!-- TODO mix posts & videos, label them & style them accordingly -->
     <div class="posts">
       {% for post in site.posts limit:3 %}
-      <a href="{{ post.url }}" target="_blank" class="post">
+      <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer" class="post">
         <div>
           <img src="/assets/{{ post.small_image }}" alt="{{ post.title }}">
           <h3>{{ post.title }}</h3>
