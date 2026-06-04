@@ -219,7 +219,7 @@ permalink: /
     <!-- TODO mix posts & videos, label them & style them accordingly -->
     <div class="posts">
       {% for post in site.posts limit:3 %}
-      <a href="{{ post.url }}" target="_blank" class="post">
+      <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer" class="post">
         <div>
           <img src="/assets/{{ post.small_image }}" alt="{{ post.title }}">
           <h3>{{ post.title }}</h3>
