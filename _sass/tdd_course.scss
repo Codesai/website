@@ -274,6 +274,7 @@
   }
 
   .photos {
+    max-width: $max-page-width;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -281,10 +282,11 @@
     margin-top: 2.25rem;
 
     .photo {
-      margin: 0.75rem;
+      margin: 0.25rem;
 
       img {
         max-width: 100%;
+        border-radius: 10px;
       }
     }
   }
