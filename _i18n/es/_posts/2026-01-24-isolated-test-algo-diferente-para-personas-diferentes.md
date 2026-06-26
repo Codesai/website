@@ -116,7 +116,7 @@ Este post forma parte de una serie sobre TDD, test doubles y diseño orientado a
 
 2. **¡"Isolated" test significa algo muy diferente para distintas personas!**.
 
-3. [Heuristics to determine unit boundaries: object peer stereotypes, detecting effects and FIRS-ness](https://codesai.com/posts/2025/07/heuristics-to-determine-unit-boundaries),  (aún por traducir).
+3. [Heuristicas para determinar los límites de una unidad: estereotipos de pares, detección de efectos y propiedades FIRS](https://codesai.com/posts/2026/06/heuristicas-para-determinar-unit-boundaries).
 
 4. [Breaking out to improve cohesion (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion),  (aún por traducir).
 

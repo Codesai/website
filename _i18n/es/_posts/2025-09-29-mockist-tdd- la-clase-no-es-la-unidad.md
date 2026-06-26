@@ -160,7 +160,7 @@ Esperamos, que haber desmentido esta idea errónea, pueda facilitar discusiones 
 
 2. [¡"Isolated" test significa algo muy diferente para distintas personas!](https://codesai.com/posts/2026/01/isolated-test-algo-diferente-para-personas-diferentes).
 
-3. [Heuristics to determine unit boundaries: object peer stereotypes, detecting effects and FIRS-ness](https://codesai.com/posts/2025/07/heuristics-to-determine-unit-boundaries),  (aún por traducir).
+3. [Heuristicas para determinar los límites de una unidad: estereotipos de pares, detección de efectos y propiedades FIRS](https://codesai.com/posts/2026/06/heuristicas-para-determinar-unit-boundaries).
 
 4. [Breaking out to improve cohesion (peer detection techniques)](https://codesai.com/posts/2025/11/breaking-out-to-improve-cohesion),  (aún por traducir).
 
