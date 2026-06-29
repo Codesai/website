@@ -56,6 +56,11 @@ Have a look at this [Jason Gorman](https://codemanship.wordpress.com/)’s [repo
 
 In a future post we’ll show how we can do the same in JavaScript using [Jest](https://jestjs.io/).
 
+<h4>Update:</h4>
+ 
+The post showing role tests in JavaScript using [Jest](https://jestjs.io/): [Example of role tests in JavaScript with Jest](https://codesai.com/posts/2022/08/role-tests-jest)
+
+
 <h2>Acknowledgements.</h2>
 
 I’d like to thank the WTM study group, and especially [Inma Navas](https://twitter.com/InmaCNavas) and [Laura del Toro](https://www.linkedin.com/in/laura-del-toro-sosa/) for practising with this kata together.
@@ -75,9 +80,3 @@ Thanks to my Codesai colleagues, [Inma Navas](https://twitter.com/InmaCNavas) an
 Photo from [Esranur Kalay
  in Pexels](https://www.pexels.com/es-es/@esranurkalay/)
  
- <h4>Update:</h4>
- 
- The post showing role tests in JavaScript using [Jest](https://jestjs.io/):
- 
- [Example of role tests in JavaScript with Jest](https://codesai.com/posts/2022/08/role-tests-jest)
-
