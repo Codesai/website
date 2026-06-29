@@ -16,6 +16,8 @@ written_in: spanish
 small_image: small_boundaries_heuristics.jpg
 ---
 
+Este post es una traducción del post original en inglés: [Heuristics to determine unit boundaries: object peer stereotypes, detecting effects and FIRS-ness](https://codesai.com/posts/2025/07/heuristics-to-determine-unit-boundaries).
+
 ## Introducción.
 
 En nuestra publicación anterior, [La clase no es la unidad en el estilo de TDD de Londres](https://codesai.com/posts/2025/09/mockist-tdd-la-clase-no-es-la-unidad), hablamos sobre la distinción que los autores del libro [GOOS](http://www.growing-object-oriented-software.com/) hacen entre los **pares** (colaboradores reales<a href="#nota1"><sup>[1]</sup></a>) y los **objetos internos** de un objeto, y cómo esta distinción era crucial para la mantenibilidad de los test unitarios.
