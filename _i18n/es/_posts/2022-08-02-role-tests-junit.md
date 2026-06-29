@@ -74,4 +74,10 @@ Thanks to my Codesai colleagues, [Inma Navas](https://twitter.com/InmaCNavas) an
 
 Photo from [Esranur Kalay
  in Pexels](https://www.pexels.com/es-es/@esranurkalay/)
+ 
+ <h4>Update:</h4>
+ 
+ The post showing role tests in JavaScript using [Jest](https://jestjs.io/):
+ 
+ [Example of role tests in JavaScript with Jest](https://codesai.com/posts/2022/08/role-tests-jest)
 
