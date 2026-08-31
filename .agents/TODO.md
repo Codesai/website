@@ -7,7 +7,7 @@ Prioridades: `P0` crítica, `P1` alta, `P2` media.
 
 | ID | Estado | Prioridad | Área | Tarea | Criterio de aceptación |
 |---|---|---|---|---|---|
-| CWS-TEST-001 | TODO | P0 | Calidad/Regresión | Crear una comprobación reproducible del build, enlaces internos, recursos y comportamiento 404 antes de modificar la web. | El sitio compila en ES/EN; el verificador no encuentra enlaces ni recursos internos rotos; una URL inexistente devuelve HTTP 404 y muestra la página 404; existe un único comando ejecutable en local y CI. |
+| CWS-TEST-001 | DONE | P0 | Calidad/Regresión | Crear una comprobación reproducible del build, enlaces internos, recursos y comportamiento 404 antes de modificar la web. | El sitio compila en ES/EN; el verificador no encuentra enlaces ni recursos internos rotos; una URL inexistente devuelve HTTP 404 y muestra la página 404; existe un único comando ejecutable en local y CI. |
 | CWS-TOOL-007 | TODO | P0 | Funcional | Crear pruebas de caracterización con Playwright para menú, cookies, formulario, cambio de idioma, enlaces clave y página 404, en móvil y escritorio. | La suite captura el comportamiento actual aprobado, pasa en ES/EN, valida destinos y códigos HTTP, y puede ejecutarse en local y CI. |
 | CWS-A11Y-001 | TODO | P0 | Accesibilidad | Corregir contraste de botón y enlace de cookies, `trusted-by`, tarjetas del equipo, CTA y etiquetas. | Todas las combinaciones alcanzan WCAG AA y Lighthouse deja de señalar `color-contrast`/`link-in-text-block`. |
 | CWS-LH-001 | TODO | P0 | Rendimiento | Convertir `top_picture.png` a AVIF/WebP, añadir fallback, `srcset`, dimensiones y `fetchpriority="high"`. | La imagen conserva calidad; ahorro ≥ 100 KB; no usa lazy loading; LCP móvil mediano ≤ 2,5 s en 3 pasadas. |

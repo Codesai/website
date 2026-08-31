@@ -131,6 +131,16 @@ To add a youtube video, you can use the published-video template provided in the
 
 # Tests
 
+Run the complete, production-like site validation with one command:
+
+```bash
+make test
+```
+
+The suite runs in Docker, builds Spanish and English without changing the
+working tree, and checks internal pages, anchors, images, scripts, styles, and
+the HTTP 200/404 behaviour. External URLs are not requested.
+
 ## Local Lighthouse audit
 
 With the local site running at `http://localhost:4000`, run:

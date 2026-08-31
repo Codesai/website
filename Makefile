@@ -13,3 +13,7 @@ _shell:
 
 stop:
 	docker compose down -v
+
+test:
+	docker compose build web
+	docker compose run --rm -e CWS_TEST_INJECT_BROKEN_LINK web bash scripts/test-site.sh

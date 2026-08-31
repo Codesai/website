@@ -92,6 +92,12 @@ When adding new UI text, add the key to **both** `_i18n/es.yml` and `_i18n/en.ym
 
 ## Lighthouse Audit
 
+## Site Validation
+
+Run `make test` after changing templates, content, links, or assets. It performs
+the production-like ES/EN build and all internal-link/resource and HTTP 404
+checks in Docker. Do not replace it with ad-hoc commands.
+
 Use the repository script for reproducible local audits; do not assemble ad-hoc
 Lighthouse commands or use an LLM to process the runs:
 

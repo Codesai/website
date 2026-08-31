@@ -11,3 +11,6 @@ gem "csv"
 gem "jekyll"
 gem "jekyll-multiple-languages-plugin"
 gem "jekyll-compress-images"
+gem "html-proofer", "5.2.1"
+# html-proofer 5.2.1 relies on the pre-2.24 top-level Async lifecycle.
+gem "async", "2.6.5"
