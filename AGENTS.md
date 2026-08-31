@@ -5,9 +5,9 @@ Jekyll-based static site for [codesai.com](https://www.codesai.com), deployed vi
 ## Local Development
 
 ```bash
-sudo make start        # Build and start Docker container; site available at localhost:4000
-sudo make stop         # Stop the container
-sudo make shell        # Get a shell inside the container
+make start        # Build and start Docker container; site available at localhost:4000
+make stop         # Stop the container
+make shell        # Get a shell inside the container
 ```
 
 Jekyll watches for file changes automatically, **except `.yml` files**. After editing any `.yml` file, manually trigger a rebuild inside the container:
@@ -16,22 +16,6 @@ Jekyll watches for file changes automatically, **except `.yml` files**. After ed
 docker exec -it <container_name> bash   # container name visible via `docker ps`
 jekyll build
 ```
-
-### Lighthouse
-
-Use the repository script for reproducible local audits; do not assemble ad-hoc
-Lighthouse commands or use an LLM to process the runs:
-
-```bash
-scripts/run-lighthouse.sh             # mobile + desktop, three runs each
-scripts/run-lighthouse.sh --mobile    # mobile only
-scripts/run-lighthouse.sh --desktop   # desktop only
-```
-
-The script uses Lighthouse 13.4.1 and runs profiles sequentially so they do not
-compete for CPU. It selects each median performance run and saves it as
-`docs/lighthouse-local-{mobile|desktop}-YYYYMMDD-HHMMSS.html`. Only the
-timestamped median HTML for each profile should be retained in `docs/`.
 
 ## Architecture
 
@@ -105,3 +89,19 @@ Top-level `.html` files are site pages (e.g., `home.html`, `training.html`, `tdd
 ### Adding i18n Keys
 
 When adding new UI text, add the key to **both** `_i18n/es.yml` and `_i18n/en.yml` at the same nesting level. A missing key silently renders nothing.
+
+## Lighthouse Audit
+
+Use the repository script for reproducible local audits; do not assemble ad-hoc
+Lighthouse commands or use an LLM to process the runs:
+
+```bash
+scripts/run-lighthouse.sh             # mobile + desktop, three runs each
+scripts/run-lighthouse.sh --mobile    # mobile only
+scripts/run-lighthouse.sh --desktop   # desktop only
+```
+
+The script uses Lighthouse 13.4.1 and runs profiles sequentially so they do not
+compete for CPU. It selects each median performance run and saves it as
+`docs/lighthouse-local-{mobile|desktop}-YYYYMMDD-HHMMSS.html`. Only the
+timestamped median HTML for each profile should be retained in `docs/`.

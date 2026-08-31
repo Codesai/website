@@ -2,11 +2,11 @@
 
 Jekyll based website for Codesai. 
 
-# Setup
+# Setup and run in local environment
 
 1. Clone the repository
 2. Navigate to the repository folder in a terminal
-3. Run `sudo make start`
+3. Run `make start`
 4. You may access the local website at `localhost:4000`
 5. Start coding and jekyll will automatically build after you save changes
 6. If you modify `.yml` files, you need to either restart the docker container or start another terminal and type `docker exec -it {name} bash` to get a terminal inside the container. Once there, type `jekyll build` so it will build the site taking the changes to the `.yml` files. This is because the docker container is executing `jekyll serve` which doesn't get the `.yml` changes
@@ -17,34 +17,6 @@ To check the name of your docker container you can run `docker ps`, it should be
 You can [check out how it works](https://bitbucket.org/codesai/codesaiweb/wiki/Home#markdown-header-docker-details) in the wiki.
 Althought ***not recommended*** you can [setup your own environment](https://bitbucket.org/codesai/codesaiweb/wiki/Home#markdown-header-setup-in-your-own-environment) instead of using Docker.
 
-## Local Lighthouse audit
-
-With the local site running at `http://localhost:4000`, run:
-
-```bash
-scripts/run-lighthouse.sh
-```
-
-The script pins Lighthouse 13.4.1 and runs both mobile and desktop by default.
-It performs three sequential audits per profile, selects each median performance
-run, and writes these two reports:
-
-```text
-docs/lighthouse-local-mobile-YYYYMMDD-HHMMSS.html
-docs/lighthouse-local-desktop-YYYYMMDD-HHMMSS.html
-```
-
-Intermediate reports are created in a temporary directory and removed
-automatically. The process is fully scripted and does not use an LLM.
-
-Run only one profile or change the number of runs when needed:
-
-```bash
-scripts/run-lighthouse.sh --desktop
-scripts/run-lighthouse.sh --mobile
-scripts/run-lighthouse.sh --runs 5
-scripts/run-lighthouse.sh --url http://localhost:4000/en/
-```
 
 # Deploy
 
@@ -59,7 +31,7 @@ deploys on its own.
 - The build command and publish directory are configured in the Netlify UI, not in
   `netlify.toml` (that file only holds redirect rules).
 
-### To deploy a change
+## To deploy a change
 
 1. Get your change onto `main` (commit directly, or merge your branch / PR into `main`).
 2. `git push origin main`.
@@ -68,12 +40,10 @@ deploys on its own.
    build error.
 4. Verify on https://www.codesai.com.
 
-### Rollback
+## Rollback
 
 In Netlify → **Deploys**, open a previous successful deploy and use
 **Publish deploy** to restore it. This does not touch git.
-
-## Troubleshooting
 
 
 ## IMPORTANT
@@ -157,4 +127,35 @@ To add a youtube video, you can use the published-video template provided in the
 
 ```
 {% include published-video.html video-id="bIr5fPom7B4" speakers="Me" title="Awesome video" %}
+```
+
+# Tests
+
+## Local Lighthouse audit
+
+With the local site running at `http://localhost:4000`, run:
+
+```bash
+scripts/run-lighthouse.sh
+```
+
+The script pins Lighthouse 13.4.1 and runs both mobile and desktop by default.
+It performs three sequential audits per profile, selects each median performance
+run, and writes these two reports:
+
+```text
+docs/lighthouse-local-mobile-YYYYMMDD-HHMMSS.html
+docs/lighthouse-local-desktop-YYYYMMDD-HHMMSS.html
+```
+
+Intermediate reports are created in a temporary directory and removed
+automatically. The process is fully scripted and does not use an LLM.
+
+Run only one profile or change the number of runs when needed:
+
+```bash
+scripts/run-lighthouse.sh --desktop
+scripts/run-lighthouse.sh --mobile
+scripts/run-lighthouse.sh --runs 5
+scripts/run-lighthouse.sh --url http://localhost:4000/en/
 ```
