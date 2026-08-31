@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-ruby "3.1.4"
+ruby "4.0.6"
 
 source "https://rubygems.org"
 
@@ -8,7 +8,7 @@ gem "webrick"
 gem "bigdecimal"
 gem "logger"
 gem "csv"
-gem "jekyll"
+gem "jekyll", "~> 4.4"
 gem "jekyll-multiple-languages-plugin"
 gem "jekyll-compress-images"
 gem "html-proofer", "5.2.1"
