@@ -119,6 +119,22 @@ permalink_en: /trainings/
             hours='16'
         %}
 
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.ai_assisted_development.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.ai_assisted_development.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.ai_assisted_development.link }}{% endcapture %}
+        {% capture modality_text %}{{ site.translations[site.lang].pages.training.courses.ai_assisted_development.modality }}{% endcapture %}
+        {%
+            include components/course.html
+            name=name
+            description=description
+            link=link
+            logo='/assets/courses/logos/ai-assisted-development.svg'
+            starting_price='400'
+            days='2'
+            hours='12'
+            modality_text=modality_text
+        %}
+
     </section>
     {% capture title %}{{ site.translations[site.lang].pages.training.contact.title }}{% endcapture %}
     {% capture text %}{{ site.translations[site.lang].pages.training.contact.text }}{% endcapture %}

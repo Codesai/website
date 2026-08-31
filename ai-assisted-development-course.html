@@ -1,0 +1,90 @@
+---
+title: pages.courses.ai_assisted_development.title
+permalink: /cursos/ai-assisted-development/
+permalink_en: /trainings/ai-assisted-development/
+---
+{% include head.html %}
+<body>
+
+    {% include header.html %}
+
+    <div class="course-page">
+        <div class="course">
+
+            <div id="course-information" class="information">
+                <div class="insights">
+                    <div class="course-title">{% translate pages.courses.ai_assisted_development.name %}</div>
+                    <div class="course-description">
+                        {% translate pages.courses.ai_assisted_development.text %}
+                    </div>
+                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                    {% capture link %}{{ site.translations[site.lang].pages.courses.ai_assisted_development.call_to_action.link }}{% endcapture %}
+                    <div class="summary mobile">
+                        {%
+                            include course-summary.html
+                            price='400'
+                            days='2'
+                            hours='12'
+                            special_discount=discount
+                            contact_link=link
+                        %}
+                    </div>
+
+                    <section class="contents">
+                        <div class="title"><span>// </span>{% translate pages.courses.ai_assisted_development.content.title %}</div>
+                        <div class="description">
+                            <div class="daily-agenda">
+                                {% translate pages.courses.ai_assisted_development.content.agenda %}
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="who">
+                        <div class="title"><span>// </span>{% translate pages.courses.ai_assisted_development.who.title %}</div>
+                        {% translate pages.courses.ai_assisted_development.who.text %}
+                    </section>
+
+                    <section class="consulting">
+                        <div class="title"><span>// </span>{% translate pages.courses.ai_assisted_development.consulting.title %}</div>
+                        {% translate pages.courses.ai_assisted_development.consulting.text %}
+                    </section>
+
+                    <section class="where">
+                        <div class="title"><span>// </span>{% translate pages.courses.ai_assisted_development.where.title %}</div>
+                        {% translate pages.courses.ai_assisted_development.where.text %}
+                    </section>
+
+                </div>
+                <div class="summary desktop">
+                    {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
+                    {% capture link %}{{ site.translations[site.lang].pages.courses.ai_assisted_development.call_to_action.link }}{% endcapture %}
+                    {%
+                        include course-summary.html
+                        price='400'
+                        days='2'
+                        hours='12'
+                        special_discount=discount
+                        contact_link=link
+                    %}
+                </div>
+            </div>
+        </div>
+
+        <div class="photos"></div>
+        {% capture title %}{{ site.translations[site.lang].pages.courses.ai_assisted_development.call_to_action.title }}{% endcapture %}
+        {% capture text %}{{ site.translations[site.lang].pages.courses.ai_assisted_development.call_to_action.text }}{% endcapture %}
+        {% capture placeholder %}{{ site.translations[site.lang].pages.courses.ai_assisted_development.call_to_action.placeholder }}{% endcapture %}
+        {% include components/call-to-action.html
+            title=title
+            text=text
+            defaultMessage='Sent from the AI-Assisted Software Development Course page, no message specified'
+            messagePlaceHolder=placeholder
+            origin='Curso Introduccion al desarrollo asistido por IA'
+        %}
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

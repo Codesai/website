@@ -169,6 +169,11 @@ pages:
         name: Continuous Delivery con bases de datos
         description: El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.
         link: /cursos/cd-databases/
+      ai_assisted_development:
+        name: Introducción al desarrollo de software asistido por IA
+        description: Aprende a incorporar asistentes basados en IA (LLMs y agentes de código) a tu trabajo diario de desarrollo de forma efectiva y con criterio. Cubre los fundamentos de los modelos, prompting, gestión del contexto, evaluación de resultados y ampliación de agentes mediante MCP.
+        link: /cursos/ai-assisted-development/
+        modality: "Remoto (consúltanos sobre presencial)"
     contact:
       title: ¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!
       text: <p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
@@ -772,6 +777,61 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
         title: Ediciones cerradas para empresas y ediciones en abierto
         text: '<p>El curso se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir una edición en abierto cada trimestre, pero no siempre podemos. Suele pasar que las empresas pequeñas envían gente a nuestros cursos en abierto. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
                <p class="unicode">Ten en cuenta que los cursos cerrados para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
+    ai_assisted_development:
+      title: Curso de Introducción al desarrollo de software asistido por IA
+      name: Introducción al desarrollo de software asistido por IA
+      text: '<p>El objetivo de este curso es que los equipos de desarrollo aprendan a incorporar asistentes basados en IA (LLMs y agentes de código) a su trabajo diario de forma efectiva y con criterio.</p>
+             <p>Veremos los fundamentos de los modelos, técnicas de prompting, estrategias de gestión del contexto, cómo evaluar los resultados que produce la IA y cómo ampliar las capacidades de los agentes de código mediante MCP.</p>
+             <p>Es un curso de 12 horas, eminentemente práctico, orientado a que puedas aplicar lo aprendido en tu día a día sin perder calidad ni control sobre el código.</p>'
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso de Introducción al desarrollo de software asistido por IA
+        text: <p>Si deseas iniciar el proceso de inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/ai-assisted-development/#call-to-action
+      content:
+        title: Contenido
+        agenda: '<div class="topics">
+                      <div class="group"><span>1. </span> Fundamentos</div>
+                      <div class="subgroup"><span>&bull;</span> Qué es un LLM (o modelo)</div>
+                      <div class="subgroup"><span>&bull;</span> Parámetros, tokens (lenguaje), costes</div>
+                      <div class="subgroup"><span>&bull;</span> Naturaleza no determinista</div>
+                      <div class="subgroup"><span>&bull;</span> Ventana de contexto</div>
+                      <div class="subgroup"><span>&bull;</span> Modelos existentes</div>
+                      <div class="subgroup"><span>&bull;</span> Modelo vs Agente</div>
+                      <div class="subgroup"><span>&bull;</span> Modos de interacción y grados de autonomía</div>
+                      <div class="group"><span>2. </span> Prompting</div>
+                      <div class="subgroup"><span>&bull;</span> Qué es</div>
+                      <div class="subgroup"><span>&bull;</span> Estructura de un buen prompt</div>
+                      <div class="subgroup"><span>&bull;</span> Rol, contexto, tarea exacta, restricciones o reglas, formato de salida</div>
+                      <div class="subgroup"><span>&bull;</span> Cristalizar prompts frecuentes para reutilizarlos (comando)</div>
+                      <div class="group"><span>3. </span> Gestión del contexto</div>
+                      <div class="subgroup"><span>&bull;</span> El problema</div>
+                      <div class="subgroup"><span>&bull;</span> Estrategias</div>
+                      <div class="subgroup"><span>&bull;</span> Documentos</div>
+                      <div class="subgroup"><span>&bull;</span> Skills</div>
+                      <div class="group"><span>4. </span> Introducción a la evaluación de resultados</div>
+                      <div class="subgroup"><span>&bull;</span> Human in the loop</div>
+                      <div class="subgroup"><span>&bull;</span> Herramientas de análisis estático de código</div>
+                      <div class="subgroup"><span>&bull;</span> Mutation testing</div>
+                      <div class="subgroup"><span>&bull;</span> Architectural fitness</div>
+                      <div class="group"><span>5. </span> Añadir capacidades a los agentes de código</div>
+                      <div class="subgroup"><span>&bull;</span> MCP</div>
+                      <div class="group"><span>6. </span> Siguientes pasos (cómo aplicarlo después del curso)</div>
+                      <div class="subgroup"><span>&bull;</span> Un pequeño resumen</div>
+                      <div class="subgroup"><span>&bull;</span> Cómo aplicar todo este conocimiento</div>
+                  </div>'
+      who:
+        title: ¿Para quién está pensado?
+        text: '<p>El curso está pensado para equipos de desarrollo y personas técnicas que quieran empezar a usar asistentes de IA en su día a día con criterio, entendiendo cómo funcionan y cómo integrarlos sin perder calidad ni control sobre el código.</p>
+               <p>No se requiere experiencia previa con herramientas de IA. Sí es recomendable tener experiencia desarrollando software.</p>'
+      consulting:
+        title: Te ayudamos en tu dominio
+        text: <p>Después de hacer el curso podrás aplicar a tu propio contexto lo que has aprendido mediante sesiones especiales en las que trabajaremos con ejemplos a los que te enfrentas a diario (precio y duración de las sesiones a consultar).</p>
+      where:
+        title: Modalidad y ediciones
+        text: '<p>El curso se imparte de forma remota. Si estás interesado en una edición presencial, consúltanos y estudiamos la posibilidad.</p>
+               <p>Se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir ediciones en abierto de forma periódica, pero no siempre podemos. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
+               <p class="unicode">Ten en cuenta que los cursos cerrados para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
   publications:
     title: Codesai. Blog
     posts: Posts
@@ -1225,6 +1285,7 @@ urls:
   refactoring: /cursos/refactoring/
   user_stories: /cursos/user-stories/
   cd_databases: /cursos/cd-databases/
+  ai_assisted_development: /cursos/ai-assisted-development/
   intellij_guru: /cursos/intellij-guru/
   services: /servicios/
   technical_coaching: /servicios/technical-coaching/
