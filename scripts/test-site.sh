@@ -15,8 +15,14 @@ cleanup() {
 }
 trap cleanup EXIT INT TERM
 
-cp -a /app/. "$source_dir"
-rm -rf "$source_dir/.git" "$source_dir/_site"
+mkdir -p "$source_dir"
+tar \
+  --exclude='./.git' \
+  --exclude='./_site' \
+  --exclude='./.jekyll-cache' \
+  --exclude='./.sass-cache' \
+  --exclude='./node_modules' \
+  -C /app -cf - . | tar -C "$source_dir" -xf -
 
 mkdir -p "$source_dir/_i18n/en/_posts"
 cp -a "$source_dir/_i18n/es/_posts/." "$source_dir/_i18n/en/_posts/"
