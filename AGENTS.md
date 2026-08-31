@@ -17,6 +17,22 @@ docker exec -it <container_name> bash   # container name visible via `docker ps`
 jekyll build
 ```
 
+### Lighthouse
+
+Use the repository script for reproducible local audits; do not assemble ad-hoc
+Lighthouse commands or use an LLM to process the runs:
+
+```bash
+scripts/run-lighthouse.sh             # mobile + desktop, three runs each
+scripts/run-lighthouse.sh --mobile    # mobile only
+scripts/run-lighthouse.sh --desktop   # desktop only
+```
+
+The script uses Lighthouse 13.4.1 and runs profiles sequentially so they do not
+compete for CPU. It selects each median performance run and saves it as
+`docs/lighthouse-local-{mobile|desktop}-YYYYMMDD-HHMMSS.html`. Only the
+timestamped median HTML for each profile should be retained in `docs/`.
+
 ## Architecture
 
 ### Internationalisation (i18n)

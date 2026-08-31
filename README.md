@@ -17,6 +17,35 @@ To check the name of your docker container you can run `docker ps`, it should be
 You can [check out how it works](https://bitbucket.org/codesai/codesaiweb/wiki/Home#markdown-header-docker-details) in the wiki.
 Althought ***not recommended*** you can [setup your own environment](https://bitbucket.org/codesai/codesaiweb/wiki/Home#markdown-header-setup-in-your-own-environment) instead of using Docker.
 
+## Local Lighthouse audit
+
+With the local site running at `http://localhost:4000`, run:
+
+```bash
+scripts/run-lighthouse.sh
+```
+
+The script pins Lighthouse 13.4.1 and runs both mobile and desktop by default.
+It performs three sequential audits per profile, selects each median performance
+run, and writes these two reports:
+
+```text
+docs/lighthouse-local-mobile-YYYYMMDD-HHMMSS.html
+docs/lighthouse-local-desktop-YYYYMMDD-HHMMSS.html
+```
+
+Intermediate reports are created in a temporary directory and removed
+automatically. The process is fully scripted and does not use an LLM.
+
+Run only one profile or change the number of runs when needed:
+
+```bash
+scripts/run-lighthouse.sh --desktop
+scripts/run-lighthouse.sh --mobile
+scripts/run-lighthouse.sh --runs 5
+scripts/run-lighthouse.sh --url http://localhost:4000/en/
+```
+
 # Deploy
 
 The site is hosted on **Netlify**, connected to this GitHub repository. There is no
@@ -129,4 +158,3 @@ To add a youtube video, you can use the published-video template provided in the
 ```
 {% include published-video.html video-id="bIr5fPom7B4" speakers="Me" title="Awesome video" %}
 ```
-
