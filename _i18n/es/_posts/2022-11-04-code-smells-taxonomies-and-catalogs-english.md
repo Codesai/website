@@ -355,7 +355,7 @@ Finally we’d like to highlight the [recent work by Marcel Jerzyk](https://gith
 
 <h2>Acknowledgements.</h2>
 
-I would like to thank my colleagues [Fran Reyes](https://twitter.com/fran_reyes), [Antonio de La Torre](https://twitter.com/adelatorrefoss), [Miguel Viera](https:/ /twitter.com/mangelviera/) and [Alfredo Casado](https://twitter.com/AlfredoCasado/) for reading the final drafts of this post and giving me feedback.
+I would like to thank my colleagues [Fran Reyes](https://twitter.com/fran_reyes), [Antonio de La Torre](https://twitter.com/adelatorrefoss), [Miguel Viera](https://twitter.com/mangelviera/) and [Alfredo Casado](https://twitter.com/AlfredoCasado/) for reading the final drafts of this post and giving me feedback.
 
 I’d also like to thank [nikita](https://www.pexels.com/es-es/@nikita-3374022/) for her photo.
 

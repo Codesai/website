@@ -191,7 +191,7 @@ Finally, I’d also like to thank [Maxwell Pels](https://www.pexels.com/es-es/@m
 
 - [Vibe Coding](https://itrevolution.com/product/vibe-coding-book/), [Gene Kim](https://www.linkedin.com/in/realgenekim/) and [Steve Yegge](https://en.wikipedia.org/wiki/Steve_Yegge).
 
-- [Composing responsibilities to reduce coupling and improve tests' maintainability](https://codesai.com/posts/2026/02/separating-responsibilities-with-decorato), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
+- [Composing responsibilities to reduce coupling and improve tests' maintainability](https://codesai.com/posts/2026/02/separating-responsibilities-with-decorator), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
 
 - [Materialization: turning a false peer into an internal](https://emmanuelvalverderamos.substack.com/p/materialization-turning-a-false-peer), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/) and [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
 
@@ -249,5 +249,4 @@ alt="Refactoring Thumbnail for Evolving to the Proxy / Decorator Pattern."
 style="display: block; margin-left: auto; margin-right: auto; width: 100%;" />
 <figcaption>Refactoring Thumbnail for <strong>Evolving to the Proxy / Decorator Pattern</strong></figcaption>
 </figure>
-
 

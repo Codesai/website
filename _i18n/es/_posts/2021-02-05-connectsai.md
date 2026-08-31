@@ -18,7 +18,7 @@ Este post viene a solucionar una de las espinas clavadas que quedaban en nuestro
 
 ![Toño Connectsai](/assets/posts/toño-connectsai.jpeg)
 
-Hace unos meses (el sábado 17 de octubre) montamos conjuntamente con [Lifull Connect](https://www.lifullconnect.com/) el que sería nuestro primer evento de autor: [Connectsai](https://codesai.com/connectsai). La experiencia de montar el evento, como en todas las organizaciones, tiene sus claroscuros: incertidumbre sobre el nivel de asistencia, la retención de la gente a medida que pasa el día, el rendimiento de las herramientas para remote, cómo comunicar un evento de esta magnitud, si se puede sobrevivir sin patrocinadores y un largo etc.
+Hace unos meses (el sábado 17 de octubre) montamos conjuntamente con [Lifull Connect](https://www.lifullconnect.com/) el que sería nuestro primer evento de autor: Connectsai. La experiencia de montar el evento, como en todas las organizaciones, tiene sus claroscuros: incertidumbre sobre el nivel de asistencia, la retención de la gente a medida que pasa el día, el rendimiento de las herramientas para remote, cómo comunicar un evento de esta magnitud, si se puede sobrevivir sin patrocinadores y un largo etc.
 
 Pero con dudas o no, llegó el gran día y tuvimos la fortuna de que el evento contó con bastante asistencia, menos de la que hubiéramos querido, pero bastante más que nuestra predicción a la baja. La media de personas durante el evento era de 60 con un pico de asistencia de más de 90 personas. Pero sí que hay aprendizajes que creemos que podemos aportar en este pequeño post:
 

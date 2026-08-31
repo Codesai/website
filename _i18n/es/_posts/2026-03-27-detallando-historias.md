@@ -15,7 +15,7 @@ written_in: spanish
 ---
 
 ## Introducción.
-En un [post anterior](https://codesai.com/posts/2025/10/flujo-refinar-hu-en-tc), exploramos nuestro flujo de decisión para refinar historias de usuario poco antes de iniciar su desarrollo. Allí vimos cómo utilizar los criterios [INVEST](https://xp123.com/invest-in-good-stories-and-smart-tasks/) para diagnosticar si una historia ya está lista para ser desarrollada y así evitar retrabajo. El principal objetivo de nuestro proceso es aplicar refinamientos específicos que aseguren un desarrollo fluido, minimizar el *waste* y acelerar la entrega de valor.
+En un [post anterior](https://codesai.com/posts/2025/10/flujo-refinar-HU-en-Tc), exploramos nuestro flujo de decisión para refinar historias de usuario poco antes de iniciar su desarrollo. Allí vimos cómo utilizar los criterios [INVEST](https://xp123.com/invest-in-good-stories-and-smart-tasks/) para diagnosticar si una historia ya está lista para ser desarrollada y así evitar retrabajo. El principal objetivo de nuestro proceso es aplicar refinamientos específicos que aseguren un desarrollo fluido, minimizar el *waste* y acelerar la entrega de valor.
 
 También vimos que algunos incumplimientos tanto del criterio de Estimable (E) como del criterio de Testable (T), pueden producirse porque la historia no esté suficientemente acotada o aclarada. Comentamos que ambos casos se podrían solucionar **añadiendo más detalle**, y dejamos para otro post la explicación de cómo detallar mejor una historia.
 
@@ -91,7 +91,7 @@ Nos gustaría agradecer a [Edward Jenner](https://www.pexels.com/@edward-jenner/
 Este post es parte de una serie sobre Historias de usuario:
 
 1. [¿Tamaño y nivel de detalle adecuados para una historia de usuario?](https://codesai.com/posts/2025/06/size-and-details-in-user-stories).
-2. [Nuestro flujo de decisión para refinar Historias de Usuario poco antes de empezar a desarrollarla](https://codesai.com/posts/2025/10/flujo-refinar-hu-en-tc).
+2. [Nuestro flujo de decisión para refinar Historias de Usuario poco antes de empezar a desarrollarla](https://codesai.com/posts/2025/10/flujo-refinar-HU-en-Tc).
 3. Detallando historias de usuario para acotarlas y reducir su ambigüedad.
 
 ## Referencias.

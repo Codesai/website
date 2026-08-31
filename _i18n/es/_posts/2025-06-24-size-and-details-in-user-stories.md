@@ -200,7 +200,7 @@ En futuros posts seguiremos profundizando en este tema dando heurísticas que pu
 Este post es parte de una serie sobre Historias de usuario:
 
 1. ¿Tamaño y nivel de detalle adecuados para una historia de usuario?.
-2. [Nuestro flujo de decisión para refinar Historias de Usuario poco antes de empezar a desarrollarla](https://codesai.com/posts/2025/10/flujo-refinar-hu-en-tc).
+2. [Nuestro flujo de decisión para refinar Historias de Usuario poco antes de empezar a desarrollarla](https://codesai.com/posts/2025/10/flujo-refinar-HU-en-Tc).
 3. [Detallando historias de usuario para acotarlas y reducir su ambigüedad](https://codesai.com/posts/2026/03/detallando-historias).
 
 ## Agradecimientos.

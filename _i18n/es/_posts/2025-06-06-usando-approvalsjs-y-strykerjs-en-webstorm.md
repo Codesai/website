@@ -113,11 +113,10 @@ c. Recording production input & output.
 
 Profundizamos en el refinamiento en nuestro curso [Cambiando Legacy](https://codesai.com/cursos/changing-legacy/).
 
-<a name="nota2"></a> [2] En nuestro blog puedes encontrar [otros posts interesantes sobre mutation testing](https://codesai.com/publications/categories/#Mutation%20Testing).
+<a name="nota2"></a> [2] En nuestro blog puedes encontrar [otros posts interesantes sobre mutation testing](https://codesai.com/publications/categories/#mutation-testing).
 
 <a name="nota3"></a> [3] En [Integrando ApprovalsJS con WebStorm](https://codesai.com/posts/2025/05/approvasls-en-webstorm) explicamos cómo hicimos para que ApprovalJs usará la herramienta de diff de WebStorm.
 
 <a name="nota4"></a> [4] No siempre es así, hay mutantes supervivientes (para los que nuestros tests no fallan) que no son relevantes para mejorar los tests, sino que podrían ser debidos, o bien, a código muerto, o bien, a código innecesario. Para profundizar en esta idea lee nuestro post [Mutantes relevantes](https://codesai.com/posts/2025/04/mutantes-relevantes).
 
 <a name="nota5"></a> [5] Ver el código de [isReporterAvailable](https://github.com/approvals/Approvals.NodeJS/blob/e570bc10678ef9aba2cff304b4fbc0477c011740/lib/Reporting/GenericDiffReporterBase.ts#L30C3-L30C22) y [canReportOn](https://github.com/approvals/Approvals.NodeJS/blob/e570bc10678ef9aba2cff304b4fbc0477c011740/lib/Reporting/GenericDiffReporterBase.ts#L49) en la clase [GenericDiffReporterBase](https://github.com/approvals/Approvals.NodeJS/blob/master/lib/Reporting/GenericDiffReporterBase.ts), y la interface [Reporter](https://github.com/approvals/Approvals.NodeJS/blob/master/lib/Core/Reporter.ts).
-

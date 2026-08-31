@@ -15,7 +15,7 @@ permalink: /publications/categories/
         {% for category in sortedCategories %}
             <div class="category">
                 {% capture category_name %}{{ category | first }}{% endcapture %}
-                <h2 id="{{ category_name | slugize }}">{{ category_name }}</h2>
+                <h2 id="{{ category_name | slugify }}">{{ category_name }}</h2>
                 <div>
                     {% for post in site.categories[category_name] %}
                         <article>

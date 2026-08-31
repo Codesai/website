@@ -158,7 +158,7 @@ Nos gustaría agradecer a [Fernando Aparicio](https://www.linkedin.com/in/fernan
 
 ## Notas.
 
-<a name="nota1"></a> [1] En nuestro blog puedes encontrar otros posts interesantes tanto sobre [Mutation Testing](https://codesai.com/publications/categories/#Mutation%20Testing) como sobre [Approval Testing](https://codesai.com/publications/categories/#Approval%20Testing).
+<a name="nota1"></a> [1] En nuestro blog puedes encontrar otros posts interesantes tanto sobre [Mutation Testing](https://codesai.com/publications/categories/#mutation-testing) como sobre [Approval Testing](https://codesai.com/publications/categories/#approval-testing).
 
 <a name="nota2"></a> [2] Existen diferentes estrategias de sampling para generar nuestro golden master (input y output). Las principales estrategias de sampling son:
 
@@ -184,4 +184,3 @@ Approval testing facilita la aplicación de la técnica de [Golden Master](https
 <img src="/assets/approval_test.png" alt="Approval testing flow.">
 <figcaption><strong>Flujo de approval testing (del material del curso Cambiando Legacy).</strong></figcaption>
 </figure>
-

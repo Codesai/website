@@ -118,7 +118,7 @@ Then we showed a simple example of how we can use property-based testing to expl
 
 Finally, we discussed the resulting example-based and property-based tests from different points of view.
 
-We hope this post will motivate you to start exploring property-based testing as well. If you want to learn more, follow the references we provide and start playing. Also have a look at the other [posts exploring property-based testing in our blog](https://codesai.com/publications/categories/#Property-based%20testing) we have written in the past.
+We hope this post will motivate you to start exploring property-based testing as well. If you want to learn more, follow the references we provide and start playing. Also have a look at the other [posts exploring property-based testing in our blog](https://codesai.com/publications/categories/#property-based-testing) we have written in the past.
 
 <h2>Acknowledgements.</h2>
 
