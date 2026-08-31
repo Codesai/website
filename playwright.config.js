@@ -22,6 +22,17 @@ module.exports = defineConfig({
     {
       name: 'mobile-chromium',
       use: { ...devices['Pixel 5'] }
+    },
+    {
+      name: 'tablet-chromium',
+      grep: /@visual/,
+      use: {
+        browserName: 'chromium',
+        viewport: { width: 768, height: 1024 },
+        deviceScaleFactor: 1,
+        isMobile: true,
+        hasTouch: true
+      }
     }
   ]
 });

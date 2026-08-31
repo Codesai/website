@@ -32,17 +32,17 @@ Prioridades: `P0` crítica, `P1` alta, `P2` media.
 | CWS-SEC-001 | TODO | P2 | Seguridad | Añadir cabeceras Netlify; desplegar CSP primero en `Report-Only`. | Observatory/SecurityHeaders sin fallos críticos y recursos/funciones del sitio no se bloquean. |
 | CWS-TOOL-005 | TODO | P2 | SEO | Rastrear el sitio ES/EN con Screaming Frog/Sitebulb. | Sin 4xx internos; canonical/hreflang/títulos/descriptions/headings revisados por plantilla. |
 | CWS-TOOL-006 | TODO | P2 | SEO | Validar datos estructurados con Rich Results Test y Schema Validator. | Errores corregidos y oportunidades de schema priorizadas. |
-| CWS-TOOL-008 | TODO | P2 | Visual | Añadir regresión visual para viewports móvil/tablet/escritorio. | Baselines aprobados para páginas clave ES/EN y comparación en PR. |
+| CWS-TOOL-008 | DONE | P0 | Visual | Añadir regresión visual para viewports móvil/tablet/escritorio. | Baselines aprobados para páginas clave ES/EN y comparación en PR. |
 
 ## Plan de ejecución priorizado
 
-Fase 1. **Red de seguridad:** `CWS-TEST-001` y `CWS-TOOL-007`.
+Fase 1. **Red de seguridad:** `CWS-TEST-001`, `CWS-TOOL-007` y `CWS-TOOL-008`.
 Fase 2. **Correcciones críticas:** `CWS-A11Y-001`, `CWS-LH-001` y `CWS-LH-002`.
 Fase 3. **Semántica e interacción:** `CWS-A11Y-002`, `CWS-A11Y-003`, `CWS-A11Y-004` y `CWS-JS-001`.
 Fase 4. **Peso y estabilidad visual:** `CWS-IMG-002`, `CWS-IMG-001`, `CWS-ICON-001` y `CWS-FONT-001`.
 Fase 5. **Privacidad y prevención de regresiones:** `CWS-ANA-001`, `CWS-CI-001`, `CWS-LH-003` y `CWS-TOOL-004`.
 Fase 6. **Validación externa y datos reales:** `CWS-TOOL-003`, `CWS-TOOL-001` y `CWS-TOOL-002`.
-Fase 7. **Mejoras de prioridad media:** `CWS-IMG-003`, `CWS-CACHE-001`, `CWS-SEC-001`, `CWS-TOOL-005`, `CWS-TOOL-006` y `CWS-TOOL-008`.
+Fase 7. **Mejoras de prioridad media:** `CWS-IMG-003`, `CWS-CACHE-001`, `CWS-SEC-001`, `CWS-TOOL-005` y `CWS-TOOL-006`.
 
 ## Explicación del orden
 

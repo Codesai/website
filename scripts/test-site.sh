@@ -75,9 +75,20 @@ for missing_path in /missing-cws-test /en/missing-cws-test; do
   grep -q 'class="error-404"' "$response_file"
 done
 
+playwright_args=("--config=$source_dir/playwright.config.js")
+if [[ "${CWS_UPDATE_VISUAL_BASELINES:-}" == "1" ]]; then
+  playwright_args+=("--update-snapshots")
+fi
+
 CWS_TEST_BASE_URL=http://127.0.0.1:4173 \
 PLAYWRIGHT_OUTPUT_DIR="$test_root/playwright-results" \
 NODE_PATH=/opt/codesai-tests/node_modules \
-npm --prefix /opt/codesai-tests run test:e2e -- --config="$source_dir/playwright.config.js"
+npm --prefix /opt/codesai-tests run test:e2e -- "${playwright_args[@]}"
+
+if [[ "${CWS_UPDATE_VISUAL_BASELINES:-}" == "1" ]]; then
+  mkdir -p /app/tests/e2e/visual.spec.js-snapshots
+  cp -a "$source_dir/tests/e2e/visual.spec.js-snapshots/." \
+    /app/tests/e2e/visual.spec.js-snapshots/
+fi
 
 echo "Site validation passed ($es_built_count posts in each language)."

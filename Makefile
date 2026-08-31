@@ -17,3 +17,7 @@ stop:
 test:
 	docker compose build web
 	docker compose run --rm -e CWS_TEST_INJECT_BROKEN_LINK web bash scripts/test-site.sh
+
+update-visual-baselines:
+	docker compose build web
+	docker compose run --rm -e CWS_UPDATE_VISUAL_BASELINES=1 web bash scripts/test-site.sh
