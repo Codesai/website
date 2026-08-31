@@ -12,5 +12,8 @@ COPY Gemfile Gemfile
 COPY Gemfile.lock Gemfile.lock
 RUN bundle install --verbose
 
-COPY . .
+COPY package.json package-lock.json /opt/codesai-tests/
+RUN npm --prefix /opt/codesai-tests ci \
+    && /opt/codesai-tests/node_modules/.bin/playwright install --with-deps chromium
 
+COPY . .

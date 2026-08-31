@@ -139,7 +139,12 @@ make test
 
 The suite runs in Docker, builds Spanish and English without changing the
 working tree, and checks internal pages, anchors, images, scripts, styles, and
-the HTTP 200/404 behaviour. External URLs are not requested.
+the HTTP 200/404 behaviour. It also runs Playwright characterization tests in
+desktop and mobile Chromium for navigation, cookies, the newsletter form,
+language switching, and 404 routes in ES/EN. Form submission is intercepted,
+so the tests do not send data to Google Forms. External URLs are not requested.
+
+The same `make test` command is designed to be reused by a future CI workflow.
 
 ## Local Lighthouse audit
 

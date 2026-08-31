@@ -96,7 +96,10 @@ When adding new UI text, add the key to **both** `_i18n/es.yml` and `_i18n/en.ym
 
 Run `make test` after changing templates, content, links, or assets. It performs
 the production-like ES/EN build and all internal-link/resource and HTTP 404
-checks in Docker. Do not replace it with ad-hoc commands.
+checks in Docker. It also runs the Playwright characterization suite in mobile
+and desktop Chromium, covering navigation, cookies, newsletter validation and
+submission, language switching, and ES/EN 404 routes. Do not replace it
+with ad-hoc commands.
 
 Use the repository script for reproducible local audits; do not assemble ad-hoc
 Lighthouse commands or use an LLM to process the runs:
