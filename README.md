@@ -17,12 +17,39 @@ To check the name of your docker container you can run `docker ps`, it should be
 You can [check out how it works](https://bitbucket.org/codesai/codesaiweb/wiki/Home#markdown-header-docker-details) in the wiki.
 Althought ***not recommended*** you can [setup your own environment](https://bitbucket.org/codesai/codesaiweb/wiki/Home#markdown-header-setup-in-your-own-environment) instead of using Docker.
 
+# Deploy
+
+The site is hosted on **Netlify**, connected to this GitHub repository. There is no
+manual deploy step and no GitHub Actions workflow: Netlify watches the repo and
+deploys on its own.
+
+- **Production branch: `main`.** Every push to `main` triggers an automatic Netlify
+  build that runs a Jekyll build (see `build_site.sh`, which also copies the Spanish
+  posts from `_i18n/es/_posts` into `_i18n/en` before building) and publishes the
+  generated `_site` to https://www.codesai.com.
+- The build command and publish directory are configured in the Netlify UI, not in
+  `netlify.toml` (that file only holds redirect rules).
+
+### To deploy a change
+
+1. Get your change onto `main` (commit directly, or merge your branch / PR into `main`).
+2. `git push origin main`.
+3. Open the Netlify dashboard → the Codesai site → **Deploys**, and wait for the
+   build for your commit to finish (typically 1–3 minutes). The log there shows any
+   build error.
+4. Verify on https://www.codesai.com.
+
+### Rollback
+
+In Netlify → **Deploys**, open a previous successful deploy and use
+**Publish deploy** to restore it. This does not touch git.
+
 ## Troubleshooting
 
 
 ## IMPORTANT
 
-***The develop branch should always be ready to be deployed***
+***`main` is the production branch: every push to it deploys to https://www.codesai.com, so it must always be ready to be deployed***
 
 ***Remember to follow the Blog Publications flow inside the Codesai trello***
 
@@ -36,9 +63,9 @@ Althought ***not recommended*** you can [setup your own environment](https://bit
 
 # Writing a Post
 
-The first step is to create a new branch from the latest **develop** with a quick name related to the post. Once the post has gone through **revision** and **polishing** be sure to merge develop into your branch, check that everything is fine and then merge your post into **develop**. To publish it, merge develop into **master**. Remember to periodically merge develop into your branch if you are still writing the post to get the latest updates (styles could be modified).
+The first step is to create a new branch from the latest **`main`** with a quick name related to the post. Write the post there while it goes through **revision** and **polishing**. Periodically rebase or merge `main` into your branch to pick up the latest updates (styles could change). When the post is ready, open a pull request against `main`; merging it publishes the post, since every push to `main` triggers a Netlify deploy (see the **Deploy** section above).
 
-To create a post, simply add a new file in the `_posts` folder named `YYYY-MM-DD-name-of-the-post.md`, the name specified becomes the **permalink**. At the top of the file you have to write a small yaml specification, the **bare minimum** to start a post is:
+To create a post, add a new file under `_i18n/es/_posts/` named `YYYY-MM-DD-name-of-the-post.md`; the name becomes the **permalink**. All posts live in Spanish under `_i18n/es/_posts/` — `build_site.sh` copies them into `_i18n/en` at build time. At the top of the file you have to write a small yaml specification, the **bare minimum** to start a post is:
 
 ```
 
