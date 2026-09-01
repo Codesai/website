@@ -31,7 +31,22 @@ permalink: /
         </p>
       </div>
       <div class="image">
-        <img src="/assets/home/top_picture.png" alt="">
+        <picture>
+          <source
+            type="image/avif"
+            srcset="/assets/home/top_picture-280.avif 280w, /assets/home/top_picture-371.avif 371w"
+            sizes="(max-width: 768px) 280px, 320px">
+          <source
+            type="image/webp"
+            srcset="/assets/home/top_picture-280.webp 280w, /assets/home/top_picture-371.webp 371w"
+            sizes="(max-width: 768px) 280px, 320px">
+          <img
+            src="/assets/home/top_picture.png"
+            width="371"
+            height="511"
+            fetchpriority="high"
+            alt="">
+        </picture>
       </div>
     </div>
     <div class="clients">
