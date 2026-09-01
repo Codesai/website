@@ -18,3 +18,4 @@ soapui.log
 _compress_images_cache.yml
 playwright-report/
 test-results/
+node_modules/
