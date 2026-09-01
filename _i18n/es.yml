@@ -84,6 +84,11 @@ pages:
         orchestration: Orquestación de servicios
         monitoring: Monitorización de servicios
     our_clients:
+      libnova:
+        name: Libnova
+        about: Libnova es una empresa española especializada en preservación digital, que desarrolla soluciones para garantizar la conservación, integridad y disponibilidad a largo plazo de activos digitales. Entre sus productos se encuentra Safebox, una plataforma orientada a la preservación y gestión segura de grandes volúmenes de información digital.
+        our_work: Nos integramos en los equipos de desarrollo de Libnova para ayudarles a mejorar su capacidad de entrega y la calidad del software, trabajando sobre el producto y los problemas reales del día a día.<br>Nuestro acompañamiento combina desarrollo y pairing con los equipos, con píldoras formativas y talleres.<br>Hemos trabajado especialmente en testing automático, refactoring seguro, diseño y modelado de dominio, arquitectura, definición de historias de usuario y colaboración entre Desarrollo y Plataforma.<br>También hemos ayudado a introducir prácticas como User Story Mapping, reuniones de concerns y trabajo incremental con vertical slicing, buscando que los equipos ganen autonomía, puedan tomar mejores decisiones técnicas y reduzcan riesgos.<br>Entre los temas trabajados en las mini-formaciones de los viernes, se encuentran estrategia de testing, refactoring seguro, tipos de tests y tests end-to-end.
+        stack: <p><strong>Lenguajes de programación:</strong> C#, PHP.</p><p><strong>Frameworks / Plataforma:</strong> .NET, ASP.NET Core.</p><p><strong>Persistencia:</strong> MySQL, almacenamiento S3.</p><p><strong>Infraestructura:</strong> Docker, Kubernetes, Terraform.</p><p><strong>Arquitectura:</strong> Microservicios, arquitectura orientada a eventos.</p><p><strong>Prácticas:</strong> DDD, testing automático, TestContainers, refactoring, pair programming, User Story Mapping, talleres técnicos y píldoras formativas.</p>
       lifull:
         name: Lifull Connect
         about: Lifull Connect es uno de los mayores agregadores a nivel mundial en los sectores de empleo, coches y moda, y el mayor en el sector inmobiliario.

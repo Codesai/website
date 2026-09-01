@@ -84,6 +84,11 @@ pages:
         orchestration: Service Orchestration
         monitoring: Service Monitoring
     our_clients:
+      libnova:
+        name: Libnova
+        about: Libnova is a Spanish company specialising in digital preservation. It develops solutions that ensure the long-term conservation, integrity and availability of digital assets. Its products include Safebox, a platform for the preservation and secure management of large volumes of digital information.
+        our_work: We embed ourselves in Libnova's development teams to help them improve their delivery capability and software quality, working on the product and the real problems they face every day.<br>Our support combines development and pairing with the teams, short training sessions, and workshops.<br>We have focused particularly on automated testing, safe refactoring, design and domain modelling, architecture, user story definition, and collaboration between Development and Platform.<br>We have also helped introduce practices such as User Story Mapping, concerns meetings, and incremental delivery using vertical slicing, enabling the teams to gain autonomy, make better technical decisions, and reduce risks.<br>Topics covered in the Friday mini-training sessions include testing strategy, safe refactoring, test types, and end-to-end tests.
+        stack: <p><strong>Programming Languages:</strong> C#, PHP.</p><p><strong>Frameworks / Platform:</strong> .NET, ASP.NET Core.</p><p><strong>Persistence:</strong> MySQL, S3 storage.</p><p><strong>Infrastructure:</strong> Docker, Kubernetes, Terraform.</p><p><strong>Architecture:</strong> Microservices, event-driven architecture.</p><p><strong>Practices:</strong> DDD, automated testing, TestContainers, refactoring, pair programming, User Story Mapping, technical workshops, and short training sessions.</p>
       lifull:
         name: Lifull Connect
         about: Lifull Connect is one of the largest worldwide aggregators in the employment, automotive and fashion industries, as well as the largest in the real estate sector.
