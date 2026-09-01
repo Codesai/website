@@ -1,4 +1,4 @@
-FROM ruby:4.0.6-bookworm
+FROM ruby:4.0.6-trixie
 
 ARG NODE_VERSION=24.20.0
 
