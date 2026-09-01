@@ -22,7 +22,21 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and load test image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: codesai-website-test:latest
+          cache-from: type=gha,scope=codesai-site-${{ runner.arch }}-${{ hashFiles('Dockerfile') }}
+          cache-to: type=gha,mode=max,scope=codesai-site-${{ runner.arch }}-${{ hashFiles('Dockerfile') }}
+
       - name: Validate build and links
+        env:
+          CWS_SKIP_DOCKER_BUILD: "1"
         run: make test-links
 
   production-playwright:
@@ -36,7 +50,20 @@ jobs:
       - name: Wait for the automatic Netlify deploy
         run: sleep 180
 
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and load test image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: codesai-website-test:latest
+          cache-from: type=gha,scope=codesai-site-${{ runner.arch }}-${{ hashFiles('Dockerfile') }}
+          cache-to: type=gha,mode=max,scope=codesai-site-${{ runner.arch }}-${{ hashFiles('Dockerfile') }}
+
       - name: Test production with Playwright
         env:
           CWS_TEST_BASE_URL: https://www.codesai.com
+          CWS_SKIP_DOCKER_BUILD: "1"
         run: make test-playwright

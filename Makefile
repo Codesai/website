@@ -17,7 +17,11 @@ stop:
 	docker compose down -v
 
 _test-image:
-	docker compose build web
+	@if [ "$(CWS_SKIP_DOCKER_BUILD)" = "1" ]; then \
+		docker image inspect codesai-website-test:latest >/dev/null; \
+	else \
+		docker compose build web; \
+	fi
 
 test: test-links test-playwright
 

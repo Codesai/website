@@ -1,5 +1,6 @@
 services:
   web:
+    image: codesai-website-test:latest
     build:
       context: .
     ports:
