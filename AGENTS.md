@@ -82,9 +82,7 @@ Top-level `.html` files are site pages (e.g., `home.html`, `training.html`, `tdd
 
 ### Branch Strategy
 
-- `develop` must always be deployable.
-- Post branches are cut from `develop` and merged back after revision + polishing.
-- Merge `develop` → `master` to publish to production.
+***`main` is the production branch: every push to it deploys to https://www.codesai.com, so it must always be ready to be deployed***
 
 ### Adding i18n Keys
 
