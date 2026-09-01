@@ -131,6 +131,8 @@ To add a youtube video, you can use the published-video template provided in the
 
 # Tests
 
+## Site validation
+
 Run the complete, production-like site validation with one command:
 
 ```bash

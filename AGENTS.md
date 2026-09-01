@@ -90,7 +90,6 @@ Top-level `.html` files are site pages (e.g., `home.html`, `training.html`, `tdd
 
 When adding new UI text, add the key to **both** `_i18n/es.yml` and `_i18n/en.yml` at the same nesting level. A missing key silently renders nothing.
 
-## Lighthouse Audit
 
 ## Site Validation
 
@@ -100,6 +99,8 @@ checks in Docker. It also runs the Playwright characterization suite in mobile
 and desktop Chromium, covering navigation, cookies, newsletter validation and
 submission, language switching, and ES/EN 404 routes. Do not replace it
 with ad-hoc commands.
+
+## Lighthouse Audit
 
 Use the repository script for reproducible local audits; do not assemble ad-hoc
 Lighthouse commands or use an LLM to process the runs:
