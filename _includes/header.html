@@ -82,6 +82,30 @@
 {% endif %}
 
 <script>
+    function Cookie(name) {
+        const ONE_HUNDRED_YEARS_IN_SECONDS = 100 * 365 * 24 * 60 * 60;
+
+        function value() {
+            const prefix = encodeURIComponent(name) + "=";
+            const match = document.cookie.split("; ").find(cookie => cookie.startsWith(prefix));
+            return match ? decodeURIComponent(match.slice(prefix.length)) : undefined;
+        }
+
+        function save(valueToSave) {
+            document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(valueToSave)}; max-age=${ONE_HUNDRED_YEARS_IN_SECONDS}; path=/; SameSite=Lax`;
+        }
+
+        return {
+            exists: value,
+            value,
+            save: () => save(true),
+            saveCookiesAccepted: () => save("accepted"),
+            saveCookiesRejected: () => save("rejected"),
+            isAValidCookiePolicyOption: () => ["accepted", "rejected"].includes(value()),
+            isRejected: () => value() !== "accepted"
+        };
+    }
+
     const mobileMenuTrigger = document.getElementById("mobile-menu-trigger");
     const mobileMenu = document.getElementById("mobile-menu");
     if (mobileMenuTrigger) {
