@@ -247,6 +247,12 @@ mediana inicial de 4,14 s, pero todavía no alcanza 2,5 s; la auditoría señala
 950 ms de ahorro en las hojas bloqueantes de Google Fonts, que se abordarán en
 `CWS-FONT-001`.
 
+Tras consolidar las cuatro peticiones de Google Fonts en una sola hoja asíncrona,
+la repetición móvil final (`lighthouse-local-mobile-20260901-053729.html`) obtuvo
+rendimiento 96, FCP 1,8 s, LCP 2,485 s, TBT 0 ms y CLS 0,071. Con ello se cierra
+`CWS-LH-001`; el inventario, subconjunto o autoalojamiento de fuentes continúa
+reservado para `CWS-FONT-001`.
+
 ## Siguientes acciones con otras herramientas
 
 | ID | Herramienta | Acción | Resultado esperado |
