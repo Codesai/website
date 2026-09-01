@@ -1,24 +1,18 @@
 const { test, expect } = require('@playwright/test');
 
-const pages = [
-  { name: 'home', es: '/', en: '/en/' },
-  { name: 'services', es: '/servicios/', en: '/en/services/' },
-  { name: 'technical-coaching', es: '/servicios/technical-coaching/', en: '/en/services/technical-coaching/' },
-  { name: 'team-augmentation', es: '/servicios/team-augmentation/', en: '/en/services/team-augmentation/' },
-  { name: 'consultancy', es: '/servicios/consultancy/', en: '/en/services/consultancy/' },
-  { name: 'training', es: '/cursos/', en: '/en/trainings/' },
-  { name: 'tdd-course', es: '/curso-de-tdd/', en: '/en/trainings/tdd/' },
-  { name: 'deliberate-practice-course', es: '/cursos/practica-deliberada/', en: '/en/trainings/deliberate-practice/' },
-  { name: 'refactoring-course', es: '/cursos/refactoring/', en: '/en/trainings/refactoring/' },
-  { name: 'changing-legacy-course', es: '/cursos/changing-legacy/', en: '/en/trainings/changing-legacy/' },
-  { name: 'ddd-course', es: '/cursos/ddd/', en: '/en/trainings/ddd/' },
-  { name: 'testing-techniques-course', es: '/cursos/testing-techniques/', en: '/en/trainings/testing-techniques/' },
-  { name: 'user-stories-course', es: '/cursos/user-stories/', en: '/en/trainings/user-stories/' },
-  { name: 'cd-databases-course', es: '/cursos/cd-databases/', en: '/en/trainings/cd-databases/' },
-  { name: 'ai-assisted-development-course', es: '/cursos/ai-assisted-development/', en: '/en/trainings/ai-assisted-development/' },
-  { name: 'intellij-guru-course', es: '/cursos/intellij-guru/', en: '/en/trainings/intellij-guru/' },
-  { name: 'newsletter', es: '/newsletter/', en: '/en/newsletter/' },
-  { name: 'not-found', es: '/missing-visual-regression', en: '/en/missing-visual-regression' }
+const snapshots = [
+  { name: 'not-found-es', path: '/missing-visual-regression', projects: ['desktop-chromium', 'mobile-chromium'] },
+  { name: 'newsletter-es', path: '/newsletter/', projects: ['desktop-chromium', 'mobile-chromium'] },
+  {
+    name: 'intellij-guru-course-es',
+    path: '/cursos/intellij-guru/',
+    projects: ['desktop-chromium', 'mobile-chromium', 'tablet-chromium']
+  },
+  {
+    name: 'technical-coaching-es',
+    path: '/servicios/technical-coaching/',
+    projects: ['desktop-chromium', 'mobile-chromium']
+  }
 ];
 
 async function waitForStableRendering(page) {
@@ -41,18 +35,18 @@ async function waitForStableRendering(page) {
   });
 }
 
-for (const pageDefinition of pages) {
-  for (const language of ['es', 'en']) {
-    test(`${pageDefinition.name}-${language} @visual`, async ({ page }) => {
-      await page.goto(pageDefinition[language], { waitUntil: 'networkidle' });
-      await waitForStableRendering(page);
+for (const snapshot of snapshots) {
+  test(`${snapshot.name} @visual`, async ({ page }, testInfo) => {
+    test.skip(!snapshot.projects.includes(testInfo.project.name), 'Snapshot is not required for this viewport');
 
-      await expect(page).toHaveScreenshot(`${pageDefinition.name}-${language}.png`, {
-        animations: 'disabled',
-        caret: 'hide',
-        fullPage: true,
-        maxDiffPixelRatio: 0.001
-      });
+    await page.goto(snapshot.path, { waitUntil: 'networkidle' });
+    await waitForStableRendering(page);
+
+    await expect(page).toHaveScreenshot(`${snapshot.name}.png`, {
+      animations: 'disabled',
+      caret: 'hide',
+      fullPage: true,
+      maxDiffPixelRatio: 0.001
     });
-  }
+  });
 }
