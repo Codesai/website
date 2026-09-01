@@ -226,6 +226,27 @@ Acciones:
 - p75 de Core Web Vitals reales: LCP ≤ 2,5 s, INP ≤ 200 ms y CLS ≤ 0,10, una vez exista volumen de datos suficiente.
 - Sin enlaces rotos, errores críticos de axe ni regresiones visuales en las páginas clave.
 
+## Seguimiento de la fase 2 — 2026-09-01
+
+Se repitió la auditoría con Lighthouse 13.4.1 después de corregir los contrastes,
+optimizar la imagen LCP y retirar los scripts locales bloqueantes del `head`.
+Las medianas reproducibles quedan archivadas en
+`lighthouse-local-mobile-20260901-053106.html` y
+`lighthouse-local-desktop-20260901-053106.html`.
+
+| Perfil | Rendimiento | Accesibilidad | FCP | LCP | TBT | CLS |
+|---|---:|---:|---:|---:|---:|---:|
+| Móvil | 93 | 98 | 1,8 s | 3,10 s | 0 ms | 0,009 |
+| Escritorio | 99 | 98 | 0,8 s | 0,80 s | 0 ms | 0,001 |
+
+El contraste y la diferenciación del enlace ya no fallan. Los dos puntos restantes
+de accesibilidad corresponden a `heading-order` (`CWS-A11Y-002`). La imagen LCP
+se sirve en AVIF a unos 9–14 KB frente a los 169,5 KB del PNG original y cumple
+descubribilidad, prioridad alta y carga eager. El LCP móvil mejora respecto a la
+mediana inicial de 4,14 s, pero todavía no alcanza 2,5 s; la auditoría señala hasta
+950 ms de ahorro en las hojas bloqueantes de Google Fonts, que se abordarán en
+`CWS-FONT-001`.
+
 ## Siguientes acciones con otras herramientas
 
 | ID | Herramienta | Acción | Resultado esperado |
