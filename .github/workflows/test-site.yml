@@ -1,4 +1,4 @@
-name: Site feedback
+name: Test site
 
 on:
   push:

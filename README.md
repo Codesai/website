@@ -41,7 +41,7 @@ Playwright against production after allowing time for the Netlify deploy.
    build error.
 4. Verify on https://www.codesai.com.
 
-The `Site feedback` workflow does not control or block this deployment. A failed
+In Github Actions, the `Test site` workflow does not control or block this deployment. A failed
 check reports a problem in GitHub Actions, but Netlify will already have published
 independently.
 
