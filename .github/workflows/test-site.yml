@@ -48,7 +48,36 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Wait for the automatic Netlify deploy
-        run: sleep 180
+        env:
+          DEPLOY_META_URL: https://www.codesai.com/deploy-meta.json
+        run: |
+          for attempt in {1..30}; do
+            deployed_commit="$(
+              curl --fail --silent --show-error \
+                --header 'Cache-Control: no-cache' \
+                "${DEPLOY_META_URL}?attempt=${attempt}" 2>/dev/null \
+                | jq --raw-output '.commit // empty' 2>/dev/null \
+                || true
+            )"
+
+            if [ "$deployed_commit" = "$GITHUB_SHA" ]; then
+              echo "Commit $GITHUB_SHA is now in production"
+              exit 0
+            fi
+
+            if [ -n "$deployed_commit" ]; then
+              echo "Production still contains $deployed_commit (attempt $attempt/30)"
+            else
+              echo "Production deploy metadata is not available yet (attempt $attempt/30)"
+            fi
+
+            if [ "$attempt" -lt 30 ]; then
+              sleep 10
+            fi
+          done
+
+          echo "Commit $GITHUB_SHA did not reach production"
+          exit 1
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
