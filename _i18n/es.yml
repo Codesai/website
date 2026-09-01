@@ -170,7 +170,7 @@ pages:
         description: El objetivo de este curso es que los alumnos aprendan a evolucionar una base de datos de manera continua y segura. Además, veremos diferentes técnicas para hacer tests, especialmente esenciales en entornos con bases de datos que acumulan mucha lógica.
         link: /cursos/cd-databases/
       ai_assisted_development:
-        name: Introducción al desarrollo de software asistido por IA
+        name: ✨ Introducción al desarrollo de software asistido por IA
         description: Aprende a incorporar asistentes basados en IA (LLMs y agentes de código) a tu trabajo diario de desarrollo de forma efectiva y con criterio. Cubre los fundamentos de los modelos, prompting, gestión del contexto, evaluación de resultados y ampliación de agentes mediante MCP.
         link: /cursos/ai-assisted-development/
         modality: "Remoto (consúltanos sobre presencial)"

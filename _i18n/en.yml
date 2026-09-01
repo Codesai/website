@@ -170,7 +170,7 @@ pages:
         description: The objective of this training is for students to learn how to continuously and safely evolve a database. In addition, we will learn about different testing techniques, particularly essential in database environments that involve a lot of accumulated logic.
         link: /en/trainings/cd-databases
       ai_assisted_development:
-        name: Introduction to AI-Assisted Software Development
+        name: ✨ Introduction to AI-Assisted Software Development
         description: Learn to bring AI-based assistants (LLMs and coding agents) into your day-to-day development work effectively and with good judgement. Covers model fundamentals, prompting, context management, evaluating results, and extending agents with MCP.
         link: /en/trainings/ai-assisted-development
         modality: "Remote (ask us about in-person)"
