@@ -1,0 +1,42 @@
+name: Site feedback
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: site-feedback-main
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: Build and links
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate build and links
+        run: make test-links
+
+  production-playwright:
+    name: Playwright on production
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Wait for the automatic Netlify deploy
+        run: sleep 180
+
+      - name: Test production with Playwright
+        env:
+          CWS_TEST_BASE_URL: https://www.codesai.com
+        run: make test-playwright

@@ -2,6 +2,26 @@
 
 set -euo pipefail
 
+test_suite="${CWS_TEST_SUITE:-all}"
+run_links=0
+run_playwright=0
+case "$test_suite" in
+  all)
+    run_links=1
+    run_playwright=1
+    ;;
+  links)
+    run_links=1
+    ;;
+  playwright)
+    run_playwright=1
+    ;;
+  *)
+    echo "Unknown CWS_TEST_SUITE: $test_suite (expected all, links or playwright)" >&2
+    exit 2
+    ;;
+esac
+
 test_root="$(mktemp -d)"
 source_dir="$test_root/source"
 server_pid=""
@@ -44,51 +64,61 @@ en_built_count="$(find _site/en/posts -type f -name '*.html' | wc -l)"
   exit 1
 }
 
-if [[ "${CWS_TEST_INJECT_BROKEN_LINK:-}" == "1" ]]; then
-  printf '<a href="/definitely-missing-cws-test">broken test link</a>\n' >> _site/index.html
-fi
-
-bundle exec ruby /app/scripts/prepare-proof-tree.rb _site netlify.toml
-bundle exec htmlproofer _site \
-  --disable-external \
-  --no-enforce-https \
-  --allow-missing-href \
-  --ignore-missing-alt \
-  --root-dir "$PWD/_site"
-
-bundle exec ruby /app/scripts/test-http-server.rb _site 4173 &
-server_pid="$!"
-
-for _attempt in {1..50}; do
-  if curl --silent --fail --output /dev/null http://127.0.0.1:4173/; then
-    break
+if (( run_links )); then
+  if [[ "${CWS_TEST_INJECT_BROKEN_LINK:-}" == "1" ]]; then
+    printf '<a href="/definitely-missing-cws-test">broken test link</a>\n' >> _site/index.html
   fi
-  sleep 0.1
-done
 
-[[ "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:4173/)" == "200" ]]
-[[ "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:4173/en/)" == "200" ]]
-
-for missing_path in /missing-cws-test /en/missing-cws-test; do
-  response_file="$test_root/404-response.html"
-  [[ "$(curl --silent --output "$response_file" --write-out '%{http_code}' "http://127.0.0.1:4173$missing_path")" == "404" ]]
-  grep -q 'class="error-404"' "$response_file"
-done
-
-playwright_args=("--config=$source_dir/playwright.config.js")
-if [[ "${CWS_UPDATE_VISUAL_BASELINES:-}" == "1" ]]; then
-  playwright_args+=("--update-snapshots")
+  bundle exec ruby /app/scripts/prepare-proof-tree.rb _site netlify.toml
+  bundle exec htmlproofer _site \
+    --disable-external \
+    --no-enforce-https \
+    --allow-missing-href \
+    --ignore-missing-alt \
+    --root-dir "$PWD/_site"
 fi
 
-CWS_TEST_BASE_URL=http://127.0.0.1:4173 \
-PLAYWRIGHT_OUTPUT_DIR="$test_root/playwright-results" \
-NODE_PATH=/opt/codesai-tests/node_modules \
-npm --prefix /opt/codesai-tests run test:e2e -- "${playwright_args[@]}"
+playwright_base_url="${CWS_TEST_BASE_URL:-http://127.0.0.1:4173}"
 
-if [[ "${CWS_UPDATE_VISUAL_BASELINES:-}" == "1" ]]; then
-  mkdir -p /app/tests/e2e/visual.spec.js-snapshots
-  cp -a "$source_dir/tests/e2e/visual.spec.js-snapshots/." \
-    /app/tests/e2e/visual.spec.js-snapshots/
+if (( run_links )) || [[ -z "${CWS_TEST_BASE_URL:-}" ]]; then
+  bundle exec ruby /app/scripts/test-http-server.rb _site 4173 &
+  server_pid="$!"
+
+  for _attempt in {1..50}; do
+    if curl --silent --fail --output /dev/null http://127.0.0.1:4173/; then
+      break
+    fi
+    sleep 0.1
+  done
 fi
 
-echo "Site validation passed ($es_built_count posts in each language)."
+if (( run_links )); then
+  [[ "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:4173/)" == "200" ]]
+  [[ "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:4173/en/)" == "200" ]]
+
+  for missing_path in /missing-cws-test /en/missing-cws-test; do
+    response_file="$test_root/404-response.html"
+    [[ "$(curl --silent --output "$response_file" --write-out '%{http_code}' "http://127.0.0.1:4173$missing_path")" == "404" ]]
+    grep -q 'class="error-404"' "$response_file"
+  done
+fi
+
+if (( run_playwright )); then
+  playwright_args=("--config=$source_dir/playwright.config.js")
+  if [[ "${CWS_UPDATE_VISUAL_BASELINES:-}" == "1" ]]; then
+    playwright_args+=("--update-snapshots")
+  fi
+
+  CWS_TEST_BASE_URL="$playwright_base_url" \
+  PLAYWRIGHT_OUTPUT_DIR="$test_root/playwright-results" \
+  NODE_PATH=/opt/codesai-tests/node_modules \
+  npm --prefix /opt/codesai-tests run test:e2e -- "${playwright_args[@]}"
+
+  if [[ "${CWS_UPDATE_VISUAL_BASELINES:-}" == "1" ]]; then
+    mkdir -p /app/tests/e2e/visual.spec.js-snapshots
+    cp -a "$source_dir/tests/e2e/visual.spec.js-snapshots/." \
+      /app/tests/e2e/visual.spec.js-snapshots/
+  fi
+fi
+
+echo "Site validation passed: $test_suite suite ($es_built_count posts in each language)."

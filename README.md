@@ -21,8 +21,9 @@ Althought ***not recommended*** you can [setup your own environment](https://bit
 # Deploy
 
 The site is hosted on **Netlify**, connected to this GitHub repository. There is no
-manual deploy step and no GitHub Actions workflow: Netlify watches the repo and
-deploys on its own.
+manual deploy step: Netlify watches the repo and deploys on its own. GitHub Actions
+provides non-blocking feedback by validating the build and links, then running
+Playwright against production after allowing time for the Netlify deploy.
 
 - **Production branch: `main`.** Every push to `main` triggers an automatic Netlify
   build that runs a Jekyll build (see `build_site.sh`, which also copies the Spanish
@@ -39,6 +40,10 @@ deploys on its own.
    build for your commit to finish (typically 1–3 minutes). The log there shows any
    build error.
 4. Verify on https://www.codesai.com.
+
+The `Site feedback` workflow does not control or block this deployment. A failed
+check reports a problem in GitHub Actions, but Netlify will already have published
+independently.
 
 ## Rollback
 
