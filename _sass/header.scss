@@ -96,8 +96,15 @@ header {
 
     .message {
       a {
-        text-decoration: none;
+        text-decoration: underline;
+        text-decoration-thickness: 0.12em;
+        text-underline-offset: 0.15em;
         color: $blueish-green;
+
+        &:focus-visible {
+          outline: 2px solid white;
+          outline-offset: 2px;
+        }
       }
     }
 
@@ -124,7 +131,7 @@ header {
         color: white;
 
         &.accept {
-          background-color: hsl(170, 80%, 40%);
+          background-color: hsl(170, 88%, 25%);
         }
 
         &.reject {

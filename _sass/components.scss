@@ -79,7 +79,7 @@
 
     h4 {
       font-size: 2rem;
-      color: #fff;
+      color: $blueish-gray;
       font-weight: 700;
       margin: 0;
     }
@@ -155,7 +155,7 @@
         font-size: 2.2rem;
         font-weight: bolder;
         line-height: 1.2;
-        color: white;
+        color: $blueish-gray;
 
         @media screen and (max-width: $max-width-breakpoint) {
           font-size: 1.75rem;
@@ -193,7 +193,7 @@
         label {
           margin-bottom: 0.25rem;
           font-size: 1.2rem;
-          color: white;
+          color: $blueish-gray;
         }
 
         input {
