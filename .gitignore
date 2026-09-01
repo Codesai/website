@@ -1,13 +1,9 @@
 _site/
-
 .bundle
 .sass-cache
 .DS_Store
-
 .ruby-version
-
 .vscode/
-
 .jekyll-cache
 .jekyll-metadata
 _i18n/en/_posts/
