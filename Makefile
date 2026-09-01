@@ -29,7 +29,7 @@ test-links: _test-image
 	docker compose run --rm -e CWS_TEST_SUITE=links -e CWS_TEST_INJECT_BROKEN_LINK web bash scripts/test-site.sh
 
 test-playwright: _test-image
-	docker compose run --rm -e CWS_TEST_SUITE=playwright -e CWS_TEST_BASE_URL web bash scripts/test-site.sh
+	docker compose run --rm -e CI -e CWS_TEST_SUITE=playwright -e CWS_TEST_BASE_URL web bash scripts/test-site.sh
 
 lighthouse:
 	scripts/run-lighthouse.sh
