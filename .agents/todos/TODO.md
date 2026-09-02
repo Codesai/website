@@ -35,7 +35,9 @@ Prioridades: `P0` crítica, `P1` alta, `P2` media.
 | CWS-IMG-003 | TODO | P2 | Contenido | Revisar textos alternativos y corregir el logo de Mango etiquetado como Lifull Connect. | Alt decorativos vacíos y alt informativos correctos en ES/EN; revisión axe/manual superada. |
 | CWS-CACHE-001 | TODO | P2 | Hosting | Versionar activos y configurar caché larga e inmutable; conservar revalidación del HTML. | Activos versionados responden con `max-age=31536000, immutable`; HTML no queda obsoleto tras despliegue. |
 | CWS-SEC-001 | TODO | P2 | Seguridad | Añadir cabeceras Netlify; desplegar CSP primero en `Report-Only`. | Observatory/SecurityHeaders sin fallos críticos y recursos/funciones del sitio no se bloquean. |
-| CWS-CSS-001 | TODO | P2 | CSS/Sass | Migrar el Sass obsoleto: sustituir `@import` por el sistema de módulos (`@use`/`@forward`), reemplazar divisiones con `/` por `math.div()` y añadir unidades `%` a saturación y luminosidad en `hsl()`. | `make test` pasa sin avisos Sass de `import`, `slash-div` ni `function-units`; los CSS generados conservan el diseño en ES/EN y móvil/escritorio. |
+| CWS-CSS-001 | TODO | P2 | CSS/Sass | Sustituir los `@import` obsoletos de Sass por el sistema de módulos con `@use` y `@forward`. | `make test` pasa sin avisos Sass de `import`; los CSS generados conservan el diseño en ES/EN y móvil/escritorio. |
+| CWS-CSS-002 | TODO | P2 | CSS/Sass | Reemplazar las divisiones Sass con `/` fuera de `calc()` por `math.div()` o la alternativa CSS apropiada. | `make test` pasa sin avisos Sass de `slash-div`; los valores calculados y el diseño visual no cambian. |
+| CWS-CSS-003 | TODO | P2 | CSS/Sass | Añadir la unidad `%` a los valores de saturación y luminosidad usados en funciones de color Sass. | `make test` pasa sin avisos Sass de `function-units`; los colores generados permanecen equivalentes y la regresión visual pasa. |
 | CWS-DEP-003 | TODO | P2 | Docker/Reproducibilidad | Fijar la instalación global de SVGO a la versión auditada `svgo@4.1.0`. | Dos builds limpios instalan la misma versión de SVGO; `svgo --version` devuelve 4.1.0 y `make test` pasa. |
 | CWS-DEP-004 | TODO | P2 | Node/Mantenimiento | Evaluar y, si es compatible con Node 24 LTS, actualizar npm de 11.19.0 a 12.0.2; documentar la decisión si se conserva la versión distribuida con Node. | La versión elegida queda fijada o explícitamente documentada; `npm ci`, Playwright y `make test` pasan sin cambios en el lockfile durante el build. |
 | CWS-TOOL-005 | TODO | P2 | SEO | Rastrear el sitio ES/EN con Screaming Frog/Sitebulb. | Sin 4xx internos; canonical/hreflang/títulos/descriptions/headings revisados por plantilla. |
@@ -49,7 +51,7 @@ Fase 4. **Semántica e interacción:** `CWS-A11Y-002`, `CWS-A11Y-003`, `CWS-A11Y
 Fase 5. **Peso y estabilidad visual:** `CWS-IMG-002`, `CWS-IMG-001`, `CWS-ICON-001` y `CWS-FONT-001`.
 Fase 6. **Privacidad y prevención de regresiones:** `CWS-ANA-001`, `CWS-CI-001`, `CWS-LH-003` y `CWS-TOOL-004`.
 Fase 7. **Validación externa y datos reales:** `CWS-TOOL-003`, `CWS-TOOL-001` y `CWS-TOOL-002`.
-Fase 8. **Mantenimiento de prioridad media:** `CWS-DEP-003`, `CWS-DEP-004`, `CWS-CSS-001`, `CWS-IMG-003`, `CWS-CACHE-001`, `CWS-SEC-001`, `CWS-TOOL-005` y `CWS-TOOL-006`.
+Fase 8. **Mantenimiento de prioridad media:** `CWS-DEP-003`, `CWS-DEP-004`, `CWS-CSS-001`, `CWS-CSS-002`, `CWS-CSS-003`, `CWS-IMG-003`, `CWS-CACHE-001`, `CWS-SEC-001`, `CWS-TOOL-005` y `CWS-TOOL-006`.
 
 ## Explicación del orden
 
