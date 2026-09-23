@@ -1,20 +1,22 @@
 ---
 ---
 
+@use "sass:math";
+
 @function pxToRem($px) {
-  $rem: $px / 16;
+  $rem: math.div($px, 16);
   @return #{$rem}rem;
 }
 
 $max-content-width: 980px;
 $tablet-breakpoint: 768px;
 
-$green-100: hsl(200, 97, 98);
-$green-200: hsl(170, 97, 95);
-$green-500: hsl(170, 97, 41);
+$green-100: hsl(200, 97%, 98%);
+$green-200: hsl(170, 97%, 95%);
+$green-500: hsl(170, 97%, 41%);
 
-$orange-100: hsl(74, 100, 97);
-$orange-500: hsl(24, 98, 47);
+$orange-100: hsl(74, 100%, 97%);
+$orange-500: hsl(24, 98%, 47%);
 
 $assistant: 'Assistant', sans-serif;
 
@@ -371,4 +373,3 @@ p {
     }
   }
 }
-

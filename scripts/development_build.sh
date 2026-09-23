@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+rm -rf _i18n/en/_posts
 mkdir -p _i18n/en/_posts
 cp -a _i18n/es/_posts/. _i18n/en/_posts/
 

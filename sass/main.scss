@@ -1,6 +1,8 @@
 ---
 ---
 
+@use "sass:math";
+
 // TODO Make the download program link work (for the TDD course)
 // TODO call to action toastr instead of alert xD
 
@@ -18,7 +20,7 @@ $lekton: 'Lekton', sans-serif;
 $signika: 'Signika', sans-serif;
 
 @function pxToRem($px) {
-  $rem: $px / 16;
+  $rem: math.div($px, 16);
   @return #{$rem}rem;
 }
 
