@@ -174,8 +174,7 @@ We see architectural mutation testing as an additional feedback mechanism that c
 
 I'd like to thank [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback about several drafts of this post.
 
-Finally, I’d also like to thank [Studio Saiz
-Studio Saiz](https://www.pexels.com/@saizstudio/) for the photo.
+Finally, I’d also like to thank [Studio Saiz](https://www.pexels.com/@saizstudio/) for the photo.
 
 ## References.
 
