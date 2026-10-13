@@ -178,7 +178,12 @@ pages:
         name: ✨ Introduction to AI-Assisted Software Development
         description: Learn to bring AI-based assistants (LLMs and coding agents) into your day-to-day development work effectively and with good judgement. Covers model fundamentals, prompting, context management, evaluating results, and extending agents with MCP.
         link: /en/trainings/ai-assisted-development
-        modality: "Remote (ask us about in-person)"
+        modality: "Remote (ask about in-person)."
+      advanced_ai_assisted_development:
+        name: ✨ Advanced AI-Assisted Development
+        description: Learn to integrate LLMs and coding agents into your development work, understanding their fundamentals, costs and non-deterministic nature. Design reusable prompts and manage context through documents, skills, sub-agents and memory. Evaluate results with human oversight, static analysis, mutation testing and architectural fitness. Extend agents with MCP and skills, guide them with harnesses, guardrails and evals, and build agentic workflows with hooks, RPI and loop engineering to apply what you learn in your daily work.
+        link: /en/trainings/advanced-ai-assisted-development/
+        modality: "Remote (ask about in-person)."
     contact:
       title: Can't find the training you need? Tell us what you are looking for!
       text: <p>At Codesai we are always open to listen to suggestions made by our customers. We would like to offer you a training that fits your needs. You can write to us at <strong>contact@codesai.com</strong> or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
@@ -883,9 +888,72 @@ pages:
         text: <p>After the training you will be able to apply what you have learned in your own context by means of special sessions in which we will work with examples that you face every day (price and duration of the sessions on request).</p>
       where:
         title: Modality and editions
-        text: '<p>The training is delivered remotely. If you are interested in an in-person edition, ask us and we will look into it.</p>
+        text: '<p>Remote (ask about in-person).</p>
                <p>It can be delivered as a private training for the hiring company, or as an open edition for individual participants. We try to run open editions periodically, but we are not always able to. If you want us to notify you of upcoming open editions, please fill out the contact form.</p>
                <p class="unicode">Please note that private training sessions take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
+    advanced_ai_assisted_development:
+      title: Advanced AI-Assisted Development
+      name: Advanced AI-Assisted Development
+      text: '<p>Learn to integrate LLMs and coding agents into your development work, from fundamentals and prompting to context management, evaluating results and agentic workflows.</p>
+             <p>We will cover extending agents through MCP and skills, and guiding them with harnesses, guardrails, gateways and evals.</p>
+             <p>The course lasts 20 hours. We recommend spreading it over 5 sessions.</p>'
+      modality: "Remote (ask about in-person)."
+      call_to_action:
+        link: /en/trainings/advanced-ai-assisted-development/#call-to-action
+        title: OK! I am interested in taking the Advanced AI-Assisted Development course
+        text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
+        placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
+      content:
+        title: Contents
+        agenda: '<div class="topics">
+                      <div class="group"><span>1. </span> Fundamentals</div>
+                      <div class="subgroup"><span>&bull;</span> What is an LLM</div>
+                      <div class="subgroup"><span>&bull;</span> Parameters, tokens (language), costs</div>
+                      <div class="subgroup"><span>&bull;</span> Non-deterministic nature</div>
+                      <div class="subgroup"><span>&bull;</span> Context window</div>
+                      <div class="subgroup"><span>&bull;</span> Existing models</div>
+                      <div class="group"><span>2. </span> Prompting</div>
+                      <div class="subgroup"><span>&bull;</span> What is it?</div>
+                      <div class="subgroup"><span>&bull;</span> Structure of a good prompt: role, context, exact task, constraints or rules, output format</div>
+                      <div class="subgroup"><span>&bull;</span> Crystallizing frequent prompts for reuse as commands</div>
+                      <div class="subgroup"><span>&bull;</span> Model vs. agent: indeterminism and determinism</div>
+                      <div class="group"><span>3. </span> Context management</div>
+                      <div class="subgroup"><span>&bull;</span> The problem and management strategies</div>
+                      <div class="subgroup"><span>&bull;</span> Documents, skills and sub-agents</div>
+                      <div class="subgroup"><span>&bull;</span> Shared context</div>
+                      <div class="subgroup"><span>&bull;</span> Memory</div>
+                      <div class="group"><span>4. </span> Evaluating results</div>
+                      <div class="subgroup"><span>&bull;</span> Interaction modes and degrees of autonomy</div>
+                      <div class="subgroup"><span>&bull;</span> Human in the loop</div>
+                      <div class="subgroup"><span>&bull;</span> Static code analysis tools</div>
+                      <div class="subgroup"><span>&bull;</span> Mutation testing</div>
+                      <div class="subgroup"><span>&bull;</span> Architectural fitness</div>
+                      <div class="group"><span>5. </span> Adding capabilities to coding agents</div>
+                      <div class="subgroup"><span>&bull;</span> MCP</div>
+                      <div class="subgroup"><span>&bull;</span> Skills to add capabilities</div>
+                      <div class="group"><span>6. </span> Harnessing coding agents</div>
+                      <div class="subgroup"><span>&bull;</span> Guidelines (guides)</div>
+                      <div class="subgroup"><span>&bull;</span> Guardrails (sensors)</div>
+                      <div class="subgroup"><span>&bull;</span> Gateways: inferential vs. computational</div>
+                      <div class="subgroup"><span>&bull;</span> Harness templates</div>
+                      <div class="subgroup"><span>&bull;</span> Evals</div>
+                      <div class="group"><span>7. </span> Workflows and hooks</div>
+                      <div class="subgroup"><span>&bull;</span> RPI</div>
+                      <div class="subgroup"><span>&bull;</span> Loop engineering</div>
+                      <div class="subgroup"><span>&bull;</span> Agentic workflows</div>
+                      <div class="group"><span>8. </span> Next steps: how to apply it after the course</div>
+                      <div class="subgroup"><span>&bull;</span> A summary and how to apply all this knowledge</div>
+                  </div>'
+      who:
+        title: Who is it intended for?
+        text: '<p>For people and teams with software development experience who want to incorporate AI agents into their work.</p>
+               <p>Software development experience is required. No previous experience with AI tools is required.</p>'
+      consulting:
+        title: We offer you domain-specific support
+        text: <p>After the training you will be able to apply what you have learned in your own context by means of special sessions in which we will work with examples that you face every day (price and duration of the sessions on request).</p>
+      where:
+        title: Modality and editions
+        text: '<p>Remote (ask about in-person).</p>'
   publications:
     title: Codesai. Blog
     posts: Posts

@@ -178,7 +178,12 @@ pages:
         name: ✨ Introducción al desarrollo de software asistido por IA
         description: Aprende a incorporar asistentes basados en IA (LLMs y agentes de código) a tu trabajo diario de desarrollo de forma efectiva y con criterio. Cubre los fundamentos de los modelos, prompting, gestión del contexto, evaluación de resultados y ampliación de agentes mediante MCP.
         link: /cursos/ai-assisted-development/
-        modality: "Remoto (consúltanos sobre presencial)"
+        modality: "Remoto (consultar presencial)"
+      advanced_ai_assisted_development:
+        name: ✨ Desarrollo Asistido por IA (AVANZADO)
+        description: Aprende a integrar LLMs y agentes de código en tu trabajo de desarrollo, entendiendo sus fundamentos, costes y naturaleza no determinista. Diseña prompts reutilizables y gestiona el contexto mediante documentos, skills, subagentes y memoria. Evalúa los resultados con supervisión humana, análisis estático, mutation testing y criterios de arquitectura. Amplía las capacidades de los agentes con MCP y skills, guíalos con harnesses, guardrails y evals, y construye workflows agénticos con hooks, RPI y loop engineering para aplicar lo aprendido en tu día a día.
+        link: /cursos/advanced-ai-assisted-development/
+        modality: "Remoto (consultar presencial)"
     contact:
       title: ¿No encuentras el curso que necesitas? ¡Cuéntanos lo que estás buscando!
       text: <p>En Codesai estamos siempre abiertos a escuchar propuestas de nuestros clientes. Nos gustaría poder ofrecerte un curso que se ajuste a tus necesidades. Puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
@@ -834,9 +839,72 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
         text: <p>Después de hacer el curso podrás aplicar a tu propio contexto lo que has aprendido mediante sesiones especiales en las que trabajaremos con ejemplos a los que te enfrentas a diario (precio y duración de las sesiones a consultar).</p>
       where:
         title: Modalidad y ediciones
-        text: '<p>El curso se imparte de forma remota. Si estás interesado en una edición presencial, consúltanos y estudiamos la posibilidad.</p>
+        text: '<p>Remoto (consultar presencial)</p>
                <p>Se puede impartir cerrado para la empresa que lo contrata, o en abierto. Intentamos impartir ediciones en abierto de forma periódica, pero no siempre podemos. Si quieres que te avisemos de las próximas ediciones en abierto, por favor rellena el formulario de contacto.</p>
                <p class="unicode">Ten en cuenta que los cursos cerrados para empresas se realizan una vez nos contrate el cliente. Necesitaremos saber la fecha con al menos un mes de antelación para poder cuadrar agendas.</p>'
+    advanced_ai_assisted_development:
+      title: Desarrollo Asistido por IA (AVANZADO)
+      name: Desarrollo Asistido por IA (AVANZADO)
+      text: '<p>Aprende a integrar LLMs y agentes de código en tu trabajo de desarrollo, desde los fundamentos y el prompting hasta la gestión del contexto, la evaluación de resultados y los workflows agénticos.</p>
+             <p>Trabajaremos cómo ampliar las capacidades de los agentes mediante MCP y skills, y cómo guiarlos mediante harnesses, guardrails, gateways y evals.</p>
+             <p>El curso tiene una duración de 20 horas. Recomendamos distribuirlo en 5 jornadas.</p>'
+      modality: "Remoto (consultar presencial)"
+      call_to_action:
+        title: ¡OK! Me interesa realizar el curso Desarrollo Asistido por IA (AVANZADO)
+        text: <p>Si deseas iniciar el proceso de inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
+        placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
+        link: /cursos/advanced-ai-assisted-development/#call-to-action
+      content:
+        title: Contenido
+        agenda: '<div class="topics">
+                      <div class="group"><span>1. </span> Fundamentos</div>
+                      <div class="subgroup"><span>&bull;</span> Qué es un LLM</div>
+                      <div class="subgroup"><span>&bull;</span> Parámetros, tokens (lenguaje) y costes</div>
+                      <div class="subgroup"><span>&bull;</span> Naturaleza no determinista</div>
+                      <div class="subgroup"><span>&bull;</span> Ventana de contexto</div>
+                      <div class="subgroup"><span>&bull;</span> Modelos existentes</div>
+                      <div class="group"><span>2. </span> Prompting</div>
+                      <div class="subgroup"><span>&bull;</span> Qué es</div>
+                      <div class="subgroup"><span>&bull;</span> Estructura de un buen prompt: rol, contexto, tarea exacta, restricciones o reglas y formato de salida</div>
+                      <div class="subgroup"><span>&bull;</span> Cristalizar prompts frecuentes para reutilizarlos como comandos</div>
+                      <div class="subgroup"><span>&bull;</span> Modelo vs. agente: indeterminismo y determinismo</div>
+                      <div class="group"><span>3. </span> Gestión del contexto</div>
+                      <div class="subgroup"><span>&bull;</span> El problema y estrategias de gestión</div>
+                      <div class="subgroup"><span>&bull;</span> Documentos, skills y subagentes</div>
+                      <div class="subgroup"><span>&bull;</span> Contexto compartido</div>
+                      <div class="subgroup"><span>&bull;</span> Memoria</div>
+                      <div class="group"><span>4. </span> Evaluación de resultados</div>
+                      <div class="subgroup"><span>&bull;</span> Modos de interacción y grados de autonomía</div>
+                      <div class="subgroup"><span>&bull;</span> Human in the loop: supervisión humana</div>
+                      <div class="subgroup"><span>&bull;</span> Herramientas de análisis estático de código</div>
+                      <div class="subgroup"><span>&bull;</span> Mutation testing</div>
+                      <div class="subgroup"><span>&bull;</span> Architectural fitness</div>
+                      <div class="group"><span>5. </span> Añadir capacidades a los agentes de código</div>
+                      <div class="subgroup"><span>&bull;</span> MCP</div>
+                      <div class="subgroup"><span>&bull;</span> Skills para añadir capacidades</div>
+                      <div class="group"><span>6. </span> Harnesses para agentes de código</div>
+                      <div class="subgroup"><span>&bull;</span> Guidelines (guías)</div>
+                      <div class="subgroup"><span>&bull;</span> Guardrails (sensores)</div>
+                      <div class="subgroup"><span>&bull;</span> Gateways: inferenciales y computacionales</div>
+                      <div class="subgroup"><span>&bull;</span> Plantillas de harnesses</div>
+                      <div class="subgroup"><span>&bull;</span> Evals</div>
+                      <div class="group"><span>7. </span> Workflows y hooks</div>
+                      <div class="subgroup"><span>&bull;</span> RPI</div>
+                      <div class="subgroup"><span>&bull;</span> Loop engineering</div>
+                      <div class="subgroup"><span>&bull;</span> Workflows agénticos</div>
+                      <div class="group"><span>8. </span> Siguientes pasos: cómo aplicarlo después del curso</div>
+                      <div class="subgroup"><span>&bull;</span> Resumen y cómo aplicar todo este conocimiento</div>
+                  </div>'
+      who:
+        title: ¿Para quién está pensado?
+        text: '<p>Dirigido a personas y equipos con experiencia desarrollando software que quieran incorporar agentes de IA a su trabajo.</p>
+               <p>Se requiere experiencia desarrollando software. No se requiere experiencia previa con herramientas de IA.</p>'
+      consulting:
+        title: Te ayudamos en tu dominio
+        text: <p>Después de hacer el curso podrás aplicar a tu propio contexto lo que has aprendido mediante sesiones especiales en las que trabajaremos con ejemplos a los que te enfrentas a diario (precio y duración de las sesiones a consultar).</p>
+      where:
+        title: Modalidad y ediciones
+        text: '<p>Remoto (consultar presencial)</p>'
   publications:
     title: Codesai. Blog
     posts: Posts
@@ -1242,7 +1310,7 @@ components:
   course:
     information: Información
     hours: horas
-    modality: Remoto (consultar presencial).
+    modality: Remoto (consultar presencial)
     price_ratio: "&nbsp;€/persona"
     iva_excluded: I.V.A. no incluido.
     button: Ver más información
@@ -1253,7 +1321,7 @@ components:
     special_discount: "<span>Bonificable por FUNDAE</span>. <br> <br> En ediciones abiertas: <span>50% de descuento</span> para particulares de grupos poco representados en tecnología"
     special_discount_short: "<span>Bonificable por FUNDAE</span>"
     hours: horas
-    default_modality_text: Remoto (consultar presencial).
+    default_modality_text: Remoto (consultar presencial)
     participant: persona
     iva_excluded: (I.V.A no incluido)
     button: ¡Me interesa!
