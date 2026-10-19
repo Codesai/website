@@ -10,7 +10,7 @@ categories:
   - Property-based Testing
   - Testing
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small_pbt_simple.jpg
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2022/08/simple-example-of-property-based-testing.html

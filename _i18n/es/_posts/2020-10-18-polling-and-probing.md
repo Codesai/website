@@ -11,7 +11,7 @@ categories:
   - Integration Testing
 small_image: sleepy_cat.jpg
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2020/10/sleeping-is-not-best-option.html
 ---

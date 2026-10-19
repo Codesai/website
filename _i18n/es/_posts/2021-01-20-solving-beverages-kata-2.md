@@ -12,7 +12,7 @@ categories:
   - Object-Oriented Design
 small_image: small-solving-beverage-kata.jpg
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2021/01/solving-beverages-prices-refactoring.html
 ---

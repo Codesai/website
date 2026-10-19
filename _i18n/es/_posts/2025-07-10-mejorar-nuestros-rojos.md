@@ -9,6 +9,7 @@ categories:
   - TDD
   - Testing
 author: Manuel Rivero
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small_apples.jpeg
 written_in: spanish
 ---

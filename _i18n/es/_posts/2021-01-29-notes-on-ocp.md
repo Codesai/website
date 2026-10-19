@@ -14,7 +14,7 @@ categories:
   - SOLID
 tags: []
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small-teddy.jpeg
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2021/01/notes-on-ocp-from-agile-principles.html

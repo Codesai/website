@@ -11,7 +11,7 @@ categories:
 - TypeScript
 - Design Patterns
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: temporary_field_small.jpg
 written_in: english
 cross_post_url:

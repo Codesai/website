@@ -12,6 +12,7 @@ categories:
 - Design Patterns
 - Refactoring
 author: Manuel Rivero
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 small_image: small_decorator.jpg
 ---

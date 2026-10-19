@@ -14,7 +14,7 @@ categories:
   - Refactoring
   - Test Doubles
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image:  small_listening_to_tests.jpg
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2022/08/listening-to-test-smells-detecting-lack.html

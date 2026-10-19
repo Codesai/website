@@ -14,7 +14,7 @@ categories:
   - SOLID
 tags: []
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: lsp_notes.jpg
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2022/02/notes-on-lsp-from-agile-principles.html

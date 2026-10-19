@@ -11,6 +11,7 @@ categories:
 - Test Doubles
 - Legacy Code
 author: Manuel Rivero
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 small_image: isolated_meme.jpg
 ---

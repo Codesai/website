@@ -11,7 +11,7 @@ categories:
   - Code Smells 
   - Object-Oriented Design
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small_hidden_grasshopper.jpg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com/2017/09/data-clumps-primitive-obsession-and.html

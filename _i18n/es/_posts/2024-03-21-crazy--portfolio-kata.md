@@ -12,7 +12,7 @@ categories:
   - Testing
 small_image: small-crazy-portfolio.jpg
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 cross_post_url: 
 ---

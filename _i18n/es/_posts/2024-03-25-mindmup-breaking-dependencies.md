@@ -9,7 +9,7 @@ categories:
   - Dependency-Breaking Techniques
 small_image: small_breaking_dependencies_classification.jpg
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 cross_post_url: 
 ---

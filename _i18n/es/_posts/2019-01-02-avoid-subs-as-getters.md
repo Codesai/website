@@ -11,7 +11,7 @@ categories:
   - Subscriptions
 small_image: small_cattle-skull.jpeg
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2019/01/avoid-using-subscriptions-only-as-app.html
 published_in_blog: Manuel Rivero

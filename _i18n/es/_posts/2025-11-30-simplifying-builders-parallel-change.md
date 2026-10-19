@@ -10,6 +10,7 @@ categories:
 - Refactoring
 - Parallel Change
 author: Manuel Rivero
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 small_image: posts/simplifying_builders/small_parallel_change_builders.jpg
 ---

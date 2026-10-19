@@ -14,7 +14,7 @@ categories:
 - Test Doubles
 - Test Smells
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small-wrong-port-interface.jpg
 written_in: english
 cross_post_url: 

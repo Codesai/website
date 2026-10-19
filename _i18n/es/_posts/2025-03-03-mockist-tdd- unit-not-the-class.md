@@ -10,6 +10,7 @@ categories:
 - TDD
 - Test Doubles
 author: Manuel Rivero
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 small_image: posts/unit_is_the_class/small_unit_london.jpg
 ---

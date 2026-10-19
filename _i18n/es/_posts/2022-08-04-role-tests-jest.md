@@ -15,7 +15,7 @@ categories:
 - Integration Testing
 - Design Patterns
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small_role_tests_jest.png
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2022/08/example-of-role-tests-in-javascript.html

@@ -15,7 +15,7 @@ categories:
   - Testing
   - Test Doubles
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small_contract_tests.jpg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com/2015/08/contract-tests-for-interfaces.html

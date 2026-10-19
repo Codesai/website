@@ -10,6 +10,7 @@ categories:
   - Learning
   - Promp Engineering
 author: Manuel Rivero
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small-child-practicing.png
 written_in: english
 ---

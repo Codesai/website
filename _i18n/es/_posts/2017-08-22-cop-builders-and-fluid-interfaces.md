@@ -13,7 +13,7 @@ categories:
   - Testing
   - Builders
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small_builders.jpeg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com/2017/08/in-small-piece-of-code.html

@@ -12,7 +12,7 @@ categories:
   - Refactoring
 small_image: accurate-boy-build-298825.jpg
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2019/05/the-curious-case-of-negative-builder.html
 ---

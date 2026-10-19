@@ -12,7 +12,7 @@ categories:
   - JavaScript
   - Code Smells
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small_giant_octopus.jpeg
 written_in: english
 cross_post_url: 

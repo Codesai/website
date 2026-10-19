@@ -11,7 +11,7 @@ categories:
   - News
 tags: []
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small_barcelona_2017_01_curso.png
 ---
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -9,7 +9,7 @@ categories:
   - Learning
   - TDD
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small_explore_flag.jpg
 written_in: english
 cross_post_url: http://garajeando.blogspot.com.es/2018/03/examples-lists.html

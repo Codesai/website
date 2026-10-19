@@ -12,6 +12,7 @@ categories:
   - Generics
   - Java    
 author: Manuel Rivero
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small-segregating-builders.jpg
 written_in: english
 ---

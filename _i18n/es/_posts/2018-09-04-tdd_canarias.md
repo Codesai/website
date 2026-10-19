@@ -12,7 +12,7 @@ categories:
   - Training
 small_image: small_potatoes-vegetables.jpeg
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 cross_post_url: http://garajeando.blogspot.com/2018/09/cursos-en-abierto-en-canarias.html
 ---
 

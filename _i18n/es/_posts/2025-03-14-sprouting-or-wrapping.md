@@ -9,6 +9,7 @@ categories:
 - Testing
 - Legacy Code
 author: Manuel Rivero
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 small_image: posts/2025-03-sprouting-or-wrapping/small_sprout_or_wrap.jpg
 ---

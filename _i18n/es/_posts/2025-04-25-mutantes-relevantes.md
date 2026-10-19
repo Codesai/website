@@ -10,7 +10,7 @@ categories:
 - Mutation Testing
 - Testing
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small-relevant-mutants.png
 written_in: english
 cross_post_url:

@@ -10,7 +10,7 @@ categories:
   - Object-Oriented Design
 small_image: beverages_prices_small.jpeg
 author: Manuel Rivero
-twitter: trikitrok
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 written_in: english
 cross_post_url: https://garajeando.blogspot.com/2019/04/the-beverages-prices-refactoring-kata.html
 ---

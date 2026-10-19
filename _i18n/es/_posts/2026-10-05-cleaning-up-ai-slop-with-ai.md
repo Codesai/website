@@ -10,7 +10,7 @@ categories:
 - AI
 - Effects and Coeffects
 author: Manuel Rivero
-twitter: codesaidev
+linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
 small_image: small-ai-cleaning.jpg
 written_in: English
 cross_post_url:
