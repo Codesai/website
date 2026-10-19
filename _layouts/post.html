@@ -9,9 +9,9 @@
     <h1>{{ page.title }}</h1>
     <div class="post-info">
         {% if page.written_in == 'english' %}
-            <p>Published by <a href="https://x.com/{{ page.twitter }}"><em>{{ page.author }}</em></a> on <em>{{ page.date | date: "%d/%m/%Y" }}</em></p>
+            <p>Published by {% if page.linkedin %}<a href="{{ page.linkedin }}"><em>{{ page.author }}</em></a>{% elsif page.twitter %}<a href="https://x.com/{{ page.twitter }}"><em>{{ page.author }}</em></a>{% else %}<em>{{ page.author }}</em>{% endif %} on <em>{{ page.date | date: "%d/%m/%Y" }}</em></p>
         {% else %}
-            <p>Publicado por <a href="https://x.com/{{ page.twitter }}"><em>{{ page.author }}</em></a> el <em>{{ page.date | date: "%d/%m/%Y" }}</em></p>
+            <p>Publicado por {% if page.linkedin %}<a href="{{ page.linkedin }}"><em>{{ page.author }}</em></a>{% elsif page.twitter %}<a href="https://x.com/{{ page.twitter }}"><em>{{ page.author }}</em></a>{% else %}<em>{{ page.author }}</em>{% endif %} el <em>{{ page.date | date: "%d/%m/%Y" }}</em></p>
         {% endif %}
     </div>
     <div class="post-categories">
