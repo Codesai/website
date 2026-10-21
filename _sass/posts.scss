@@ -70,13 +70,29 @@
   }
 
   img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
     width: 100%;
     padding: 1rem;
-    vertical-align: middle;
   }
 
   figure {
-    margin: 0;
+    align-self: center;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+  }
+
+  .wide-figure {
+    align-self: flex-start;
+    position: relative;
+    margin-right: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: min(945px, calc(100vw - 48px));
+    max-width: none;
   }
 
   ul {
