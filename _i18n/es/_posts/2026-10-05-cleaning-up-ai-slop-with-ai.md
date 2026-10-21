@@ -20,7 +20,7 @@ Since August, [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and I 
 
 The original prototype was written in vanilla JavaScript embedded in plain PHP scripts, alongside the CSS, HTML, and SQL.
 
-We are using AI to transform the embedded frontend code<a href="#nota1"><sup>[1]</sup></a> into a SPA written in TypeScript, using [React](https://react.dev/) and the [reffects framework](https://github.com/trovit/reffects).
+We are using AI to transform the embedded frontend code<a href="#nota1"><sup>[1]</sup></a> into a SPA written in TypeScript, using [React](https://react.dev/) and the [Reffects framework](https://github.com/trovit/reffects).
 
 We are transforming the application screen by screen. We’ve transformed two screens so far. Our client prioritized the screens from most to least valuable, and we’re following that order.
 
@@ -28,25 +28,30 @@ We transform each screen in several steps, which we’ve previously explored in 
 
 1. Transform the vanilla JS of the screen into a React SPA without changing the backend.
 2. Transform the global CSS that styles the screen into [CSS Modules](https://github.com/css-modules/css-modules).
-3. Change the React SPA so that it uses the reffects framework.
+3. Change the React SPA so that it uses the Reffects framework.
+
+<figure>
+<img src="/assets/screen_transformation_workflow.png" alt="Screen transformation workflow." />
+<figcaption><strong>Screen transformation workflow.</strong></figcaption>
+</figure>
 
 We perform all these steps in a separate branch so we can preserve the original prototype and avoid altering its behaviour.
 
-After those three transformations, we have a JavaScript SPA using React and the reffects framework that includes one screen.
+After those three transformations, we have a JavaScript SPA using React and the Reffects framework that includes one screen.
 
 The next step is to transform the JavaScript code into TypeScript, but that’s where things get more complicated.
 
-Since reffects packages are written in JavaScript, their APIs don’t have TypeScript types. To use reffects from TypeScript, we first had to provide local TypeScript declarations for all its packages: [reffects](https://github.com/trovit/reffects/tree/master/packages/reffects), [reffects-store](https://github.com/trovit/reffects/tree/master/packages/reffects-store), and [reffects-batteries](https://github.com/trovit/reffects/tree/master/packages/batteries).
+Since Reffects packages are written in JavaScript, their APIs don’t have TypeScript types. To use Reffects from TypeScript, we first had to provide local TypeScript declarations for all its packages: [Reffects](https://github.com/trovit/reffects/tree/master/packages/reffects), [Reffects-store](https://github.com/trovit/reffects/tree/master/packages/reffects-store), and [Reffects-batteries](https://github.com/trovit/reffects/tree/master/packages/batteries).
 
 Those type declarations describe the framework’s events, handlers, effects and coeffects, store operations, React subscriptions, and built-in coeffects and effects. These declarations let TypeScript understand the library APIs and give the app typed integration points for its own state and components.
 
 Later, we added typed wrappers around the store and its state effects and coeffects. These wrappers let TypeScript detect invalid state paths at compile time, rather than letting those errors surface at runtime. This shortens the feedback cycle considerably, in fact, the IDE can flag an invalid path as we write it. We’ll talk about how this works in a future post.
 
-We generated the type declarations incrementally using AI agents while building the seed of a walking skeleton and adding the build configuration with [Vite](https://vite.dev/) and the test configuration with [Vitest](https://vitest.dev/). That seed consisted of porting one of the reffects examples, [with-react-todos](https://github.com/trovit/reffects/tree/master/examples/with-react-todos), to TypeScript.
+We generated the type declarations incrementally using AI agents while building the seed of a walking skeleton and adding the build configuration with [Vite](https://vite.dev/) and the test configuration with [Vitest](https://vitest.dev/). That seed consisted of porting one of the Reffects examples, [with-react-todos](https://github.com/trovit/reffects/tree/master/examples/with-react-todos), to TypeScript.
 
-We also had to write TypeScript interfaces and implementations for clients injected into built-in reffects effects and coeffects whose implementation reffects leaves open, such as the `http` effect.
+We also had to write TypeScript interfaces and implementations for clients injected into built-in Reffects effects and coeffects whose implementation Reffects leaves open, such as the `http` effect.
 
-Once we had the reffects example and its tests running in TypeScript, we started wiring in the first screen, one JavaScript component at a time. We pasted each component into the project and used AI agents to convert it to TypeScript.
+Once we had the Reffects example and its tests running in TypeScript, we started wiring in the first screen, one JavaScript component at a time. We pasted each component into the project and used AI agents to convert it to TypeScript.
 
 When a component’s event handlers require a new kind of side effect, we add the necessary custom effects and coeffects.
 
@@ -59,7 +64,7 @@ To address this concern, we used the [sampling + golden master (GM) technique](h
 We recorded golden master data for key user journeys and important computations in the prototype, and used it to write broad integration tests for those scenarios in the TypeScript app. These tests allow us to verify that the prototype’s behaviour has been preserved so far.
 As the migration progresses, they will also help us catch regressions as we bring more components into the TypeScript app.
 
-Because these tests are broad, they give us room to refactor some interfaces generated by the AI agents that aren’t as good as we’d like. Since the tests aren’t coupled to those interfaces, we can change them at a lower cost. We are incrementally complementing the broad tests with unit tests at the seams provided by reffects’ functional architecture.
+Because these tests are broad, they give us room to refactor some interfaces generated by the AI agents that aren’t as good as we’d like. Since the tests aren’t coupled to those interfaces, we can change them at a lower cost. We are incrementally complementing the broad tests with unit tests at the seams provided by Reffects’ functional architecture.
 
 This approach to the AI-assisted rewrite has allowed us to maintain a good pace without producing slop. We only demo code that has already been validated, while components that are still works in progress remain hidden.
 
