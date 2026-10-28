@@ -1,0 +1,6 @@
+<details class="agent-details"{% if include.open == true or include.open == "true" %} open{% endif %}>
+  <summary>{{ include.summary | default: "Show transcript" | escape }}</summary>
+  <div class="agent-details__content">
+    {{ include.content }}
+  </div>
+</details>

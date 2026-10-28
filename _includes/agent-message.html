@@ -1,0 +1,20 @@
+{% assign role = include.role | default: "agent" %}
+{% case role %}
+  {% when "user" %}
+    {% assign label = "Developer prompt" %}
+  {% when "tool" %}
+    {% assign label = "Tool activity" %}
+  {% else %}
+    {% assign role = "agent" %}
+    {% assign label = "Coding agent" %}
+{% endcase %}
+<article class="agent-message agent-message--{{ role }}" aria-label="{{ label }}" data-agent-message-label="{{ label }}">
+  {% if include.collapsible == true or include.collapsible == "true" %}
+  <details class="agent-message__details"{% if include.open == true or include.open == "true" %} open{% endif %}>
+    <summary>{{ include.summary | default: label | escape }}</summary>
+  {% endif %}
+  <pre class="agent-message__content"><code>{{ include.content | escape }}</code></pre>
+  {% if include.collapsible == true or include.collapsible == "true" %}
+  </details>
+  {% endif %}
+</article>
