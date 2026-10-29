@@ -30,7 +30,16 @@ encoded_message = rendered_message.match(/<code>(.*?)<\/code>/m)&.captures&.firs
 assert(encoded_message, "agent-message did not render a code element")
 assert(CGI.unescapeHTML(encoded_message) == transcript, "agent-message changed transcript text")
 assert(!rendered_message.include?("<script>"), "agent-message did not escape HTML")
-assert(rendered_message.include?("data-agent-message-label=\"Tool activity\""), "agent-message did not expose its role")
+assert(rendered_message.include?("data-agent-message-label=\"⚙️ Tool execution\""), "agent-message did not expose its role")
+
+rendered_indented_capture = render(site, <<~LIQUID)
+  {% capture transcript -%}
+    {% raw %}#{transcript}{% endraw %}
+  {%- endcapture %}
+  {% include agent-message.html role="tool" content=transcript %}
+LIQUID
+encoded_indented_capture = rendered_indented_capture.match(/<code>(.*?)<\/code>/m)&.captures&.first
+assert(CGI.unescapeHTML(encoded_indented_capture) == transcript, "indented capture changed transcript text")
 
 rendered_collapsible_message = render(site, <<~LIQUID)
   {% capture transcript %}Short output{% endcapture %}
@@ -48,5 +57,14 @@ LIQUID
 assert(rendered_details.include?("<details class=\"agent-details\">"), "agent-details did not render")
 assert(rendered_details.include?("<summary>Show tool activity</summary>"), "agent-details changed its summary")
 assert(rendered_details.include?("<article class=\"agent-message agent-message--tool\""), "agent-details did not keep nested messages")
+
+rendered_attached_activity = render(site, <<~LIQUID)
+  {% capture command %}npm test{% endcapture %}
+  {% capture activity %}{% include agent-message.html role="tool" content=command collapsible="true" summary="Show tool execution" %}{% endcapture %}
+  {% capture response %}I’ll run the focused checks first.{% endcapture %}
+  {% include agent-message.html role="agent" content=response activity=activity %}
+LIQUID
+assert(rendered_attached_activity.include?("<div class=\"agent-message__activity\">"), "agent-message did not attach activity")
+assert(rendered_attached_activity.match?(/agent-message--agent.*agent-message--tool/m), "attached activity did not keep the tool message")
 
 puts "Agent transcript include checks passed."

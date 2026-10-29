@@ -11,13 +11,13 @@ role label. The label is generated visually, so copying the transcript body does
 not copy the label.
 
 ```text
-│ DEVELOPER PROMPT                         muted blue-grey accent
+│ 🧙‍♂️ HUMAN                               muted blue-grey accent
 │ Assess the coverage of forecastColumns.ts
 
-│ CODING AGENT                             green accent
+│ 🤖 AGENT                                 green accent
 │ I will inspect the direct and indirect coverage.
 
-│ TOOL ACTIVITY                            amber accent
+│ ⚙️ TOOL EXECUTION                         amber accent
 │ $ npm run test:coverage:target -- src/…
 ```
 
@@ -55,6 +55,30 @@ this is a direct/indirect test-coverage review.{% endcapture %}
 
 Valid roles are `user`, `agent`, and `tool`. An omitted or unknown role is
 rendered as `agent`.
+
+### Readable captures without extra whitespace
+
+`capture` preserves every character between its tags. To indent the Liquid
+structure without inserting a leading or trailing line break into the
+transcript, use Liquid's whitespace-control dashes on the `capture` tags. Keep
+the actual transcript text exactly where it belongs; its indentation remains
+literal.
+
+```liquid
+{% capture response -%}
+  {% raw %}I’m checking both paths now,
+  with this intentional indentation.{% endraw %}
+{%- endcapture %}
+{% include agent-message.html role="agent" content=response %}
+```
+
+For a captured rendered include, use the same pattern:
+
+```liquid
+{% capture activity -%}
+  {%- include agent-message.html role="tool" content=command collapsible="true" summary="Show tool execution" %}
+{%- endcapture %}
+```
 
 ## Literal Liquid, HTML, Markdown, and Unicode
 
@@ -126,6 +150,34 @@ find .. -name AGENTS.md -print{% endraw %}{% endcapture %}
 ```
 
 Use `open="true"` on `agent-details.html` to expand the group initially.
+
+## Attach tool activity to an agent response
+
+Capture a rendered, collapsible tool message and pass it as `activity` to the
+agent message. The tool panel appears directly below that response and starts
+collapsed.
+
+```liquid
+{% capture command %}{% raw %}npm test{% endraw %}{% endcapture %}
+{% capture activity %}{% include agent-message.html role="tool" content=command collapsible="true" summary="Show tool execution" %}{% endcapture %}
+{% capture response %}I’ll run the focused checks first.{% endcapture %}
+{% include agent-message.html role="agent" content=response activity=activity %}
+```
+
+To attach one disclosure containing several tool messages, capture the rendered
+messages, wrap them in `agent-details.html`, and pass that rendered group as the
+activity:
+
+```liquid
+{% capture tool_messages -%}
+  {%- include agent-message.html role="tool" content=first_command %}
+  {%- include agent-message.html role="tool" content=second_command %}
+{%- endcapture %}
+{% capture activity -%}
+  {%- include agent-details.html summary="Show tool activity" content=tool_messages %}
+{%- endcapture %}
+{% include agent-message.html role="agent" content=response activity=activity %}
+```
 
 ## Complete post excerpt
 

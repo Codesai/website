@@ -43,13 +43,13 @@
   &__content {
     max-width: 100%;
     margin: 0;
-    overflow-x: auto;
+    overflow-wrap: anywhere;
     color: #29292e;
     font-family: "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: pxToRem(14);
     line-height: 1.55;
     tab-size: 2;
-    white-space: pre;
+    white-space: pre-wrap;
   }
 
   &__content code {
@@ -59,6 +59,14 @@
     background: transparent;
     color: inherit;
     font: inherit;
+  }
+
+  &__activity {
+    margin-top: 0.75rem;
+
+    > .agent-message {
+      margin: 0;
+    }
   }
 
   &__details {
