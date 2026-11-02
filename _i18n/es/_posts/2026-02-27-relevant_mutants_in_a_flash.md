@@ -25,7 +25,7 @@ small_image: small-mutants-flash.png
 <li>
 <p><strong>Ignore</strong> these ones:</p>
 <ul>
-<li>In <a href="https://en.wikipedia.org/wiki/Dead_code">dead code</a> (unreachable code)</li>
+<li>In <a href="https://en.wikipedia.org/wiki/Dead_code">dead code</a> (unreachable code): still useful 💰, delete the code.</li>
 <li>In <a href="https://martinfowler.com/bliki/LegacySeam.html">legacy seams</a> (intentionally excluded from test execution).</li>
 <li><strong>Code not used because of</strong> <a href="https://martinfowler.com/bliki/LegacySeam.html">legacy seams</a> (also intentional).</li>
 </ul>
