@@ -6,6 +6,7 @@ type: post
 published: true
 categories:
 - AI
+- Agentic-AI
 - Learning
 author: Manuel Rivero
 linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/

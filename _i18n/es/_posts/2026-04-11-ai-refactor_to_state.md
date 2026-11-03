@@ -6,6 +6,7 @@ type: post
 published: true
 categories:
 - AI
+- Agentic-AI
 - Object-Oriented Design
 - Design Patterns
 - Refactoring
