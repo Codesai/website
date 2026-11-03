@@ -170,12 +170,14 @@ permalink: /publications/
             if (window.location.hash === `#${tab.hash}`) {
                 showPublicationTab(tab);
             } else {
-                window.location.hash = tab.hash;
+                window.history.pushState(null, '', `#${tab.hash}`);
+                showPublicationTab(tab);
             }
         });
     });
 
     window.addEventListener('hashchange', showPublicationTabFromHash);
+    window.addEventListener('popstate', showPublicationTabFromHash);
     showPublicationTabFromHash();
 
     document.querySelectorAll('.youtube-player > div').forEach(e => {
