@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Correctly excluding surviving mutants that produce compilation errors from behavioral score"
+title: "Correctly Interpreting Surviving Mutants That Fail Compilation"
 date: 2026-11-02 17:00:00.000000000 +01:00
 author: Manuel Rivero
 linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
@@ -8,14 +8,13 @@ written_in: english
 categories: [Agentic-AI, AI experiments]
 ---
 
-While using the test-protection assessment skill, we came across a mutation report in which seven mutants had survived. 
+While using the test-protection assessment skill, we came across a mutation report in which seven mutants were reported as surviving.
 
-Normally, that is a good reason to stop and investigate: a surviving mutant may point to behavior that the tests are not protecting.
+Normally, that's a good reason to stop and investigate: a surviving mutant may point to behavior that the tests aren't protecting.
 
-However, in this case, those seven surviving mutants were producing ompilation failures. No test was observing their behavior because the application could not be built with their mutations in place. 
-Counting them as behavioral survivors would have signaled false positives, making the test suite look weaker than it really was.
+However, these seven mutants caused compilation failures. The tests couldn't exercise the mutated code because it failed to compile. Treating them as behavioral survivors would have created false positives, making the test suite appear weaker than it actually was.
 
-The following session shows how the agent uses the skill to explains why the seven compile-error mutants should not affect the behavioral score, and how all important behaviors are adequately covered.
+The following session shows how the agent investigated the mutation results, identified the compilation failures, and excluded those mutants from its assessment of behavioral protection.
 
 ## The session.
 
@@ -87,4 +86,6 @@ ConnectedForecastParameterRow.tsx (src/app/pages/forecast/ForecastPage/tables/Co
 The one direct covering spec is SubscribedExtraDepartmentRows.spec.ts (tests/app/pages/forecast/ForecastPage/tables/CommercialForecast/ExtraDepartmentRows/SubscribedExtraDepartmentRows.spec.ts:273); despite its file name, it directly renders SubscribedForecastParameterRow for the row-specific behavior.{% endcapture %}
 {% include agent-message.html role="agent" content=conclusion %}
 
-In this case, the tests left no relevant behavioral surviviving mutants, and the agent concluded that the code was **Adequately covered**. The seven surviving mutants were still worth understanding, but they were not an argument for adding more tests.
+The agent concluded that the code was **adequately covered**. Although Stryker reported seven surviving mutants, the agent found that they caused compilation failures rather than exposing gaps in behavioral protection.
+
+There were no relevant behavioral survivors to address, so the agent found no reason to add more characterization tests.
