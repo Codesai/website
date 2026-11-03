@@ -4,6 +4,7 @@ const languages = [
   {
     name: 'Spanish',
     home: '/',
+    publications: '/publications/',
     newsletter: '/newsletter/',
     training: '/cursos/',
     otherTraining: '/en/trainings/',
@@ -16,6 +17,7 @@ const languages = [
   {
     name: 'English',
     home: '/en/',
+    publications: '/en/publications/',
     newsletter: '/en/newsletter/',
     training: '/en/trainings/',
     otherTraining: '/cursos/',
@@ -121,6 +123,20 @@ for (const language of languages) {
       const response = await page.goto(`${language.home}missing-playwright-characterization`);
       expect(response.status()).toBe(404);
       await expect(page.locator('main.error-404 h1')).toHaveText('404');
+    });
+
+    test('publication tab is restored from its URL fragment', async ({ page }) => {
+      await page.goto(`${language.publications}#raw-ai-labs`);
+
+      await expect(page.locator('#labsTab')).toBeVisible();
+      await expect(page.locator('#postsTab')).toBeHidden();
+      await page.locator('#showVideos').click();
+      await expect(page).toHaveURL(`${language.publications}#videos`);
+      await expect(page.locator('#videosTab')).toBeVisible();
+
+      await page.reload();
+      await expect(page.locator('#videosTab')).toBeVisible();
+      await expect(page.locator('#postsTab')).toBeHidden();
     });
   });
 }

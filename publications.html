@@ -13,8 +13,10 @@ permalink: /publications/
     <ul class="tabs">
         <li class="active" id="showPosts">{% translate pages.publications.posts %}</li>
         <li id="showVideos"><a>{% translate pages.publications.videos %}</a></li>
+        <li id="showLabs"><a>{% translate pages.publications.labs %}</a></li>
     </ul>
 
+    <span id="posts" aria-hidden="true"></span>
     <div class="posts" id="postsTab">
         {% for post in site.posts %}
             <div class="post">
@@ -34,6 +36,7 @@ permalink: /publications/
         {% endfor %}
     </div>
 
+    <span id="videos" aria-hidden="true"></span>
     <div class="videos hidden" id="videosTab">
 
         {% include published-video.html title="Atributos de calidad e historias de usuario" speakers="Fran Reyes" video-id="2wYZvFW1Hf0" %}
@@ -126,24 +129,54 @@ permalink: /publications/
 
         {% include published-video.html title="Entrevistas AprendiendoTDD: Carlos Blé" speakers="Carlos Blé" video-id="SkGlzxkiKPs" %}
     </div>
+
+    <span id="raw-ai-labs" aria-hidden="true"></span>
+    <div class="labs hidden" id="labsTab">
+        {% assign labs = site.labs | sort: 'date' | reverse %}
+        {% for lab in labs %}
+            <div class="lab">
+                <h2><span class="lab-title-emoji" aria-hidden="true">🤖</span><a href="{{ lab.url | prepend: site.baseurl }}">{{ lab.title }}</a></h2>
+            </div>
+        {% endfor %}
+    </div>
 </main>
 
 
 {% include footer.html %}
 
 <script>
-    document.getElementById('showPosts').addEventListener('click', () => {
-        document.getElementById('postsTab').classList.remove('hidden');
-        document.getElementById('videosTab').classList.add('hidden');
-        document.getElementById('showPosts').classList.add('active');
-        document.getElementById('showVideos').classList.remove('active');
+    const publicationTabs = [
+        { hash: 'posts', legacyHash: 'postsTab', button: 'showPosts', panel: 'postsTab' },
+        { hash: 'videos', legacyHash: 'videosTab', button: 'showVideos', panel: 'videosTab' },
+        { hash: 'raw-ai-labs', legacyHash: 'labsTab', button: 'showLabs', panel: 'labsTab' }
+    ];
+
+    function showPublicationTab(tab) {
+        publicationTabs.forEach(({ button, panel }) => {
+            document.getElementById(panel).classList.toggle('hidden', panel !== tab.panel);
+            document.getElementById(button).classList.toggle('active', button === tab.button);
+        });
+    }
+
+    function showPublicationTabFromHash() {
+        const requestedHash = window.location.hash.slice(1);
+        const tab = publicationTabs.find(({ hash, legacyHash }) => requestedHash === hash || requestedHash === legacyHash)
+            || publicationTabs[0];
+        showPublicationTab(tab);
+    }
+
+    publicationTabs.forEach((tab) => {
+        document.getElementById(tab.button).addEventListener('click', () => {
+            if (window.location.hash === `#${tab.hash}`) {
+                showPublicationTab(tab);
+            } else {
+                window.location.hash = tab.hash;
+            }
+        });
     });
-    document.getElementById('showVideos').addEventListener('click', () => {
-        document.getElementById('postsTab').classList.add('hidden');
-        document.getElementById('videosTab').classList.remove('hidden');
-        document.getElementById('showPosts').classList.remove('active');
-        document.getElementById('showVideos').classList.add('active');
-    });
+
+    window.addEventListener('hashchange', showPublicationTabFromHash);
+    showPublicationTabFromHash();
 
     document.querySelectorAll('.youtube-player > div').forEach(e => {
         e.addEventListener('click', () => {

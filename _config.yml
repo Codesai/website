@@ -21,6 +21,11 @@ cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 permalink: /posts/:year/:month/:title
 
+collections:
+  labs:
+    output: true
+    permalink: /labs/:year/:month/:title
+
 # Build settings
 markdown: kramdown
 

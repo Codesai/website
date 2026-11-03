@@ -958,8 +958,11 @@ pages:
     title: Codesai. Blog
     posts: Posts
     videos: Videos
+    labs: Raw AI Labs
   categories:
     title: Categories
+  labs_categories:
+    title: Raw AI Lab Categories
   not_found:
     title: '404'
     text: Oops! It looks like we couldn't find what you were looking for :(
