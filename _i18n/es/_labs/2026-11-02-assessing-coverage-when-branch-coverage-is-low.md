@@ -10,7 +10,9 @@ categories: [Agentic-AI, AI experiments, Testing, Mutation Testing]
 
 The session below shows what happens when the agent using the test protection skill finds insufficient branch coverage. It also illustrates how surviving mutants can reveal opportunities to simplify production code.
 
-## The session.
+## The session
+
+### Initial assessment
 
 {% capture prompt_assess %}> assess the coverage of frontend/src/app/app-shell/load-events.ts{% endcapture %}
 {% include agent-message.html role="user" content=prompt_assess %}
@@ -54,6 +56,8 @@ I did not run mutation testing because relevant branch coverage is not yet high 
 The agent used branch coverage to decide whether to proceed with mutation testing.
 
 Since it considered branch coverage insufficient, it stopped and reported the missing behavioral cases instead of running mutation testing.
+
+### Improving coverage
 
 {% capture prompt_improve %}> improve the coverage{% endcapture %}
 {% include agent-message.html role="user" content=prompt_improve %}
@@ -113,6 +117,8 @@ The targeted mutation runâ€™s dry run passed but the environment terminated it b
 
 There was a problem: the agent didn't wait for mutation testing to finish. It reported the incomplete run, so we asked it to try again and wait for the result.
 
+### Investigating surviving mutants
+
 {% capture prompt_mutation %}> run targeted mutation testing and wait until it finish{% endcapture %}
 {% include agent-message.html role="user" content=prompt_mutation %}
 
@@ -159,6 +165,8 @@ The guard is only needed if null can reach this handler at runtime.{% endcapture
 Once we understood what was going on, we asked the agent to remove the optional chain.
 
 It did and then rerun the tests, coverage analysis, and mutation testing to check no coverage had been lost and the mutant corresponding to the optional chain had been killed.
+
+### Simplifying the optional chain
 
 {% capture prompt_simplify_optional %}> simplify it{% endcapture %}
 {% include agent-message.html role="user" content=prompt_simplify_optional %}
@@ -242,6 +250,8 @@ Today it is dead conditional structure. Simplifying it is safe as long as thereâ
 Both branches currently produced the same events, and we found no behavior that required the distinction. We therefore asked the agent to remove the duplicated conditional.
 
 The agent simplified the code and then rerun the tests, coverage analysis, and mutation testing to check no coverage had been lost and the surviving mutant had been killed.
+
+### Removing the redundant conditional
 
 {% capture prompt_simplify_branch %}> simplify it{% endcapture %}
 {% include agent-message.html role="user" content=prompt_simplify_branch %}

@@ -16,13 +16,15 @@ However, these seven mutants caused compilation failures. The tests couldn't exe
 
 The following session shows how the agent investigated the mutation results, identified the compilation failures, and excluded those mutants from its assessment of behavioral protection.
 
-## The session.
+## The session
 
 {% capture experiment_prompt %}> assess the coverage of frontend/src/app/pages/forecast/ForecastPage/tables/CommercialForecast/ForecastParameterRow/ConnectedForecastParameterRow.tsx{% endcapture %}
 {% include agent-message.html role="user" content=experiment_prompt %}
 
 {% capture assessment_plan %}I’ll assess direct and indirect behavior coverage for the connected row, using the repository’s coverage-assessment workflow to identify exercised branches and any meaningful gaps rather than relying only on a line-percentage number.{% endcapture %}
 {% include agent-message.html role="agent" content=assessment_plan %}
+
+### Establishing coverage
 
 {% capture explored_skill %}• Explored
   └ List .SKILLS
@@ -41,6 +43,8 @@ The following session shows how the agent investigated the mutation results, ide
 
 {% capture coverage_result %}Targeted coverage is 100% for statements, branches, functions, and lines (9/9, 10/10, 3/3, 7/7). The branch gate is satisfied, so I’ll run a targeted mutation test against only the connected row and its direct row integration spec to check assertion strength.{% endcapture %}
 {% include agent-message.html role="agent" content=coverage_result %}
+
+### Running the mutation test
 
 {% capture blocked_mutation_run %}• Exited (status 1) sed -n '1,320p' docs/scripts/targeted-mutation-script.md && npm run test:mutation:target -- src/app/pages/forecast/ForecastPage/tables/CommercialForecast/ForecastParameterRow/ConnectedForecastParameterRow.tsx tests/app/pages/forecast/ForecastPage/tabl…
   └ }
@@ -65,6 +69,8 @@ The following session shows how the agent investigated the mutation results, ide
           "replacement": "\"\"",
           "statusReason": "\n> cde@0.0.0 test:behavioral\n> npm run typecheck:test &&vitest run --exclude 'tests/architecture-rules/**' --reporter=dot tests/app/pages/forecast/ForecastPage/tables/CommercialForecast/ExtraDepartmentRows/SubscribedExtraDepartmentRows.spec.t…{% endcapture %}
 {% include agent-message.html role="tool" content=process_check collapsible="true" summary="Show" %}
+
+### Interpreting the mutation report
 
 {% capture report_analysis %}The mutation run finished. I’m extracting the report’s status counts and any survivors; several type-invalid mutations were correctly excluded as compile errors, so I’ll keep those separate from behaviorally surviving mutants.{% endcapture %}
 {% include agent-message.html role="agent" content=report_analysis %}
