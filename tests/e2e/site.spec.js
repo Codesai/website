@@ -126,12 +126,19 @@ for (const language of languages) {
     });
 
     test('publication tab is restored from its URL fragment', async ({ page }) => {
+      await page.goto(`${language.publications}#posts`);
+
+      await expect(page.locator('#postsTab')).toBeVisible();
+      await expect(page.locator('#labsTab')).toBeHidden();
+
       await page.goto(`${language.publications}#raw-ai-labs`);
 
       await expect(page.locator('#labsTab')).toBeVisible();
       await expect(page.locator('#postsTab')).toBeHidden();
       await page.locator('#showVideos').click();
-      await expect(page).toHaveURL(`${language.publications}#videos`);
+      await expect(page).toHaveURL(url =>
+        url.pathname === language.publications && url.hash === '#videos'
+      );
       await expect(page.locator('#videosTab')).toBeVisible();
 
       await page.reload();
