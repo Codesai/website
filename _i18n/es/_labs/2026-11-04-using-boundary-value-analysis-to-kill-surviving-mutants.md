@@ -16,10 +16,10 @@ In this session, OpenCode initially decided that covering the branch was enough 
 This snapshot shows its reasoning about the **on-point** and **off-point** concepts from **Boundary Value Analysis** (BVA):
 
 <figure>
-  <a href="/assets/labs/bva_concepts/opencode-using-onpoints-and-offpoints.png">
+  <a href="/assets/labs/bva_concepts/opencode-using-onpoints-and-offpoints.png" target="_blank" rel="noopener noreferrer">
     <img src="/assets/labs/bva_concepts/opencode-using-onpoints-and-offpoints.png" alt="OpenCode session reasoning about using Boundary Value Analysis on-points and off-points to kill surviving mutants." />
   </a>
-  <figcaption><strong><a href="/assets/labs/bva_concepts/opencode-using-onpoints-and-offpoints.png">Click the image to view it full size.</a></strong></figcaption>
+  <figcaption><strong><a href="/assets/labs/bva_concepts/opencode-using-onpoints-and-offpoints.png" target="_blank" rel="noopener noreferrer">Click the image to view it full size.</a></strong></figcaption>
 </figure>
 
 Once it reran targeted mutation testing, the surviving mutants separated into two groups: some showed genuine weaknesses in the tests; another came from an unreachable branch and was not relevant to improving test protection. 
@@ -29,10 +29,10 @@ For the relevant survivors, adding **off-points** around several boundaries made
 This second snapshot is OpenCode’s final assessment. It explicitly recognizes that the BVA hint was useful: “Your on-point/off-point hint was exactly right.”
 
 <figure>
-  <a href="/assets/labs/bva_concepts/opencode-mutant-assesment.png">
+  <a href="/assets/labs/bva_concepts/opencode-mutant-assesment.png" target="_blank" rel="noopener noreferrer">
     <img src="/assets/labs/bva_concepts/opencode-mutant-assesment.png" alt="OpenCode mutation-testing assessment recognizing that Boundary Value Analysis on-points and off-points helped kill surviving mutants." />
   </a>
-  <figcaption><strong><a href="/assets/labs/bva_concepts/opencode-mutant-assesment.png">Click the image to view it full size.</a></strong></figcaption>
+  <figcaption><strong><a href="/assets/labs/bva_concepts/opencode-mutant-assesment.png" target="_blank" rel="noopener noreferrer">Click the image to view it full size.</a></strong></figcaption>
 </figure>
 
 It also explains which mutants the new **off-point** cases killed and identifies the irrelevant survivor separately.
