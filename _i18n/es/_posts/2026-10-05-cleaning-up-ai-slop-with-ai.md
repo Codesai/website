@@ -8,6 +8,7 @@ status: publish
 categories:
 - Legacy Code
 - AI
+- Agentic-AI
 - Effects and Coeffects
 author: Manuel Rivero
 linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/

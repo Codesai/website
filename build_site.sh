@@ -1,6 +1,9 @@
 #!/bin/bash
 
 cp -r _i18n/es/_posts _i18n/en
+rm -rf _i18n/en/_labs
+mkdir -p _i18n/en/_labs
+cp -a _i18n/es/_labs/. _i18n/en/_labs/
 
 bundle exec jekyll build
 

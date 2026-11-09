@@ -136,6 +136,10 @@ author: Crazy Cockatoo
 
 You can now write your post below, remember that we now use **markdown** and you can mix in some html if needed. We are now using [**kramdown**](https://kramdown.gettalong.org/quickref.html) as recommended by jekyll, you may prefer this [**markdown quicksheet**](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
+## Writing a Raw AI Lab
+
+Raw AI Labs use the same front matter, layout, Markdown capabilities, and `categories` field as posts. Add them to `_i18n/es/_labs/` using the same dated filename convention; the build copies them to `_i18n/en/_labs/`. They are published under `/labs/`, listed in the **Raw AI Labs** tab as title-only links, and have an independent category archive at `/labs/categories/`.
+
 
 ## Post variables
 

@@ -46,6 +46,9 @@ tar \
 
 mkdir -p "$source_dir/_i18n/en/_posts"
 cp -a "$source_dir/_i18n/es/_posts/." "$source_dir/_i18n/en/_posts/"
+rm -rf "$source_dir/_i18n/en/_labs"
+mkdir -p "$source_dir/_i18n/en/_labs"
+cp -a "$source_dir/_i18n/es/_labs/." "$source_dir/_i18n/en/_labs/"
 
 cd "$source_dir"
 bundle exec jekyll build --trace
@@ -58,10 +61,24 @@ en_source_count="$(find _i18n/en/_posts -type f | wc -l)"
   exit 1
 }
 
+es_labs_source_count="$(find _i18n/es/_labs -type f -not -name '.gitkeep' | wc -l)"
+en_labs_source_count="$(find _i18n/en/_labs -type f -not -name '.gitkeep' | wc -l)"
+[[ "$es_labs_source_count" -eq "$en_labs_source_count" ]] || {
+  echo "ES/EN lab source counts differ: $es_labs_source_count != $en_labs_source_count" >&2
+  exit 1
+}
+
 es_built_count="$(find _site/posts -type f -name '*.html' | wc -l)"
 en_built_count="$(find _site/en/posts -type f -name '*.html' | wc -l)"
 [[ "$es_built_count" -gt 0 && "$es_built_count" -eq "$en_built_count" ]] || {
   echo "ES/EN generated post counts differ: $es_built_count != $en_built_count" >&2
+  exit 1
+}
+
+es_labs_built_count="$(find _site/labs -type f -name '*.html' ! -path '_site/labs/categories/*' | wc -l)"
+en_labs_built_count="$(find _site/en/labs -type f -name '*.html' ! -path '_site/en/labs/categories/*' | wc -l)"
+[[ "$es_labs_built_count" -eq "$es_labs_source_count" && "$en_labs_built_count" -eq "$en_labs_source_count" ]] || {
+  echo "Generated lab counts differ from their sources" >&2
   exit 1
 }
 

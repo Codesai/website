@@ -6,6 +6,7 @@ type: post
 published: true
 categories:
 - AI
+- Agentic-AI
 - Architecture Tests
 - Testing
 - AI Guardrails

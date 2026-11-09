@@ -6,6 +6,7 @@ type: post
 published: true
 categories:
 - AI
+- Agentic-AI
 - Mutation Testing
 - AI Guardrails
 author: Manuel Rivero

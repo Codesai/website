@@ -22,7 +22,7 @@
       display: flex;
       justify-content: center;
       padding: 10px 0;
-      width: 50%;
+      width: calc(100% / 3);
       cursor: pointer;
       color: black;
       text-transform: uppercase;
@@ -102,6 +102,37 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 12px;
+  }
+
+  .labs {
+    margin-top: 12px;
+
+    .lab {
+      width: 100%;
+      background-color: white;
+      border-bottom: 1px dotted #ddd;
+      padding: 24px;
+
+      h2 {
+        font-size: 24px;
+        color: #333;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      a {
+        color: $blueish-green;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 0.16em;
+
+        &:hover,
+        &:focus-visible {
+          color: #333;
+        }
+      }
+    }
   }
 
   .hidden {

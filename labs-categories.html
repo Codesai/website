@@ -1,0 +1,40 @@
+---
+title: pages.labs_categories.title
+permalink: /labs/categories/
+---
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+<main class="categories">
+    <h1>{% translate pages.labs_categories.title %}</h1>
+    <div class="categories-list">
+        {% assign category_names = '' | split: '' %}
+        {% for lab in site.labs %}
+            {% if lab.categories %}
+                {% assign category_names = category_names | concat: lab.categories %}
+            {% endif %}
+        {% endfor %}
+        {% assign sorted_categories = category_names | uniq | sort %}
+        {% for category_name in sorted_categories %}
+            <div class="category">
+                <h2 id="{{ category_name | slugify }}">{{ category_name }}</h2>
+                <div>
+                    {% assign category_labs = site.labs | where_exp: 'lab', 'lab.categories contains category_name' | sort: 'date' | reverse %}
+                    {% for lab in category_labs %}
+                        <article>
+                            <h3><span class="lab-title-emoji" aria-hidden="true">🤖</span><a href="{{ site.baseurl }}{{ lab.url }}">{{ lab.title }}</a></h3>
+                        </article>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>

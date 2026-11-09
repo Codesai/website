@@ -909,8 +909,11 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
     title: Codesai. Blog
     posts: Posts
     videos: Videos
+    labs: Raw AI Labs
   categories:
     title: Categorías
+  labs_categories:
+    title: Categorías de Raw AI Labs
   not_found:
     title: '404'
     text: ¡Vaya! Parece que no hemos encontrado nada aquí :(

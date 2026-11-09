@@ -7,6 +7,7 @@ _site/
 .jekyll-cache
 .jekyll-metadata
 _i18n/en/_posts/
+_i18n/en/_labs/
 .idea/
 global-groovy.log
 soapui-errors.log

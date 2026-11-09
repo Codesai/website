@@ -6,7 +6,7 @@
 
 {% include header.html %}
 <main class="post">
-    <h1>{{ page.title }}</h1>
+    <h1>{% if page.collection == 'labs' %}<span class="lab-title-emoji" aria-hidden="true">🤖</span>{% endif %}{{ page.title }}</h1>
     <div class="post-info">
         {% if page.written_in == 'english' %}
             <p>Published by {% if page.linkedin %}<a href="{{ page.linkedin }}"><em>{{ page.author }}</em></a>{% elsif page.twitter %}<a href="https://x.com/{{ page.twitter }}"><em>{{ page.author }}</em></a>{% else %}<em>{{ page.author }}</em>{% endif %} on <em>{{ page.date | date: "%d/%m/%Y" }}</em></p>
@@ -18,9 +18,9 @@
       <p>
           {% for category in page.categories %}
             {% if forloop.last == true %}
-                <a href="{{site.baseurl}}/publications/categories/#{{category|slugify}}">{{category}}</a>
+                <a href="{{site.baseurl}}/{% if page.collection == 'labs' %}labs/categories{% else %}publications/categories{% endif %}/#{{category|slugify}}">{{category}}</a>
             {% else %}
-                <a href="{{site.baseurl}}/publications/categories/#{{category|slugify}}">{{category}}</a>,
+                <a href="{{site.baseurl}}/{% if page.collection == 'labs' %}labs/categories{% else %}publications/categories{% endif %}/#{{category|slugify}}">{{category}}</a>,
             {% endif %}
           {% endfor %}
       </p>
@@ -50,7 +50,11 @@
     {% endif %}
 
     <div class="back-to-blog">
-        <a href="/publications#postsTab">Volver a posts</a>
+        {% if page.collection == 'labs' %}
+            <a href="{{ site.baseurl }}/publications/#raw-ai-labs">{% if page.written_in == 'english' %}Back to Raw AI Labs{% else %}Volver a Raw AI Labs{% endif %}</a>
+        {% else %}
+            <a href="{{ site.baseurl }}/publications/#posts">Volver a posts</a>
+        {% endif %}
     </div>
 
     {% if site.environment == 'production' %}

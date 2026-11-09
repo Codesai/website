@@ -2,6 +2,7 @@
 layout: post
 title: Native/Browser SPA versions using ClojureScript and re-frame talk at SCBCN17 
 date: 2017-11-17 08:00:00.0 +00:00
+permalink: /posts/2017/11/spa-clojurescript-re-frame-talk-scbcn17
 type: post
 published: true
 status: publish
