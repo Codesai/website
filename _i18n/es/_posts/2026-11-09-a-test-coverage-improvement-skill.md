@@ -243,18 +243,19 @@ Based on these findings, the agent reports whether the tests provide sufficient 
 
 The following diagram summarizes this workflow and the decisions involved.
 
-<a href="/assets/images/flow-chart.svg"
+<figure class="wide-figure">
+<a href="/assets/flow-chart-horizontal.svg"
    target="_blank"
    rel="noopener noreferrer"
    title="Open flowchart in a new tab">
-  <img src="/assets/images/flow-chart.svg"
+  <img src="/assets/flow-chart-horizontal.svg"
 	alt="Flowchart of the test coverage improvement workflow"
 	style="max-width: 100%; height: auto; cursor: zoom-in;">
 </a>
 <figcaption>
   Click the diagram to open it in a new tab and zoom in.
 </figcaption>
-
+</figure>
 
 ### Searching for relevant tests.
  
@@ -336,15 +337,15 @@ The agent reports its findings, including each interesting mutant's location, th
 
 The skill can give you three possible results:
 
-1. The relevant behavior appears adequately protected. 
+#### 1. The relevant behavior appears adequately protected. 
 
 Proceed with the refactoring.
 
-2. The relevant behavior appears adequately protected, but some mutants survived with potentially acceptable explanations. 
+#### 2. The relevant behavior appears adequately protected, but some mutants survived with potentially acceptable explanations. 
 
 Review the surviving mutants to validate the agent's classification. If the classification is valid, document the reasoning and note any opportunities for future refactoring or simplification, then proceed with the refactoring.
 
-3. Important behavior isn't sufficiently protected. 
+#### 3. Important behavior isn't sufficiently protected. 
 
 Add characterization tests first.
 
@@ -354,7 +355,7 @@ To keep this post manageable, I've published a few other sessions as raw labs. E
 
 - [Assessing Coverage When Branch Coverage Is Low](https://codesai.com/labs/2026/11/assessing-coverage-when-branch-coverage-is-low): The agent stops when branch coverage is insufficient. After improving the tests, surviving mutants reveal opportunities to simplify production code.
 
-- (When Multiple Specs Cover a Piece of Code)[https://codesai.com/labs/2026/11/multiple-tests-covering-a-piece-of-code]: The skill identifies direct and indirect unit tests that exercise the same code and uses them together for targeted coverage and mutation testing.
+- [When Multiple Specs Cover a Piece of Code](https://codesai.com/labs/2026/11/multiple-tests-covering-a-piece-of-code): The skill identifies direct and indirect unit tests that exercise the same code and uses them together for targeted coverage and mutation testing.
 
 
 - [Correctly Interpreting Surviving Mutants That Fail Compilation](https://codesai.com/labs/2026/11/correctly-excluding-surviving-mutants-that-produce-compilation-errors): The agent recognizes that apparent survivors fail compilation and shouldn't be treated as gaps in behavioral protection.
@@ -429,11 +430,15 @@ When writing characterization tests, we usually don't have an independent specif
 
 Two techniques are particularly useful when reviewing AI-generated tests:
 
-1. **Equivalence partitioning** that helps us identify meaningful groups of inputs that should be tested and remove redundant test cases.
+###### 3. 1. Equivalence partitioning. 
+
+It helps us identify meaningful groups of inputs that should be tested and remove redundant test cases.
 
 Are all the relevant partitions represented? Are there redundant test cases?
 
-2. **Boundary value analysis** that helps us recognize important edge cases and check whether the boundaries between partitions are adequately protected.
+###### 3. 2. Boundary value analysis. 
+
+It helps us recognize important edge cases and check whether the boundaries between partitions are adequately protected.
 
 Are the boundaries between partitions well protected? Are the relevant edge cases covered?
 
