@@ -1,6 +1,6 @@
 # Backlog de mejora web — auditoría 2026-08-31
 
-Fuente: [`docs/lighthouse-codesai-2026-08-31.md`](../docs/lighthouse-codesai-2026-08-31.md)
+Fuente: [`docs/lighthouse/2026-08-31/lighthouse-codesai-2026-08-31.md`](../../docs/lighthouse/2026-08-31/lighthouse-codesai-2026-08-31.md)
 
 Estados permitidos: `TODO`, `DOING`, `BLOCKED`, `DONE`.
 Prioridades: `P0` crítica, `P1` alta, `P2` media.

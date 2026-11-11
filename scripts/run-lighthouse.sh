@@ -9,7 +9,7 @@ readonly PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 url="http://localhost:4000/"
 profile="both"
 runs=3
-output_base="docs/lighthouse-local"
+output_base=""
 
 usage() {
   printf '%s\n' \
@@ -20,7 +20,7 @@ usage() {
     "  --mobile        Run only the mobile profile (default: both profiles)" \
     "  --desktop       Run only the desktop profile (default: both profiles)" \
     "  --runs N        Odd number of sequential runs (default: 3)" \
-    "  --output PATH   Report name prefix (default: docs/lighthouse-local)" \
+    "  --output PATH   Report name prefix (default: docs/lighthouse/YYYY-MM-DD/lighthouse-local)" \
     "  --help          Show this help"
 }
 
@@ -73,15 +73,18 @@ for command_name in curl google-chrome node npm npx; do
   }
 done
 
-if [[ "$output_base" != /* ]]; then
-  output_base="$PROJECT_DIR/$output_base"
-fi
-
 export LANG=C
 export LC_ALL=C
 export TZ=UTC
 
 timestamp="$(date +%Y%m%d-%H%M%S)"
+audit_date="${timestamp:0:4}-${timestamp:4:2}-${timestamp:6:2}"
+output_base="${output_base:-docs/lighthouse/$audit_date/lighthouse-local}"
+
+if [[ "$output_base" != /* ]]; then
+  output_base="$PROJECT_DIR/$output_base"
+fi
+
 mkdir -p "$(dirname "$output_base")"
 
 curl --fail --silent --show-error --output /dev/null "$url"
