@@ -17,15 +17,17 @@ permalink_en: /trainings/ai-assisted-development/
                     <div class="course-description">
                         {% translate pages.courses.ai_assisted_development.text %}
                     </div>
+                    {% capture modality %}{{ site.translations[site.lang].pages.courses.ai_assisted_development.modality }}{% endcapture %}
                     {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                     {% capture link %}{{ site.translations[site.lang].pages.courses.ai_assisted_development.call_to_action.link }}{% endcapture %}
                     <div class="summary mobile">
                         {%
                             include course-summary.html
-                            price='400'
-                            days='2'
-                            hours='12'
+                            price='700'
+                            days='5'
+                            hours='20'
                             special_discount=discount
+                        place=modality
                             contact_link=link
                         %}
                     </div>
@@ -56,14 +58,16 @@ permalink_en: /trainings/ai-assisted-development/
 
                 </div>
                 <div class="summary desktop">
+                    {% capture modality %}{{ site.translations[site.lang].pages.courses.ai_assisted_development.modality }}{% endcapture %}
                     {% capture discount %}{{ site.translations[site.lang].components.course_summary.special_discount }}{% endcapture %}
                     {% capture link %}{{ site.translations[site.lang].pages.courses.ai_assisted_development.call_to_action.link }}{% endcapture %}
                     {%
                         include course-summary.html
-                        price='400'
-                        days='2'
-                        hours='12'
+                        price='700'
+                        days='5'
+                        hours='20'
                         special_discount=discount
+                        place=modality
                         contact_link=link
                     %}
                 </div>
@@ -77,9 +81,9 @@ permalink_en: /trainings/ai-assisted-development/
         {% include components/call-to-action.html
             title=title
             text=text
-            defaultMessage='Sent from the AI-Assisted Software Development Course page, no message specified'
+            defaultMessage='Sent from the AI-Assisted Development Course page, no message specified'
             messagePlaceHolder=placeholder
-            origin='Curso Introduccion al desarrollo asistido por IA'
+            origin='AI-Assisted Development'
         %}
     </div>
 
