@@ -1,6 +1,6 @@
-# Backlog de mejora web — auditoría 2026-08-31
+# Backlog de mejora web — actualizado 2026-11-10
 
-Fuente: [`docs/lighthouse/2026-08-31/lighthouse-codesai-2026-08-31.md`](../../docs/lighthouse/2026-08-31/lighthouse-codesai-2026-08-31.md)
+Fuentes: [auditoría inicial](../../docs/lighthouse/2026-08-31/lighthouse-codesai-2026-08-31.md) y [auditoría de producción multipágina del 10 de noviembre](../../docs/lighthouse/2026-11-10/lighthouse-codesai-2026-11-10.md).
 
 Estados permitidos: `TODO`, `DOING`, `BLOCKED`, `DONE`.
 Prioridades: `P0` crítica, `P1` alta, `P2` media.
@@ -16,9 +16,10 @@ Prioridades: `P0` crítica, `P1` alta, `P2` media.
 | CWS-A11Y-002 | TODO | P1 | Accesibilidad | Corregir la jerarquía de nombres del equipo (`h4` tras `h2`). | Orden de encabezados secuencial y auditoría `heading-order` superada. |
 | CWS-A11Y-003 | TODO | P1 | Accesibilidad | Convertir el disparador del menú móvil en botón y sincronizar `aria-expanded`/`aria-controls`. | Menú operable con teclado y lector de pantalla; foco y estado se anuncian correctamente. |
 | CWS-A11Y-004 | TODO | P1 | Accesibilidad | Convertir el `div` de envío del formulario en botón semántico y eliminar el atributo `class` duplicado. | Botón activable con teclado; nombre/estado accesibles; envío y validación siguen funcionando. |
+| CWS-JS-002 | TODO | P1 | JavaScript/Respuesta | Atribuir y reducir el trabajo de hilo principal y TBT en posts y formación; empezar por A flash from the past (TBT móvil mediano 593 ms, máximo 764 ms). Separar coste de terceros, scripts locales y renderizado antes de optimizar. | TBT móvil mediano ≤ 200 ms en las rutas auditadas; sin regresiones de navegación, cookies, formularios ni eventos aprobados; no presentar TBT como INP. |
 | CWS-JS-001 | TODO | P1 | JavaScript | Auditar y retirar jQuery de layouts modernos donde no se use. | Ninguna referencia funcional rota y jQuery no se descarga en la home. |
-| CWS-IMG-002 | TODO | P1 | Imágenes | Añadir `width`/`height` o `aspect-ratio` a todos los `<img>` y lazy loading a los no críticos. | Lighthouse no lista imágenes sin dimensiones; CLS ≤ 0,10; imágenes bajo el fold se cargan diferidas. |
-| CWS-IMG-001 | TODO | P1 | Imágenes | Convertir y comprimir imágenes de equipo y miniaturas de posts; generar variantes responsivas. | Ahorro total estimado ≥ 250 KB en la home sin degradación visible. |
+| CWS-IMG-002 | TODO | P0 | Imágenes/CLS | Reservar dimensiones de imágenes en cabecera, catálogo, home, cursos y posts; diferir solo las no críticas. Empezar por `mid_picture.png` del catálogo. | Sin `unsized-images` en las rutas auditadas; CLS ≤ 0,10 en móvil y escritorio en tres pasadas; las imágenes LCP no se difieren. |
+| CWS-IMG-001 | TODO | P1 | Imágenes | Convertir y comprimir imágenes de cursos, equipo y posts; generar variantes responsivas. Incluir `deliberate_practice_audiense.png` (~1,25 MB transferidos; ahorro estimado ~1,24 MB). | Variantes ajustadas al tamaño mostrado, sin degradación visible; ahorro ≥ 250 KB en home y eliminación del exceso identificado en cursos/posts; `make test` y regresión visual pasan. |
 | CWS-ICON-001 | TODO | P1 | CSS/Fuentes | Sustituir Bootstrap Icons global por SVG locales o un subconjunto. | Se eliminan la hoja externa y el WOFF2 de ~134 KB; iconos mantienen nombre accesible y apariencia. |
 | CWS-FONT-001 | TODO | P1 | Fuentes | Inventariar familias/pesos, eliminar los no usados y consolidar o autoalojar WOFF2 con `swap`/`optional`. | Menos solicitudes críticas; sin FOIT apreciable; tipografía aprobada visualmente. |
 | CWS-ANA-001 | TODO | P1 | Analítica/Privacidad | Revisar etiquetas de GA/GTM y acordar carga según consentimiento. | Solo se cargan tags aprobados en el estado de consentimiento definido; eventos clave siguen llegando; decisión documentada. |
@@ -27,7 +28,11 @@ Prioridades: `P0` crítica, `P1` alta, `P2` media.
 | CWS-DEV-001 | DONE | P1 | Desarrollo | Adaptar `scripts/development_build.sh` a Bundler 4, ejecutando Jekyll mediante `bundle exec`. | El script arranca Jekyll sin depender de un ejecutable global y el servidor responde HTTP 200 en `localhost:4000`. |
 | CWS-SYS-001 | DONE | P1 | Docker/Sistema | Migrar la imagen base de `ruby:4.0.6-bookworm` (Debian 12 oldstable) a `ruby:4.0.6-trixie` (Debian 13 stable). | La imagen compila para amd64 y arm64; Ruby, Node, optimizadores de imágenes y Playwright funcionan; `make test` pasa completo. |
 | CWS-CI-001 | TODO | P1 | Calidad | Incorporar Lighthouse CI en PR para home y plantillas representativas. | Presupuestos: performance móvil ≥ 90, a11y = 100, LCP ≤ 2,5 s, TBT ≤ 200 ms, CLS ≤ 0,10. |
-| CWS-LH-003 | TODO | P1 | Verificación | Repetir Lighthouse tras cada fase y actualizar el informe con mediana y rango. | Tres pasadas por perfil, resultados archivados y comparación contra baseline 2026-08-31. |
+| CWS-LH-005 | TODO | P0 | Rendimiento/Publicaciones | Reducir la carga inicial de publicaciones: evitar descargar el histórico completo de miniaturas mediante paginación o carga diferida real; revisar las pestañas y recursos ocultos. Baseline móvil: ~14,4 MiB y LCP 8,38–41,86 s. | Las miniaturas lejanas y recursos de pestañas inactivas no se descargan inicialmente; navegación, enlaces de posts y pestañas se conservan en ES/EN; rendimiento móvil mediano ≥ 90, LCP ≤ 2,5 s, TBT ≤ 200 ms y CLS ≤ 0,10 en tres pasadas. |
+| CWS-LH-004 | TODO | P0 | Rendimiento/Plantillas | Diagnosticar y reducir FCP/LCP móvil del catálogo, formaciones y posts, empezando por IA introductoria y avanzada. Comparar pasadas rápidas y lentas (Historias de usuario: LCP 1,87–5,65 s); comprobar CSS, fuentes, iconos, respuesta/compresión y prioridad del LCP. | En tres pasadas por ruta: rendimiento móvil mediano ≥ 90, LCP ≤ 2,5 s y FCP ≤ 1,8 s; conservar ES/EN, comportamiento y apariencia; verificar también escritorio. |
+| CWS-A11Y-005 | TODO | P1 | Accesibilidad/Formación y posts | Corregir contraste del CTA Información, numeración de temarios y enlaces de autor, categorías y contenido de posts; ampliar la revisión más allá de la home cubierta por CWS-A11Y-001. | `color-contrast` superado en todas las formaciones, el catálogo y los cinco posts, en móvil/escritorio; WCAG AA y regresión visual aprobada. |
+| CWS-A11Y-006 | TODO | P1 | Accesibilidad/Plantillas | Añadir un landmark `main` al contenido principal de las plantillas que carecen de él, incluidas las formaciones de IA. | `landmark-one-main` superado en rutas afectadas ES/EN sin duplicar landmarks ni alterar el diseño. |
+| CWS-LH-003 | DONE | P1 | Verificación | Auditoría multipágina de producción del 10-11-2026: tres pasadas por perfil; resultados y comparación consolidados. Repetir tras las siguientes fases como nueva verificación. | Informes medianos HTML archivados para 19 páginas × 2 perfiles, medianas/rangos y comparación histórica documentados. |
 | CWS-TOOL-004 | TODO | P1 | Accesibilidad | Ejecutar axe, navegación por teclado y lector de pantalla en ES/EN. | Cero impactos críticos/serios sin aceptar; foco, formulario, menú y cookies validados. |
 | CWS-TOOL-003 | TODO | P1 | Rendimiento | Ejecutar WebPageTest 4G, primera/repetida, antes y después de P0/P1. | Waterfalls y comparación publicadas; TTFB, caché y terceros atribuidos. |
 | CWS-TOOL-001 | TODO | P1 | Datos de campo | Obtener CrUX mediante PageSpeed Insights o CrUX API. | p75 de LCP/INP/CLS por dispositivo y cobertura de datos documentados. |
@@ -40,23 +45,22 @@ Prioridades: `P0` crítica, `P1` alta, `P2` media.
 | CWS-CSS-003 | TODO | P2 | CSS/Sass | Añadir la unidad `%` a los valores de saturación y luminosidad usados en funciones de color Sass. | `make test` pasa sin avisos Sass de `function-units`; los colores generados permanecen equivalentes y la regresión visual pasa. |
 | CWS-DEP-003 | TODO | P2 | Docker/Reproducibilidad | Fijar la instalación global de SVGO a la versión auditada `svgo@4.1.0`. | Dos builds limpios instalan la misma versión de SVGO; `svgo --version` devuelve 4.1.0 y `make test` pasa. |
 | CWS-DEP-004 | TODO | P2 | Node/Mantenimiento | Evaluar y, si es compatible con Node 24 LTS, actualizar npm de 11.19.0 a 12.0.2; documentar la decisión si se conserva la versión distribuida con Node. | La versión elegida queda fijada o explícitamente documentada; `npm ci`, Playwright y `make test` pasan sin cambios en el lockfile durante el build. |
-| CWS-TOOL-005 | TODO | P2 | SEO | Rastrear el sitio ES/EN con Screaming Frog/Sitebulb. | Sin 4xx internos; canonical/hreflang/títulos/descriptions/headings revisados por plantilla. |
+| CWS-TOOL-005 | TODO | P2 | SEO | Rastrear el sitio ES/EN con Screaming Frog/Sitebulb. | Sin 4xx internos; canonical/hreflang/títulos/descriptions/headings revisados por plantilla; corregir el enlace mixto de mayúsculas del post Approvals que redirige a su slug en minúsculas. |
 | CWS-TOOL-006 | TODO | P2 | SEO | Validar datos estructurados con Rich Results Test y Schema Validator. | Errores corregidos y oportunidades de schema priorizadas. |
-## Plan de ejecución priorizado
+## Plan de ejecución priorizado — revisión del 10-11-2026
 
-Fase 1. **Red de seguridad:** `CWS-TEST-001`, `CWS-TOOL-007` y `CWS-TOOL-008`.
-Fase 2. **Correcciones críticas:** `CWS-A11Y-001`, `CWS-LH-001` y `CWS-LH-002`.
-Fase 3. **Actualización técnica y entorno:** `CWS-DEV-001`, `CWS-DEP-001`, `CWS-DEP-002` y `CWS-SYS-001`.
-Fase 4. **Semántica e interacción:** `CWS-A11Y-002`, `CWS-A11Y-003`, `CWS-A11Y-004` y `CWS-JS-001`.
-Fase 5. **Peso y estabilidad visual:** `CWS-IMG-002`, `CWS-IMG-001`, `CWS-ICON-001` y `CWS-FONT-001`.
-Fase 6. **Privacidad y prevención de regresiones:** `CWS-ANA-001`, `CWS-CI-001`, `CWS-LH-003` y `CWS-TOOL-004`.
-Fase 7. **Validación externa y datos reales:** `CWS-TOOL-003`, `CWS-TOOL-001` y `CWS-TOOL-002`.
-Fase 8. **Mantenimiento de prioridad media:** `CWS-DEP-003`, `CWS-DEP-004`, `CWS-CSS-001`, `CWS-CSS-002`, `CWS-CSS-003`, `CWS-IMG-003`, `CWS-CACHE-001`, `CWS-SEC-001`, `CWS-TOOL-005` y `CWS-TOOL-006`.
+Las fases 1–3 originales (red de seguridad, correcciones críticas de la home y actualización del entorno) están completadas. La auditoría multipágina cambia el orden del trabajo pendiente:
 
-## Explicación del orden
+1. **P0 — Carga móvil de formación y posts:** `CWS-LH-004`, empezando por IA introductoria y avanzada; usar las diferencias entre pasadas para verificar causas. Apoyarse en `CWS-ICON-001` y `CWS-FONT-001` cuando las mediciones confirmen su aportación a la cadena crítica. El buen resultado de escritorio no cierra esta tarea.
+2. **P0 — Peso inicial de publicaciones:** `CWS-LH-005`; el listado transfiere ~14,4 MiB y tiene LCP móvil mediano de 36,88 s. Coordinar con `CWS-IMG-001` para evitar duplicar trabajo de miniaturas.
+3. **P0 — Estabilidad visual:** `CWS-IMG-002`; catálogo escritorio CLS 0,289, home escritorio 0,133 y posts móviles con medianas de hasta 0,280. Empezar por dimensiones reservadas del catálogo y cabecera; investigar también fuentes y contenido del post.
+4. **P1 — Recursos y capacidad de respuesta:** `CWS-IMG-001`, `CWS-ICON-001`, `CWS-FONT-001`, `CWS-JS-002` y comprobación de `CWS-JS-001`. Incluye fotografías de cursos y contenido de posts, además de la home. Revisar `CWS-ANA-001` con decisión explícita sobre consentimiento y eventos.
+5. **P1 — Accesibilidad multipágina:** `CWS-A11Y-005`, `CWS-A11Y-006`, `CWS-A11Y-002`, `CWS-A11Y-003`, `CWS-A11Y-004` y `CWS-TOOL-004`. Los fallos de contraste de cursos y posts no estaban cubiertos por el cierre histórico de `CWS-A11Y-001` en la home.
+6. **P1 — Prevención y datos reales:** `CWS-CI-001`, repetir `CWS-LH-003` tras cada fase, `CWS-TOOL-003`, `CWS-TOOL-001` y `CWS-TOOL-002`. Incluir IA, catálogo, publicaciones y un post representativo en los presupuestos de CI. Estas comprobaciones acompañan las correcciones; no se aplazan hasta el final.
+7. **P2 — Mantenimiento:** `CWS-DEP-003`, `CWS-DEP-004`, `CWS-CSS-001`, `CWS-CSS-002`, `CWS-CSS-003`, `CWS-IMG-003`, `CWS-CACHE-001`, `CWS-SEC-001`, `CWS-TOOL-005` y `CWS-TOOL-006`.
 
-La primera fase establece una línea base funcional y visual antes de tocar HTML, JavaScript, imágenes o estilos. Así, cada modificación posterior puede demostrar tanto que el comportamiento se conserva como que no aparecen alteraciones visuales involuntarias en ES/EN y en móvil/tablet/escritorio.
+## Criterio de priorización y límites
 
-Después se atienden los fallos P0 con mayor impacto directo: accesibilidad y LCP/FCP móvil. A continuación se estabiliza el entorno actualizado: primero el script de desarrollo, después las gemas de verificación y Playwright, y por último Debian Trixie, de modo que cada capa se valide antes de cambiar la siguiente. Las mejoras semánticas y la retirada de JavaScript se ejecutan después porque afectan controles interactivos y se benefician de la cobertura Playwright actualizada. La optimización masiva de imágenes, iconos y fuentes queda a continuación, ya que tiene un alcance transversal y necesita controles funcionales y visuales estables.
+Se priorizan las dos formaciones de IA por el foco comercial solicitado y por LCP móvil mediano de 5,73 s y 5,62 s. Publicaciones presenta el mayor exceso de carga y variabilidad; las correcciones de CLS tienen evidencia concreta en imágenes sin dimensiones. Las tres líneas P0 pueden implementarse en cambios pequeños y verificables sin esperar al mantenimiento de P2.
 
-Por último se automatizan los umbrales en CI, se repiten las mediciones controladas y se contrastan con herramientas externas y datos de campo. El pin de SVGO, la decisión sobre npm, la migración Sass, caché, cabeceras, rastreo SEO y datos estructurados se mantienen como P2 porque aportan mantenimiento y reproducibilidad, pero no deben retrasar la red de seguridad ni las correcciones críticas ya demostradas por Lighthouse.
+Los informes son de laboratorio, con Lighthouse 13.4.1 y red/CPU simuladas. No prueban el cumplimiento de Core Web Vitals de campo: INP y p75 reales siguen pendientes en CrUX/Search Console. No se atribuye causalidad definitiva a analítica, fuentes o compresión sin una comprobación específica. Los rangos amplios de móvil deben conservarse en las comparaciones posteriores.
