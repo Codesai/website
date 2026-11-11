@@ -1,62 +1,22 @@
 ---
 ---
 
-@use "sass:math";
+// Load the reset before components and pages to preserve the cascade.
+@use "base";
+@use "components";
 
-// TODO Make the download program link work (for the TDD course)
-// TODO call to action toastr instead of alert xD
-
-$max-page-width: 945px;
-$max-width-breakpoint: 1024px;
-$tablet-breakpoint: 768px;
-
-$blueish-green: rgba(3, 204, 171, 1);
-$blueish-gray: rgba(41, 41, 46, 1);
-
-$blueish-green-hex: #03CCAB;
-
-$assistant: 'Assistant', sans-serif;
-$lekton: 'Lekton', sans-serif;
-$signika: 'Signika', sans-serif;
-
-@function pxToRem($px) {
-  $rem: math.div($px, 16);
-  @return #{$rem}rem;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: $assistant;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-@import "../_sass/components";
-
-@import "../_sass/header";
-@import "../_sass/footer";
-@import "../_sass/home";
-@import "../_sass/clients";
-@import "../_sass/training";
-@import "../_sass/tdd_course";
-@import "../_sass/services";
-@import "../_sass/service";
-@import "../_sass/publications";
-@import "../_sass/posts";
-@import "../_sass/agent_transcripts";
-@import "../_sass/404";
-@import "../_sass/policies";
-@import "../_sass/categories";
-@import "../_sass/newsletter";
+@use "header";
+@use "footer";
+@use "home";
+@use "clients";
+@use "training";
+@use "tdd_course";
+@use "services";
+@use "service";
+@use "publications";
+@use "posts";
+@use "agent_transcripts";
+@use "404" as error-404;
+@use "policies";
+@use "categories";
+@use "newsletter";

@@ -1,12 +1,7 @@
 ---
 ---
 
-@use "sass:math";
-
-@function pxToRem($px) {
-  $rem: math.div($px, 16);
-  @return #{$rem}rem;
-}
+@use "functions" as *;
 
 $max-content-width: 980px;
 $tablet-breakpoint: 768px;

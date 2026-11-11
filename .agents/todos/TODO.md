@@ -1,4 +1,4 @@
-# Backlog de mejora web — actualizado 2026-11-10
+# Backlog de mejora web — actualizado 2026-11-11
 
 Fuentes: [auditoría inicial](../../docs/lighthouse/2026-08-31/lighthouse-codesai-2026-08-31.md) y [auditoría de producción multipágina del 10 de noviembre](../../docs/lighthouse/2026-11-10/lighthouse-codesai-2026-11-10.md).
 
@@ -40,14 +40,14 @@ Prioridades: `P0` crítica, `P1` alta, `P2` media.
 | CWS-IMG-003 | TODO | P2 | Contenido | Revisar textos alternativos y corregir el logo de Mango etiquetado como Lifull Connect. | Alt decorativos vacíos y alt informativos correctos en ES/EN; revisión axe/manual superada. |
 | CWS-CACHE-001 | TODO | P2 | Hosting | Versionar activos y configurar caché larga e inmutable; conservar revalidación del HTML. | Activos versionados responden con `max-age=31536000, immutable`; HTML no queda obsoleto tras despliegue. |
 | CWS-SEC-001 | TODO | P2 | Seguridad | Añadir cabeceras Netlify; desplegar CSP primero en `Report-Only`. | Observatory/SecurityHeaders sin fallos críticos y recursos/funciones del sitio no se bloquean. |
-| CWS-CSS-001 | TODO | P2 | CSS/Sass | Sustituir los `@import` obsoletos de Sass por el sistema de módulos con `@use` y `@forward`. | `make test` pasa sin avisos Sass de `import`; los CSS generados conservan el diseño en ES/EN y móvil/escritorio. |
+| CWS-CSS-001 | DONE | P1 | CSS/Sass | Sustituir los `@import` obsoletos de Sass por el sistema de módulos con `@use` y `@forward`; prioridad alta por el ruido molesto de los avisos durante el arranque local (`make run`). Extraer variables y funciones compartidas y conservar el orden de las reglas CSS. | El arranque local y `make test` no emiten avisos Sass de `import`; el CSS compilado antes y después es equivalente, ignorando mapas de fuentes; `make test` y las comparaciones visuales existentes pasan sin actualizar las referencias. |
 | CWS-CSS-002 | TODO | P2 | CSS/Sass | Reemplazar las divisiones Sass con `/` fuera de `calc()` por `math.div()` o la alternativa CSS apropiada. | `make test` pasa sin avisos Sass de `slash-div`; los valores calculados y el diseño visual no cambian. |
 | CWS-CSS-003 | TODO | P2 | CSS/Sass | Añadir la unidad `%` a los valores de saturación y luminosidad usados en funciones de color Sass. | `make test` pasa sin avisos Sass de `function-units`; los colores generados permanecen equivalentes y la regresión visual pasa. |
 | CWS-DEP-003 | TODO | P2 | Docker/Reproducibilidad | Fijar la instalación global de SVGO a la versión auditada `svgo@4.1.0`. | Dos builds limpios instalan la misma versión de SVGO; `svgo --version` devuelve 4.1.0 y `make test` pasa. |
 | CWS-DEP-004 | TODO | P2 | Node/Mantenimiento | Evaluar y, si es compatible con Node 24 LTS, actualizar npm de 11.19.0 a 12.0.2; documentar la decisión si se conserva la versión distribuida con Node. | La versión elegida queda fijada o explícitamente documentada; `npm ci`, Playwright y `make test` pasan sin cambios en el lockfile durante el build. |
 | CWS-TOOL-005 | TODO | P2 | SEO | Rastrear el sitio ES/EN con Screaming Frog/Sitebulb. | Sin 4xx internos; canonical/hreflang/títulos/descriptions/headings revisados por plantilla; corregir el enlace mixto de mayúsculas del post Approvals que redirige a su slug en minúsculas. |
 | CWS-TOOL-006 | TODO | P2 | SEO | Validar datos estructurados con Rich Results Test y Schema Validator. | Errores corregidos y oportunidades de schema priorizadas. |
-## Plan de ejecución priorizado — revisión del 10-11-2026
+## Plan de ejecución priorizado — revisión del 11-11-2026
 
 Las fases 1–3 originales (red de seguridad, correcciones críticas de la home y actualización del entorno) están completadas. La auditoría multipágina cambia el orden del trabajo pendiente:
 
@@ -57,7 +57,8 @@ Las fases 1–3 originales (red de seguridad, correcciones críticas de la home 
 4. **P1 — Recursos y capacidad de respuesta:** `CWS-IMG-001`, `CWS-ICON-001`, `CWS-FONT-001`, `CWS-JS-002` y comprobación de `CWS-JS-001`. Incluye fotografías de cursos y contenido de posts, además de la home. Revisar `CWS-ANA-001` con decisión explícita sobre consentimiento y eventos.
 5. **P1 — Accesibilidad multipágina:** `CWS-A11Y-005`, `CWS-A11Y-006`, `CWS-A11Y-002`, `CWS-A11Y-003`, `CWS-A11Y-004` y `CWS-TOOL-004`. Los fallos de contraste de cursos y posts no estaban cubiertos por el cierre histórico de `CWS-A11Y-001` en la home.
 6. **P1 — Prevención y datos reales:** `CWS-CI-001`, repetir `CWS-LH-003` tras cada fase, `CWS-TOOL-003`, `CWS-TOOL-001` y `CWS-TOOL-002`. Incluir IA, catálogo, publicaciones y un post representativo en los presupuestos de CI. Estas comprobaciones acompañan las correcciones; no se aplazan hasta el final.
-7. **P2 — Mantenimiento:** `CWS-DEP-003`, `CWS-DEP-004`, `CWS-CSS-001`, `CWS-CSS-002`, `CWS-CSS-003`, `CWS-IMG-003`, `CWS-CACHE-001`, `CWS-SEC-001`, `CWS-TOOL-005` y `CWS-TOOL-006`.
+7. **P1 — Entorno de desarrollo:** `CWS-CSS-001`; eliminar los avisos repetitivos de Sass en el arranque local, verificando la equivalencia del CSS y la suite existente.
+8. **P2 — Mantenimiento:** `CWS-DEP-003`, `CWS-DEP-004`, `CWS-CSS-002`, `CWS-CSS-003`, `CWS-IMG-003`, `CWS-CACHE-001`, `CWS-SEC-001`, `CWS-TOOL-005` y `CWS-TOOL-006`.
 
 ## Criterio de priorización y límites
 

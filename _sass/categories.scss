@@ -1,3 +1,5 @@
+@use "shared" as *;
+
 .categories {
   display: flex;
   flex-direction: column;

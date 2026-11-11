@@ -1,0 +1,20 @@
+@use "shared" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $assistant;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
