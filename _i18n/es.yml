@@ -1299,6 +1299,9 @@ con sesiones prácticas en forma de kata en las que aplicaremos las técnicas m�
       link: /servicios/consultancy/#call-to-action
 
 components:
+  console_output:
+    show_more: Mostrar el resto de la salida
+    lines: líneas
   call_to_action:
     mail: Email
     name: Nombre completo

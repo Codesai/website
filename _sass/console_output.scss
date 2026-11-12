@@ -1,0 +1,107 @@
+@use "shared" as *;
+
+.console-output {
+  margin: 1.25rem 0;
+
+  &__window {
+    overflow: hidden;
+    border: 1px solid #303b36;
+    border-radius: 8px;
+    background: #090c0b;
+    color: #e8eee9;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+  }
+
+  &__caption {
+    margin-top: 0.5rem;
+    color: #5b6460;
+    font-family: $assistant;
+    font-size: pxToRem(13);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.55rem 0.85rem;
+    border-bottom: 1px solid #27312c;
+    background: #1b211e;
+    color: #c8d2cb;
+    font-family: $assistant;
+    font-size: pxToRem(13);
+    font-weight: 600;
+  }
+
+  &__lights {
+    display: flex;
+    gap: 5px;
+
+    i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #65746a;
+    }
+
+    i:first-child { background: #e36b64; }
+    i:nth-child(2) { background: #e3b75e; }
+    i:last-child { background: #73b87a; }
+  }
+
+  &__text {
+    max-width: 100%;
+    margin: 0;
+    padding: 0.9rem 1rem;
+    overflow-x: auto;
+    background: transparent;
+    color: inherit;
+    font-family: "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: pxToRem(12);
+    line-height: 1.5;
+    tab-size: 8;
+    white-space: pre;
+
+    code {
+      padding: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      white-space: inherit;
+    }
+  }
+
+  &__command, &__added { color: #9fe58b; }
+  &__removed { color: #f07d72; }
+
+  &__more {
+    border-top: 1px solid #27312c;
+
+    summary {
+      padding: 0.7rem 1rem;
+      cursor: pointer;
+      color: #b9d9bd;
+      font-family: $assistant;
+      font-size: pxToRem(13);
+      font-weight: 600;
+    }
+
+    summary:focus-visible {
+      outline: 2px solid #9fe58b;
+      outline-offset: -3px;
+    }
+
+    &[open] summary { border-bottom: 1px solid #27312c; }
+  }
+}
+
+.post figure.console-output {
+  width: 100%;
+  margin: 1.25rem 0;
+}
+
+.post figcaption.console-output__caption {
+  padding: 0;
+  font-size: pxToRem(13);
+}

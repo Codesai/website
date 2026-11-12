@@ -1,0 +1,26 @@
+{% if include.path %}
+  {% assign console_text = include.path | read_console %}
+{% else %}
+  {% assign console_text = include.content %}
+{% endif %}
+{% assign hidden_lines = console_text | console_remaining_lines | plus: 0 %}
+{% assign console_language = "es" %}
+{% if page.written_in == "english" %}
+  {% assign console_language = "en" %}
+{% endif %}
+{% assign console_labels = site.translations[console_language].components.console_output %}
+<figure class="console-output" aria-label="{{ include.label | escape }}">
+  <div class="console-output__window">
+    <div class="console-output__header"><span class="console-output__lights" aria-hidden="true"><i></i><i></i><i></i></span><span>{{ include.label | escape }}</span></div>
+    <pre class="console-output__text"><code>{{ console_text | console_preview | console_format }}</code></pre>
+    {% if hidden_lines > 0 %}
+      <details class="console-output__more">
+        <summary>{{ console_labels.show_more }} ({{ hidden_lines }} {{ console_labels.lines }})</summary>
+        <pre class="console-output__text"><code>{{ console_text | console_remainder | console_format }}</code></pre>
+      </details>
+    {% endif %}
+  </div>
+  {% if include.caption %}
+    <figcaption class="console-output__caption">{{ include.caption | escape }}</figcaption>
+  {% endif %}
+</figure>

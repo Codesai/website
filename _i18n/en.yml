@@ -1293,6 +1293,9 @@ pages:
 
 
 components:
+  console_output:
+    show_more: Show remaining output
+    lines: lines
   call_to_action:
     mail: E-mail
     name: Full Name

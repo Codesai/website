@@ -1,0 +1,79 @@
+@use "shared" as *;
+
+.markdown-embed {
+  min-width: 0;
+  margin: 1.5rem 0;
+  border: 1px solid #d5dedd;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+
+  &__header {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid #d5dedd;
+    background: #f3f8f6;
+    color: #27584f;
+    font-size: pxToRem(14);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  &__body {
+    min-width: 0;
+    padding: 1.25rem 1.5rem;
+    font-size: pxToRem(16);
+    line-height: 1.6;
+
+    > :first-child { margin-top: 0; }
+    > :last-child { margin-bottom: 0; }
+
+    h1, h2, h3, h4 {
+      margin: 1.5rem 0 0.65rem;
+      line-height: 1.25;
+    }
+
+    h1 { font-size: pxToRem(25); }
+    h2 { font-size: pxToRem(21); }
+    h3 { font-size: pxToRem(18); }
+
+    p, ul, ol, blockquote, pre, table { margin: 0 0 1rem; }
+    ul, ol { padding-inline-start: 1.5rem; }
+    li { margin-bottom: 0.3rem; }
+    a { color: #176b5c; text-decoration: underline; text-underline-offset: 2px; }
+    a:focus-visible { outline: 2px solid #176b5c; outline-offset: 3px; }
+
+    blockquote {
+      margin-inline: 0;
+      padding: 0.15rem 1rem;
+      border-left: 3px solid #23826f;
+      background: #f6faf8;
+      font-size: inherit;
+    }
+
+    pre {
+      max-width: 100%;
+      padding: 0.8rem 1rem;
+      overflow-x: auto;
+      border-radius: 4px;
+      background: #f3f5f5;
+      line-height: 1.5;
+    }
+
+    pre code { padding: 0; background: transparent; color: inherit; }
+
+    table {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      border-collapse: collapse;
+      font-size: pxToRem(14);
+    }
+
+    th, td { padding: 0.45rem 0.65rem; border: 1px solid #d5dedd; text-align: left; }
+    th { background: #f3f8f6; }
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    &__body { padding: 1rem; font-size: pxToRem(15); }
+  }
+}

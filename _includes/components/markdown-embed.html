@@ -1,0 +1,9 @@
+{% if include.path %}
+  {% assign embedded_markdown = include.path | read_markdown %}
+{% else %}
+  {% assign embedded_markdown = include.content %}
+{% endif %}
+<section class="markdown-embed" aria-label="{{ include.label | escape }}">
+  <div class="markdown-embed__header"><span aria-hidden="true">📄</span> {{ include.label | escape }}</div>
+  <div class="markdown-embed__body">{{ embedded_markdown | escape_markdown_html | markdownify }}</div>
+</section>

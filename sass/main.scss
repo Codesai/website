@@ -16,6 +16,8 @@
 @use "publications";
 @use "posts";
 @use "agent_transcripts";
+@use "markdown_embed";
+@use "console_output";
 @use "404" as error-404;
 @use "policies";
 @use "categories";

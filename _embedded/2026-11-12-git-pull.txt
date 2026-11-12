@@ -1,0 +1,161 @@
+$ git pull
+remote: Enumerating objects: 120, done.
+remote: Counting objects: 100% (120/120), done.
+remote: Compressing objects: 100% (57/57), done.
+remote: Total 120 (delta 58), reused 120 (delta 58), pack-reused 0 (from 0)
+Recibiendo objetos: 100% (120/120), 15.71 MiB | 9.77 MiB/s, listo.
+Resolviendo deltas: 100% (58/58), completado con 35 objetos locales.
+Desde github.com:Codesai/website
+   1a6e0fb..9342df5  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ .agents/plans/plan-CWS-CSS-001-20261111.md                                                        |   12 +
+ .agents/plans/plan-CWS-LH-001-20260901-0906.md                                                    |    2 +-
+ .agents/todos/TODO.md                                                                             |   45 +--
+ .dockerignore                                                                                     |    4 +-
+ AGENTS.md                                                                                         |    4 +-
+ README.md                                                                                         |    4 +-
+ _i18n/en.yml                                                                                      |   33 +-
+ _i18n/es.yml                                                                                      |   33 +-
+ _includes/components/course.html                                                                  |    4 +-
+ _sass/404.scss                                                                                    |    2 +
+ _sass/_base.scss                                                                                  |   20 +
+ _sass/_functions.scss                                                                             |    6 +
+ _sass/_shared.scss                                                                                |    3 +
+ _sass/_variables.scss                                                                             |   12 +
+ _sass/agent_transcripts.scss                                                                      |    2 +
+ _sass/categories.scss                                                                             |    2 +
+ _sass/clients.scss                                                                                |    2 +
+ _sass/components.scss                                                                             |    2 +
+ _sass/footer.scss                                                                                 |    2 +
+ _sass/header.scss                                                                                 |    2 +
+ _sass/home.scss                                                                                   |    2 +
+ _sass/newsletter.scss                                                                             |    2 +
+ _sass/policies.scss                                                                               |    2 +
+ _sass/posts.scss                                                                                  |    2 +
+ _sass/publications.scss                                                                           |    2 +
+ _sass/service.scss                                                                                |    2 +
+ _sass/services.scss                                                                               |    2 +
+ _sass/tdd_course.scss                                                                             |    2 +
+ _sass/training.scss                                                                               |   17 +
+ ai-assisted-development-course.html                                                               |   20 +-
+ docs/README.md                                                                                    |    7 +
+ docs/{ => desarrollo}/agent-transcripts.md                                                        |    0
+ docs/{ => lighthouse/2026-08-31}/lighthouse-codesai-2026-08-31.md                                 |    8 +-
+ docs/{ => lighthouse/2026-08-31}/lighthouse-local-desktop-20260831-133933.html                    |    0
+ docs/{ => lighthouse/2026-08-31}/lighthouse-local-mobile-20260831-133933.html                     |    0
+ docs/{ => lighthouse/2026-09-01}/lighthouse-local-desktop-20260901-053106.html                    |    0
+ docs/{ => lighthouse/2026-09-01}/lighthouse-local-desktop-20260901-150536.html                    |    0
+ docs/{ => lighthouse/2026-09-01}/lighthouse-local-mobile-20260901-053106.html                     |    0
+ docs/{ => lighthouse/2026-09-01}/lighthouse-local-mobile-20260901-053729.html                     |    0
+ docs/{ => lighthouse/2026-09-01}/lighthouse-local-mobile-20260901-150536.html                     |    0
+ docs/{ => lighthouse/2026-10-13}/lighthouse-local-desktop-20261013-113823.html                    |    0
+ docs/{ => lighthouse/2026-10-13}/lighthouse-local-mobile-20261013-113823.html                     |    0
+ docs/{ => lighthouse/2026-10-13}/lighthouse-production-desktop-20261013-114844.html               |    0
+ docs/{ => lighthouse/2026-10-13}/lighthouse-production-mobile-20261013-114844.html                |    0
+ docs/lighthouse/2026-11-10/lighthouse-codesai-2026-11-10.md                                       |  192 +++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-cd-databases-desktop-20261110-122120.html        | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-cd-databases-mobile-20261110-122120.html         | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-ddd-desktop-20261110-120732.html                 | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-ddd-mobile-20261110-120732.html                  | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-formacion-desktop-20261110-115350.html           | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-formacion-mobile-20261110-115350.html            | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-home-desktop-20261110-115207.html                | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-home-mobile-20261110-115207.html                 | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-ia-avanzada-desktop-20261110-115655.html         | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-ia-avanzada-mobile-20261110-115655.html          | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-ia-desktop-20261110-115525.html                  | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-ia-mobile-20261110-115525.html                   | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-intellij-guru-desktop-20261110-122248.html       | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-intellij-guru-mobile-20261110-122248.html        | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-legacy-desktop-20261110-120420.html              | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-legacy-mobile-20261110-120420.html               | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-ai-slop-desktop-20261110-121559.html        | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-ai-slop-mobile-20261110-121559.html         | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-approvals-desktop-20261110-121730.html      | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-approvals-mobile-20261110-121730.html       | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-coverage-desktop-20261110-121108.html       | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-coverage-mobile-20261110-121108.html        | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-fakes-desktop-20261110-121246.html          | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-fakes-mobile-20261110-121246.html           | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-flash-desktop-20261110-121420.html          | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-post-flash-mobile-20261110-121420.html           | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-practica-deliberada-desktop-20261110-115954.html | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-practica-deliberada-mobile-20261110-115954.html  | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-publicaciones-desktop-20261110-120905.html       | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-publicaciones-mobile-20261110-120905.html        | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-refactoring-desktop-20261110-120123.html         | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-refactoring-mobile-20261110-120123.html          | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-tdd-desktop-20261110-115825.html                 | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-tdd-mobile-20261110-115825.html                  | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-testing-desktop-20261110-120552.html             | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-testing-mobile-20261110-120552.html              | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-user-stories-desktop-20261110-120253.html        | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/lighthouse/2026-11-10/lighthouse-production-user-stories-mobile-20261110-120253.html         | 2901 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ docs/planificacion/2026-10-19/estimacion-tareas-2026-10-19.md                                     |  117 ++++++
+ advanced-ai-assisted-development-course.html => introduction-ai-assisted-development-course.html  |   56 ++-
+ netlify.toml                                                                                      |   14 +-
+ sass/main.scss                                                                                    |   78 +---
+ sass/online-open-space.scss                                                                       |    7 +-
+ scripts/run-lighthouse.sh                                                                         |   15 +-
+ training.html                                                                                     |   16 +-
+ 90 files changed, 110815 insertions(+), 182 deletions(-)
+ create mode 100644 .agents/plans/plan-CWS-CSS-001-20261111.md
+ create mode 100644 _sass/_base.scss
+ create mode 100644 _sass/_functions.scss
+ create mode 100644 _sass/_shared.scss
+ create mode 100644 _sass/_variables.scss
+ create mode 100644 docs/README.md
+ rename docs/{ => desarrollo}/agent-transcripts.md (100%)
+ rename docs/{ => lighthouse/2026-08-31}/lighthouse-codesai-2026-08-31.md (98%)
+ rename docs/{ => lighthouse/2026-08-31}/lighthouse-local-desktop-20260831-133933.html (100%)
+ rename docs/{ => lighthouse/2026-08-31}/lighthouse-local-mobile-20260831-133933.html (100%)
+ rename docs/{ => lighthouse/2026-09-01}/lighthouse-local-desktop-20260901-053106.html (100%)
+ rename docs/{ => lighthouse/2026-09-01}/lighthouse-local-desktop-20260901-150536.html (100%)
+ rename docs/{ => lighthouse/2026-09-01}/lighthouse-local-mobile-20260901-053106.html (100%)
+ rename docs/{ => lighthouse/2026-09-01}/lighthouse-local-mobile-20260901-053729.html (100%)
+ rename docs/{ => lighthouse/2026-09-01}/lighthouse-local-mobile-20260901-150536.html (100%)
+ rename docs/{ => lighthouse/2026-10-13}/lighthouse-local-desktop-20261013-113823.html (100%)
+ rename docs/{ => lighthouse/2026-10-13}/lighthouse-local-mobile-20261013-113823.html (100%)
+ rename docs/{ => lighthouse/2026-10-13}/lighthouse-production-desktop-20261013-114844.html (100%)
+ rename docs/{ => lighthouse/2026-10-13}/lighthouse-production-mobile-20261013-114844.html (100%)
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-codesai-2026-11-10.md
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-cd-databases-desktop-20261110-122120.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-cd-databases-mobile-20261110-122120.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-ddd-desktop-20261110-120732.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-ddd-mobile-20261110-120732.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-formacion-desktop-20261110-115350.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-formacion-mobile-20261110-115350.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-home-desktop-20261110-115207.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-home-mobile-20261110-115207.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-ia-avanzada-desktop-20261110-115655.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-ia-avanzada-mobile-20261110-115655.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-ia-desktop-20261110-115525.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-ia-mobile-20261110-115525.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-intellij-guru-desktop-20261110-122248.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-intellij-guru-mobile-20261110-122248.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-legacy-desktop-20261110-120420.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-legacy-mobile-20261110-120420.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-ai-slop-desktop-20261110-121559.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-ai-slop-mobile-20261110-121559.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-approvals-desktop-20261110-121730.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-approvals-mobile-20261110-121730.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-coverage-desktop-20261110-121108.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-coverage-mobile-20261110-121108.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-fakes-desktop-20261110-121246.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-fakes-mobile-20261110-121246.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-flash-desktop-20261110-121420.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-post-flash-mobile-20261110-121420.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-practica-deliberada-desktop-20261110-115954.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-practica-deliberada-mobile-20261110-115954.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-publicaciones-desktop-20261110-120905.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-publicaciones-mobile-20261110-120905.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-refactoring-desktop-20261110-120123.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-refactoring-mobile-20261110-120123.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-tdd-desktop-20261110-115825.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-tdd-mobile-20261110-115825.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-testing-desktop-20261110-120552.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-testing-mobile-20261110-120552.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-user-stories-desktop-20261110-120253.html
+ create mode 100644 docs/lighthouse/2026-11-10/lighthouse-production-user-stories-mobile-20261110-120253.html
+ create mode 100644 docs/planificacion/2026-10-19/estimacion-tareas-2026-10-19.md
+ rename advanced-ai-assisted-development-course.html => introduction-ai-assisted-development-course.html (53%)

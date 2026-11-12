@@ -53,6 +53,8 @@ cp -a "$source_dir/_i18n/es/_labs/." "$source_dir/_i18n/en/_labs/"
 cd "$source_dir"
 bundle exec jekyll build --trace
 bundle exec ruby scripts/test-agent-transcripts.rb
+bundle exec ruby scripts/test-markdown-embed.rb
+bundle exec ruby scripts/test-console-output.rb
 
 es_source_count="$(find _i18n/es/_posts -type f | wc -l)"
 en_source_count="$(find _i18n/en/_posts -type f | wc -l)"
