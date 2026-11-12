@@ -1,3 +1,5 @@
+@use "shared" as *;
+
 .biscuit-policy, .privacy-policy, .legal-advertisement {
   display: flex;
   flex-direction: column;

@@ -223,8 +223,8 @@ It performs three sequential audits per profile, selects each median performance
 run, and writes these two reports:
 
 ```text
-docs/lighthouse-local-mobile-YYYYMMDD-HHMMSS.html
-docs/lighthouse-local-desktop-YYYYMMDD-HHMMSS.html
+docs/lighthouse/YYYY-MM-DD/lighthouse-local-mobile-YYYYMMDD-HHMMSS.html
+docs/lighthouse/YYYY-MM-DD/lighthouse-local-desktop-YYYYMMDD-HHMMSS.html
 ```
 
 Intermediate reports are created in a temporary directory and removed

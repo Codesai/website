@@ -51,3 +51,15 @@
   to = "/posts/2022/:month/:slug"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/cursos/advanced-ai-assisted-development/"
+  to = "/cursos/ai-assisted-development/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/trainings/advanced-ai-assisted-development/"
+  to = "/en/trainings/ai-assisted-development/"
+  status = 301
+  force = true

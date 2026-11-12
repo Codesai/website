@@ -1,6 +1,8 @@
 <div class="course">
     <div class="description">
-        <h2>{{ include.name }}</h2>
+        {% assign course_name = include.name | strip %}
+        {% assign first_character = course_name | slice: 0 %}
+        <h2>{% if first_character == '✨' %}<span aria-hidden="true">✨</span> {% assign course_name = course_name | remove_first: '✨' | strip %}{% endif %}<a href="{{ include.link }}">{{ course_name }}</a></h2>
         <p>{{ include.description }}</p>
         <div class="info">
             <h3>

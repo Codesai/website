@@ -174,15 +174,15 @@ pages:
         name: Continuous Delivery with databases
         description: The objective of this training is for students to learn how to continuously and safely evolve a database. In addition, we will learn about different testing techniques, particularly essential in database environments that involve a lot of accumulated logic.
         link: /en/trainings/cd-databases
-      ai_assisted_development:
-        name: ✨ Introduction to AI-Assisted Software Development
+      introduction_ai_assisted_development:
+        name: ✨ Introduction to AI-Assisted Development
         description: Learn to bring AI-based assistants (LLMs and coding agents) into your day-to-day development work effectively and with good judgement. Covers model fundamentals, prompting, context management, evaluating results, and extending agents with MCP.
-        link: /en/trainings/ai-assisted-development
+        link: /en/trainings/introduction-ai-assisted-development/
         modality: "Remote (ask about in-person)."
-      advanced_ai_assisted_development:
-        name: ✨ Advanced AI-Assisted Development
+      ai_assisted_development:
+        name: ✨ AI-Assisted Development
         description: Learn to integrate LLMs and coding agents into your development work, understanding their fundamentals, costs and non-deterministic nature. Design reusable prompts and manage context through documents, skills, sub-agents and memory. Evaluate results with human oversight, static analysis, mutation testing and architectural fitness. Extend agents with MCP and skills, guide them with harnesses, guardrails and evals, and build agentic workflows with hooks, RPI and loop engineering to apply what you learn in your daily work.
-        link: /en/trainings/advanced-ai-assisted-development/
+        link: /en/trainings/ai-assisted-development/
         modality: "Remote (ask about in-person)."
     contact:
       title: Can't find the training you need? Tell us what you are looking for!
@@ -836,15 +836,15 @@ pages:
         title: Private training and open editions
         text: '<p>The training can be delivered as a private training for the hiring company, or as an open edition for individual participants. We try to run an open edition every quarter, but we are not always able to. It often happens that small companies send people to our open editions. If you want us to notify you of upcoming open editions, please fill out the contact form.</p>
                <p class="unicode">Please note that private training sessions take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
-    ai_assisted_development:
-      title: Introduction to AI-Assisted Software Development
-      name: Introduction to AI-Assisted Software Development
+    introduction_ai_assisted_development:
+      title: Introduction to AI-Assisted Development
+      name: Introduction to AI-Assisted Development
       text: '<p>The goal of this training is for development teams to learn how to bring AI-based assistants (LLMs and coding agents) into their day-to-day work effectively and with good judgement.</p>
              <p>We will cover model fundamentals, prompting techniques, context management strategies, how to evaluate the results the AI produces, and how to extend the capabilities of coding agents through MCP.</p>
              <p>It is a 12-hour, primarily hands-on training, aimed at helping you apply what you learn in your daily work without losing quality or control over the code.</p>'
       call_to_action:
-        link: /en/trainings/ai-assisted-development/#call-to-action
-        title: OK! I am interested in taking the Introduction to AI-Assisted Software Development course
+        link: /en/trainings/introduction-ai-assisted-development/#call-to-action
+        title: OK! I am interested in taking the Introduction to AI-Assisted Development course
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
       content:
@@ -891,16 +891,16 @@ pages:
         text: '<p>Remote (ask about in-person).</p>
                <p>It can be delivered as a private training for the hiring company, or as an open edition for individual participants. We try to run open editions periodically, but we are not always able to. If you want us to notify you of upcoming open editions, please fill out the contact form.</p>
                <p class="unicode">Please note that private training sessions take place once we have been booked by the client. We will need to know the date over a month in advance in order to be able to schedule them.</p>'
-    advanced_ai_assisted_development:
-      title: Advanced AI-Assisted Development
-      name: Advanced AI-Assisted Development
+    ai_assisted_development:
+      title: AI-Assisted Development
+      name: AI-Assisted Development
       text: '<p>Learn to integrate LLMs and coding agents into your development work, from fundamentals and prompting to context management, evaluating results and agentic workflows.</p>
              <p>We will cover extending agents through MCP and skills, and guiding them with harnesses, guardrails, gateways and evals.</p>
              <p>The course lasts 20 hours. We recommend spreading it over 5 sessions.</p>'
       modality: "Remote (ask about in-person)."
       call_to_action:
-        link: /en/trainings/advanced-ai-assisted-development/#call-to-action
-        title: OK! I am interested in taking the Advanced AI-Assisted Development course
+        link: /en/trainings/ai-assisted-development/#call-to-action
+        title: OK! I am interested in taking the AI-Assisted Development course
         text: <p>If you wish to apply or if you still have any questions about this training, please contact us at contact@codesai.com or fill out the contact form.</p><p>We will try to get back to you as soon as possible!</p>
         placeholder: I would be interested in receiving updates about the trainings and upcoming open editions
       content:
@@ -1355,6 +1355,7 @@ urls:
   user_stories: /en/trainings/user-stories/
   changing_legacy: /en/trainings/changing-legacy/
   cd_databases: /en/trainings/cd-databases/
+  introduction_ai_assisted_development: /en/trainings/introduction-ai-assisted-development/
   ai_assisted_development: /en/trainings/ai-assisted-development/
   intellij_guru: /en/trainings/intellij-guru/
   services: /en/services/

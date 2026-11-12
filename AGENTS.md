@@ -111,8 +111,8 @@ scripts/run-lighthouse.sh --desktop   # desktop only
 
 The script uses Lighthouse 13.4.1 and runs profiles sequentially so they do not
 compete for CPU. It selects each median performance run and saves it as
-`docs/lighthouse-local-{mobile|desktop}-YYYYMMDD-HHMMSS.html`. Only the
-timestamped median HTML for each profile should be retained in `docs/`.
+`docs/lighthouse/YYYY-MM-DD/lighthouse-local-{mobile|desktop}-YYYYMMDD-HHMMSS.html`. Only the
+timestamped median HTML for each profile should be retained in `docs/lighthouse/YYYY-MM-DD/`.
 
 ## Git commit
 
