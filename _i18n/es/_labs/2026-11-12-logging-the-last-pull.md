@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Agent Logs the Commits from the Last Pull"
+title: "Making Sense of the Last Git Pull with a logbook"
 date: 2026-11-12 13:06:00.000000000 +01:00
 author: Manuel Rivero
 linkedin: https://www.linkedin.com/in/manuel-rivero-54411271/
