@@ -47,3 +47,6 @@ exclude_from_localizations: ["javascript", "css", "sass", "img", "fonts", "js", 
 
 plugins:
   - jekyll-multiple-languages-plugin
+
+sass:
+  style: compressed
