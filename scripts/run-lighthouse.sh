@@ -139,7 +139,7 @@ run_profile() {
   selected_run="$(sort -n -k1,1 -k2,2 "$scores_file" | sed -n "${median_position}p" | cut -f2)"
   cp "$temporary_dir/${current_profile}-run-$selected_run.report.html" "$output"
 
-  printf '\nRun\tPerf\tA11y\tBest practices\tSEO\tLCP ms\tTBT ms\tCLS\n'
+  printf '\nRun\tPerf\tA11y\tBest practices\tSEO\tFCP ms\tLCP ms\tTBT ms\tCLS\n'
   for ((run = 1; run <= runs; run++)); do
     node -e '
       const report = require(process.argv[1]);
@@ -151,6 +151,7 @@ run_profile() {
         Math.round(categories.accessibility.score * 100),
         Math.round(categories["best-practices"].score * 100),
         Math.round(categories.seo.score * 100),
+        Math.round(audits["first-contentful-paint"].numericValue),
         Math.round(audits["largest-contentful-paint"].numericValue),
         Math.round(audits["total-blocking-time"].numericValue),
         audits["cumulative-layout-shift"].numericValue.toFixed(3),
