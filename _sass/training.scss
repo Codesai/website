@@ -44,6 +44,9 @@
 
     .image {
       flex: 1;
+      // Reserve the image's original intrinsic footprint before it downloads.
+      min-width: 396px;
+      min-height: 491px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -52,8 +55,18 @@
         flex: none;
       }
 
+      picture {
+        // Keep the image itself as the flex item.
+        display: contents;
+      }
+
       img {
+        width: auto;
         height: 80%;
+
+        @media screen and (max-width: $max-width-breakpoint) {
+          width: 396px;
+        }
       }
     }
 

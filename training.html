@@ -15,8 +15,10 @@ permalink_en: /trainings/
             {% translate pages.training.text %}
         </div>
         <div class="image">
-            <!-- TODO: Replace with image from prototype -->
-            <img src="/assets/home/mid_picture.png" alt="">
+            <picture>
+                <source type="image/webp" srcset="/assets/home/mid_picture.webp">
+                <img src="/assets/home/mid_picture.png" width="396" height="491" fetchpriority="high" alt="">
+            </picture>
         </div>
     </section>
     <section class="courses">
