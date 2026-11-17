@@ -1,7 +1,8 @@
 ---
 ---
 
-// Load the reset before components and pages to preserve the cascade.
+// Load the reset and font faces before components and pages to preserve the cascade.
+@use "font_faces";
 @use "base";
 @use "components";
 
