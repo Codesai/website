@@ -1,9 +1,8 @@
 # Auditorías Lighthouse
 
 El [backlog](../../.agents/todos/TODO.md) mantiene el estado de las tareas. La
-[verificación de producción del 18-11-2026](2026-11-18/verificacion-produccion-fuentes-y-catalogo.md)
-es la referencia desplegada más reciente para los dos cursos de IA, catálogo y A Flash from the Past:
-fuentes verificadas, CLS cero en esas rutas y objetivos móviles todavía pendientes.
+[verificación de dimensiones y carga inicial del 18-11-2026](2026-11-18/dimensiones-y-carga-inicial.md)
+es la referencia desplegada más reciente para home, catálogo, once cursos y cinco posts (`CWS-IMG-002` y `CWS-LH-004` cerradas en producción).
 
 ## Hitos conservados
 
@@ -13,8 +12,8 @@ fuentes verificadas, CLS cero en esas rutas y objetivos móviles todavía pendie
 | 13-10-2026 | Cuatro HTML, enlazados en la [estimación histórica](../planificacion/2026-10-19/estimacion-tareas-2026-10-19.md) | Evidencia de la diferencia entre local y producción. |
 | 10-11-2026 | [Auditoría multipágina](2026-11-10/lighthouse-codesai-2026-11-10.md) y 38 HTML | Baseline de producción para 19 páginas y dos perfiles; incluye publicaciones y rutas todavía pendientes. |
 | 17-11-2026 | [Mejora de iconos](2026-11-17/mejora-carga-cursos-ia.md) y [producción y fuentes](2026-11-17/verificacion-produccion-y-fuentes.md), con ocho HTML de producción | Decisiones, comparaciones locales y estado de producción anterior al despliegue de fuentes y catálogo. |
-| 18-11-2026 | [Verificación de fuentes y catálogo](2026-11-18/verificacion-produccion-fuentes-y-catalogo.md) y ocho HTML | Resultado del despliegue y alcance pendiente. |
-| 18-11-2026 (local) | [Dimensiones y carga inicial](2026-11-18/dimensiones-y-carga-inicial.md), matriz de 18 rutas y 12 HTML representativos | Implementación de IMG002/LH004 validada localmente; pendiente de despliegue y medición en producción. |
+| 18-11-2026 | [Verificación de fuentes y catálogo](2026-11-18/verificacion-produccion-fuentes-y-catalogo.md) y ocho HTML | Resultado intermedio tras desplegar fuentes locales y WebP del catálogo (`CWS-FONT-001`). |
+| 18-11-2026 | [Dimensiones y carga inicial](2026-11-18/dimensiones-y-carga-inicial.md), matriz local/producción de 18 rutas y 12 HTML de producción representativos | Cierre de `CWS-IMG-002` y `CWS-LH-004` verificado en `https://codesai.com` (se retiran los 12 HTML locales de diagnóstico). |
 | 18-11-2026 (local) | [Carga diferida en publicaciones](../planificacion/2026-11-18/propuesta-carga-publicaciones-2026-11-18.md) y dos HTML (`lighthouse-local-publicaciones-*`) | Implementación de LH005 (Opción A) validada localmente; pendiente de despliegue y medición en producción. |
 
 ## Conservación
