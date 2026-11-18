@@ -211,7 +211,13 @@ so the tests do not send data to Google Forms. External URLs are not requested.
 
 The same `make test` command is designed to be reused by a future CI workflow.
 
-## Local Lighthouse audit
+## Lighthouse audit
+
+For changes that affect initial page load, run Lighthouse in addition to
+`make test`. Compare the affected route before and after the change under the
+same local conditions, prioritizing mobile. Repeat the audit on the production
+route after Netlify deploys the change. Run audits separately from builds and
+tests.
 
 With the local site running at `http://localhost:4000`, run:
 
@@ -220,22 +226,30 @@ scripts/run-lighthouse.sh
 ```
 
 The script pins Lighthouse 13.4.1 and runs both mobile and desktop by default.
-It performs three sequential audits per profile, selects each median performance
-run, and writes these two reports:
+It performs three sequential audits per profile and saves the HTML for the run
+with the median performance score in each profile:
 
 ```text
 docs/lighthouse/YYYY-MM-DD/lighthouse-local-mobile-YYYYMMDD-HHMMSS.html
 docs/lighthouse/YYYY-MM-DD/lighthouse-local-desktop-YYYYMMDD-HHMMSS.html
 ```
 
-Intermediate reports are created in a temporary directory and removed
-automatically. The process is fully scripted and does not use an LLM.
+Intermediate reports are removed automatically.
+The process is fully scripted and does not use an LLM.
+Ask user to run the command in a console to avoid cpu-problems.
+After that record the performance score,
+FCP, LCP, TBT, and CLS from the selected run and their ranges across all runs.
+Follow the [Lighthouse retention policy](docs/lighthouse/README.md#conservación)
+for baseline reports, production verification, and evidence of open regressions.
 
-Run only one profile or change the number of runs when needed:
+Use these options to select a profile, change the number of runs, or audit a
+specific route. Set a production output prefix to identify the environment in
+the report filename.
 
 ```bash
 scripts/run-lighthouse.sh --desktop
 scripts/run-lighthouse.sh --mobile
 scripts/run-lighthouse.sh --runs 5
 scripts/run-lighthouse.sh --url http://localhost:4000/en/
+scripts/run-lighthouse.sh --mobile --url https://www.codesai.com/en/ --output "docs/lighthouse/$(date +%F)/lighthouse-production-en"
 ```
