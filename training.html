@@ -54,35 +54,6 @@ permalink_en: /trainings/
             modality_text=modality_text
         %}
 
-        {% capture name %}{{ site.translations[site.lang].pages.training.courses.tdd.name }}{% endcapture %}
-        {% capture description %}{{ site.translations[site.lang].pages.training.courses.tdd.description }}{% endcapture %}
-        {% capture link %}{{ site.translations[site.lang].pages.training.courses.tdd.link }}{% endcapture %}
-        {%
-            include components/course.html
-            name=name
-            description=description
-            link=link
-            logo='/assets/courses/logos/tdd.svg'
-            starting_price='590'
-            days='2'
-            hours='20'
-        %}
-
-        {% capture name %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.name }}{% endcapture %}
-        {% capture description %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.description }}{% endcapture %}
-        {% capture link %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.link }}{% endcapture %}
-        {% capture price_text %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.price_text }}{% endcapture %}
-        {% capture modality_text %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.modality }}{% endcapture %}
-        {%
-            include components/course.html
-            name=name
-            description=description
-            link=link
-            logo='/assets/courses/logos/deliberate-practice.svg'
-            starting_price_text=price_text
-            modality_text=modality_text
-        %}
-
         {% capture name %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.name }}{% endcapture %}
         {% capture description %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.description }}{% endcapture %}
         {% capture link %}{{ site.translations[site.lang].pages.training.courses.code_smells_refactoring.link }}{% endcapture %}
@@ -92,6 +63,34 @@ permalink_en: /trainings/
             description=description
             link=link
             logo='/assets/courses/logos/refactoring.svg'
+            starting_price='590'
+            days='2.5'
+            hours='20'
+        %}
+
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.testing.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.testing.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.testing.link }}{% endcapture %}
+        {%
+            include components/course.html
+            name=name
+            description=description
+            link=link
+            logo='/assets/courses/logos/testing-techniques.svg'
+            starting_price='590'
+            days='5'
+            hours='20'
+        %}
+
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.changing_legacy.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.changing_legacy.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.changing_legacy.link }}{% endcapture %}
+        {%
+            include components/course.html
+            name=name
+            description=description
+            link=link
+            logo='/assets/courses/logos/legacy.svg'
             starting_price='590'
             days='2.5'
             hours='20'
@@ -111,31 +110,32 @@ permalink_en: /trainings/
             hours='12'
         %}
 
-        {% capture name %}{{ site.translations[site.lang].pages.training.courses.changing_legacy.name }}{% endcapture %}
-        {% capture description %}{{ site.translations[site.lang].pages.training.courses.changing_legacy.description }}{% endcapture %}
-        {% capture link %}{{ site.translations[site.lang].pages.training.courses.changing_legacy.link }}{% endcapture %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.link }}{% endcapture %}
+        {% capture price_text %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.price_text }}{% endcapture %}
+        {% capture modality_text %}{{ site.translations[site.lang].pages.training.courses.deliberate_practice.modality }}{% endcapture %}
         {%
             include components/course.html
             name=name
             description=description
             link=link
-            logo='/assets/courses/logos/legacy.svg'
-            starting_price='590'
-            days='2.5'
-            hours='20'
+            logo='/assets/courses/logos/deliberate-practice.svg'
+            starting_price_text=price_text
+            modality_text=modality_text
         %}
 
-        {% capture name %}{{ site.translations[site.lang].pages.training.courses.testing.name }}{% endcapture %}
-        {% capture description %}{{ site.translations[site.lang].pages.training.courses.testing.description }}{% endcapture %}
-        {% capture link %}{{ site.translations[site.lang].pages.training.courses.testing.link }}{% endcapture %}
+        {% capture name %}{{ site.translations[site.lang].pages.training.courses.tdd.name }}{% endcapture %}
+        {% capture description %}{{ site.translations[site.lang].pages.training.courses.tdd.description }}{% endcapture %}
+        {% capture link %}{{ site.translations[site.lang].pages.training.courses.tdd.link }}{% endcapture %}
         {%
             include components/course.html
             name=name
             description=description
             link=link
-            logo='/assets/courses/logos/testing-techniques.svg'
+            logo='/assets/courses/logos/tdd.svg'
             starting_price='590'
-            days='5'
+            days='2'
             hours='20'
         %}
 
