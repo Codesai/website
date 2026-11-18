@@ -18,126 +18,81 @@ permalink: /publications/
 
     <span id="posts" aria-hidden="true"></span>
     <div class="posts" id="postsTab">
-        {% for post in site.posts %}
-            <div class="post">
-                <div class="image">
-                    {% if post.small_image %}
-                        <div class="small-image" style="background-image: url(../assets/{{ post.small_image}})"></div>
-                    {% else %}
-                        <div class="small-image" style="background-image: url(../img/logo.svg); width: 80%; margin: auto;"></div>
-                    {% endif %}
-                </div>
-                <div class="content">
-                    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-                    <p>{{ post.date | date: "%d/%m/%Y" }}</p>
-                    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-                </div>
-            </div>
-        {% endfor %}
+        {%- for post in site.posts -%}
+        <div class="post"><div class="image">
+            {%- if post.small_image -%}
+                {%- assign webp_candidate = post.small_image | replace: '.jpg', '-480.webp' | replace: '.jpeg', '-480.webp' | replace: '.png', '-480.webp' -%}
+                {%- assign webp_path = '/assets/' | append: webp_candidate -%}
+                {%- assign webp_file = site.static_files | where: 'path', webp_path | first -%}
+                {%- if webp_file -%}
+                <picture><source type="image/webp" srcset="{{ webp_path }}"><img class="small-image" src="/assets/{{ post.small_image }}" loading="lazy" decoding="async" alt=""></picture>
+                {%- else -%}
+                <img class="small-image" src="/assets/{{ post.small_image }}" loading="lazy" decoding="async" alt="">
+                {%- endif -%}
+            {%- else -%}
+                <img class="small-image small-image-fallback" src="/img/logo.svg" loading="lazy" decoding="async" alt="">
+            {%- endif -%}
+        </div><div class="content"><h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2><p>{{ post.date | date: "%d/%m/%Y" }}</p><p>{{ post.content | strip_html | strip_newlines | truncatewords: 50 }}</p></div></div>
+        {%- endfor -%}
     </div>
 
     <span id="videos" aria-hidden="true"></span>
     <div class="videos hidden" id="videosTab">
-
-        {% include published-video.html title="Atributos de calidad e historias de usuario" speakers="Fran Reyes" video-id="2wYZvFW1Hf0" %}
-        
-        {% include published-video.html title="Pairing with GPT: Exploring IA collaboration" speakers="Alfredo Casado y Miguel Viera" video-id="Yrz14htED8s" %}
-        
-        {% include published-video.html title="¿SOLID está deprecated?, ¿CUPID son nuestros nuevos principios?" speakers="Alfredo Casado" video-id="zptOiiRf9CE" %}
-        
-        {% include published-video.html title="Comprehending hard to understand software" speakers="Alfredo Casado y Miguel Viera" video-id="nkJg3BfEixI" %}
-    
-        {% include published-video.html title="El valor de las tareas de cuidado en nuestro entorno" speakers="Antonio de la Torre" video-id="Sk3JfHF6BWU" %}
-    
-        {% include published-video.html title="Charlando sobre Domain Driven Design" speakers="Miguel Viera" video-id="Efv2kkMA4RU" %}
-    
-        {% include published-video.html title="Mitos y leyendas de Domain Driven Design" speakers="Alfredo Casado y Miguel Viera" video-id="PXbql2aWMs4" %}
-    
-        {% include published-video.html title="Deno, en busca del valle encantado" speakers="Román Zukov y Miguel Viera" video-id="C0MVg3FMRAU" %}
-    
-        {% include published-video.html title="CQRS y Event Sourcing. ¿La tierra prometida?" speakers="Alfredo Casado" video-id="xp2EFJCqp_g" %}
-
-        {% include published-video.html title="Clean code & refactoring + live coding" speakers="Alfredo Casado y Miguel Viera" video-id="CIfBC56tPEI" %}
-
-        {% include published-video.html title="Introducción a TDD + live coding" speakers="Alfredo Casado y Miguel Viera" video-id="zmjmgdOB1pM" %}
-
-        {% include published-video.html title="Arquitectura Hexagonal + live coding" speakers="Alfredo Casado y Miguel Viera" video-id="u-0PfHpKwT4" %}
-
-        {% include published-video.html title="El legacy vino para quedarse" speakers="Antonio de la Torre" video-id="WRiQPOn7Fcc" %}
-
-        {% include published-video.html title="TDD no es escribir el test primero" speakers="Daniel Ojeda" video-id="nS1gqqf6Cb0" %}
-
-        {% include published-video.html title="Listening to the tests" speakers="Fran Reyes" video-id="e-d1P-kZIfs" %}
-
-        {% include published-video.html title="Una vida descubriendo Agile" speakers="Antonio de la Torre" video-id="y9FLkaN7Yxo" %}
-        
-        {% include published-video.html title="¿Eres ágil? ¡Pues no te vayas por las ramas!" speakers="Alfredo Casado y Rubén Díaz" video-id="L5S9b7AdZC8" %}
-
-        {% include published-video.html title="Effects, coeffects and subscriptions: a pit of success for SPAs" speakers="Manuel Rivero" video-id="ZucGhy8fGVA" %}
-
-        {% include published-video.html title="Valores y principios en el diseño del software" speakers="Fran Reyes" video-id="sXLCBcELu5Y" %}
-
-        {% include published-video.html title="Discusiones y decisiones: herramientas para la efectividad" speakers="Antonio de la Torre" video-id="fDvr-fs01m8" %}
-
-        {% include published-video.html title="Learned lessons in a real world project" speakers="Luis Rovirosa" video-id="HfAsrpF0Reo" %}
-
-        {% include published-video.html title="Slow life o cómo montárselo bien como desarrollador" speakers="Luis Rovirosa y Jordi Anguela" video-id="BtxhAD3gcPI" %}
-
-        {% include published-video.html title="Native and browser SPA versions using re-frame, ClojureScript and ReactNative" speakers="Manuel Rivero" video-id="p1fXJyomXNQ" %}
-
-        {% include published-video.html title="Replace String Constants with Type III" speakers="Carlos Blé" video-id="b9rv37eyeRw" %}
-
-        {% include published-video.html title="Replace String Constants with Type II" speakers="Carlos Blé" video-id="o8PVNrfl1p8" %}
-
-        {% include published-video.html title="Replace String Constants with Type I" speakers="Carlos Blé" video-id="RIyqsyxhQmA" %}
-
-        {% include published-video.html title="Sequence Comprehensions en Clojure" speakers="Manuel Rivero" video-id="rxegilFlZIc" %}
-
-        {% include published-video.html title="Aprender a distinguir el problema de las soluciones" speakers="Carlos Blé" video-id="IqUo9kCWQrw" %}
-
-        {% include published-video.html title="El camino del aprendizaje" speakers="Modesto San Juan y Ronny Ancorini" video-id="V0Z9RcgeRbU" %}
-
-        {% include published-video.html title="Funciones en Clojure" speakers="Manuel Rivero" video-id="HmAU-z5dPS8" %}
-
-        {% include published-video.html title="Comunidades de necesidad vs comunidades de soluciones" speakers="Antonio de la Torre" video-id="jzV7pMshyic" %}
-
-        {% include published-video.html title="OOP &amp; Connascence" speakers="Alfredo Casado" video-id="bIr5fPom7B4" %}
-
-        {% include published-video.html title="Stop complaining Start doing" speakers="Luis Rovirosa" video-id="SYMXS6hv8d8" %}
-
-        {% include published-video.html title="Técnicas de lectura rápida" speakers="Daniel Ojeda" video-id="o6sNTK671XU" %}
-
-        {% include published-video.html title="Destructuring en Clojure" speakers="Manuel Rivero" video-id="qMcjufX8czs" %}
-
-        {% include published-video.html title="Refactoring C# sequences: Safe Unwrap" speakers="Carlos Blé" video-id="DpGk34Lqo-A" %}
-
-        {% include published-video.html title="Refactoring JavaScript orientado a objetos" speakers="Carlos Blé" video-id="se8k3D7E-ik" %}
-
-        {% include published-video.html title="Refactoring JavaScript con estilo funcional" speakers="Carlos Blé" video-id="_cObNw1B8E8" %}
-
-        {% include published-video.html title="Kata de las Cartas en JavaScript" speakers="Carlos Blé" video-id="LJQnxDZQHoo" %}
-
-        {% include published-video.html title="Transformation Priority Premise with JavaScript" speakers="Carlos Blé" video-id="D2gFmSUeA3w" %}
-
-        {% include published-video.html title="Refactoring to functional style JavaScript" speakers="Carlos Blé" video-id="ZFDeJA2emg4" %}
-
-        {% include published-video.html title="Cards Kata in JavaScript" speakers="Carlos Blé" video-id="C8Ea80oOumg" %}
-
-        {% include published-video.html title="Implementando algoritmos con TDD" speakers="Carlos Blé" video-id="vL78Cm5BJBU" %}
-
-        {% include published-video.html title="Apertura Mejorando Software CAS 2015" speakers="Carlos Blé" video-id="_G-Qm_IDJhI" %}
-
-        {% include published-video.html title="Entrevistas AprendiendoTDD: Carlos Blé" speakers="Carlos Blé" video-id="SkGlzxkiKPs" %}
+        {%- include published-video.html title="Atributos de calidad e historias de usuario" speakers="Fran Reyes" video-id="2wYZvFW1Hf0" -%}
+        {%- include published-video.html title="Pairing with GPT: Exploring IA collaboration" speakers="Alfredo Casado y Miguel Viera" video-id="Yrz14htED8s" -%}
+        {%- include published-video.html title="¿SOLID está deprecated?, ¿CUPID son nuestros nuevos principios?" speakers="Alfredo Casado" video-id="zptOiiRf9CE" -%}
+        {%- include published-video.html title="Comprehending hard to understand software" speakers="Alfredo Casado y Miguel Viera" video-id="nkJg3BfEixI" -%}
+        {%- include published-video.html title="El valor de las tareas de cuidado en nuestro entorno" speakers="Antonio de la Torre" video-id="Sk3JfHF6BWU" -%}
+        {%- include published-video.html title="Charlando sobre Domain Driven Design" speakers="Miguel Viera" video-id="Efv2kkMA4RU" -%}
+        {%- include published-video.html title="Mitos y leyendas de Domain Driven Design" speakers="Alfredo Casado y Miguel Viera" video-id="PXbql2aWMs4" -%}
+        {%- include published-video.html title="Deno, en busca del valle encantado" speakers="Román Zukov y Miguel Viera" video-id="C0MVg3FMRAU" -%}
+        {%- include published-video.html title="CQRS y Event Sourcing. ¿La tierra prometida?" speakers="Alfredo Casado" video-id="xp2EFJCqp_g" -%}
+        {%- include published-video.html title="Clean code & refactoring + live coding" speakers="Alfredo Casado y Miguel Viera" video-id="CIfBC56tPEI" -%}
+        {%- include published-video.html title="Introducción a TDD + live coding" speakers="Alfredo Casado y Miguel Viera" video-id="zmjmgdOB1pM" -%}
+        {%- include published-video.html title="Arquitectura Hexagonal + live coding" speakers="Alfredo Casado y Miguel Viera" video-id="u-0PfHpKwT4" -%}
+        {%- include published-video.html title="El legacy vino para quedarse" speakers="Antonio de la Torre" video-id="WRiQPOn7Fcc" -%}
+        {%- include published-video.html title="TDD no es escribir el test primero" speakers="Daniel Ojeda" video-id="nS1gqqf6Cb0" -%}
+        {%- include published-video.html title="Listening to the tests" speakers="Fran Reyes" video-id="e-d1P-kZIfs" -%}
+        {%- include published-video.html title="Una vida descubriendo Agile" speakers="Antonio de la Torre" video-id="y9FLkaN7Yxo" -%}
+        {%- include published-video.html title="¿Eres ágil? ¡Pues no te vayas por las ramas!" speakers="Alfredo Casado y Rubén Díaz" video-id="L5S9b7AdZC8" -%}
+        {%- include published-video.html title="Effects, coeffects and subscriptions: a pit of success for SPAs" speakers="Manuel Rivero" video-id="ZucGhy8fGVA" -%}
+        {%- include published-video.html title="Valores y principios en el diseño del software" speakers="Fran Reyes" video-id="sXLCBcELu5Y" -%}
+        {%- include published-video.html title="Discusiones y decisiones: herramientas para la efectividad" speakers="Antonio de la Torre" video-id="fDvr-fs01m8" -%}
+        {%- include published-video.html title="Learned lessons in a real world project" speakers="Luis Rovirosa" video-id="HfAsrpF0Reo" -%}
+        {%- include published-video.html title="Slow life o cómo montárselo bien como desarrollador" speakers="Luis Rovirosa y Jordi Anguela" video-id="BtxhAD3gcPI" -%}
+        {%- include published-video.html title="Native and browser SPA versions using re-frame, ClojureScript and ReactNative" speakers="Manuel Rivero" video-id="p1fXJyomXNQ" -%}
+        {%- include published-video.html title="Replace String Constants with Type III" speakers="Carlos Blé" video-id="b9rv37eyeRw" -%}
+        {%- include published-video.html title="Replace String Constants with Type II" speakers="Carlos Blé" video-id="o8PVNrfl1p8" -%}
+        {%- include published-video.html title="Replace String Constants with Type I" speakers="Carlos Blé" video-id="RIyqsyxhQmA" -%}
+        {%- include published-video.html title="Sequence Comprehensions en Clojure" speakers="Manuel Rivero" video-id="rxegilFlZIc" -%}
+        {%- include published-video.html title="Aprender a distinguir el problema de las soluciones" speakers="Carlos Blé" video-id="IqUo9kCWQrw" -%}
+        {%- include published-video.html title="El camino del aprendizaje" speakers="Modesto San Juan y Ronny Ancorini" video-id="V0Z9RcgeRbU" -%}
+        {%- include published-video.html title="Funciones en Clojure" speakers="Manuel Rivero" video-id="HmAU-z5dPS8" -%}
+        {%- include published-video.html title="Comunidades de necesidad vs comunidades de soluciones" speakers="Antonio de la Torre" video-id="jzV7pMshyic" -%}
+        {%- include published-video.html title="OOP &amp; Connascence" speakers="Alfredo Casado" video-id="bIr5fPom7B4" -%}
+        {%- include published-video.html title="Stop complaining Start doing" speakers="Luis Rovirosa" video-id="SYMXS6hv8d8" -%}
+        {%- include published-video.html title="Técnicas de lectura rápida" speakers="Daniel Ojeda" video-id="o6sNTK671XU" -%}
+        {%- include published-video.html title="Destructuring en Clojure" speakers="Manuel Rivero" video-id="qMcjufX8czs" -%}
+        {%- include published-video.html title="Refactoring C# sequences: Safe Unwrap" speakers="Carlos Blé" video-id="DpGk34Lqo-A" -%}
+        {%- include published-video.html title="Refactoring JavaScript orientado a objetos" speakers="Carlos Blé" video-id="se8k3D7E-ik" -%}
+        {%- include published-video.html title="Refactoring JavaScript con estilo funcional" speakers="Carlos Blé" video-id="_cObNw1B8E8" -%}
+        {%- include published-video.html title="Kata de las Cartas en JavaScript" speakers="Carlos Blé" video-id="LJQnxDZQHoo" -%}
+        {%- include published-video.html title="Transformation Priority Premise with JavaScript" speakers="Carlos Blé" video-id="D2gFmSUeA3w" -%}
+        {%- include published-video.html title="Refactoring to functional style JavaScript" speakers="Carlos Blé" video-id="ZFDeJA2emg4" -%}
+        {%- include published-video.html title="Cards Kata in JavaScript" speakers="Carlos Blé" video-id="C8Ea80oOumg" -%}
+        {%- include published-video.html title="Implementando algoritmos con TDD" speakers="Carlos Blé" video-id="vL78Cm5BJBU" -%}
+        {%- include published-video.html title="Apertura Mejorando Software CAS 2015" speakers="Carlos Blé" video-id="_G-Qm_IDJhI" -%}
+        {%- include published-video.html title="Entrevistas AprendiendoTDD: Carlos Blé" speakers="Carlos Blé" video-id="SkGlzxkiKPs" -%}
     </div>
 
     <span id="raw-ai-labs" aria-hidden="true"></span>
     <div class="labs hidden" id="labsTab">
-        {% assign labs = site.labs | sort: 'date' | reverse %}
-        {% for lab in labs %}
-            <div class="lab">
-                <h2><span class="lab-title-emoji" aria-hidden="true">🤖</span><a href="{{ lab.url | prepend: site.baseurl }}">{{ lab.title }}</a></h2>
-            </div>
-        {% endfor %}
+        {%- assign labs = site.labs | sort: 'date' | reverse -%}
+        {%- for lab in labs -%}
+        <div class="lab">
+            <h2><span class="lab-title-emoji" aria-hidden="true">🤖</span><a href="{{ lab.url | prepend: site.baseurl }}">{{ lab.title }}</a></h2>
+        </div>
+        {%- endfor -%}
     </div>
 </main>
 

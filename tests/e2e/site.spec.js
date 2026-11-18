@@ -126,10 +126,25 @@ for (const language of languages) {
     });
 
     test('publication tab is restored from its URL fragment', async ({ page }) => {
-      await page.goto(`${language.publications}#posts`);
+      const youtubeRequests = [];
+      const postImageRequests = [];
+      await page.route('https://i.ytimg.com/**', async route => {
+        youtubeRequests.push(route.request().url());
+        await route.fulfill({ status: 204, body: '' });
+      });
+      page.on('request', req => {
+        if (req.resourceType() === 'image' && (req.url().includes('/assets/') || req.url().includes('/img/logo.svg'))) {
+          postImageRequests.push(req.url());
+        }
+      });
+
+      await page.goto(`${language.publications}#posts`, { waitUntil: 'networkidle' });
 
       await expect(page.locator('#postsTab')).toBeVisible();
       await expect(page.locator('#labsTab')).toBeHidden();
+      expect(await page.locator('#postsTab .post h2 a').count()).toBeGreaterThan(200);
+      expect(youtubeRequests.length).toBe(0);
+      expect(postImageRequests.length).toBeLessThan(15);
 
       await page.goto(`${language.publications}#raw-ai-labs`);
 
@@ -140,6 +155,7 @@ for (const language of languages) {
         url.pathname === language.publications && url.hash === '#videos'
       );
       await expect(page.locator('#videosTab')).toBeVisible();
+      await expect.poll(() => youtubeRequests.length).toBeGreaterThan(0);
 
       await page.reload();
       await expect(page.locator('#videosTab')).toBeVisible();
