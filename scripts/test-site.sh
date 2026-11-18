@@ -55,6 +55,7 @@ bundle exec jekyll build --trace
 bundle exec ruby scripts/test-agent-transcripts.rb
 bundle exec ruby scripts/test-markdown-embed.rb
 bundle exec ruby scripts/test-console-output.rb
+bundle exec ruby scripts/test-image-dimensions.rb
 
 es_source_count="$(find _i18n/es/_posts -type f | wc -l)"
 en_source_count="$(find _i18n/en/_posts -type f | wc -l)"

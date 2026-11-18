@@ -22,3 +22,12 @@ ul {
 .site-icon {
   vertical-align: -0.125em;
 }
+
+// Keep intrinsic image proportions when a responsive width constrains them.
+img {
+  height: auto;
+}
+
+.intrinsic-svg {
+  width: var(--intrinsic-image-width, 300px);
+}

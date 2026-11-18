@@ -32,7 +32,12 @@ We transform each screen in several steps, which we’ve previously explored in 
 3. Change the React SPA so that it uses the Reffects framework.
 
 <figure>
-<img src="/assets/screen_transformation_workflow.png" alt="Screen transformation workflow." />
+<picture>
+  <source type="image/webp"
+    srcset="/assets/screen_transformation_workflow-400.webp 400w, /assets/screen_transformation_workflow-700.webp 700w, /assets/screen_transformation_workflow-1000.webp 1000w"
+    sizes="(max-width: 720px) calc(100vw - 56px), 688px">
+  <img src="/assets/screen_transformation_workflow.png" loading="lazy" decoding="async" alt="Screen transformation workflow." />
+</picture>
 <figcaption><strong>Screen transformation workflow.</strong></figcaption>
 </figure>
 
