@@ -159,7 +159,7 @@ pages:
         description: En este curso aprenderemos cómo cambiar y mejorar código legacy de una manera segura y efectiva. Aprenderemos diferentes técnicas para introducir tests en código legacy, refactorizarlo y/o reescribirlo de forma gradual y sostenible. También aprenderemos sobre gestión y priorización de deuda técnica. 
         link: /cursos/changing-legacy/
       ddd:
-        name: DDD driven by test
+        name: DDD driven by tests
         description: El objetivo de este curso es explicar las diferentes herramientas que nos ofrece Domain Driven Design tanto desde el punto de vista de la organización a través de los patrones estratégicos y el lenguaje ubicuo como desde el punto de vista de la arquitectura a través de los patrones tácticos.
         link: /cursos/ddd/
       testing:
@@ -359,7 +359,7 @@ pages:
              <p>Explicaremos cómo a través de herramientas como Context Mapping y Event Storming podemos crear un lenguaje común en la organización que nos ayude a construir soluciones software durables y mantenibles.</p>
              <p>Explicaremos cómo trasladar estos conceptos al código y la arquitectura a través de ejemplos concretos haciendo uso de los patrones tácticos de DDD como agregados, repositorios o value objects. Veremos también mecanismos de comunicación entre diferentes Bounded contexts y realizaremos una introducción a event sourcing y CQRS.</p>'
       call_to_action:
-        title: ¡OK! Me interesa realizar el curso DDD driven by test
+        title: ¡OK! Me interesa realizar el curso DDD driven by tests
         text: <p>Si deseas iniciar el proceso de  inscripción o te ha quedado alguna duda sobre este curso, puedes escribirnos a contact@codesai.com o rellenar el formulario de contacto.</p><p>¡Intentaremos responderte con la mayor brevedad posible!</p>
         placeholder: Me interesaría recibir actualizaciones acerca de los cursos y las próximas ediciones en abierto
         link: /cursos/ddd/#call-to-action

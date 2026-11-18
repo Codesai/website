@@ -159,7 +159,7 @@ pages:
         description: The goal of this training is to learn how to evolve and improve legacy code in a safe and effective way. We’ll learn how to break dependencies in order to test legacy code, and how to gradually and sustainably improve its design. We'll also learn about incremental rewrite techniques, and technical debt management and prioritization.
         link: /en/trainings/changing-legacy/
       ddd:
-        name: DDD driven by test
+        name: DDD driven by tests
         description: The objective of this training is to explain the different tools offered by Domain Driven Design, both from an organizational point of view using strategic patterns and ubiquitous language, as well as from an architectural point of view using tactical patterns.
         link: /en/trainings/ddd
       testing:
