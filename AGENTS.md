@@ -72,6 +72,10 @@ Top-level `.html` files are site pages (e.g., `home.html`, `training.html`, `tdd
 - Maximum width: **1000px**.
 - Compress with TinyPNG before committing (PNG/JPG).
 - `_compress_images_cache.yml` tracks already-compressed images.
+- During Polishing, check that rendered images have `width` and `height`.
+  Jekyll adds them for local images.
+- Use `loading="lazy"` only for images outside the initial viewport.
+- Consider WebP for large lead images, as used in the course catalogue.
 
 ### Embeds in Posts
 

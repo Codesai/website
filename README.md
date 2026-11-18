@@ -116,7 +116,7 @@ In Netlify → **Deploys**, open a previous successful deploy and use
 | Backlog       | Post to be written |
 | Writing       | Post being written |
 | Revising      | Looking for feedback, typos |
-| **Polishing** | Ensuring the images are compressed, styles, responsiveness |
+| **Polishing** | Checking [images](#images), styles, and responsiveness |
 
 
 # Writing a Post
@@ -172,10 +172,14 @@ categories:
 
 You should place any images you are going to use in the post inside the `assets` folder.
 
-**Please don't directly add pictures from your phone** since they are usually ***HUGE***. The post width is limited to `900px` for readability concerns, so we are limiting the image width to `1000px`. For faster loading times and a better overall experience for the user, we recommend following these two steps when adding images to a post:
+Resize and optimize images before adding them to a post:
 
 1. Reduce the width of your image to a maximum of `1000px` using any image editor you prefer.
-2. **Compress** the image, we are using [**TinyPNG**](https://tinypng.com/) for PNG and JPG compression.
+2. **Optimize** the image. Use [TinyPNG](https://tinypng.com/) for PNG or JPEG,
+   and consider WebP for large lead images.
+3. Check that the rendered images have `width` and `height` so the browser
+   reserves space. Jekyll adds these for local images.
+4. Use `loading="lazy"` only for images outside the initial viewport.
 
 
 ## Code snippets
