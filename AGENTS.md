@@ -72,6 +72,10 @@ Top-level `.html` files are site pages (e.g., `home.html`, `training.html`, `tdd
 - Maximum width: **1000px**.
 - Compress with TinyPNG before committing (PNG/JPG).
 - `_compress_images_cache.yml` tracks already-compressed images.
+- During Polishing, check that rendered images have `width` and `height`.
+  Jekyll adds them for local images.
+- Use `loading="lazy"` only for images outside the initial viewport.
+- Consider WebP for large lead images, as used in the course catalogue.
 
 ### Embeds in Posts
 
@@ -109,10 +113,14 @@ scripts/run-lighthouse.sh --mobile    # mobile only
 scripts/run-lighthouse.sh --desktop   # desktop only
 ```
 
-The script uses Lighthouse 13.4.1 and runs profiles sequentially so they do not
-compete for CPU. It selects each median performance run and saves it as
-`docs/lighthouse/YYYY-MM-DD/lighthouse-local-{mobile|desktop}-YYYYMMDD-HHMMSS.html`. Only the
-timestamped median HTML for each profile should be retained in `docs/lighthouse/YYYY-MM-DD/`.
+The script uses Lighthouse 13.4.1 and runs profiles sequentially.
+The process is fully scripted and does not use an LLM.
+Ask user to run the command in a console to avoid cpu-problems.
+After that saves the
+HTML for the run with the median performance score in each profile. Record the
+score, FCP, LCP, TBT, and CLS from that run and their ranges across all runs.
+Follow the [Lighthouse retention policy](docs/lighthouse/README.md#conservación)
+for baseline reports, production verification, and evidence of open regressions.
 
 ## Git commit
 
