@@ -113,7 +113,7 @@ In applications built this way, it's possible for the vast majority of the code 
 
 
 <figure style="margin:auto; width: 60%">
-<img src="/assets/pure-vs-effectful-code.png" alt="Pure vs effectful code distribution." />
+<img src="/assets/pure-vs-effectful-code.png" loading="lazy" decoding="async" alt="Pure vs effectful code distribution." />
 <figcaption><strong>Pure vs effectful code distribution.</strong></figcaption>
 </figure>
 
@@ -211,7 +211,7 @@ The pattern is particularly visible in the following fragment of Reffects' dispa
 The following diagram shows how an event is processed and where the separation between the Functional Core and the Imperative Shell occurs.
 
 <figure class="wide-figure">
-<img src="/assets/effects-as-data-pattern-diagram.png" alt="Effects as Data pattern diagram." />
+<img src="/assets/effects-as-data-pattern-diagram.png" loading="lazy" decoding="async" alt="Effects as Data pattern diagram." />
 <figcaption><strong>Effects as Data pattern diagram.</strong></figcaption>
 </figure>
 
