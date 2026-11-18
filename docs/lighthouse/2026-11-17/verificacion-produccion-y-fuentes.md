@@ -1,6 +1,6 @@
 # Verificación de producción y experimento con fuentes locales
 
-> Archivo histórico: los resultados locales se conservan en este documento; sus HTML se retiraron el 18-11-2026 y pueden recuperarse del historial de Git. La [verificación de producción del 18 de noviembre](../2026-11-18/verificacion-produccion-fuentes-y-catalogo.md) contiene el seguimiento tras desplegar.
+> Archivo histórico: los resultados locales se conservan en este documento; sus HTML se retiraron el 18-11-2026 y pueden recuperarse del historial de Git. La [verificación de producción del 18 de noviembre](../2026-11-18/resumen.md) contiene el seguimiento tras desplegar.
 
 Fecha: 17 de noviembre de 2026. Seguimiento de CWS-LH-004 y CWS-FONT-001.
 
