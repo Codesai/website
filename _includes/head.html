@@ -21,10 +21,12 @@
     <link rel="preload" href="{{ site.baseurl_root }}/fonts/google/assistant-v24-normal-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ site.baseurl_root }}/fonts/google/lekton-v21-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ site.baseurl_root }}/fonts/google/lekton-v21-normal-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+    {% if page.title contains 'pages.courses.' %}
+    <link rel="preload" href="{{ site.baseurl_root }}/fonts/google/signika-v29-normal-variable-slashes.woff2" as="font" type="font/woff2" crossorigin>
+    {% endif %}
 </head>
 
 {% if site.environment == 'production' %}
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5HTPFFFN4L"></script>
 <script>
     window.environment = "production";
     window.dataLayer = window.dataLayer || [];
@@ -32,5 +34,46 @@
     gtag('js', new Date());
 
     gtag('config', '{{ site.ga_tracking_id }}');
+
+    // Keep events queued while the first screen and its fonts are painted.
+    // Loading analytics afterwards avoids competing with that rendering work.
+    let analyticsStarted = false;
+    function loadAnalytics() {
+        if (analyticsStarted) return;
+        analyticsStarted = true;
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.ga_tracking_id }}';
+        document.head.appendChild(script);
+    }
+
+    function scheduleAnalytics() {
+        if (document.visibilityState === 'hidden') {
+            loadAnalytics();
+            return;
+        }
+        const firstPaint = new Promise(resolve => {
+            if ('PerformanceObserver' in window && PerformanceObserver.supportedEntryTypes &&
+                PerformanceObserver.supportedEntryTypes.includes('paint')) {
+                const observer = new PerformanceObserver(list => {
+                    if (list.getEntries().some(entry => entry.name === 'first-contentful-paint')) {
+                        observer.disconnect();
+                        resolve();
+                    }
+                });
+                observer.observe({ type: 'paint', buffered: true });
+            } else {
+                requestAnimationFrame(() => setTimeout(resolve, 0));
+            }
+        });
+        firstPaint
+            .then(() => document.fonts ? document.fonts.ready : Promise.resolve())
+            .then(() => requestAnimationFrame(() => setTimeout(loadAnalytics, 0)));
+    }
+
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') loadAnalytics();
+    });
+    document.addEventListener('DOMContentLoaded', scheduleAnalytics, { once: true });
 </script>
 {% endif %}

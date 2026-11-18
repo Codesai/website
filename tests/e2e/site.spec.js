@@ -164,3 +164,53 @@ test('mobile menu opens, closes and navigates', async ({ page }, testInfo) => {
   await menu.locator('a[href^="/newsletter"]').click();
   await expect(page).toHaveURL(/\/newsletter\/?$/);
 });
+
+test('analytics waits for fonts and preserves queued events', async ({ page }) => {
+  let releaseFonts;
+  const fontsReady = new Promise(resolve => { releaseFonts = resolve; });
+  let analyticsRequests = 0;
+  await page.route('**/fonts/google/**', async route => {
+    await fontsReady;
+    await route.continue();
+  });
+  await page.route('https://www.googletagmanager.com/gtag/js?*', async route => {
+    analyticsRequests += 1;
+    await route.fulfill({
+      contentType: 'application/javascript',
+      body: 'window.analyticsTestEvents = window.dataLayer.map(event => Array.from(event));'
+    });
+  });
+
+  try {
+    await page.goto('/cursos/ai-assisted-development/', { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => document.fonts.status === 'loading');
+    await page.evaluate(() => gtag('event', 'queued_before_analytics'));
+    expect(analyticsRequests).toBe(0);
+    releaseFonts();
+    await page.waitForFunction(() => window.analyticsTestEvents);
+    expect(analyticsRequests).toBe(1);
+    const events = await page.evaluate(() => window.analyticsTestEvents);
+    expect(events.filter(event => event[0] === 'config')).toEqual([['config', 'G-5HTPFFFN4L']]);
+    expect(events.filter(event => event[0] === 'event')).toEqual([['event', 'queued_before_analytics']]);
+  } finally {
+    releaseFonts();
+  }
+});
+
+test('analytics request starts after first contentful paint', async ({ page }) => {
+  await page.route('https://www.googletagmanager.com/gtag/js?*', route => route.fulfill({
+    contentType: 'application/javascript',
+    body: 'window.analyticsPaintTestLoaded = true;'
+  }));
+  await page.goto('/cursos/practica-deliberada/');
+  await page.waitForFunction(() => window.analyticsPaintTestLoaded);
+  await page.waitForFunction(() => performance.getEntriesByType('resource').some(entry =>
+    entry.name.startsWith('https://www.googletagmanager.com/gtag/js?')));
+  const timing = await page.evaluate(() => ({
+    paint: performance.getEntriesByName('first-contentful-paint')[0].startTime,
+    analytics: performance.getEntriesByType('resource').find(entry =>
+      entry.name.startsWith('https://www.googletagmanager.com/gtag/js?')).startTime
+  }));
+  expect(timing.paint).toBeGreaterThan(0);
+  expect(timing.analytics).toBeGreaterThanOrEqual(timing.paint);
+});
