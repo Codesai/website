@@ -89,7 +89,8 @@ Playwright against production after allowing time for the Netlify deploy.
 
 1. Get your change onto `main` (commit directly, or merge your branch / PR into `main`).
 2. `git push origin main`.
-3. Open the Netlify dashboard → the Codesai site → **Deploys**, and wait for the
+3. Open the [Netlify dashboard](https://app.netlify.com/) → the Codesai site →
+   **Deploys**, and wait for the
    build for your commit to finish (typically 1–3 minutes). The log there shows any
    build error.
 4. Verify on https://www.codesai.com.
