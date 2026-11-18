@@ -230,9 +230,8 @@ Acciones:
 
 Se repitió la auditoría con Lighthouse 13.4.1 después de corregir los contrastes,
 optimizar la imagen LCP y retirar los scripts locales bloqueantes del `head`.
-Las medianas reproducibles quedan archivadas en
-`../2026-09-01/lighthouse-local-mobile-20260901-053106.html` y
-`../2026-09-01/lighthouse-local-desktop-20260901-053106.html`.
+Los resultados de las pasadas medianas se conservan en la tabla siguiente.
+Los HTML locales se retiraron en la limpieza del 18-11-2026; siguen disponibles en el historial de Git.
 
 | Perfil | Rendimiento | Accesibilidad | FCP | LCP | TBT | CLS |
 |---|---:|---:|---:|---:|---:|---:|
@@ -248,7 +247,7 @@ mediana inicial de 4,14 s, pero todavía no alcanza 2,5 s; la auditoría señala
 `CWS-FONT-001`.
 
 Tras consolidar las cuatro peticiones de Google Fonts en una sola hoja asíncrona,
-la repetición móvil final (`../2026-09-01/lighthouse-local-mobile-20260901-053729.html`) obtuvo
+la repetición móvil final obtuvo
 rendimiento 96, FCP 1,8 s, LCP 2,485 s, TBT 0 ms y CLS 0,071. Con ello se cierra
 `CWS-LH-001`; el inventario, subconjunto o autoalojamiento de fuentes continúa
 reservado para `CWS-FONT-001`.

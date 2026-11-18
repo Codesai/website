@@ -1,5 +1,7 @@
 # Primera mejora de carga de los cursos de IA
 
+> Archivo histórico: los resultados locales se conservan en este documento; sus HTML se retiraron el 18-11-2026 y pueden recuperarse del historial de Git. La [verificación de producción del 18 de noviembre](../2026-11-18/verificacion-produccion-fuentes-y-catalogo.md) contiene el seguimiento tras desplegar.
+
 Fecha: 17 de noviembre de 2026. Trabajo asociado: CWS-LH-004 y CWS-ICON-001.
 
 ## Alcance y diagnóstico
@@ -69,14 +71,14 @@ del navegador; los rangos de las tres pasadas figuran en la salida del script.
 
 | Etapa / curso | Perfil | Rendimiento (rango) | FCP (rango, s) | LCP (rango, s) | TBT (rango, ms) | CLS (rango) |
 |---|---|---:|---:|---:|---:|---:|
-| [Antes / Introducción](lighthouse-before-introduction-ia-mobile-20261117-095121.html) | mobile | 95 (64–97) | 1.58 (1.58–3.69) | 1.95 (1.95–6.27) | 198 (141–250) | 0.054 (0.000–0.054) |
-| [Antes / Introducción](lighthouse-before-introduction-ia-desktop-20261117-095121.html) | desktop | 100 (100–100) | 0.47 (0.47–0.55) | 0.47 (0.47–0.55) | 0 (0–0) | 0.025 (0.015–0.025) |
-| [Antes / Desarrollo IA](lighthouse-before-ia-mobile-20261117-095250.html) | mobile | 97 (96–97) | 1.57 (1.57–1.60) | 1.95 (1.95–1.96) | 135 (135–153) | 0.057 (0.057–0.057) |
-| [Antes / Desarrollo IA](lighthouse-before-ia-desktop-20261117-095250.html) | desktop | 100 (100–100) | 0.47 (0.47–0.49) | 0.53 (0.48–0.53) | 0 (0–0) | 0.028 (0.028–0.028) |
-| [Después / Introducción](lighthouse-after-introduction-ia-mobile-20261117-095456.html) | mobile | 98 (96–98) | 1.20 (1.20–1.20) | 1.65 (1.50–1.65) | 132 (132–208) | 0.022 (0.022–0.054) |
-| [Después / Introducción](lighthouse-after-introduction-ia-desktop-20261117-095456.html) | desktop | 100 (100–100) | 0.28 (0.28–0.28) | 0.40 (0.36–0.53) | 0 (0–0) | 0.025 (0.025–0.025) |
-| [Después / Desarrollo IA](lighthouse-after-ia-mobile-20261117-095622.html) | mobile | 98 (98–98) | 1.20 (1.20–1.21) | 1.50 (1.50–1.66) | 143 (125–143) | 0.057 (0.044–0.057) |
-| [Después / Desarrollo IA](lighthouse-after-ia-desktop-20261117-095622.html) | desktop | 100 (100–100) | 0.29 (0.28–0.29) | 0.54 (0.37–0.54) | 0 (0–0) | 0.028 (0.022–0.028) |
+| Antes / Introducción | mobile | 95 (64–97) | 1.58 (1.58–3.69) | 1.95 (1.95–6.27) | 198 (141–250) | 0.054 (0.000–0.054) |
+| Antes / Introducción | desktop | 100 (100–100) | 0.47 (0.47–0.55) | 0.47 (0.47–0.55) | 0 (0–0) | 0.025 (0.015–0.025) |
+| Antes / Desarrollo IA | mobile | 97 (96–97) | 1.57 (1.57–1.60) | 1.95 (1.95–1.96) | 135 (135–153) | 0.057 (0.057–0.057) |
+| Antes / Desarrollo IA | desktop | 100 (100–100) | 0.47 (0.47–0.49) | 0.53 (0.48–0.53) | 0 (0–0) | 0.028 (0.028–0.028) |
+| Después / Introducción | mobile | 98 (96–98) | 1.20 (1.20–1.20) | 1.65 (1.50–1.65) | 132 (132–208) | 0.022 (0.022–0.054) |
+| Después / Introducción | desktop | 100 (100–100) | 0.28 (0.28–0.28) | 0.40 (0.36–0.53) | 0 (0–0) | 0.025 (0.025–0.025) |
+| Después / Desarrollo IA | mobile | 98 (98–98) | 1.20 (1.20–1.21) | 1.50 (1.50–1.66) | 143 (125–143) | 0.057 (0.044–0.057) |
+| Después / Desarrollo IA | desktop | 100 (100–100) | 0.29 (0.28–0.29) | 0.54 (0.37–0.54) | 0 (0–0) | 0.028 (0.022–0.028) |
 
 La tabla se genera por programa a partir de la salida del script oficial, con
 la misma selección por puntuación y número de pasada. No se procesan ni se

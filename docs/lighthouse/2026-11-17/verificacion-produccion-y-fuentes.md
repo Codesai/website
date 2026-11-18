@@ -1,5 +1,7 @@
 # Verificación de producción y experimento con fuentes locales
 
+> Archivo histórico: los resultados locales se conservan en este documento; sus HTML se retiraron el 18-11-2026 y pueden recuperarse del historial de Git. La [verificación de producción del 18 de noviembre](../2026-11-18/verificacion-produccion-fuentes-y-catalogo.md) contiene el seguimiento tras desplegar.
+
 Fecha: 17 de noviembre de 2026. Seguimiento de CWS-LH-004 y CWS-FONT-001.
 
 ## Producción después del despliegue de iconos
@@ -69,11 +71,11 @@ el objetivo de producción esté resuelto antes de desplegar y volver a medir.
 
 | Ruta / informe | Perfil | P (rango) | FCP (rango, s) | LCP (rango, s) | TBT (rango, ms) | CLS (rango) |
 |---|---|---:|---:|---:|---:|---:|
-| [Antes local · introduction-ia](lighthouse-fonts-before-introduction-ia-mobile-20261117-113643.html) | mobile | 93 (93–94) | 1.20 (1.20–1.20) | 1.65 (1.65–1.66) | 307 (253–309) | 0.054 (0.054–0.054) |
-| [Antes local · ia](lighthouse-fonts-before-ia-mobile-20261117-113724.html) | mobile | 97 (96–97) | 1.20 (1.20–1.21) | 1.66 (1.65–1.66) | 168 (168–219) | 0.044 (0.044–0.057) |
+| Antes local · introduction-ia | mobile | 93 (93–94) | 1.20 (1.20–1.20) | 1.65 (1.65–1.66) | 307 (253–309) | 0.054 (0.054–0.054) |
+| Antes local · ia | mobile | 97 (96–97) | 1.20 (1.20–1.21) | 1.66 (1.65–1.66) | 168 (168–219) | 0.044 (0.044–0.057) |
 
 La primera versión sin consolidación ni minificación produjo CSS de 92.148
-bytes y FCP móvil ~2,1 s en IA. Se conserva su [informe intermedio](lighthouse-fonts-intermediate-introduction-ia-mobile-20261117-115750.html)
+bytes y FCP móvil ~2,1 s en IA. Se conserva este resultado intermedio
 para documentar la regresión detectada; no se considera el resultado final.
 La versión final consolida los pesos variables, minifica Sass y separa la hoja
 de fuentes para no bloquear el CSS principal. Añade precargas selectivas para
@@ -87,14 +89,14 @@ JavaScript. No se modifican los binarios originales de Google.
 
 | Ruta / informe | Perfil | P (rango) | FCP (rango, s) | LCP (rango, s) | TBT (rango, ms) | CLS (rango) |
 |---|---|---:|---:|---:|---:|---:|
-| [Después fuentes · introduction-ia](lighthouse-fonts-final-introduction-ia-mobile-20261117-121820.html) | mobile | 98 (96–98) | 1.36 (1.36–1.36) | 1.96 (1.96–1.96) | 115 (114–181) | 0.000 (0.000–0.000) |
-| [Después fuentes · introduction-ia](lighthouse-fonts-final-introduction-ia-desktop-20261117-121820.html) | desktop | 100 (100–100) | 0.37 (0.37–0.38) | 0.45 (0.45–0.46) | 0 (0–0) | 0.000 (0.000–0.000) |
-| [Después fuentes · ia](lighthouse-fonts-final-ia-mobile-20261117-121937.html) | mobile | 98 (98–98) | 1.37 (1.36–1.37) | 1.97 (1.96–1.97) | 122 (113–124) | 0.000 (0.000–0.000) |
-| [Después fuentes · ia](lighthouse-fonts-final-ia-desktop-20261117-121937.html) | desktop | 100 (100–100) | 0.37 (0.37–0.37) | 0.45 (0.45–0.45) | 0 (0–0) | 0.000 (0.000–0.000) |
-| [Después fuentes · catalogo](lighthouse-fonts-final-catalogo-mobile-20261117-122055.html) | mobile | 96 (96–96) | 1.36 (1.36–1.36) | 2.63 (2.63–2.64) | 85 (85–92) | 0.000 (0.000–0.000) |
-| [Después fuentes · catalogo](lighthouse-fonts-final-catalogo-desktop-20261117-122441.html) | desktop | 100 (100–100) | 0.33 (0.33–0.33) | 0.57 (0.57–0.57) | 0 (0–0) | 0.000 (0.000–0.000) |
-| [Después fuentes · post-flash](lighthouse-fonts-final-post-flash-mobile-20261117-122135.html) | mobile | 98 (95–98) | 1.51 (1.51–1.51) | 2.26 (2.26–2.26) | 86 (86–192) | 0.000 (0.000–0.000) |
-| [Después fuentes · post-flash](lighthouse-fonts-final-post-flash-desktop-20261117-122521.html) | desktop | 100 (100–100) | 0.37 (0.37–0.37) | 0.59 (0.53–0.59) | 0 (0–0) | 0.000 (0.000–0.000) |
+| Después fuentes · introduction-ia | mobile | 98 (96–98) | 1.36 (1.36–1.36) | 1.96 (1.96–1.96) | 115 (114–181) | 0.000 (0.000–0.000) |
+| Después fuentes · introduction-ia | desktop | 100 (100–100) | 0.37 (0.37–0.38) | 0.45 (0.45–0.46) | 0 (0–0) | 0.000 (0.000–0.000) |
+| Después fuentes · ia | mobile | 98 (98–98) | 1.37 (1.36–1.37) | 1.97 (1.96–1.97) | 122 (113–124) | 0.000 (0.000–0.000) |
+| Después fuentes · ia | desktop | 100 (100–100) | 0.37 (0.37–0.37) | 0.45 (0.45–0.45) | 0 (0–0) | 0.000 (0.000–0.000) |
+| Después fuentes · catalogo | mobile | 96 (96–96) | 1.36 (1.36–1.36) | 2.63 (2.63–2.64) | 85 (85–92) | 0.000 (0.000–0.000) |
+| Después fuentes · catalogo | desktop | 100 (100–100) | 0.33 (0.33–0.33) | 0.57 (0.57–0.57) | 0 (0–0) | 0.000 (0.000–0.000) |
+| Después fuentes · post-flash | mobile | 98 (95–98) | 1.51 (1.51–1.51) | 2.26 (2.26–2.26) | 86 (86–192) | 0.000 (0.000–0.000) |
+| Después fuentes · post-flash | desktop | 100 (100–100) | 0.37 (0.37–0.37) | 0.59 (0.53–0.59) | 0 (0–0) | 0.000 (0.000–0.000) |
 
 El cambio no mejora todas las métricas locales por igual: frente al baseline
 local de los cursos de IA, FCP y LCP aumentan ligeramente, aunque permanecen
@@ -129,8 +131,8 @@ optimizada y el espacio reservado.
 
 | Ruta / informe | Perfil | P (rango) | FCP (rango, s) | LCP (rango, s) | TBT (rango, ms) | CLS (rango) |
 |---|---|---:|---:|---:|---:|---:|
-| [Después imagen · catalogo](lighthouse-images-final-catalogo-mobile-20261117-123636.html) | mobile | 95 (94–97) | 1.36 (1.36–1.36) | 2.11 (2.11–2.11) | 236 (154–252) | 0.000 (0.000–0.000) |
-| [Después imagen · catalogo](lighthouse-images-final-catalogo-desktop-20261117-123636.html) | desktop | 100 (100–100) | 0.33 (0.33–0.33) | 0.49 (0.49–0.49) | 2 (0–17) | 0.000 (0.000–0.000) |
+| Después imagen · catalogo | mobile | 95 (94–97) | 1.36 (1.36–1.36) | 2.11 (2.11–2.11) | 236 (154–252) | 0.000 (0.000–0.000) |
+| Después imagen · catalogo | desktop | 100 (100–100) | 0.33 (0.33–0.33) | 0.49 (0.49–0.49) | 2 (0–17) | 0.000 (0.000–0.000) |
 
 ## Validación y alcance pendiente
 
@@ -140,9 +142,9 @@ optimizada y el espacio reservado.
   combinaciones de estilo/peso cargadas, sin solicitudes a Google Fonts.
 - Catálogo: geometría conservada y descarga bloqueada sin desplazamientos en
   ocho combinaciones de idioma y ancho. Transparencia del WebP preservada.
-- Solo se conservan HTML medianos por etapa/ruta/perfil, además del único
-  intermedio documentado. Las pasadas exploratorias de una ejecución no forman
-  parte de los resultados de aceptación ni se guardan en el repositorio.
+- Durante el experimento se conservaron HTML medianos por etapa/ruta/perfil y
+  un intermedio documentado. Tras verificar producción, sus resultados locales
+  quedan resumidos aquí y se mantienen los HTML de producción.
 
 Las cuatro rutas representativas cumplen localmente los objetivos de CWS-LH-004:
 rendimiento móvil mediano ≥ 90, FCP ≤ 1,8 s y LCP ≤ 2,5 s. Escritorio obtiene 100.
