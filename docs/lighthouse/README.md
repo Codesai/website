@@ -15,6 +15,7 @@ fuentes verificadas, CLS cero en esas rutas y objetivos móviles todavía pendie
 | 17-11-2026 | [Mejora de iconos](2026-11-17/mejora-carga-cursos-ia.md) y [producción y fuentes](2026-11-17/verificacion-produccion-y-fuentes.md), con ocho HTML de producción | Decisiones, comparaciones locales y estado de producción anterior al despliegue de fuentes y catálogo. |
 | 18-11-2026 | [Verificación de fuentes y catálogo](2026-11-18/verificacion-produccion-fuentes-y-catalogo.md) y ocho HTML | Resultado del despliegue y alcance pendiente. |
 | 18-11-2026 (local) | [Dimensiones y carga inicial](2026-11-18/dimensiones-y-carga-inicial.md), matriz de 18 rutas y 12 HTML representativos | Implementación de IMG002/LH004 validada localmente; pendiente de despliegue y medición en producción. |
+| 18-11-2026 (local) | [Carga diferida en publicaciones](../planificacion/2026-11-18/propuesta-carga-publicaciones-2026-11-18.md) y dos HTML (`lighthouse-local-publicaciones-*`) | Implementación de LH005 (Opción A) validada localmente; pendiente de despliegue y medición en producción. |
 
 ## Conservación
 

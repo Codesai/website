@@ -85,7 +85,20 @@ Se mantienen los 203 posts en el HTML de `/publications/`, pero se pasa de `back
 
 Se acuerda implementar la **Opción A** porque resuelve el problema crítico de carga en móvil/4G y mantiene todos los beneficios de SEO sin cambios de arquitectura ni de experiencia de usuario:
 
-1. En `publications.html`, reemplazar `<div class="small-image" style="background-image: ...">` por `<img>` con dimensiones reservadas (`width`/`height`), `decoding="async"` y `loading="lazy"` para los artículos bajo el primer viewport (manteniendo carga inmediata en los primeros visibles).
-2. En `_sass/publications.scss`, adaptar `.small-image` con `object-fit: contain; object-position: center;` para conservar exactamente el mismo renderizado que `background-size: contain`, y aplicar `content-visibility: auto` con `contain-intrinsic-size` a los ítems fuera del primer viewport.
-3. En `_includes/published-video.html`, añadir `loading="lazy"` y dimensiones (`width="480" height="360"`) a las miniaturas de YouTube para que la pestaña oculta `#videosTab` no descargue 45 imágenes en la carga inicial.
+1. En `publications.html`, reemplazar `<div class="small-image" style="background-image: ...">` por `<img>` con dimensiones reservadas (`width`/`height` inyectados por `_plugins/image_dimensions.rb`), `loading="lazy"` y `decoding="async"`, sirviendo variantes WebP (`-480.webp`) mediante `<picture>` para las 6 primeras miniaturas (`small-skill-test-coverage-improvement`, `fake-montoya`, `reffects_visual_metaphor`, `small-ai-cleaning`, `small_xmen` —que baja de 1,94 MB a 20 KB— y `small-architectural-mutant`) conservando los archivos originales como fallback.
+2. En `_sass/publications.scss`, adaptar `.small-image` con `display: block; object-fit: contain; object-position: center; padding: 0;` para conservar exactamente el mismo renderizado que `background-size: contain`, y aplicar `content-visibility: auto` con `contain-intrinsic-size` a las tarjetas fuera del primer viewport (`:nth-child(n + 3)` en móvil, `:nth-child(n + 4)` en escritorio).
+3. En `_includes/published-video.html`, añadir `loading="lazy"` y `decoding="async"` a las miniaturas de YouTube (`480×360`) para que la pestaña oculta `#videosTab` no descargue 45 imágenes en la carga inicial.
 4. Validar con `make test` (ES/EN, enlaces y suite Playwright) y medir el antes/después con `scripts/run-lighthouse.sh`.
+
+## 5. Resultados locales verificados (18-11-2026)
+
+- **Peticiones de imagen en carga inicial:** bajan de **213 (~14,4 MiB) a 5 en móvil** (logo, icono de menú y las 3 primeras miniaturas en WebP = ~46 KB) y **8 en escritorio**, con **0 miniaturas de YouTube** descargadas mientras `#videosTab` permanece oculta.
+- **Comparación geométrica ES/EN (`320`, `412`, `768` y `1365 px`):** diferencia máxima de **0,00 px** en tarjetas, imágenes y bloques de texto respecto al diseño previo.
+- **Lighthouse 13.4.1 local (3 pasadas por perfil, servidor Jekyll sin compresión HTTP):**
+
+| Ruta / informe | Perfil | P (rango) | A | BP | SEO | FCP (rango, s) | LCP (rango, s) | TBT (rango, ms) | CLS (rango) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| [Publicaciones local](../../lighthouse/2026-11-18/lighthouse-local-publicaciones-mobile-20261118-145510.html) | mobile | 91 (90–94) | 100 | 100 | 100 | 1.81 (1.81–1.82) | 3.16 (2.71–3.16) | 131 (131–236) | 0.000 (0.000–0.000) |
+| [Publicaciones local](../../lighthouse/2026-11-18/lighthouse-local-publicaciones-desktop-20261118-145510.html) | desktop | 100 (100–100) | 100 | 100 | 100 | 0.41 (0.41–0.42) | 0.69 (0.62–0.69) | 0 (0–27) | 0.000 (0.000–0.000) |
+
+> **Nota sobre el entorno local:** WEBrick sirve los ~167 KB de HTML de `/publications/` y los ~54 KB de CSS sin compresión Brotli (en Netlify se transfieren ~40 KB y ~8,6 KB respectivamente). Queda pendiente desplegar y verificar el LCP móvil con compresión Brotli en producción antes de cerrar `CWS-LH-005`.
