@@ -65,17 +65,15 @@ Top-level `.html` files are site pages (e.g., `home.html`, `training.html`, `tdd
 3. Add `written_in: english` for English posts (default is Spanish).
 4. Add `cross_post_url` when the post was originally published elsewhere.
 5. Add `tags` and `categories` as arrays.
+6. Use Markdown code blocks for snippets. Link to a Gist if needed, since an embedded Gist script can delay rendering.
 
 ### Images
 
-- Place post images in `assets/` (not in `img/`).
-- Maximum width: **1000px**.
-- Compress with TinyPNG before committing (PNG/JPG).
-- `_compress_images_cache.yml` tracks already-compressed images.
-- During Polishing, check that rendered images have `width` and `height`.
-  Jekyll adds them for local images.
-- Use `loading="lazy"` only for images outside the initial viewport.
-- Consider WebP for large lead images, as used in the course catalogue.
+- Keep one `small_image` filename in front matter for previews and social sharing.
+- Place post images in `assets/` and use root-relative URLs such as `/assets/test-flow.png` for inline images. Provide descriptive alt text for informative images and empty alt text for decorative ones.
+- Keep raster images at most **1000px** wide. Compress PNG/JPEG files with TinyPNG. Use a single optimized file by default and consider WebP when the measured saving justifies it.
+- During Polishing, check that rendered images reserve space (have `width` and `height`). The Jekyll build adds `width` and `height` to supported local images with root-relative URLs when both attributes are omitted.
+- Use `loading="lazy"` for images below the initial viewport. Follow the [README examples](README.md#images) for Markdown syntax.
 
 ### Embeds in Posts
 

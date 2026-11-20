@@ -77,6 +77,7 @@ To create a post, add a new file under `_i18n/es/_posts/` named `YYYY-MM-DD-name
 layout: post
 title: My Post Title nicely written
 author: Crazy Cockatoo
+small_image: my-post-preview.jpg
 ---
 
 ```
@@ -151,7 +152,7 @@ Raw AI Labs use the same front matter, layout, Markdown capabilities, and `categ
 | **author** | there can be multiple authors for a post, ie: `Someone and Somebody` |
 | **small_image** | the filename (not the full path) of the image to use as preview for the post |
 | cross_post_url | when cross-posting, the url of the original post. A note will be added at the end of the post |
-| written_in | It's only necessary for cross-posting. By default is set to spanish. If your post is written in English, set it to english |
+| written_in | By default is set to spanish. If your post is written in English, set it to english |
 | date | you can specify a more precise date in the format `2016-12-15 11:25:00.000000000 +01:00` |
 | tags | an array of tags `tags: [first, second, third]` |
 | categories | an object of categories |
@@ -181,16 +182,20 @@ Resize and optimize images before adding them to a post:
    reserves space. Jekyll adds these for local images.
 4. Use `loading="lazy"` only for images outside the initial viewport.
 
+For a Markdown image below the initial viewport, add the Kramdown attribute on the same line:
+
+```markdown
+![Diagram of the test flow](/assets/test-flow.png){: loading="lazy"}
+```
 
 ## Code snippets
 
-To add one liners or similar, you can use markdown. If you want syntax highlightning and some more lines of code, we recommend adding a public [**gist**](https://gist.github.com/) inside the github's Codesai account and **embed** it in the post.
-This is convenient since you can always edit your gist later without having to edit the post.
+To add one liners or similar, you can use markdown. For longer snippets, use fenced code blocks with a language identifier. Link to a [**gist**](https://gist.github.com/) if needed, since embedding it can delay rendering.
 
 
 ## Youtube embedded videos
 
-To add a youtube video, you can use the published-video template provided in the includes. It will add a responsive, full-width youtube video to the post. Simply replace the src parameter with the one of your video :)
+To add a youtube video, you can use the published-video template provided in the includes. It will add a responsive, full-width youtube video to the post. Simply replace the `video-id` parameter with the one of your video :)
 
 ```
 {% include published-video.html video-id="bIr5fPom7B4" speakers="Me" title="Awesome video" %}
