@@ -16,7 +16,7 @@ written_in: spanish
 
 Este post viene a solucionar una de las espinas clavadas que quedaban en nuestro backlog de publicaciones pendientes. Y esto es contaros nuestra experiencia con el Open Space remoto Connectsai.
 
-![Toño Connectsai](/assets/posts/toño-connectsai.jpeg)
+![Toño Connectsai](/assets/posts/tono-connectsai.jpeg)
 
 Hace unos meses (el sábado 17 de octubre) montamos conjuntamente con [Lifull Connect](https://www.lifullconnect.com/) el que sería nuestro primer evento de autor: Connectsai. La experiencia de montar el evento, como en todas las organizaciones, tiene sus claroscuros: incertidumbre sobre el nivel de asistencia, la retención de la gente a medida que pasa el día, el rendimiento de las herramientas para remote, cómo comunicar un evento de esta magnitud, si se puede sobrevivir sin patrocinadores y un largo etc.
 

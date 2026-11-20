@@ -13,6 +13,7 @@ end
 Dir.mktmpdir do |root|
   FileUtils.mkdir_p("#{root}/assets")
   File.write("#{root}/assets/test.svg", '<svg xmlns="http://www.w3.org/2000/svg" width="482" height="159"></svg>')
+  FileUtils.cp("#{root}/assets/test.svg", "#{root}/assets/toño.svg")
   File.write("#{root}/assets/viewbox.svg", '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 64"></svg>')
   site = Struct.new(:source).new(root)
   input = <<~HTML
@@ -31,6 +32,7 @@ Dir.mktmpdir do |root|
   result = ImageDimensions.add(input, site)
   document = Nokogiri::HTML5.parse(result)
   assert(document.at_css('#local')['width'] == '482' && document.at_css('#local')['height'] == '159', 'Local dimensions missing')
+  assert(ImageDimensions.dimensions_for('/assets/to%C3%B1o.svg', site) == [482, 159], 'Escaped Unicode path dimensions missing')
   assert(document.at_css('#figure').parent['style'] == 'width: min(100%, 482px)', 'Figure space not reserved')
   assert(document.at_css('#picture').parent.parent['style'] == 'width: min(100%, 482px)', 'Picture figure space not reserved')
   assert(document.at_css('#viewbox')['width'] == '520' && document.at_css('#viewbox')['class'].include?('intrinsic-svg'), 'SVG viewBox ratio missing')

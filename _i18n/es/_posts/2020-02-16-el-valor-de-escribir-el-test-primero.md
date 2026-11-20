@@ -9,7 +9,7 @@ categories:
   - Object-Oriented Design
   - Design Patterns
   - Refactoring
-small_image: cas2019_dani_toño.jpg
+small_image: cas2019_dani_tono.jpg
 author: Daniel Ojeda
 twitter: danielojed4
 ---
