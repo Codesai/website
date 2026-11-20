@@ -87,7 +87,10 @@ permalink_en: /trainings/refactoring/
 
         <div class="photos">
             <div class="photo">
-                <img src="/assets/courses/cs_r_training.png" loading="lazy" alt="">
+                <picture>
+                    <source type="image/webp" srcset="/assets/courses/cs_r_training.webp">
+                    <img src="/assets/courses/cs_r_training.png" loading="lazy" alt="">
+                </picture>
             </div>
         </div>
         {% capture title %}{{ site.translations[site.lang].pages.courses.code_smells_refactoring.call_to_action.title }}{% endcapture %}

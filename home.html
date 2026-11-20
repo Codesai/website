@@ -236,7 +236,7 @@ permalink: /
       {% for post in site.posts limit:3 %}
       <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer" class="post">
         <div>
-          <img src="/assets/{{ post.small_image }}" alt="{{ post.title }}">
+          <img src="/assets/{{ post.small_image }}" loading="lazy" alt="{{ post.title }}">
           <h3>{{ post.title }}</h3>
           <p>{{ post.author }}</p>
         </div>
