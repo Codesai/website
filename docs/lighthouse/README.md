@@ -37,3 +37,7 @@ el HTML de la pasada mediana por puntuación de rendimiento. Las métricas de es
 pasada no equivalen a medianas independientes de cada métrica; guardar también
 los rangos de la salida del script en el resumen. No ejecutar perfiles, builds
 ni pruebas simultáneamente con la auditoría.
+
+El agente ejecuta el script directamente. Si detecta carga de CPU que
+interfiere con la medición, avisa al usuario y le pide que repita la auditoría
+en su propia consola cuando el equipo quede libre.

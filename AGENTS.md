@@ -115,9 +115,11 @@ scripts/run-lighthouse.sh --desktop   # desktop only
 
 The script uses Lighthouse 13.4.1 and runs profiles sequentially.
 The process is fully scripted and does not use an LLM.
-Ask user to run the command in a console to avoid cpu-problems.
-After that saves the
-HTML for the run with the median performance score in each profile. Record the
+Run the script directly when an audit is needed. Keep profiles, builds, and
+tests from running concurrently with the audit. If you detect CPU load that
+interferes with measurement, tell the user and ask them to rerun the audit
+in their own terminal once the machine is idle.
+The script saves the HTML for the run with the median performance score in each profile. Record the
 score, FCP, LCP, TBT, and CLS from that run and their ranges across all runs.
 Follow the [Lighthouse retention policy](docs/lighthouse/README.md#conservación)
 for baseline reports, production verification, and evidence of open regressions.

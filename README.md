@@ -240,7 +240,7 @@ docs/lighthouse/YYYY-MM-DD/lighthouse-local-desktop-YYYYMMDD-HHMMSS.html
 
 Intermediate reports are removed automatically.
 The process is fully scripted and does not use an LLM.
-Ask user to run the command in a console to avoid cpu-problems.
+Agents run the script directly. If CPU load interferes with the measurement, ask the user to rerun it in their console once the machine is idle.
 After that record the performance score,
 FCP, LCP, TBT, and CLS from the selected run and their ranges across all runs.
 Follow the [Lighthouse retention policy](docs/lighthouse/README.md#conservación)
