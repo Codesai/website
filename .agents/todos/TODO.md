@@ -7,6 +7,7 @@ Prioridades: `P0` crítica, `P1` alta, `P2` media.
 
 | ID | Estado | Prioridad | Área | Tarea | Criterio de aceptación |
 |---|---|---|---|---|---|
+| CWS-ANA-002 | BLOCKED | P0 | Analítica | Excluir de GA4 el tráfico de desarrollo local, previews, Playwright y Lighthouse. Aplazada hasta decidir si hace falta implementar el filtrado. [Plan](../../docs/planificacion/2026-11-18/filtrado-trafico-sintetico-ga4.md). | Las pruebas y los entornos ajenos a producción no envían hits a GA4. La navegación normal en producción conserva la medición, la carga diferida sigue cubierta y pasa `make test`. |
 | CWS-TEST-001 | DONE | P0 | Calidad/Regresión | Crear una comprobación reproducible del build, enlaces internos, recursos y comportamiento 404 antes de modificar la web. | El sitio compila en ES/EN; el verificador no encuentra enlaces ni recursos internos rotos; una URL inexistente devuelve HTTP 404 y muestra la página 404; existe un único comando ejecutable en local y CI. |
 | CWS-TOOL-007 | DONE | P0 | Funcional | Crear pruebas de caracterización con Playwright para menú, cookies, formulario, cambio de idioma, enlaces clave y página 404, en móvil y escritorio. | La suite captura el comportamiento actual aprobado, pasa en ES/EN, valida destinos y códigos HTTP, y puede ejecutarse en local y CI. |
 | CWS-TOOL-008 | DONE | P0 | Visual | Añadir regresión visual para viewports móvil/tablet/escritorio. | Baselines aprobados para páginas clave ES/EN y comparación en PR. |
