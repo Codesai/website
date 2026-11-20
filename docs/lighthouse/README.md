@@ -1,6 +1,6 @@
 # Lighthouse audits
 
-The [backlog](../../.agents/todos/TODO.md) tracks task status. The [18 November 2026 summary](2026-11-18/resumen.md) records the latest production verification.
+The [backlog](../../.agents/todos/TODO.md) tracks task status. The [20 November 2026 audit](2026-11-20/production-audit.md) records the latest production verification.
 
 ## Retained milestones
 
@@ -11,6 +11,7 @@ The [backlog](../../.agents/todos/TODO.md) tracks task status. The [18 November 
 | 2026-11-10 | [Multi-page audit](2026-11-10/lighthouse-codesai-2026-11-10.md) and 38 HTML reports | Production baseline for 19 pages and two profiles, including Publications and routes with work still pending. |
 | 2026-11-17 | [Icon improvements](2026-11-17/mejora-carga-cursos-ia.md) and [production verification and fonts](2026-11-17/verificacion-produccion-y-fuentes.md), with eight production HTML reports | Decisions, local comparisons, and production status before the font and course catalogue changes were deployed. |
 | 2026-11-18 | [Summary](2026-11-18/resumen.md) and four HTML reports | Completion of the work on fonts, image dimensions, initial loading, and Publications. |
+| 2026-11-20 | [Production audit](2026-11-20/production-audit.md) and selected HTML reports | Repeat of the 19-URL baseline, with evidence for the backlog review. |
 
 <a name="conservación"></a>
 
