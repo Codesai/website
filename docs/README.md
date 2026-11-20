@@ -1,9 +1,9 @@
-# Documentación
+# Documentation
 
-- [Lighthouse](lighthouse/README.md): índice de auditorías, estado actual y criterio de conservación de informes.
-- `planificacion/AAAA-MM-DD/`: estimaciones y documentos de planificación.
-- [Desarrollo](desarrollo/agent-transcripts.md): guía para incluir transcripciones de agentes en artículos.
-- [Markdown incrustado](desarrollo/markdown-embeds.md): guía para mostrar planes y logbooks en posts y Raw AI Labs.
-- [Salida de consola](desarrollo/console-output.md): panel de terminal con las primeras 15 líneas visibles y el resto desplegable.
+- [Lighthouse](lighthouse/README.md) lists audits, their current status, and the report retention policy.
+- `planificacion/YYYY-MM-DD/` contains estimates and planning documents.
+- [Coding-agent transcripts](desarrollo/agent-transcripts.md) explains how to include agent transcripts in blog posts.
+- [Embedded Markdown](desarrollo/markdown-embeds.md) explains how to display plans and logbooks in posts and Raw AI Labs.
+- [Console output](desarrollo/console-output.md) describes the terminal panel, which shows the first 15 lines and lets readers expand the rest.
 
-El script `scripts/run-lighthouse.sh` guarda las nuevas auditorías en la carpeta de la fecha UTC de ejecución. La opción `--output` permite indicar otro prefijo y destino.
+The `scripts/run-lighthouse.sh` script saves new audits in a directory named after the UTC date of the run. Use `--output` to specify a different prefix and destination.

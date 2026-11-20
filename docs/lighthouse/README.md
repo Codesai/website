@@ -1,43 +1,47 @@
-# Auditorías Lighthouse
+# Lighthouse audits
 
-El [backlog](../../.agents/todos/TODO.md) mantiene el estado de las tareas. El [resumen del 18-11-2026](2026-11-18/resumen.md) recoge la última verificación en producción.
+The [backlog](../../.agents/todos/TODO.md) tracks task status. The [18 November 2026 summary](2026-11-18/resumen.md) records the latest production verification.
 
-## Hitos conservados
+## Retained milestones
 
-| Fecha | Documento o evidencia | Propósito |
+| Date | Documents or evidence | Purpose |
 |---|---|---|
-| 31-08-2026 | [Auditoría inicial](2026-08-31/lighthouse-codesai-2026-08-31.md) y dos HTML | Baseline de la home y resumen de las mejoras locales de septiembre. |
-| 13-10-2026 | Cuatro HTML, enlazados en la [estimación histórica](../planificacion/2026-10-19/estimacion-tareas-2026-10-19.md) | Evidencia de la diferencia entre local y producción. |
-| 10-11-2026 | [Auditoría multipágina](2026-11-10/lighthouse-codesai-2026-11-10.md) y 38 HTML | Baseline de producción para 19 páginas y dos perfiles; incluye publicaciones y rutas todavía pendientes. |
-| 17-11-2026 | [Mejora de iconos](2026-11-17/mejora-carga-cursos-ia.md) y [producción y fuentes](2026-11-17/verificacion-produccion-y-fuentes.md), con ocho HTML de producción | Decisiones, comparaciones locales y estado de producción anterior al despliegue de fuentes y catálogo. |
-| 18-11-2026 | [Resumen](2026-11-18/resumen.md) y cuatro HTML | Cierre de fuentes, dimensiones, carga inicial y Publicaciones. |
+| 2026-08-31 | [Initial audit](2026-08-31/lighthouse-codesai-2026-08-31.md) and two HTML reports | Homepage baseline and a summary of September's local improvements. |
+| 2026-10-13 | Four HTML reports linked from the [historical estimate](../planificacion/2026-10-19/estimacion-tareas-2026-10-19.md) | Evidence of the difference between local and production results. |
+| 2026-11-10 | [Multi-page audit](2026-11-10/lighthouse-codesai-2026-11-10.md) and 38 HTML reports | Production baseline for 19 pages and two profiles, including Publications and routes with work still pending. |
+| 2026-11-17 | [Icon improvements](2026-11-17/mejora-carga-cursos-ia.md) and [production verification and fonts](2026-11-17/verificacion-produccion-y-fuentes.md), with eight production HTML reports | Decisions, local comparisons, and production status before the font and course catalogue changes were deployed. |
+| 2026-11-18 | [Summary](2026-11-18/resumen.md) and four HTML reports | Completion of the work on fonts, image dimensions, initial loading, and Publications. |
 
-## Conservación
+<a name="conservación"></a>
 
-- Mantener los resúmenes Markdown de los hitos: método, versión, rutas, entorno,
-  cambios, resultados, rangos y límites de comparación.
-- Conservar los HTML medianos de baselines y verificaciones de producción que
-  sustenten decisiones o permitan comparar tareas abiertas.
-- Los HTML de experimentos locales se conservan durante el diagnóstico. Una vez
-  verificado el despliegue, resumir sus conclusiones y retirar los que ya no
-  aporten diagnósticos necesarios. Conservar excepciones para regresiones abiertas.
-- Las ejecuciones rutinarias sin cambios relevantes no necesitan acumular HTML
-  permanentes: documentar el resultado y conservar evidencia si aparece una regresión.
-- Al retirar un HTML, actualizar sus enlaces. Los informes ya versionados pueden
-  recuperarse del historial de Git; esta limpieza no reescribe dicho historial.
+## Retention
 
-La limpieza del 18-11-2026 retiró 26 HTML locales de septiembre y noviembre
-(~25,1 MiB), conservando sus resultados documentados. La consolidación posterior del 18-11-2026 conserva el HTML de cierre de Publicaciones y los informes móviles que documentan las excepciones de rendimiento y su seguimiento.
+- Keep Markdown summaries for milestones. Record the method, version, routes,
+  environment, changes, results, ranges, and limits on comparisons.
+- Keep the median-run HTML reports for baselines and production checks that
+  support decisions or provide a reference for open tasks.
+- Keep HTML reports from local experiments during diagnosis. After verifying the
+  deployment, summarise the findings and remove reports that are no longer needed
+  for diagnosis. Keep reports for unresolved regressions.
+- For routine runs without significant changes, document the result. Keep the
+  evidence if a regression appears.
+- Update links when removing an HTML report. Record the cleanup in a new commit
+  so previously tracked reports remain available in Git history.
 
-## Ejecución
+The cleanup on 18 November 2026 removed 26 local HTML reports from September and
+November (about 25.1 MiB) and preserved the documented results. A later
+consolidation that day kept the final Publications HTML report and the mobile
+reports covering performance exceptions and their follow-up.
 
-Usar `scripts/run-lighthouse.sh` (ver `--help` para URL, perfil y destino).
-Ejecuta tres pasadas secuenciales por perfil por defecto y conserva únicamente
-el HTML de la pasada mediana por puntuación de rendimiento. Las métricas de esa
-pasada no equivalen a medianas independientes de cada métrica; guardar también
-los rangos de la salida del script en el resumen. No ejecutar perfiles, builds
-ni pruebas simultáneamente con la auditoría.
+## Running audits
 
-El agente ejecuta el script directamente. Si detecta carga de CPU que
-interfiere con la medición, avisa al usuario y le pide que repita la auditoría
-en su propia consola cuando el equipo quede libre.
+Use `scripts/run-lighthouse.sh`. See `--help` for URL, profile, and output
+options. By default, the script runs each profile three times in sequence and
+keeps only the HTML report for the run with the median performance score.
+Record that run's individual metric values. Use the script output to report the
+ranges across all runs. Run the audit profiles sequentially and keep builds and
+tests from running during the audit.
+
+The agent runs the script directly. If CPU load interferes with the measurement,
+the agent tells the user and asks them to rerun the audit in their terminal once
+the machine is idle.

@@ -248,7 +248,7 @@ The process is fully scripted and does not use an LLM.
 Agents run the script directly. If CPU load interferes with the measurement, ask the user to rerun it in their console once the machine is idle.
 After that record the performance score,
 FCP, LCP, TBT, and CLS from the selected run and their ranges across all runs.
-Follow the [Lighthouse retention policy](docs/lighthouse/README.md#conservación)
+Follow the [Lighthouse retention policy](docs/lighthouse/README.md#retention)
 for baseline reports, production verification, and evidence of open regressions.
 
 Use these options to select a profile, change the number of runs, or audit a

@@ -49,6 +49,10 @@ Top-level `.html` files are site pages (e.g., `home.html`, `training.html`, `tdd
 
 ## Key Conventions
 
+### Project Documentation
+
+Write new project documentation in English, including reports and plans. Preserve existing Spanish reports and plans as historical records. The website keeps its Spanish and English content.
+
 ### Writing a Blog Post
 
 1. Create `_i18n/es/_posts/YYYY-MM-DD-slug-of-post.md` — the filename slug becomes the permalink.
@@ -119,7 +123,7 @@ interferes with measurement, tell the user and ask them to rerun the audit
 in their own terminal once the machine is idle.
 The script saves the HTML for the run with the median performance score in each profile. Record the
 score, FCP, LCP, TBT, and CLS from that run and their ranges across all runs.
-Follow the [Lighthouse retention policy](docs/lighthouse/README.md#conservación)
+Follow the [Lighthouse retention policy](docs/lighthouse/README.md#retention)
 for baseline reports, production verification, and evidence of open regressions.
 
 ## Git commit
