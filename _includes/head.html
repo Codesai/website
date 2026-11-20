@@ -26,13 +26,40 @@
     {% endif %}
 </head>
 
-{% if site.environment == 'production' %}
 <script>
+    const cookiePolicyName = 'codesai_cookie_policy';
+
+    function cookiePolicyChoice() {
+        const prefix = cookiePolicyName + '=';
+        const cookie = document.cookie.split(';').map(value => value.trim())
+            .find(value => value.startsWith(prefix));
+        return cookie?.slice(prefix.length);
+    }
+
+    function analyticsStorageConsent(choice) {
+        return choice === 'accepted' ? 'granted' : 'denied';
+    }
+
+    function saveCookiePolicyChoice(choice) {
+        const maxAge = 100 * 365 * 24 * 60 * 60;
+        document.cookie = `${cookiePolicyName}=${choice}; max-age=${maxAge}; path=/; SameSite=Lax`;
+        {% if site.environment == 'production' %}
+        gtag('consent', 'update', { analytics_storage: analyticsStorageConsent(choice) });
+        {% endif %}
+    }
+
+    {% if site.environment == 'production' %}
     window.environment = "production";
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
+    gtag('consent', 'default', {
+        analytics_storage: analyticsStorageConsent(cookiePolicyChoice()),
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+    });
+    gtag('js', new Date());
     gtag('config', '{{ site.ga_tracking_id }}');
 
     // Keep events queued while the first screen and its fonts are painted.
@@ -75,5 +102,5 @@
         if (document.visibilityState === 'hidden') loadAnalytics();
     });
     document.addEventListener('DOMContentLoaded', scheduleAnalytics, { once: true });
+    {% endif %}
 </script>
-{% endif %}

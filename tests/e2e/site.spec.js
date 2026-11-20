@@ -48,27 +48,57 @@ for (const language of languages) {
       expect(policyResponse.status()).toBe(200);
     });
 
-    test('cookie choice persists after reload', async ({ page, context }) => {
+    test('cookie choice controls GA4 storage and persists after reload', async ({ page, context }) => {
+      await page.route('https://www.googletagmanager.com/gtag/js?*', route => route.fulfill({
+        contentType: 'application/javascript',
+        body: 'window.analyticsConsentTestLoaded = true;'
+      }));
+      const consentCommands = () => page.evaluate(() =>
+        Array.from(window.dataLayer, entry => Array.from(entry)).filter(entry => entry[0] === 'consent')
+      );
+      const defaultConsent = analyticsStorage => ['consent', 'default', {
+        analytics_storage: analyticsStorage,
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      }];
+
       await context.clearCookies();
       await page.goto(language.home);
 
       const banner = page.locator('#cookie-banner');
       await expect(banner).toBeVisible();
+      await page.waitForFunction(() => window.analyticsConsentTestLoaded);
+      expect(await consentCommands()).toEqual([defaultConsent('denied')]);
+      const initialCommands = await page.evaluate(() => window.dataLayer.map(entry => entry[0]));
+      expect(initialCommands.indexOf('consent')).toBeLessThan(initialCommands.indexOf('config'));
+
       await banner.getByRole('button', { name: language.accept, exact: true }).click();
       await expect(banner).toBeHidden();
       await expect.poll(async () => (await context.cookies()).find(cookie => cookie.name === 'codesai_cookie_policy')?.value)
         .toBe('accepted');
+      expect(await consentCommands()).toEqual([
+        defaultConsent('denied'),
+        ['consent', 'update', { analytics_storage: 'granted' }]
+      ]);
 
       await page.reload();
       await expect(banner).toBeHidden();
+      expect(await consentCommands()).toEqual([defaultConsent('granted')]);
 
       await context.clearCookies();
       await page.reload();
       await banner.getByRole('button', { name: language.reject, exact: true }).click();
       await expect.poll(async () => (await context.cookies()).find(cookie => cookie.name === 'codesai_cookie_policy')?.value)
         .toBe('rejected');
+      expect(await consentCommands()).toEqual([
+        defaultConsent('denied'),
+        ['consent', 'update', { analytics_storage: 'denied' }]
+      ]);
       await page.reload();
       await expect(banner).toBeHidden();
+      await page.waitForFunction(() => window.analyticsConsentTestLoaded);
+      expect(await consentCommands()).toEqual([defaultConsent('denied')]);
     });
 
     test('newsletter validates and submits without contacting Google', async ({ page }) => {
