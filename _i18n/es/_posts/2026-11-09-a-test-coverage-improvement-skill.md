@@ -454,7 +454,7 @@ Thanks also to the [Audiense](https://www.audiense.com/products/audiense-discove
 
 ## References.
 
-- [Effective Software Testing: A Developer's Guide](https://www.manning.com/books/effective-software-testing), Maurício Aniche
+- [Effective Software Testing: A Developer's Guide](https://www.manning.com/books/effective-software-testing), [Maurício Aniche](https://mauricioaniche.com/).
 
 - [Relevant Mutants in a Flash](https://codesai.com/posts/2026/02/relevant_mutants_in_a_flash), [Manuel Rivero](https://www.linkedin.com/in/manuel-rivero-54411271/).
 
