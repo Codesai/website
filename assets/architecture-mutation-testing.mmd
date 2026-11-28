@@ -1,0 +1,29 @@
+flowchart TD
+    A["Load counter-examples and corresponding rules"]
+
+    subgraph LOOP["For each counter-example"]
+        direction LR
+        C["Introduce counter-example (mutant)"]
+        C --> D[Run architecture tests]
+        D --> E{Intended rule fails?}
+
+        E -- Yes --> F[Killed mutant]
+        E -- No --> G[Surviving mutant]
+
+        F --> H[Restore codebase]
+        G --> H
+    end
+
+    A --> LOOP
+    LOOP --> I[Generate mutation report]
+    I --> J{All killed?}
+    J -- Yes --> K([Success])
+    J -- No --> L([Failure])
+
+    style LOOP fill:#f8fafc,stroke:#94a3b8,stroke-dasharray:5 5
+    style F fill:#dcfce7,stroke:#16a34a,color:#166534
+    style G fill:#fee2e2,stroke:#dc2626,color:#991b1b
+    style K fill:#dcfce7,stroke:#16a34a,color:#166534
+    style L fill:#fee2e2,stroke:#dc2626,color:#991b1b
+    style H fill:#dbeafe,stroke:#2563eb,color:#1e40af
+    style I fill:#f3e8ff,stroke:#9333ea,color:#6b21a8
