@@ -200,7 +200,7 @@ The final code is more cohesive than the original one and explicitly represents 
 ## Acknowledgements
 
 I'd like to thank to my Codesai colleagues, [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and 
-[Alfredo Casado](https://www.linkedin.com/in/alfredo-casado/) for giving me feedback about several drafts of this post.
+[Alfredo Casado](https://www.linkedin.com/in/alfredo-casado/) for giving me feedback on several drafts of this post.
 
 Also thanks to [Audiense](https://es.audiense.com/)'s developers for all their work they put in the deliberate practice 
 sessions. I learn a lot with you.

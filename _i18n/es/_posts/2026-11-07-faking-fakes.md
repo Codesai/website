@@ -68,7 +68,7 @@ The irony is that trying to increase test fidelity with unverified hand-written 
 
 ## Acknowledgements.
 
-I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback about several drafts of this post.
+I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback on several drafts of this post.
 
 
 ## References

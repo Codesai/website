@@ -364,7 +364,7 @@ The point of this exercise is to show that blindly prompting a coding agent to e
 
 ## Acknowledgements.
 
-I'd like to thank [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/), and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback about several drafts of this post.
+I'd like to thank [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/), and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback on several drafts of this post.
 
 
 Finally, I’d also like to thank [Pavel Danilyuk](https://www.pexels.com/@pavel-danilyuk/) for the photo.

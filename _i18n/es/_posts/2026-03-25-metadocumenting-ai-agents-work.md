@@ -55,7 +55,7 @@ In future posts about my experiences coding with agents I plan to include things
 
 ### Acknowledgements.
 
-I'd like to thank [Manuel Tordesillas](https://www.linkedin.com/in/mjtordesillas/) for encouraging me to write this post, and [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback about several drafts of this post.
+I'd like to thank [Manuel Tordesillas](https://www.linkedin.com/in/mjtordesillas/) for encouraging me to write this post, and [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback on several drafts of this post.
 
 Finally, I’d also like to thank [Joshua Woroniecki](https://www.pexels.com/es-es/@joshuaworoniecki/) for the photo.
 

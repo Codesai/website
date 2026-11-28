@@ -128,7 +128,7 @@ This post is part of a series about TDD, test doubles and object-oriented design
 ## Acknowledgements.
 I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), 
 [Fran Iglesias Gómez](https://www.linkedin.com/in/franiglesias/), [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) and [Antonio De La Torre](https://www.linkedin.com/in/antoniodelatorre/) 
-for giving me feedback about several drafts of this post.
+for giving me feedback on several drafts of this post.
 
 Finally, I’d also like to thank [imgflip](https://imgflip.com/) for their [Inconceivable Iñigo Montoya Meme Generator](https://imgflip.com/memegenerator/294538550/Hi-Res-Inconceivable-Inigo-Montoya).
 

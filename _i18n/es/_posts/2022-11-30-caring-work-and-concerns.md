@@ -191,7 +191,7 @@ Finally, we gave our reasons for using a separate meeting to discuss concerns in
 
 Thanks to [Lifull Connect](https://www.lifullconnect.com/)'s Barcelona B2B team, for all the effort and great work they did to make the concerns mechanism work for them. That great work made it much easier for other teams in [Lifull Connect](https://www.lifullconnect.com/) to start applying the idea of caring work with the help of other Codesai coaches.
 
-Also thanks to my Codesai colleagues, [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Rubén Díaz](https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/), [Dani Ojeda](https://www.linkedin.com/in/danielojedaloisel/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), for giving me feedback about several drafts of this post.
+Also thanks to my Codesai colleagues, [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/), [Rubén Díaz](https://www.linkedin.com/in/rub%C3%A9n-d%C3%ADaz-mart%C3%ADnez-b9276395/), [Dani Ojeda](https://www.linkedin.com/in/danielojedaloisel/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/), for giving me feedback on several drafts of this post.
 
 Finally I’d also like to thank [Karolina Grabowska](https://www.pexels.com/es-es/@karolina-grabowska/) for her photo.
 

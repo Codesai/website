@@ -182,7 +182,7 @@ These rules are tailored to our project. Your mileage may vary.
 
 ## Acknowledgements.
 
-Thank you to [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/) for giving me feedback about several drafts of this post.
+Thanks to [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/) for giving me feedback on several drafts of this post.
 
 ## References.
 

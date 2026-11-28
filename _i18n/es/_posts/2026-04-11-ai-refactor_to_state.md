@@ -256,7 +256,7 @@ We used the introduction of the state pattern to explore how and when a coding a
 ## Acknowledgements.
 
 I'd like to thank [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/), [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and [Alfredo Casado](https://www.linkedin.com/in/alfredo-casado/)
-for giving me feedback about several drafts of this post.
+for giving me feedback on several drafts of this post.
 
 
 Finally, I’d also like to thank [Maxwell Pels](https://www.pexels.com/es-es/@maxwell-pels-1372108218/) for the photo.

@@ -448,7 +448,7 @@ In summary, I think skills are not substitutes for understanding software engine
 
 ## Acknowledgements.
 
-Thank you to [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/) for encouraging me and reminding me that we have important ideas to contribute to AI-augmented development, and to [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/) for helping me overcome my impostor syndrome when writing about these topics.
+Thanks to [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/) for encouraging me and reminding me that we have important ideas to contribute to AI-augmented development, and to [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/) for helping me overcome my impostor syndrome when writing about these topics.
 
 Thanks also to the [Audiense](https://www.audiense.com/products/audiense-discover/) team. Coaching them through the [Deliberate Practice Program](https://codesai.com/en/trainings/deliberate-practice/) over the past four years has given us the opportunity to teach and experiment with testing practices, develop ideas, and learn from applying them. One of those ideas is [Relevant Mutants](https://codesai.com/posts/2024/07/relevant-mutants), which this skill uses to assess and classify surviving mutants.
 

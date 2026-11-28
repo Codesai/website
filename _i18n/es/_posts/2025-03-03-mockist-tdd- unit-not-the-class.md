@@ -166,7 +166,7 @@ This post is part of a series about TDD, test doubles and object-oriented design
 ## Acknowledgements.
 
 I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/),
-[Alfredo Casado](https://www.linkedin.com/in/alfredo-casado/), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Iglesias Gómez](https://www.linkedin.com/in/franiglesias/) and [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) for giving me feedback about several drafts of this post.
+[Alfredo Casado](https://www.linkedin.com/in/alfredo-casado/), [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/), [Fran Iglesias Gómez](https://www.linkedin.com/in/franiglesias/) and [Marabesi Matheus](https://www.linkedin.com/in/marabesi/) for giving me feedback on several drafts of this post.
 
 Finally, I’d also like to thank [William Warby](https://www.pexels.com/es-es/@wwarby/) for the photo.
 

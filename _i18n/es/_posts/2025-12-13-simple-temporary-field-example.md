@@ -69,7 +69,7 @@ We hope that having more examples of the temporary field code smell may help you
 
 ## Acknowledgements.
 
-I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback about a draft of this post.
+I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback on a draft of this post.
 
 I'd also like to thank [Carlos Miguel Seco](https://www.linkedin.com/in/carlosmiguelseco/) for giving us the opportunity to work with him on a very interesting project.
 

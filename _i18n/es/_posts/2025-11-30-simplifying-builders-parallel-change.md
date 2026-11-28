@@ -189,7 +189,7 @@ We encourage you to learn more about [parallel change](https://martinfowler.com/
 
 ## Acknowledgements.
 
-I'd like to thank my colleague [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback about this post.
+I'd like to thank my colleague [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback on this post.
 
 I'd also like to thank [Carlos Miguel Seco](https://www.linkedin.com/in/carlosmiguelseco/) for giving us the opportunity to work with him on a very interesting project.
 

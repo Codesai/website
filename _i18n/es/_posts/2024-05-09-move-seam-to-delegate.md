@@ -120,7 +120,7 @@ We have described the *Move seam to delegate* refactoring mechanics. We hope thi
 
 ### Acknowledgements
 
-I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for revising and giving feedback about this blog post.
+I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for revising and giving feedback on this blog post.
 
 Finally, I’d also like to thank [Engin Akyurt](https://www.pexels.com/es-es/@enginakyurt/) for the photo.
 

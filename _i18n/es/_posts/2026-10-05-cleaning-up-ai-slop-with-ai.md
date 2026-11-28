@@ -82,7 +82,7 @@ All in all, we’re enjoying this project and learning a lot. We hope to find ti
 
 ## Acknowledgements.
 
-I'd like to thank [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback about this post.
+I'd like to thank [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/) and [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) for giving me feedback on this post.
 
 Finally, I’d also like to thank [cottonbro studio](https://www.pexels.com/@cottonbro/) for the photo.
 

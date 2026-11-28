@@ -158,7 +158,7 @@ We are using these tests, both in deliberate practice sessions and client projec
 
 ## Acknowledgements.
 
-I'd like to thank [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/), [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/) for giving me feedback about several drafts of this post.
+I'd like to thank [Fernando Aparicio](https://www.linkedin.com/in/fernandoaparicio/), [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and [Antonio de la Torre](https://www.linkedin.com/in/antoniodelatorre/) for giving me feedback on several drafts of this post.
 
 ## References.
 

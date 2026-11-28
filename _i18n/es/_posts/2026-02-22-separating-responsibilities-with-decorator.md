@@ -123,7 +123,7 @@ In a future post, we’ll show how AI helped in both the introduction of the dec
 ## Acknowledgements.
 
 I'd like to thank [Fran Reyes](https://www.linkedin.com/in/franreyesperdomo/) and  [Emmanuel Valverde Ramos](https://www.linkedin.com/in/emmanuel-valverde-ramos/) 
-for giving me feedback about several drafts of this post.
+for giving me feedback on several drafts of this post.
 
 Finally, I’d also like to thank [Cottonbro Studio](https://www.pexels.com/es-es/@cottonbro/) for the photo.
 
