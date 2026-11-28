@@ -92,6 +92,7 @@ permalink: /publications/
         {%- for lab in labs -%}
         <div class="lab">
             <h2><span class="lab-title-emoji" aria-hidden="true">🤖</span><a href="{{ lab.url | prepend: site.baseurl }}">{{ lab.title }}</a></h2>
+            <time datetime="{{ lab.date | date: '%Y-%m-%d' }}">{{ lab.date | date: "%d/%m/%Y" }}</time>
         </div>
         {%- endfor -%}
     </div>
